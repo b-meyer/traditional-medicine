@@ -103,5 +103,5 @@ simply passes v2 through — then re-run `/tradmed-synthesize`.
                     tradmed-verify  tradmed-synthesis  tradmed-audit
 .claude/commands/   tradmed  tradmed-synthesize
 scripts/            merge.py  apply_fragments.py  tradmed_lib.py
-reference/          codebook.md (v1.4)  playbook.md  research-prompt.md
+reference/          codebook.md (v1.5)  playbook.md  research-prompt.md
 ```

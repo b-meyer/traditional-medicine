@@ -51,7 +51,9 @@ across every system. Do not write a chapter per system.
 4. Diagnostic reproducibility — what the reliability literature shows, and what
    it shows about correspondence medicine as a class
 5. Institutionalization and legal recognition — recognition tiers by
-   jurisdiction, and what predicts where a tradition sits
+   jurisdiction, and what predicts where a tradition sits. Field 19's
+   market figures may inform this where recorded, but they are `incidental`
+   at best and never stand in for evidence of use, efficacy or safety
 6. Literature volume against evidence quality — treated as two separate questions
 7. Harm — mechanism classes, regulatory response, and known enforcement gaps
 8. Borrowing against convergence — demonstrated transmission, shared descent

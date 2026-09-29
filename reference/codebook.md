@@ -1,8 +1,21 @@
-# Traditional Medicine Comparative Codebook — v1.4
+# Traditional Medicine Comparative Codebook — v1.5
 
 A fixed extraction schema. Every system report is mapped to these fields, in this
 order, using this vocabulary. The point is commensurability: fields must be
 readable down the column across systems, not just down the page within one system.
+
+Changes in v1.5: field 19 `economics` holds market and industry scale, which no
+earlier field could. `disruption.colonial_power` becomes a structured leaf with
+a `mode`, so a tradition displaced by semi-colonial or indirect foreign
+pressure, or by domestic modernization alone, is no longer coded as a gap.
+New leaves: `revival_and_institutionalization.diffusion_abroad` for spread
+outside the country of origin,
+`education_and_licensure.tradition_content_in_biomedical_curriculum` for the
+reverse direction of `biomedical_content_in_curriculum`, and
+`contemporary_controversies.research_methodology_disputes` for disputes over
+how the tradition's interventions can be tested. Field 1 `relation` gains
+`premodern_predecessor`. The `economic` register and the `market-research`
+source type are added. Field 6 tags record intentional use only.
 
 Changes in v1.4: field 3 gains a `report_adjudication` leaf, so the report's
 own verdict on the continuity debate has a place of its own instead of riding in
@@ -52,10 +65,11 @@ field_name:
       type: tertiary-review | systematic-review | meta-analysis | reference-work |
             institutional | primary-study | historical-monograph | statute |
             news | aggregator | catalog-listing | practitioner-site |
-            open-encyclopedia | unclear
+            open-encyclopedia | market-research | unclear
       citation_strength: direct | indirect | unclear
       claim_match: matches | mismatch    # optional
-  register: emic | historical-scholarship | biomedical-evidence | regulatory
+  register: emic | historical-scholarship | biomedical-evidence | regulatory |
+            economic
   notes: <disputes, caveats, why absent — optional>
 ```
 
@@ -70,7 +84,7 @@ field_name:
 - `not_requested` — the source research prompt never asked, so silence here says
   nothing about the literature. **Do not send these to the gap pass as search
   targets for missing evidence; they are prompt-coverage gaps, not evidence gaps.**
-  Expect this status, or `incidental`, on fields 6, 7, 11 and parts of 1.
+  Expect this status, or `incidental`, on fields 6, 7, 11, 19 and parts of 1.
 - `deferred` — a leaf the codebook says is computed at synthesis. `value` stays
   null. Mappers never fill it and no pass searches for it.
 
@@ -78,8 +92,9 @@ Keeping these apart is the whole point. A field can be empty because nobody
 looked, because nobody asked, or because nothing exists, and the three lead to
 completely different next actions.
 
-The source research prompt never asks for field 18, so it is never `absent`:
-either the report volunteers it (`filled` / `partial`) or it is `not_requested`.
+The source research prompt never asks for fields 18 or 19, so they are never
+`absent`: either the report volunteers them (`filled`, `partial` or, for field
+19, `incidental`) or they are `not_requested`.
 
 **citation_strength.**
 - `direct` — the work itself, the statute text, the journal article.
@@ -89,7 +104,8 @@ either the report volunteers it (`filled` / `partial`) or it is `not_requested`.
 
 **Source types.** `practitioner-site` is a clinic, pharmacy, manufacturer or
 practitioner's own website. `open-encyclopedia` is an openly edited reference
-such as Wikipedia. Both are `indirect` by rule 4.
+such as Wikipedia. `market-research` is a commercial market-research or
+industry-analyst firm's estimate. All three are `indirect` by rule 4.
 
 **claim_match** (optional). Set `mismatch` where the cited source, judged from
 its title or description, does not appear to be about the claim it is cited for
@@ -100,7 +116,7 @@ verification target like any `indirect`.
 Every `indirect` is a verification target. These cluster in fields 8, 9 and 10.
 
 **register** keeps the tradition's own claims, historical scholarship, biomedical
-evidence and regulatory fact from blending together.
+evidence, regulatory fact and economic figures from blending together.
 
 ## Leaf naming
 
@@ -114,7 +130,9 @@ leaf's `value`. List-valued leaves use these names and item shapes:
 | 2 canon_and_transmission | `key_figures` | `{name, dates, role}` |
 | 3 construct_debate | `positions` | `{scholar, work, year, position, evidence_base}` |
 | 6 modalities | `items` | `{name, native_category, tags, description}` |
+| 8 disruption | `colonial_power` | `{power, mode, period, description}` |
 | 8 disruption | `post_colonial_disruption` | `{label, date, description}` |
+| 9 revival_and_institutionalization | `diffusion_abroad` | `{region, period, channel, description}` |
 | 10 legal_status | `jurisdictions` | `{jurisdiction, regulator, statute, year, scope_of_practice, prescribing_rights, integration_with_public_health_system, recognition_tier}` |
 | 10 legal_status | `supranational_standards` | `{body, instrument, year, scope}` |
 | 13 evidence_state | `reviews` | `{modality, best_available_review, type, year, size, conclusion, certainty_rating, methodological_limitations_noted}` |
@@ -123,6 +141,9 @@ leaf's `value`. List-valued leaves use these names and item shapes:
 | 17 self_reported_gaps | `inventory` | `{kind, text}` |
 | 18 report_conclusions | `revision_thresholds` | `{domain, threshold, would_change}` |
 | 18 report_conclusions | `recommendations` | `{audience, text}` |
+| 19 economics | `domestic_market_size` | `{figure, currency, year, measure, estimator}` |
+| 19 economics | `global_market_estimates` | `{figure, currency, year, measure, estimator}` |
+| 19 economics | `major_manufacturers` | `{name, products, figure, currency, year, measure}` |
 
 Likewise `diagnostics.reliability_evidence`, every
 `evidence_borrowed_from_other_traditions` and every `dated_events` (fields 2, 8
@@ -138,10 +159,14 @@ schema errors meaningful.
 - `system_boundary` — traditions the report treats as the same system, a
   variant, a sibling sharing its origins, or a grouping it is regulated under.
   Per entry: `relation` (same_system_variant | sibling | absorbed_strand |
-  regulatory_grouping), and `fields_affected` — which fields in this
+  regulatory_grouping | premodern_predecessor), and `fields_affected` — which fields in this
   extraction draw on content that really belongs to that other tradition.
   `absorbed_strand` is a distinct tradition this system has partly
   incorporated while it also persists, or persisted, on its own terms.
+  `premodern_predecessor` is the premodern tradition or traditions the modern
+  system was selectively rebuilt from, where the report treats the relation as
+  reconstruction rather than simple continuity. Whether that reconstruction
+  amounts to invention is field 3's question, not this leaf's.
 
 ### 2. canon_and_transmission
 - `foundational_texts` — title, approximate date, attributed author
@@ -208,6 +233,9 @@ gives one), `tags` (one or more), `description`. Tags: `herbal` |
 venesection, cupping, leeching and induced purging. Where the tradition's own
 category bundles several tags, keep one item with all of them rather than
 splitting it.
+Tags record what the tradition uses on purpose. A substance that appears only
+as a contaminant or adulterant (heavy metals in herbal products, for example)
+does not earn a tag; it belongs in field 14.
 
 ### 7. materia_medica
 - `pharmacological_framework`, `flagship_agents`, `preparation_traditions`
@@ -220,12 +248,22 @@ colonized, a state never partitioned — mark it `filled` with value
 `absent` only where the report leaves it unclear.
 - `loss_of_patronage` — pre-colonial or dynastic decline: collapse of a court,
   state or institution that sustained the tradition, with dates
-- `period`, `colonial_power`
+- `period`
+- `colonial_power` — the external power or powers whose pressure displaced the
+  tradition. Per entry: `power`, `mode` (colonial_rule | semi_colonial |
+  indirect_foreign_pressure), `period`, `description`. `semi_colonial` is
+  partial foreign control short of annexation — treaty ports, concessions,
+  extraterritoriality; `indirect_foreign_pressure` is the influence of a
+  foreign medical system or a foreign modernization model adopted by a state
+  that was never under foreign rule. Where the rupture was domestic alone, mark
+  it `filled` with value `not_applicable` and say so in `notes`; the domestic
+  drivers go under `suppression_or_marginalization`.
 - `suppression_or_marginalization` — specific policies with dates
 - `abolition_attempts` — formal proposals, votes, outcomes, dates
 - `practitioner_response` — organized resistance, dates, bodies formed
-- `post_colonial_disruption` — partition, state succession or other
-  post-independence breaks that split or relocated institutions, each dated
+- `post_colonial_disruption` — partition, state succession, revolution or other
+  breaks after the colonial or dynastic period that split or relocated
+  institutions, each dated
 - `dated_events` — every dated event, as `{label, date, description}`. Use a
   plain canonical label (for example "Macaulay's Minute", "Bhore Committee").
   Consistent labels are what let synthesis detect events shared across systems.
@@ -239,6 +277,10 @@ colonized, a state never partitioned — mark it `filled` with value
 - `standardization_events` — textbooks, curricula, colleges, dates
 - `internal_factions` — purist versus integrationist splits, named
 - `state_sponsorship`
+- `diffusion_abroad` — spread and institutionalization outside the country of
+  origin: where, when, by what channel (emigration, diplomatic opening, training
+  programs, commercial export). This is not revival; `revival_context` is about
+  the country of origin.
 - `dated_events` — as in field 8
 
 ### 10. legal_status
@@ -254,7 +296,10 @@ protection | supplement/wellness only | unregulated).
 ### 11. education_and_licensure
 - `degree_programs`, `duration`, `accrediting_body`
 - `licensure_requirements`
-- `biomedical_content_in_curriculum`
+- `biomedical_content_in_curriculum` — biomedical teaching within the
+  tradition's own programs
+- `tradition_content_in_biomedical_curriculum` — the reverse: teaching of this
+  tradition within biomedical degree programs
 
 ### 12. literature_state
 **Volume and provenance only. No quality judgment here.**
@@ -319,6 +364,11 @@ the same system under another name. For `shared_descent`, `parallel` and
 - `conservation_and_sourcing`
 - `intellectual_property` — biopiracy cases, defensive databases, Nagoya exposure
 - `politicized_episodes` — pandemic-era promotion, state endorsement, court cases
+- `research_methodology_disputes` — disputes over how the tradition's
+  interventions can be tested: the validity of sham or placebo controls,
+  individualized or pattern-stratified trial designs, and competing readings of
+  the same effect sizes, with the named parties on each side. The trial results
+  themselves stay in field 13.
 
 ### 17. self_reported_gaps
 Verbatim inventory of what the source report itself said it searched for and did
@@ -339,12 +389,29 @@ What the report itself concludes beyond answering its questions. Never `absent`
 These are the report author's stance, not findings. Synthesis may compare them
 but must not treat them as evidence.
 
+### 19. economics
+Commercial and industrial scale. `register: economic`. Neither research prompt
+asks about it, so expect `not_requested` or `incidental`; never `absent`.
+- `domestic_market_size` — industry output or market size in the country of
+  origin, each figure with its year, what it measures (output, revenue, retail
+  sales) and who estimated it
+- `global_market_estimates` — as above, worldwide. Keep every estimate the
+  report gives, however far apart; do not reconcile or average them, and carry
+  the report's own caveats on their reliability into `notes`
+- `major_manufacturers` — named firms, their principal products, and any
+  revenue figure with its year
+
+Estimates from commercial market-research firms are `type: market-research`,
+`citation_strength: indirect`. Market size says nothing about efficacy, safety
+or use; never let field 19 stand in for fields 12 or 13.
+
 ## Mapping rules
 
 1. Extract only. Do not supplement the report with outside knowledge.
 2. Preserve the source report's citation for every value carried over.
 3. Uncited claim → `type: unclear` and note it. These are verification targets.
-4. Claim sourced through an aggregator, bookseller, blog or news outlet →
+4. Claim sourced through an aggregator, bookseller, blog, news outlet or
+   market-research firm →
    `citation_strength: indirect`, regardless of how solid the claim itself is.
 5. Where the report's framing does not fit a field, record what it does say and
    note the mismatch rather than forcing it.

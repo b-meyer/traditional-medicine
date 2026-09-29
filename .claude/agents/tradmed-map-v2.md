@@ -33,7 +33,7 @@ order.
 ## YAML shape
 
 ```yaml
-schema_version: "1.4"
+schema_version: "1.5"
 system: <slug from the report>
 source_report: v2
 fields:
@@ -96,6 +96,14 @@ the codebook must be present, even when its status is `absent` or
   tradition goes under that field's `evidence_borrowed_from_other_traditions`,
   not in the main leaf.
 - Field 15: set `corroborated_by` to status `deferred`, value null.
+- Field 19: no research prompt asks about economics. Mark it `not_requested`,
+  or `incidental` where the report gives market or industry figures in passing.
+  Never `absent`. Keep every estimate; do not reconcile them.
+- Field 6: tag only what the tradition uses on purpose. A substance that appears
+  only as a contaminant goes to field 14, not into a modality's tags.
+- Field 8: `colonial_power` records the mode of external pressure. A tradition
+  that was never colonized is not a gap; follow the codebook's modes and its
+  `not_applicable` rule.
 - Field 18: record the report's own revision thresholds and recommendations if
   it states any. Never mark this field `absent`; use `not_requested` where the
   report states none.
