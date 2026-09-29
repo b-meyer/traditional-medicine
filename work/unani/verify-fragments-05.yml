@@ -1,0 +1,385 @@
+system: unani
+pass: verify
+updates:
+  - path: revival_and_institutionalization.standardization_events
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - event: "Hamdard founded as a small Unani clinic in Old Delhi by Hakeem Hafiz Abdul Majeed, aimed at 'reviving, invigorating and improving' Unani medicine"
+          date: "1906"
+        - event: "Ayurvedic and Unani Tibbia College (Karol Bagh, Delhi); modern medicine and science part of the syllabus"
+          date: "1916 (foundation stone, 29 March) / 1921 (inaugurated, 13 February)"
+        - event: Hamdard Pakistan founded
+          date: "1948"
+        - event: CCRUM established
+          date: "1978 (functioning from 10 January 1979)"
+        - event: Unani Pharmacopoeia of India and National Formulary of Unani Medicine
+          date: not stated
+        - event: "Iran Ministry of Health approves TPM academic training (4-year PhD)"
+          date: "2007"
+        - event: "NCISM Act (No. 14 of 2020); uniform National Eligibility-cum-Entrance Test (s. 14) and National Exit Test (s. 15)"
+          date: "2020 (in force and NCISM constituted 11 June 2021)"
+        - event: "General change: formal colleges with fixed syllabi and degrees; incorporation of anatomy, physiology, pathology and surgery; pharmacopoeial standardization"
+          date: late 19th-20th c.
+      citations:
+        - source: "Hamdard Laboratories (India), Legacy page — https://hamdard.com/legacy"
+          type: institutional
+          citation_strength: direct
+        - source: "Ayurvedic and Unani Tibbia College and Hospital, Govt of NCT of Delhi, History page — https://autch.delhi.gov.in/autch/history; Directorate of AYUSH Delhi page — https://ayush.delhi.gov.in/ayush/ayurvedic-and-unani-tibbia-college-and-hospital"
+          type: institutional
+          citation_strength: direct
+        - source: "Hamdard University (Pakistan), The Founder page — https://www.hamdard.edu.pk/the-founder/"
+          type: institutional
+          citation_strength: direct
+        - source: "CCRUM, Establishment of CCRUM — https://ccrum.res.in/UserView/index?mid=1417"
+          type: institutional
+          citation_strength: direct
+        - source: "Ettehadi F, Amini M, Vazani Y, Tavakkoli A. Evaluation of Traditional Persian Medicine curriculum and educational environment at Shiraz University of Medical Sciences: a CIPP model report. J Educ Health Promot, 2025 — https://pmc.ncbi.nlm.nih.gov/articles/PMC12668346/"
+          type: primary-study
+          citation_strength: direct
+        - source: "National Commission for Indian System of Medicine Act, 2020 (No. 14 of 2020, 20 September 2020), ss. 14-15 — https://www.indiacode.nic.in/handle/123456789/15622"
+          type: statute
+          citation_strength: direct
+        - source: "NCISM home page (Introduction) — https://ncismindia.org/"
+          type: institutional
+          citation_strength: direct
+        - source: "Pharmacopoeia Commission for Indian Medicine & Homoeopathy, Unani Pharmacopoeial Publication — https://pcimh.gov.in/show_content.php?lang=1&level=1&ls_id=58&lid=56"
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Corrections: (1) the phrase 'along scientific lines' for Hamdard's 1906 founding is not on Hamdard's own legacy page, which says the clinic aimed at 'reviving, invigorating and improving' Unani medicine; the quote is replaced. (2) Tibbia College: the Delhi government pages give the exact dates and say modern medicine and science were part of the syllabus. They do not itemize anatomy or surgery, so that wording is dropped from this item. (3) NCISM operational date made precise: the Act came into force and the Commission and four autonomous boards were constituted on 11 June 2021 (NCISM site), not 'June/July 2021'. (4) CCRUM: established 1978 and functioning from 10 January 1979. The NCISM Act and Delhi college pages were read through search-index excerpts and a verbatim reproduction because the official servers returned errors. The final 'general change' item is kept as the report's summary; the current NCISM BUMS curricula confirm anatomy, physiology, pathology and surgery (see education_and_licensure.biomedical_content_in_curriculum), but the historical timing was not checked against a scholarly work. The S9 CCRUM cupping PDF (mismatch) is dropped."
+    searches:
+      - "Hamdard Laboratories India history 1906 Hakim Hafiz Abdul Majeed Unani clinic Lal Kuan Delhi"
+      - "Ayurvedic and Unani Tibbia College Karol Bagh foundation stone 1916 Lord Hardinge inaugurated 1921 Mahatma Gandhi"
+      - "Hamdard Pakistan founded 1948 Hakim Mohammed Said Karachi official history"
+      - "CCRUM established 1978 Central Council for Research in Unani Medicine about us"
+      - "Iran Ministry of Health traditional Persian medicine PhD program established 2007 four-year first students faculties"
+      - "National Commission for Indian System of Medicine Act 2020 gazette text section 14 NEET exit examination"
+      - "NCISM Act section 59 repeal Indian Medicine Central Council Act 1970 notification 11 June 2021 comes into force"
+      - "PCIM&H Unani Pharmacopoeia of India Part I Volume I National Formulary of Unani Medicine Part I published year"
+      - "Tibbiya College Delhi Ajmal Khan curriculum anatomy dissection surgery western medicine taught Unani students history"
+  - path: revival_and_institutionalization.internal_factions
+    outcome: unverifiable
+    searches:
+      - "Azizi family Lucknow Takmil ut-Tibb college Ajmal Khan rivalry Unani reform Attewell \"Refiguring Unani Tibb\""
+      - "Attewell Lucknow Azizi hakims Delhi Sharifi Ajmal Khan anatomy surgery curriculum Tibbiya College Lucknow purity"
+      - "\"Azizi\" \"represented as purists\" Unani Lucknow"
+      - "Seema Alavi \"Islam and Healing\" Ajmal Khan Lucknow Azizi purity western anatomy \"Takmil\""
+      - "Attewell 2005 \"The End of the Line? The Fracturing of Authoritative Tibbi Knowledge in Twentieth-Century India\" Asian Medicine abstract"
+      - "Google Books search inside Alavi, Islam and Healing (2008), for 'Ajmal Khan purity' and 'Ajmal'"
+      - "\"Science, Institution, Colonialism: Tibbiya College of Delhi, 1889–1947\" author abstract"
+  - path: revival_and_institutionalization.dated_events
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - label: Hamdard founded
+          date: "1906"
+          description: Delhi Unani clinic by Hakim Hafiz Abdul Majeed.
+        - label: Tibbia College inaugurated
+          date: "1921-02-13"
+          description: "Ayurvedic and Unani Tibbia College, Karol Bagh, Delhi, inaugurated by Gandhi (foundation stone laid by Lord Hardinge, 29 March 1916)."
+        - label: Chopra Committee
+          date: "1948"
+          description: "Report of the Committee on Indigenous Systems of Medicine (chair R.N. Chopra), Ministry of Health; recommended integration/synthesis."
+        - label: Hamdard Pakistan founded
+          date: "1948"
+          description: Karachi.
+        - label: Hamdard begins operating in East Pakistan
+          date: "1953"
+          description: "Two sales centres (Dhaka and Chittagong). Hamdard Laboratories (Waqf) Bangladesh formally established 1972."
+        - label: "Unani, Ayurvedic and Homoeopathic Practitioners Act (Pakistan)"
+          date: "1965"
+          description: "Act II of 1965; statutory framework for hakims; establishes the National Council for Tibb."
+        - label: Indian Medicine Central Council Act
+          date: "1970"
+          description: "Act 48 of 1970; repealed by the NCISM Act with effect from 11 June 2021."
+        - label: CCRUM established
+          date: "1978"
+          description: "Central Council for Research in Unani Medicine; functioning from 10 January 1979."
+        - label: South Africa recognizes Unani-Tibb
+          date: "2001"
+          description: "AHPCSA Regulations R.127 of 12 February 2001 (Allied Health Professions Act 63 of 1982) provide for the Unani-Tibb register; inclusion of the profession of Unani Tibb gazetted as GN 848, Government Gazette 30286, 14 September 2007."
+        - label: Iran approves TPM academic training
+          date: "2007"
+          description: 4-year PhD programme.
+        - label: WHO benchmarks for training in Unani medicine (first edition)
+          date: "2010"
+          description: "Training benchmarks only; updated 2022."
+        - label: NCISM Act
+          date: "2020-09-20"
+          description: "Act No. 14 of 2020; repealed IMCC Act 1970; in force and NCISM constituted 11 June 2021."
+        - label: WHO benchmarks for Unani training and practice published
+          date: "2022-02-11"
+          description: "Training benchmarks update the 2010 edition; practice benchmarks released the same day."
+        - label: Pakistan council merger
+          date: 2024-09
+          description: "Government moves to merge NCT and National Council for Homeopathy into a National Council of Traditional, Alternative and Complementary Medicine."
+      citations:
+        - source: "Hamdard Laboratories (India), Legacy — https://hamdard.com/legacy"
+          type: institutional
+          citation_strength: direct
+        - source: "Ayurvedic and Unani Tibbia College and Hospital, Govt of NCT of Delhi, History — https://autch.delhi.gov.in/autch/history"
+          type: institutional
+          citation_strength: direct
+        - source: "Report of the Committee on Indigenous Systems of Medicine (R.N. Chopra, Chairman). Ministry of Health, Government of India, 1948 — https://archive.org/details/dli.csl.2160"
+          type: institutional
+          citation_strength: direct
+        - source: "Singh RH. Beyond a bureaucratic status report on Indian medicine and folk healing. 2012 — https://pmc.ncbi.nlm.nih.gov/articles/PMC3456868/"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Hamdard University (Pakistan), The Founder — https://www.hamdard.edu.pk/the-founder/"
+          type: institutional
+          citation_strength: direct
+        - source: "Hamdard University Bangladesh, Hamdard Laboratories (Waqf) Bangladesh: a chronology — https://www.hamdarduniversity.edu.bd/hub/hamdard_lab"
+          type: institutional
+          citation_strength: direct
+        - source: "Unani, Ayurvedic and Homoeopathic Practitioners Act, 1965 (Pakistan Code) — https://pakistancode.gov.pk/english/UY2FqaJw1-apaUY2Fqa-cJqX-sg-jjjjjjjjjjjjj"
+          type: statute
+          citation_strength: direct
+        - source: "NCISM home page (Introduction) — https://ncismindia.org/"
+          type: institutional
+          citation_strength: direct
+        - source: "National Commission for Indian System of Medicine Act, 2020 (No. 14 of 2020) — https://www.indiacode.nic.in/handle/123456789/15622"
+          type: statute
+          citation_strength: direct
+        - source: "CCRUM, Establishment of CCRUM — https://ccrum.res.in/UserView/index?mid=1417"
+          type: institutional
+          citation_strength: direct
+        - source: "AHPCSA, Registration requirements (citing Regulations R.127 of 12 February 2001) — https://ahpcsa.co.za/registration-requirements/"
+          type: institutional
+          citation_strength: direct
+        - source: "Allied Health Professions Act: Inclusion of profession of Unani Tibb, GN 848, Government Gazette Vol 506 No 30286, 14 September 2007 — https://www.gov.za/sites/default/files/gcis_document/201409/30286848.pdf"
+          type: statute
+          citation_strength: direct
+        - source: "Ettehadi F et al. Evaluation of Traditional Persian Medicine curriculum... J Educ Health Promot, 2025 — https://pmc.ncbi.nlm.nih.gov/articles/PMC12668346/"
+          type: primary-study
+          citation_strength: direct
+        - source: "WHO, WHO benchmarks for the training of Unani medicine, 11 February 2022 — https://www.who.int/publications/i/item/9789240042735"
+          type: institutional
+          citation_strength: direct
+        - source: "WHO, WHO benchmarks for the practice of Unani medicine, 11 February 2022 — https://www.who.int/publications/i/item/9789240042698"
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Corrections: (1) Hamdard Bangladesh: Hamdard's own chronology dates the start of activity in East Pakistan to 1953 (two sales centres), with Hamdard Laboratories (Waqf) Bangladesh formally established in 1972. 'Founded 1953' was imprecise. (2) WHO 2010: WHO's pages document a 2010 predecessor only for the training benchmarks. The practice benchmarks page mentions no earlier edition, so 'first editions' (plural) is corrected. (3) NCISM operational date made precise: 11 June 2021, not 'June/July 2021'. (4) South Africa: the 2001 register rests on Regulations R.127 of 12 February 2001, and the September 2007 step is GN 848 of 14 September 2007. The '11th modality' wording is dropped because it was found only on a practitioner-institute site. Still unverified from a primary source: the September 2024 Pakistan merger. It is found only on Wikipedia, and the only official-adjacent item located is state-media coverage (Radio Pakistan, 27 August 2024) of cabinet approval of the rightsizing committee's recommendations for 82 bodies, which does not name the councils. The item is kept as the report stated it but should be treated as indirect. Several official pages (AHPCSA, Hamdard Bangladesh, Tibbia College) returned server errors, and their content was read from search-index excerpts. The PIB, S9 mismatch, Wikipedia and Expat Focus citations are replaced."
+    searches:
+      - "Hamdard Laboratories (Waqf) Bangladesh established 1953 history"
+      - "Chopra Committee Committee on Indigenous Systems of Medicine report 1948 synthesis integration recommendation"
+      - "Unani, Ayurvedic and Homoeopathic Practitioners Act 1965 Pakistan National Council for Tibb text"
+      - "Unani-Tibb registration Allied Health Professions Council South Africa 2001 regulations Government Gazette Unani-Tibb therapist"
+      - "ahpcsa.co.za Unani-Tibb \"Regulation No.127\" OR \"R127\" 2001 Unani-Tibb therapists"
+      - "WHO benchmarks for the training of Unani medicine 2022"
+      - "WHO 2010 \"Benchmarks for training in traditional / complementary and alternative medicine\" Unani series Ayurveda Naturopathy Nuad Thai Tuina"
+      - "Pakistan merge National Council for Tibb National Council for Homeopathy September 2024 National Council of Traditional Alternative and Complementary Medicine"
+      - "federal cabinet rightsizing National Council for Tibb Homeopathy merger 2024 decision Ministry of National Health Services"
+  - path: legal_status.jurisdictions
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - jurisdiction: India
+          regulator: "National Commission for Indian System of Medicine (Board of Unani, Siddha and Sowa-Rigpa); Ministry of AYUSH; CCRUM (research)"
+          statute: "NCISM Act 2020 (No. 14 of 2020; repealing Indian Medicine Central Council Act 1970; in force 11 June 2021); Drugs and Cosmetics Act 1940 Chapter IVA and Rules 1945 (Schedule T GMP; Rule 158B licensing)"
+          year: 2020
+          scope_of_practice: "Not specified. Disputes over surgery, modern-drug prescribing and the 'Dr' prefix for AYUSH graduates are ongoing (field 16)."
+          prescribing_rights: "not stated; contested (IMA opposes AYUSH prescribing of modern drugs)"
+          integration_with_public_health_system: "Umbrella ministry (AYUSH); research council (CCRUM) and autonomous postgraduate teaching institute (NIUM Bengaluru); Unani Pharmacopoeia of India and National Formulary"
+          recognition_tier: full medical system
+        - jurisdiction: Pakistan
+          regulator: "National Council for Tibb (NCT); September 2024 move to merge with National Council for Homeopathy into a National Council of Traditional, Alternative and Complementary Medicine"
+          statute: "Unani, Ayurvedic and Homoeopathic Practitioners Act 1965 (Act II of 1965)"
+          year: 1965
+          scope_of_practice: not stated
+          prescribing_rights: not stated
+          integration_with_public_health_system: "not stated; NCT registers tabibs/hakims and recognizes BEMS departments and the Fazil-ut-Tibb wal Jarahat diploma"
+          recognition_tier: statutory registration
+        - jurisdiction: Bangladesh
+          regulator: government Unani boards (unnamed)
+          statute: not stated
+          year: null
+          scope_of_practice: not stated
+          prescribing_rights: not stated
+          integration_with_public_health_system: not stated
+          recognition_tier: "not determinable from report (described as 'recognized and taught')"
+        - jurisdiction: Sri Lanka
+          regulator: not named
+          statute: indigenous-medicine framework (not named)
+          year: null
+          scope_of_practice: not stated
+          prescribing_rights: not stated
+          integration_with_public_health_system: not stated
+          recognition_tier: not determinable from report (described as regulated)
+        - jurisdiction: Iran
+          regulator: "Ministry of Health (approved TPM training 2007); Supreme Council of Cultural Revolution (national document)"
+          statute: not named (ministerial approval 2007)
+          year: 2007
+          scope_of_practice: TPM health centres/polyclinics offering cupping etc.
+          prescribing_rights: not stated
+          integration_with_public_health_system: some TPM services insurance-covered; integration into insurance and health system debated
+          recognition_tier: "not determinable from report (state-backed academic track; applies to 'Persian medicine')"
+        - jurisdiction: South Africa
+          regulator: "Allied Health Professions Council of South Africa (AHPCSA); SAHPRA (products)"
+          statute: "Allied Health Professions Act 63 of 1982; Regulations R.127 of 12 February 2001; GN 848 of 14 September 2007 (inclusion of profession of Unani Tibb)"
+          year: 2001
+          scope_of_practice: not stated
+          prescribing_rights: not stated
+          integration_with_public_health_system: "not stated; SAHPRA recognizes Unani-Tibb as one of six complementary-medicine disciplines for product regulation"
+          recognition_tier: statutory registration
+        - jurisdiction: Gulf states / UK / US / EU
+          regulator: none specific
+          statute: general food-supplement/herbal or complementary-medicine regimes
+          year: null
+          scope_of_practice: practice exists, often as cupping/herbal CAM
+          prescribing_rights: not stated
+          integration_with_public_health_system: not stated
+          recognition_tier: supplement/wellness only
+      citations:
+        - source: "National Commission for Indian System of Medicine Act, 2020 (No. 14 of 2020), s. 18 (autonomous boards) — https://www.indiacode.nic.in/handle/123456789/15622"
+          type: statute
+          citation_strength: direct
+        - source: "NCISM home page (Introduction; IMCC Act repeal and in-force date) — https://ncismindia.org/"
+          type: institutional
+          citation_strength: direct
+        - source: "Drugs and Cosmetics Act, 1940 and Rules, 1945 (CDSCO consolidated text), Chapter IVA, Rule 158B, Schedule T — https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/acts_rules/2016DrugsandCosmeticsAct1940Rules1945.pdf"
+          type: statute
+          citation_strength: direct
+        - source: "CCRUM, Establishment of CCRUM — https://ccrum.res.in/UserView/index?mid=1417"
+          type: institutional
+          citation_strength: direct
+        - source: "National Institute of Unani Medicine, Overview — https://www.nium.in/overview.html"
+          type: institutional
+          citation_strength: direct
+        - source: "Unani, Ayurvedic and Homoeopathic Practitioners Act, 1965 (Pakistan Code) — https://pakistancode.gov.pk/english/UY2FqaJw1-apaUY2Fqa-cJqX-sg-jjjjjjjjjjjjj"
+          type: statute
+          citation_strength: direct
+        - source: "National Council for Tibb, Process of Registration and Recognized BEMS Departments — https://nct.gov.pk/NCT-Educations/Process-of-Registration- ; https://nct.gov.pk/NCT-Educations/Recognized-BEMS-Departments"
+          type: institutional
+          citation_strength: direct
+        - source: "AHPCSA, Registration requirements (Regulations R.127 of 12 February 2001) — https://ahpcsa.co.za/registration-requirements/"
+          type: institutional
+          citation_strength: direct
+        - source: "GN 848, Government Gazette 30286, 14 September 2007, Allied Health Professions Act: Inclusion of profession of Unani Tibb — https://www.gov.za/sites/default/files/gcis_document/201409/30286848.pdf"
+          type: statute
+          citation_strength: direct
+        - source: "SAHPRA, Complementary Medicines (discipline-specific guideline) — https://www.sahpra.org.za/complementary-medicines/"
+          type: institutional
+          citation_strength: direct
+        - source: "Ettehadi F et al., J Educ Health Promot, 2025 — https://pmc.ncbi.nlm.nih.gov/articles/PMC12668346/"
+          type: primary-study
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrections: (1) India: the NCISM in-force date is 11 June 2021, not 'June/July 2021'. NIUM describes itself as an autonomous postgraduate teaching and research institute under the Ministry of AYUSH, not as 'apex'. The Maharashtra CCMP is removed because the sources located (MUHS course notices and press coverage) describe it as a modern-pharmacology bridge course for homoeopathy (BHMS) graduates, not Unani practitioners, so it does not illustrate Unani integration. (2) Pakistan: Act number added (Act II of 1965). The NCT diploma is Fazil-ut-Tibb wal Jarahat (FTJ). (3) South Africa: the 2001 regulations and the 2007 gazette notice are named. Not verified from a primary source and kept as the report stated: the September 2024 Pakistan merger (Wikipedia only); IMA opposition (press only); the Iran insurance coverage and Supreme Council of Cultural Revolution document; and the unnamed Bangladesh and Sri Lanka regulators. The NCT, AHPCSA and NCISM Act pages returned server errors, and their content was read from search-index excerpts or a verbatim reproduction of the Act (taxguru.in). PIB, Wikipedia, legalcorner.org, Expat Focus and the mismatched S9 citation are replaced."
+    searches:
+      - "National Commission for Indian System of Medicine Act 2020 gazette text section 14 NEET exit examination"
+      - "NCISM Act section 59 repeal Indian Medicine Central Council Act 1970 notification 11 June 2021 comes into force"
+      - "Drugs and Cosmetics Act 1940 Chapter IVA Ayurvedic Siddha Unani drugs Rule 158B Schedule T Good Manufacturing Practices Ministry of Ayush"
+      - "National Institute of Unani Medicine Bengaluru autonomous Ministry of Ayush postgraduate apex institute established 2004"
+      - "Maharashtra CCMP Certificate Course in Modern Pharmacology homeopaths allopathy prescribe IMA oppose Unani BUMS"
+      - "Unani, Ayurvedic and Homoeopathic Practitioners Act 1965 Pakistan National Council for Tibb text"
+      - "National Council for Tibb functions registration of Tabibs \"Fazil-ut-Tibb\" diploma four year examination NCT Islamabad"
+      - "SAHPRA complementary medicines guideline disciplines Unani-Tibb Ayurveda Chinese medicine homeopathy"
+      - "Unani-Tibb registration Allied Health Professions Council South Africa 2001 regulations Government Gazette Unani-Tibb therapist"
+  - path: legal_status.supranational_standards
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - body: WHO
+          instrument: WHO benchmarks for the training of Unani medicine
+          year: 2022
+          scope: "training; updates 2010 edition; reference for national authorities in Member States"
+        - body: WHO
+          instrument: WHO benchmarks for the practice of Unani medicine
+          year: 2022
+          scope: "practice; minimum reference standards for safety and quality of practice"
+        - body: FAO/WHO
+          instrument: heavy-metal limits / WHO guidance
+          year: null
+          scope: "product contamination limits; described as 'international backdrop'"
+      citations:
+        - source: "WHO, WHO benchmarks for the training of Unani medicine, 11 February 2022, ISBN 9789240042735 — https://www.who.int/publications/i/item/9789240042735"
+          type: institutional
+          citation_strength: direct
+        - source: "WHO, WHO benchmarks for the practice of Unani medicine, 11 February 2022, ISBN 9789240042698 — https://www.who.int/publications/i/item/9789240042698"
+          type: institutional
+          citation_strength: direct
+        - source: "WHO, WHO guidelines for assessing quality of herbal medicines with reference to contaminants and residues, 2007 — https://iris.who.int/handle/10665/43510"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Correction: WHO's page for the practice benchmarks mentions no earlier edition. Only the training benchmarks are described as updating a 2010 version, so 'updates 2010 edition' is removed from the practice item. Both documents were released on 11 February 2022. For the third item the report named no instrument. The WHO document located on heavy-metal and contaminant limits for herbal medicines is the 2007 guideline cited here, but no joint FAO/WHO instrument was identified, and the item is left as the report described it with year null."
+    searches:
+      - "WHO benchmarks for the training of Unani medicine 2022"
+      - "WHO 2010 \"Benchmarks for training in traditional / complementary and alternative medicine\" Unani series Ayurveda Naturopathy Nuad Thai Tuina"
+      - "WHO guidelines for assessing quality of herbal medicines with reference to contaminants and residues 2007 heavy metals limits"
+  - path: education_and_licensure.degree_programs
+    outcome: corrected
+    field:
+      status: filled
+      value: "Pakistan: Bachelor of Eastern Medicine and Surgery (BEMS) and the Fazil-ut-Tibb wal Jarahat (FTJ) diploma. Iran: TPM PhD. South Africa: Bachelor of Complementary Medicine (Unani Tibb) at the University of the Western Cape School of Natural Medicine. India: National Institute of Unani Medicine, Bengaluru (autonomous postgraduate teaching and research institute under the Ministry of AYUSH); Jamia Hamdard (deemed university)."
+      citations:
+        - source: "National Council for Tibb, Recognized BEMS Departments and Process of Registration (FTJ) — https://nct.gov.pk/NCT-Educations/Recognized-BEMS-Departments"
+          type: institutional
+          citation_strength: direct
+        - source: "Ettehadi F et al., J Educ Health Promot, 2025 — https://pmc.ncbi.nlm.nih.gov/articles/PMC12668346/"
+          type: primary-study
+          citation_strength: direct
+        - source: "University of the Western Cape, BCM Complementary Medicine: Unani Tibb — https://www.uwc.ac.za/study/all-areas-of-study/schools/school-of-natural-medicine/programmes/1848 ; School of Natural Medicine overview — https://www.uwc.ac.za/study/all-areas-of-study/schools/school-of-natural-medicine/overview"
+          type: institutional
+          citation_strength: direct
+        - source: "National Institute of Unani Medicine, Overview — https://www.nium.in/overview.html"
+          type: institutional
+          citation_strength: direct
+        - source: "Jamia Hamdard, School of Unani Medical Education and Research — https://www.jamiahamdard.ac.in/school-of-unani-medical-education-and-research466"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrections: BEMS stands for Bachelor of Eastern Medicine and Surgery. NCT's diploma is Fazil-ut-Tibb wal Jarahat (FTJ), not a generic 'diploma in Tibb-e-Unani'. The UWC programme is named as the BCM (Unani Tibb). NIUM describes itself as an autonomous postgraduate teaching and research institute working since 2004, not as 'apex'. Jamia Hamdard has held deemed-university status since 1989. The NCT site returned server errors, and its programme names were read from search-index excerpts of nct.gov.pk pages. The Expat Focus citation is replaced."
+    searches:
+      - "nct.gov.pk BEMS Bachelor of Eastern Medicine and Surgery affiliated colleges diploma Fazil-ut-Tibb registration tabibs"
+      - "National Council for Tibb functions registration of Tabibs \"Fazil-ut-Tibb\" diploma four year examination NCT Islamabad"
+      - "University of the Western Cape School of Natural Medicine Unani-Tibb programme Bachelor of Complementary Medicine"
+      - "National Institute of Unani Medicine Bengaluru autonomous Ministry of Ayush postgraduate apex institute established 2004"
+      - "Jamia Hamdard deemed university 1989 School of Unani Medicine BUMS"
+      - "Iran Ministry of Health traditional Persian medicine PhD program established 2007 four-year first students faculties"
+  - path: education_and_licensure.licensure_requirements
+    outcome: corrected
+    field:
+      status: filled
+      value: "India: the NCISM Act 2020 provides a uniform National Eligibility-cum-Entrance Test for undergraduate admission (s. 14) and a National Exit Test required for a licence to practise and for enrolment in the State or National Register (s. 15). Pakistan: NCT registers tabibs/hakims holding the FTJ diploma or a BEMS degree. South Africa: AHPCSA Unani-Tibb register (three-year Basic Medical Sciences plus two-year Unani-Tibb specialisation, as offered at UWC)."
+      citations:
+        - source: "National Commission for Indian System of Medicine Act, 2020 (No. 14 of 2020), ss. 14-15 — https://www.indiacode.nic.in/handle/123456789/15622"
+          type: statute
+          citation_strength: direct
+        - source: "National Council for Tibb, Process of Registration — https://nct.gov.pk/NCT-Educations/Process-of-Registration-"
+          type: institutional
+          citation_strength: direct
+        - source: "AHPCSA, Registration requirements (Regulations R.127 of 12 February 2001) — https://ahpcsa.co.za/registration-requirements/"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "The claim holds; the correction adds precision. It is the NCISM Act itself, not NCISM as a body, that provides for NEET (s. 14) and NExT (s. 15). Under s. 15, NExT is a licensing requirement to become operational within three years of the Act by central notification. Its operational status is not verified here. The South African qualification requirement is taken from the AHPCSA registration page as read in search-index excerpts, because the site returned server errors. The Act text was read through a verbatim reproduction (taxguru.in). The Wikipedia citation is replaced."
+    searches:
+      - "National Commission for Indian System of Medicine Act 2020 gazette text section 14 NEET exit examination"
+      - "nct.gov.pk BEMS Bachelor of Eastern Medicine and Surgery affiliated colleges diploma Fazil-ut-Tibb registration tabibs"
+      - "ahpcsa.co.za Unani-Tibb \"Regulation No.127\" OR \"R127\" 2001 Unani-Tibb therapists"
+  - path: education_and_licensure.biomedical_content_in_curriculum
+    outcome: corrected
+    field:
+      status: filled
+      value: "The current NCISM-prescribed BUMS curriculum includes Tashreeh-ul-Badan (anatomy), Manafe-ul-Aza (physiology), Mahiyat-ul-Amraz (pathology) and Ilmul Jarahat (surgery). Modern medicine and science were part of the syllabus at the Delhi Tibbia school associated with Ajmal Khan. Integrated MBBS-BAMS-type courses are disputed (field 16)."
+      citations:
+        - source: "NCISM, Course curriculum for First Professional BUMS — https://ncismindia.org/NCISM_I%20BUMS_UNIUG-TB.pdf ; Second Professional BUMS — https://ncismindia.org/NCISM_II%20BUMS%20%20UNIUG-TST.pdf"
+          type: institutional
+          citation_strength: direct
+        - source: "Directorate of AYUSH, Govt of NCT of Delhi, Ayurvedic and Unani Tibbia College and Hospital — https://ayush.delhi.gov.in/ayush/ayurvedic-and-unani-tibbia-college-and-hospital"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Narrowed. The present-day inclusion of anatomy, physiology, pathology and surgery is confirmed from NCISM curricula. The claim that these subjects entered 'from the Ajmal Khan reforms onward' is supported only by the Delhi government's general statement that modern medicine and science were part of the Tibbia school's syllabus. No scholarly work was located that dates the incorporation subject by subject. Attewell (Asian Medicine 1(2), 2005) is reported to say that the Lucknow Azizi school also planned practical instruction in surgery and anatomy, but this was not checked in the text. The integrated MBBS-BAMS dispute concerns Ayurveda and is left as a pointer to field 16. It was not verified here."
+    searches:
+      - "NCISM BUMS minimum standard requirements curriculum Tashreeh-ul-Badan anatomy Manafe-ul-Aaza physiology Mahiyat-ul-Amraz pathology Ilmul Jarahat surgery"
+      - "Tibbiya College Delhi Ajmal Khan curriculum anatomy dissection surgery western medicine taught Unani students history"
+      - "\"Science, Institution, Colonialism: Tibbiya College of Delhi, 1889–1947\" author abstract"
