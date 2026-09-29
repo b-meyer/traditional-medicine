@@ -1,0 +1,185 @@
+system: unani
+pass: verify
+updates:
+  - path: theoretical_primitives.nosology
+    outcome: confirmed
+    field:
+      status: filled
+      value: "Simple vs. material su' al-mizaj. Disease categories include, e.g., Waja' al-Mafasil (roughly joint/rheumatoid disease). Patients and drugs are classified by temperament rather than by pathophysiology."
+      citations:
+        - source: "National Health Portal of India, 'Waja-ul-Mafaasil (Arthritis)' (https://www.nhp.gov.in/waja-ul-mafaasil-arthritis_mtl)"
+          type: institutional
+          citation_strength: direct
+        - source: "Concept of Waja al-Mafasil or Hudar (Rheumatoid Arthritis), IJCRT 2024 (https://www.ijcrt.org/papers/IJCRT2408561.pdf)"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "CCRUM, Fundamentals of Unani Medicine (https://ccrum.res.in/writereaddata/UploadFile/Fundamentals%20of%20Unani%20Medicine%20637339132286554782.pdf)"
+          type: institutional
+          citation_strength: direct
+      register: emic
+      notes: "Sources distinguish su-e-mizaj sada (derangement without humoral involvement) from su-e-mizaj maddi (involving humours); Waja-ul-Mafasil covers all joint disorders, with Waja-ul-Mafasil khas (small joints of the hand) corresponding to rheumatoid arthritis, consistent with 'roughly joint/rheumatoid'. CCRUM classifies drugs by temperament and degree. 'Rather than by pathophysiology' is the report's own characterisation. Pages were egress-blocked; verified from search-indexed text of the cited pages."
+    searches: ["Waja' al-Mafasil rheumatoid arthritis Unani su-e-mizaj sada maddi simple material", "Unani drugs graded temperament four degrees potency mufradat murakkabat kushta incinerated metal"]
+  - path: theoretical_primitives.relation_to_biomedical_anatomy
+    outcome: unverifiable
+    searches: ["Waja' al-Mafasil rheumatoid arthritis Unani su-e-mizaj sada maddi simple material", "J48 decision tree mizaj temperament classification Unani 68 subjects"]
+  - path: theoretical_primitives.translation_programs
+    outcome: unverifiable
+    searches: ["Salimuzzaman Siddiqi Unani medicinal plants research Rauwolfia ajmaline Hakim Ajmal Khan laboratory", "J48 decision tree mizaj temperament classification Unani 68 subjects", "Identification of Mizaj (Temprament) Based on Tibbi Fundamentals using Classification as Tool authors journal year"]
+  - path: diagnostics.methods
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - name: nabz (pulse)
+          examines: "ten features: size of expansion, force, duration of movement and rest, condition of vessel wall, palpation, volume, equality/inequality, rhythm and weight of pulse"
+        - name: baul (urine)
+          examines: colour, turbidity, sediment, odour
+        - name: baraz (stool)
+          examines: stool
+        - name: mizaj assessment
+          examines: global synthesis of physique, skin, hair, sleep, digestion, psychological disposition and quality of wastes
+        - name: history
+          examines: "patient history and physical examination, guided by the Ten Fundamental Categories (Ajnas 'Ashara)"
+      citations:
+        - source: "Central Council for Research in Unani Medicine (CCRUM), Ministry of AYUSH, 'Method of Diagnosis' (https://ccrum.res.in/UserView/index?mid=1446)"
+          type: institutional
+          citation_strength: direct
+      register: emic
+      notes: "Corrected: CCRUM lists ten pulse features (size of expansion, force, duration of movement and rest, vessel wall, palpation, volume, equality/inequality, rhythm, weight) rather than 'rate, rhythm, volume, character'; history is paired with physical examination guided by Ajnas 'Ashara. CCRUM names history, physical examination, pulse and inspection of urine and stool as the diagnostic set, and temperament assessment on fixed Unani parameters. Urine and mizaj sub-details are carried over from the report and were not individually rechecked against CCRUM text. CCRUM pages were egress-blocked; verified from search-indexed text."
+    searches: ["Unani diagnosis nabz baul baraz pulse urine stool examination review", "CCRUM method of diagnosis Unani pulse urine stool temperament", "Unani diagnosis history taking nabz baul baraz mizaj review article PMC"]
+  - path: diagnostics.reliability_evidence
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - study: "Mojahedi et al., mizaj self-report scale validation (Iranian Red Crescent Medical Journal 2014;16(3):e15924)"
+          statistic: weighted κ
+          value: "0.40-0.82 across the 39 retained items (Cronbach's α 0.71); cut-off sensitivity/specificity: warm 65%/93%, cold 52%/97%, dry 53%/67%, wet 53%/76%"
+          design: questionnaire-validation
+          population: volunteers (health status not stated in abstract)
+          n_raters: null
+          n_subjects: "35 (test-retest); 52 (expert-classified for cut-offs)"
+          target: individual questionnaire items (single items of mizaj scale)
+          citation: "Mojahedi M, et al. Reliability and Validity Assessment of Mizaj Questionnaire: A Novel Self-report Scale in Iranian Traditional Medicine. Iran Red Crescent Med J 2014;16(3):e15924 (https://www.ircmj.com/article_199956.html)"
+        - study: Expert-vs-expert mizaj agreement, three Persian-medicine specialists
+          statistic: ICC
+          value: 0.62 (CI 0.53-0.73) warmness-coldness; 0.64 (CI 0.56-0.72) wetness-dryness
+          design: clinician-vs-clinician
+          population: healthy volunteers
+          n_raters: 3
+          n_subjects: 150
+          target: constitutional type on each axis (warm-cold; wet-dry)
+          citation: "Mozaffarpur SA, Saghebi R, Khafri S, Mojahedi M. An Assessment of the Agreement between Persian Medicine Experts on Mizaj Identification. Traditional & Integrative Medicine 2017;2(3):113-118 (https://jtim.tums.ac.ir/index.php/jtim/article/download/103/101)"
+        - study: Agreement between clinical judgment and standardized questionnaires (SMQ, MMQ) in mizaj assessment, Shiraz E-Medical Journal
+          statistic: Cohen κ (reported as kappa)
+          value: "highest 0.512 for hotness (clinical vs SMQ; 95% CI 0.422-0.602) and for coldness (clinical vs MMQ; 95% CI 0.368-0.656); lowest 0.081 for balance in dryness/wetness (95% CI -0.023 to 0.185); questionnaire-vs-questionnaire 0.132-0.366"
+          design: instrument-vs-expert
+          population: ~350 healthcare workers (health status not stated)
+          n_raters: null
+          n_subjects: ~350
+          target: mizaj category on each quality (hotness, coldness, dryness/wetness balance)
+          citation: "[S3] Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj) Assessment in Persian Medicine — https://brieflands.com/journals/semj/articles/168654"
+        - study: Inter-rater judgement analysis for item selection, Mizaij-i-Insani questionnaire (Bangladesh Journal of Medical Science)
+          statistic: not reported in the report
+          value: null
+          design: questionnaire-validation
+          population: not stated
+          n_raters: null
+          n_subjects: null
+          target: questionnaire item selection for mizaj determination
+          citation: "[S4] Inter-Rater Judgement analysis for Item Selection in the Development of the Questionnaire to Determine Mizaij-i-Insani | Bangladesh Journal of Medical Science — https://www.banglajol.info/index.php/BJMS/article/view/72165"
+        - study: J48 decision-tree mizaj classification (Indian)
+          statistic: not reported in the report
+          value: null
+          design: software-vs-clinician
+          population: not stated
+          n_raters: null
+          n_subjects: 68
+          target: constitutional type (mizaj)
+          citation: "Farooque MM, Junaid SA, Sarkhawas F. Identification of Mizaj (Temprament) Based on Tibbi Fundamentals using Classification as Tool. National Conference on Data Mining, Pune, 2011:94-97 (https://www.academia.edu/75522117/Identification_of_Mizaj_Temprament_Based_on_Tibbi_Fundamentals_using_Classification_as_Tool)"
+      citations:
+        - source: "Mojahedi M, et al. Iran Red Crescent Med J 2014;16(3):e15924 (https://www.ircmj.com/article_199956.html)"
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+        - source: "Mozaffarpur SA, Saghebi R, Khafri S, Mojahedi M. Traditional & Integrative Medicine 2017;2(3):113-118 (https://jtim.tums.ac.ir/index.php/jtim/article/download/103/101)"
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+        - source: "[S3] Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj) Assessment in Persian Medicine — https://brieflands.com/journals/semj/articles/168654"
+          type: primary-study
+          citation_strength: direct
+        - source: "[S4] Inter-Rater Judgement analysis for Item Selection in the Development of the Questionnaire to Determine Mizaij-i-Insani — https://www.banglajol.info/index.php/BJMS/article/view/72165"
+          type: primary-study
+          citation_strength: direct
+        - source: "Farooque MM, Junaid SA, Sarkhawas F. National Conference on Data Mining, Pune, 2011:94-97 ([S2], https://www.academia.edu/75522117/Identification_of_Mizaj_Temprament_Based_on_Tibbi_Fundamentals_using_Classification_as_Tool)"
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+      register: biomedical-evidence
+      notes: "Corrected: the ICC study (3 raters, 150 subjects) was misattributed to [S2]; its source is Mozaffarpur et al. 2017, and its subjects were healthy volunteers. [S2] is Farooque et al. 2011, the J48 decision-tree study on 68 subjects, so it now sits on that entry. Mojahedi 2014 values confirmed against the abstract; population and subject counts filled from it. S3 and S4 entries carried over unchanged and not re-verified in this pass. Values come from different designs and must not be compared or pooled."
+    searches: ["Mojahedi 2014 Iranian Red Crescent Medical Journal mizaj questionnaire validity reliability e15924", "intraclass correlation three Persian medicine specialists temperament 150 0.62 warmness coldness 0.64 wetness dryness", "Traditional & Integrative Medicine 2017 Vol 2 No 3 agreement Persian medicine experts Mizaj identification 150 healthy volunteers ICC", "Mozaffarpur Saghebi Khafri Mojahedi An Assessment of the Agreement between Persian Medicine Experts on Mizaj Identification", "Identification of Mizaj (Temprament) Based on Tibbi Fundamentals using Classification as Tool authors journal year", "J48 decision tree mizaj temperament classification Unani 68 subjects"]
+  - path: modalities.items
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - name: Ilaj bil tadbeer (regimenal therapy)
+          native_category: ilaj bil tadbeer
+          tags: [regimenal, procedural, manual, thermal]
+          description: "About 30 regimens in classical literature, including fasd (venesection), hijama (wet and dry cupping), ta'liq al-'alaq (leech therapy), ishal (purgation), qay' (emesis), idrar (diuresis), huqna (enema), ta'riq (diaphoresis), riyazat (exercise), dalk (massage), hammam (bath), natul (irrigation), inkibab (steam) and takmid (fomentation). The aim is to evacuate morbid humours and restore balance."
+        - name: Ilaj bil ghiza (dietotherapy)
+          native_category: ilaj bil ghiza
+          tags: [dietary]
+          description: "Considered the simplest and most natural approach. Diet is adjusted in quantity and quality to temperament and illness (e.g. a low-roughage, nutrient-rich diet for fever)."
+        - name: Ilaj bil dawa (pharmacotherapy)
+          native_category: ilaj bil dawa
+          tags: [herbal, mineral-metal, animal-derived]
+          description: "Over 2,000 medicines of herbal, mineral and animal origin, used singly (mufradat) or compounded (murakkabat). Graded by temperament and four degrees of potency. Includes kushta, incinerated metal powders."
+        - name: Ilaj bil yad (surgery)
+          native_category: ilaj bil yad
+          tags: [surgical]
+          description: "Historically a last resort and generally outside the hakim's routine practice. The medieval surgical heritage runs through al-Zahrawi."
+      citations:
+        - source: "Ansari AP, et al. 'Ilāj bi'l-Tadbīr (regimenal therapy): a core mode of Unani treatment. Journal of Complementary and Integrative Medicine 2021;18(3):449-458. doi:10.1515/jcim-2020-0048"
+          type: tertiary-review
+          citation_strength: direct
+          claim_match: matches
+        - source: "Encyclopaedia Britannica, 'Unani medicine' (https://www.britannica.com/science/Unani-medicine)"
+          type: reference-work
+          citation_strength: direct
+          claim_match: matches
+        - source: "CCRUM, Fundamentals of Unani Medicine (https://ccrum.res.in/writereaddata/UploadFile/Fundamentals%20of%20Unani%20Medicine%20637339132286554782.pdf)"
+          type: institutional
+          citation_strength: direct
+        - source: "Encyclopaedia Britannica, 'Abu al-Qasim al-Zahrawi' (Al-Tasrif, section on surgery)"
+          type: reference-work
+          citation_strength: direct
+      register: emic
+      notes: "Ansari et al. 2021 confirms the four modes, 'nearly 30 regimens' in classical literature, the listed procedures and the evacuation/humoural-stability aim. Britannica confirms dietotherapy as the simplest and most natural course, over 2,000 medicines of herbal, mineral and animal origin, and surgery as a last resort typically beyond the hakim. CCRUM confirms temperament grading in four degrees, mufradat/murakkabat and kushta. The fever-diet example was not independently located. Pages were egress-blocked; verified from search-indexed text."
+    searches: ["Journal of Complementary and Integrative Medicine regimenal therapy Unani ilaj bil tadbeer review fasd hijama taleeq", "Ilāj bi'l-Tadbīr (regimenal therapy): a core mode of Unani treatment authors abstract", "Britannica Unani medicine dietotherapy simplest pharmacotherapy 2,000 drugs surgery", "Britannica Unani pharmacotherapy 2,000 medicines herbal mineral animal origin", "Unani drugs graded temperament four degrees potency mufradat murakkabat kushta incinerated metal", "Britannica Abu al-Qasim al-Zahrawi Kitab al-Tasrif surgery treatise"]
+  - path: materia_medica.pharmacological_framework
+    outcome: unverifiable
+    searches: ["Speziale \"the field in which the contacts with the local tradition determined the most sensible renewal\"", "Fabrizio Speziale Indo-Persian medicine pharmacology Indian materia medica incorporated local tradition renewal", "Speziale Indo-Persian medicine pharmacology local tradition Unani Indian drugs incorporated renewal article", "\"most sensible renewal\" Speziale Indo-Muslim physicians Iranica pharmacology"]
+  - path: materia_medica.flagship_agents
+    outcome: confirmed
+    field:
+      status: incidental
+      value: "Named in passing: Kushtae Sadaf; Jawarish Shahi; lead compounds Usrub, Isfidaj, Suranj, Murdar sang, Ithmid; Kushta Sammulfar (arsenic trioxide); surma (ithmid/galena)."
+      citations:
+        - source: "Mustehasan, Azhar M. Usrub (lead) and its compounds used in Unani Medicine: Overview. Asian Journal of Research in Chemistry 2022;15(5):358-366 (https://www.ajrconline.org/AbstractView.aspx?PID=2022-15-5-10)"
+          type: tertiary-review
+          citation_strength: direct
+          claim_match: matches
+        - source: "Evaluation of Chronic Toxicity of Kushta Sammulfar (Calx of Arsenic Trioxide). Journal of Xenobiotics 2013;3(1):e3 (https://www.mdpi.com/2039-4713/3/1/e3)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Comparative elemental analysis of Kushtae Sadaf, a Unani formulation. International Journal of Green Pharmacy (https://www.greenpharmacy.info/index.php/ijgp/article/view/701)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Jawarish Shahi: A special dosage form of herbal formulations for functional gastrointestinal disorders in Unani medicine - A comprehensive review. Journal of Ethnopharmacology 2022 (PMID 35490900)"
+          type: tertiary-review
+          citation_strength: direct
+      register: emic
+      notes: "Mustehasan & Azhar 2022 names Usrub, Aabar, Isfidaj (white lead), Suranj (red lead oxide), Murdar sang (litharge) and Ithmid (lead sulfide, i.e. galena). Kushta Sammulfar as calx of arsenic trioxide, Kushtae Sadaf and Jawarish Shahi each confirmed as Unani preparations in their own literature. The 'surma' gloss rests on Ithmid = lead sulfide and was not separately sourced. Status carried as incidental on the report's 'named in passing'; confirm against the existing leaf status."
+    searches: ["Mustehasan Azhar Asian Journal of Research in Chemistry 2022 lead Unani Usrub Isfidaj Murdar sang", "\"Usrub\" lead compounds Unani Mustehasan Azhar Kushta Sammulfar OR \"Jawarish Shahi\" OR \"Kushta Sadaf\"", "\"Kushta Sammulfar\" arsenic Unani", "\"Jawarish Shahi\" \"Kushtae Sadaf\" Unani lead"]

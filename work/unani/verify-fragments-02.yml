@@ -1,0 +1,190 @@
+system: unani
+pass: verify
+updates:
+  - path: canon_and_transmission.key_figures
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - name: Hippocrates / Hippocratic authors
+          dates: 5th-4th c. BCE
+          role: theoretical base
+        - name: Galen
+          dates: 129-c.216 CE
+          role: systematizer; theoretical base
+        - name: Hunayn ibn Ishaq
+          dates: 808-873
+          role: Nestorian Christian physician-translator of Galen into Syriac/Arabic
+        - name: Abbasid caliphs
+          dates: 8th-10th c.
+          role: patrons of the translation movement (political-ideological motives per Gutas)
+        - name: Mankah al-Hindi
+          dates: 8th c.
+          role: Indian physician at the Abbasid court translating Sanskrit medical texts
+        - name: al-Razi (Rhazes)
+          dates: 865-925
+          role: author of al-Hawi
+        - name: Ali ibn al-Abbas al-Majusi (Haly Abbas)
+          dates: d. 994
+          role: author of Kamil al-sina'a al-tibbiyya
+        - name: Ibn Sina (Avicenna)
+          dates: 980-1037
+          role: author of al-Qanun fi al-Tibb
+        - name: Fakhr al-Din al-Razi
+          dates: not stated
+          role: commentator/engager with the Qanun (per Fancy's study)
+        - name: Nizams of Hyderabad
+          dates: not stated
+          role: patrons of Unani (e.g. Nizamia Tibbi College)
+      citations:
+        - source: "Encyclopaedia Britannica, 'Hunayn ibn Ishaq' (b. 808 al-Hirah, d. 873 Baghdad; translator of Galen, Hippocrates and others into Syriac and Arabic)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Encyclopaedia Britannica, 'Galen' (129-c.216 CE)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Dimitri Gutas, Greek Thought, Arabic Culture: The Graeco-Arabic Translation Movement in Baghdad and Early 'Abbasid Society (2nd-4th/8th-10th centuries). London: Routledge, 1998"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Why Translate Science? (Brill, 2022), ch. 5 'Why Do We Translate? Arabic Sources on Translation' (citing Ibn al-Nadim: Mankah al-Hindi, of the circle of Ishaq ibn Sulayman al-Hashimi, translated from the Indian language into Arabic)"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Peter Adamson, 'Abu Bakr al-Razi', Stanford Encyclopedia of Philosophy (865-925 CE / 251-313 AH)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Encyclopaedia Iranica, "'ALI B. 'ABBAS MAJUSI'", vol. I fasc. 8, pp. 837-838 (d. c. 384/994; author of Kamel al-sena'at al-tebbiya / al-Maleki)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Encyclopaedia Britannica, 'Avicenna' and 'The Canon of Medicine' (980-1037)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Nahyan Fancy, 'Verification and Utility in the Arabic Commentaries on the Canon of Medicine: Examples from the Works of Fakhr al-Din al-Razi (d. 1210) and Ibn al-Nafis (d. 1288)', Journal of the History of Medicine and Allied Sciences 75(4), 2020"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Government Nizamia Tibbi College, Hyderabad, official site, 'About' (established 1938 by Nizam VII, Mir Osman Ali Khan)"
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "All entries hold against the cited sources. Al-Razi's dates follow the SEP (some older sources give c. 854); Majusi's death date is approximate (c. 384/994 per Iranica). Hippocratic dating is the conventional range. Fakhr al-Din al-Razi's dates were left as 'not stated' because the report gave none; Fancy 2020 gives d. 1210. The Nizamia Tibbi College patronage is 20th-century (1938, Nizam VII), so this entry is a revival-era figure that codebook field 9 would place under revival key_figures rather than here. Flagged, not moved."
+    searches:
+      - "Encyclopaedia Iranica Hunayn ibn Ishaq translations Galen 129 works Syriac Arabic"
+      - "Hunayn ibn Ishaq Risala 129 titles Galen translated about 100 Syriac Arabic 808 873"
+      - "Iranica Majusi Ali b. Abbas Kamil al-sinaa died 982-994"
+      - "Iranica Razi Abu Bakr Mohammad Zakariya born 865 died 925 Hawi"
+      - "RAZI, ABU BAKR MOHAMMAD Encyclopaedia Iranica born 251/865 died 313/925"
+      - "Mankah al-Hindi Indian physician Harun al-Rashid translated Sanskrit Susruta Arabic"
+      - "Gutas Greek Thought, Arabic Culture 1998 Graeco-Arabic translation movement Abbasid political ideology"
+      - "Nahyan Fancy Fakhr al-Din al-Razi commentary Canon Qanun Sharh al-Kulliyyat"
+      - "Nizamia Tibbi College Hyderabad founded Nizam Osman Ali Khan year"
+  - path: canon_and_transmission.dated_events
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - label: Hippocratic corpus composed
+          date: 5th-4th c. BCE
+          description: Theoretical base of the humoral tradition.
+        - label: Galen's systematization
+          date: 129-c.216 CE
+          description: Galen's systematizing work.
+        - label: Abbasid translation movement
+          date: 8th-10th c.
+          description: "Greek material translated into Syriac and Arabic, centred on Baghdad. Traditional accounts derive it from an earlier Sassanid medical academy at Gondishapur/Jundishapur, but modern historians dispute that such a school existed or played that role (Dols 1987)."
+        - label: Mankah al-Hindi at Abbasid court
+          date: 8th c.
+          description: Indian physicians translating Sanskrit medical texts.
+        - label: Hunayn ibn Ishaq's Galen translations
+          date: 9th c. (808-873)
+          description: "Hunayn's Risala lists 129 Galenic titles, of which he himself translated about 100 into Syriac and/or Arabic."
+        - label: Composition of the Qanun
+          date: c. 1012-1025
+          description: "Ibn Sina's Canon was begun c. 1012-13 (403 AH, Jurjan), Book 1 was finished before 405/1015, and the whole was completed by 1025 in Hamadan, having been written across Jurjan, Rayy and Hamadan."
+        - label: Aga Khan Museum Qanun Book 5 manuscript
+          date: 1052 CE
+          description: "Manuscript AKM510, dated 444 AH/1052 CE, which the museum describes as probably the earliest extant manuscript of volume 5 of the Canon."
+        - label: Arabic commentaries on the Qanun
+          date: 12th-14th c.
+          description: More than two dozen Arabic commentaries.
+        - label: Persian translation of Ayurvedic sources
+          date: 14th c. onward
+          description: Large movement translating Sanskrit Ayurvedic sources into Persian (Speziale).
+        - label: Qanun as Latin-European textbook
+          date: until the early 17th c.
+          description: "The Canon remained a principal text in European, especially Italian, university medical teaching through the 16th and early 17th centuries."
+      citations:
+        - source: "Encyclopaedia Britannica, 'Hunayn ibn Ishaq' (129 Galenic titles enumerated in the Risala, about 100 translated by Hunayn himself)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Dimitri Gutas, Greek Thought, Arabic Culture. Routledge, 1998"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Michael W. Dols, 'The Origins of the Islamic Hospital: Myth and Reality', Bulletin of the History of Medicine 61, 1987"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Why Translate Science? (Brill, 2022), ch. 5 (Ibn al-Nadim on Mankah al-Hindi)"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Encyclopaedia Iranica, 'AVICENNA ii. Biography' (Jorjan 403/1013; Book 1 of the Qanun before 405/1015; Ray; Hamadan 405/1015-c.415/1024)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Encyclopaedia Britannica, 'The Canon of Medicine' (completed 1025)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Aga Khan Museum, collection record AKM510, Qanun fi'l-Tibb, Volume 5 (dated AH 444/1052 CE)"
+          type: institutional
+          citation_strength: direct
+        - source: "Nahyan Fancy, 'Verification and Utility in the Arabic Commentaries on the Canon of Medicine', Journal of the History of Medicine and Allied Sciences 75(4), 2020"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Fabrizio Speziale, Culture persane et medecine ayurvedique en Asie du Sud. Leiden/Boston: Brill, 2018 (Islamic Philosophy, Theology and Science 102)"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Nancy G. Siraisi, Avicenna in Renaissance Italy: The Canon and Medical Teaching in Italian Universities after 1500. Princeton University Press, 1987"
+          type: historical-monograph
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Four changes. (1) Gondishapur: the report stated as fact that the translation movement drew on a Sassanid academy at Gondishapur, but Dols 1987 and later historians dispute that a medical school existed there, so the claim is now given as the traditional account and marked contested. (2) Hunayn: the 129 titles are those listed in his Risala; about 100 were his own translations. (3) AKM510: the museum describes it as 'probably the earliest extant manuscript of volume 5', which is narrower than 'earliest dated extant manuscript copy'. (4) Latin textbook: Siraisi documents the Canon's central teaching role into the early 17th century, chiefly in Italy, which is narrower than 'dominated Latin-European medical education until the 17th c.' The Speziale entry is now sourced to the Brill 2018 monograph, which dates the Persian translation movement of Ayurvedic sources from the 14th century onward, replacing the academia.edu profile [S31]. The Qanun composition dates are kept; 403 AH falls in 1012-13 CE."
+    searches:
+      - "Aga Khan Museum Canon of Medicine Book 5 1052 AKM510 earliest"
+      - "Hunayn ibn Ishaq Risala 129 titles Galen translated about 100 Syriac Arabic 808 873"
+      - "Avicenna Canon of Medicine composition Gorgan Rayy Hamadan begun completed 1025"
+      - "Iranica Avicenna Qanun began Jorjan continued Rayy completed Hamadan"
+      - "Avicenna x Medicine and Biology Iranica Qanun commentaries Latin universities until seventeenth century"
+      - "Siraisi Avicenna in Renaissance Italy Canon teaching Italian universities after 1500 Princeton 1987"
+      - "Speziale Culture persane et medecine ayurvedique en Asie du Sud Brill 2018 description"
+      - "Canon of Medicine Arabic commentaries twelfth to fourteenth centuries number Ibn al-Nafis Qutb al-Din Shirazi commentaries on Qanun"
+      - "Gondishapur Jundishapur medical academy myth Dols 1987 origins of Islamic hospital myth and reality"
+  - path: construct_debate.positions
+    outcome: unverifiable
+    searches:
+      - "Speziale Culture persane et medecine ayurvedique en Asie du Sud Brill 2018 description (confirmed the Speziale work, its year and its pre-colonial evidence base only)"
+      - "Attewell Refiguring Unani Tibb Orient Longman 2007 (existence and year only, via the ResearchGate review record; the book's argument could not be opened)"
+      - "Alavi Islam and Healing; Alavi IESHR 2005; Liebeskind Arguing Science 2002; Hardiman syndication; Sivaramakrishnan Old Potions New Bottles 2006; Quaiser; Stiedenroth Unani Medicine in the Making 2020; Iranian TPM critics (not reached: session web-search budget exhausted and publisher/journal domains blocked by the egress proxy)"
+  - path: construct_debate.report_adjudication
+    outcome: unverifiable
+    searches:
+      - "none applicable: the leaf records the source report's own verdict, and its only primary source is the report itself, which is outside this pass's permitted inputs"
+  - path: theoretical_primitives.constituents
+    outcome: unverifiable
+    searches:
+      - "WHO Benchmarks for training in Unani medicine 2010 pdf umoor tabiya arkan akhlat mizaj"
+      - "Benchmarks for training in Unani medicine temperament humours six essential medicatrix naturae"
+      - "fetch attempts on iris.who.int, who.int, ccrum.res.in (CCRUM 'Unani System of Medicine: The Science of Health and Healing' 2016) and britannica.com, all blocked by the egress proxy"
+  - path: theoretical_primitives.balance_logic
+    outcome: unverifiable
+    searches:
+      - "Unani asbab-e-sitta zaruriya su-e-mizaj sada su-e-mizaj maddi humours dam balgham safra sauda hot moist cold dry"
+      - "WHO Benchmarks for training in Unani medicine 2010 pdf umoor tabiya arkan akhlat mizaj"
+      - "fetch attempts on WHO, CCRUM and Britannica pages, all blocked by the egress proxy"
+  - path: theoretical_primitives.correspondence_system
+    outcome: unverifiable
+    searches:
+      - "Unani asbab-e-sitta zaruriya su-e-mizaj sada su-e-mizaj maddi humours dam balgham safra sauda hot moist cold dry"
+      - "Benchmarks for training in Unani medicine temperament humours six essential medicatrix naturae"
+      - "fetch attempts on WHO, CCRUM and Britannica pages, all blocked by the egress proxy"
+  - path: theoretical_primitives.etiology
+    outcome: unverifiable
+    searches:
+      - "Unani asbab-e-sitta zaruriya su-e-mizaj sada su-e-mizaj maddi humours dam balgham safra sauda hot moist cold dry"
+      - "Benchmarks for training in Unani medicine temperament humours six essential medicatrix naturae"
+      - "fetch attempts on WHO, CCRUM and Britannica pages, all blocked by the egress proxy; search snippets surfaced only journal and practitioner pages that could not be opened to confirm attribution"
