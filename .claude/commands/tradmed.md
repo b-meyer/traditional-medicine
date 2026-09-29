@@ -79,7 +79,9 @@ usually a mapper inventing keys. Do not continue.
 
 ## Pass 4 and pass 5 — gap and verify (run in parallel)
 
-Skip either pass if its worklist has no entries.
+Skip the gap pass if its worklist has no entries. The verify worklist comes in
+batches, `work/<system>/verify-worklist-NN.yml` (01, 02, …); if there are none,
+skip pass 5.
 
 Invoke `tradmed-gap` with exactly:
 
@@ -90,14 +92,19 @@ CODEBOOK: reference/codebook.md
 OUT: work/<system>/gap-fragments.yml
 ```
 
-Invoke `tradmed-verify` in parallel with exactly:
+For each verify batch, invoke a separate `tradmed-verify` in parallel with
+exactly:
 
 ```
 SYSTEM: <system>
-WORKLIST: work/<system>/verify-worklist.yml
+WORKLIST: work/<system>/verify-worklist-NN.yml
 CODEBOOK: reference/codebook.md
-OUT: work/<system>/verify-fragments.yml
+OUT: work/<system>/verify-fragments-NN.yml
 ```
+
+Launch the gap agent and every verify agent together. Each verify agent gets
+only its own batch; the isolation rule applies to each one individually. When
+resuming, skip only the batches whose fragments file already exists.
 
 ## Apply
 
@@ -109,7 +116,8 @@ Tell the user, briefly:
 
 - counts per status after merge, and how many leaves v1 filled
 - gap: found vs not_found
-- verify: confirmed, corrected, unverifiable
+- verify: confirmed, corrected, unverifiable, summed across batches, and how
+  many batches ran
 - anything rejected in `apply-log.md` — rejections mean an agent went off its
   worklist, which is worth knowing
 - which fields are `not_requested` or `incidental` after the merge. If

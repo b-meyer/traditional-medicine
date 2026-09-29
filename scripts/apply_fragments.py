@@ -4,17 +4,18 @@ Usage:  python scripts/apply_fragments.py <system>
 
 Reads   work/<system>/merged.yml
         work/<system>/gap-worklist.yml,    work/<system>/gap-fragments.yml
-        work/<system>/verify-worklist.yml, work/<system>/verify-fragments.yml
+        work/<system>/verify-worklist-NN.yml, work/<system>/verify-fragments-NN.yml
 Writes  work/<system>/final.yml
         work/<system>/apply-log.md
 
 Enforcement — the agents are told these rules; this script makes them binding:
   - A gap update is accepted only for a path on the gap worklist.
-  - A verify update is accepted only for a path on the verify worklist.
+  - A verify update is accepted only for a path on its own batch's worklist.
   - Anything else is rejected and logged, never applied.
 """
 
 import copy
+import glob
 import os
 import sys
 
@@ -24,12 +25,12 @@ GAP_OK = {"found", "not_found"}
 VERIFY_OK = {"confirmed", "corrected", "unverifiable"}
 
 
-def apply(doc, frag, allowed, outcomes, tag, log):
+def apply(doc, frag, allowed, outcomes, tag, log, worklist_name):
     applied = 0
     for u in frag.get("updates") or []:
         path, outcome = u.get("path"), u.get("outcome")
         if path not in allowed:
-            log.append(f"- REJECTED {tag} `{path}`: not on the {tag} worklist")
+            log.append(f"- REJECTED {tag} `{path}`: not on {worklist_name}")
             continue
         if outcome not in outcomes:
             log.append(f"- REJECTED {tag} `{path}`: unknown outcome {outcome!r}")
@@ -74,15 +75,24 @@ def main():
     doc = load(os.path.join(d, "merged.yml"))
     log = []
 
+    # (worklist, fragments) pairs. Gap is one pair; verify is one per batch,
+    # and each batch's agent may touch only its own batch's paths.
+    passes = [("gap", GAP_OK, [("gap-worklist.yml", "gap-fragments.yml")]),
+              ("verify", VERIFY_OK,
+               [(os.path.basename(w), os.path.basename(w).replace("worklist", "fragments"))
+                for w in sorted(glob.glob(os.path.join(d, "verify-worklist-*.yml")))])]
+
     counts = {}
-    for tag, outcomes in (("gap", GAP_OK), ("verify", VERIFY_OK)):
-        frag_path = os.path.join(d, f"{tag}-fragments.yml")
-        if not os.path.exists(frag_path):
-            log.append(f"- {tag}: no fragments file, skipped")
-            continue
-        worklist = load(os.path.join(d, f"{tag}-worklist.yml"))
-        allowed = {e["path"] for e in worklist.get("entries") or []}
-        counts[tag] = apply(doc, load(frag_path), allowed, outcomes, tag, log)
+    for tag, outcomes, pairs in passes:
+        for wl_name, frag_name in pairs:
+            frag_path = os.path.join(d, frag_name)
+            if not os.path.exists(frag_path):
+                log.append(f"- {tag}: no {frag_name}, skipped")
+                continue
+            worklist = load(os.path.join(d, wl_name))
+            allowed = {e["path"] for e in worklist.get("entries") or []}
+            counts[tag] = counts.get(tag, 0) + apply(doc, load(frag_path), allowed,
+                                                     outcomes, tag, log, wl_name)
 
     doc["source_report"] = "final"
     dump(doc, os.path.join(d, "final.yml"))
