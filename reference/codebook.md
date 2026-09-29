@@ -1,8 +1,14 @@
-# Traditional Medicine Comparative Codebook — v1.2
+# Traditional Medicine Comparative Codebook — v1.3
 
 A fixed extraction schema. Every system report is mapped to these fields, in this
 order, using this vocabulary. The point is commensurability: fields must be
 readable down the column across systems, not just down the page within one system.
+
+Changes in v1.3: enum additions only, no new leaves. Field 1 `relation` gains
+`absorbed_strand`; field 14's mechanism classes gain `pharmaceutical
+adulterant` and `indirect`; field 15 `kind` gains `descent` and `parallel`, so
+direct ancestry and similarity without contact are no longer entered as
+`exchange`.
 
 Changes in v1.2: two new statuses, `incidental` (covered in passing without
 being asked) and `deferred` (computed at synthesis, so `corroborated_by` no
@@ -127,9 +133,11 @@ schema errors meaningful.
 - `practitioner_estimate` — count, source, year
 - `system_boundary` — traditions the report treats as the same system, a
   variant, a sibling sharing its origins, or a grouping it is regulated under.
-  Per entry: `relation` (same_system_variant | sibling | regulatory_grouping),
-  and `fields_affected` — which fields in this extraction draw on content that
-  really belongs to that other tradition.
+  Per entry: `relation` (same_system_variant | sibling | absorbed_strand |
+  regulatory_grouping), and `fields_affected` — which fields in this
+  extraction draw on content that really belongs to that other tradition.
+  `absorbed_strand` is a distinct tradition this system has partly
+  incorporated while it also persists, or persisted, on its own terms.
 
 ### 2. canon_and_transmission
 - `foundational_texts` — title, approximate date, attributed author
@@ -266,20 +274,28 @@ Use the reviewers' own hedging. Do not sharpen a qualified conclusion.
 ### 14. safety
 - `adulteration_and_contamination` — with measured figures where given
 - `intrinsic_toxicity` — agents with documented harm, and the mechanism class
-  (heavy metal | plant toxin | procedural | interaction)
+  (heavy metal | plant toxin | procedural | interaction | pharmaceutical
+  adulterant | indirect). `pharmaceutical adulterant` is undeclared biomedical
+  drugs (steroids, antibiotics and the like) found in products; `indirect` is
+  harm from delayed, forgone or displaced biomedical care rather than from the
+  agent itself.
 - `documented_adverse_events` — case series, surveillance, with citations
 - `regulatory_actions_taken` — bans, import alerts, advisories, with dates
 - `evidence_borrowed_from_other_traditions` — flag any harm claim resting on
   data from a different system. These do not belong in this system's cell.
 
 ### 15. contact_and_borrowing
-Per relationship: `other_tradition`, `kind` (exchange | shared_descent |
-same_system_variant), `direction`, `period`, `evidence_type` (documented
-translation | textual attestation | structural parallel), `status`
-(demonstrated | contested | convergence). `shared_descent` is a common ancestor,
-not borrowing between the two; `same_system_variant` is a tradition the report
-treats as the same system under another name. For either, `direction` may be
-null.
+Per relationship: `other_tradition`, `kind` (exchange | descent |
+shared_descent | parallel | same_system_variant), `direction`, `period`,
+`evidence_type` (documented translation | textual attestation | structural
+parallel), `status` (demonstrated | contested | convergence). `exchange` is
+borrowing between contemporaries; `descent` is direct ancestry, where one
+tradition derives from the other, and `direction` runs ancestor → descendant;
+`shared_descent` is a common ancestor, not borrowing between the two;
+`parallel` is similarity with no contact the report can show, and pairs with
+status `convergence`; `same_system_variant` is a tradition the report treats as
+the same system under another name. For `shared_descent`, `parallel` and
+`same_system_variant`, `direction` may be null.
 - `corroborated_by` — status `deferred`, value null. Computed at synthesis,
   where the whole corpus is visible. Independent corroboration from the other
   end of an exchange is a finding, but a mapper seeing one report cannot

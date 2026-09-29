@@ -33,7 +33,8 @@ put them at the top of the analysis as a short section.
 - **Corroborated exchanges.** Compare `contact_and_borrowing` across systems.
   Where two extractions document the same exchange from opposite ends, record it
   as independently corroborated. Say what each end contributes. Keep the
-  relationship's `kind` distinct: a shared ancestor is not an exchange.
+  relationship's `kind` distinct: a shared ancestor, a direct ancestor and a parallel
+  without contact are none of them an exchange.
 
 ## Step two: the analysis
 
