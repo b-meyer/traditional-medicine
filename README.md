@@ -3,11 +3,12 @@
 Claude Code harness for the seven-pass playbook in `reference/playbook.md`.
 Each model pass runs in an isolated subagent; merges and patches are scripts.
 
-## Setup, once
+## Setup
 
-The six research reports are already in `reports/`, so there is nothing to
-export. Upload the zip to a GitHub repo, open Claude Code on it, and ask it to
-unzip and follow `BOOTSTRAP.md`. Then start a fresh session to run.
+The harness is installed at the repo root and the six research reports are
+already in `reports/`, so there is nothing to export or unpack. Start a fresh
+Claude Code session on the repo (agents and commands load at session start) and
+run `/tradmed unani`.
 
 ```
 reports/
