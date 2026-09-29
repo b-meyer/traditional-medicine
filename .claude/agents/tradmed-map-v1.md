@@ -33,7 +33,7 @@ order.
 ## YAML shape
 
 ```yaml
-schema_version: "1.5"
+schema_version: "<version from the codebook title, e.g. 1.6>"
 system: <slug from the report>
 source_report: v1
 fields:

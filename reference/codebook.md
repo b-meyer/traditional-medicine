@@ -1,8 +1,17 @@
-# Traditional Medicine Comparative Codebook — v1.5
+# Traditional Medicine Comparative Codebook — v1.6
 
 A fixed extraction schema. Every system report is mapped to these fields, in this
 order, using this vocabulary. The point is commensurability: fields must be
 readable down the column across systems, not just down the page within one system.
+
+Changes in v1.6: no new leaves and no enum changes; every change is a routing
+rule that turns a recurring judgment call into a stated answer, so a mapper
+need not report it as a misfit. Added the Misfit rule (below). `system_boundary`
+now says where a variant's evidence goes; `key_figures` excludes modern
+scholars; `correspondence_system` states what an absent wider system looks
+like; `diffusion_abroad` covers traditions with no single country of origin;
+`evidence_borrowed_from_other_traditions` (fields 5, 13) states when a modality
+is the tradition's own.
 
 Changes in v1.5: field 19 `economics` holds market and industry scale, which no
 earlier field could. `disruption.colonial_power` becomes a structured leaf with
@@ -151,6 +160,18 @@ and 9) are single leaves whose value is a list. A jurisdiction or study
 appearing in one report and not another is then a difference in content, not in schema — which is what keeps
 schema errors meaningful.
 
+## Misfit rule
+
+A **schema misfit** is report content for which no leaf, enum value or routing
+rule in this codebook gives a place. It is what a mapper lists in the fourth
+closing list. These are not misfits and belong in the leaf's `notes`: content
+that fits a leaf imperfectly, a leaf that suits this tradition loosely, a choice
+between two leaves the codebook already ranks, and a leaf holding one awkward
+entry. When a routing rule above answers the question, follow it and report
+nothing. Report a misfit only if you can name the content, name the field or
+enum value you would add, and say why no existing rule reaches it. Write `None`
+otherwise.
+
 ## Fields
 
 ### 1. identification
@@ -167,6 +188,10 @@ schema errors meaningful.
   system was selectively rebuilt from, where the report treats the relation as
   reconstruction rather than simple continuity. Whether that reconstruction
   amounts to invention is field 3's question, not this leaf's.
+  Evidence from a `same_system_variant` (texts, reliability studies, clinical
+  trials) is this tradition's own: record it in the ordinary leaf and list the
+  leaf in `fields_affected`. It is never `evidence_borrowed_from_other_traditions`,
+  which is only for a tradition the report itself treats as different.
 
 ### 2. canon_and_transmission
 - `foundational_texts` — title, approximate date, attributed author
@@ -177,7 +202,8 @@ schema errors meaningful.
 - `external_dating_anchors` — excavated manuscripts, dated copies, translations
 - `key_figures` — formative figures of the premodern tradition: authors,
   commentators, translators, patrons, with dates and role. Revival-era figures
-  belong in field 9.
+  belong in field 9. Modern scholars of the tradition belong in
+  `dating_and_authorship_disputes` or field 3's `positions`, never here.
 - `dated_events` — every dated premodern event (composition, translation,
   commentary, rediscovery), as in field 8
 
@@ -197,6 +223,11 @@ what each side's evidence base actually is.
 
 ### 4. theoretical_primitives
 - `constituents`, `balance_logic`, `correspondence_system`, `etiology`, `nosology`
+  `correspondence_system` is a wider cosmological or seasonal scheme the
+  tradition maps onto its constituents. Pairings inside the constituent scheme
+  (quality-humour-element and the like) go in `constituents` and
+  `balance_logic`. Where the tradition has no wider scheme, mark the leaf
+  `filled` with value `not_applicable` and say why in `notes`.
 - `relation_to_biomedical_anatomy` — where it maps and where it explicitly refuses
 - `translation_programs` — attempts to find biomedical correlates, with their
   stated maturity (established / preliminary / speculative)
@@ -280,7 +311,11 @@ colonized, a state never partitioned — mark it `filled` with value
 - `diffusion_abroad` — spread and institutionalization outside the country of
   origin: where, when, by what channel (emigration, diplomatic opening, training
   programs, commercial export). This is not revival; `revival_context` is about
-  the country of origin.
+  the country of origin. Where the tradition has no single country of origin,
+  "abroad" means outside every region the report places its home. Recognition
+  in neighbouring states belongs in field 10 `jurisdictions`, not here. Where
+  the report records no such spread, mark it `absent` or `not_requested` as
+  usual.
 - `dated_events` — as in field 8
 
 ### 10. legal_status
@@ -326,7 +361,10 @@ Use the reviewers' own hedging. Do not sharpen a qualified conclusion.
 - `evidence_borrowed_from_other_traditions` — clinical reviews or trials the
   report applies to this tradition that were conducted on a different one, or
   that cluster in another tradition's practice. List them here, not in
-  `reviews`.
+  `reviews`. This applies only where the report itself frames the evidence as
+  another tradition's. Where the report treats a modality as this tradition's
+  own but the reviews cover the modality in general or cluster elsewhere, put
+  them in `reviews` and say so in the entry's `methodological_limitations_noted`.
 
 ### 14. safety
 - `adulteration_and_contamination` — with measured figures where given
