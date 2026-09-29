@@ -1,0 +1,51 @@
+# Sources
+
+Numbered to match the [Sn] markers in the report.
+
+- **S1** — Huangdi Neijing (Wikipedia) — `en.wikipedia.org` — https://en.wikipedia.org/wiki/Huangdi_Neijing
+- **S2** — Huangdi Neijing - New World Encyclopedia — `www.newworldencyclopedia.org` — https://www.newworldencyclopedia.org/entry/Huangdi_Neijing
+- **S3** — Huangdi Neijing - wikidoc — `www.wikidoc.org` — https://www.wikidoc.org/index.php/Huangdi_Neijing
+- **S4** — (PDF) Early Chinese Medical Literature (Mawangdui Manuscripts) - Donald Harper (Editor) — `www.academia.edu` — https://www.academia.edu/107375676/Early_Chinese_Medical_Literature_Mawangdui_Manuscripts_Donald_Harper_Editor_
+- **S5** — Early Chinese Medical Literature: The Mawangdui Medical Manuscripts (review) — `www.researchgate.net` — https://www.researchgate.net/publication/236715921_Early_Chinese_Medical_Literature_The_Mawangdui_Medical_Manuscripts_review
+- **S6** — Full text of "Early Chinese Medical Literature (Mawangdui Manuscripts)" (Internet Archive) — `archive.org` — https://archive.org/stream/early-chinese-medical-literature-mawangdui-manuscripts-donald-harper/Early%20Chinese%20Medical%20Literature%20(Mawangdui%20Manuscripts)%20-%20Donald%20Harper%20(Editor)_djvu.txt
+- **S7** — Neither Donkey nor Horse (BiblioVault) — `www.bibliovault.org` — https://www.bibliovault.org/BV.landing.epl?ISBN=9780226169910
+- **S8** — Neither Donkey nor Horse: Medicine in the Struggle over China's Modernity, Lei (University of Chicago Press) — `press.uchicago.edu` — https://press.uchicago.edu/ucp/books/book/chicago/N/bo18610904.html
+- **S9** — (PDF) Poor Multi-Rater Reliability in Tcm Pattern Diagnoses and Variation in the Use of Symptoms to Obtain a Diagnosis (ResearchGate) — `www.researchgate.net` — https://www.researchgate.net/publication/262189211_Poor_Multi-Rater_Reliability_in_Tcm_Pattern_Diagnoses_and_Variation_in_the_Use_of_Symptoms_to_Obtain_a_Diagnosis
+- **S10** — Low Inter-Rater Reliability in Traditional Chinese Medicine for Female Infertility - Birkeflet, Laake, Vøllestad, 2011 — `doi.org` — https://doi.org/10.1136/aim.2010.003186
+- **S11** — Poor Multi-Rater Reliability in Tcm Pattern Diagnoses and Variation in the Use of Symptoms to Obtain a Diagnosis - Birkeflet, Laake, Vøllestad, 2014 — `doi.org` — https://doi.org/10.1136/acupmed-2013-010473
+- **S12** — Poor multi-rater reliability in TCM pattern diagnoses and variation in the use of symptoms to obtain a diagnosis - PubMed — `pubmed.ncbi.nlm.nih.gov` — https://pubmed.ncbi.nlm.nih.gov/24809366/
+- **S13** — Review: Andrews, The Making of Modern Chinese Medicine; Lei, Neither Donkey nor Horse - PMC — `pmc.ncbi.nlm.nih.gov` — https://pmc.ncbi.nlm.nih.gov/articles/PMC4986214/
+- **S14** — Chinese Medicine in Early Communist China, 1945-63: A Medicine of Revolution - Kim Taylor (Google Books) — `books.google.com` — https://books.google.com/books/about/Chinese_Medicine_in_Early_Communist_Chin.html?id=U6eaHe9qzcYC
+- **S15** — Acupuncture Anesthesia: a Proclamation from Chairman Mao (Part III) | Science-Based Medicine — `sciencebasedmedicine.org` — https://sciencebasedmedicine.org/acupuncture-anesthesia-a-proclamation-from-chairman-mao-part-iii/
+- **S16** — The quest for modernisation of traditional Chinese medicine — `www.ncbi.nlm.nih.gov` — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3689083/
+- **S17** — Review of Lei, Neither Donkey nor Horse | Social History of Medicine (Oxford Academic) — `academic.oup.com` — https://academic.oup.com/shm/article-abstract/28/4/947/2510508
+- **S18** — WHO traditional medicine strategy: 2014–2023 — `apps.who.int` — https://apps.who.int/gb/ebwha/pdf_files/EB152/B152_37-en.pdf
+- **S19** — Overview: The WHO Traditional Medicine Strategy 2014–2023 (Modern Ghana) — `www.modernghana.com` — https://www.modernghana.com/news/1456023/overview-the-who-traditional-medicine-strategy.amp
+- **S20** — Global traditional medicine strategy 2025-2034 (WHO) — `www.who.int` — https://www.who.int/publications/i/item/9789240113176
+- **S21** — Do certain countries produce only positive results? A systematic review of controlled trials - PubMed — `pubmed.ncbi.nlm.nih.gov` — https://pubmed.ncbi.nlm.nih.gov/9551280/
+- **S22** — Acupuncture for Chronic Pain: Update of an Individual Patient Data Meta-Analysis — `www.sciencedirect.com` — https://www.sciencedirect.com/science/article/pii/S1526590017307800
+- **S23** — Acupuncture for Chronic Pain: Individual Patient Data Meta-analysis - York Research Database — `pure.york.ac.uk` — https://pure.york.ac.uk/portal/en/publications/acupuncture-for-chronic-pain-individual-patient-data-meta-analysi/
+- **S24** — Acupuncture for the prevention of tension-type headache - Linde, K - 2016 | Cochrane Library — `www.cochranelibrary.com` — https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007587.pub2/full
+- **S25** — Acupuncture for tension-type headache | Cochrane — `www.cochrane.org` — https://www.cochrane.org/evidence/CD007587_acupuncture-tension-type-headache
+- **S26** — Acupuncture for chronic nonspecific low back pain - Mu, J - 2020 | Cochrane Library — `cochranelibrary.com` — https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013814/abstract?cookiesEnabled=
+- **S27** — Stimulation of the wrist acupuncture point PC6 for preventing postoperative nausea and vomiting - Lee, A - 2015 | Cochrane Library — `www.cochranelibrary.com` — https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003281.pub4/full
+- **S28** — Stimulation of the wrist acupuncture point PC6 for preventing PONV: a network meta-analysis - Lee, A - 2025 | Cochrane Library — `www.cochranelibrary.com` — https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003281.pub5/full
+- **S29** — Cephalic version by moxibustion for breech presentation - Coyle, ME - 2005 | Cochrane Library — `www.cochranelibrary.com` — https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003928.pub2/full
+- **S30** — Cephalic version by moxibustion for breech presentation - Coyle, ME - 2023 | Cochrane Library — `www.cochranelibrary.com` — https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003928.pub4/full
+- **S31** — Efficacy and Safety of Chinese Medicine Lianhua Qingwen for Treating COVID-19: An Updated meta-Analysis — `www.ncbi.nlm.nih.gov` — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9204491/
+- **S32** — 5 Tips: What You Should Know About Tai Chi for Health | NCCIH — `www.nccih.nih.gov` — https://www.nccih.nih.gov/health/tips/tips-what-you-should-know-about-tai-chi-for-health
+- **S33** — Mind and Body Practices for Fibromyalgia: What the Science Says | NCCIH — `www.nccih.nih.gov` — https://www.nccih.nih.gov/health/providers/digest/mind-and-body-practices-for-fibromyalgia-science
+- **S34** — Australian review finds no benefit to 17 natural therapies | Science-Based Medicine — `sciencebasedmedicine.org` — https://sciencebasedmedicine.org/australian-review-finds-no-benefit-to-17-natural-therapies/
+- **S35** — Evidence review informs latest Australian Government Natural Therapies Report — Cochrane Australia — `www.cochraneaustralia.org` — https://www.cochraneaustralia.org/news/alternative-therapies-review-cochrane-reviews
+- **S36** — NHMRC information paper: evidence on the effectiveness of homeopathy for treating health conditions (Analysis & Policy Observatory) — `apo.org.au` — https://apo.org.au/node/53563
+- **S37** — Unambiguous Detection of Multiple TP53 Gene Mutations in AAN-Associated Urothelial Cancer in Belgium Using Laser Capture Microdissection — `www.ncbi.nlm.nih.gov` — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4153646/
+- **S38** — Aristolochic acid-associated urothelial cancer in Taiwan - PubMed — `pubmed.ncbi.nlm.nih.gov` — https://pubmed.ncbi.nlm.nih.gov/22493262/
+- **S39** — Aristolochic acid nephropathy: Harbinger of a global iatrogenic disease - Grollman - 2013 — `onlinelibrary.wiley.com` — https://onlinelibrary.wiley.com/doi/10.1002/em.21756
+- **S40** — Aristolochic acid-associated urothelial cancer in Taiwan | PNAS — `www.pnas.org` — https://www.pnas.org/doi/10.1073/pnas.1119920109
+- **S41** — aristolochic acid nephropathy: Topics by Science.gov — `www.science.gov` — https://www.science.gov/topicpages/a/aristolochic+acid+nephropathy.html
+- **S42** — Aristolochic acid-associated urothelial cancer in Taiwan (PNAS PDF) — `www.pnas.org` — https://www.pnas.org/doi/pdf/10.1073/pnas.1119920109
+- **S43** — ma-huang_ephedra [TUSOM | Pharmwiki] — `tmedweb.tulane.edu` — https://tmedweb.tulane.edu/pharmwiki/doku.php/ma-huang_ephedra
+- **S44** — Reduction in Ephedra Poisonings after FDA Ban | NEJM — `www.nejm.org` — https://www.nejm.org/doi/full/10.1056/NEJMc1502505
+- **S45** — Neither Donkey Nor Horse (review) | MCLC Resource Center — `u.osu.edu` — https://u.osu.edu/mclc/book-reviews/wilcox/
+- **S46** — Learn - Explore | Huangdi Neijing (elisabeth-rochat.com) — `www.elisabeth-rochat.com` — http://www.elisabeth-rochat.com/texts/Huang_Di_Nei_Jing.html
+- **S47** — ISO/TC 249 - Traditional Chinese medicine (iTech) — `standards.iteh.ai` — https://standards.iteh.ai/catalog/tc/iso/1afeaecd-3813-46a1-b6e4-0260afe9aec3/iso-tc-249
