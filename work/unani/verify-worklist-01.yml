@@ -1,0 +1,152 @@
+system: unani
+pass: verify
+batch: 1
+entries:
+- path: identification.system_name
+  source_report: v2
+  value: Unani Medicine (Unani Tibb / Greco-Arabic Medicine)
+  weak_citations:
+  - source: none (report title; uncited)
+    type: unclear
+    citation_strength: unclear
+- path: identification.alternate_names
+  source_report: v1
+  value:
+  - Unani Tibb
+  - Greco-Arabic Medicine
+  - Tibb-e-Unani (usage reported for Pakistan)
+  - 'Etymology given in report: ''Unani'' derives from the Greek place-name Ionia'
+  - 'Traditional Persian Medicine (TPM/ITM), Islamic medicine, Iranian traditional medicine: names the
+    report says the literature uses for a single temperament-based tradition, of which Iran''s is ''essentially
+    the same humoral system'''
+  weak_citations:
+  - source: Encyclopaedia Britannica, 'Unani medicine' (named in report text for Ionia etymology; no [Sn]
+      marker at this claim)
+    type: unclear
+    citation_strength: unclear
+- path: identification.primary_regions
+  source_report: v1
+  value:
+  - India (called the institutional heartland)
+  - Pakistan
+  - Iran (as Traditional Persian Medicine)
+  - Bangladesh
+  - '''and others'' (not named)'
+  - 'Historically: Abbasid Baghdad, the medieval Islamic world including al-Andalus, and Mughal South
+    Asia'
+  weak_citations:
+  - source: Report Key Findings 6 and Details section 5 (no [Sn] marker)
+    type: unclear
+    citation_strength: unclear
+- path: identification.practitioner_estimate
+  source_report: v1
+  value:
+  - count: 47683
+    scope: registered Unani practitioners, India
+    source: Rajya Sabha reply of 28 April 2015 by Shripad Yesso Naik, Minister of State (Independent Charge)
+      for AYUSH, as reported by Business Standard/PTI
+    year: 2015
+  - count: ~60,000
+    scope: registered Hakims in Pakistan holding a diploma in Tibb-e-Unani or a bachelor's degree in Eastern/Unani
+      medicine
+    source: 'WHO/EMRO and Hamdard Foundation Pakistan document ''Unani Medicine: From Wellness to Wellbeing
+      in Pakistan'''
+    year: null
+  weak_citations:
+  - source: Business Standard/PTI report of the 2015 Rajya Sabha reply (named in report text; no bibliography
+      entry)
+    type: unclear
+    citation_strength: indirect
+  - source: 'WHO/EMRO and Hamdard Foundation Pakistan, ''Unani Medicine: From Wellness to Wellbeing in
+      Pakistan'' (named in report text; no bibliography entry)'
+    type: unclear
+    citation_strength: unclear
+- path: identification.system_boundary
+  source_report: v1
+  value:
+  - tradition: Traditional Persian Medicine (TPM/ITM, Iranian traditional medicine)
+    relation: same_system_variant
+    fields_affected:
+    - identification
+    - theoretical_primitives
+    - legal_status
+    - revival_and_institutionalization
+    - contemporary_controversies
+    - contact_and_borrowing
+    description: The report calls it 'essentially the same humoral system, drawing on al-Razi and Ibn
+      Sina', quotes literature treating 'Persian medicine (also known as Islamic medicine, Unani, and
+      Iranian traditional medicine)' as one tradition, and discusses Iran's academic revival and its implementation
+      challenges under Unani's current status.
+  - tradition: Ayurveda
+    relation: regulatory_grouping
+    fields_affected:
+    - legal_status
+    - safety
+    - education_and_licensure
+    - revival_and_institutionalization
+    description: Regulated together with Unani under India's Ministry of AYUSH, the CCIM/NCISM and the
+      Ayurvedic and Unani Tibbia College. The report calls it 'an independent Indian system' that cross-fertilized
+      with Unani, and it applies Ayurvedic heavy-metal data (Saper 2004, 2008) to Unani.
+  - tradition: Hippocratic-Galenic humoral medicine / modern European (biomedical) medicine
+    relation: sibling
+    fields_affected:
+    - canon_and_transmission
+    - theoretical_primitives
+    - contact_and_borrowing
+    description: The report says Unani and biomedicine are 'historical siblings that diverged around the
+      17th century', both descending from Hippocratic-Galenic humoralism. The Greek authors (Hippocrates,
+      Galen) are treated as Unani's own foundations.
+  weak_citations:
+  - source: Report Details section 7, Relationship to Other Systems (no [Sn] marker)
+    type: unclear
+    citation_strength: unclear
+- path: canon_and_transmission.foundational_texts
+  source_report: v2
+  value:
+  - title: Hippocratic corpus
+    date: 5th-4th c. BCE
+    author: Hippocratic authors
+  - title: Galenic corpus
+    date: Galen 129-c.216 CE
+    author: Galen
+  - title: al-Hawi (Liber Continens)
+    date: al-Razi 865-925
+    author: al-Razi (Rhazes)
+  - title: Kamil al-sina'a al-tibbiyya (Kitab al-Maliki)
+    date: al-Majusi d. 994
+    author: Ali ibn al-Abbas al-Majusi (Haly Abbas)
+  - title: al-Qanun fi al-Tibb (The Canon of Medicine)
+    date: begun c. 1012; completed 1020-1025 (Gurgan, Rayy, Hamadan)
+    author: Ibn Sina (Avicenna, 980-1037)
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: canon_and_transmission.transmission_mode
+  source_report: v2
+  value: 'mixed: textual (translation movement, manuscripts, commentaries, later print) plus family/lineage-based
+    practice (e.g. the Azizi family of Lucknow); colonial-era shift from family/lineage-based elite practice
+    to public, print-mediated, institutional transmission.'
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: canon_and_transmission.external_dating_anchors
+  source_report: v2
+  value:
+  - anchor: Aga Khan Museum manuscript of Qanun Book 5
+    date: 444 H / 1052 CE
+  - anchor: US National Library of Medicine MS A 53 (complete Qanun)
+    date: undated, Timurid-era
+  - anchor: Hunayn ibn Ishaq's Risala enumerating 129 Galenic titles (about 100 personally translated
+      into Syriac and/or Arabic)
+    date: 9th c.; edited Bergsträsser 1925; re-edited and translated Lamoreaux 2016
+  - anchor: 2018 critical edition of part of Qanun Book I
+    date: '2018'
+  - anchor: Qanun used as Latin-European textbook
+    date: until the 17th century
+  weak_citations:
+  - source: Encyclopaedia of Islam entry on Hunayn; Lamoreaux 2016, Hunayn ibn Ishaq on His Galen Translations
+      (named inline; no bibliography entry)
+    type: unclear
+    citation_strength: unclear

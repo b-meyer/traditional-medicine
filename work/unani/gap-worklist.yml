@@ -1,0 +1,27 @@
+system: unani
+pass: gap
+entries:
+- path: disruption.loss_of_patronage
+  missing: 'The report mentions Nizam of Hyderabad patronage (on lighter sourcing) and the 1600-1900 ''loss
+    and recovery'' framing of Alavi''s title. It gives no account or dates of the decline of Mughal, Awadh,
+    Deccan or Hyderabad court patronage of hakims. Search target: dated decline of court patronage of
+    Unani hakims in Mughal Delhi, Lucknow/Awadh and Hyderabad before and during British rule.'
+- path: disruption.abolition_attempts
+  missing: 'The report says colonialism ''nearly killed'' Unani but describes no formal abolition proposal,
+    vote or outcome. Search target: formal proposals to ban, deregister or abolish Unani/hakim practice
+    in British India or post-independence India/Pakistan (e.g. medical registration acts excluding hakims),
+    with dates and outcomes.'
+- path: literature_state.corpus_scale_appraisal
+  missing: 'The report cites no study characterizing the whole Unani clinical literature. The nearest
+    are topic-scoped: an evidence mapping of Unani in post-COVID-19 recovery (S18) and an evidence map
+    of cupping therapy in general (S19, Cha et al. 2021, not Unani-specific). Search target: bibliometric
+    analysis, evidence map or overview of reviews covering all Unani clinical trials (CCRUM, Indian Unani
+    colleges, Iranian TPM), with trial counts by condition and design.'
+- path: contemporary_controversies.conservation_and_sourcing
+  missing: 'The report''s controversies section does not address conservation or sourcing. Search target:
+    sustainability, over-harvesting or trade controls affecting Unani medicinal plants and animal/mineral
+    materia medica (e.g. CITES-listed species used in Unani formulations, raw-drug supply chains in India/Pakistan).'
+- path: contemporary_controversies.intellectual_property
+  missing: 'Not addressed. Search target: inclusion of Unani formulations in India''s Traditional Knowledge
+    Digital Library, Unani-related biopiracy or patent-opposition cases, and Nagoya Protocol/access-and-benefit-sharing
+    exposure.'

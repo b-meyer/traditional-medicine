@@ -1,0 +1,207 @@
+system: unani
+pass: verify
+batch: 2
+entries:
+- path: canon_and_transmission.key_figures
+  source_report: v2
+  value:
+  - name: Hippocrates / Hippocratic authors
+    dates: 5th-4th c. BCE
+    role: theoretical base
+  - name: Galen
+    dates: 129-c.216 CE
+    role: systematizer; theoretical base
+  - name: Hunayn ibn Ishaq
+    dates: 808-873
+    role: Nestorian Christian physician-translator of Galen into Syriac/Arabic
+  - name: Abbasid caliphs
+    dates: 8th-10th c.
+    role: patrons of the translation movement (political-ideological motives per Gutas)
+  - name: Mankah al-Hindi
+    dates: 8th c.
+    role: Indian physician at the Abbasid court translating Sanskrit medical texts
+  - name: al-Razi (Rhazes)
+    dates: 865-925
+    role: author of al-Hawi
+  - name: Ali ibn al-Abbas al-Majusi (Haly Abbas)
+    dates: d. 994
+    role: author of Kamil al-sina'a al-tibbiyya
+  - name: Ibn Sina (Avicenna)
+    dates: 980-1037
+    role: author of al-Qanun fi al-Tibb
+  - name: Fakhr al-Din al-Razi
+    dates: not stated
+    role: commentator/engager with the Qanun (per Fancy's study)
+  - name: Nizams of Hyderabad
+    dates: not stated
+    role: patrons of Unani (e.g. Nizamia Tibbi College)
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: canon_and_transmission.dated_events
+  source_report: v2
+  value:
+  - label: Hippocratic corpus composed
+    date: 5th-4th c. BCE
+    description: Theoretical base of the humoral tradition.
+  - label: Galen's systematization
+    date: 129-c.216 CE
+    description: Galen's systematizing work.
+  - label: Abbasid translation movement
+    date: 8th-10th c.
+    description: Greek material translated into Syriac and Arabic, centred on Baghdad and drawing on the
+      earlier Sassanid academy at Gondishapur/Jundishapur.
+  - label: Mankah al-Hindi at Abbasid court
+    date: 8th c.
+    description: Indian physicians translating Sanskrit medical texts.
+  - label: Hunayn ibn Ishaq's Galen translations
+    date: 9th c. (808-873)
+    description: About 100 of 129 Galenic titles translated into Syriac and/or Arabic.
+  - label: Composition of the Qanun
+    date: c. 1012-1025
+    description: Ibn Sina's Canon begun c. 1012 and completed 1020-1025 across Gurgan, Rayy and Hamadan.
+  - label: Aga Khan Museum Qanun Book 5 manuscript
+    date: 1052 CE
+    description: Earliest dated extant manuscript copy cited.
+  - label: Arabic commentaries on the Qanun
+    date: 12th-14th c.
+    description: More than two dozen Arabic commentaries.
+  - label: Persian translation of Ayurvedic sources
+    date: 14th c. onward
+    description: Large movement translating Sanskrit Ayurvedic sources into Persian (Speziale).
+  - label: Qanun as Latin-European textbook
+    date: until the 17th c.
+    description: Qanun dominated Latin-European medical education.
+  weak_citations:
+  - source: '[S31] Fabrizio Speziale - EHESS (academia.edu profile) — https://ehess.academia.edu/FabrizioSpeziale'
+    type: aggregator
+    citation_strength: indirect
+- path: construct_debate.positions
+  source_report: v2
+  value:
+  - scholar: Guy Attewell
+    work: 'Refiguring Unani Tibb: Plural Healing in Late Colonial India'
+    year: 2007
+    position: Unani identity was 'reconstituted' around 1900 through biomedical concepts, nationalist/communitarian
+      politics and colonial models of legitimacy; heterogeneous rather than a single 'traditional Muslim
+      system'.
+    evidence_base: 19th-20th c. print, institutional, legal and political archives
+  - scholar: Seema Alavi
+    work: 'Islam and Healing: Loss and Recovery of an Indo-Muslim Medical Tradition, 1600-1900; ''Unani
+      Medicine in the Nineteenth-Century Public Sphere'' (IESHR)'
+    year: 2007; 2005
+    position: A 'new Unani and a new hakim' emerged in the 19th-century Urdu public sphere, with emphasis
+      shifting from theory-mastery to practice.
+    evidence_base: 19th c. Urdu print/public-sphere archives
+  - scholar: Claudia Liebeskind
+    work: '''Arguing Science: Unani Tibb, Hakims and Biomedicine in India, 1900-50'', in Ernst (ed.)'
+    year: 2002
+    position: Documents the biomedicine-vs-hakim contest.
+    evidence_base: 20th c. archives (per report's general characterization of the reconstruction side)
+  - scholar: David Hardiman (following Charles Leslie and Romila Thapar's 'syndication' concept)
+    work: not named
+    year: null
+    position: Unani and Ayurveda were reinvented/syndicated in colonial India as a 'cogent medical system
+      with a well-defined structure'.
+    evidence_base: colonial-era archives (per report's general characterization)
+  - scholar: Kavita Sivaramakrishnan
+    work: 'Old Potions, New Bottles: Recasting Indigenous Medicine in Colonial Punjab'
+    year: 2006
+    position: Analogous recasting of indigenous medicine in colonial Punjab.
+    evidence_base: colonial Punjab archives (per report's general characterization)
+  - scholar: Neshat Quaiser
+    work: not named
+    year: null
+    position: Listed among historians documenting colonial transformation of Unani into a public, professionalized
+      system.
+    evidence_base: not stated
+  - scholar: Kira Schmidt Stiedenroth
+    work: Unani Medicine in the Making
+    year: 2020
+    position: Extends the reconstruction analysis to 21st-century India.
+    evidence_base: not stated
+  - scholar: Unnamed critics of Iranian TPM
+    work: not named
+    year: null
+    position: The Persian-medicine revival since 2007 is a substantially new, nationally branded construction
+      layered onto medieval texts.
+    evidence_base: not stated
+  - scholar: 'Continuity defenders: CCRUM, Hamdard and TPM faculty members; the late Hakim Syed Zillur
+      Rahman (bio-bibliographer)'
+    work: not named
+    year: null
+    position: Genuine textual continuity; rejection of the invented-tradition framing.
+    evidence_base: unbroken textual lineage (Galen -> Qanun -> Indian commentaries), continuous family/lineage
+      practice (e.g. Azizi family of Lucknow), manuscript evidence
+  - scholar: Fabrizio Speziale
+    work: Culture persane et médecine ayurvédique en Asie du Sud (Brill); Perso-Indica project
+    year: 2018
+    position: 'Complicates both sides: pre-colonial dynamism (Persian-Ayurveda synthesis) undercuts the
+      idea of a static ''pure'' tradition that was either simply preserved or simply invented.'
+    evidence_base: pre-colonial Persian translations of Sanskrit Ayurvedic sources
+  weak_citations:
+  - source: '[S29] Refiguring Unani Tibb (Plural Healing in Late Colonial India) | Exotic India Art —
+      https://www.exoticindiaart.com/book/details/refiguring-unani-tibb-plural-healing-in-late-colonial-india-nag813/'
+    type: catalog-listing
+    citation_strength: indirect
+    claim_match: matches
+  - source: '[S30] Refiguring Unani Tibb: Plural Healing in Late Colonial India. By Guy Attewell (ResearchGate)
+      — https://www.researchgate.net/publication/248666426_Refiguring_Unani_Tibb_Plural_Healing_in_Late_Colonial_India_By_Guy_Attewell_pp_xvi_316_Hyderabad_AP_Orient_Longman_2007'
+    type: tertiary-review
+    citation_strength: direct
+    claim_match: mismatch
+  - source: '[S31] Fabrizio Speziale - EHESS (academia.edu profile) — https://ehess.academia.edu/FabrizioSpeziale'
+    type: aggregator
+    citation_strength: indirect
+- path: construct_debate.report_adjudication
+  source_report: v2
+  value: The report holds that the weight of specialist scholarship favours a 'reconstruction on a real
+    foundation' position. The textual lineage is genuine and continuous, but the modern institutional
+    form (colleges, standardized pharmacopoeias, scientized curricula incorporating anatomy and biomedicine)
+    is 'substantially a late-19th/20th-century reconstruction', a point on which it says 'most serious
+    historians (Attewell, Alavi, Liebeskind, Speziale) agree'. It recommends distinguishing 'the texts'
+    from 'the modern system' and not accepting '1,000 years of unbroken practice exactly as today' claims
+    uncritically.
+  weak_citations:
+  - source: none (report's own stance)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.constituents
+  source_report: v2
+  value: 'Arkan (four elements: fire, air, water, earth); akhlat (four humours: dam/blood hot-wet, balgham/phlegm
+    cold-wet, safra/yellow bile hot-dry, sauda/black bile cold-dry); quwa (faculties: natural, vital,
+    psychic); arwah (pneuma/vital spirits); tabiat (innate self-regulating/healing power, equivalent to
+    physis).'
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.balance_logic
+  source_report: v2
+  value: 'Health is equilibrium of the four humours, expressed as the individual''s mizaj (temperament):
+    a balance of qualities on the hot/cold and wet/dry axes, unique to each person, organ, drug and food.
+    Health is the maintenance of one''s proper mizaj. Therapy works by contraries (a cold disease is treated
+    with hot-quality drugs or regimen) and by supporting tabiat.'
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.correspondence_system
+  source_report: v2
+  value: The qualities hot/cold and wet/dry underlie everything. Elements, humours, persons, organs, drugs
+    and foods are all classified by these qualities (each humour is assigned a quality pair).
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.etiology
+  source_report: v2
+  value: 'Disease is a disturbance of mizaj (su'' al-mizaj): simple (qualitative) or material (involving
+    a morbid humour). Health is governed by asbab sitta daruriya, the six essential causes: air/environment;
+    food and drink; movement and rest; sleep and wakefulness; retention and evacuation; psychic/emotional
+    states.'
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
