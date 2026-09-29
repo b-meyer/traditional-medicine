@@ -1,0 +1,211 @@
+system: unani
+pass: gap
+updates:
+  - path: disruption.loss_of_patronage
+    outcome: found
+    field:
+      status: partial
+      value: >-
+        No dated, hakim-specific account of the decline of Mughal, Awadh, Deccan or Hyderabad
+        court patronage was located. The principal monograph instead contests the premise. Seema
+        Alavi (Islam and Healing, 2007) argues that during the Mughal period Unani medicine was
+        "neither derived from the imperial court nor dependent on state support and patronage".
+        Her evidence comes from medical treatises, the Oudh Akhbar, government records and the
+        family papers of the Azizi hakims of Lucknow. On this reading the collapse of courts does
+        not by itself mark a collapse of the tradition. Guy Attewell (Refiguring Unani Tibb, 2007)
+        gives a chapter to Unani in Hyderabad, the largest princely state, as a contrast to Lucknow
+        and Delhi, covering roughly the late 1880s to the late 1930s. These reviews do not give
+        dates for the end of Hyderabad patronage.
+      citations:
+        - source: "Alavi, Seema. Islam and Healing: Loss and Recovery of an Indo-Muslim Medical Tradition, 1600-1900. Ranikhet: Permanent Black, 2007 (argument as summarized in a published book review, academia.edu/99821557)"
+          type: historical-monograph
+          citation_strength: indirect
+          claim_match: matches
+        - source: "Attewell, Guy N. A. Refiguring Unani Tibb: Plural Healing in Late Colonial India. New Perspectives in South Asian History 17. Hyderabad: Orient Longman, 2007 (content as described in reviews in JRAS, AHR 115(1), Medical History / PMC2766155)"
+          type: historical-monograph
+          citation_strength: indirect
+          claim_match: matches
+      register: historical-scholarship
+      notes: >-
+        Both monographs were reached only through search-result summaries of their reviews, because
+        full-text fetches were blocked by the egress proxy. Their arguments should be checked against
+        the books. General political dates (annexation of Awadh, 7 Feb 1856; Hyderabad Police Action
+        and accession, Sept 1948) turned up only in non-scholarly general sources that say nothing
+        about hakims, so they are not entered as patronage-loss events for Unani. Alavi's
+        position is a scholarly argument, not a consensus.
+    searches:
+      - "decline of court patronage Unani hakims Mughal Lucknow Awadh 1856 annexation hakims"
+      - "Seema Alavi Islam and Healing hakims after 1857 loss of Mughal court patronage Delhi Sharifi family"
+      - "Unani hakims Hyderabad Nizam patronage ended 1948 Police Action Osmania Unani decline"
+      - "Alavi \"Islam and Healing\" review unani \"not dependent\" court patronage Mughal decline eighteenth century hakims migrated Awadh Hyderabad"
+      - "Attewell \"Refiguring Unani Tibb\" patronage princely states Hyderabad Rampur Bhopal hakims colonial"
+  - path: disruption.abolition_attempts
+    outcome: found
+    field:
+      status: partial
+      value: >-
+        No formal proposal, vote or bill to ban or abolish Unani/hakim practice in British India or
+        in post-independence India or Pakistan was located. What was found is exclusion from
+        biomedical registration. Provincial medical registration acts set up councils to keep
+        registers of "duly qualified medical practitioners", and hakims and vaids were left off
+        them. These were the Bombay Medical Registration Act 1912, the Madras and Bengal acts of
+        1914 and the Punjab Medical Registration Act 1916. Nationalist leaders opposed the official
+        refusal to include vaids and hakims. Hakim Ajmal Khan's All India Vedic and Unani Tibbi
+        Conference (1910) campaigned against these acts. Hardiman (2009) reports that registered
+        doctors who collaborated with indigenous practitioners were threatened with deregistration,
+        citing two well-known cases from Madras and Bombay in 1915-16. The Indian Medical Degrees
+        Act 1916 (Act VII of 1916) defines "western medical science" as the western methods of
+        allopathic medicine, obstetrics and surgery and expressly excludes the Unani system. Unani
+        therefore falls outside that Act's purview.
+      citations:
+        - source: "The Indian Medical Degrees Act, 1916 (Act No. VII of 1916), India Code, indiacode.nic.in/bitstream/123456789/6822/1/the-indian-medical-degrees-act-1916-.pdf"
+          type: statute
+          citation_strength: direct
+          claim_match: matches
+        - source: "Legislation, activism and power play - Medical education policies in colonial and post-colonial India. Global Public Health 17(10), 2022. doi:10.1080/17441692.2022.2110913"
+          type: primary-study
+          citation_strength: unclear
+        - source: "Hardiman, David. Indian medical indigeneity: from nationalist assertion to the global market. Social History 34(3), 2009, 263-83 (Warwick repository WRAP 2163)"
+          type: historical-monograph
+          citation_strength: direct
+          claim_match: matches
+        - source: "enrouteindianhistory.com, How Hakim Ajmal Khan Rescued Unani Medicine from Colonial Erasure"
+          type: aggregator
+          citation_strength: indirect
+      register: regulatory
+      notes: >-
+        These instruments excluded hakims from registers. The sources located do not say they
+        prohibited practice, and this pass did not establish whether any of them did. They may
+        belong under suppression_or_marginalization rather than abolition_attempts. The act dates and
+        the Ajmal Khan opposition came from search snippets in which the scholarly article and the
+        popular site were mixed together, so the exact attribution is unverified (citation_strength
+        unclear/indirect). The popular site names the act Ajmal Khan opposed as "the Medical
+        Registration Act of 1914". Full texts could not be fetched because of egress blocking. The
+        absence of any formal abolition proposal is a search result, not proof that none exists.
+    searches:
+      - "Indian Medical Degrees Act 1916 hakims vaids excluded registration Unani Medical Registration Act Bombay 1912"
+      - "Medical Registration Acts colonial India 1912 1914 hakims vaids not prohibited from practice excluded register Ajmal Khan protest"
+      - "proposal to ban Unani practice Pakistan OR India abolish hakims registration court case outcome"
+      - "Hardiman \"Nationalism and the Politics of Indian Medical Indigeneity\" Bombay Medical Act 1912 vaids hakims register"
+  - path: literature_state.corpus_scale_appraisal
+    outcome: found
+    field:
+      status: partial
+      value: >-
+        No bibliometric analysis, evidence map or overview of reviews covering all Unani clinical
+        trials was located. The nearest corpus-scale study is registry-based and covers all AYUSH
+        streams. Its analysis of AYUSH studies registered in the Clinical Trials Registry of India
+        from 2009 to 2020 counts registrations by stream: Ayurveda 2054, Siddha 635, Yoga 408,
+        Unani 366, Homoeopathy 169. Trials were classified by registration type, postgraduate
+        dissertation status, sponsor, interventional versus observational design, study design,
+        health condition and state. The Unani-specific breakdown by condition and design was not
+        seen.
+      citations:
+        - source: "Analysis of AYUSH studies registered in clinical trials registry of India from 2009 to 2020. Journal of Ayurveda and Integrative Medicine, 2021 (ScienceDirect PII S0975947621000607)"
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+      register: biomedical-evidence
+      notes: >-
+        This covers CTRI registrations only (India, 2009-2020). It does not cover the published
+        literature, trials run outside India, or trials before 2009. It is therefore a partial
+        appraisal and does not characterize the whole Unani clinical corpus. Authors and year were
+        not confirmed because the fetch was blocked and the search budget ran out. The year is
+        inferred from the PII. Separate bibliometric and quality appraisals exist for Traditional
+        Persian/Iranian Medicine RCTs. They are not entered here because they concern a different
+        or boundary tradition. A true Unani-wide appraisal still appears to be missing.
+    searches:
+      - "bibliometric analysis Unani medicine clinical trials publications"
+      - "Unani clinical trials registered CTRI analysis systematic assessment number of trials conditions"
+      - "Persian medicine OR \"Iranian traditional medicine\" randomized controlled trials bibliometric scoping review number of RCTs"
+  - path: contemporary_controversies.conservation_and_sourcing
+    outcome: found
+    field:
+      status: partial
+      value:
+        - agent: "Qust / kuth (Saussurea costus, syn. S. lappa, Aucklandia costus)"
+          description: >-
+            Used in Ayurvedic, Unani, Chinese and Tibetan medicine. It was listed on CITES
+            Appendix II in 1975 and relisted on Appendix I in 1980 with India's consent. Jammu &
+            Kashmir enacted the Kuth (Costus) Act in 1978. India amended the Wildlife (Protection)
+            Act 1972 in 1991 to insert Schedule VI, which covers six rare medicinal plants including
+            costus. Cultivation, possession, storage and trade became illegal without permission
+            from the chief wildlife warden. The Ministry of Commerce prohibits export of 29
+            medicinal and aromatic species, costus among them, in crude or processed form.
+            Reviews attribute its decline to overexploitation, unregulated trade and habitat loss.
+        - agent: "Mushk / deer musk (Moschus spp.)"
+          description: >-
+            TRAFFIC Europe (Homes 1999) reports that the far greater consumption of musk today is
+            in traditional Chinese, Ayurvedic and Unani medicines. Musk deer populations of
+            Afghanistan, Bhutan, India, Myanmar, Nepal and Pakistan are on CITES Appendix I, which
+            bars international commercial trade in wild-origin specimens.
+      citations:
+        - source: "CITES Plants Committee, PC19 Inf. 7, A Review of the Status of Saussurea costus (cites.org/sites/default/files/common/com/pc/19/E19i-07.pdf)"
+          type: institutional
+          citation_strength: direct
+        - source: "Journal of Threatened Taxa article on costus (threatenedtaxa.org/index.php/JoTT/article/download/3581/6511)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Homes, Volker. On the Scent: Conserving Musk Deer - The Uses of Musk and Europe's Role in Its Trade. TRAFFIC Europe, 1999 (IUCN library Traf-055)"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+      register: regulatory
+      notes: >-
+        The costus dates came from a search snippet that did not say which of the two costus
+        documents (CITES PC19 Inf. 7 or the JoTT article) gave them. Both are listed, and neither
+        was opened because of egress blocking. The Ministry of Commerce export ban was reported in
+        secondary reviews without the notification number or year. None of these sources measures
+        how much Unani demand contributes to pressure on the species. They show only that Unani is
+        one of the user systems. No Unani-specific study of raw-drug supply chains in India or
+        Pakistan was located. General ASU adulteration and scarcity literature exists but is not
+        Unani-specific and is not entered.
+    searches:
+      - "Unani medicinal plants CITES Saussurea costus Qust trade ban raw drugs supply"
+      - "Unani medicine musk deer mushk ambergris Wildlife Protection Act substitutes animal-origin drugs conservation"
+      - "Unani raw drugs adulteration substitution scarcity threatened medicinal plants \"Unani\" demand supply study"
+      - "TRAFFIC report musk trade \"Unani\" consumption India Pakistan musk deer Appendix I"
+      - "Saussurea costus CITES Appendix I listing year 1975 India kuth export prohibition Unani qust"
+      - "\"Unani\" musk \"Europe on the Scent\" Homes 1999 TRAFFIC uses of musk traditional medicine"
+  - path: contemporary_controversies.intellectual_property
+    outcome: found
+    field:
+      status: partial
+      value: >-
+        Defensive database: India's Traditional Knowledge Digital Library (TKDL, a CSIR and
+        Ministry of AYUSH collaboration) had transcribed 236,399 Unani formulations as of 25 March
+        2022. This was the largest share of 418,885 formulations; the others were Ayurveda 119,269,
+        Siddha 54,689, Yoga 4,151 and Sowa Rigpa 4,377. The content is structured in English,
+        Japanese, French, German and Spanish. TKDL prior art is used for pre-grant oppositions at
+        patent offices. In a case that CSIR-TKDL described as concerning turmeric, pine bark and
+        green tea for hair loss, used in Ayurveda and Unani, CSIR-TKDL filed a pre-grant opposition
+        at the EPO. The application was deemed withdrawn on 29 June 2015. The IPKat blog disputed
+        that this application actually drew on traditional knowledge. No Unani-specific biopiracy
+        litigation and no Nagoya Protocol / ABS analysis for Unani was located.
+      citations:
+        - source: "Press Information Bureau, Government of India. Factsheet: Traditional Knowledge Digital Library (RU-30-02-0175-010922), September 2022"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "The IPKat, No traditional knowledge for hair loss treatment: another alleged attempt to patent traditional knowledge does not bear scrutiny, August 2015"
+          type: news
+          citation_strength: indirect
+        - source: "WIPO, About the Traditional Knowledge Digital Library (wipo_tkdl_del_11), 2011"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: >-
+        The PIB figures were read from a search snippet because the PDF fetch was blocked. A later
+        figure of 240,850 Unani formulations appeared in search results without an identifiable
+        source and is not entered. Aggregate TKDL outcomes are TKDL-wide and not Unani-specific.
+        Search snippets reported about 370 applications rejected, set aside, withdrawn, amended or
+        abandoned, and 36 EPO patents identified after access began in Feb 2009. The only
+        Unani-linked case found is contested and depends on CSIR's own characterization of it. The
+        EPO application number was not obtained. A productive follow-up would target EPO Register
+        entries for TKDL third-party observations that cite Unani texts, and Nagoya/ABS literature
+        on Unani raw materials in India and Pakistan.
+    searches:
+      - "Unani formulations Traditional Knowledge Digital Library number of formulations transcribed"
+      - "TKDL pre-grant opposition patent application Unani formulation withdrawn EPO"
+      - "\"Unani\" TKDL \"formulations\" Lok Sabha OR Rajya Sabha answer pre-grant oppositions"
+      - "PIB factsheet TKDL 2022 Unani 236,399 formulations Ayurveda Siddha Sowa Rigpa"

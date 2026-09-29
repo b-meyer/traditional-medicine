@@ -1,0 +1,188 @@
+system: unani
+pass: verify
+updates:
+  - path: materia_medica.preparation_traditions
+    outcome: confirmed
+    field:
+      status: filled
+      value: "Kushta (metallic calx) given orally; compound formulations (e.g. Jawarish Shahi); industrial pharmacy and standardized compound formulations (Hamdard); Unani Pharmacopoeia of India and National Formulary of Unani Medicine."
+      citations:
+        - source: "Government of India, Ministry of Health & Family Welfare (Department of AYUSH) / CCRUM, National Formulary of Unani Medicine, Part I (Jawarish Shahi monograph, a Majoon-class Jawarish)"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Government of India / CCRUM, National Formulary of Unani Medicine (Kushta monographs, e.g. Kushta Qalai, Kushta-e-Faulad; formulary doses stated as adult oral doses)"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Pharmacopoeia Commission for Indian Medicine & Homoeopathy (PCIM&H), Unani pharmacopoeial publications page, https://pcimh.gov.in/show_content.php?lang=1&level=1&ls_id=508&lid=49 (Unani Pharmacopoeia of India Part I single drugs, Part II formulations; official compendia under the Drugs and Cosmetics Act, 1940)"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Ministry of AYUSH, The Unani Pharmacopoeia of India, Part II, Vol. III (Formulations), https://cdn.ayush.gov.in/wp-content/uploads/2021/03/Unani-Pharmacopoeia-of-India-Part-II-Vol-3.pdf"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Hamdard Laboratories (India), https://www.hamdard.com (manufacturer's own site; Unani pharmaceutical manufacture since 1906)"
+          type: practitioner-site
+          citation_strength: indirect
+      register: regulatory
+      notes: "Confirmed. Kushta, Jawarish Shahi and the two compendia are confirmed against the Government of India formulary and pharmacopoeia and the PCIM&H page. The Hamdard industrial-pharmacy element rests only on the manufacturer's own site, which is indirect by rule. Page fetches were blocked by the egress proxy, so these were checked against search-result excerpts of the named documents, not full-text reads."
+    searches:
+      - "National Formulary of Unani Medicine Jawarish Shahi kushta Ministry of AYUSH PCIM&H"
+      - "Unani Pharmacopoeia of India Part I Part II volumes PCIM&H Ministry of Ayush"
+      - "\"Jawarish Shahi\" National Formulary of Unani Medicine Part"
+      - "\"Kushta\" National Formulary of Unani Medicine calx oral dose Kushta Qalai Kushta Faulad"
+      - "Hamdard founded 1906 Hakim Hafiz Abdul Majeed Rooh Afza 1907 history"
+
+  - path: disruption.period
+    outcome: corrected
+    field:
+      status: filled
+      value: "British colonial rule in India: East India Company rule until 1858, then the British Raj (Crown rule under the Government of India Act 1858). The report's dated span runs from Macaulay's Minute on Indian Education (2 February 1835) to the Bhore Committee report (1946), the Chopra Committee report (1948) and Partition."
+      citations:
+        - source: "T. B. Macaulay, Minute on Indian Education, 2 February 1835 (text in Minutes on Education in India, 1835-1837; https://franpritchett.com/00generallinks/macaulay/txt_minute_education_1835.html)"
+          type: statute
+          citation_strength: direct
+          claim_match: matches
+        - source: "Government of India Act 1858 (21 & 22 Vict. c. 106), https://www.legislation.gov.uk/ukpga/Vict/21-22/106/contents/enacted"
+          type: statute
+          citation_strength: direct
+          claim_match: matches
+        - source: "Government of India, Report of the Health Survey and Development Committee (Bhore Committee), Vol. I, 1946, https://nihfw.ac.in/Doc/Reports/bhore%20Committee%20Report%20VOL-1%20.pdf"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Government of India, Ministry of Health, Report of the Committee on Indigenous Systems of Medicine (R. N. Chopra, Chairman), 1948"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+      register: historical-scholarship
+      notes: "Corrected. The dates (1835, 1946, 1948) hold. The old value called the whole span the 'British Raj', but in 1835 India was under East India Company rule. Crown rule, the Raj, began with the Government of India Act 1858. The value now names both phases. Page fetches were blocked by the egress proxy, so the documents were identified and dated from search results."
+    searches:
+      - "Macaulay Minute on Indian Education 2 February 1835 text Arabic Sanskrit medicine \"English farrier\""
+      - "Government of India Act 1858 legislation.gov.uk"
+      - "\"Health Survey and Development Committee\" 1946 report volume indigenous systems of medicine text Bhore \"indigenous systems\""
+      - "Chopra Committee 1948 report indigenous systems of medicine members Hakim Nasiruddin Ahmed Hassan Qarshi"
+
+  - path: disruption.colonial_power
+    outcome: corrected
+    field:
+      status: filled
+      value: "British (East India Company rule, then the British Crown, i.e. the British Raj, from 1858)"
+      citations:
+        - source: "Government of India Act 1858 (21 & 22 Vict. c. 106), https://www.legislation.gov.uk/ukpga/Vict/21-22/106/contents/enacted"
+          type: statute
+          citation_strength: direct
+          claim_match: matches
+        - source: "T. B. Macaulay, Minute on Indian Education, 2 February 1835 (written as Law Member under Company rule)"
+          type: statute
+          citation_strength: direct
+          claim_match: matches
+      register: historical-scholarship
+      notes: "Corrected for precision. The colonial power was British, but the 'British Raj' began only in 1858, when the 1858 Act moved the East India Company's powers to the Crown. The earliest suppression event in this extraction (1835) falls under Company rule."
+    searches:
+      - "Government of India Act 1858 legislation.gov.uk"
+      - "Macaulay Minute on Indian Education 2 February 1835 text Arabic Sanskrit medicine \"English farrier\""
+
+  - path: disruption.suppression_or_marginalization
+    outcome: unverifiable
+    searches:
+      - "Macaulay Minute on Indian Education 2 February 1835 text Arabic Sanskrit medicine \"English farrier\""
+      - "Bhore Committee report 1946 indigenous systems of medicine \"not in a position\" examine Ayurveda Unani"
+      - "\"Health Survey and Development Committee\" 1946 report volume indigenous systems of medicine text Bhore \"indigenous systems\""
+      - "Udupa Committee 1958 Mudaliar Committee 1961 Shrivastava Committee 1975 indigenous systems of medicine Unani"
+      - "fetch nihfw.ac.in Bhore Committee Report Vol-1 PDF (blocked by egress proxy)"
+
+  - path: disruption.practitioner_response
+    outcome: corrected
+    field:
+      status: filled
+      value: "Hakim Ajmal Khan (1868-1927) led reform: the Ayurvedic and Unani Tibbia College, Karol Bagh, Delhi (foundation stone laid by Viceroy Lord Hardinge on 29 March 1916; inaugurated by Gandhi on 13 February 1921); the Hindustani Dawakhana. He was acting President of the Indian National Congress at the 1921 Ahmedabad session (standing in for the imprisoned C. R. Das) and a Khilafat and Non-cooperation leader. Hamdard was founded by Hakim Hafiz Abdul Majeed as a Delhi clinic in 1906, and Rooh Afza launched in 1907. Hakims Nasiruddin Ahmed Khan and Hassan Qarshi sat on the Chopra Committee (1948). Vernacular (Urdu) print and newspapers (e.g. Oudh Akhbar) were used in the public sphere."
+      citations:
+        - source: "Ayurvedic and Unani Tibbia College and Hospital, Govt of NCT of Delhi, About Us, https://autch.delhi.gov.in/autch/about-us"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Indian National Congress, Past Party Presidents: Hakim Ajmal Khan (Acting President for C.R. Das), https://inc.in/leadership/past-party-presidents/hakim-ajmal-khan-acting-president-for-c-r-das"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "B. D. Metcalf, 'Nationalist Muslims in British India: The Case of Hakim Ajmal Khan', Modern Asian Studies 19 (1985)"
+          type: historical-monograph
+          citation_strength: direct
+          claim_match: matches
+        - source: "Hamdard Laboratories (India), 'Meet Hakim Hafiz Abdul Majeed, the man behind Rooh Afza', https://www.hamdard.com/Happening/news_detail?news=33"
+          type: practitioner-site
+          citation_strength: indirect
+        - source: "Government of India, Ministry of Health, Report of the Committee on Indigenous Systems of Medicine (R. N. Chopra, Chairman), 1948 (membership list incl. Hakim Nasiruddin Ahmed Khan and Hassan Qarshy)"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "S. Alavi, 'Unani Medicine in the Nineteenth-Century Public Sphere: Urdu Texts and the Oudh Akhbar', Indian Economic and Social History Review (2005)"
+          type: historical-monograph
+          citation_strength: direct
+          claim_match: matches
+      register: historical-scholarship
+      notes: "Corrected in three ways. (1) Ajmal Khan presided over the 1921 Ahmedabad Congress session as acting President for the imprisoned C. R. Das, per the INC's own page; the old value said simply 'President'. (2) Exact dates added for the Tibbia College foundation stone (29 March 1916) and inauguration (13 February 1921), from the college's own government page. (3) Two sub-claims were removed because no primary source could be found: 'the Central College' (not identified) and the statement that he proposed absorbing Western anatomy, surgery and biomedical concepts (found only in open-encyclopedia and popular sources). Hamdard's 1906/1907 dates rest on the manufacturer's own page (indirect). The Chopra membership comes from the report's catalogue listing, because the full text could not be fetched. Page fetches were blocked by the egress proxy, so all checks used search-result excerpts."
+    searches:
+      - "Tibbia College Karol Bagh foundation stone 1916 Lord Hardinge inaugurated 1921 Gandhi Ajmal Khan"
+      - "Hakim Ajmal Khan president Indian National Congress 1921 Ahmedabad session Khilafat"
+      - "Hindustani Dawakhana Ajmal Khan founded 1910 All India Ayurvedic and Unani Tibbi Conference Western anatomy surgery"
+      - "Hakim Ajmal Khan Tibbia College syllabus anatomy surgery Western medicine integration Unani reform scholarly article"
+      - "Metcalf \"Nationalist Muslims in British India: the case of Hakim Ajmal Khan\" Modern Asian Studies 1985 Western medicine anatomy"
+      - "Hamdard founded 1906 Hakim Hafiz Abdul Majeed Rooh Afza 1907 history"
+      - "Chopra Committee 1948 report indigenous systems of medicine members Hakim Nasiruddin Ahmed Hassan Qarshi"
+      - "Attewell \"Refiguring Unani Tibb\" 2007 Oudh Akhbar Unani hakims print public sphere"
+
+  - path: disruption.post_colonial_disruption
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - label: Partition of India
+          date: "not stated in report (Hamdard Pakistan founded 1948)"
+          description: "Hamdard split: Hakim Abdul Hameed built Hamdard India and Jamia Hamdard; his brother Hakim Mohammed Said migrated to Pakistan (9 January 1948) and built Hamdard Pakistan (1948, Karachi), which he made a waqf in 1953; both constituted as waqf."
+        - label: Hamdard activities begin in East Pakistan
+          date: 1953
+          description: "Hamdard began operating in East Pakistan in 1953 through two sales centres, in Dhaka and Chittagong. Hamdard Laboratories (Waqf) Bangladesh was constituted as a waqf in 1972, after Bangladeshi independence."
+      citations:
+        - source: "Hamdard University (Pakistan), The Founder, https://www.hamdard.edu.pk/the-founder/"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Hamdard University Bangladesh, 'Hamdard Laboratories (Waqf) Bangladesh: a chronology', https://www.hamdarduniversity.edu.bd/hub/hamdard_lab"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Jamia Hamdard, Founder-Chancellor page, https://www.jamiahamdard.ac.in/founder-chancellor"
+          type: institutional
+          citation_strength: direct
+          claim_match: matches
+        - source: "Hamdard Laboratories (Waqf) Bangladesh, History, https://hamdard.com.bd/history/"
+          type: practitioner-site
+          citation_strength: indirect
+      register: historical-scholarship
+      notes: "Corrected. The 1953 entry was imprecise. In 1953 Hamdard opened two sales centres in East Pakistan (Dhaka and Chittagong); the waqf entity 'Hamdard Laboratories (Waqf) Bangladesh' dates from 1972. The label was changed to match. For Pakistan, the migration date (9 January 1948) and the waqf date (1953) were added, from Hamdard's Pakistani university and the organization's history. The Partition date field is unchanged. Page fetches were blocked by the egress proxy, so all checks used search-result excerpts."
+    searches:
+      - "Hamdard Pakistan founded 1948 Karachi Hakim Mohammed Said waqf official"
+      - "Hamdard Laboratories (Waqf) Bangladesh established 1953 official history"
+      - "hamdard.com.bd history 1953 Dhaka Chittagong sales centres waqf 1972"
+      - "Hamdard Dawakhana declared waqf 1948 Hakim Abdul Hameed Jamia Hamdard history"
+
+  - path: revival_and_institutionalization.revival_context
+    outcome: unverifiable
+    searches:
+      - "Iran traditional Persian medicine PhD program established 2007 Ministry of Health schools of traditional medicine"
+      - "Hakim Ajmal Khan president Indian National Congress 1921 Ahmedabad session Khilafat"
+      - "Attewell \"Refiguring Unani Tibb\" 2007 Oudh Akhbar Unani hakims print public sphere"
+
+  - path: revival_and_institutionalization.key_figures
+    outcome: unverifiable
+    searches:
+      - "Hakim Abdul Hameed 1908-1999 Jamia Hamdard founder"
+      - "Hamdard founded 1906 Hakim Hafiz Abdul Majeed Rooh Afza 1907 history"
+      - "Hamdard Pakistan founded 1948 Karachi Hakim Mohammed Said waqf official"
+      - "Chopra Committee 1948 report indigenous systems of medicine members Hakim Nasiruddin Ahmed Hassan Qarshi"
+      - "Hakim Ajmal Khan president Indian National Congress 1921 Ahmedabad session Khilafat"
+      - "Hakim Ajmal Khan Tibbia College syllabus anatomy surgery Western medicine integration Unani reform scholarly article"

@@ -1,0 +1,143 @@
+system: unani
+pass: verify
+updates:
+  - path: safety.intrinsic_toxicity
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - agent: Lead compounds formularized as Unani ingredients (Usrub, Isfidaj, Suranj, Murdar sang, Ithmid), given orally as kushtas
+          mechanism_class: heavy metal
+          detail: "Authors acknowledge toxicity (Ithmid 'not recommended for oral use due to toxic effects'; Murdar sang oral intake 'is harmful and can cause dysuria'). Lead distributes to liver, kidney and brain, causing encephalopathy, neuropathy and nephropathy."
+        - agent: Kushta Sammulfar (arsenic trioxide)
+          mechanism_class: heavy metal
+          detail: Formularized Unani ingredient.
+        - agent: Surma/kohl (ithmid/galena)
+          mechanism_class: heavy metal
+          detail: "Lead 'as high as 86%' (Aslam, Davis & Healy, Public Health 1979); 0.03%-81.37% lead in 40 Rawalpindi/Islamabad samples (Haq & Khan, JPMA 1982). Enough to cause chronic lead poisoning with regular use."
+        - agent: Hijama (wet cupping)
+          mechanism_class: procedural
+          detail: Infections attributed to non-sterile technique and untrained practitioners.
+        - agent: Undeclared corticosteroids in products
+          mechanism_class: pharmaceutical adulterant
+          detail: "Explains dramatic 'cures' in arthritis/asthma."
+        - agent: Reliance on traditional medicine
+          mechanism_class: indirect
+          detail: Delayed biomedical care is a recognized systemic risk; hard Unani-specific outcome data are limited.
+      citations:
+        - source: "Mustehasan; Azhar M (CCRUM / RRIUM Aligarh). Usrub (lead) and its compounds used in Unani Medicine: Overview. Asian Journal of Research in Chemistry 2022;15(5):358-366. doi:10.52711/0974-4150.2022.00064"
+          type: primary-study
+          citation_strength: direct
+        - source: "Aslam M, Davis SS, Healy MA. Heavy metals in some Asian medicines and cosmetics. Public Health 1979;93(5):274-284. doi:10.1016/S0033-3506(79)80078-5"
+          type: primary-study
+          citation_strength: direct
+        - source: "Haq I, Khan C. Lead content of surma (Drugs Control and Research Division, NIH Islamabad). Journal of the Pakistan Medical Association 1982;32(7)"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Verified the two worklisted inline citations plus Haq & Khan. Mustehasan & Azhar 2022 exists as cited (AJRC 15(5):358-366, CCRUM/RRIUM authors); its abstract lists Usrub, Aabar, Isfidaj, Suranj, Murdar sang and Ithmid, says lead is recommended mainly for external use because of its toxicity and that the calx (kushta) form is recommended for oral use. The two verbatim quotes (Ithmid, Murdar sang/dysuria) and the organ-distribution sentence could not be checked against full text (publisher, ResearchGate and ProQuest pages blocked); they are carried over from the report. Aslam, Davis & Healy 1979 confirmed: abstract reports surma samples with lead 'as high as 86%' and mercury, lead and arsenic in kushtay. One index gives pages 274-278 rather than 274-284; 274-284 retained. Haq & Khan JPMA 1982;32(7) confirmed: 40 samples from Rawalpindi/Islamabad, half contained lead, range 0.03%-81.37%. Kushta Sammulfar as a formulary preparation is consistent with the National Formulary of Unani Medicine method cited in Ansari & Wadud's chronic-toxicity study. Items 4-6 (hijama, corticosteroids, reliance) were not on the worklist citation and keep the report's own sourcing; they were not re-verified here."
+    searches:
+      - "Mustehasan Azhar lead Unani medicine Asian Journal of Research in Chemistry 2022"
+      - "Usrub lead Unani Ithmid \"not recommended for oral use\" Murdar sang dysuria"
+      - "Mustehasan Azhar Usrub lead Unani DOI 10.52711 ajrc 2022 abstract Ithmid toxic effects encephalopathy nephropathy"
+      - "Aslam Davis Healy 1979 Public Health heavy metals surma lead 86%"
+      - "\"Heavy metals in some Asian medicines and cosmetics\" Aslam Davis Healy Public Health 1979 93"
+      - "Haq Khan 1982 JPMA surma lead content Rawalpindi Islamabad"
+      - "Unani kushta Sammulfar arsenic trioxide formulary"
+  - path: safety.documented_adverse_events
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - event: Disseminated Staphylococcus aureus with multi-organ injury after scarification cupping
+          type: case report
+          citation: "Wang YY, Fan HW, Huang XM, Jiao Y. BMC Complement Med Ther 2023;23:94 (PMC10061885)"
+        - event: Sacroiliac joint abscess and osteomyelitis after wet cupping
+          type: case report
+          citation: S24
+        - event: Necrotizing fasciitis after cupping
+          type: case report
+          citation: "Alajmi T, Aljulaihim A, Alzahrani M, Aljuhayyiam S. Cureus 2021 (PMC8059418; PMID 33898125)"
+        - event: Death after consecutive-day hijama by an unlicensed practitioner
+          type: case report
+          citation: "Emiral E, Demir ES, Değirmenci B, Dinçer B, Doğan M, Üzün İ. J Forensic Leg Med 2025"
+        - event: South Asian immigrant lead-poisoning clusters in the UK traced to surma
+          type: clusters (design not stated)
+          citation: S22 (sentence-level)
+      citations:
+        - source: "Wang YY, Fan HW, Huang XM, Jiao Y. Disseminated Staphylococcus aureus infection after scarification wet cupping therapy: a case report and literature review. BMC Complementary Medicine and Therapies 2023;23:94. doi:10.1186/s12906-023-03932-x"
+          type: primary-study
+          citation_strength: direct
+        - source: "Alajmi T, Aljulaihim A, Alzahrani M, Aljuhayyiam S. Necrotizing Fasciitis Following Wet Cupping: A Case Report. Cureus 2021. PMID 33898125; PMC8059418"
+          type: primary-study
+          citation_strength: direct
+        - source: "Emiral E, Demir ES, Değirmenci B, Dinçer B, Doğan M, Üzün İ. Death associated with wet cupping therapy (hijama): A case report. Journal of Forensic and Legal Medicine 2025 (online 28 June 2025; ScienceDirect PII S1752928X25001234)"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Three inline identifiers resolved to their articles. PMC10061885: 33-year-old immunocompetent woman with disseminated S. aureus, acute liver and kidney injury, iliopsoas abscess and GI bleeding after wet cupping. PMC8059418: 35-year-old man with Pseudomonas-positive necrotizing fasciitis after wet cupping who refused surgery and died. JFLM 2025: 40-year-old man, sudden cardiac death after hijama on consecutive days by an unlicensed practitioner; authors state a direct causal link cannot be definitively proven. S24 and S22 were not on the worklist and keep the report's citations."
+    searches:
+      - "PMC10061885 cupping Staphylococcus aureus"
+      - "\"Disseminated Staphylococcus aureus infection after scarification wet cupping therapy\" BMC Complementary Medicine and Therapies 2023 23 authors"
+      - "PMC8059418 necrotizing fasciitis cupping"
+      - "\"Necrotizing Fasciitis Following Wet Cupping: A Case Report\" Cureus 2021 authors"
+      - "Journal of Forensic and Legal Medicine 2025 death hijama wet cupping unlicensed practitioner consecutive days"
+      - "\"Death associated with wet cupping therapy (hijama): A case report\" Journal of Forensic and Legal Medicine volume 2025 authors"
+  - path: safety.regulatory_actions_taken
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - action: "Central Government order (Department of AYUSH, F. No. K-11020/5/97-DCC) under Section 33EEB of the Drugs and Cosmetics Act 1940 mandating heavy-metal testing (As, Pb, Hg, Cd) of every batch of purely herbal ASU drugs for export, with 'Heavy Metals within Permissible Limits' displayed on the container; limits for As, Pb and Cd as per WHO guidelines, mercury 1 ppm"
+          date: issued 2005-10-14; effective 2006-01-01
+        - action: "Permissible limits for herbal products: lead 10 ppm, arsenic 3 ppm, mercury 1 ppm, cadmium 0.3 ppm (Ayurvedic Pharmacopoeia of India Part-I Vol-VII)"
+          date: 2008
+        - action: "Intentionally metallic preparations (rasa-shastra bhasmas and, by analogy, Unani kushtas) assessed under separate criteria rather than failed against the 10 ppm herbal ceiling ('critical loophole')"
+          date: not stated
+        - action: National Pharmacovigilance Programme for ASU drugs launched; lapsed for lack of support; later reconstituted
+          date: 2008 (reconstitution date not stated)
+      citations:
+        - source: "Government of India, Ministry of Health and Family Welfare. Lok Sabha Starred Question No. 15, answer on heavy metals in ASU drugs (Digital Sansad eparlib item 123456789/519511)"
+          type: institutional
+          citation_strength: direct
+        - source: "Press Information Bureau, Ministry of AYUSH. Ministry of AYUSH introduced new Central Sector scheme for promoting Pharmacovigilance of AYUSH Drugs (PIB relid 181886)"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected item 1. The ministry's parliamentary answer describes the 14 October 2005 order as issued under Section 33EEB of the Drugs and Cosmetics Act, effective 1 January 2006, applying to purely herbal ASU drugs for export (the report said ASU drugs generally). It also gives the order's own limits: WHO guidelines for arsenic, lead and cadmium, and 1 ppm for mercury. The answer was read through its indexed text because eparlib.sansad.in was blocked for direct fetch. Items 2-4 are carried over but not verified directly. Item 2: the 10/3/1/0.3 ppm figures are widely attributed to the API, but the Part-I Vol-VII text could not be opened and that volume attribution is unconfirmed. Item 3: the carve-out and the 'critical loophole' wording are the report's characterization, with no primary source checked. Item 4: the 29 September 2008 launch is attested, and the PIB release confirms a new Central Sector pharmacovigilance scheme for ASU&H drugs approved on 1 November 2017 and rolled out at the end of FY 2017-18. No primary source was found for the claim that the 2008 programme lapsed for lack of support. The Scribd and Auriga Research citations are dropped."
+    searches:
+      - "AYUSH order K-11020/5/97-DCC heavy metals export 14 October 2005"
+      - "ayush.gov.in heavy metals export Ayurvedic Siddha Unani drugs order 2005 \"within permissible limits\" label"
+      - "Lok Sabha starred question 15 heavy metals Ayurveda Siddha Unani order 14 October 2005 section 33EEB"
+      - "Ayurvedic Pharmacopoeia of India Part I Volume VII 2008 heavy metals limits lead 10 ppm arsenic 3 ppm mercury 1 ppm cadmium 0.3 ppm"
+      - "Ayurvedic Pharmacopoeia of India appendix \"limits of heavy metals\" lead 10 ppm arsenic 3 ppm cadmium 0.3 ppm mercury 1 ppm"
+      - "National Pharmacovigilance Programme for Ayurveda Siddha Unani drugs launched 2008 discontinued reconstituted"
+      - "ASU pharmacovigilance programme 2008 \"could not\" sustained lack of funding lapsed Ayush Suraksha 2018 Central Sector scheme"
+      - "Ministry of Ayush press release PIB pharmacovigilance ASU&H central sector scheme 2017 2018 notification"
+      - "National Pharmacovigilance Programme ASU drugs 2008 \"discontinued\" OR \"could not continue\" OR \"lapsed\" 2010 Ayurveda"
+  - path: safety.evidence_borrowed_from_other_traditions
+    outcome: unverifiable
+    searches:
+      - "Ayurvedic Pharmacopoeia of India Part I Volume VII 2008 heavy metals limits lead 10 ppm arsenic 3 ppm mercury 1 ppm cadmium 0.3 ppm"
+      - "Ayurvedic Pharmacopoeia of India appendix \"limits of heavy metals\" lead 10 ppm arsenic 3 ppm cadmium 0.3 ppm mercury 1 ppm"
+      - "direct fetch of API Part-I Vol-VII PDF (naturalingredient.org), blocked by egress proxy"
+  - path: contact_and_borrowing.relationships
+    outcome: unverifiable
+    searches:
+      - "Fabrizio Speziale Persian translations Sanskrit medical texts Ayurveda Unani Hindu physicians"
+      - "Abbasid court Indian physicians Sanskrit medical texts translated Arabic Sushruta Charaka 8th century Barmakids"
+      - "Speziale \"Hindu physicians\" Persian medical culture article journal (not run: search budget exhausted)"
+      - "direct fetch of Speziale, HSSA journal article, blocked by egress proxy"
+  - path: contemporary_controversies.who_engagement
+    outcome: unverifiable
+    searches:
+      - "none run: session web-search budget exhausted"
+      - "direct fetch of WHO publication page who.int/publications/i/item/9789240042698, blocked by egress proxy"
+  - path: contemporary_controversies.integration_disputes
+    outcome: unverifiable
+    searches:
+      - "none run: session web-search budget exhausted before this entry"
+  - path: contemporary_controversies.politicized_episodes
+    outcome: unverifiable
+    searches:
+      - "none run: session web-search budget exhausted before this entry"
