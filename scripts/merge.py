@@ -10,18 +10,26 @@ Writes  work/<system>/merged.yml
 
 Precedence, per leaf:
   1. v2 filled/partial        -> v2, always
-  2. v2 not_requested         -> v1 if v1 is filled/partial, else v2
-  3. v2 absent                -> v2, always. v1 never fills a field v2 searched
+  2. v2 incidental            -> v1 if v1 is filled/partial, else v2
+  3. v2 not_requested         -> v1 if v1 is filled/partial/incidental, else v2
+  4. v2 absent or deferred    -> v2, always. v1 never fills a field v2 searched
                                  and came up empty on.
 Every leaf is tagged source_report: v1 | v2.
 Leaves present in v1 but not v2 are schema errors: reported, never merged.
+Both mappings must declare the codebook's schema_version.
 """
 
 import copy
 import os
 import sys
 
-from tradmed_lib import FILLED, STATUSES, dump, get_path, leaves, load, set_path, weak_citations
+from tradmed_lib import (FILLED, INCIDENTAL, STATUSES, codebook_version, dump, leaves, load,
+                         set_path, weak_citations)
+
+# How much content a leaf carries; v1 replaces v2 only where it ranks higher
+# and v2 was never asked (rules 2 and 3).
+RANK = {"filled": 2, "partial": 2, INCIDENTAL: 1}
+V1_MAY_REPLACE = {INCIDENTAL, "not_requested"}
 
 
 def main():
@@ -36,11 +44,19 @@ def main():
     else:
         # New systems have no earlier generation to mine: merge is a pass-through.
         print(f"{system}: no v1.yml — merging v2 alone")
-        v1 = {"fields": {}}
+        v1 = None
 
+    version = codebook_version()
     for name, doc in (("v2", v2), ("v1", v1)):
+        if doc is None:
+            continue
         if "fields" not in doc:
             sys.exit(f"{name}.yml has no top-level 'fields' key")
+        if str(doc.get("schema_version")) != version:
+            sys.exit(f"{name}.yml declares schema_version {doc.get('schema_version')!r}, "
+                     f"codebook is {version!r}. Re-run /tradmed {system}.")
+    if v1 is None:
+        v1 = {"fields": {}}
 
     merged = copy.deepcopy(v2)
     merged["source_report"] = "merged"
@@ -57,7 +73,7 @@ def main():
         leaf1 = v1_leaves.get(path)
         s1 = leaf1.get("status") if leaf1 else "—"
 
-        if s2 == "not_requested" and leaf1 and s1 in FILLED:
+        if s2 in V1_MAY_REPLACE and leaf1 and RANK.get(s1, 0) > RANK.get(s2, 0):
             chosen = copy.deepcopy(leaf1)
             chosen["source_report"] = "v1"
             from_v1.append(path)
@@ -85,7 +101,7 @@ def main():
         if leaf.get("status") == "absent":
             gap.append({"path": path, "missing": leaf.get("notes") or "(no note given)"})
         weak = weak_citations(leaf)
-        if weak and leaf.get("status") in FILLED:
+        if weak and (leaf.get("status") in FILLED or leaf.get("status") == INCIDENTAL):
             verify.append({
                 "path": path,
                 "source_report": leaf.get("source_report"),

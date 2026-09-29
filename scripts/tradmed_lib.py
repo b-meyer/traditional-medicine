@@ -4,6 +4,7 @@ A "leaf" is any mapping that carries a `status` key. The codebook requires every
 sub-field to be a leaf, which is what makes merging and patching deterministic.
 """
 
+import re
 import sys
 
 try:
@@ -12,7 +13,19 @@ except ImportError:
     sys.exit("PyYAML is required: pip install -r scripts/requirements.txt")
 
 FILLED = {"filled", "partial"}
-STATUSES = {"filled", "partial", "absent", "not_requested"}
+# Content present but not systematically covered: never a gap target.
+INCIDENTAL = "incidental"
+STATUSES = {"filled", "partial", "incidental", "absent", "not_requested", "deferred"}
+CODEBOOK = "reference/codebook.md"
+
+
+def codebook_version(path=CODEBOOK):
+    """The version in the codebook's title line, e.g. "1.2"."""
+    with open(path, encoding="utf-8") as f:
+        m = re.search(r"— v(\d+(?:\.\d+)*)", f.readline())
+    if not m:
+        sys.exit(f"{path}: no version in the title line")
+    return m.group(1)
 
 
 def load(path):
@@ -65,11 +78,12 @@ def set_path(root, path, value):
 
 
 def weak_citations(leaf):
-    """Citations that are indirect or have no determinable type."""
+    """Citations that are indirect, untyped, or don't match their claim."""
     out = []
     for c in leaf.get("citations") or []:
         if not isinstance(c, dict):
             continue
-        if c.get("citation_strength") == "indirect" or c.get("type") == "unclear":
+        if (c.get("citation_strength") == "indirect" or c.get("type") == "unclear"
+                or c.get("claim_match") == "mismatch"):
             out.append(c)
     return out

@@ -18,7 +18,7 @@ import copy
 import os
 import sys
 
-from tradmed_lib import FILLED, dump, get_path, load, set_path
+from tradmed_lib import FILLED, INCIDENTAL, dump, get_path, load, set_path
 
 GAP_OK = {"found", "not_found"}
 VERIFY_OK = {"confirmed", "corrected", "unverifiable"}
@@ -52,7 +52,8 @@ def apply(doc, frag, allowed, outcomes, tag, log):
             continue
 
         new = u.get("field")
-        if not isinstance(new, dict) or new.get("status") not in FILLED:
+        # Verify may keep an incidental leaf incidental; it must not blank one.
+        if not isinstance(new, dict) or new.get("status") not in FILLED | {INCIDENTAL}:
             log.append(f"- REJECTED {tag} `{path}`: {outcome} without a filled replacement leaf")
             continue
         new = copy.deepcopy(new)

@@ -27,8 +27,8 @@ text is otherwise the research output as delivered.
 ## Running
 
 ```
-/tradmed unani            passes 1–5 for one system
-/tradmed unani --fresh    same, discarding earlier work
+/tradmed unani            passes 1–5 for one system, from scratch
+/tradmed unani --resume   pick up an interrupted run, skipping finished passes
 /tradmed-synthesize       passes 6–7 across every finished system
 ```
 
@@ -37,9 +37,11 @@ its corpus is thinnest, so schema problems surface on the cheapest run.
 
 The run stops by itself at two checkpoints: a non-empty schema-misfit list after
 mapping, and schema errors from the merge. Both mean the codebook needs revising
-and **every** system must be re-run with `--fresh` — mixed schema versions make
-the matrix unusable. After fixing anything else, re-running without `--fresh`
-resumes from the first pass whose output is missing.
+and **every** system must be re-run — mixed schema versions make the matrix
+unusable. Every run starts by deleting `work/<system>/`, so a plain re-run is
+always clean. `--resume` exists only for a run cut off partway with the codebook
+unchanged; `merge.py` rejects any mapping whose `schema_version` differs from the
+codebook's, so a stale resume fails loudly rather than mixing versions.
 
 ## What the harness enforces
 
@@ -50,6 +52,7 @@ resumes from the first pass whose output is missing.
 | v1 never overrides v2, never fills a v2 `absent` | `scripts/merge.py` precedence |
 | Gap pass touches only `absent` leaves | `apply_fragments.py` rejects off-worklist paths |
 | Verify pass touches only weakly-cited leaves | same |
+| One schema version per matrix | `merge.py` checks `schema_version` against the codebook |
 | Every value traceable | `source_report` tag on each leaf: v1, v2, gap or verify |
 | Audit independent of synthesis | Separate subagent context |
 
@@ -58,7 +61,7 @@ resumes from the first pass whose output is missing.
 ```
 work/<system>/
   v2.yml  v1.yml               raw mappings
-  v2-lists.md  v1-lists.md     absent, not_requested, weak sourcing, misfit
+  v2-lists.md  v1-lists.md     absent, not requested, weak sourcing, misfit
   merged.yml  diff.md          merge result and per-leaf v1/v2 diff
   gap-worklist.yml             absent leaves, sent to pass 4
   verify-worklist.yml          indirect/unclear-cited leaves, sent to pass 5
@@ -99,5 +102,5 @@ simply passes v2 through — then re-run `/tradmed-synthesize`.
                     tradmed-verify  tradmed-synthesis  tradmed-audit
 .claude/commands/   tradmed  tradmed-synthesize
 scripts/            merge.py  apply_fragments.py  tradmed_lib.py
-reference/          codebook.md (v1.1)  playbook.md  research-prompt.md
+reference/          codebook.md (v1.2)  playbook.md  research-prompt.md
 ```

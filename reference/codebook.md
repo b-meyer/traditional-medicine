@@ -1,8 +1,19 @@
-# Traditional Medicine Comparative Codebook — v1.1
+# Traditional Medicine Comparative Codebook — v1.2
 
 A fixed extraction schema. Every system report is mapped to these fields, in this
 order, using this vocabulary. The point is commensurability: fields must be
 readable down the column across systems, not just down the page within one system.
+
+Changes in v1.2: two new statuses, `incidental` (covered in passing without
+being asked) and `deferred` (computed at synthesis, so `corroborated_by` no
+longer borrows `not_requested`); an optional `claim_match` flag and two new
+source types on citations; new leaves for system boundaries (1), formative
+figures and premodern dated events (2), borrowed evidence (5, 13), preclinical
+and constituent evidence (13), loss of patronage and post-colonial disruption
+(8), revival context (9) and supranational standards (10); multiple tags and a
+native category per modality (6); a relationship `kind` distinguishing exchange
+from shared descent (15); and field 18 for the report's own conclusions. Field 8
+is renamed `disruption`, since not every tradition's rupture was colonial.
 
 Changes in v1.1: every codebook sub-field is its own leaf carrying `status`,
 with fixed leaf names and list-valued collections (see Leaf naming — this is
@@ -24,30 +35,41 @@ Every field is an object with this shape:
 
 ```yaml
 field_name:
-  status: filled | partial | absent | not_requested
+  status: filled | partial | incidental | absent | not_requested | deferred
   value: <content, or null>
   citations:
     - source: <author/title/year or institution/document>
       type: tertiary-review | systematic-review | meta-analysis | reference-work |
             institutional | primary-study | historical-monograph | statute |
-            news | aggregator | catalog-listing | unclear
+            news | aggregator | catalog-listing | practitioner-site |
+            open-encyclopedia | unclear
       citation_strength: direct | indirect | unclear
+      claim_match: matches | mismatch    # optional
   register: emic | historical-scholarship | biomedical-evidence | regulatory
   notes: <disputes, caveats, why absent — optional>
 ```
 
 **Status values.**
 - `filled` / `partial` — the report covers it.
+- `incidental` — the source research prompt never asked, but the report covers
+  the topic in passing. Keep the content in `value`. Coverage is not systematic,
+  so its thinness says nothing about the literature: **not a gap-pass search
+  target**, and another system's silence on the same leaf is not a contrast.
 - `absent` — the report addressed the topic and the literature came up short, or
   the report should plausibly have covered it and did not. A real gap.
 - `not_requested` — the source research prompt never asked, so silence here says
   nothing about the literature. **Do not send these to the gap pass as search
   targets for missing evidence; they are prompt-coverage gaps, not evidence gaps.**
-  Expect this status on fields 6, 7, 11 and parts of 1.
+  Expect this status, or `incidental`, on fields 6, 7, 11 and parts of 1.
+- `deferred` — a leaf the codebook says is computed at synthesis. `value` stays
+  null. Mappers never fill it and no pass searches for it.
 
 Keeping these apart is the whole point. A field can be empty because nobody
 looked, because nobody asked, or because nothing exists, and the three lead to
 completely different next actions.
+
+The source research prompt never asks for field 18, so it is never `absent`:
+either the report volunteers it (`filled` / `partial`) or it is `not_requested`.
 
 **citation_strength.**
 - `direct` — the work itself, the statute text, the journal article.
@@ -55,29 +77,47 @@ completely different next actions.
   expat guide, practitioner blog, state media outlet or news aggregator.
 - `unclear` — cannot tell from the report.
 
+**Source types.** `practitioner-site` is a clinic, pharmacy, manufacturer or
+practitioner's own website. `open-encyclopedia` is an openly edited reference
+such as Wikipedia. Both are `indirect` by rule 4.
+
+**claim_match** (optional). Set `mismatch` where the cited source, judged from
+its title or description, does not appear to be about the claim it is cited for
+— for example, a bibliography entry that names a different study. Set `matches`
+only where you can see that it is. Omit it otherwise. A `mismatch` is a
+verification target like any `indirect`.
+
 Every `indirect` is a verification target. These cluster in fields 8, 9 and 10.
 
 **register** keeps the tradition's own claims, historical scholarship, biomedical
 evidence and regulatory fact from blending together.
 
-## Leaf naming (v1.1)
+## Leaf naming
 
 Leaf keys are exactly the codebook's sub-field names — never invented keys.
 Where a field holds a variable number of items, they go as a list inside one
-leaf's `value`. Fields without named sub-fields use these leaf names:
+leaf's `value`. List-valued leaves use these names and item shapes:
 
 | Field | Leaf | Value is a list of |
 |---|---|---|
+| 1 identification | `system_boundary` | `{tradition, relation, fields_affected, description}` |
+| 2 canon_and_transmission | `key_figures` | `{name, dates, role}` |
 | 3 construct_debate | `positions` | `{scholar, work, year, position, evidence_base}` |
-| 6 modalities | `items` | `{name, tag, description}` |
+| 6 modalities | `items` | `{name, native_category, tags, description}` |
+| 8 disruption | `post_colonial_disruption` | `{label, date, description}` |
 | 10 legal_status | `jurisdictions` | `{jurisdiction, regulator, statute, year, scope_of_practice, prescribing_rights, integration_with_public_health_system, recognition_tier}` |
+| 10 legal_status | `supranational_standards` | `{body, instrument, year, scope}` |
 | 13 evidence_state | `reviews` | `{modality, best_available_review, type, year, size, conclusion, certainty_rating, methodological_limitations_noted}` |
-| 15 contact_and_borrowing | `relationships` | `{other_tradition, direction, period, evidence_type, status}` |
+| 13 evidence_state | `preclinical_and_constituent_evidence` | `{agent, finding, type, year, citation}` |
+| 15 contact_and_borrowing | `relationships` | `{other_tradition, kind, direction, period, evidence_type, status}` |
 | 17 self_reported_gaps | `inventory` | `{kind, text}` |
+| 18 report_conclusions | `revision_thresholds` | `{domain, threshold, would_change}` |
+| 18 report_conclusions | `recommendations` | `{audience, text}` |
 
-Likewise `diagnostics.reliability_evidence` and `dated_events` are single leaves
-whose value is a list. A jurisdiction or study appearing in one report and not
-another is then a difference in content, not in schema — which is what keeps
+Likewise `diagnostics.reliability_evidence`, every
+`evidence_borrowed_from_other_traditions` and every `dated_events` (fields 2, 8
+and 9) are single leaves whose value is a list. A jurisdiction or study
+appearing in one report and not another is then a difference in content, not in schema — which is what keeps
 schema errors meaningful.
 
 ## Fields
@@ -85,6 +125,11 @@ schema errors meaningful.
 ### 1. identification
 - `system_name`, `alternate_names` (including endonyms), `primary_regions`
 - `practitioner_estimate` — count, source, year
+- `system_boundary` — traditions the report treats as the same system, a
+  variant, a sibling sharing its origins, or a grouping it is regulated under.
+  Per entry: `relation` (same_system_variant | sibling | regulatory_grouping),
+  and `fields_affected` — which fields in this extraction draw on content that
+  really belongs to that other tradition.
 
 ### 2. canon_and_transmission
 - `foundational_texts` — title, approximate date, attributed author
@@ -93,6 +138,11 @@ schema errors meaningful.
 - `transmission_mode` — textual, oral, lineage-based, mixed
 - `redaction_history`
 - `external_dating_anchors` — excavated manuscripts, dated copies, translations
+- `key_figures` — formative figures of the premodern tradition: authors,
+  commentators, translators, patrons, with dates and role. Revival-era figures
+  belong in field 9.
+- `dated_events` — every dated premodern event (composition, translation,
+  commentary, rediscovery), as in field 8
 
 ### 3. construct_debate
 Whether the modern system is continuous with premodern practice or substantially
@@ -122,28 +172,48 @@ offers as its own, not as consensus.
   observable signs from agreement on the integrated judgment
 - `standardization_efforts` — questionnaires, software, official scales, and
   the agreement threshold they target
+- `evidence_borrowed_from_other_traditions` — reliability studies conducted
+  on a different or neighbouring tradition that the report applies to this one.
+  List them here, not under `reliability_evidence`.
 
 **Do not summarize this field into a verdict.** Values from different designs
 are not comparable and must not be averaged, ranked or collapsed.
 
 ### 6. modalities
-For each: name, tag, description. Tags: `herbal` | `mineral-metal` | `manual` |
-`needle` | `thermal` | `dietary` | `regimenal` | `surgical` | `mind-body` | `ritual`
+For each: `name`, `native_category` (the tradition's own grouping, if the report
+gives one), `tags` (one or more), `description`. Tags: `herbal` |
+`animal-derived` | `mineral-metal` | `manual` | `needle` | `procedural` |
+`thermal` | `dietary` | `regimenal` | `surgical` | `mind-body` | `ritual`.
+`procedural` covers evacuative and blood-drawing procedures such as
+venesection, cupping, leeching and induced purging. Where the tradition's own
+category bundles several tags, keep one item with all of them rather than
+splitting it.
 
 ### 7. materia_medica
 - `pharmacological_framework`, `flagship_agents`, `preparation_traditions`
 
-### 8. colonial_disruption
+### 8. disruption
+Pressure that broke or displaced the tradition, whatever its source. Where the
+report establishes that a sub-field does not apply — a tradition never
+colonized, a state never partitioned — mark it `filled` with value
+`not_applicable` and say why in `notes`. That is a finding, not a gap. Use
+`absent` only where the report leaves it unclear.
+- `loss_of_patronage` — pre-colonial or dynastic decline: collapse of a court,
+  state or institution that sustained the tradition, with dates
 - `period`, `colonial_power`
 - `suppression_or_marginalization` — specific policies with dates
 - `abolition_attempts` — formal proposals, votes, outcomes, dates
 - `practitioner_response` — organized resistance, dates, bodies formed
+- `post_colonial_disruption` — partition, state succession or other
+  post-independence breaks that split or relocated institutions, each dated
 - `dated_events` — every dated event, as `{label, date, description}`. Use a
   plain canonical label (for example "Macaulay's Minute", "Bhore Committee").
   Consistent labels are what let synthesis detect events shared across systems.
   Do **not** attempt to mark events as shared — that is computed at synthesis.
 
 ### 9. revival_and_institutionalization
+- `revival_context` — what the revival responded to: anti-colonial nationalism,
+  state-led modernization, post-revolutionary policy, market demand, or other
 - `key_figures` and dates
 - `nationalist_framing`
 - `standardization_events` — textbooks, curricula, colleges, dates
@@ -156,6 +226,10 @@ One entry per jurisdiction: `jurisdiction`, `regulator`, `statute` with year,
 `scope_of_practice`, `prescribing_rights`, `integration_with_public_health_system`,
 `recognition_tier` (full medical system | statutory registration | title
 protection | supplement/wellness only | unregulated).
+- `supranational_standards` — normative instruments above the level of a
+  jurisdiction that set training, practice or product standards (WHO
+  benchmarks, regional pharmacopoeias, harmonization agreements). WHO strategy,
+  ICD-11 and collaborating centres stay in field 16 `who_engagement`.
 
 ### 11. education_and_licensure
 - `degree_programs`, `duration`, `accrediting_body`
@@ -181,6 +255,13 @@ found wanting. Never let field 12 imply field 13.
 Per modality: `best_available_review` (type, year, size), `conclusion`,
 `certainty_rating` as the reviewers gave it, `methodological_limitations_noted`.
 Use the reviewers' own hedging. Do not sharpen a qualified conclusion.
+- `preclinical_and_constituent_evidence` — isolation of active constituents,
+  animal and in-vitro pharmacology. Record it, but never let it stand in for a
+  clinical review.
+- `evidence_borrowed_from_other_traditions` — clinical reviews or trials the
+  report applies to this tradition that were conducted on a different one, or
+  that cluster in another tradition's practice. List them here, not in
+  `reviews`.
 
 ### 14. safety
 - `adulteration_and_contamination` — with measured figures where given
@@ -192,12 +273,17 @@ Use the reviewers' own hedging. Do not sharpen a qualified conclusion.
   data from a different system. These do not belong in this system's cell.
 
 ### 15. contact_and_borrowing
-Per relationship: `other_tradition`, `direction`, `period`, `evidence_type`
-(documented translation | textual attestation | structural parallel),
-`status` (demonstrated | contested | convergence).
-- `corroborated_by` — leave unset. Computed at synthesis, where the whole corpus
-  is visible. Independent corroboration from the other end of an exchange is a
-  finding, but a mapper seeing one report cannot establish it.
+Per relationship: `other_tradition`, `kind` (exchange | shared_descent |
+same_system_variant), `direction`, `period`, `evidence_type` (documented
+translation | textual attestation | structural parallel), `status`
+(demonstrated | contested | convergence). `shared_descent` is a common ancestor,
+not borrowing between the two; `same_system_variant` is a tradition the report
+treats as the same system under another name. For either, `direction` may be
+null.
+- `corroborated_by` — status `deferred`, value null. Computed at synthesis,
+  where the whole corpus is visible. Independent corroboration from the other
+  end of an exchange is a finding, but a mapper seeing one report cannot
+  establish it.
 
 ### 16. contemporary_controversies
 - `who_engagement` — strategies, benchmarks, ICD-11, centres
@@ -214,6 +300,17 @@ Kept separate from the extraction's own `absent` findings. Where the two diverge
 that divergence is informative: self-reported gaps are the ones the research pass
 noticed, and the rest are the ones it could not see in itself.
 
+### 18. report_conclusions
+What the report itself concludes beyond answering its questions. Never `absent`
+— see Status values.
+- `revision_thresholds` — conditions the report says would change its
+  conclusions: the domain, the evidence threshold, and what would change
+- `recommendations` — practice, patient or policy recommendations it makes,
+  with their audience
+
+These are the report author's stance, not findings. Synthesis may compare them
+but must not treat them as evidence.
+
 ## Mapping rules
 
 1. Extract only. Do not supplement the report with outside knowledge.
@@ -225,11 +322,13 @@ noticed, and the rest are the ones it could not see in itself.
    note the mismatch rather than forcing it.
 6. Where a field is `absent`, say what specifically is missing, precisely enough
    to become a search target.
-7. Where a field is `not_requested`, say so plainly and do not write a search
-   target for it.
+7. Where a field is `not_requested` or `incidental`, say so plainly and do not
+   write a search target for it.
+8. Where a leaf is `deferred`, leave `value` null.
 
 ## Schema revision
 
 If a report contains something substantial that no field accommodates, propose
 the field rather than discarding the content. Schema changes apply to all
-systems, and earlier mappings are re-run.
+systems, and earlier mappings are re-run. Every mapping declares
+`schema_version`, and the merge refuses one that does not match this file.

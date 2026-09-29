@@ -1,12 +1,16 @@
 ---
 description: Run tradmed passes 1–5 (map, merge, gap, verify, apply) for one system
-argument-hint: <system> [--fresh]
+argument-hint: <system> [--resume]
 ---
 
 Run the tradmed extraction pipeline for one medical system: `$ARGUMENTS`
 
 The first word of the arguments is the system slug — the folder name under
-`reports/`. If `--fresh` is present, delete `work/<system>/` before starting.
+`reports/`.
+
+Every run starts fresh: delete `work/<system>/` before starting, unless
+`--resume` is present. A run from scratch is the only way to be sure every
+output was built against the current codebook.
 
 ## The isolation rule — read before invoking anything
 
@@ -29,11 +33,13 @@ prevent. If you are tempted to add helpful context, don't.
    `reports/<system>/v1-bib.md`. Pass `none` where missing.
 4. Confirm PyYAML imports (`python -c "import yaml"`). If not, run
    `pip install -r scripts/requirements.txt`.
-5. Create `work/<system>/` if needed.
+5. Unless `--resume` is present, delete `work/<system>/`. Then create it.
 
-**Resuming:** skip any pass whose output files already exist, and say which
-passes you skipped. This lets a run stopped at a checkpoint pick up where it left
-off.
+**Resuming** (`--resume` only): skip any pass whose output files already exist,
+and say which passes you skipped. Use it only to pick up a run that was
+interrupted without the codebook changing — never after a checkpoint stop, since
+those mean the codebook is being revised. `merge.py` refuses mappings whose
+`schema_version` doesn't match the codebook, so a stale resume fails at pass 3.
 
 ## Pass 1 and pass 2 — mapping (run in parallel)
 
@@ -54,8 +60,8 @@ pointing at the v1 files and `v1.yml` / `v1-lists.md`.
 
 Read the **Schema misfit** section of each `-lists.md` file. If any is not
 `None`, **stop**. Show the user the misfit entries and say the codebook needs
-revising before continuing, and that every system's mapping must then be re-run
-with `--fresh`. Do not continue to pass 3. A matrix built from two schema
+revising before continuing, and that every system must then be re-run. Do not
+continue to pass 3. A matrix built from two schema
 versions is worse than none.
 
 ## Pass 3 — merge (script, no model)
@@ -63,6 +69,9 @@ versions is worse than none.
 Run `python scripts/merge.py <system>` from the repository root.
 
 ### Checkpoint B — schema errors
+
+If it exits with any non-zero status, **stop** and show the user its output. A
+`schema_version` mismatch means a stale mapping — re-run without `--resume`.
 
 If it exits with status 2, **stop**. Show the user the schema errors from
 `work/<system>/diff.md`. These mean the two mappings disagree on leaf structure,
@@ -103,9 +112,10 @@ Tell the user, briefly:
 - verify: confirmed, corrected, unverifiable
 - anything rejected in `apply-log.md` — rejections mean an agent went off its
   worklist, which is worth knowing
-- which fields are `not_requested` after the merge. If modalities or another
-  field is `not_requested` for this system, flag it: that is a question-set gap,
-  not an evidence gap, and it may affect the comparison.
+- which fields are `not_requested` or `incidental` after the merge. If
+  modalities or another field is `not_requested` for this system, flag it: that
+  is a question-set gap, not an evidence gap, and it may affect the comparison.
+  `incidental` means some content exists but coverage is not systematic.
 
 Point them at `work/<system>/final.yml`, `diff.md` and `apply-log.md`. Do not
 paste the YAML.

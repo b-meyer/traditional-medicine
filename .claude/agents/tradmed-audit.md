@@ -34,7 +34,9 @@ supporting it. Classify each:
   figures from different study designs, evidence bases of different corpus
   scale treated as equivalent, a shared event counted as several, harm data
   borrowed from another tradition, or a comparative claim resting only on
-  `source_report: v1` values
+  `source_report: v1` values, only on `incidental` leaves, on preclinical
+  evidence standing in for clinical, or on a report's own conclusions (field 18)
+  treated as evidence
 
 Separately, flag every claim that traces to no extraction at all. Those came from
 the writer's own knowledge and must be removed or verified.
