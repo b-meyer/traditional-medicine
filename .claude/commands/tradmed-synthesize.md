@@ -16,8 +16,10 @@ anything to the task. Each subagent's instructions are complete.
 2. Every system with a folder under `reports/` that contains a `v2.md` must have a
    `final.yml`. If any is missing, stop and list them — a partial corpus produces
    a misleading comparison.
-3. Every `final.yml` must declare the same `schema_version`. If they differ,
-   stop: the systems were mapped against different codebooks and must be re-run.
+3. Every `final.yml` must declare the same `schema_version`, and it must match
+   the version in the title line of `reference/codebook.md`. If not, stop and
+   list the stale systems: they were mapped against a different codebook and
+   must be re-run with `/tradmed <system>`.
 
 ## Pass 6 — synthesis
 

@@ -33,7 +33,7 @@ order.
 ## YAML shape
 
 ```yaml
-schema_version: "1.1"
+schema_version: "1.2"
 system: <slug from the report>
 source_report: v2
 fields:
@@ -67,15 +67,20 @@ the codebook must be present, even when its status is `absent` or
 - Extract only from the report. Do not add outside knowledge.
 - The report came from a ten-question research prompt that did not ask about
   every codebook field. Where a field has no corresponding question behind it,
-  mark it `not_requested`, not `absent`. Expect this on modalities, materia
-  medica, education and licensure, and practitioner numbers. Write no search
-  target for these — they are prompt-coverage gaps, not evidence gaps.
+  mark it `not_requested`, not `absent` — or `incidental` if the report covers
+  it in passing anyway, keeping that content in `value`. Expect this on
+  modalities, materia medica, education and licensure, and practitioner
+  numbers. Write no search target for these — they are prompt-coverage gaps,
+  not evidence gaps.
 - Where the report did address a topic and the literature came up short, mark it
   `absent` and put in `notes` precisely what is missing, specific enough to
   become a search query.
 - Carry each value's citation across. No citation → `type: unclear`. A solid
   claim reached through a bookseller, catalog listing, expat guide, practitioner
   blog, state media outlet or news aggregator → `citation_strength: indirect`.
+- Where a bibliography entry's title or description is plainly about something
+  other than the claim it is cited for, set `claim_match: mismatch` on that
+  citation and say why in `notes`.
 - Field 5: one entry per reliability study, each with statistic type, design,
   population, rater and subject counts, and what was being agreed on. Never
   average, rank or collapse these into a verdict.
@@ -84,10 +89,16 @@ the codebook must be present, even when its status is `absent` or
   conclusions. Never let one infer the other.
 - Field 13 keeps the reviewers' own hedging. Never sharpen a qualified
   conclusion.
-- Fields 8 and 9: record every dated event under `dated_events` with a plain
-  canonical label. Do not mark anything as shared with another tradition.
-- Field 14: flag any harm claim resting on data from a different tradition.
-- Field 15: leave `corroborated_by` unset.
+- Fields 2, 8 and 9: record every dated event under that field's
+  `dated_events` with a plain canonical label. Do not mark anything as shared
+  with another tradition.
+- Fields 5, 13 and 14: any study or harm claim resting on data from a different
+  tradition goes under that field's `evidence_borrowed_from_other_traditions`,
+  not in the main leaf.
+- Field 15: set `corroborated_by` to status `deferred`, value null.
+- Field 18: record the report's own revision thresholds and recommendations if
+  it states any. Never mark this field `absent`; use `not_requested` where the
+  report states none.
 - Field 17: verbatim inventory of the report's own stated gaps, source caveats
   and contested items. Keep separate from your own `absent` findings.
 
@@ -96,11 +107,12 @@ the codebook must be present, even when its status is `absent` or
 Write to `OUT_LISTS` as Markdown, four headed sections:
 
 1. **Absent** — leaf path and what is missing
-2. **Not requested** — leaf paths only
+2. **Not requested or incidental** — leaf paths, each with its status
 3. **Unclear or indirect sourcing** — leaf path, claim, and the weak source
 4. **Schema misfit** — report content no field accommodates, with a proposed
-   field; and fields whose framing does not fit this tradition. Write `None` if
-   empty.
+   field; and fields whose framing does not fit this tradition. Content that
+   fits an existing leaf, even imperfectly, with the mismatch noted in `notes`,
+   is not a misfit. Write `None` if empty.
 
 ## Return
 

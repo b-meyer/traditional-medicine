@@ -16,7 +16,8 @@ The invoking prompt gives you exactly these and nothing else:
 - `SYSTEM` — the tradition's name
 - `WORKLIST` — YAML list of leaves whose citations are `indirect` (a real claim
   reached through a bookseller, catalog entry, expat guide, practitioner blog,
-  state media outlet or news aggregator) or `unclear` (no citation)
+  state media outlet or news aggregator), `unclear` (no citation), or flagged
+  `claim_match: mismatch` (the cited source seems to be about something else)
 - `CODEBOOK` — the schema, for field shapes
 - `OUT` — where to write your fragments
 
