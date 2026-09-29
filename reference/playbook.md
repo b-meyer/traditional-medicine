@@ -1,4 +1,4 @@
-> Manual-run reference. The harness in this folder implements it. Where they differ — codebook v1.1 fixes leaf names and moves shared events and corroboration to synthesis; v1.2 adds the `incidental` and `deferred` statuses and further leaves; v1.3 extends the relationship, boundary and toxicity enums — the files in `.claude/agents/` and `reference/codebook.md` govern.
+> Manual-run reference. The harness in this folder implements it. Where they differ — codebook v1.1 fixes leaf names and moves shared events and corroboration to synthesis; v1.2 adds the `incidental` and `deferred` statuses and further leaves; v1.3 extends the relationship, boundary and toxicity enums; v1.4 adds `construct_debate.report_adjudication` for the report's own verdict on the continuity debate — the files in `.claude/agents/` and `reference/codebook.md` govern.
 
 # Traditional Medicine Comparative Project — Playbook
 
