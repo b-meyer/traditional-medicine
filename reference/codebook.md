@@ -1,8 +1,12 @@
-# Traditional Medicine Comparative Codebook — v1.3
+# Traditional Medicine Comparative Codebook — v1.4
 
 A fixed extraction schema. Every system report is mapped to these fields, in this
 order, using this vocabulary. The point is commensurability: fields must be
 readable down the column across systems, not just down the page within one system.
+
+Changes in v1.4: field 3 gains a `report_adjudication` leaf, so the report's
+own verdict on the continuity debate has a place of its own instead of riding in
+`positions.notes`. Field 3's leaves are now listed explicitly.
 
 Changes in v1.3: enum additions only, no new leaves. Field 1 `relation` gains
 `absorbed_strand`; field 14's mechanism classes gain `pharmaceutical
@@ -155,8 +159,16 @@ schema errors meaningful.
 ### 3. construct_debate
 Whether the modern system is continuous with premodern practice or substantially
 a 19th–20th century construction. Named scholars, their specific positions, and
-what each side's evidence base actually is. Record any adjudication the report
-offers as its own, not as consensus.
+what each side's evidence base actually is.
+- `positions` — each named scholar's position and its evidence base (see Leaf
+  naming)
+- `report_adjudication` — the verdict the report itself offers on the debate, if
+  any, recorded as the report's stance and not as consensus. `register:
+  historical-scholarship`. Where the report lays out the positions without
+  judging between them, mark it `partial` and say so in `notes`; `absent` only
+  where the report covers the debate and should plausibly have weighed it.
+  Synthesis may compare these but must not treat them as evidence, as with
+  field 18.
 
 ### 4. theoretical_primitives
 - `constituents`, `balance_logic`, `correspondence_system`, `etiology`, `nosology`
