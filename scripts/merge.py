@@ -6,7 +6,7 @@ Reads   work/<system>/v2.yml, work/<system>/v1.yml (optional)
 Writes  work/<system>/merged.yml
         work/<system>/diff.md
         work/<system>/gap-worklist.yml
-        work/<system>/verify-worklist.yml
+        work/<system>/verify-worklist-NN.yml   (batches of at most VERIFY_BATCH)
 
 Precedence, per leaf:
   1. v2 filled/partial        -> v2, always
@@ -20,6 +20,8 @@ Both mappings must declare the codebook's schema_version.
 """
 
 import copy
+import glob
+import math
 import os
 import sys
 
@@ -30,6 +32,29 @@ from tradmed_lib import (FILLED, INCIDENTAL, STATUSES, codebook_version, dump, l
 # and v2 was never asked (rules 2 and 3).
 RANK = {"filled": 2, "partial": 2, INCIDENTAL: 1}
 V1_MAY_REPLACE = {INCIDENTAL, "not_requested"}
+
+# Leaves per verify agent. Pass 5 runs one agent per batch, in parallel, so a
+# weakly sourced report doesn't hand a single agent a worklist too long to work
+# carefully.
+VERIFY_BATCH = 8
+
+
+def batches(entries, size):
+    """Split entries into contiguous, evenly sized batches of at most `size`.
+
+    Contiguous keeps a field's leaves together, so one agent's searches serve
+    neighbouring claims.
+    """
+    if not entries:
+        return []
+    n = math.ceil(len(entries) / size)
+    q, r = divmod(len(entries), n)
+    out, i = [], 0
+    for k in range(n):
+        j = i + q + (1 if k < r else 0)
+        out.append(entries[i:j])
+        i = j
+    return out
 
 
 def main():
@@ -111,15 +136,20 @@ def main():
 
     dump({"system": system, "pass": "gap", "entries": gap},
          os.path.join(d, "gap-worklist.yml"))
-    dump({"system": system, "pass": "verify", "entries": verify},
-         os.path.join(d, "verify-worklist.yml"))
+    # Clear batches from any earlier merge so a shorter list leaves none stale.
+    for old in glob.glob(os.path.join(d, "verify-worklist*.yml")):
+        os.remove(old)
+    verify_batches = batches(verify, VERIFY_BATCH)
+    for k, batch in enumerate(verify_batches, 1):
+        dump({"system": system, "pass": "verify", "batch": k, "entries": batch},
+             os.path.join(d, f"verify-worklist-{k:02d}.yml"))
 
     with open(os.path.join(d, "diff.md"), "w", encoding="utf-8") as f:
         f.write(f"# {system} — v1 vs v2 field diff\n\n")
         f.write(f"- Leaves: {len(v2_leaves)}\n")
         f.write(f"- Filled from v1: {len(from_v1)}\n")
         f.write(f"- Gap worklist: {len(gap)}\n")
-        f.write(f"- Verify worklist: {len(verify)}\n")
+        f.write(f"- Verify worklist: {len(verify)} in {len(verify_batches)} batches\n")
         f.write(f"- Schema errors: {len(errors)}\n\n")
         if errors:
             f.write("## Schema errors\n\n")
@@ -129,7 +159,8 @@ def main():
         f.writelines(f"| `{p}` | {a} | {b} | {o} |\n" for p, a, b, o in rows)
 
     print(f"{system}: {len(v2_leaves)} leaves, {len(from_v1)} filled from v1, "
-          f"{len(gap)} gap, {len(verify)} verify, {len(errors)} schema errors")
+          f"{len(gap)} gap, {len(verify)} verify in {len(verify_batches)} batches, "
+          f"{len(errors)} schema errors")
     if errors:
         print("Schema errors found — see diff.md. Resolve before continuing.")
         sys.exit(2)

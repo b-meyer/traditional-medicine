@@ -64,8 +64,9 @@ work/<system>/
   v2-lists.md  v1-lists.md     absent, not requested, weak sourcing, misfit
   merged.yml  diff.md          merge result and per-leaf v1/v2 diff
   gap-worklist.yml             absent leaves, sent to pass 4
-  verify-worklist.yml          indirect/unclear-cited leaves, sent to pass 5
-  gap-fragments.yml  verify-fragments.yml
+  verify-worklist-NN.yml       indirect/unclear-cited leaves, in batches of 8,
+                               one pass-5 agent per batch
+  gap-fragments.yml  verify-fragments-NN.yml
   final.yml  apply-log.md      patched extraction; what was applied or rejected
 out/
   synthesis.md  audit.md
