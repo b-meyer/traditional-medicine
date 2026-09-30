@@ -617,12 +617,6 @@ fields:
       source_report: verify
       verify_outcome: corrected
       replaced_from: v2
-      review:
-      - id: T06
-        verdict: confirmed_with_nuance
-        date: '2026-09-30'
-        sources:
-        - https://doaj.org/article/ca95dcc746ee4be490bde7f3a2b0e98d
     sign_vs_synthesis:
       status: partial
       value: 'Birkeflet 2011: only ''moderate to fair'' agreement on excess/deficiency patterns and poor
@@ -835,46 +829,24 @@ fields:
       status: filled
       value:
       - 1822 Daoguang decree excluding acupuncture from the Imperial Medical Academy
-      - Marginalized further in the Republican era. A 1929 proposal to abolish 'old medicine' was rescinded
-        that December; it was not enacted (earlier text said 'outlawed under the 1929 proposals', which
-        overstates it)
+      - Marginalized further in the Republican era, 'outlawed along with other traditional medicine under
+        the 1929 proposals'
       - May Fourth scientism (Lu Xun disparagement)
       citations:
       - source: Neither Donkey Nor Horse review, MCLC [S45]
         type: tertiary-review
         citation_strength: direct
-      - source: 'Fan, Ritsumeikan J. Asia Pacific Studies 27: abolition proposal rescinded Dec 1929'
-        url: https://en.apu.ac.jp/rcaps/uploads/fckeditor/publications/journal/RJAPS_V27_Fan.pdf
-        type: institutional
-        citation_strength: direct
       register: historical-scholarship
       notes: The 'outlawed' wording is the report's; the report elsewhere describes the 1929 measure as
         a proposal.
       source_report: v2
-      review:
-      - id: T04
-        verdict: corrected
-        date: '2026-09-30'
-        sources:
-        - https://en.apu.ac.jp/rcaps/uploads/fckeditor/publications/journal/RJAPS_V27_Fan.pdf
-        - https://gera.fr/wp-content/uploads/2026/04/nguyen-100231.pdf
-        - https://en.wikipedia.org/wiki/Yu_Yan_(physician)
     abolition_attempts:
       status: partial
-      value: '1929: Yu Yunxiu (Yu Yan) proposed at the Nanjing government''s National Public Health Conference
-        (Feb 1929) to abolish ''old medicine''; practitioners protested in Shanghai on 17 March 1929;
-        the Nanjing government rescinded the proposal in December 1929 under Chiang Kai-shek''s order.'
+      value: '1929: Yu Yunxiu (Yu Yan) proposed to the Nationalist government to abolish Chinese medicine;
+        practitioners mobilized. Outcome (vote, adoption) not stated in the report.'
       citations:
       - source: 'Review: Andrews; Lei - PMC [S13]'
         type: tertiary-review
-        citation_strength: direct
-      - source: Fan, Ritsumeikan J. Asia Pacific Studies 27
-        url: https://en.apu.ac.jp/rcaps/uploads/fckeditor/publications/journal/RJAPS_V27_Fan.pdf
-        type: institutional
-        citation_strength: direct
-      - source: 'Nguyen 2026: the 1929 episode is often misread as an effective ban'
-        url: https://gera.fr/wp-content/uploads/2026/04/nguyen-100231.pdf
-        type: institutional
         citation_strength: direct
       register: historical-scholarship
       notes: Formal vote or resolution outcome not given.
@@ -930,10 +902,6 @@ fields:
       - label: Meiji suppression of kampo
         date: Meiji era (dates not given)
         description: Suppression in favor of German biomedicine
-      - label: Abolition proposal rescinded
-        date: 1929-12
-        description: Nanjing government rescinded the proposal to abolish Chinese medicine (Chiang Kai-shek's
-          order).
       citations:
       - source: 'Review: Andrews; Lei - PMC [S13]'
         type: tertiary-review
@@ -1138,8 +1106,7 @@ fields:
       value:
       - jurisdiction: People's Republic of China
         regulator: null
-        statute: Law on Traditional Chinese Medicine, adopted 25 Dec 2016 by the NPC Standing Committee,
-          effective 1 July 2017 (63 articles)
+        statute: Law on Traditional Chinese Medicine, adopted Dec 2016, effective 1 July 2017
         year: 2016
         scope_of_practice: Equal legal footing with biomedicine; mandates TCM departments in hospitals;
           simplified licensing and easier classical formula approval
@@ -1173,10 +1140,9 @@ fields:
       - jurisdiction: Australia
         regulator: Chinese Medicine Board of Australia within AHPRA
         statute: Health Practitioner Regulation National Law
-        year: 2010 (National Law in force); 2012 (Chinese medicine joined the scheme, 1 July)
+        year: 2012
         scope_of_practice: 'Three divisions: acupuncture, Chinese herbal medicine, Chinese herbal dispensing;
-          protected titles; registration from 1 July 2012. Before 2012 only Victoria regulated Chinese
-          medicine. Registered: 3,804 (2012), 4,795 (March 2022).'
+          protected titles; registration from 1 July 2012'
         prescribing_rights: null
         integration_with_public_health_system: null
         recognition_tier: statutory registration
@@ -1238,31 +1204,17 @@ fields:
         integration_with_public_health_system: null
         recognition_tier: full medical system
       - jurisdiction: Malaysia
-        regulator: Traditional and Complementary Medicine Council (T&CM Council), Ministry of Health
+        regulator: null
         statute: Traditional and Complementary Medicine Act 2016
         year: 2016
         scope_of_practice: null
         prescribing_rights: null
         integration_with_public_health_system: null
         recognition_tier: null
-        year_note: Act 775 gazetted 10 Mar 2016, partly in force 1 Aug 2016; practitioner registration
-          opened 15 Mar 2021.
       citations:
       - source: none given in report (statute texts not cited)
         type: unclear
         citation_strength: unclear
-      - source: 'National Health Commission: TCM law passed 25 Dec, effective 1 July'
-        url: https://en.nhc.gov.cn/2016-12/26/c_70933.htm
-        type: institutional
-        citation_strength: direct
-      - source: 'Chinese Medicine Board of Australia: registration from 1 July 2012'
-        url: https://chinesemedicineboard.gov.au/registration
-        type: institutional
-        citation_strength: direct
-      - source: Malaysia MOH T&CM Division FAQ
-        url: https://hq.moh.gov.my/tcm/en/index.php/faqregistration
-        type: institutional
-        citation_strength: direct
       register: regulatory
       notes: 'Entire Q5 list is uncited except the WHO figures (field 16). Japan and Korea rows are neighbouring-tradition
         systems (see system_boundary). Recognition tiers for some rows are extractor inferences from the
@@ -1273,28 +1225,6 @@ fields:
         PRC on Traditional Chinese Medicine adopted 25 December 2016 effective 1 July 2017'
       source_report: v2
       verify_outcome: unverifiable
-      review:
-      - id: T01
-        verdict: confirmed
-        date: '2026-09-30'
-        sources:
-        - https://en.nhc.gov.cn/2016-12/26/c_70933.htm
-        - https://www.chinajusticeobserver.com/law/x/traditional-chinese-medicine-law-20161225
-        - https://www.hkbu.edu.hk/en/whats-new/campus-digest/2017/0928-scm-co-hosts-lecture-to-explore-impact-of-china-s-law-on-chinese-medicine.html
-      - id: T02
-        verdict: corrected
-        date: '2026-09-30'
-        sources:
-        - https://chinesemedicineboard.gov.au/registration
-        - https://www.chinesemedicineboard.gov.au/Codes-Guidelines/FAQ/Overview-National-Scheme.aspx
-        - https://chinesemedicineboard.gov.au/News/2022-07-01-10-year-anniversary.aspx
-      - id: T03
-        verdict: confirmed_with_nuance
-        date: '2026-09-30'
-        sources:
-        - https://hq.moh.gov.my/tcm/en/index.php/akta-pt-k-2016/council
-        - https://hq.moh.gov.my/tcm/en/index.php/faqregistration
-        - https://hq.moh.gov.my/tcm/en/index.php/notification
     supranational_standards:
       status: filled
       value:
@@ -1800,9 +1730,7 @@ fields:
       value:
       - FDA ban on ephedrine-alkaloid dietary supplements effective April 2004, upheld by US Court of
         Appeals 2006
-      - 'Aristolochia: Belgian cluster identified 1992; FDA warnings 2000-2001 plus import alert; Canada
-        removal order 2001 and re-warning 2004; UK ban 2001; Netherlands prohibition 2001; Hong Kong brand
-        list; China removed Guan mu tong in 2003 (weakly sourced)'
+      - Aristolochia bans 'in many countries' (dates not given)
       - World Federation of Chinese Medicine Societies removed tiger bone and rhino horn from its pharmacopeia
         (tiger removed 1993)
       - China banned tiger-bone and rhino-horn trade in mid-1990s
@@ -1814,14 +1742,6 @@ fields:
       - source: Reduction in Ephedra Poisonings after FDA Ban - NEJM [S44]
         type: primary-study
         citation_strength: direct
-      - source: CMAJ 2004;171(5):449
-        url: https://www.cmaj.ca/content/cmaj/171/5/449.full.pdf
-        type: institutional
-        citation_strength: direct
-      - source: Anal Bioanal Chem, aristolochic acid in herbal preparations
-        url: https://link.springer.com/article/10.1007/s00216-007-1310-3
-        type: institutional
-        citation_strength: direct
       register: regulatory
       notes: 'Wildlife items uncited; bear bile farm and pangolin figures vary by source (report caveat).
 
@@ -1832,16 +1752,6 @@ fields:
         claim imprecise, no primary source)'
       source_report: v2
       verify_outcome: unverifiable
-      review:
-      - id: T05
-        verdict: confirmed_with_nuance
-        date: '2026-09-30'
-        sources:
-        - https://www.cmaj.ca/content/cmaj/171/5/449.full.pdf
-        - https://link.springer.com/article/10.1007/s00216-007-1310-3
-        - https://reliasmedia.com/articles/15889-aristolochic-acid-and-renal-toxicity
-        - https://www.foodnavigator.com/Article/2001/04/18/FDA-issues-warning-over-Chinese-herb
-        - https://aaaomonline.org/Research/4231018
     evidence_borrowed_from_other_traditions:
       status: filled
       value: []

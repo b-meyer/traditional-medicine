@@ -58,32 +58,14 @@ fields:
         source: Ayurvedic Medical Council (Sri Lanka) 2010 figures
         year: 2010
         scope: Sri Lanka only
-      - region: India
-        count: 346240
-        year: 2022
-        as_on: '2022-01-01'
-        source: Lok Sabha USQ 1858 (2 Aug 2024), Annexure I, from State/UT Boards/Councils
-        colleges: 453 (01.04.2022)
-        dispensaries: 25,280 (01.04.2022, incl. central)
       citations:
       - source: Asian Development Bank, Development Asia (named in text, no bibliography entry)
         type: institutional
         citation_strength: unclear
-      - source: Lok Sabha Unstarred Question 1858, 2 Aug 2024
-        url: https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
-        type: institutional
-        citation_strength: direct
       register: regulatory
       notes: No India-wide or global estimate given. The report kept both Sri Lanka figures and used the
-        higher, more recent one. Review pass added the India figure (same source and date as the Unani
-        count).
+        higher, more recent one.
       source_report: v2
-      review:
-      - id: A01
-        verdict: updated
-        date: '2026-09-30'
-        sources:
-        - https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
     system_boundary:
       status: filled
       value:
@@ -706,13 +688,6 @@ fields:
       source_report: verify
       verify_outcome: corrected
       replaced_from: v2
-      review:
-      - id: A02
-        verdict: confirmed
-        date: '2026-09-30'
-        sources:
-        - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3803118/
-        - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3373612/
     sign_vs_synthesis:
       status: filled
       value: In the knee OA study (Kessler et al. 2019), agreement on the final overall diagnosis (95%
@@ -1524,8 +1499,6 @@ fields:
         prescribing_rights: null
         integration_with_public_health_system: null
         recognition_tier: statutory registration
-        year_note: Practice area 'Traditional Indian Medicine'; practitioner registration opened 15 Mar
-          2021.
       - jurisdiction: Mauritius
         regulator: Traditional Medicine Board
         statute: Ayurvedic and Other Traditional Medicines Act (Act 37 of 1989, proclaimed in force 3
@@ -1628,12 +1601,6 @@ fields:
       source_report: verify
       verify_outcome: corrected
       replaced_from: v2
-      review:
-      - id: A05
-        verdict: confirmed_with_nuance
-        date: '2026-09-30'
-        sources:
-        - https://hq.moh.gov.my/tcm/en/index.php/faqregistration
     supranational_standards:
       status: filled
       value:
@@ -2133,14 +2100,6 @@ fields:
       source_report: verify
       verify_outcome: confirmed
       replaced_from: v2
-      review:
-      - id: A03
-        verdict: confirmed_with_nuance
-        date: '2026-09-30'
-        sources:
-        - https://www.medicalnewstoday.com/articles/119225
-        - https://www.nutraceuticalsworld.com/contents/view_breaking-news/2008-08-27/study-reveals-toxic-metals-in-ayurvedic-products/
-        - https://staff.washington.edu/chudler/ayur2.html
     intrinsic_toxicity:
       status: filled
       value:
@@ -2244,14 +2203,6 @@ fields:
         items not checked against primary documents)'
       source_report: v2
       verify_outcome: unverifiable
-      review:
-      - id: A04
-        verdict: confirmed_with_nuance
-        date: '2026-09-30'
-        sources:
-        - https://www.nutritioninsight.com/key-interviews/regulatory-update-spotlight-on-international-authorities-response-to-ashwagandha-safety-concerns.html
-        - https://www.nutraingredients.com/Article/2026/07/06/timeline-will-authorities-de-throne-the-king-of-herbs/
-        - https://wholefoodsmagazine.com/articles/16998-researchers-clarifying-concerns-over-ashwagandha-safety
     evidence_borrowed_from_other_traditions:
       status: filled
       value: []
