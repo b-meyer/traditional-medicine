@@ -71,17 +71,33 @@ fields:
         source: Minister of State (Independent Charge) for AYUSH Shripad Yesso Naik, Rajya Sabha reply
           28 April 2015 (registered Unani practitioners)
         year: 2015
+        superseded_by_review: true
       - region: Pakistan
         count: ~60,000 registered Hakims (diploma in Tibb-e-Unani or Bachelor degree in Eastern/Unani
           medicine)
         source: 'WHO/EMRO Hamdard Foundation Pakistan, ''Unani Medicine: From Wellness to Wellbeing in
           Pakistan'''
         year: null
+      - region: India
+        count: 50053
+        year: 2022
+        as_on: '2022-01-01'
+        source: Lok Sabha USQ 1240 (9 Feb 2024) and USQ 1858 (2 Aug 2024), Annexure I, from State/UT Boards/Councils
+        concentration: UP 15,730; Maharashtra 7,882; Bihar 5,423; West Bengal 5,325; Telangana 5,187 (79%
+          of total)
       citations:
       - source: Business Standard/PTI report of Rajya Sabha reply, 2015
         type: news
         citation_strength: indirect
       - source: 'WHO/EMRO Hamdard Foundation Pakistan, Unani Medicine: From Wellness to Wellbeing in Pakistan'
+        type: institutional
+        citation_strength: direct
+      - source: Lok Sabha Unstarred Question 1240, 9 Feb 2024
+        url: https://eparlib.nic.in/bitstream/123456789/2974061/1/AU1240.pdf
+        type: institutional
+        citation_strength: direct
+      - source: Lok Sabha Unstarred Question 1858, 2 Aug 2024
+        url: https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
         type: institutional
         citation_strength: direct
       register: regulatory
@@ -97,6 +113,13 @@ fields:
         that; the India half remains indirect)'
       source_report: v1
       verify_outcome: unverifiable
+      review:
+      - id: U06
+        verdict: updated
+        date: '2026-09-30'
+        sources:
+        - https://eparlib.nic.in/bitstream/123456789/2974061/1/AU1240.pdf
+        - https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
     system_boundary:
       status: filled
       value:
@@ -668,6 +691,19 @@ fields:
       source_report: verify
       verify_outcome: corrected
       replaced_from: v2
+      review_flag: 'Mojahedi 2014 weighted kappa range: the abstract says 0.40-0.82 (PMC4005447); the
+        verify pass changed it to 0.83. Revert to 0.82 unless the full-text results table shows 0.83.'
+      review:
+      - id: U09
+        verdict: unresolved
+        date: '2026-09-30'
+        sources:
+        - https://pmc.ncbi.nlm.nih.gov/articles/PMC4005447
+      - id: U10
+        verdict: confirmed
+        date: '2026-09-30'
+        sources:
+        - https://repository.brieflands.com/items/6b6fbf6e-9b86-4646-b23c-944f803ee9a7
     sign_vs_synthesis:
       status: absent
       value: null
@@ -1221,14 +1257,14 @@ fields:
         date: '1907'
         description: null
       - label: Tibbia College foundation stone
-        date: '1916'
+        date: '1916-03-29'
         description: Laid by Lord Hardinge.
       - label: Inauguration of Ayurvedic and Unani Tibbia College
-        date: '1921'
+        date: '1921-02-13'
         description: Inaugurated by Gandhi.
-      - label: Ajmal Khan as President of Indian National Congress
+      - label: Ajmal Khan presides over the Indian National Congress (acting president for C. R. Das)
         date: '1921'
-        description: null
+        description: Ahmedabad session, December 1921.
       - label: Founding of Hamdard Pakistan
         date: '1948'
         description: Karachi.
@@ -1259,6 +1295,14 @@ fields:
       - source: various; see standardization_events
         type: unclear
         citation_strength: unclear
+      - source: Ayurvedic and Unani Tibbia College and Hospital, About Us
+        url: https://autch.delhi.gov.in/autch/about-us
+        type: institutional
+        citation_strength: direct
+      - source: 'Indian National Congress: Hakim Ajmal Khan (Acting President)'
+        url: https://inc.in/leadership/past-party-presidents/hakim-ajmal-khan-acting-president-for-c-r-das
+        type: institutional
+        citation_strength: direct
       register: regulatory
       notes: 'verify pass: unverifiable. Searched: Hakim Ajmal Khan Tibbia College foundation stone Lord
         Hardinge 1916 Gandhi inaugurated 1921 Indian National Congress president 1921; Hamdard Laboratories
@@ -1267,6 +1311,20 @@ fields:
         merge National Council for Tibb National Council for Homeopathy'
       source_report: v2
       verify_outcome: unverifiable
+      review:
+      - id: U04
+        verdict: confirmed
+        date: '2026-09-30'
+        sources:
+        - https://autch.delhi.gov.in/autch/about-us
+        - https://autch.delhi.gov.in/autch/history
+        - https://ayush.delhi.gov.in/ayush/ayurvedic-and-unani-tibbia-college-and-hospital
+      - id: U05
+        verdict: confirmed_with_nuance
+        date: '2026-09-30'
+        sources:
+        - https://inc.in/leadership/past-party-presidents/hakim-ajmal-khan-acting-president-for-c-r-das
+        - https://inc.in/brief-history-of-congress/1915-1925
   legal_status:
     jurisdictions:
       status: filled
@@ -1289,8 +1347,10 @@ fields:
         year: 1965
         scope_of_practice: not detailed
         prescribing_rights: not detailed
-        integration_with_public_health_system: not detailed; 2024 move to merge NCT into National Council
-          of Traditional, Alternative and Complementary Medicine
+        integration_with_public_health_system: 'not detailed; 2024 move to merge NCT into National Council
+          of Traditional, Alternative and Complementary Medicine. Status at Feb 2026: merger with the
+          homoeopathy council still pending as a draft NTCAM Act 2025; colleges told not to admit new
+          students (Dawn, 16 Feb 2026).'
         recognition_tier: statutory registration
       - jurisdiction: Bangladesh
         regulator: government Unani boards
@@ -1324,6 +1384,8 @@ fields:
         prescribing_rights: not detailed
         integration_with_public_health_system: not detailed
         recognition_tier: statutory registration
+        year_note: 'Allied Health Professions Act is 1982; the 2001 date could not be sourced. Registration
+          route: 3-year basic medical sciences plus 2-year Unani-Tibb specialisation (UWC).'
       - jurisdiction: Gulf / UK / US / EU
         regulator: general food-supplement/herbal or complementary-medicine regimes
         statute: no dedicated Unani statute
@@ -1354,6 +1416,18 @@ fields:
       - source: South Africa - Complementary and Alternative Medicine - Expat Focus
         type: unclear
         citation_strength: indirect
+      - source: Unani, Ayurvedic and Homoeopathic Practitioners Act 1965 (Act No. II of 1965)
+        url: http://nasirlawsite.com/laws/uahpa.htm
+        type: institutional
+        citation_strength: direct
+      - source: 'AHPCSA FAQ: Unani-Tibb under Act 63 of 1982'
+        url: https://ahpcsa.co.za/faqs/
+        type: institutional
+        citation_strength: direct
+      - source: Dawn, 16 Feb 2026 (news, current status)
+        url: https://www.dawn.com/news/1967850/uncertainty-clouds-future-of-tibb-colleges-and-hakeems-in-pakistan
+        type: institutional
+        citation_strength: direct
       register: regulatory
       notes: 'Recognition tiers for India, Pakistan, South Africa are mapper assignments from the report''s
         description; the report does not use the codebook enum. Bangladesh, Sri Lanka and Iran tiers left
@@ -1366,6 +1440,27 @@ fields:
         the Western Cape AHPCSA Allied Health Professions Council registration 2001 Unani-Tibb'
       source_report: v2
       verify_outcome: unverifiable
+      review:
+      - id: U01
+        verdict: confirmed
+        date: '2026-09-30'
+        sources:
+        - http://nasirlawsite.com/laws/uahpa.htm
+        - https://www.nct.gov.pk/
+        - https://www.emro.who.int/images/stories/about-who/Hamdard_Foundation_Pakistan.pdf
+      - id: U02
+        verdict: updated
+        date: '2026-09-30'
+        sources:
+        - https://www.dawn.com/news/1967850/uncertainty-clouds-future-of-tibb-colleges-and-hakeems-in-pakistan
+        - https://en.wikipedia.org/wiki/National_Council_for_Tibb
+      - id: U03
+        verdict: confirmed_with_nuance
+        date: '2026-09-30'
+        sources:
+        - https://ahpcsa.co.za/faqs/
+        - https://ahpcsa.co.za/registration-requirements/
+        - https://www.gov.za/sites/default/files/gcis_document/201907/42561bn102.pdf
     supranational_standards:
       status: filled
       value:
@@ -1408,12 +1503,20 @@ fields:
       source_report: verify
       verify_outcome: corrected
       replaced_from: v2
+      review:
+      - id: U08
+        verdict: confirmed
+        date: '2026-09-30'
+        sources:
+        - https://www.who.int/publications/i/item/9789240042698
+        - https://www.who.int/publications-detail-redirect/9789240042735
   education_and_licensure:
     degree_programs:
       status: partial
       value: 'India: undergraduate Kamil-e-Tib-o-Jarahat (BUMS); postgraduate Mahir-e-Tib and Mahir-e-Jarahat;
-        55 Unani colleges (of 733 AYUSH institutes: 414 Ayurveda, 248 Homeopathy, 55 Unani, 13 Siddha,
-        3 Sowa Rigpa). Pakistan: diplomas and bachelor degrees in Tibb-e-Unani, Hamdard University.'
+        57 Unani colleges as on 01.04.2022 (of 847 AYUSH colleges; Lok Sabha USQ 1858, 2 Aug 2024; an
+        older undated snapshot gave 55 of 733). Pakistan: diplomas and bachelor degrees in Tibb-e-Unani,
+        Hamdard University.'
       citations:
       - source: Medical Dialogues report of Lok Sabha data
         type: news
@@ -1421,6 +1524,10 @@ fields:
       - source: Uncited in report for degree names
         type: unclear
         citation_strength: unclear
+      - source: Lok Sabha Unstarred Question 1858, 2 Aug 2024, Annexure II
+        url: https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
+        type: institutional
+        citation_strength: direct
       register: regulatory
       notes: 'College count has no year in the report.
 
@@ -1430,6 +1537,12 @@ fields:
         and Hamdard University Pakistan programmes not located'
       source_report: v1
       verify_outcome: unverifiable
+      review:
+      - id: U07
+        verdict: updated
+        date: '2026-09-30'
+        sources:
+        - https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
     duration:
       status: incidental
       value: 'Iranian PhD: 4 years. Other programs not given.'

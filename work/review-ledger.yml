@@ -1,0 +1,280 @@
+date: '2026-09-30'
+verdicts:
+- confirmed
+- confirmed_with_nuance
+- corrected
+- updated
+- unresolved
+entries:
+- id: U01
+  system: unani
+  path: legal_status.jurisdictions
+  claim: 'Pakistan: National Council for Tibb under the Unani, Ayurvedic and Homoeopathic Practitioners Act 1965'
+  verdict: confirmed
+  finding: Act No. II of 1965; NCT is a body corporate under section 3 of the Act. The same Act also created the
+    homoeopathy council, so the statute is not Unani-specific.
+  sources:
+  - http://nasirlawsite.com/laws/uahpa.htm
+  - https://www.nct.gov.pk/
+  - https://www.emro.who.int/images/stories/about-who/Hamdard_Foundation_Pakistan.pdf
+  action: null
+- id: U02
+  system: unani
+  path: legal_status.jurisdictions
+  claim: 'Pakistan: 2024 move to merge NCT into a National Council of Traditional, Alternative and Complementary
+    Medicine'
+  verdict: updated
+  finding: Still unresolved as of Feb 2026. Dawn (16 Feb 2026) reports a draft National Traditional and Complementary
+    Medicine (NTCAM) Act 2025, colleges told not to admit new students, and practitioner claims that 70,000+ hakeems
+    and all 40 tibb colleges are at risk. The Sept 2024 decision date rests on Wikipedia only.
+  sources:
+  - https://www.dawn.com/news/1967850/uncertainty-clouds-future-of-tibb-colleges-and-hakeems-in-pakistan
+  - https://en.wikipedia.org/wiki/National_Council_for_Tibb
+  action: Pakistan integration text updated with Feb 2026 status.
+- id: U03
+  system: unani
+  path: legal_status.jurisdictions
+  claim: 'South Africa: AHPCSA under Allied Health Professions Act 63 of 1982, year 2001'
+  verdict: confirmed_with_nuance
+  finding: 'Statute and regulator confirmed; Unani-Tibb is a named profession. The year 2001 could not be sourced
+    (the Act is 1982). Registration route: three-year basic medical sciences plus two-year specialisation at the
+    University of the Western Cape.'
+  sources:
+  - https://ahpcsa.co.za/faqs/
+  - https://ahpcsa.co.za/registration-requirements/
+  - https://www.gov.za/sites/default/files/gcis_document/201907/42561bn102.pdf
+  action: 'year_note added: 2001 unsourced.'
+- id: U04
+  system: unani
+  path: revival_and_institutionalization.dated_events
+  claim: 'Tibbia College: foundation stone 1916 (Lord Hardinge), inaugurated 1921 by Gandhi'
+  verdict: confirmed
+  finding: Foundation stone 29 March 1916 by Viceroy Hardinge; inaugurated 13 February 1921 by Gandhi. Institution's
+    own site and the Delhi Directorate of AYUSH agree. The madrasa it grew from dates to 1883 (formally opened 1889)
+    under Hakim Abdul Majeed Khan.
+  sources:
+  - https://autch.delhi.gov.in/autch/about-us
+  - https://autch.delhi.gov.in/autch/history
+  - https://ayush.delhi.gov.in/ayush/ayurvedic-and-unani-tibbia-college-and-hospital
+  action: null
+- id: U05
+  system: unani
+  path: revival_and_institutionalization.dated_events
+  claim: Ajmal Khan as President of the Indian National Congress, 1921
+  verdict: confirmed_with_nuance
+  finding: He presided at the Ahmedabad session (Dec 1921) in place of the jailed C. R. Das. The INC's own page
+    lists him as 'Acting President for C.R. Das'. The college site says 'elected President', which overstates it
+    slightly.
+  sources:
+  - https://inc.in/leadership/past-party-presidents/hakim-ajmal-khan-acting-president-for-c-r-das
+  - https://inc.in/brief-history-of-congress/1915-1925
+  action: Event description set to 'acting president'.
+- id: U06
+  system: unani
+  path: identification.practitioner_estimate
+  claim: 'India: 47,683 registered Unani practitioners (Rajya Sabha reply, 2015, via press)'
+  verdict: updated
+  finding: 'Primary figure now available and more recent: 50,053 registered Unani practitioners as on 01.01.2022
+    (State/UT Boards/Councils), Lok Sabha USQ 1240 (9 Feb 2024) and USQ 1858 (2 Aug 2024), Annexure I. Five states
+    hold 79%: Uttar Pradesh 15,730; Maharashtra 7,882; Bihar 5,423; West Bengal 5,325; Telangana 5,187. The 2015
+    figure was not retrieved from its primary and is kept but marked superseded.'
+  sources:
+  - https://eparlib.nic.in/bitstream/123456789/2974061/1/AU1240.pdf
+  - https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
+  action: 2022 entry added; 2015 entry flagged superseded.
+- id: U07
+  system: unani
+  path: education_and_licensure.degree_programs
+  claim: 55 Unani colleges (of 733 AYUSH institutes), no year
+  verdict: updated
+  finding: 57 Unani colleges (of 847 AYUSH colleges) as on 01.04.2022, Lok Sabha USQ 1858 Annexure II. The 55-of-733
+    snapshot is an older undated reply. Also 1,762 Unani dispensaries (1,721 state plus 41 central) on the same
+    date.
+  sources:
+  - https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
+  action: College count replaced with dated primary figure.
+- id: U08
+  system: unani
+  path: legal_status.supranational_standards
+  claim: WHO Unani benchmarks, 11 Feb 2022, updating 2010 editions
+  verdict: confirmed
+  finding: Practice benchmarks published 11 Feb 2022 (ISBN 9789240042698, 80 pp). Training benchmarks (ISBN 9789240042735,
+    60 pp) are an update of the 2010 edition, both aligned to the WHO Traditional Medicine Strategy 2014-23.
+  sources:
+  - https://www.who.int/publications/i/item/9789240042698
+  - https://www.who.int/publications-detail-redirect/9789240042735
+  action: null
+- id: U09
+  system: unani
+  path: diagnostics.reliability_evidence
+  claim: 'Mojahedi 2014: weighted kappa 0.40 to 0.83 across 39 items (a verify-pass ''correction'' from 0.82)'
+  verdict: unresolved
+  finding: 'The abstract of Mojahedi et al. (Iran Red Crescent Med J 2014; PMC4005447) says 0.40 to 0.82. The verify
+    pass changed it to 0.83 on the strength of something I could not see (full text was blocked by reCAPTCHA). Revert
+    to 0.82 unless the results table shows 0.83. Everything else in the entry checks out: 52 items to 47 after content
+    validity, 35 volunteers test-retest, 52 volunteers for validity, alpha 0.71, sensitivity/specificity 65/93 warm,
+    52/97 cold, 53/67 dry, 53/76 wet.'
+  sources:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC4005447
+  action: review_flag added; value not changed.
+- id: U10
+  system: unani
+  path: diagnostics.reliability_evidence
+  claim: '2026 kappa study: 350 healthy healthcare workers, kappa 0.512 max and 0.081 min'
+  verdict: confirmed
+  finding: 'Pirooz, Ghods, Saberi Isfeedvajani (Brieflands, issued 2026-04-30): clinical assessment vs SMQ hotness
+    0.512 (CI 0.422-0.602); vs MMQ coldness 0.512 (CI 0.368-0.656); lowest 0.081 (CI -0.023 to 0.185) for dryness/wetness
+    balance; questionnaire vs questionnaire 0.132-0.366. Design is one specialist''s judgment against questionnaires,
+    not clinician against clinician.'
+  sources:
+  - https://repository.brieflands.com/items/6b6fbf6e-9b86-4646-b23c-944f803ee9a7
+  action: null
+- id: T01
+  system: tcm
+  path: legal_status.jurisdictions
+  claim: 'PRC: Law on Traditional Chinese Medicine adopted Dec 2016, effective 1 July 2017'
+  verdict: confirmed
+  finding: Adopted 25 December 2016 by the NPC Standing Committee, in force 1 July 2017, 63 articles. The National
+    Health Commission's own English page replaces the state-media citation.
+  sources:
+  - https://en.nhc.gov.cn/2016-12/26/c_70933.htm
+  - https://www.chinajusticeobserver.com/law/x/traditional-chinese-medicine-law-20161225
+  - https://www.hkbu.edu.hk/en/whats-new/campus-digest/2017/0928-scm-co-hosts-lecture-to-explore-impact-of-china-s-law-on-chinese-medicine.html
+  action: null
+- id: T02
+  system: tcm
+  path: legal_status.jurisdictions
+  claim: 'Australia: Health Practitioner Regulation National Law, year 2012'
+  verdict: corrected
+  finding: 'The National Law came into effect 1 July 2010. Chinese medicine joined the national scheme on 1 July
+    2012, so the extraction''s single year conflates two dates. Before 2012 only Victoria regulated Chinese medicine.
+    Registered practitioners: 3,804 at launch, 4,795 at March 2022.'
+  sources:
+  - https://chinesemedicineboard.gov.au/registration
+  - https://www.chinesemedicineboard.gov.au/Codes-Guidelines/FAQ/Overview-National-Scheme.aspx
+  - https://chinesemedicineboard.gov.au/News/2022-07-01-10-year-anniversary.aspx
+  action: Year field corrected to two dates; scope note extended.
+- id: T03
+  system: tcm
+  path: legal_status.jurisdictions
+  claim: 'Malaysia: Traditional and Complementary Medicine Act 2016'
+  verdict: confirmed_with_nuance
+  finding: Act 775 gazetted 10 March 2016, partly in force 1 August 2016. The T&CM Council was constituted under
+    section 4 and first met 16 January 2017. Practitioner registration only opened 15 March 2021. Recognised practice
+    areas include Traditional Chinese Medicine and Traditional Indian Medicine (so it covers Ayurveda too), but
+    not Unani.
+  sources:
+  - https://hq.moh.gov.my/tcm/en/index.php/akta-pt-k-2016/council
+  - https://hq.moh.gov.my/tcm/en/index.php/faqregistration
+  - https://hq.moh.gov.my/tcm/en/index.php/notification
+  action: Regulator filled; registration date noted.
+- id: T04
+  system: tcm
+  path: disruption.suppression_or_marginalization
+  claim: '''Outlawed along with other traditional medicine under the 1929 proposals''; abolition outcome ''not stated'''
+  verdict: corrected
+  finding: Not outlawed. At the Nanjing government's National Public Health Conference (Feb 1929), Yu Yan (Yu Yunxiu)
+    put forward a proposal to abolish 'old medicine'. Practitioners protested in Shanghai on 17 March 1929 (later
+    National Medicine Day). The Nanjing government rescinded the abolition proposal in December 1929 on Chiang Kai-shek's
+    order. A 2026 paper warns the episode is often misread as an effective ban. One popular Substack claims the
+    proposal passed and 'severely limited' practice; better sources contradict it.
+  sources:
+  - https://en.apu.ac.jp/rcaps/uploads/fckeditor/publications/journal/RJAPS_V27_Fan.pdf
+  - https://gera.fr/wp-content/uploads/2026/04/nguyen-100231.pdf
+  - https://en.wikipedia.org/wiki/Yu_Yan_(physician)
+  action: Suppression text, abolition outcome and dated events corrected.
+- id: T05
+  system: tcm
+  path: safety.regulatory_actions_taken
+  claim: Aristolochia bans 'in many countries' (dates not given)
+  verdict: confirmed_with_nuance
+  finding: 'Dated actions now sourced: Belgian cluster identified in Brussels in 1992; FDA warnings in 2000-2001
+    plus an import alert; Canada ordered products off shelves in 2001 and reissued a warning in 2004; UK banned
+    Aristolochia in 2001; the Netherlands prohibited aristolochic acid in herbal preparations in 2001; Hong Kong
+    published a brand list. China''s 2003 removal of Guan mu tong rests only on an industry-association page and
+    stays weakly sourced. Other items in this leaf (ephedra ban, tiger bone, CITES) were not checked.'
+  sources:
+  - https://www.cmaj.ca/content/cmaj/171/5/449.full.pdf
+  - https://link.springer.com/article/10.1007/s00216-007-1310-3
+  - https://reliasmedia.com/articles/15889-aristolochic-acid-and-renal-toxicity
+  - https://www.foodnavigator.com/Article/2001/04/18/FDA-issues-warning-over-Chinese-herb
+  - https://aaaomonline.org/Research/4231018
+  action: Aristolochia item replaced with dated specifics.
+- id: T06
+  system: tcm
+  path: diagnostics.reliability_evidence
+  claim: 'Candidate addition: pulse diagnosis study, weighted kappa 0.370, 300 participants'
+  verdict: confirmed_with_nuance
+  finding: 'Real and worth adding, but with its design attached: Jagwani et al., World J Tradit Chin Med 2023;9(4):415-418.
+    Two Indian TCM practitioners, 300 ''participants'' (not stated as patients), 37 distinct diagnoses, matched
+    on 116 of 300, weighted kappa 0.370 (not significant), while Cronbach alpha was 0.963. Not currently in the
+    TCM extraction, which uses Jacobson 2019 and two Birkeflet studies.'
+  sources:
+  - https://doaj.org/article/ca95dcc746ee4be490bde7f3a2b0e98d
+  action: Not applied; offered as a candidate entry.
+- id: A01
+  system: ayurveda
+  path: identification.practitioner_estimate
+  claim: Only Sri Lankan counts recorded; no India figure
+  verdict: updated
+  finding: 'Filled from the same primary source and date as Unani: 346,240 registered Ayurveda practitioners in
+    India as on 01.01.2022 (Lok Sabha USQ 1858, 2 Aug 2024). Also 453 Ayurveda colleges (01.04.2022) and 25,280
+    dispensaries. On one basis, AYUSH total is 730,317: Ayurveda 47.4%, homoeopathy 43.9%, Unani 6.9%, Siddha 1.3%,
+    naturopathy 0.5%, Sowa-Rigpa under 0.01%.'
+  sources:
+  - https://eparlib.nic.in/bitstream/123456789/2979017/1/AU1858_XBNSfn.pdf
+  action: India 2022 entry added.
+- id: A02
+  system: ayurveda
+  path: diagnostics.reliability_evidence
+  claim: 'Kurande 2013: average pairwise weighted kappa 0.07 pulse, 0.17 tongue, 0.28 prakriti'
+  verdict: confirmed
+  finding: 'Exactly as stated (EBCAM 2013, Art. ID 658275): 15 doctors with 3-15 years'' experience, 20 healthy
+    subjects, 105 pairs. Random rating was rejected for only 12 pairs on prakriti, 1 on pulse and 0 on tongue. A
+    separate Kurande 2012 poster gives intra-rater pulse kappa 0.42 for one expert on 17 healthy subjects: a different
+    design, not poolable with the above.'
+  sources:
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3803118/
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3373612/
+  action: null
+- id: A03
+  system: ayurveda
+  path: safety.adulteration_and_contamination
+  claim: Saper et al. 2004 and 2008 heavy-metal studies
+  verdict: confirmed_with_nuance
+  finding: 'JAMA 2008;300(8):915-23: 230 products ordered, 193 received, 40 (20.7%) exceeded acceptable daily-intake
+    standards for lead, mercury or arsenic; rasa shastra products about twice as likely to contain metals; ''more
+    than 80 cases of lead poisoning since 1978''. JAMA 2004;292(23):2868-73: 14 of 70 (20%). Confirmed through secondary
+    reports and a university page, not the JAMA abstract itself. The exact 40% vs 17% rasa shastra split was not
+    re-checked.'
+  sources:
+  - https://www.medicalnewstoday.com/articles/119225
+  - https://www.nutraceuticalsworld.com/contents/view_breaking-news/2008-08-27/study-reveals-toxic-metals-in-ayurvedic-products/
+  - https://staff.washington.edu/chudler/ayur2.html
+  action: null
+- id: A04
+  system: ayurveda
+  path: safety.regulatory_actions_taken
+  claim: Denmark ashwagandha ban 2023 after 2020 DTU assessment; EU working group June 2024
+  verdict: confirmed_with_nuance
+  finding: 'Ban confirmed (April 2023, Danish Veterinary and Food Administration, after the 2020 DTU report), and
+    the June 2024 EU Heads of Food Safety Agencies recommendation to prioritise an Article 8 procedure. Nuance:
+    DTU''s stated concerns were sex hormones and reproduction, thyroid, immune system, metabolism and CNS; liver
+    toxicity appears in the 2024 EU list rather than as DTU''s lead concern. The science is contested (Univ. of
+    Mississippi NCNPR, J Ethnopharmacol). Sources are trade press; the regulator''s own page was not retrieved.
+    Import alerts 66-41 and 99-42, India''s 2005 export testing rule, RIVM and ANSES were not checked.'
+  sources:
+  - https://www.nutritioninsight.com/key-interviews/regulatory-update-spotlight-on-international-authorities-response-to-ashwagandha-safety-concerns.html
+  - https://www.nutraingredients.com/Article/2026/07/06/timeline-will-authorities-de-throne-the-king-of-herbs/
+  - https://wholefoodsmagazine.com/articles/16998-researchers-clarifying-concerns-over-ashwagandha-safety
+  action: null
+- id: A05
+  system: ayurveda
+  path: legal_status.jurisdictions
+  claim: 'Malaysia: Traditional and Complementary Medicine Act 2016 (Act 775), statutory registration'
+  verdict: confirmed_with_nuance
+  finding: Ayurveda is covered under the 'Traditional Indian Medicine' practice area. Registration only opened 15
+    March 2021, five years after the Act (see T03).
+  sources:
+  - https://hq.moh.gov.my/tcm/en/index.php/faqregistration
+  action: year_note added.
