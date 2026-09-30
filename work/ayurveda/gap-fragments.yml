@@ -1,0 +1,80 @@
+system: ayurveda
+pass: gap
+updates:
+  - path: theoretical_primitives.correspondence_system
+    outcome: found
+    field:
+      status: partial
+      value: "Caraka Samhita Sutrasthana 6 (and 7) maps the doshas onto a solar-seasonal scheme. The year is divided into the northward course of the sun (uttarayana or adana kala, dehydrating, three seasons from late winter to summer) and the southward course (dakshinayana or visarga kala, hydrating, rainy season to early winter). Doshas accumulate (caya), aggravate (prakopa) and subside (prasama) in a fixed seasonal sequence, and seasonal regimens (ritucarya) and evacuative therapies are timed to it (Cha. Sa. Su. 6/4; Su. 7/45 for seasonal purification: winter accumulation cleared in spring, summer accumulation in the rains, rains accumulation in autumn)."
+      citations:
+        - source: "Caraka Samhita, Sutrasthana ch. 6 (Tasyasitiya) and ch. 7, as presented on carakasamhitaonline.com (Ritucharya page)"
+          type: reference-work
+          citation_strength: indirect
+      register: emic
+      notes: "Checked only through a web presentation of the Caraka text, so strength is indirect; the primary text should be verified in an edition or translation. Not verified here: any wider cosmological correspondence (for example dosha to direction, planet or deity). Only the seasonal and solar scheme was confirmed. Pancamahabhuta pairings inside the dosha scheme belong under constituents."
+    searches: ["tridosha seasons ritucharya correspondence doshas seasons pancamahabhuta cosmology Ayurveda", "Caraka Samhita ritucharya adana visarga kala dosha caya prakopa prasama"]
+  - path: disruption.loss_of_patronage
+    outcome: found
+    field:
+      status: partial
+      value: "Ali Zafar (2018), a Heidelberg South Asia Institute seminar paper, argues that under the Delhi Sultanate and Mughal courts patronage went to Greek-Arabic (Unani) medicine, that Hindu vaidyas found few court patrons, and that this contributed to Ayurveda's decline, together with the decline of Sanskrit literature. The paper is a single-author argument; no specific dated court or institutional collapse was located."
+      citations:
+        - source: "Zafar, A. (2018). Patronization of Greek medicine in Mughal India and depopularization of Ayurveda. Seminar paper, South Asia Institute, Heidelberg University (via ResearchGate)"
+          type: unclear
+          citation_strength: indirect
+      register: historical-scholarship
+      notes: "Full text could not be fetched (403), so this rests on the search summary. It is a seminar paper, not peer-reviewed monograph scholarship. It describes a shift of patronage, not a dated collapse. No dated events were found. A productive search would target peer-reviewed histories of Indian medicine (for example Mughal-era medical culture, or regional Hindu courts that sustained vaidyas)."
+    searches: ["Mughal court patronage Ayurveda decline vaidya history Ayurveda under Mughals", "Patronization of Greek medicine in Mughal India and depopularization of Ayurveda"]
+  - path: disruption.post_colonial_disruption
+    outcome: not_found
+    searches: ["1947 partition Ayurveda Pakistan Bangladesh Ayurvedic institutions practitioners history", "partition of India 1947 Ayurvedic Unani Tibbia College Lahore Ayurvedic institutions Pakistan migration vaidyas historian"]
+    target: "A scholarly source (peer-reviewed history or archival study) on what partition did to Ayurvedic colleges, pharmacies and vaidyas in Punjab/Lahore and Bengal/Dhaka. Only fragmentary items surfaced: Wikipedia reporting that many Muslim members of the Ayurvedic and Unani Tibbia College (Delhi) governing body and students migrated to Pakistan in 1947, and Bangladesh's Unani and Ayurvedic Practitioners Ordinance 1983. Neither is direct evidence of an Ayurvedic split or relocation."
+  - path: literature_state.corpus_scale_appraisal
+    outcome: found
+    field:
+      status: filled
+      value: "Thrigulla et al. bibliometric analysis of clinical studies indexed in the AYUSH Research Portal (data to 30 June 2020): 6,528 clinical-trial articles across AYUSH, of which 3,903 were categorized under Ayurveda. Evidence grade by WHO traditional-medicine research guideline: Grade A (RCTs) 144 (3.69%), Grade B 725 (18.58%), Grade C 3,034 (77.74%). Largest categories: skin 385, endocrine/metabolic/nutritional 378, musculoskeletal 354. The top 20 journals carried 75.56% of articles and only 5 of them were indexed in PubMed or Scopus."
+      citations:
+        - source: "Thrigulla SR et al. Clinical studies in Ayurveda: A bibliometric analysis of articles indexed in AYUSH research portal. Ayu 2022 Jul-Sep (published online 2023), PMC10710232"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "The abstract also states 'only 4.50%' of articles are Grade A, which does not match the 3.69% computed from 144/3,903; the discrepancy is unresolved (possibly different denominators). Counts come from an institutional portal, not a systematic search of the world literature. No Cochrane overview of the whole Ayurvedic corpus was found."
+    searches: ["evidence map Ayurveda randomized controlled trials bibliometric analysis clinical trials"]
+  - path: literature_state.trial_counts
+    outcome: found
+    field:
+      status: partial
+      value: "(1) AYUSH Research Portal, to June 2020: 3,903 Ayurveda clinical-trial articles, 144 of them Grade A (RCT). (2) CTRI registrations 2009-2020: 3,632 AYUSH trials in total, by stream Ayurveda 2,054, Siddha 635, Yoga 408, Unani 366, Homoeopathy 169. (3) CTRI, 1 July 2018 to 31 March 2020: 1,392 Ayurveda trials out of 9,721 registered; 565 of these used randomized parallel-group designs (the source's design categories are 35.3% randomized parallel and 23.8% randomized parallel active-controlled); 99.6% interventional; 76.7% postgraduate-thesis based."
+      citations:
+        - source: "Thrigulla SR et al. Ayu 2022, PMC10710232 (AYUSH Research Portal bibliometric analysis)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Analysis of AYUSH studies registered in clinical trials registry of India from 2009 to 2020. J Ayurveda Integr Med 2021 (PMC8185998)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Adhikari T et al. Overview of Ayurveda trials registered with Clinical Trial Registry-India: Need for customized data set items. Ayu 2022 (PMC8966761)"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Counts of registrations and portal articles are not counts of completed or published RCTs. The 565 figure is the number read from the abstract and its reading (randomized parallel-group) was not cross-checked. Journal for PMC8185998 was inferred from the ScienceDirect URL (S0975947...), which is consistent with J Ayurveda Integr Med; verify. A count by modality (for example panchakarma versus herbal) was not located."
+    searches: ["Ayurveda randomized controlled trials number published PubMed systematic survey quality of reporting Ayurvedic RCTs", "Analysis of AYUSH studies registered in Clinical Trials Registry of India 2009 to 2020 Ayu retrospectively registered"]
+  - path: literature_state.publication_bias_findings
+    outcome: not_found
+    searches: ["publication bias Ayurvedic trials funnel plot India trials systematic review", "\"publication bias\" Ayurveda OR Ayurvedic OR AYUSH trials positive results India registered trials outcomes reporting unpublished"]
+    target: "A study that specifically tests publication bias in Ayurvedic trials: a registry-to-publication cohort of CTRI Ayurveda trials (registered versus published, positive versus negative), or a funnel-plot/Egger analysis in a meta-analysis pooling Ayurvedic trials. The only item seen was a T2DM Ayurvedic meta-analysis (Frontiers in Pharmacology 2022) reporting funnel-plot asymmetry for HbA1c but not fasting glucose, which concerns one condition and was not read in full. It does not document a general India-origin bias."
+  - path: literature_state.registry_and_reporting_practice
+    outcome: found
+    field:
+      status: filled
+      value: "CTRI 1 July 2018 to 31 March 2020: of 1,392 Ayurveda trials, 1,349 (96.9%) were registered prospectively and 43 (3.1%) retrospectively. About 60% had correct health-condition coding and 40% incomplete or incorrect; intervention details were incomplete in 511/1,392 (40%). CTRI 2009-2020, all AYUSH streams (n=3,632): 21% were registered retrospectively, and the closure of retrospective registration (CTRI accepts only prospective registration from 1 April 2018) coincided with rising prospective registration."
+      citations:
+        - source: "Adhikari T et al. Overview of Ayurveda trials registered with Clinical Trial Registry-India: Need for customized data set items. Ayu 2022 (PMC8966761)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Analysis of AYUSH studies registered in clinical trials registry of India from 2009 to 2020 (PMC8185998)"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Two different periods and denominators (Ayurveda-only 2018-2020 versus all AYUSH 2009-2020); do not combine them. The 2018 policy date comes from a search-result summary and should be checked against CTRI's own notice. A CTRI-registered trial is not evidence that results were reported."
+    searches: ["CTRI registered Ayurveda trials prospective registration rate retrospective"]

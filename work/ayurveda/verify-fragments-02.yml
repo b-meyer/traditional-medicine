@@ -1,0 +1,55 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: theoretical_primitives.balance_logic
+    outcome: corrected
+    field:
+      status: filled
+      value: "Health is a state of balance of the doṣas together with agni, dhātus and malas (Suśruta Saṃhitā Sūtrasthāna 15.41); the stated aim of the science is to establish and maintain equilibrium of the body elements (Caraka Saṃhitā Sūtrasthāna 1), with disorders treated by agents of opposing qualities."
+      citations:
+        - source: "Suśruta Saṃhitā, Sūtrasthāna ch. 15 (Bhishagratna English translation, vol. 1, on wisdomlib.org)"
+          type: reference-work
+          citation_strength: direct
+          claim_match: matches
+        - source: "Caraka Saṃhitā, Sūtrasthāna ch. 1 (Sharma and Dash / Gulabkunverba Ayurvedic Society English translation, on wisdomlib.org)"
+          type: reference-work
+          citation_strength: direct
+          claim_match: matches
+      register: emic
+      notes: "Original value also said treatment aims to kindle agni, clear āma and maintain the healthy through regimen. The checked passages (Su. Sū. 15, Ca. Sū. 1) support balance as health and restoration of equilibrium as treatment aim, but I did not locate the agni-kindling, āma-clearing and regimen wording in them, so those elements are dropped from this leaf rather than asserted. Not a finding that they are absent from the tradition. Value now narrowed to what the primary texts show."
+    searches: ["Suśruta Sūtrasthāna 15.41 samadoṣaḥ samāgniś ca", "wisdomlib Sushruta Samhita sutrasthana chapter 15", "wisdomlib Charaka Samhita Sutrasthana 1 equilibrium of body elements"]
+  - path: theoretical_primitives.etiology
+    outcome: corrected
+    field:
+      status: filled
+      value: "Disease arises from imbalance of the doṣas (vāta, pitta, kapha), which Caraka Saṃhitā Sūtrasthāna 1 treats as the primary disease-causing factors; Suśruta Saṃhitā Sūtrasthāna 15 frames the body as constituted of doṣas, malas and dhātus, whose disturbance produces disease."
+      citations:
+        - source: "Caraka Saṃhitā, Sūtrasthāna ch. 1 (English translation, on wisdomlib.org)"
+          type: reference-work
+          citation_strength: direct
+          claim_match: matches
+        - source: "Suśruta Saṃhitā, Sūtrasthāna ch. 15 (Bhishagratna English translation, on wisdomlib.org)"
+          type: reference-work
+          citation_strength: direct
+          claim_match: matches
+      register: emic
+      notes: "Original value also said weak agni produces āma, an undigested toxic residue. The Suśruta ch. 15 translation does not mention āma and I did not locate the agni-to-āma claim in the Caraka passages read, so it is dropped here, not refuted. The term vikṛti was likewise not confirmed in the passages read."
+    searches: ["wisdomlib Charaka Samhita Sutrasthana 1 vata pitta kapha disease", "wisdomlib Sushruta Samhita chapter 15 doshas dhatus malas ama"]
+  - path: canon_and_transmission.dated_events
+    outcome: unverifiable
+    searches: ["Bower Manuscript Hoernle 1890 Asiatic Society Calcutta date", "Zysk Asceticism and Healing in Ancient India 4th century BCE", "Wujastyk Roots of Ayurveda Caraka Suśruta Arabic Persian Barmakids Baghdad", "Yuthok Yonten Gonpo Four Tantras twelfth century", "Bower Manuscript palaeography Hoernle 4th century Sander 6th century"]
+  - path: construct_debate.positions
+    outcome: unverifiable
+    searches: ["Wujastyk Smith eds. Modern and Global Ayurveda Pluralism and Paradigms SUNY Press 2008", "Dominik Wujastyk expert witness Maharishi Ayurveda General Medical Council 1991 AIDS", "SUNY Press Modern and Global Ayurveda table of contents Jeannotat Alter"]
+  - path: construct_debate.report_adjudication
+    outcome: unverifiable
+    searches: ["Modern and Global Ayurveda continuity reinvention review"]
+  - path: theoretical_primitives.constituents
+    outcome: unverifiable
+    searches: ["Caraka Saṃhitā Śārīrasthāna 4 prakṛti fixed at conception wisdomlib", "wisdomlib Charaka Samhita Sharirasthana 4 srotas"]
+  - path: theoretical_primitives.nosology
+    outcome: unverifiable
+    searches: ["Ayurveda nosology ICD constitutional diagnostic categories roga rogi pariksha"]
+  - path: theoretical_primitives.relation_to_biomedical_anatomy
+    outcome: unverifiable
+    searches: ["Ayurveda dosha dhatu srotas biomedical anatomy correspondence"]

@@ -1,0 +1,149 @@
+system: ayurveda
+pass: verify
+batch: 2
+entries:
+- path: canon_and_transmission.dated_events
+  source_report: v2
+  value:
+  - label: Buddhist monastic medicine formative period (Zysk thesis)
+    date: from c. 4th century BCE
+    description: Zysk's dating for the emergence of empirico-rational medicine in Buddhist monastic communities.
+  - label: Suśruta Saṃhitā composition begins
+    date: last centuries BCE (possible)
+    description: Completed later with the Uttaratantra.
+  - label: Caraka Saṃhitā dated
+    date: early centuries CE
+    description: General dating.
+  - label: Bower Manuscript
+    date: c. 4th-6th century CE
+    description: Central Asian manuscript overlapping classical material.
+  - label: Vāgbhaṭa works
+    date: c. 7th century CE
+    description: Aṣṭāṅgahṛdaya and Aṣṭāṅgasaṃgraha; post-classical literary expansion from about 600 CE.
+  - label: Sanskrit medical texts translated at Baghdad
+    date: 786-809
+    description: Under Harun al-Rashid and the Barmakids; Caraka and Suśruta rendered into Persian and
+      Arabic.
+  - label: Rgyud bzhi compiled in written form
+    date: c. 12th century CE
+    description: Tibetan Four Medical Tantras integrating Ayurvedic principles.
+  - label: Bower Manuscript discovered
+    date: '1890'
+    description: Brought to the Asiatic Society, Calcutta.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: construct_debate.positions
+  source_report: v2
+  value:
+  - scholar: Frederick Smith and Dagmar Wujastyk (as the report names them)
+    work: 'Modern and Global Ayurveda: Pluralism and Paradigms'
+    year: 2008
+    position: Today's Ayurveda (colleges, standardized pharmacopeia, branded drugs, globalized wellness
+      and New Age forms) is substantially a modern construction.
+    evidence_base: Historical and ethnographic scholarship on modern institutional and global forms.
+  - scholar: Jean Langford
+    work: Fluent Bodies
+    year: 2002
+    position: 'Reinvention camp: modern Ayurveda substantially a modern construction.'
+    evidence_base: Not detailed in report.
+  - scholar: Joseph Alter
+    work: null
+    year: null
+    position: Reinvention camp.
+    evidence_base: Not detailed in report.
+  - scholar: Projit Mukharji
+    work: Doctoring Traditions
+    year: null
+    position: Reinvention camp.
+    evidence_base: Not detailed in report.
+  - scholar: Maharishi Ayur-Ved case (Maharishi Mahesh Yogi, Deepak Chopra; analyzed by Jeannotat per
+      report)
+    work: null
+    year: null
+    position: Clearest example of a spiritualized consumer product only loosely tied to classical texts,
+      launched mid-1980s.
+    evidence_base: Case analysis; yoga-Ayurveda association said to be largely absent from the pre-modern
+      ayurvedic record.
+  - scholar: Indian government / Ministry of AYUSH, practitioner-scholars, some Indologists
+    work: null
+    year: null
+    position: Unbroken living tradition descending from the classical saṃhitās through commentaries and
+      lineages.
+    evidence_base: Demonstrable persistence of texts, concepts and materia medica over roughly two millennia.
+  - scholar: Dominik Wujastyk
+    work: null
+    year: null
+    position: Continuity of texts, discontinuity of much practice (the report's 'nuanced middle').
+    evidence_base: Historical scholarship; also served as expert witness in the 1991 UK 'Maharishi Ayurveda'/AIDS
+      GMC case.
+  - scholar: Sivaramakrishnan, Mukharji, Berger, Leslie, Langford, Banerjee, Bode, Bala (group, as listed
+      by report)
+    work: Doctoring Traditions and others
+    year: null
+    position: To survive, Ayurveda adopted college curricula, printed standardized textbooks, factory-manufactured
+      branded drugs, professional registration (which marginalized folk and lay healers), anatomy and
+      laboratory science, and the vocabulary of 'science'. The report calls this the empirical core of
+      the reinvention thesis.
+    evidence_base: Historical scholarship on colonial-era and later institutional change.
+  weak_citations:
+  - source: About Us - Maharishi Ayurveda (maharishiayurvedaindia.com)
+    type: practitioner-site
+    citation_strength: indirect
+  - source: Warrier 2011, Modern Ayurveda in Transnational Context, Religion Compass
+    type: tertiary-review
+    citation_strength: direct
+    claim_match: mismatch
+- path: construct_debate.report_adjudication
+  source_report: v2
+  value: 'Both camps are partly right and largely argue about different objects: the textual/conceptual
+    core has real continuity, while the institutional, pharmaceutical and popular-wellness superstructure
+    is demonstrably modern. The TL;DR states both continuity and reinvention are true at once.'
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.constituents
+  source_report: v2
+  value: Tridoṣa (vāta, pitta, kapha); dhātu (seven bodily tissues); mala (waste products); agni (digestive/metabolic
+    fire); āma (undigested toxic residue from weak agni); srotas (channels of circulation/transport);
+    prakṛti (individual constitutional type, held to be fixed at birth).
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.balance_logic
+  source_report: v2
+  value: Health is balance of the three doṣas; imbalance (vikṛti) causes disease. Treatment aims to restore
+    doṣic balance, kindle agni, clear āma, and maintain the healthy through regimen.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.etiology
+  source_report: v2
+  value: Imbalance of doṣas (vikṛti) causes disease; weak agni produces āma, an undigested toxic residue.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.nosology
+  source_report: v2
+  value: Diagnostic categories are frequently constitutional/whole-person rather than disease-oriented,
+    so they resist one-to-one translation into ICD-style nosology; report mentions roga (disease) and
+    rogī (patient) examination but lists no disease classification.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.relation_to_biomedical_anatomy
+  source_report: v2
+  value: 'Doṣa, dhātu and srotas are functional and relational categories that do not correspond to discrete
+    anatomical structures or measurable analytes; āma and agni have no validated biochemical referent.
+    Mapping works loosely for lifestyle/metabolic stratification but fails at specific disease entities.
+    Historical note: anatomy and laboratory science were adopted during modernization.'
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
