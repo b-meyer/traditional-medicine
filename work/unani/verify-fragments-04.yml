@@ -1,0 +1,55 @@
+system: unani
+pass: verify
+updates:
+  - path: disruption.suppression_or_marginalization
+    outcome: unverifiable
+    searches:
+      - "Bhore Committee 1946 report indigenous systems of medicine Chopra Mudaliar Udupa Shrivastava (secondary sources say Bhore expressed a disparaging view but did not primarily address indigenous medicine; Bhore Vol I text at nihfw.ac.in and archive.org could not be read as text)"
+      - "Bhore Committee report Volume I indigenous systems unscientific text"
+      - "Macaulay's Minute on Indian Education 2 February 1835 (date confirmed by search; PDF not machine-readable; Minute concerns general education, not medicine)"
+      - "Udupa Committee 1958 Shrivastava Committee 1975 Mudaliar Committee 1962 (dates found, but no primary source for 'oscillated between marginalization and integration')"
+  - path: disruption.practitioner_response
+    outcome: unverifiable
+    searches:
+      - "Hakim Ajmal Khan Ayurvedic and Unani Tibbia College foundation stone 1916 inaugurated 1921 (AUTCH Delhi govt site snippets support 29 Mar 1916 and 13 Feb 1921; page itself returned 503)"
+      - "Chopra Committee 1948 members (archive.org Chopra Report Vol II confirms Hakim Nasruddin Ahmed Khan and Hakim Hassan Qarshi as members)"
+      - "Attewell Refiguring Unani Tibb (book not accessed; Lucknow Azizi purism and Central College not confirmed)"
+      - "Hamdard 1906 (only manufacturer sites, indirect by rule)"
+  - path: disruption.post_colonial_disruption
+    outcome: unverifiable
+    searches:
+      - "Hamdard Laboratories history Hakim Hafiz Abdul Majeed 1906 Hakim Said Karachi 1948 Hamdard Bangladesh 1953 (only Hamdard company sites and Wikipedia found, both indirect)"
+      - "Hakim Abdul Hameed 1908-1999 Jamia Hamdard (Wikipedia and Jamia Hamdard pages only)"
+  - path: disruption.dated_events
+    outcome: unverifiable
+    searches:
+      - "Macaulay's Minute 1835 text (PDFs not machine-readable)"
+      - "Bhore Committee Volume I indigenous systems unscientific (primary text not readable; 1946 report date and 'dismissed as unscientific' wording not confirmed from the report)"
+      - "Chopra Committee 1948 (archive.org report confirms 1948 and integration aim)"
+      - "Hamdard Pakistan 1948 / Bangladesh 1953 (company chronology only, indirect)"
+  - path: revival_and_institutionalization.revival_context
+    outcome: unverifiable
+    searches:
+      - "Attewell Refiguring Unani Tibb nationalism scientization (book not accessible; only reviews, which do not cover these points)"
+      - "Iran state-backed Persian medicine revival (Supreme Council of Cultural Revolution document mentioned in secondary results only)"
+  - path: revival_and_institutionalization.key_figures
+    outcome: unverifiable
+    searches:
+      - "Hakim Ajmal Khan dates (Wikipedia gives 1864-1927, report says 1868-1927; no primary source located to resolve)"
+      - "Hakim Abdul Hameed 1908-1999 (Wikipedia only: 14 Sep 1908 to 22 Jul 1999)"
+      - "Salimuzzaman Siddiqi Ajmal Khan (nothing found)"
+  - path: revival_and_institutionalization.nationalist_framing
+    outcome: unverifiable
+    searches:
+      - "Hakim Ajmal Khan Indian National Congress president 1921 Khilafat (AUTCH Delhi govt site snippet supports the 1921 presidency and Khilafat role, but Attewell's characterisation and the Iranian 'invented tradition' claim were not located in a primary work)"
+      - "Attewell Refiguring Unani Tibb review PMC2766155 (review does not mention communitarian politics)"
+  - path: revival_and_institutionalization.standardization_events
+    outcome: unverifiable
+    searches:
+      - "Drugs and Cosmetics Act 1940 Chapter IVA Rule 158B Schedule T (Chapter IVA and Rule 158B confirmed via indiankanoon and CDSCO listing; Schedule T not seen; Rule 158B page is a mirror)"
+      - "Unani, Ayurvedic and Homoeopathic Practitioners Act 1965 (pakistancode.gov.pk listing confirms Act II of 1965)"
+      - "CCRUM established 1978 (ayush.gov.in and ccrum.res.in results support March 1978)"
+      - "Iran 4-year PhD Traditional Persian Medicine 2007 (PMC secondary article supports 2007)"
+      - "NCISM Act 2020 NEET NExT (commencement 11 June 2021 supported; indiacode PDF returned 403 so NEET/NExT provisions not confirmed)"
+      - "WHO benchmarks for training in Unani medicine (WHO page confirms 11 February 2022, update of 2010)"
+      - "Whole leaf cannot be confirmed as one unit because several items (Schedule T, NEET/NExT, Tibbia dates from page that returned 503) lack a direct source in hand"

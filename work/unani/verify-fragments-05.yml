@@ -1,0 +1,103 @@
+system: unani
+pass: verify
+updates:
+  - path: revival_and_institutionalization.internal_factions
+    outcome: unverifiable
+    searches:
+      - "Lucknow Azizi family Hakim Ajmal Khan Delhi Unani tibb reform rivalry Seema Alavi Islam and Healing"
+      - "Authority, Knowledge and Practice in Unani Tibb in India c. 1890-1930 (academia.edu, fetch blocked 403)"
+  - path: revival_and_institutionalization.diffusion_abroad
+    outcome: unverifiable
+    searches:
+      - "Unani-Tibb University of the Western Cape AHPCSA Allied Health Professions Council registration 2001 Unani-Tibb"
+      - "Unani-Tibb register AHPCSA September 2007 Ibn Sina Institute Hamdard Pakistan CCRUM curriculum University of the Western Cape"
+      - "journalijar.com and tibb.co.za/overview fetched; they support 2001 recognition and 2003 UWC training but not the 11th-modality, September 2007, CCRUM/CCIM or Gulf/UK/US/EU statements"
+  - path: revival_and_institutionalization.dated_events
+    outcome: unverifiable
+    searches:
+      - "Hakim Ajmal Khan Tibbia College foundation stone Lord Hardinge 1916 Gandhi inaugurated 1921 Indian National Congress president 1921"
+      - "Hamdard Laboratories history Hakim Hafiz Abdul Majeed 1906 Rooh Afza 1907 Hamdard Pakistan 1948 Karachi"
+      - "Central Council for Research in Unani Medicine CCRUM established 1978 ccrum.res.in about us"
+      - "Dawn September 2024 merge National Council for Tibb National Council for Homeopathy"
+  - path: legal_status.jurisdictions
+    outcome: unverifiable
+    searches:
+      - "National Commission for Indian System of Medicine Act 2020 repeal Indian Medicine Central Council Act 1970 NExT NEET section"
+      - "The Unani, Ayurvedic and Homoeopathic Practitioners Act, 1965 text National Council for Tibb registration"
+      - "Unani-Tibb University of the Western Cape AHPCSA Allied Health Professions Council registration 2001 Unani-Tibb"
+  - path: legal_status.supranational_standards
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - body: WHO
+          instrument: Benchmarks for the training of Unani medicine
+          year: 2022
+          scope: Training standards; updates 2010 edition
+        - body: WHO
+          instrument: Benchmarks for the practice of Unani medicine
+          year: 2022
+          scope: Practice standards; updates 2010 edition
+        - body: WHO
+          instrument: WHO international standard terminologies on Unani medicine
+          year: 2022
+          scope: Terminology reference; prepared with CCRUM
+        - body: FAO/WHO
+          instrument: Heavy-metal limits (international backdrop)
+          year: null
+          scope: Product limits
+      citations:
+        - source: "WHO, WHO benchmarks for the training of Unani medicine, Geneva, published 11 February 2022 (who.int/publications/i/item/9789240042735); page states it updates the 2010 edition"
+          type: institutional
+          citation_strength: direct
+        - source: "WHO, WHO benchmarks for the practice of Unani medicine, Geneva, published 11 February 2022 (who.int/publications/i/item/9789240042698)"
+          type: institutional
+          citation_strength: direct
+        - source: "WHO, WHO international standard terminologies on Unani medicine, Geneva, 2022, ISBN 9789240064959 (who.int/publications/i/item/9789240064959)"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected: the terminology instrument had year null; WHO published it in 2022 (594 pp, developed with CCRUM). Training benchmarks confirmed as 11 Feb 2022 and stated as an update of the 2010 edition. The WHO practice-benchmarks web page fetched did not itself mention the 2010 edition, so 'updates 2010 edition' for practice rests on the training document and the search summary only. The FAO/WHO heavy-metal limits entry could not be tied to a specific instrument and remains unverified."
+    searches:
+      - "WHO benchmarks for the training of Unani medicine 2022 benchmarks for the practice of Unani medicine"
+      - "WHO Standardized terminologies in Unani medicine 2022 WHO international standard terminologies on Unani medicine"
+  - path: education_and_licensure.degree_programs
+    outcome: unverifiable
+    searches:
+      - "Lok Sabha unstarred question AYUSH colleges number Ayurveda Unani Siddha Homoeopathy Sowa Rigpa 733"
+      - "eparlib.sansad.in AU3786.pdf (503 on repeated fetch; figures seen only via Medical Dialogues, 7 Nov 2020, which gives no question number)"
+      - "Kamil-e-Tib-o-Jarahat and Hamdard University Pakistan programmes not located"
+  - path: education_and_licensure.accrediting_body
+    outcome: confirmed
+    field:
+      status: filled
+      value: Education and practice historically regulated by the Central Council of Indian Medicine, now the National Commission for Indian System of Medicine.
+      citations:
+        - source: "National Commission for Indian System of Medicine Act, 2020 (India Code, indiacode.nic.in/handle/123456789/15622); section 58 repeals the Indian Medicine Central Council Act, 1970"
+          type: statute
+          citation_strength: direct
+      register: regulatory
+      notes: "Act assented Sept 2020; Central Council of Indian Medicine dissolved and the 1970 Act repealed with effect from 11 June 2021 when the Commission was constituted. Act text was read via search excerpts because the India Code PDF returned 403 on direct fetch."
+    searches:
+      - "National Commission for Indian System of Medicine Act 2020 repeal Indian Medicine Central Council Act 1970 NExT NEET section"
+  - path: education_and_licensure.licensure_requirements
+    outcome: confirmed
+    field:
+      status: filled
+      value: "India: common entrance (NEET) and exit (NExT) testing under NCISM; Pakistan: NCT registers hakims; South Africa: AHPCSA practitioner register."
+      citations:
+        - source: "National Commission for Indian System of Medicine Act, 2020 (uniform National Eligibility-cum-Entrance Test for UG admission; National Exit Test for licence to practise and enrolment in State/National Register)"
+          type: statute
+          citation_strength: direct
+        - source: "Unani, Ayurvedic and Homoeopathic Practitioners Act, 1965 (Pakistan Code, pakistancode.gov.pk); National Council for Tibb established under s.3 to provide for registration of practitioners"
+          type: statute
+          citation_strength: direct
+        - source: "Ibn Sina Institute of Tibb, Development of the Training of Tibb Doctors in South Africa (International Journal of Advanced Research, 2023); AHPCSA recognition 2001, register for Unani-Tibb practitioners"
+          type: primary-study
+          citation_strength: direct
+      register: regulatory
+      notes: "Holds as stated. Statutory wording for India: NEET for UG admission, NExT as the final-year exam for licence and register enrolment. Pakistan Code page did not show section text on fetch; s.3 and registration function taken from the Act's own description in search excerpts. South African register date reported as 14 Sept 2007 in secondary search excerpt; not needed for this claim."
+    searches:
+      - "National Commission for Indian System of Medicine Act 2020 text National Exit Test common entrance examination"
+      - "The Unani, Ayurvedic and Homoeopathic Practitioners Act, 1965 text National Council for Tibb registration"
+      - "Unani-Tibb University of the Western Cape AHPCSA Allied Health Professions Council registration 2001 Unani-Tibb"

@@ -1,0 +1,125 @@
+system: unani
+pass: verify
+batch: 4
+entries:
+- path: disruption.suppression_or_marginalization
+  source_report: v2
+  value:
+  - Macaulay's 1835 education policy privileged Western learning
+  - Bhore Committee report (1946), dominated by the Indian Medical Service, dismissed indigenous medicine
+    as 'unscientific'
+  - Later committees (Mudaliar, Shrivastava, Udupa) oscillated between marginalization and integration
+    (dates not given)
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: disruption.practitioner_response
+  source_report: v2
+  value:
+  - Hakim Ajmal Khan founded Ayurvedic and Unani Tibbia College, Delhi (foundation stone 1916, inaugurated
+    1921), the Hindustani Dawakhana and the Central College; leader in Khilafat and Non-cooperation movements
+  - Hakim Hafiz Abdul Majeed founded Hamdard in Delhi in 1906
+  - Purist Lucknow (Azizi) school resisted incorporation of Western concepts
+  - Hakims (Nasiruddin Ahmed Khan, Hassan Qarshi) sat on the 1948 Chopra Committee
+  weak_citations:
+  - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+    type: practitioner-site
+    citation_strength: indirect
+- path: disruption.post_colonial_disruption
+  source_report: v2
+  value:
+  - label: Partition of India
+    date: after Partition (year not stated in report)
+    description: 'Hamdard split: Hakim Abdul Hameed built Hamdard India and Jamia Hamdard; Hakim Mohammed
+      Said built Hamdard Pakistan (1948, Karachi).'
+  - label: East Pakistan establishment of Hamdard Laboratories (Waqf) Bangladesh
+    date: '1953'
+    description: Hamdard Laboratories Bangladesh established in East Pakistan.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: disruption.dated_events
+  source_report: v2
+  value:
+  - label: Macaulay's Minute
+    date: '1835'
+    description: Education policy privileging Western learning.
+  - label: Bhore Committee
+    date: '1946'
+    description: Health Survey and Development Committee; dismissed indigenous medicine as unscientific.
+  - label: Chopra Committee
+    date: '1948'
+    description: Committee on Indigenous Systems of Medicine; recommended integration toward 'one Indian
+      system'.
+  - label: Founding of Hamdard Pakistan
+    date: '1948'
+    description: Karachi, by Hakim Mohammed Said.
+  - label: Founding of Hamdard Laboratories Bangladesh
+    date: '1953'
+    description: In East Pakistan.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.revival_context
+  source_report: v2
+  value: Anti-colonial nationalism (Ajmal Khan tied Unani's survival to the nationalist movement), the
+    need to survive under colonial models of legitimacy through 'scientization', later state-led modernization
+    and industrialization of pharmacy (Hamdard); in Iran, a state-backed Persian medicine revival.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.key_figures
+  source_report: v2
+  value:
+  - name: Hakim Ajmal Khan
+    dates: 1868-1927
+    role: Reformer-nationalist; founder of Ayurvedic and Unani Tibbia College; President of Indian National
+      Congress 1921
+  - name: Hakim Hafiz Abdul Majeed
+    dates: Hamdard founded 1906
+    role: Founder of Hamdard
+  - name: Hakim Abdul Hameed
+    dates: 1908-1999
+    role: Built Hamdard India and Jamia Hamdard
+  - name: Hakim Mohammed Said
+    dates: Hamdard Pakistan 1948
+    role: Built Hamdard Pakistan
+  - name: Salimuzzaman Siddiqi
+    dates: null
+    role: Chemist recognized by Ajmal Khan; laboratory-science direction for Unani plants
+  - name: Nasiruddin Ahmed Khan and Hassan Qarshi
+    dates: '1948'
+    role: Hakims on the Chopra Committee
+  weak_citations:
+  - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+    type: practitioner-site
+    citation_strength: indirect
+- path: revival_and_institutionalization.nationalist_framing
+  source_report: v2
+  value: Ajmal Khan was Congress President (1921) and leader in the Khilafat and Non-cooperation movements;
+    Attewell describes reconstitution around nationalist/communitarian politics; Iranian revival described
+    by critics as nationalist 'invented tradition'.
+  weak_citations:
+  - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+    type: practitioner-site
+    citation_strength: indirect
+- path: revival_and_institutionalization.standardization_events
+  source_report: v2
+  value:
+  - Ayurvedic and Unani Tibbia College, Delhi (foundation stone 1916, inaugurated 1921) incorporating
+    anatomy and surgery
+  - Drugs and Cosmetics Act 1940 Chapter IVA and Rules 1945 (Schedule T GMP; Rule 158B licensing)
+  - Unani, Ayurvedic and Homoeopathic Practitioners Act 1965 (Pakistan)
+  - CCRUM established 1978; National Institute of Unani Medicine, Bengaluru; Unani Pharmacopoeia of India;
+    National Formulary of Unani Medicine
+  - Iranian 4-year PhD in Traditional Persian Medicine approved 2007
+  - NCISM Act 2020 operational 2021, common entrance (NEET) and exit (NExT)
+  - WHO benchmarks for training and practice of Unani medicine, 11 February 2022 (2010 editions updated)
+  weak_citations:
+  - source: Drugs And Cosmetics Act For Ayush - Legal Corner (legalcorner.org)
+    type: unclear
+    citation_strength: indirect

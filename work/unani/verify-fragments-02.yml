@@ -1,0 +1,27 @@
+system: unani
+pass: verify
+updates:
+  - path: theoretical_primitives.constituents
+    outcome: unverifiable
+    searches: ["WHO Benchmarks for training in Unani medicine 2010 arkan akhlat mizaj asbab sitta zaruriya", "Unani fundamentals Arkan Akhlat Mizaj Quwa Arwah Af'al seven umoor tabiyah", "fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP 403)", "fetch ccrum.res.in Fundamentals of Unani Medicine PDF (redirect, then 503)"]
+  - path: theoretical_primitives.balance_logic
+    outcome: unverifiable
+    searches: ["Unani diagnosis nabz baul baraz mizaj ilaj bil tadbir ilaj bil ghiza ilaj bil dawa ilaj bil yad review", "fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP 403)", "fetch ccrum.res.in Fundamentals of Unani Medicine PDF (redirect, then 503)"]
+  - path: theoretical_primitives.correspondence_system
+    outcome: unverifiable
+    searches: ["WHO Benchmarks for training in Unani medicine 2010 arkan akhlat mizaj asbab sitta zaruriya", "fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP 403)"]
+  - path: theoretical_primitives.etiology
+    outcome: unverifiable
+    searches: ["Unani su' al-mizaj simple material six essential factors", "Su'-i-Mizaj Sada and Maddi pmc", "fetch unanijournal.com Six essential factors and health (bot check page)", "fetch saapjournals.org mizaj scoping review (bot check page)"]
+  - path: theoretical_primitives.nosology
+    outcome: unverifiable
+    searches: ["Unani su' al-mizaj simple material six essential factors", "Su'-i-Mizaj Sada and Maddi pmc", "Waja al-Mafasil rheumatoid arthritis Unani analogue"]
+  - path: theoretical_primitives.relation_to_biomedical_anatomy
+    outcome: unverifiable
+    searches: ["WHO Benchmarks for training in Unani medicine 2010 arkan akhlat mizaj asbab sitta zaruriya", "fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP 403)"]
+  - path: theoretical_primitives.translation_programs
+    outcome: unverifiable
+    searches: ["WHO Benchmarks for training in Unani medicine 2010 arkan akhlat mizaj asbab sitta zaruriya", "Unani disease analogues pharmacological screening materia medica"]
+  - path: diagnostics.methods
+    outcome: unverifiable
+    searches: ["Unani diagnosis nabz baul baraz mizaj ilaj bil tadbir review", "fetch pmc PMC10000451 Mizaj diagnostic methods (Persian medicine, questionnaires and expert panels only, does not describe pulse/urine/stool)", "fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP 403)"]
