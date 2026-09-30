@@ -1,0 +1,36 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: identification.system_name
+    outcome: confirmed
+    field:
+      status: filled
+      value: Ayurveda
+      citations:
+        - source: "NCCIH (NIH), Ayurvedic Medicine: In Depth, nccih.nih.gov/health/ayurvedic-medicine-in-depth"
+          type: institutional
+          citation_strength: direct
+      register: emic
+      notes: "NCCIH names the system Ayurvedic medicine, also known as Ayurveda, and describes it as one of India's traditional health care systems."
+    searches: ["NCCIH Ayurvedic Medicine: In Depth"]
+  - path: identification.alternate_names
+    outcome: unverifiable
+    searches: ["Drugs and Cosmetics Act 1940 Chapter IVA Ayurvedic Siddha or Unani drugs text India Code", "NCCIH Ayurvedic Medicine: In Depth (no etymology given)"]
+  - path: identification.primary_regions
+    outcome: unverifiable
+    searches: ["NCCIH Ayurvedic Medicine: In Depth (no diaspora or EU market content on the page)"]
+  - path: identification.system_boundary
+    outcome: unverifiable
+    searches: ["Ayurveda Act No. 31 of 1961 Sri Lanka Ayurveda Medical Council Siddha Unani registered practitioners", "Sri Lanka Ministry of Health Ayurveda Medical Council registered practitioners Siddha 2.9%", "Ayurveda Act 1961 commonlii (403)", "Sri Lanka parliament annual report 2024 pdf (unreadable)"]
+  - path: canon_and_transmission.dating_and_authorship_disputes
+    outcome: unverifiable
+    searches: ["Zysk Asceticism and Healing in Ancient India 1991 Oxford University Press", "Zysk fundamental to the formation of ayurvedic medical thinking", "Meulenbeld History of Indian Medical Literature Ia far from even approaching a solution", "archive.org Meulenbeld HIML 1A full text (excerpt did not reach p. 656)"]
+  - path: canon_and_transmission.transmission_mode
+    outcome: unverifiable
+    searches: ["Zysk Asceticism and Healing in Ancient India 1991 Oxford University Press"]
+  - path: canon_and_transmission.external_dating_anchors
+    outcome: unverifiable
+    searches: ["Bower Manuscript Hoernle 1890 Kucha Asiatic Society Calcutta medical treatises date fourth-sixth century", "Hoernle The Bower Manuscript facsimile leaves Archaeological Survey of India 1893-1912", "archive.org TheBowerManuscript full text (introduction not retrievable)"]
+  - path: canon_and_transmission.key_figures
+    outcome: unverifiable
+    searches: ["Meulenbeld History of Indian Medical Literature Suśruta Caraka Vāgbhaṭa dating"]

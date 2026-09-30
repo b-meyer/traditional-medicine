@@ -1,0 +1,219 @@
+system: unani
+pass: verify
+updates:
+  - path: diagnostics.reliability_evidence
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - statistic: weighted kappa (also Cronbach alpha 0.71; sensitivity/specificity reported)
+          value: "weighted kappa 0.40 to 0.83 across the 39 items retained as reliable (of 47 after content validity, from 52 initial); Cronbach alpha 0.71; final 10-item questionnaire cut-off sensitivity/specificity warm 65%/93%, cold 52%/97%, dry 53%/67%, wet 53%/76%"
+          confidence_interval: null
+          design: questionnaire-validation
+          population: volunteers (test-retest n=35, mean age 28.2; validity sample n=52 with expert agreement, mean age 20.9); health status not stated
+          n_raters: null
+          n_subjects: 35 (reliability); 52 (validity)
+          target: individual mizaj self-report scale items (warm, cold, dry, wet groups)
+          citation: "Mojahedi M et al., Reliability and Validity Assessment of Mizaj Questionnaire: A Novel Self-report Scale in Iranian Traditional Medicine, Iranian Red Crescent Medical Journal 2014;16(3):e15924 (PMC4005447)"
+        - statistic: ICC
+          value: 0.62 (warmness-coldness); 0.64 (wetness-dryness)
+          confidence_interval: 0.53-0.73; 0.56-0.72
+          design: clinician-vs-clinician
+          population: healthy volunteers
+          n_raters: 3
+          n_subjects: 150
+          target: temperament axes (warm-cold; wet-dry)
+          citation: "Primary paper not located. Figures match an abstract (three Persian Medicine specialists, 150 healthy volunteers) seen only via search snippets; the academia.edu paper originally cited (Identification of Mizaj Based on Tibbi Fundamentals using Classification as Tool) is a J48 decision-tree study of 68 subjects and does not carry these figures."
+        - statistic: Cohen kappa
+          value: "highest 0.512 for hotness (clinical vs Salmannezhad questionnaire, SMQ) and 0.512 for coldness (clinical vs Mojahedi questionnaire, MMQ); lowest 0.081 for dry/wet balance (clinical vs SMQ); questionnaire-vs-questionnaire 0.132-0.366"
+          confidence_interval: "hotness 0.422-0.602; coldness 0.368-0.656; dry/wet balance -0.023 to 0.185"
+          design: questionnaire-validation
+          population: healthy healthcare workers aged 20-60 (75.7% male)
+          n_raters: null
+          n_subjects: 350
+          target: temperament categories (hotness, coldness, dry/wet balance) by clinical judgment vs two questionnaires (SMQ 20-item, MMQ 10-item)
+          citation: "Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj) Assessment in Persian Medicine, Shiraz E-Medical Journal 2026;27(4):e168654"
+        - statistic: not specified in abstract (inter-rater judgment analysis of item selection)
+          value: "abstract reports only significant agreement among ten Unani experts on item selection; no coefficient given in the abstract"
+          confidence_interval: null
+          design: questionnaire-validation
+          population: ten Unani medicine experts (raters)
+          n_raters: 10
+          n_subjects: null
+          target: item selection for the Mizaij-i-Insani questionnaire
+          citation: "Malik A, Ahmad W, Sofi G. Inter-Rater Judgement analysis for Item Selection in the Development of the Questionnaire to Determine Mizaij-i-Insani, Bangladesh Journal of Medical Science 2024;23(2):429-437, doi 10.3329/bjms.v23i2.72165"
+      citations:
+        - source: "Mojahedi et al., Iranian Red Crescent Medical Journal 2014;16(3):e15924 (PMC4005447)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj) Assessment in Persian Medicine, Shiraz E-Medical Journal 2026;27(4):e168654"
+          type: primary-study
+          citation_strength: direct
+        - source: "Malik, Ahmad, Sofi, Bangladesh Journal of Medical Science 2024;23(2):429-437"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Corrections. (1) Mojahedi: weighted kappa range is 0.40-0.83 (not 0.82); 39 of 47 items reliable; test-retest n=35. (2) Kappa study is Cohen kappa, n=350 healthy healthcare workers, 2026 (not just 'about 350'); coldness kappa 0.512 is clinical vs MMQ. (3) Bangladesh paper: ten expert raters, no J48 or n=68 in its abstract; the J48 decision-tree study of 68 subjects belongs to the academia.edu paper (Identification of Mizaj Based on Tibbi Fundamentals using Classification as Tool), which was previously mis-cited as the source of the ICC figures. The J48 study is not carried as an entry here. (4) The ICC entry (0.62/0.64, 3 raters, 150 healthy volunteers) remains without a located primary paper; its figures were read from abstract text in search results, so treat that entry as not directly verified. Values from different designs are not comparable."
+    searches:
+      - "Mojahedi Iranian Red Crescent Medical Journal 2014 mizaj questionnaire Persian medicine validity reliability"
+      - "Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj) Assessment in Persian Medicine Shiraz E-Medical Journal"
+      - "Inter-Rater Judgement analysis for Item Selection ... Mizaij-i-Insani Bangladesh Journal of Medical Science"
+      - "Identification of Mizaj (Temperament) Based on Tibbi Fundamentals using Classification as Tool"
+      - "three Persian Medicine specialists assessed Mizaj of 150 healthy volunteers ICC"
+  - path: modalities.items
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - name: Ilaj bil tadbeer (regimenal therapy)
+          native_category: ilaj bil tadbeer
+          tags: [procedural, manual, thermal, regimenal]
+          description: "Nearly 30 regimens in classical Unani literature, including fasd (venesection), hijama (cupping), ta'liq al-'alaq (leech therapy), ishal (purgation), qay' (emesis), idrar (diuresis), huqna (enema), ta'riq (diaphoresis), riyazat (exercise), dalk (massage), hammam (bath), natul (irrigation), inkibab (steam), takmid (fomentation). Aim is to disperse or excrete morbid matter and restore humoral balance."
+        - name: Ilaj bil ghiza (dietotherapy)
+          native_category: ilaj bil ghiza
+          tags: [dietary]
+          description: Specific diets recommended, considering both the amount and quality of food.
+        - name: Ilaj bil dawa (pharmacotherapy)
+          native_category: ilaj bil dawa
+          tags: [herbal, animal-derived, mineral-metal]
+          description: "Medicines from herbal, mineral and animal sources; a collection of over 2,000 medicines. Includes kushta (incinerated preparations), for example Kushta Sammulfar from arsenic trioxide."
+        - name: Ilaj bil yad (surgery)
+          native_category: ilaj bil yad
+          tags: [surgical]
+          description: Considered a last resort and typically beyond the expertise of a hakim.
+      citations:
+        - source: "Britannica, Unani medicine (science article)"
+          type: reference-work
+          citation_strength: direct
+        - source: "Ilaj bi'l-Tadbir (regimenal therapy): a core mode of Unani treatment, Journal of Complementary and Integrative Medicine 2020, doi 10.1515/jcim-2020-0048 (PMID 32853166)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Kushta Sammulfar chronic toxicity study, Pharmacologyonline/MDPI Journal of Pharmacology and Pharmacotherapeutics e3 (arsenic trioxide calx)"
+          type: primary-study
+          citation_strength: direct
+      register: emic
+      notes: "Corrected by narrowing. Britannica confirms the four modes, the 2,000+ medicines and the surgery 'last resort' wording; the Britannica page did not mention a fever diet, so that clause was removed. 'Nearly 30 regimens' and the regimen list are from the 2020 J Complement Integr Med review (which also lists tadhin and sakub, omitted here). Removed as unverified in the sources found: 'graded by temperament and four degrees' (moved to materia_medica framework), mercury, mercuric chloride and iron kushtas, and the al-Zahrawi heritage clause. Tags kept as originally coded."
+    searches:
+      - "Unani ilaj bil tadbeer regimenal therapy about 30 regimens venesection cupping leech Ilaj bil yad surgery"
+      - "Britannica Unani medicine ilaj bil yad last resort hakim"
+  - path: materia_medica.pharmacological_framework
+    outcome: corrected
+    field:
+      status: filled
+      value: "Drugs are classified by temperament (mizaj) and graded in four degrees of potency, with the drug's action (taseer) framed as adjustment of mizaj, not by pathophysiology or molecular mechanism. Per Speziale, assimilation of Indian knowledge, particularly its pharmacology, was stimulated mainly by practical needs such as finding local substitutes for drugs, and generated 'a sensible renewal of the medical and pharmacological knowledge' among Indo-Muslim physicians."
+      citations:
+        - source: "Mohd M, Sofi G, Jahan N, Baig Z. Approaches for preparation methods of Murakkab, an Unani formulation, 2018 (PMC6938876)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Fabrizio Speziale, 'India xxxiii. Indo-Muslim Physicians', Encyclopaedia Iranica"
+          type: reference-work
+          citation_strength: direct
+      register: emic
+      notes: "Corrected. The quoted phrase 'determined the most sensible renewal' was not found; the Speziale text in Encyclopaedia Iranica reads 'generating at the same time a sensible renewal of the medical and pharmacological knowledge', and gives the pharmacology point as stimulated by practical needs such as finding local substitutes of drugs. The claim that pharmacology was the field where contact 'determined the most sensible renewal' is not supported in that wording. Temperament-based classification with four degrees is supported by the Mohd et al. paper; the rejection of pathophysiological classification is an interpretive contrast, not a statement found in either source. The academia.edu profile originally cited was not accessible."
+    searches:
+      - "Fabrizio Speziale Indian materia medica Arabic Persian pharmacopoeias pharmacology most sensible renewal"
+      - "Speziale determined the most sensible renewal pharmacology Indian"
+      - "Unani drugs classified by mizaj temperament four degrees Unani Pharmacopoeia of India"
+  - path: materia_medica.flagship_agents
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - Kushtae Sadaf
+        - Jawarish Shahi
+        - Surma / ithmid
+        - Kushta Sammulfar (arsenic trioxide)
+      citations:
+        - source: "National Formulary of Unani Medicine, Government of India (Kushta Sadaf entry; kushta class)"
+          type: institutional
+          citation_strength: direct
+        - source: "Jawarish Shahi: A special dosage form of herbal formulations for functional gastrointestinal disorders in Unani medicine, J Ethnopharmacol 2022 (PMID 35490900)"
+          type: systematic-review
+          citation_strength: direct
+        - source: "Kohl (surma): Retrospect and prospect, Pakistan Journal of Pharmaceutical Sciences 22(1):107-122, 2009"
+          type: primary-study
+          citation_strength: direct
+        - source: "Evaluation of Chronic Toxicity of Kushta Sammulfar (Calx of Arsenic Trioxide), MDPI Pharmacologyonline e3"
+          type: primary-study
+          citation_strength: direct
+      register: emic
+      notes: "Corrected by removal. The four remaining agents are documented as Unani preparations in the sources cited. 'Flagship' status is the report's characterization and is not established by these sources. Removed: Rooh Afza (Hamdard product, launched 1907). The 1907 launch is reported only by the manufacturer and Wikipedia-type pages (indirect), and it is a commercial beverage, not a documented Unani pharmacopoeial agent. Jawarish Shahi is a compound herbal formulation (amla, harar, coriander, cardamom, willow)."
+    searches:
+      - "Kushta Sammulfar Jawarish Shahi Kushta Sadaf Unani formulation National Formulary of Unani Medicine"
+      - "Jawarish Shahi Unani formulation composition pubmed"
+      - "Kushta Sammulfar arsenic trioxide Unani incinerated drug"
+      - "Unani Surma Kohl ithmid eye medicine"
+      - "Rooh Afza Hamdard launched 1907 Hakim Hafiz Abdul Majeed"
+  - path: materia_medica.preparation_traditions
+    outcome: corrected
+    field:
+      status: filled
+      value: "Kushta (calx, incinerated) preparations; compound formulations (murakkabat); Unani Pharmacopoeia of India and National Formulary of Unani Medicine as official reference works."
+      citations:
+        - source: "Mohd M, Sofi G, Jahan N, Baig Z. Approaches for preparation methods of Murakkab, an Unani formulation, 2018 (PMC6938876)"
+          type: primary-study
+          citation_strength: direct
+        - source: "National Formulary of Unani Medicine, Government of India (formulation classes include Kushta, Majoon, Itrifal, Laooq, Qurs and others)"
+          type: institutional
+          citation_strength: direct
+        - source: "Concept of Kushta (calx) and studies carried out on Kushta in Unani medicine; Kushta Sammulfar preparation studies"
+          type: primary-study
+          citation_strength: direct
+      register: emic
+      notes: "Corrected by narrowing. Removed 'Hamdard industrial standardization' because no direct source was found. The Unani Pharmacopoeia of India and NFUM are named as reference sources in the Mohd et al. paper; NFUM formulation classes were read from search summaries of the formulary."
+    searches:
+      - "Unani drugs classified by mizaj Unani Pharmacopoeia of India National Formulary of Unani Medicine kushta preparation"
+      - "Kushta Sammulfar preparation Unani calx"
+  - path: disruption.loss_of_patronage
+    outcome: corrected
+    field:
+      status: filled
+      value: "The Nizams of Hyderabad (dynasty 1724-1948) were the princely state that gave the strongest support to Unani medical studies in the colonial period, building a large traditional-medicine hospital with a medical school attached (Nizamia Tibbi College); Hyderabad remains a research centre (Central Research Institute of Unani Medicine, established December 1971, now the National Research Institute of Unani Medicine for Skin Disorders). No account of loss of Mughal or princely-state patronage, and no dates."
+      citations:
+        - source: "Fabrizio Speziale, 'India xxxiii. Indo-Muslim Physicians', Encyclopaedia Iranica"
+          type: reference-work
+          citation_strength: direct
+        - source: "National Research Institute of Unani Medicine for Skin Disorders (formerly CRIUM), Hyderabad, institutional website (CCRUM, Ministry of Ayush)"
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Corrected. Encyclopaedia Iranica confirms Nizam patronage and Hyderabad as the main centre of Muslim medical studies in the Deccan; the Nizamia Tibbi College name and 1926 founding were seen only on Wikipedia-type pages and are not directly confirmed. CRIUM's December 1971 founding and its 2019 renaming to NRIUMSD come from the institute's own site and a search summary. The 'no account of loss of patronage' clause describes the report's coverage, not a historical fact."
+    searches:
+      - "Nizamia Tibbi College Hyderabad founded Central Research Institute of Unani Medicine CRIUM established"
+      - "Speziale Indo-Muslim physicians Nizams Hyderabad patronage"
+  - path: disruption.period
+    outcome: corrected
+    field:
+      status: filled
+      value: "British Raj: Macaulay's Minute on Indian Education (2 February 1835), which disparaged Oriental 'medical doctrines'; the Bhore Committee (appointed 1943, report 1946) and the Chopra Committee on Indigenous Systems of Medicine (appointed 1946, report 1948)."
+      citations:
+        - source: "T. B. Macaulay, Minute on Indian Education, 2 February 1835 (text via Wikisource, Minutes on Education in India)"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Report of the Committee on Indigenous Systems of Medicine (R. N. Chopra, Chairman), Ministry of Health, Government of India, New Delhi, 1948"
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Corrected. Macaulay's Minute is dated 2 February 1835 and mentions 'medical doctrines, which would disgrace an English farrier' in its critique of Oriental learning; it is an education policy and does not address Unani by name. Chopra report dated 1948 confirmed from the archive.org copy; the Bhore report (1946) dating rests on secondary summaries, not the report itself. Removed 'post-1947 Partition breaks' because no source was found for it; the '1946-48 committees' wording was imprecise since Bhore ran 1943-46 and Chopra 1946-48."
+    searches:
+      - "Macaulay Minute on Indian Education 2 February 1835 text"
+      - "Chopra Committee Report of the Committee on Indigenous Systems of Medicine 1948 Bhore Committee 1946"
+      - "Unani medicine decline British colonial rule Macaulay 1835 Bhore Chopra"
+  - path: disruption.colonial_power
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - power: Britain (British Raj)
+          mode: colonial_rule
+          period: 19th c. to 1947 (dates as implied by report)
+          description: "Indian traditional medicines became the object of Western accusations of being unscientific, a criticism shared by part of the British-educated Indian elite. Muslim traditional physicians responded by assimilating Western knowledge in anatomy and surgery, opening madrasas of traditional medicine and using Urdu for medical literature and new journals."
+      citations:
+        - source: "Fabrizio Speziale, 'India xxxiii. Indo-Muslim Physicians', Encyclopaedia Iranica"
+          type: reference-work
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Corrected. Encyclopaedia Iranica supports the accusations of being unscientific, the modernizing reforms, the new madrasas and the use of Urdu and journals. It does not say that only Western medicine was recognized as legitimate or that indigenous systems were 'actively discouraged', nor does it describe print and the public sphere transforming Unani into a professionalized system; those clauses were removed as unsupported. The period field remains the report's own approximation."
+    searches:
+      - "Speziale Indo-Muslim physicians colonial period Urdu journals madrasa"
+      - "Unani medicine British colonial rule marginalization"

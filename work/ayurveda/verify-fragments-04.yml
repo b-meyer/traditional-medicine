@@ -1,0 +1,165 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: materia_medica.preparation_traditions
+    outcome: confirmed
+    field:
+      status: filled
+      value: "Shodhana (purification) and marana (incineration/calcination through repeated puta heating cycles) with herbal or sulfur matrices to make bhasmas; amla pariksha acid-stability test; low dosing."
+      citations:
+        - source: "Rohra P. A Conceptual Review of Bhasma Pariksha with A Modern View (2017), International Journal of Ayurveda and Allied Research (ijaar.in)"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Review of Shodhana in Rasashastra, Journal of Ayurveda and Integrated Medical Sciences (2023)"
+          type: tertiary-review
+          citation_strength: direct
+      register: emic
+      notes: "Shodhana, marana/puta, gandhaka (sulfur) and herbal media, and amla pariksha as one of the bhasma quality tests are described in the Rasashastra review literature. The gloss 'acid-stability test' for amla pariksha is the report's paraphrase; the Rohra review calls it an acid dissolution test. Full text of Rohra was only retrieved as a machine summary. Replaces the Grokipedia citation."
+    searches: ["Rasashastra shodhana marana puta bhasma amla pariksha review journal"]
+  - path: disruption.period
+    outcome: confirmed
+    field:
+      status: filled
+      value: "East India Company institutional experiments 1822-1835; rupture 1835; nationalist revival c. 1900-1947; post-independence institutionalization."
+      citations:
+        - source: "Medical College Bengal - A Pioneer Over the Eras (PMC3824763): order of 21 June 1822 starting the first medical school in British India; order of 28 January 1835"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal of Health Policy & Opinion 13(3), 2020"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Akhil Bhartiya Ayurved Mahasammelan (All India Ayurvedic Congress), About AICC: established 1907 at Nasik"
+          type: institutional
+          citation_strength: direct
+        - source: "Arya Vaidya Sala Kottakkal, About us: Arya Vaidya Sala 1902, Aryavaidya Pathasala 1917"
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Previously uncited. The 1822-1835 and 1835 dates and the c.1900-1947 revival anchors (Kottakkal 1902, AICC 1907) check out. The phrase 'post-independence institutionalization' is a summary label and was not separately sourced here."
+    searches: ["Native Medical Institution Calcutta 1822 Tytler abolished 28 January 1835 Medical College Bengal", "Arya Vaidya Sala Kottakkal founded 1902", "All India Ayurvedic Congress founded 1907 Nasik"]
+  - path: disruption.colonial_power
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - power: "British (East India Company and colonial government)"
+          mode: colonial_rule
+          period: "1822-1835 (Native Medical Institution period to 1835 abolition); colonial delegitimization continuing into the revival period"
+          description: "Established the Native Medical Institution, Calcutta in 1822 teaching in the vernacular, then ended state patronage of indigenous medical teaching in 1835."
+      citations:
+        - source: "Medical College Bengal - A Pioneer Over the Eras (PMC3824763)"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal of Health Policy & Opinion 13(3), 2020"
+          type: tertiary-review
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Founding of the NMI in 1822 and its abolition by the order of 28 January 1835 confirmed. That the NMI taught in the vernacular is from secondary summaries (Khaleeli 2001, South Asia Research 21(1), paywalled, not opened). 'Continuing into the revival period' is interpretive."
+    searches: ["Native Medical Institution Calcutta 1822 Tytler abolished 28 January 1835"]
+  - path: disruption.suppression_or_marginalization
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - "Grant Committee report, 20 October 1834, recommended replacing the NMI with a medical college teaching European medicine in English"
+        - "Government order of 28 January 1835 abolished the NMI and discontinued the Ayurvedic (Sanskrit College) and Unani (Calcutta Madrasa) classes"
+        - "Macaulay's Minute of 2 February 1835 (general education) and Bentinck's resolution of 7 March 1835 withdrew state funding from instruction in the Oriental languages and learning, a wider policy that followed the medical abolition"
+        - "Calcutta Medical College: established by the order of 28 January 1835; student admissions began 20 February 1835; teaching Western medicine in English"
+        - "Professional registration (undated) marginalized folk and lay healers"
+      citations:
+        - source: "Medical College Bengal - A Pioneer Over the Eras (PMC3824763)"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal of Health Policy & Opinion 13(3), 2020"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Macaulay, Minute on Indian Education, 2 February 1835 (text)"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Lexicon, History Revisited: The Origins of Medical Education in India (Grant Committee report 20 Oct 1834; admissions 20 Feb 1835)"
+          type: practitioner-site
+          citation_strength: indirect
+      register: historical-scholarship
+      notes: "Changes: (1) the original tied the end of state medical patronage to Macaulay's Minute and Bentinck's resolution. The medical classes were abolished by the order of 28 January 1835, before the Minute (2 Feb 1835), and Bentinck's resolution on the Minute is dated 7 March 1835, not February. The Minute concerns education generally, not medicine specifically. (2) 'Opened 20 February 1835' reworded: the college was established by the 28 January order and admissions began 20 February; other sources say classes began 1 June 1835. (3) The Grant Committee date of 20 Oct 1834 and the 20 Feb admissions date rest on the Lexicon article only (indirect). (4) The 'professional registration (undated)' item could not be sourced and is carried unchanged; treat as unverified. Sources searched did not name the Grant Committee report's author precisely (Sushruta article calls him 'Lord John Grant'; not adopted)."
+    searches: ["Native Medical Institution Calcutta 1822 Tytler abolished 28 January 1835 Medical College Bengal 20 February 1835", "Macaulay Minute on Education 2 February 1835 Bentinck resolution 7 March 1835", "Calcutta Medical College 20 February 1835 students admitted Bramley opened"]
+  - path: disruption.abolition_attempts
+    outcome: confirmed
+    field:
+      status: filled
+      value: "Government order of 28 January 1835 abolished the Native Medical Institution and discontinued its Ayurvedic and Unani classes."
+      citations:
+        - source: "Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal of Health Policy & Opinion 13(3), 2020: NMI abolished 28 January 1835; Unani and Ayurvedic classes at the Madrasa and Sanskrit College from 1826"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Medical College Bengal - A Pioneer Over the Eras (PMC3824763): order of 28 January 1835"
+          type: tertiary-review
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Date confirmed. The explicit statement that the Sanskrit College and Madrasa classes were discontinued by the same order is from secondary summaries."
+    searches: ["Native Medical Institution Calcutta abolished 28 January 1835 Ayurvedic Unani classes"]
+  - path: disruption.practitioner_response
+    outcome: confirmed
+    field:
+      status: filled
+      value: "Nationalist-tinged revival c. 1900-1947. P. S. Varier founded Arya Vaidya Sala, Kottakkal (1902) and Arya Vaidya Patasala (1917); Gananath Sen presided over the All India Ayurvedic Congress (1911, 1920, 1931) and advocated samanvaya; the All India Ayurvedic Congress (Akhil Bharatiya Ayurveda Mahasammelan) formed as umbrella professional body, organized nationally around 1907."
+      citations:
+        - source: "Arya Vaidya Sala Kottakkal, About us (official history): Sala founded by P.S. Varier 1902; Aryavaidya Pathasala 1917"
+          type: institutional
+          citation_strength: direct
+        - source: "The legacy of Kaviraj Gananath Sen: Bridging traditions in Ayurveda. Journal of Research in Ayurvedic Sciences, 2024 (LWW)"
+          type: primary-study
+          citation_strength: direct
+        - source: "Akhil Bhartiya Ayurved Mahasammelan, About AICC: Ayurvedic Congress established 1907 in Nasik"
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Dates confirmed. Sen's presidencies (Allahabad 1911, Indore 1920, Mysore 1931) come from the LWW article as seen in a search summary; the full text was paywalled (HTTP 402). 'Samanvaya' is not confirmed verbatim, though the article title concerns bridging traditions. The AICC site does not name a founder; a different source attributes the 24 May 1907 founding to Shankar Daji Pade Shastri. Institutional sites are self-descriptions."
+    searches: ["Arya Vaidya Sala Kottakkal founded 1902 Arya Vaidya Pathasala 1917 P. S. Varier", "Gananath Sen All India Ayurvedic Congress president 1911 1920 1931 samanvaya", "All India Ayurvedic Congress founded 1907"]
+  - path: disruption.dated_events
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - label: "Native Medical Institution founded"
+          date: '1822-06-21'
+          description: "East India Company institution in Calcutta, initially teaching in the vernacular; Peter Breton headed it from 1823 and John Tytler succeeded as superintendent in 1827."
+        - label: "Ayurvedic classes at Sanskrit College and Unani classes at Calcutta Madrasa"
+          date: '1826'
+          description: "Classes established under the NMI."
+        - label: "Grant Committee report"
+          date: '1834-10-20'
+          description: "Committee report critical of the NMI; recommended a medical college teaching in English."
+        - label: "Native Medical Institution abolished"
+          date: '1835-01-28'
+          description: "Ayurvedic/Unani classes discontinued."
+        - label: "Macaulay's Minute"
+          date: '1835-02-02'
+          description: "Minute on Indian education; approved by Bentinck's resolution of 7 March 1835, which limited state funds to English-language education."
+        - label: "Calcutta Medical College opened"
+          date: '1835-02-20'
+          description: "Student admissions began; college established by the order of 28 January 1835; taught Western medicine in English (classes reported to begin 1 June 1835)."
+        - label: "Bhore Committee"
+          date: '1946'
+          description: "Health Survey and Development Committee report; treated indigenous medicine as unscientific and prioritized Western scientific medicine."
+      citations:
+        - source: "Medical College Bengal - A Pioneer Over the Eras (PMC3824763): 21 June 1822 order; 28 January 1835 order"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal of Health Policy & Opinion 13(3), 2020: 1822, 1826, 1834 Grant report, 28 Jan 1835"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Wikipedia, John Tytler (surgeon), citing Whitfield MJ, Dr John Tytler (1787-1837), Superintendent of the Native Medical Institution, Calcutta, Journal of Medical Biography 2021: Tytler took over as superintendent in 1827 from Peter Breton"
+          type: open-encyclopedia
+          citation_strength: indirect
+        - source: "Macaulay, Minute on Indian Education, 2 February 1835 (text)"
+          type: historical-monograph
+          citation_strength: direct
+        - source: "Lexicon, History Revisited: The Origins of Medical Education in India (Grant Committee report 20 Oct 1834; admissions 20 Feb 1835)"
+          type: practitioner-site
+          citation_strength: indirect
+        - source: "Bhore Committee (Health Survey and Development Committee) report, 1946, as described in search summaries; report text not opened"
+          type: institutional
+          citation_strength: indirect
+      register: historical-scholarship
+      notes: "Changes: (1) Tytler was not the first superintendent; Peter Breton headed the NMI first (from October 1823 per one source) and Tytler took over in 1827. Breton's dates come from Wikipedia/Whitfield and were not checked in the article itself. (2) Macaulay's Minute dated 2 February 1835 (was '1835-02'); Bentinck's resolution is 7 March 1835, not February. (3) The medical college was established by the 28 Jan order with admissions on 20 Feb; label kept, description clarified. The 20 Oct 1834 Grant date and 20 Feb 1835 admissions date rest only on the Lexicon article (indirect). (4) Bhore Committee 1946 date and thrust are from search summaries only; not verified against the report itself. 1822, 1826 and 28 Jan 1835 confirmed."
+    searches: ["Native Medical Institution 21 June 1822 Tytler Calcutta general order", "Native Medical Institution first superintendent Peter Breton Tytler 1827", "Macaulay Minute on Education 2 February 1835 Bentinck resolution 7 March 1835", "Bhore Committee 1946 report Ayurveda indigenous systems"]

@@ -1,0 +1,110 @@
+system: unani
+pass: verify
+updates:
+  - path: education_and_licensure.biomedical_content_in_curriculum
+    outcome: unverifiable
+    searches:
+      - "Ajmal Khan Tibbiya College Delhi 1916 curriculum anatomy physiology surgery Unani reform BUMS"
+      - "Liebeskind Unani medicine of the subcontinent Tibbiya College Ajmal Khan anatomy surgery Lucknow Takmil-ut-Tibb"
+      - "Alavi Islam and Healing (vdoc.pub excerpt) reformers curriculum anatomy surgery fixed syllabi degrees"
+      - "NCISM BUMS curriculum Tashreeh Munafe-ul-Aza Mahiyatul Amraz Ilmul Jarahat (NCISM pages returned 409 or only snippets; shows present-day content, not reformer attribution)"
+  - path: literature_state.geographic_concentration_of_trials
+    outcome: unverifiable
+    searches:
+      - "bibliometric analysis Unani medicine research publications India Iran countries CCRUM Hamdard most productive"
+  - path: literature_state.publication_bias_findings
+    outcome: unverifiable
+    searches:
+      - "publication bias Unani medicine clinical trials systematic review funnel plot Egger"
+  - path: evidence_state.reviews
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - modality: Cupping (including wet cupping) for low back pain
+          best_available_review: Zhang Z, Pasapula M, Wang Z, Edwards K, Norrish A. The effectiveness of cupping therapy on low back pain, a systematic review and meta-analysis of randomized control trials. Complementary Therapies in Medicine 2024;80:103013
+          type: meta-analysis
+          year: 2024
+          size: 11 randomized controlled trials, 921 participants
+          conclusion: 'Authors report that cupping significantly improves pain at 2-8 weeks, described as high-quality evidence; benefit diminished at longer follow-up; disability also improved over 1-6 months; wet cupping was more effective than dry cupping; cupping was superior to medication and usual care.'
+          certainty_rating: described by the authors as high- to moderate-quality evidence
+          methodological_limitations_noted: Significant heterogeneity between studies; authors call for standardized protocols and longer follow-up. The review covers cupping in general for low back pain only, not specifically Unani hijama.
+        - modality: Wet cupping (al-hijama) for mental health
+          best_available_review: Ucun Y. Wet Cupping (al-hijama) for Mental Health, A Systematic Review. Journal of Acupuncture Research 2022;39(2):89-95
+          type: systematic-review
+          year: 2022
+          size: 9 studies (2 case reports, 3 pre-post tests, 3 RCTs), 1,124 individuals receiving wet cupping
+          conclusion: Author states there are few RCTs and most are of poor quality; studies are not robust enough to determine whether wet cupping benefits mental health, and reported positive results may be false positives.
+          certainty_rating: not given
+          methodological_limitations_noted: Small samples, inadequate randomization and blinding, no standardized protocol, adverse events reported in only 3 of 9 studies.
+        - modality: Unani interventions for post-COVID-19 symptom management
+          best_available_review: Unani medicine in post-COVID-19 recovery, Integrative perspectives and evidence mapping for symptom management (ScienceDirect, 2025, pii S3050787125001088)
+          type: systematic-review
+          year: 2025
+          size: 150 records screened, 10 studies met inclusion criteria (adult confirmed post-COVID-19 cases), searches January 2020 to July 2025
+          conclusion: Abstract reports symptom reduction, improved functional recovery and quality of life with favorable safety profiles. Original leaf's wording 'promising but insufficient' was not confirmed against the article text.
+          certainty_rating: not given
+          methodological_limitations_noted: Original leaf's 'n=60-100' and 'high risk in allocation on Cochrane tool' could not be checked (full text not accessible); carried over unverified.
+        - modality: Unani herbal formulations (general; psoriasis, rheumatoid arthritis)
+          best_available_review: 'Individual trials only: non-inferiority RCT vs PUVA for chronic plaque psoriasis (IJMR 2018); 33-patient single-arm psoriasis trial (CRIUM Hyderabad 2018-19); RA non-inferiority RCT vs celecoxib'
+          type: primary-study
+          year: 2018
+          size: 33 patients for the single-arm trial
+          conclusion: Report says most herbal formulations remain preliminary/hypothesis-generating; no Unani intervention rests on high-certainty, independently replicated evidence of clinically meaningful efficacy.
+          certainty_rating: not given
+          methodological_limitations_noted: single-arm or open-label designs, small samples, high/unclear risk of bias, publication bias
+      citations:
+        - source: Zhang Z, Pasapula M, Wang Z, Edwards K, Norrish A. Complementary Therapies in Medicine 2024;80:103013 (PubMed 38184285; abstract via Europe PMC)
+          type: meta-analysis
+          citation_strength: direct
+        - source: Ucun Y. Wet Cupping (al-hijama) for Mental Health, A Systematic Review. Journal of Acupuncture Research 2022;39(2):89-95 (e-jar.org)
+          type: systematic-review
+          citation_strength: direct
+        - source: Unani medicine in post-COVID-19 recovery, Integrative perspectives and evidence mapping for symptom management. ScienceDirect 2025, pii S3050787125001088 (abstract only)
+          type: systematic-review
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Corrected. Item 1 was mis-scoped: Zhang 2024 is a low back pain meta-analysis only, not neck or knee osteoarthritis. The d values, the 1-month and 3-6 month non-significance figures and the earlier-review list (AlBedah 2011, Kim, Cha 2021) could not be confirmed from the abstract and were removed. Item 2 given its verified author, year and size (9 studies, n=1,124; original said year and size not given). Item 3 year and size filled from the abstract; two original details remain unverified. Item 4 (individual Unani herbal trials) was not checked in this pass and is carried over unchanged.'
+    searches:
+      - "Zhang Pasapula Wang Edwards Norrish cupping meta-analysis Complementary Therapies in Medicine 2024 103013"
+      - "Wet Cupping (al-hijama) for Mental Health: A Systematic Review"
+      - "Unani medicine in post-COVID-19 recovery: evidence mapping for symptom management"
+  - path: evidence_state.preclinical_and_constituent_evidence
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - agent: Rauwolfia serpentina alkaloids (ajmaline, ajmalicine and related)
+          finding: Ajmaline (rauwolfine), ajmalinine, ajmalicine, serpentine and serpentinine were isolated from the roots by Salimuzzaman Siddiqui and R. H. Siddiqui. Reserpine was not isolated by Siddiqui; it was isolated in 1952 by Muller, Schlittler and Bein (Ciba).
+          type: isolation of constituents
+          year: 1931 (Siddiqui alkaloids); 1952 (reserpine)
+          citation: 'Siddiqui S, Siddiqui RH. Chemical examination of the roots of Rauwolfia serpentina Benth. J Indian Chem Soc 1931;8:667. Reserpine: Muller, Schlittler, Bein 1952, as reported in Schlittler, Ann NY Acad Sci 1954 (Chemistry of Rauwolfia alkaloids, including reserpine)'
+      citations:
+        - source: Siddiqui S, Siddiqui RH. J Indian Chem Soc 1931;8:667 (as cited in the Ethnobotany and Economic Botany review of Rauvolfia serpentina, Springer)
+          type: primary-study
+          citation_strength: direct
+        - source: Schlittler E. Chemistry of Rauwolfia alkaloids, including reserpine. Annals of the New York Academy of Sciences 1954
+          type: reference-work
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Corrected. Original attributed isolation of reserpine to Siddiqui and dated it to the 1930s. Siddiqui isolated ajmaline and ajmalicine (1931); reserpine came in 1952. Original also called this demonstrable pharmacological activity; isolation is chemical, and no pharmacology is claimed here. Verified from search-result summaries of the cited works; I did not open the full texts. Preclinical evidence only, not a clinical review.'
+    searches:
+      - "Siddiqui 1931 Chemical examination of the roots of Rauwolfia serpentina ajmaline Journal of the Indian Chemical Society; reserpine isolated 1952 Schlittler"
+  - path: safety.regulatory_actions_taken
+    outcome: unverifiable
+    searches:
+      - "Department of AYUSH order F. No. K-11020/5/97-DCC 14 October 2005 heavy metals export ASU drugs"
+      - "\"K-11020/5/97-DCC\""
+      - "Ayush notification heavy metals Ayurveda Siddha Unani drugs export 2005 Heavy Metals within permissible limits label"
+      - "Ayurvedic Pharmacopoeia of India Part-I Volume VII permissible limits lead 10 ppm arsenic 3 ppm mercury 1 ppm cadmium 0.3 ppm"
+      - "National Pharmacovigilance Programme for ASU drugs launched 2008 (2008 launch and 2017 restructuring seen only in secondary summaries; order text and API limits not located)"
+  - path: safety.evidence_borrowed_from_other_traditions
+    outcome: unverifiable
+    searches:
+      - "Auriga Research heavy metals herbal products India metallic preparations separate criteria"
+      - "Ayush notification heavy metals Ayurveda Siddha Unani drugs export 2005 Heavy Metals within permissible limits label"
+  - path: contact_and_borrowing.relationships
+    outcome: unverifiable
+    searches:
+      - "Fabrizio Speziale Sanskrit Ayurveda texts translated Persian Indo-Persian medicine Arabic"
+      - "Speziale Circulation of Ayurvedic knowledge in Indo-Persian medical literature (HAL page blocked; 14th c. Persian texts on Ayurveda seen only in secondary summaries; six-item leaf not verifiable from one source)"

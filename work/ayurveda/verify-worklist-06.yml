@@ -1,0 +1,251 @@
+system: ayurveda
+pass: verify
+batch: 6
+entries:
+- path: revival_and_institutionalization.dated_events
+  source_report: v2
+  value:
+  - label: Arya Vaidya Sala, Kottakkal founded
+    date: '1902'
+    description: P. S. Varier; mass production of standardized medicines.
+  - label: All India Ayurvedic Congress organized nationally
+    date: c. 1907
+    description: Umbrella professional body.
+  - label: Gananath Sen presidencies of All-India Ayurvedic Congress
+    date: 1911, 1920, 1931
+    description: Advocate of samanvaya.
+  - label: Arya Vaidya Patasala
+    date: '1917'
+    description: School founded by Varier.
+  - label: Bhore Committee
+    date: '1946'
+    description: Prioritized Western scientific medicine.
+  - label: Chopra Committee
+    date: '1948'
+    description: Recommended developing indigenous systems.
+  - label: Central Council of Indian Medicine established
+    date: '1970'
+    description: Indian Medicine Central Council Act 1970.
+  - label: Maharishi Ayur-Ved launched
+    date: mid-1980s
+    description: Global variant.
+  - label: National Ayurvedic Medical Association founded
+    date: '1998'
+    description: US voluntary professional body.
+  - label: Ministry of AYUSH created
+    date: '2014'
+    description: Union ministry.
+  - label: NAMA certification board (NAMACB) founded
+    date: '2017'
+    description: US voluntary credentials.
+  weak_citations:
+  - source: A Life of Healing (P.S. Varier biography), Exotic India Art
+    type: catalog-listing
+    citation_strength: indirect
+  - source: Gananath Sen (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: legal_status.jurisdictions
+  source_report: v2
+  value:
+  - jurisdiction: India
+    regulator: CCIM (Indian Medicine Central Council Act 1970), replaced by NCISM (Act 2020); Ministry
+      of AYUSH (2014); drugs under Drugs and Cosmetics Act 1940
+    statute: Drugs and Cosmetics Act 1940 and Rules (Schedule E(1), Schedule T); Indian Medicine Central
+      Council Act 1970; NCISM Act 2020; Drugs and Magic Remedies (Objectionable Advertisements) Act 1954
+    year: 1940, 1954, 1970, 2020
+    scope_of_practice: Recognized system of medicine
+    prescribing_rights: CCIM notification of 20 Nov 2020 authorizes PG Shalya/Shalakya trainees to perform
+      58 listed surgical procedures (39 general surgery, 19 ENT/eye/dental); sub judice in Supreme Court
+    integration_with_public_health_system: Push toward 'One Nation One Health System'; disputed
+    recognition_tier: full medical system
+  - jurisdiction: Sri Lanka
+    regulator: Department of Ayurveda; Ayurvedic Medical Council (mandatory registration)
+    statute: Ayurveda Act No. 31 of 1961
+    year: 1961
+    scope_of_practice: Covers Ayurveda, Siddha, Unani and Sri Lankan traditional medicine; Ayurvedic Code
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: full medical system
+  - jurisdiction: Nepal
+    regulator: null
+    statute: null
+    year: null
+    scope_of_practice: Recognized with own registration framework
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: full medical system
+  - jurisdiction: Bangladesh
+    regulator: null
+    statute: null
+    year: null
+    scope_of_practice: Recognized with own registration framework; also regulates Unani/Tibb
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: full medical system
+  - jurisdiction: Pakistan
+    regulator: null
+    statute: null
+    year: null
+    scope_of_practice: Recognized with own registration framework; also regulates Unani/Tibb
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: full medical system
+  - jurisdiction: United States
+    regulator: FDA (products only)
+    statute: Dietary Supplement Health and Education Act 1994
+    year: 1994
+    scope_of_practice: No state licenses Ayurvedic practitioners; NAMA (1998) and NAMACB (2017) give voluntary
+      private credentials
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: supplement/wellness only
+  - jurisdiction: United Kingdom/EU
+    regulator: MHRA; Complementary and Natural Healthcare Council (voluntary, PSA-accredited)
+    statute: Directive 2004/24/EC; SI 2005/2750
+    year: 2004/2005 (UK in force 30 April 2011)
+    scope_of_practice: Practitioners not statutorily regulated; Walker report (26 March 2015) recommended
+      against statutory regulation; Traditional Herbal Registration requires about 30 years' use (15 in
+      EU) plus quality and safety, not efficacy
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: unregulated
+  - jurisdiction: Switzerland
+    regulator: OdA AM (Ayurveda medicine), OdA KT (complementary therapist)
+    statute: Constitutional Article 118a (referendum 17 May 2009)
+    year: 2009
+    scope_of_practice: Since 2015 federally recognized higher professional examination diploma, 'Naturopath
+      with federal diploma', Ayurveda medicine specialization
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: title protection
+  - jurisdiction: Germany
+    regulator: null
+    statute: Heilpraktikergesetz
+    year: 1939
+    scope_of_practice: Practiced by physicians or Heilpraktiker; not a separate statutory system
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: unregulated
+  - jurisdiction: Australia
+    regulator: TGA (products); practitioners not under AHPRA
+    statute: Therapeutic Goods Act 1989
+    year: 1989
+    scope_of_practice: Products are complementary medicines on ARTG (AUST L/R); practitioners not registered
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: unregulated
+  - jurisdiction: Malaysia
+    regulator: null
+    statute: Traditional and Complementary Medicine Act 2016 (Act 775)
+    year: 2016
+    scope_of_practice: Ayurveda regulated as Traditional Indian Medicine; mandatory registration
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: statutory registration
+  - jurisdiction: Mauritius
+    regulator: null
+    statute: Ayurvedic and Other Traditional Medicines Act 1990
+    year: 1990
+    scope_of_practice: null
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: null
+  - jurisdiction: Brazil
+    regulator: null
+    statute: Portaria 849 (27 March 2017), National Policy on Integrative and Complementary Practices
+      (PNPIC)
+    year: 2017
+    scope_of_practice: null
+    prescribing_rights: null
+    integration_with_public_health_system: Incorporated into the public-health PNPIC
+    recognition_tier: null
+  - jurisdiction: Hungary
+    regulator: null
+    statute: Government Decree 40/1997 and Ministry Decree 11/1997
+    year: 1997
+    scope_of_practice: Recognized but practice restricted to medical doctors
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: null
+  - jurisdiction: United Arab Emirates
+    regulator: Emirate authorities (DHA, DoH, MOHAP)
+    statute: null
+    year: null
+    scope_of_practice: Practitioners licensed
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: statutory registration
+  - jurisdiction: Slovenia
+    regulator: null
+    statute: null
+    year: null
+    scope_of_practice: Listed as 'regulated' by Indian government sources; no specific statute verified
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: null
+  weak_citations:
+  - source: 'Khichdification of medical education: IMA on surgery nod for Ayurveda (careers360)'
+    type: news
+    citation_strength: indirect
+  - source: Institute of Indigenous Medicine (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: 'none (uncited in report): India statutes, Nepal, Bangladesh, Pakistan, UK/EU, Switzerland,
+      Germany, Australia, Malaysia, UAE'
+    type: unclear
+    citation_strength: unclear
+- path: legal_status.supranational_standards
+  source_report: v2
+  value:
+  - body: World Health Organization
+    instrument: Benchmarks for the Training of Ayurveda
+    year: 2022
+    scope: Training benchmarks
+  - body: World Health Organization
+    instrument: Benchmarks for Practice (Ayurveda)
+    year: null
+    scope: Practice benchmarks; developed with the Jamnagar institute
+  - body: European Union
+    instrument: Directive 2004/24/EC (Traditional Herbal Medicinal Products Directive)
+    year: 2004
+    scope: Simplified registration for traditional herbal products; European Commission (2008) acknowledged
+      it is ill-suited to holistic systems such as Ayurveda that use mineral/metal ingredients
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: education_and_licensure.degree_programs
+  source_report: v2
+  value: BAMS (standardized degree); postgraduate Ayurveda (Shalya Tantra, Shalakya Tantra); Arya Vaidya
+    Patasala (1917); Swiss federal diploma pathway; NAMA voluntary credentials (Ayurvedic Health Counselor,
+    Practitioner).
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: education_and_licensure.accrediting_body
+  source_report: v2
+  value: CCIM, replaced by NCISM (2020), governs Indian practice and education; OdA AM for the Swiss diploma;
+    NAMACB for US voluntary certification.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: education_and_licensure.licensure_requirements
+  source_report: v2
+  value: 'Sri Lanka: mandatory registration with the Ayurvedic Medical Council; Malaysia: mandatory registration;
+    US: no state licensure, voluntary private credentials; Hungary: restricted to medical doctors; UAE:
+    emirate licensing.'
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: education_and_licensure.biomedical_content_in_curriculum
+  source_report: v2
+  value: Report states Ayurveda adopted anatomy and laboratory science and college curricula in order
+    to survive; PG trainees are trained in listed surgical procedures.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear

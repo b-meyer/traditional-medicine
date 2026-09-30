@@ -1,0 +1,186 @@
+system: ayurveda
+pass: verify
+batch: 8
+entries:
+- path: safety.regulatory_actions_taken
+  source_report: v2
+  value:
+  - FDA Import Alert 66-41 (heavy metals) and Import Alert 99-42 (detention without physical examination
+    of Ayurvedic supplements found injurious from mercury/lead)
+  - Denmark ban on ashwagandha in food/supplements, 2023, after a 2020 Technical University of Denmark
+    risk assessment
+  - Netherlands RIVM warning, March 2024
+  - France ANSES warning, 2024
+  - EU Heads of Food Safety Agencies working group recommended prioritizing ashwagandha for an Article
+    8 procedure, June 2024
+  - UK Food Standards Agency public consultation (undated)
+  - India mandatory heavy-metal testing for exported ASU products, 2005; national pharmacovigilance programme
+    for ASU&H drugs from 2017
+  - Health Canada and TGA advisories on contaminated products
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: contact_and_borrowing.relationships
+  source_report: v2
+  value:
+  - other_tradition: Arabic/Persian medicine (Abbasid Baghdad)
+    kind: exchange
+    direction: Sanskrit to Arabic/Persian
+    period: 786-809 (Harun al-Rashid, Barmakids)
+    evidence_type: documented translation
+    status: demonstrated
+    note: Caraka and Suśruta rendered into Persian and Arabic; Mankah/Kankah al-Hindi; al-Razi's Kitāb
+      al-Ḥāwī
+  - other_tradition: Tibetan medicine (Sowa-Rigpa)
+    kind: exchange
+    direction: Sanskrit/Ayurveda to Tibetan
+    period: c. 12th century CE (Rgyud bzhi)
+    evidence_type: documented translation
+    status: demonstrated
+    note: Report calls it documented transmission; degree of influence still debated; Rgyud bzhi also
+      integrates Chinese, Persian-humoral and Greco-Roman elements
+  - other_tradition: Greek humoral medicine (Hippocratic-Galenic)
+    kind: parallel
+    direction: null
+    period: null
+    evidence_type: structural parallel
+    status: contested
+    note: Report says direction or existence of influence is unresolved; Filliozat argued early contact
+      and shared ideas; Zysk sees largely independent development; may be partial convergence
+  - other_tradition: Islamic and/or Chinese medicine (pulse diagnosis)
+    kind: exchange
+    direction: Islamic and/or Chinese to Ayurveda
+    period: late
+    evidence_type: textual attestation
+    status: contested
+    note: Nāḍī parīkṣā widely argued to be a relatively late addition because it is not prominent in the
+      earliest saṃhitās
+  - other_tradition: Islamic and Chinese alchemy (rasaśāstra)
+    kind: exchange
+    direction: null
+    period: null
+    evidence_type: structural parallel
+    status: contested
+    note: Report says rasaśāstra/alchemy 'links connect' Indian, Islamic and 'possibly Chinese' traditions
+  - other_tradition: Buddhist monastic medicine / śramaṇa ascetics
+    kind: descent
+    direction: Buddhist monastic medicine to classical Ayurveda
+    period: from c. 4th century BCE
+    evidence_type: textual attestation
+    status: contested
+    note: Zysk 1991 position; report calls it influential but not unanimous
+  - other_tradition: Vedic healing (Atharvaveda, Ṛgveda)
+    kind: descent
+    direction: Vedic to Ayurveda
+    period: Vedic period
+    evidence_type: textual attestation
+    status: contested
+    note: Recognized antecedent; the emphasis (sole source versus one strand) is what is contested
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: contemporary_controversies.integration_disputes
+  source_report: v2
+  value:
+  - CCIM notification of 20 November 2020 allowing PG Ayurveda practitioners to perform 58 surgeries;
+    opposed by the IMA, which calls it 'mixopathy' or 'khichdification'; IMA nationwide strikes December
+    2020 and February 2021
+  - 'Litigation: a 2020 PIL challenging the notification remains sub judice in the Supreme Court; hearing
+    listed for 8 January 2026; outcome unresolved at report cutoff'
+  - Andhra Pradesh moved to permit such surgeries (December 2025); IMA president Dilip Bhanushali said
+    the association wants 'Ayurveda to be promoted in its original and pure form'
+  - Proposed integrated MBBS-BAMS course at JIPMER Puducherry (announced May 2025)
+  - '''One Nation One Health System'', National Education Policy 2020 and NITI Aayog push toward integrative
+    medicine, welcomed by AYUSH and opposed by the IMA as diluting standards and accountability'
+  weak_citations:
+  - source: 'Khichdification of medical education: IMA on surgery nod for Ayurveda (careers360)'
+    type: news
+    citation_strength: indirect
+  - source: 'Nationwide strike: doctors against Centre''s Ayurveda surgery move (careers360)'
+    type: news
+    citation_strength: indirect
+  - source: AP allows PG Ayurvedic doctors to perform 58 surgeries (medicaldialogues.in)
+    type: news
+    citation_strength: indirect
+  - source: IMA flags AP's move to allow Ayurvedic doctors to perform surgeries (medicalbuyer.co.in)
+    type: news
+    citation_strength: indirect
+- path: contemporary_controversies.intellectual_property
+  source_report: v2
+  value:
+  - 'Traditional Knowledge Digital Library (TKDL): formalized c. 2001, expanded from 2008; provides searchable
+    prior art to global patent offices'
+  - US turmeric wound-healing patent revoked 1997, using 32 references from Sanskrit/Urdu/Hindi texts
+    submitted by CSIR
+  - Challenge to the EPO neem patent
+  - Contest of the RiceTec basmati patent
+  weak_citations:
+  - source: Nature of IPR Protection given by Law in Turmeric Case (S.S. Rana and Co.)
+    type: practitioner-site
+    citation_strength: indirect
+- path: contemporary_controversies.politicized_episodes
+  source_report: v2
+  value:
+  - AYUSH-64 (CCRAS polyherbal originally for malaria) repurposed and studied for mild/moderate COVID-19
+  - Patanjali's Coronil launched June 2020 with cure claims; restricted by AYUSH to 'immunity booster';
+    re-promoted 19 February 2021 as a 'supporting measure' with a claimed WHO/CoPP certification at an
+    event attended by Union ministers; WHO denied it, and the CoPP was issued by India's DCGI
+  - 'IMA v. Patanjali, Supreme Court, 2022-2024: restraint orders, contempt notices to Baba Ramdev and
+    Acharya Balkrishna under the Drugs and Magic Remedies (Objectionable Advertisements) Act 1954, public
+    apologies; contempt charges dropped August 2024'
+  weak_citations:
+  - source: 'Patanjali Misleading Ads Case: Supreme Court drops contempt charges (SCC Times)'
+    type: news
+    citation_strength: indirect
+  - source: 'none (uncited in report): AYUSH-64, Coronil, WHO denial'
+    type: unclear
+    citation_strength: unclear
+- path: contemporary_controversies.research_methodology_disputes
+  source_report: v2
+  value: Report frames a trade-off between whole-system evaluation (hard to blind, better external validity)
+    and single-herb evaluation (easier to blind but loses the individualization Ayurveda says is essential).
+    The Furst trial used 148 formulations to allow individualization while preserving blinding. 'Standardization
+    vs. individualization' is listed as a continuing controversy. Named parties on each side are not given.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: economics.major_manufacturers
+  source_report: v2
+  value:
+  - name: Dabur
+    products: Pharmaceutical Ayurvedic products
+    figure: null
+    currency: null
+    year: null
+    measure: null
+  - name: Zandu
+    products: Pharmaceutical Ayurvedic products
+    figure: null
+    currency: null
+    year: null
+    measure: null
+  - name: Baidyanath
+    products: Pharmaceutical Ayurvedic products
+    figure: null
+    currency: null
+    year: null
+    measure: null
+  - name: Arya Vaidya Sala, Kottakkal
+    products: Standardized mass-produced Ayurvedic medicines
+    figure: null
+    currency: null
+    year: null
+    measure: null
+  - name: Patanjali
+    products: Coronil
+    figure: null
+    currency: null
+    year: null
+    measure: null
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear

@@ -1,0 +1,33 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: safety.regulatory_actions_taken
+    outcome: unverifiable
+    searches:
+      - "FDA Import Alert 66-41 Ayurvedic lead mercury detention without physical examination (fetched importalert_190 and importalert_1167; 66-41 is titled unapproved new drugs, 99-42 is heavy metal contamination of foods and lists Baidyanath Ayurvedic supplements, so the leaf's '66-41 (heavy metals)' label is imprecise; FDA page names both alerts for Ayurvedic products)"
+      - "Denmark ashwagandha ban 2023 DTU risk assessment Fodevarestyrelsen (only secondary sources reached; RIVM, ANSES, EU working group, UK FSA, India 2005/2017 and Health Canada/TGA items not checked against primary documents)"
+  - path: contact_and_borrowing.relationships
+    outcome: unverifiable
+    searches:
+      - "Zysk Asceticism and Healing in Ancient India 1991 Buddhist monastic medicine origin of Ayurveda (confirms Zysk 1991 position via reviews only; other seven relationships not checked against primary scholarship)"
+  - path: contemporary_controversies.integration_disputes
+    outcome: unverifiable
+    searches:
+      - "CCIM notification 20 November 2020 Indian Medicine Central Council Amendment Regulations 2020 58 surgical procedures (PIB release returned 403; ThePrint reports 20 Nov 2020 gazette notification with about 39 general plus 19 ENT/eye procedures; gazette text not obtained; 2025-26 items not located in primary form)"
+  - path: contemporary_controversies.intellectual_property
+    outcome: unverifiable
+    searches:
+      - "TKDL Traditional Knowledge Digital Library turmeric patent revoked 1997 CSIR 32 references US5401504 (WIPO PDF unreadable, HerbalGram and WIPO TKDL page returned no usable text; 32-reference count and TKDL dates not confirmed from a primary document)"
+  - path: contemporary_controversies.politicized_episodes
+    outcome: unverifiable
+    searches:
+      - "WHO India Coronil Patanjali no certification COVID-19 traditional medicine February 2021 CoPP DCGI (news only)"
+      - "Supreme Court IMA v Union of India Patanjali contempt closed 13 August 2024 order (2024 INSC 605 located but fetch failed, text not read)"
+  - path: contemporary_controversies.research_methodology_disputes
+    outcome: unverifiable
+    searches:
+      - "Furst Ayurveda rheumatoid arthritis trial individualized formulations methotrexate 2011 (trial J Clin Rheumatol 2011;17:185-192 exists; the 148-formulation figure was not confirmed)"
+  - path: economics.major_manufacturers
+    outcome: unverifiable
+    searches:
+      - "Dabur Zandu Baidyanath Arya Vaidya Sala Kottakkal Patanjali leading Ayurvedic manufacturers India (only commercial directory pages, no primary or company-filing source)"
