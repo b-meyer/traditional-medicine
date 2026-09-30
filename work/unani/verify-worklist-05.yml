@@ -1,0 +1,203 @@
+system: unani
+pass: verify
+batch: 5
+entries:
+- path: revival_and_institutionalization.internal_factions
+  source_report: v2
+  value: Purist Lucknow (Azizi family) school versus the Delhi integrationist reformers led by Ajmal Khan;
+    Tibb al-Nabawi versus academic Unani as distinct strands; IMA versus AYUSH integrationists (see field
+    16).
+  weak_citations:
+  - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+    type: practitioner-site
+    citation_strength: indirect
+- path: revival_and_institutionalization.diffusion_abroad
+  source_report: v2
+  value:
+  - region: South Africa
+    period: 2001; register formally officiated September 2007
+    channel: Statutory recognition and training at University of the Western Cape School of Natural Medicine,
+      curriculum developed with Hamdard Pakistan and CCRUM/CCIM support
+    description: Unani-Tibb recognized as 11th modality under AHPCSA.
+  - region: Gulf, UK, US, EU
+    period: not dated
+    channel: Practice as cupping/herbal CAM; surma use among South Asian immigrants in the UK
+    description: No dedicated statutory recognition of Unani as a licensed profession.
+  weak_citations:
+  - source: South Africa - Complementary and Alternative Medicine - Expat Focus
+    type: unclear
+    citation_strength: indirect
+- path: revival_and_institutionalization.dated_events
+  source_report: v2
+  value:
+  - label: Founding of Hamdard
+    date: '1906'
+    description: Hakim Hafiz Abdul Majeed, small Unani clinic in Delhi.
+  - label: Launch of Rooh Afza
+    date: '1907'
+    description: null
+  - label: Tibbia College foundation stone
+    date: '1916'
+    description: Laid by Lord Hardinge.
+  - label: Inauguration of Ayurvedic and Unani Tibbia College
+    date: '1921'
+    description: Inaugurated by Gandhi.
+  - label: Ajmal Khan as President of Indian National Congress
+    date: '1921'
+    description: null
+  - label: Founding of Hamdard Pakistan
+    date: '1948'
+    description: Karachi.
+  - label: Founding of Hamdard Laboratories Bangladesh
+    date: '1953'
+    description: East Pakistan.
+  - label: Pakistan Unani, Ayurvedic and Homoeopathic Practitioners Act
+    date: '1965'
+    description: null
+  - label: Founding of CCRUM
+    date: '1978'
+    description: null
+  - label: Iran approval of Persian medicine PhD
+    date: '2007'
+    description: 4-year program.
+  - label: NCISM Act
+    date: '2020'
+    description: Repealed the Indian Medicine Central Council Act 1970; NCISM operational June/July 2021.
+  - label: WHO benchmarks for Unani training and practice
+    date: '2022-02-11'
+    description: Updating 2010 editions.
+  - label: Pakistan merger move of National Council for Tibb
+    date: 2024-09
+    description: Government moved to merge with National Council for Homeopathy into a National Council
+      of Traditional, Alternative and Complementary Medicine.
+  weak_citations:
+  - source: various; see standardization_events
+    type: unclear
+    citation_strength: unclear
+- path: legal_status.jurisdictions
+  source_report: v2
+  value:
+  - jurisdiction: India
+    regulator: National Commission for Indian System of Medicine (NCISM); Ministry of AYUSH; CCRUM (research)
+    statute: NCISM Act 2020 (repealed IMCC Act 1970); Drugs and Cosmetics Act 1940 Chapter IVA and Rules
+      1945
+    year: 2020
+    scope_of_practice: not detailed; contested via 'mixopathy' disputes over surgery and modern drug prescribing
+      by AYUSH graduates
+    prescribing_rights: not detailed in report
+    integration_with_public_health_system: State-funded via Ministry of AYUSH; NIUM Bengaluru apex teaching
+      institute; common entrance (NEET) and exit (NExT) tests
+    recognition_tier: full medical system
+  - jurisdiction: Pakistan
+    regulator: National Council for Tibb (NCT)
+    statute: Unani, Ayurvedic and Homoeopathic Practitioners Act 1965
+    year: 1965
+    scope_of_practice: not detailed
+    prescribing_rights: not detailed
+    integration_with_public_health_system: not detailed; 2024 move to merge NCT into National Council
+      of Traditional, Alternative and Complementary Medicine
+    recognition_tier: statutory registration
+  - jurisdiction: Bangladesh
+    regulator: government Unani boards
+    statute: not given
+    year: null
+    scope_of_practice: not detailed
+    prescribing_rights: not detailed
+    integration_with_public_health_system: not detailed
+    recognition_tier: null
+  - jurisdiction: Sri Lanka
+    regulator: indigenous-medicine framework (body not named)
+    statute: not given
+    year: null
+    scope_of_practice: not detailed
+    prescribing_rights: not detailed
+    integration_with_public_health_system: not detailed
+    recognition_tier: null
+  - jurisdiction: Iran
+    regulator: Ministry of Health; Supreme Council of Cultural Revolution
+    statute: Ministry of Health approval of Persian medicine academic training
+    year: 2007
+    scope_of_practice: TPM health centres and polyclinics offering cupping etc.
+    prescribing_rights: not detailed
+    integration_with_public_health_system: some services insurance-covered
+    recognition_tier: null
+  - jurisdiction: South Africa
+    regulator: Allied Health Professions Council of South Africa (AHPCSA); SAHPRA for products
+    statute: Allied Health Professions Act 63 of 1982
+    year: 2001
+    scope_of_practice: not detailed
+    prescribing_rights: not detailed
+    integration_with_public_health_system: not detailed
+    recognition_tier: statutory registration
+  - jurisdiction: Gulf / UK / US / EU
+    regulator: general food-supplement/herbal or complementary-medicine regimes
+    statute: no dedicated Unani statute
+    year: null
+    scope_of_practice: cupping/herbal CAM practice
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: supplement/wellness only
+  weak_citations:
+  - source: Proposed amendment in NCISM Act 2020 (pib.gov.in)
+    type: news
+    citation_strength: indirect
+  - source: National Commission for Indian System of Medicine (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: National Council for Tibb (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: South Africa - Complementary and Alternative Medicine - Expat Focus
+    type: unclear
+    citation_strength: indirect
+- path: legal_status.supranational_standards
+  source_report: v2
+  value:
+  - body: WHO
+    instrument: Benchmarks for the training of Unani medicine
+    year: 2022
+    scope: Training standards; updates 2010 edition
+  - body: WHO
+    instrument: Benchmarks for the practice of Unani medicine
+    year: 2022
+    scope: Practice standards; updates 2010 edition
+  - body: WHO
+    instrument: Standardized Unani terminology
+    year: null
+    scope: Terminology reference
+  - body: FAO/WHO
+    instrument: Heavy-metal limits (international backdrop)
+    year: null
+    scope: Product limits
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: education_and_licensure.degree_programs
+  source_report: v1
+  value: 'India: undergraduate Kamil-e-Tib-o-Jarahat (BUMS); postgraduate Mahir-e-Tib and Mahir-e-Jarahat;
+    55 Unani colleges (of 733 AYUSH institutes: 414 Ayurveda, 248 Homeopathy, 55 Unani, 13 Siddha, 3 Sowa
+    Rigpa). Pakistan: diplomas and bachelor degrees in Tibb-e-Unani, Hamdard University.'
+  weak_citations:
+  - source: Medical Dialogues report of Lok Sabha data
+    type: news
+    citation_strength: indirect
+  - source: Uncited in report for degree names
+    type: unclear
+    citation_strength: unclear
+- path: education_and_licensure.accrediting_body
+  source_report: v1
+  value: Education and practice historically regulated by the Central Council of Indian Medicine, now
+    the National Commission for Indian System of Medicine.
+  weak_citations:
+  - source: The medical boundaries for AYUSH practitioners (IAS Gyan) [S5]
+    type: aggregator
+    citation_strength: indirect
+- path: education_and_licensure.licensure_requirements
+  source_report: v2
+  value: 'India: common entrance (NEET) and exit (NExT) testing under NCISM; Pakistan: NCT registers hakims;
+    South Africa: AHPCSA practitioner register.'
+  weak_citations:
+  - source: National Commission for Indian System of Medicine (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect

@@ -1,0 +1,84 @@
+system: unani
+pass: verify
+batch: 2
+entries:
+- path: theoretical_primitives.constituents
+  source_report: v2
+  value: 'Arkan (four elements: fire, air, water, earth); akhlat (four humours: dam/blood hot-wet, balgham/phlegm
+    cold-wet, safra/yellow bile hot-dry, sauda/black bile cold-dry); mizaj (temperament) across hot/cold
+    and wet/dry axes; quwa (natural, vital, psychic faculties); arwah (pneuma/spirits); tabiat (innate
+    self-regulating/healing power, equivalent to physis).'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.balance_logic
+  source_report: v2
+  value: Health is equilibrium of humours expressed as an individual's proper mizaj (unique to each person,
+    organ, drug and food); therapy by contraries (cold disease treated with hot-quality drugs/regimen)
+    and by supporting tabiat; hierarchy of regimen (ilaj bil-tadbir), diet (ilaj bil-ghiza), pharmacotherapy
+    (ilaj bil-dawa), and last surgery (ilaj bil-yad).
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.correspondence_system
+  source_report: v2
+  value: not_applicable
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.etiology
+  source_report: v2
+  value: 'Disease is a disturbance of mizaj (su'' al-mizaj), simple (qualitative) or material (involving
+    a morbid humour); health governed by the asbab sitta daruriya (six essentials: air/environment, food
+    and drink, movement and rest, sleep and wakefulness, retention and evacuation, psychic/emotional states).'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.nosology
+  source_report: v2
+  value: Two-fold division of su' al-mizaj into simple and material; rough analogues suggested by Unani
+    researchers (e.g. Waja' al-Mafasil approximately rheumatoid/joint disease). No fuller disease classification
+    given.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.relation_to_biomedical_anatomy
+  source_report: v2
+  value: 'Maps partially and loosely: regimen and dietetics overlap with lifestyle medicine, some materia
+    medica is being screened pharmacologically, some disease categories have rough analogues. Core objects
+    (mizaj, humours, tabiat, arwah) have no biomedical referents and are explicitly qualitative and individual;
+    the system ''refuses'' mapping where it matters most. Modern curricula nevertheless incorporate anatomy
+    and physiology (see field 9).'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.translation_programs
+  source_report: v2
+  value: Pharmacological screening of Unani materia medica; Unani researchers propose rough disease analogues.
+    No named program or stated maturity level (established/preliminary/speculative) is given by the report.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: diagnostics.methods
+  source_report: v2
+  value:
+  - name: nabz (pulse)
+    examines: rate, rhythm, volume, character
+  - name: baul (urine)
+    examines: colour, turbidity, sediment, odour
+  - name: baraz (stool)
+    examines: not further specified
+  - name: mizaj assessment
+    examines: global synthesis of physique, skin, hair, sleep, digestion, psychological disposition and
+      quality of wastes
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear

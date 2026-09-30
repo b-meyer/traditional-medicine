@@ -1,0 +1,146 @@
+system: unani
+pass: verify
+batch: 7
+entries:
+- path: contemporary_controversies.who_engagement
+  source_report: v2
+  value: WHO benchmarks for training and practice of Unani medicine (11 February 2022, updating 2010 editions)
+    and standardized Unani terminology; disputes over WHO terminology. No ICD-11 or collaborating-centre
+    content.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: contemporary_controversies.integration_disputes
+  source_report: v2
+  value: Indian Medical Association has repeatedly protested NCISM/IMCC moves allowing AYUSH (including
+    Unani) graduates to perform surgery, prescribe modern drugs, or train in integrated MBBS-BAMS-type
+    courses ('mixopathy' or 'crosspathy'); Maharashtra's CCMP scheme; Andhra Pradesh's December 2025 approval
+    of 58 surgical procedures for PG Ayurvedic doctors; litigation pending before the Bombay High Court
+    and Supreme Court; parallel dispute over the 'Dr' prefix. In Iran, debate over integrating TPM into
+    insurance and the health system.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: contemporary_controversies.politicized_episodes
+  source_report: v2
+  value: 'COVID-19: AYUSH/Unani immunity and treatment claims criticised for outpacing evidence. Iran:
+    state-backed TPM programme debated as legitimate scientific revival or nationalist ''invented tradition''.'
+  weak_citations:
+  - source: none given in report; report flags COVID-era specifics as thinly sourced
+    type: unclear
+    citation_strength: unclear
+- path: contemporary_controversies.research_methodology_disputes
+  source_report: v2
+  value: Whether Unani should be validated by RCT/biomedical standards at all, or whether its holistic,
+    individualized logic requires different methods ('unresolved methodological fault line'); sham-cupping
+    blinding difficulty noted by reviewers.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: self_reported_gaps.inventory
+  source_report: v2
+  value:
+  - kind: searched_not_found
+    text: I found no rigorous kappa-based inter-rater reliability study of Unani pulse (nabz) diagnosis
+      -- the reliability literature is on mizaj questionnaires.
+  - kind: searched_not_found
+    text: Unani-specific, product-named hepatotoxicity case reports with RUCAM scoring appear absent in
+      the indexed literature (the DILI literature names Ayurvedic agents; Unani appears only in mixed-system
+      surveys).
+  - kind: searched_not_found
+    text: Clinical case reports attributing an individual's lead/arsenic poisoning to a specific branded
+      Unani kushta (with attributed blood levels) are sparse compared with Ayurveda.
+  - kind: source_caveat
+    text: Much clinical and pharmacological literature is produced by institutions with an institutional
+      stake in Unani (CCRUM, Hamdard, TPM faculties), and promotional sources (school and clinic websites)
+      overstate historical continuity and efficacy.
+  - kind: source_caveat
+    text: Toxicology and pharmacopoeial sources frequently aggregate Ayurveda, Siddha and Unani (ASU),
+      so some cited limits and surveys are ASU-wide rather than Unani-only.
+  - kind: source_caveat
+    text: Detail on Nizam-of-Hyderabad patronage and on COVID-era Unani specifics rests on thinner sourcing
+      (searches were cut off by tool limits) and should be verified against primary sources.
+  - kind: source_caveat
+    text: 'Fast-moving policy: the Indian mixopathy litigation, the Pakistani council merger (2024), and
+      Iran''s TPM expansion are ongoing; legal specifics may have changed after the sources'' dates.'
+  - kind: contested
+    text: Genuine scholarly uncertainty concentrates on manuscript transmission and the lack of a complete
+      critical edition of the Qanun, apocryphal/pseudonymous attributions, and originality versus compilation.
+  - kind: contested
+    text: '''Invented tradition'' versus continuity is the central historiographic debate.'
+  - kind: contested
+    text: 'Pakistan practitioner counts: ~60,000 (Hamdard Foundation via WHO EMRO) versus 39,584 (Saeed
+      et al. 2011).'
+  - kind: contested
+    text: 'Evidence standards: whether Unani should be validated by RCT at all; the Persian medicine revival
+      as legitimate revival or nationalist invention.'
+  weak_citations:
+  - source: the report itself
+    type: unclear
+    citation_strength: unclear
+- path: report_conclusions.revision_thresholds
+  source_report: v2
+  value:
+  - domain: Textual history
+    threshold: A complete critical edition of the Qanun
+    would_change: Would sharpen textual debates
+  - domain: Diagnostic reliability
+    threshold: A large multi-center inter-rater study showing mizaj kappa above 0.6 consistently
+    would_change: Would strengthen diagnostic credibility
+  - domain: Clinical efficacy
+    threshold: Adequately powered, pre-registered, independently replicated double-blind RCTs with low
+      risk of bias showing clinically meaningful benefit
+    would_change: Would justify specific clinical recommendations
+  - domain: Safety
+    threshold: Enforced, loophole-free heavy-metal limits with post-market surveillance data
+    would_change: Would materially reduce the documented harm profile
+  weak_citations:
+  - source: the report itself
+    type: unclear
+    citation_strength: unclear
+- path: report_conclusions.recommendations
+  source_report: v2
+  value:
+  - audience: Researcher/clinician
+    text: Treat the history as solid but distinguish 'the texts' from 'the modern system'; cite Attewell,
+      Alavi, Liebeskind and Speziale for the reconstruction thesis and Hunayn's Risala and Qanun manuscript
+      scholarship for textual lineage.
+  - audience: Researcher/clinician
+    text: When assessing diagnostic reliability, cite actual kappa/ICC values, state that agreement is
+      slight-to-moderate and no gold standard exists, and flag the absence of Unani pulse-diagnosis reliability
+      data.
+  - audience: Researcher/clinician
+    text: For efficacy, default to systematic reviews rather than individual CCRUM/college trials; rate
+      cupping for musculoskeletal pain as the least-weak case (short-term only); treat herbal formulations
+      as preliminary; demand independent replication, adequate blinding and pre-registration.
+  - audience: Clinician/patient
+    text: Insist on heavy-metal certificates for any kushta/mineral/surma preparation, screen for undeclared
+      steroids in fast-acting anti-inflammatory Unani products, and counsel patients about hijama infection
+      risk and delayed care.
+  weak_citations:
+  - source: the report itself
+    type: unclear
+    citation_strength: unclear
+- path: economics.major_manufacturers
+  source_report: v2
+  value:
+  - name: 'Hamdard (India: Hamdard / Jamia Hamdard; Pakistan: Hamdard Pakistan; Bangladesh: Hamdard Laboratories
+      (Waqf))'
+    products: Unani pharmacy products; Rooh Afza launched 1907
+    figure: null
+    currency: null
+    year: null
+    measure: null
+  - name: Hindustani Dawakhana
+    products: not specified
+    figure: null
+    currency: null
+    year: null
+    measure: null
+  weak_citations:
+  - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+    type: practitioner-site
+    citation_strength: indirect

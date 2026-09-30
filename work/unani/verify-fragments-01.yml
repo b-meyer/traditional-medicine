@@ -1,0 +1,120 @@
+system: unani
+pass: verify
+updates:
+  - path: construct_debate.positions
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - scholar: Guy Attewell
+          work: 'Refiguring Unani Tibb: Plural Healing in Late Colonial India (Hyderabad: Orient Longman, 2007)'
+          year: 2007
+          position: Unani identity was reconstituted in the late colonial period through biomedical concepts, nationalist/communitarian politics and colonial models of legitimacy; heterogeneous rather than a single 'traditional Muslim system'. Reviewer summary - Unani as an Islamic-Arabic tradition is largely a product of late colonial classification; Unani 'did not pre-exist as a static system'.
+          evidence_base: 19th-20th c. print, institutional, legal and political archives
+        - scholar: Seema Alavi
+          work: 'Islam and Healing: Loss and Recovery of an Indo-Muslim Medical Tradition, 1600-1900 (Ranikhet: Permanent Black, 2007; Basingstoke: Palgrave Macmillan, 2008); ''Unani Medicine in the Nineteenth-Century Public Sphere: Urdu Texts and the Oudh Akhbar'', Indian Economic and Social History Review 42(1), 2005, pp. 101-129'
+          year: 2007; 2005
+          position: Unani reshaped and redefined itself as an Indian medical system in the 19th century through engagement with Western medicine, in the Urdu public sphere. The report's gloss ('new Unani and a new hakim'; emphasis shifting from theory-mastery to practice) was not confirmed against the article text.
+          evidence_base: 19th-century Persian and Urdu treatises, regional newspapers (Oudh Akhbar), government records, textbooks, Azizi family papers
+        - scholar: Claudia Liebeskind
+          work: 'Arguing Science: Unani Tibb, Hakims and Biomedicine in India, 1900-50, in Waltraud Ernst (ed.), Plural Medicine, Tradition and Modernity, 1800-2000 (London: Routledge, 2002), pp. 58-75'
+          year: 2002
+          position: Documents the biomedicine-versus-hakim contest.
+          evidence_base: Archival/historical
+        - scholar: David Hardiman
+          work: 'Indian Medical Indigeneity: From Nationalist Assertion to the Global Market, Social History 34(3), 2009, pp. 263-283'
+          year: 2009
+          position: Treats the claims of Ayurveda and Unani Tibb as typical 'invented traditions' that sought to forge uniform 'systems' out of eclectic practices, with claims to antiquity and narratives of decline and revival. The report's attribution to Leslie and Thapar was not checked.
+          evidence_base: Historical scholarship
+        - scholar: Kavita Sivaramakrishnan
+          work: 'Old Potions, New Bottles: Recasting Indigenous Medicine in Colonial Punjab (1850-1945) (Hyderabad: Orient Longman, 2006)'
+          year: 2006
+          position: Analogous recasting of indigenous medicine, with practitioners developing professional identities and institutions compatible with a nationalist frame.
+          evidence_base: Historical scholarship
+        - scholar: Kira Schmidt Stiedenroth
+          work: 'Unani Medicine in the Making: Practices and Representations in 21st-century India (Amsterdam University Press, 2020)'
+          year: 2020
+          position: Examines what Unani is today through its multiplicity, scrutinizing tensions between Unani as a 'system of medicine' and its enactments as Islamic medicine, medical science or alternative medicine. Ethnographic; the report's phrasing 'extends the reconstruction argument' is an interpretation.
+          evidence_base: Urdu sources, practitioner interviews, clinic observation
+        - scholar: Unnamed critics of Iranian TPM
+          work: null
+          year: null
+          position: Persian medicine revival since 2007 is a substantially new, nationally branded construction layered onto medieval texts.
+          evidence_base: not stated
+        - scholar: Defenders (many within CCRUM, Hamdard, TPM faculties; bio-bibliographers such as the late Hakim Syed Zillur Rahman)
+          work: null
+          year: null
+          position: 'Continuity: unbroken textual lineage (Galen -> Qanun -> Indian commentaries), continuous family/lineage practice (e.g. Azizi family of Lucknow).'
+          evidence_base: Textual/manuscript tradition and lineage practice
+        - scholar: Fabrizio Speziale
+          work: 'Culture persane et medecine ayurvedique en Asie du Sud (Leiden: Brill, 2018)'
+          year: 2018
+          position: First study of the translation of Ayurvedic sources into Persian from the 14th century and of the Persianization of Hindu physicians; shows pre-colonial dynamism (Persian-Ayurveda synthesis). The report's added claim that this complicates 'simple invention' is its own inference.
+          evidence_base: Persian-language manuscripts (Perso-Indica project)
+      citations:
+        - source: 'Attewell, Refiguring Unani Tibb (Orient Longman 2007), as reviewed in Medical History (PMC2766155)'
+          type: historical-monograph
+          citation_strength: direct
+        - source: 'Alavi, Unani Medicine in the Nineteenth-Century Public Sphere, IESHR 42(1), 2005, pp. 101-129'
+          type: historical-monograph
+          citation_strength: direct
+        - source: 'Liebeskind, Arguing Science, in Ernst (ed.), Plural Medicine, Tradition and Modernity, Routledge 2002, pp. 58-75'
+          type: historical-monograph
+          citation_strength: direct
+        - source: 'Hardiman, Indian Medical Indigeneity, Social History 34(3), 2009, pp. 263-283'
+          type: historical-monograph
+          citation_strength: direct
+        - source: 'Sivaramakrishnan, Old Potions, New Bottles, Orient Longman 2006'
+          type: historical-monograph
+          citation_strength: direct
+        - source: 'Schmidt-Stiedenroth, Unani Medicine in the Making, Amsterdam University Press 2020'
+          type: historical-monograph
+          citation_strength: direct
+        - source: 'Speziale, Culture persane et medecine ayurvedique en Asie du Sud, Brill 2018'
+          type: historical-monograph
+          citation_strength: direct
+      register: historical-scholarship
+      notes: 'Corrected from bookseller, aggregator and profile-page citations to the works themselves. Changes - Hardiman work supplied (report said not specified); Liebeskind work identified as a book chapter (Ernst 2002); publishers and Alavi article details added. The mismatched ResearchGate record of the Attewell review, cited for Alavi, is dropped. Positions were checked against reviews and abstracts, not full texts; glosses that go beyond them (Alavi theory-to-practice shift, Hardiman via Leslie/Thapar, Speziale on invention, Schmidt Stiedenroth extending reconstruction) are flagged in the entries as report interpretation. The two unnamed-group entries (TPM critics, defenders) have no citation and were not verified.'
+    searches:
+      - Attewell Refiguring Unani Tibb Orient Longman 2007
+      - Alavi Islam and Healing Palgrave 2007
+      - Alavi Unani Medicine in the Nineteenth-Century Public Sphere IESHR 2005
+      - Liebeskind Arguing Science Unani Tibb Hakims Biomedicine
+      - Hardiman Indian Medical Indigeneity Social History 2009
+      - Sivaramakrishnan Old Potions New Bottles
+      - Speziale Culture persane et medecine ayurvedique Brill 2018
+      - Schmidt Stiedenroth Unani Medicine in the Making 2020
+  - path: identification.system_name
+    outcome: unverifiable
+    searches:
+      - WHO benchmarks for training in Unani medicine names Unani Tibb Greco-Arabic (WHO IRIS PDF returned 403; WHO landing page gives no naming text)
+      - Ministry of Ayush Unani Greco-Arab Tibb Ionian
+  - path: identification.alternate_names
+    outcome: unverifiable
+    searches:
+      - WHO benchmarks Unani medicine alternate names (full text not retrievable)
+      - Unani Tibb Tibb-e-Unani Traditional Persian Medicine Eastern medicine BEMS Pakistan (EMRO Hamdard document confirms only Eastern/Unani medicine degree, not the BEMS title)
+  - path: identification.primary_regions
+    outcome: unverifiable
+    searches:
+      - WHO benchmarks Unani countries India Pakistan Bangladesh Sri Lanka Iran South Africa (WHO landing page names no countries; full text 403)
+      - Ministry of Ayush Unani India Pakistan Bangladesh Iran
+  - path: identification.practitioner_estimate
+    outcome: unverifiable
+    searches:
+      - Rajya Sabha unstarred question 28 April 2015 AYUSH registered practitioners Unani 47683 (only the PTI/Business Standard relay found, which returned 403 on fetch; the answer text on rajyasabha.nic.in exceeded fetch size limits)
+      - WHO EMRO Hamdard Foundation Pakistan Unani Medicine From Wellness to Wellbeing (found and read - the Pakistan half is confirmed - the document says ~60,000 registered Hakims holding a diploma in Tibb-e-Unani or a Bachelor degree in Eastern/Unani medicine; it is undated but refers to events in August 2023, so it postdates that; the India half remains indirect)
+  - path: identification.system_boundary
+    outcome: unverifiable
+    searches:
+      - Attewell Alavi Unani boundary Tibb al-Nabawi absorbed strand (report characterisation of scholars, no specific source marker to check)
+      - Sowa-Rigpa NCISM Unani regulatory grouping
+  - path: canon_and_transmission.transmission_mode
+    outcome: unverifiable
+    searches:
+      - Azizi family Lucknow Unani lineage transmission print Urdu professionalization (Alavi 2005 abstract supports the Azizi family and Urdu print sources only, not the synthesis)
+      - Unani mixed textual and lineage transmission
+  - path: construct_debate.report_adjudication
+    outcome: unverifiable
+    searches:
+      - reconstruction on a real foundation Unani specialist scholarship (this is the report's own stance and has no external source to verify it against)
