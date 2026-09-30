@@ -1,0 +1,161 @@
+system: tcm
+pass: verify
+batch: 7
+entries:
+- path: contemporary_controversies.politicized_episodes
+  source_report: v2
+  value:
+  - 'COVID-19: China heavily promoted TCM (''three medicines and three formulas'', Lianhua Qingwen) domestically;
+    international scientists criticized the weak evidence'
+  - 'Belt and Road soft power (Nature editorial 5 June 2019: China ''enthusiastically promotes TCM around
+    the world... and it stifles criticism of TCM at home'')'
+  - ISO TC 249 named 'Traditional Chinese Medicine' over Korean and Japanese objections; entangled with
+    China-Korea heritage disputes (acupuncture, Donguibogam)
+  - 'Tan Qindong case 2018: Guangzhou anesthesiologist detained about 3 months (Jan-Apr 2018) after December
+    2017 post calling Hongmao Medicinal Liquor ''poison from heaven''; police estimated about 1.4 million
+    yuan reputational damage; released for insufficient evidence, reportedly after psychiatric hospitalization;
+    covered by Caixin and Nature'
+  - Li Zhisui memoir allegation about Mao
+  weak_citations:
+  - source: ISO/TC 249 (iTeh catalog) [S47]
+    type: catalog-listing
+    citation_strength: indirect
+- path: contemporary_controversies.research_methodology_disputes
+  source_report: v2
+  value: Dispute over whether sham acupuncture (which may be physiologically active) is a valid placebo,
+    and how to design trials around patterns. The Vickers small-but-real specific effect is read by advocates
+    as vindication and by critics (Ernst) as consistent with elaborate placebo. TCM advocates say low
+    diagnostic reliability reflects individualization; critics say unreliable diagnosis undermines clinical
+    validity and trial design.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: self_reported_gaps.inventory
+  source_report: v2
+  value:
+  - kind: gap
+    text: My web-search budget was exhausted before I could run dedicated searches on three sub-topics
+      (Japanese Meiji-era kampo suppression specifics; Korean Sasang medicine; and the precise wording
+      of TCM theory primary texts on bian zheng vs bian bing); I flag those as partially sourced.
+  - kind: caveat
+    text: These sections rest on strong secondary syntheses (Andrews, Lei, Scheid) rather than topic-specific
+      primary sources and should be treated as slightly less firmly sourced.
+  - kind: caveat
+    text: Reliability literature is modest in size (Jacobson's review covered 21 heterogeneous studies)
+      and methods varied; the poor-reliability conclusion is robust in direction but imprecise in magnitude.
+  - kind: caveat
+    text: 'Publication bias cuts both ways in interpretation: the Vickers 1998 finding is old (Medline
+      to 1995); the pattern persists in later analyses but registration has improved since ~2005-2010.'
+  - kind: contested
+    text: The invention-vs-continuity debate is genuinely unsettled at the level of interpretation, even
+      though the underlying facts (1950s institution-building, 1822 acupuncture decree, Cheng Dan'an's
+      reforms) are agreed.
+  - kind: caveat
+    text: Wildlife-trafficking and bear-farm figures vary by source (e.g., bear-bile farm estimates range
+      from ~10,000-12,000 to over 20,000 bears; pangolin totals differ between IUCN and WWF). These are
+      indicative, not precise, and some derive from NGO rather than primary-literature sources.
+  - kind: gap
+    text: 'Evidence note (Q2): I was unable to run a dedicated search on primary-text formulations of
+      bian zheng vs bian bing.'
+  - kind: gap
+    text: 'Evidence note (Q4): I could not run a dedicated search on the precise mechanics of Meiji kampo
+      suppression and its effect on Taiwan/Korea.'
+  - kind: gap
+    text: 'Evidence note (Q9): Korean Sasang constitutional medicine and Vietnamese/Mongolian specifics
+      are the thinnest-sourced part of this answer.'
+  - kind: caveat
+    text: A research subagent supplied the authoritative-body evidence assessments (NCCIH, WHO strategy,
+      Cochrane verbatim conclusions, Vickers effect sizes).
+  - kind: contested
+    text: The McDonald and Janz 2017 Acupuncture Evidence Project is an industry-body publication, not
+      a government review, and should not be conflated with the government assessment.
+  weak_citations:
+  - source: Report scope note and Caveats section
+    type: unclear
+    citation_strength: unclear
+- path: report_conclusions.revision_thresholds
+  source_report: v2
+  value:
+  - domain: Acupuncture for chronic pain, migraine/tension headache, nausea
+    threshold: High-quality, pre-registered, adequately blinded sham-controlled trials
+    would_change: Effects collapsing to sham would downgrade the recommendation; consistent replication
+      of specific effects would upgrade it.
+  - domain: Efficacy claims resting on Chinese-language trials
+    threshold: Independent, non-Chinese replication or Cochrane-grade evidence
+    would_change: Such claims would be credited rather than discounted.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: report_conclusions.recommendations
+  source_report: v2
+  value:
+  - audience: Readers weighing TCM
+    text: 'Treat TCM as two separable things: a materia medica that is a legitimate source of drug leads
+      (artemisinin as proof of concept) and a theoretical/diagnostic system with weak empirical support
+      and poor reliability (kappa about 0.34); do not treat its categories as validated biology.'
+  - audience: Patients
+    text: Acupuncture is a defensible option for chronic pain, migraine/tension headache and nausea; specific
+      effect small but real, adverse events low; set expectations that much benefit is contextual.
+  - audience: Patients
+    text: Avoid Aristolochia/aristolochic acid products, ephedra, He Shou Wu without hepatic monitoring,
+      and products with endangered-species animal parts; prefer products from jurisdictions with statutory
+      quality control (Australia TGA/AHPRA, EU THMPD) over US DSHEA supplements.
+  - audience: Readers and evaluators
+    text: Discount efficacy claims resting solely on Chinese-language trials given near-universal positivity;
+      require independent non-Chinese replication or Cochrane-grade evidence.
+  - audience: Policymakers
+    text: Keep ICD-11 Chapter 26 coding strictly optional and never for mortality; prioritize pharmacovigilance,
+      adulteration testing and species protection.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: economics.domestic_market_size
+  source_report: v1
+  value:
+  - figure: ~900 billion (domestic TCM industrial output value)
+    currency: RMB
+    year: 2024
+    measure: industrial output value
+    estimator: '''industry estimate'' (unnamed)'
+  weak_citations:
+  - source: none given in report ('industry estimate')
+    type: unclear
+    citation_strength: unclear
+- path: economics.global_market_estimates
+  source_report: v1
+  value:
+  - figure: ~29 billion
+    currency: USD
+    year: 2024-2026
+    measure: global TCM market
+    estimator: commercial research firms (unnamed)
+  - figure: ~86 billion
+    currency: USD
+    year: 2024-2026
+    measure: global TCM market
+    estimator: commercial research firms (unnamed)
+  - figure: above 280 billion (outliers)
+    currency: USD
+    year: 2024-2026
+    measure: global TCM market
+    estimator: commercial research firms (unnamed)
+  weak_citations:
+  - source: commercial research firms, unnamed in report
+    type: market-research
+    citation_strength: indirect
+- path: economics.major_manufacturers
+  source_report: v1
+  value:
+  - name: Yunnan Baiyao Group
+    products: null
+    figure: 40.03 billion (~USD 5.5 billion)
+    currency: CNY
+    year: 2024
+    measure: operating revenue
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear

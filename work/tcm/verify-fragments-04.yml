@@ -1,0 +1,99 @@
+system: tcm
+pass: verify
+updates:
+  - path: materia_medica.pharmacological_framework
+    outcome: unverifiable
+    searches:
+      - "Chinese materia medica four natures five flavors formulas individualized pattern differentiation review Bensky"
+      - "PMC11068986 natures and flavors network pharmacology intro (does not state multi-herb individualization or dietary sorting)"
+  - path: materia_medica.flagship_agents
+    outcome: unverifiable
+    searches:
+      - "no single source located for the composite list (qinghao, ma huang, He Shou Wu, Aristolochia, Ba Jiao Lian, Chi R Yun, Jin Bu Huan, animal products, Lianhua Qingwen); per-agent sourcing not attempted"
+  - path: disruption.loss_of_patronage
+    outcome: corrected
+    field:
+      status: filled
+      value: "Daoguang Emperor decree of 1822 banned acupuncture and moxibustion from the Imperial Medical Academy (Taiyiyuan), on the stated ground that they were unsuitable to be applied to the Emperor."
+      citations:
+        - source: "Nguyen, 'L'interdiction de l'acupuncture en 1822 par l'empereur', 2018, 17(1):5 (GERA PDF, gera.fr)"
+          type: historical-monograph
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Corrected. The 1822 decree and its scope are supported. The original framing (rise of Western medicine and acupuncture or yin-yang theory increasingly seen as superstitious as the cause) was not found in the source; the source describes the ban as a local event limited to the Imperial Academy, with no proven effect on wider practice in China, and reasons for it debated. Claim narrowed to the decree itself. The PDF was binary and could not be read directly; content was checked through search-result excerpts of the article, so re-check the wording against the PDF. Listing this under loss_of_patronage is a loose fit (institutional exclusion, not collapse of a court)."
+    searches:
+      - "Daoguang 1822 acupuncture moxibustion abolished Imperial Medical Academy decree"
+  - path: disruption.post_colonial_disruption
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - label: Maoist systematization of Chinese medicine
+          date: 1950s
+          description: "Diverse styles systematized into a standardized curriculum; 'Traditional' applied mid-1950s; the report frames this as transformation and reinvention rather than institutional split or relocation."
+      citations:
+        - source: "Taylor, Kim. Chinese Medicine in Early Communist China, 1945-63: A Medicine of Revolution. RoutledgeCurzon, 2005 (publisher page and chapter list: 'The Creation of a Traditional Chinese Medicine, 1953-1956'; 'The Standardisation of Chinese Medicine, 1957-1963')"
+          type: historical-monograph
+          citation_strength: direct
+          claim_match: matches
+      register: historical-scholarship
+      notes: "Publisher description and chapter titles confirm the 1953-56 creation of a 'Traditional' Chinese medicine and the 1957-63 standardisation; the book's own description says the term 'Traditional' was not formally used in China until the mid-1950s and that the textbooks were a large systematization of theory and practice modeled on Western medical textbooks. Book text itself not read; the 'transformation and reinvention' framing is the report's, consistent with Taylor's argument."
+    searches:
+      - "Taylor Chinese Medicine in Early Communist China 1945-63 systematization standardized curriculum traditional"
+  - path: revival_and_institutionalization.revival_context
+    outcome: unverifiable
+    searches:
+      - "Taylor Chinese Medicine in Early Communist China 1945-63 (covers only 1945-63; does not cover guoyi movement, barefoot doctors, or later global soft-power promotion)"
+      - "Chinese Medicine in Early Communist China Routledge publisher page"
+  - path: revival_and_institutionalization.key_figures
+    outcome: unverifiable
+    searches:
+      - "Cheng Dan'an 1899-1957 China Acupuncture Research Centre 1930 Tokyo nerve pathways thinner needles"
+      - "Chen Guofu Shi Jinmo Zhang Xichun defenders Chinese medicine Nationalist"
+      - "Mao Zedong Li Zhisui skeptical Chinese medicine"
+      - "Only Wikipedia (indirect) supports Cheng Dan'an's Tokyo training and 1930 centre; the 1953 thinner-needle date, Chen Guofu's role and the Li Zhisui attribution were not found in a primary source"
+  - path: revival_and_institutionalization.state_sponsorship
+    outcome: corrected
+    field:
+      status: filled
+      value: "PRC systematization and institution-building from the 1950s; 2016 TCM Law (adopted 25 December 2016 by the NPC Standing Committee, effective 1 July 2017) whose Article 3 makes TCM an important component of the medical and health system and sets the policy of equal importance of Chinese and Western medicine (zhongxiyi bingzhong); domestic promotion during COVID-19; Belt and Road promotion abroad (Belt and Road TCM Development Plan 2016-2020)."
+      citations:
+        - source: "Law of the PRC on Traditional Chinese Medicine (中华人民共和国中医药法), NPC Standing Committee, 25 Dec 2016, in force 1 Jul 2017, Article 3 (text as published on Beijing municipal government portal, beijing.gov.cn, 2017-08-16)"
+          type: statute
+          citation_strength: direct
+        - source: "Wang W-Y et al., 'Current policies and measures on the development of traditional Chinese medicine in China', Pharmacological Research, 2020 (PMC7480280)"
+          type: tertiary-review
+          citation_strength: direct
+        - source: "Taylor, Kim. Chinese Medicine in Early Communist China, 1945-63, RoutledgeCurzon, 2005"
+          type: historical-monograph
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected wording. Original said the law gave TCM 'equal legal footing with biomedicine'. Article 3 states a state policy of equal importance (中西医并重), not legal equivalence in status; adoption and effective dates are correct. Wang et al. 2020 describe the law as clarifying TCM's 'important status' and record the Belt and Road TCM plan (2016-2020) and broad TCM involvement in COVID-19 treatment. 1950s institution-building is supported at book level by Taylor (1945-63). The statute text was read on a government portal republication, not npc.gov.cn itself."
+    searches:
+      - "Traditional Chinese Medicine Law 2016 effective July 1 2017 npc.gov.cn"
+      - "中华人民共和国中医药法 第三条 中西医并重"
+  - path: revival_and_institutionalization.diffusion_abroad
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - region: United States
+          period: '1971'
+          channel: diplomatic opening
+          description: "James Reston's New York Times article on post-appendectomy acupuncture in Beijing during the Nixon-era opening began the modern global wave."
+        - region: Belt and Road countries
+          period: 2010s-2019
+          channel: state soft-power and commercial export
+          description: "Nature editorial: China promotes TCM around the world often on the back of Belt and Road."
+      citations:
+        - source: "Reston, James. New York Times, 26 July 1971 (article on his appendectomy and acupuncture in Peking)"
+          type: news
+          citation_strength: direct
+        - source: "Nature editorial, 'The World Health Organization's decision about traditional Chinese medicine could backfire', 2019 (doi 10.1038/d41586-019-01726-1)"
+          type: news
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Both underlying items are primary documents. Neither could be opened in full (Nature redirected to a login wall; NYT archive and the ScienceDirect history article returned errors); date, author, and the Nature sentence were confirmed from search-result excerpts and a reprint index, so re-check exact wording. That the Reston article 'began the modern global wave' is a historians' characterization (e.g. Acupuncture journey to America: a turning point in 1971, ScienceDirect), not something Reston's article claims."
+    searches:
+      - "James Reston 1971 New York Times appendectomy Peking acupuncture"
+      - "Nature editorial China promotes traditional Chinese medicine around the world Belt and Road"

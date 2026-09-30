@@ -1,0 +1,15 @@
+system: tcm
+pass: gap
+entries:
+- path: revival_and_institutionalization.internal_factions
+  missing: 'Report names Zhang Xichun as integration pioneer and mentions Shanghan Lun continuity scholars
+    but gives no named purist versus integrationist factions within present-day TCM. Missing: named factions
+    and dated splits within TCM (classical formula school versus scientized/integrative TCM).'
+- path: literature_state.corpus_scale_appraisal
+  missing: 'Report identifies no evidence map, Cochrane overview or bibliometric analysis of the whole
+    TCM clinical corpus. Missing: whole-corpus counts (e.g. CNKI/PubMed RCT totals by modality) or an
+    evidence-map of TCM trials. Vickers 1998 characterizes trials by country of origin, not the TCM corpus.'
+- path: contemporary_controversies.intellectual_property
+  missing: 'Report addressed contemporary disputes but gives nothing on biopiracy cases, patents on TCM
+    formulas, defensive databases or Nagoya exposure for TCM. The China-Korea heritage disputes (acupuncture,
+    Donguibogam) are recorded under politicized_episodes. Missing: IP/biopiracy/Nagoya literature on TCM.'

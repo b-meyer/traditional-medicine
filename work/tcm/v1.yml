@@ -1,0 +1,760 @@
+schema_version: "1.6"
+system: tcm
+source_report: v1
+fields:
+  identification:
+    system_name:
+      status: filled
+      value: "Traditional Chinese Medicine (TCM)"
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "Report treats 'TCM' as partly a modern construct distinct from premodern Chinese medicine (see construct_debate)."
+    alternate_names:
+      status: partial
+      value:
+        - "Chinese medicine"
+        - "guoyi (national medicine), the rebranding adopted by practitioners around the 1929 abolition crisis"
+        - "CTM, Unschuld's term for the entirety of pre-20th-century Chinese health knowledge (a contrast term, not a synonym)"
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "No pinyin or Chinese-script endonym for the modern system (e.g. zhongyi) is given; only guoyi. The English term is variously attributed to Kan-Wen Ma or to mid-1950s party propagandists."
+    primary_regions:
+      status: partial
+      value: "China (PRC), with regulated presence in the United States, European Union and Australia; Hong Kong and Taiwan mentioned as sources of trials, WHO support and herbal data."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    practitioner_estimate:
+      status: absent
+      value: null
+      citations: []
+      register: regulatory
+      notes: "Report gives no count of TCM practitioners, in China or worldwide, with source and year. Missing: number of licensed/registered TCM practitioners in China (and globally), with year and counting body. The only workforce figure is 1.5 million barefoot doctors trained since 1968, which is not a practitioner estimate."
+    system_boundary:
+      status: filled
+      value:
+        - tradition: "Premodern Chinese medical traditions (Unschuld's CTM)"
+          relation: premodern_predecessor
+          fields_affected: [canon_and_transmission, construct_debate, theoretical_primitives, modalities, materia_medica]
+          description: "Report treats modern standardized TCM as selectively rebuilt in the 1950s-60s from a heterogeneous body of premodern Chinese healing practices, stripped of 'superstitious'/religious elements."
+        - tradition: "Japanese and Korean traditional medicine"
+          relation: regulatory_grouping
+          fields_affected: [diagnostics, contemporary_controversies, contact_and_borrowing]
+          description: "ICD-11 Chapter 26 is 'a union set of harmonized traditional medicine conditions of the Chinese, Japanese, and Korean classifications'. A Korean medicine stroke-patient reliability study is cited by the report for a claim about TCM diagnosis."
+      citations:
+        - {source: "Traditional Medicine Diagnostic Codes in ICD-11 and Alternative Diagnostic Classifications in the Mainstream Healthcare (ResearchGate PDF) [S1]", type: unclear, citation_strength: indirect}
+        - {source: "Interview with Dr. Paul Unschuld, Part Two, Acupuncture Today [S3]", type: practitioner-site, citation_strength: indirect}
+        - {source: "The History of Chinese Medicine in the People's Republic of China and Its Globalization [S4]", type: tertiary-review, citation_strength: direct}
+      register: historical-scholarship
+      notes: "S1 is a journal-style paper reached through ResearchGate, hence indirect."
+  canon_and_transmission:
+    foundational_texts:
+      status: filled
+      value:
+        - {title: "Huangdi Neijing (Inner Canon of the Yellow Emperor)", date: "Han dynasty, c. 1st c. BCE", author: "attributed to the Yellow Emperor; compiled from earlier texts"}
+        - {title: "Shanghan Lun (Treatise on Cold Damage)", date: "c. 196-220 CE", author: "Zhang Zhongjing (collated)"}
+        - {title: "Jingui Yaolue", date: "c. 196-220 CE (survives alongside Shanghan Lun)", author: "Zhang Zhongjing"}
+        - {title: "Nanjing (Classic of Difficult Issues)", date: "not dated in report", author: null}
+        - {title: "Shennong Bencao Jing", date: "Eastern Han", author: null}
+        - {title: "Handbook of Prescriptions for Emergencies", date: "4th c.", author: "Ge Hong"}
+        - {title: "Bencao Gangmu (Compendium of Materia Medica)", date: "16th c.", author: "Li Shizhen"}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "The earlier Mawangdui manuscripts (Recipes for Fifty-Two Ailments) are mentioned as a contrast with the Neijing; see external_dating_anchors."
+    secondary_canon:
+      status: partial
+      value: "No secondary texts named. Report names the Jin-Yuan 'four great masters' doctrinal schools (12th-14th c.) and the Ming-Qing warm-disease (wenbing) current, without naming their works or authors."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "Recorded as schools, not texts; the codebook leaf expects a text list."
+    dating_and_authorship_disputes:
+      status: absent
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: "Report gives dates for canonical texts but no named scholars disputing dating or authorship. Missing: scholarly positions on the dating and composite authorship of the Huangdi Neijing, Shanghan Lun and Shennong Bencao Jing, with named scholars."
+    transmission_mode:
+      status: partial
+      value: "Modern transmission through colleges and standardized textbooks (1956-1964). The 2016 Law recognizes an apprenticeship route requiring recommendations from two qualified practitioners. Premodern transmission mode is not described."
+      citations:
+        - {source: "Law of the People's Republic of China on Traditional Chinese Medicine (China Intellectual Property Lawyers Network) [S11]", type: statute, citation_strength: unclear}
+        - {source: "The History of Chinese Medicine in the People's Republic of China and Its Globalization [S4]", type: tertiary-review, citation_strength: direct}
+      register: historical-scholarship
+      notes: "S11 is a law-firm network page hosting the statute; strength marked unclear."
+    redaction_history:
+      status: partial
+      value: "Neijing compiled in the Han from earlier texts. Shanghan Lun collated by Zhang Zhongjing; survives as the Shanghan Lun and Jingui Yaolue. Bencao Gangmu documented close to 1,900 drugs; recorded materia medica reached ~12,800 entries by the late 20th century."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    external_dating_anchors:
+      status: partial
+      value: "Mawangdui manuscripts (Recipes for Fifty-Two Ailments) named as earlier than the Neijing. Earliest evidence for acupuncture proper (metal needles at points along meridians) dated to the 2nd-1st c. BCE. No dated copies or translations named."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    key_figures:
+      status: filled
+      value:
+        - {name: "Zhang Zhongjing", dates: "c. 196-220 CE", role: "collator of the Shanghan Lun; first to combine yin-yang and Five Phases with drug therapy and group symptoms into patterns"}
+        - {name: "Ge Hong", dates: "4th c.", role: "author of Handbook of Prescriptions for Emergencies, credited as inspiration for artemisinin"}
+        - {name: "Li Shizhen", dates: "16th c.", role: "author of Bencao Gangmu"}
+        - {name: "Jin-Yuan 'four great masters' (unnamed)", dates: "12th-14th c.", role: "elaborated divergent doctrinal schools"}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "Yu Yunxiu (Republican-era critic) and Tu Youyou (modern) are excluded per routing rule; they appear in fields 8 and 9."
+    dated_events:
+      status: filled
+      value:
+        - {label: "Shang therapeutic activity", date: "14th-11th c. BCE", description: "Therapeutic activity dates from the Shang; illness attributed largely to ancestral curses."}
+        - {label: "Earliest acupuncture evidence", date: "2nd-1st c. BCE", description: "Earliest evidence for acupuncture proper, distinguished from earlier lancing/bloodletting."}
+        - {label: "Huangdi Neijing compiled", date: "c. 1st c. BCE", description: "Compiled in the Han from earlier texts."}
+        - {label: "Shanghan Lun collated", date: "c. 196-220 CE", description: "Collated by Zhang Zhongjing."}
+        - {label: "Shennong Bencao Jing", date: "Eastern Han", description: "Earliest systematic materia medica."}
+        - {label: "Handbook of Prescriptions for Emergencies", date: "4th c.", description: "Ge Hong's text."}
+        - {label: "Jin-Yuan schools", date: "12th-14th c.", description: "Competing doctrinal schools (four great masters)."}
+        - {label: "Bencao Gangmu", date: "16th c.", description: "Li Shizhen's compendium, close to 1,900 drugs."}
+        - {label: "Warm-disease (wenbing) current", date: "Ming-Qing", description: "Developed as a distinct approach to febrile epidemic illness."}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+  construct_debate:
+    positions:
+      status: incidental
+      value:
+        - {scholar: "Paul Unschuld", work: "Interview, Acupuncture Today; distinction of TCM from 'CTM'", year: null, position: "TCM 'is a product... of Communist China'; criticizes selective, decontextualized use of classical sources.", evidence_base: "Not stated beyond the distinction between modern TCM and the entirety of pre-20th-century Chinese health knowledge."}
+        - {scholar: "Kim Taylor", work: "Chinese Medicine in Early Communist China", year: null, position: "PRC government initiated the establishment of TCM in the 1950s; phases of cooperation (1945-1950), unification (1950-1958), integration (1958-today); standardisation (colleges, textbooks) c. 1956-1964, first textbook Zhongyixue gailun composed in Nanjing in 1958.", evidence_base: "Historical documentation of PRC policy and institutions (report does not describe sources)."}
+        - {scholar: "Nathan Sivin", work: null, year: null, position: "Criticized treating premodern Chinese medicine as one unchanging system, calling it a 'myth of an unchanging medical tradition'.", evidence_base: null}
+        - {scholar: "Volker Scheid", work: null, year: null, position: "Emphasizes plurality and modern reinvention.", evidence_base: null}
+        - {scholar: "Bridie Andrews", work: "The Making of Modern Chinese Medicine, 1850-1960", year: 2014, position: "Emphasizes plurality and modern reinvention; authoritative on the 1929 episode.", evidence_base: null}
+        - {scholar: "Sean Hsiang-lin Lei", work: "Neither Donkey nor Horse", year: 2014, position: "Named among historians who broadly agree TCM is a 20th-century standardization; authoritative on the 1929 episode.", evidence_base: null}
+      citations:
+        - {source: "Interview with Dr. Paul Unschuld, Part Two, Acupuncture Today [S3]", type: practitioner-site, citation_strength: indirect}
+        - {source: "The History of Chinese Medicine in the People's Republic of China and Its Globalization [S4]", type: tertiary-review, citation_strength: direct}
+        - {source: "Sivin, Scheid, Andrews, Lei: named in report text without citation", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "Source prompt did not ask about the invented-tradition debate, yet the report covers it as a headline finding. S4 is a journal article; the report attributes the Taylor claims to her book, which is not itself in the bibliography. Not a search target."
+    report_adjudication:
+      status: incidental
+      value: "Report states that TCM is 'partly a modern construct', systematized and textbook-codified in Communist China roughly 1956-1964 and stripped of 'superstitious'/religious elements; it calls the historical scholarship 'robust and largely consensual that modern TCM is a 20th-century standardization of diverse older traditions'."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "Report's own stance, not consensus. Not a search target."
+  theoretical_primitives:
+    constituents:
+      status: filled
+      value: "Vital substances qi (vital energy/function), xue (blood), jing (essence), shen (spirit/mind); yin-yang; Five Phases (wood, fire, earth, metal, water); zang-fu functional organ systems (e.g. Spleen, Kidney, Liver, defined by function not anatomy); jingluo (12 principal meridians plus extraordinary vessels)."
+      citations:
+        - {source: "Review of Evidence Suggesting That the Fascia Network Could Be the Anatomical Basis for Acupoints and Meridians in the Human Body [S5]", type: tertiary-review, citation_strength: direct, claim_match: mismatch}
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: "S5 is cited for '12 principal meridians', but its title concerns fascia as a possible anatomical basis for meridians, not the enumeration of meridians."
+    balance_logic:
+      status: filled
+      value: "Health rests on balance of complementary yin-yang; Five Phases interact in generating and controlling cycles; eight principles (yin/yang, interior/exterior, cold/heat, deficiency/excess); diagnosis by pattern differentiation (bianzheng lunzhi) guides individualized therapy."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: null
+    correspondence_system:
+      status: filled
+      value: "Five Phases mapped to organs, seasons, emotions and tastes; report describes TCM as resting on 'cosmological correspondence systems shared in structure with other premodern traditions'."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: null
+    etiology:
+      status: filled
+      value: "Six excesses (external climatic factors: wind, cold, heat, dampness, dryness, fire) and seven emotions (internal causes)."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: null
+    nosology:
+      status: filled
+      value: "Diagnosis identifies a 'pattern' (zheng, syndrome) rather than a disease. ICD-11 Chapter 26 holds harmonized traditional-medicine conditions from Chinese, Japanese and Korean classifications."
+      citations:
+        - {source: "Traditional Medicine Diagnostic Codes in ICD-11 and Alternative Diagnostic Classifications in the Mainstream Healthcare (ResearchGate PDF) [S1]", type: unclear, citation_strength: indirect}
+      register: emic
+      notes: null
+    relation_to_biomedical_anatomy:
+      status: filled
+      value: "Constructs predate and do not map onto modern anatomy, physiology or biochemistry; the report states there is no demonstrated physical basis for qi or meridians and that scientific reviews find no evidence that meridians or vital energy exist. Zang-fu are defined by dynamic function rather than anatomical organs. Charles Leslie is quoted describing correspondence systems as classificatory/mnemonic devices that lent themselves to 'stultifying theoretical elaboration, self-deception, and dogmatism'. Reviews conclude the anatomical basis of meridians 'has not been resolved'."
+      citations:
+        - {source: "Traditional Chinese medicine (Wikipedia) [S6]", type: open-encyclopedia, citation_strength: indirect}
+        - {source: "Anatomical Evidence of Acupuncture Meridians in the Human Extracellular Matrix [S7]", type: primary-study, citation_strength: direct}
+      register: biomedical-evidence
+      notes: "S6 is used for the Leslie quotation (Wikipedia, not the original). S7's title asserts anatomical evidence, while the report cites it for the conclusion that the basis 'has not been resolved'; not flagged as mismatch because the source may discuss the question."
+    translation_programs:
+      status: partial
+      value: "Fascia/connective-tissue network hypotheses for meridians (work by Langevin and by Bai et al.) 'remain hypotheses' that most anatomists do not accept as validating the classical meridian map. Emerging interest in network pharmacology and systems biology for multi-component formulas (listed as a proponents' argument). Artemisinin from Artemisia annua is a drug-discovery success the report says is separate from validation of TCM theory."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Report does not use the established/preliminary/speculative scale; its own words ('remain hypotheses', 'emerging interest') are kept."
+  diagnostics:
+    methods:
+      status: filled
+      value:
+        - {method: "Inspection", examines: "including tongue diagnosis: colour, coating, shape"}
+        - {method: "Listening/smelling", examines: "not further specified"}
+        - {method: "Inquiry", examines: "history"}
+        - {method: "Palpation", examines: "notably pulse diagnosis at radial positions"}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: "The 'four examinations'."
+    reliability_evidence:
+      status: incidental
+      value:
+        - statistic: null
+          value: "'moderate interrater reliability' (qualitative wording only; no numeric value or CI in report)"
+          design: null
+          population: "people with prediabetes (from the bibliography title; not stated in report text)"
+          n_raters: null
+          n_subjects: null
+          target: "Chinese medicine diagnosis in prediabetes, using a standardized tool (level of diagnosis not stated)"
+          citation: "Interrater Reliability of Chinese Medicine Diagnosis in People with Prediabetes [S8]"
+      citations:
+        - {source: "Interrater Reliability of Chinese Medicine Diagnosis in People with Prediabetes [S8]", type: primary-study, citation_strength: direct, claim_match: matches}
+        - {source: "Other reliability studies referred to generally ('studies of inter- and intra-rater reliability') without citation", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Source prompt did not ask about inter-rater reliability. Report also states in general terms that reviews find low inter-rater agreement for pulse and tongue diagnosis and poor multi-rater reliability for pattern diagnoses; no individual studies, statistics, designs or counts are given for these, so they are not listed as entries and are not collapsed into a verdict."
+    sign_vs_synthesis:
+      status: incidental
+      value: "Report distinguishes some tongue-sign and pulse features achieving moderate-to-good agreement (especially striking visual signs such as 'mirror' or spotted tongue) from pattern (syndrome) diagnoses showing poor multi-rater reliability with substantial variation in which symptoms practitioners use."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Incidental; not a search target."
+    standardization_efforts:
+      status: incidental
+      value: "Structured instruments improve agreement; one prediabetes study used a standardized tool. No questionnaires, software, official scales or agreement thresholds named. Report lists 'validated, reproducible diagnostic criteria' as a threshold for revising its assessment."
+      citations:
+        - {source: "Interrater Reliability of Chinese Medicine Diagnosis in People with Prediabetes [S8]", type: primary-study, citation_strength: direct, claim_match: matches}
+      register: biomedical-evidence
+      notes: "Incidental; not a search target."
+    evidence_borrowed_from_other_traditions:
+      status: incidental
+      value:
+        - {study: "Interobserver Reliability of Four Diagnostic Methods Using Traditional Korean Medicine for Stroke Patients (Lee, 2014)", tradition: "Korean medicine", how_used: "cited for the quotation 'the primary problem is the reproducibility of the diagnosis and the lack of objectivity', presented in the report as the recurring conclusion of the literature on TCM diagnosis", statistic: null, n_raters: null, n_subjects: null}
+      citations:
+        - {source: "Interobserver Reliability of Four Diagnostic Methods Using Traditional Korean Medicine for Stroke Patients, Lee 2014 [S9]", type: primary-study, citation_strength: direct, claim_match: mismatch}
+      register: biomedical-evidence
+      notes: "The report does not itself flag this as another tradition's evidence; the bibliography title shows a Korean medicine stroke study. Listed here and marked mismatch because a Korean medicine study is cited for a claim about TCM diagnosis. Numbers not given in report."
+  modalities:
+    items:
+      status: filled
+      value:
+        - {name: "Acupuncture (including electroacupuncture and auricular acupuncture)", native_category: null, tags: [needle], description: "Metal needles at points along meridians; also moxibustion-adjacent electroacupuncture and auricular forms."}
+        - {name: "Chinese herbal medicine", native_category: "formulas (multi-herb, pattern-individualized) versus single herbs", tags: [herbal], description: "Multi-herb formulas individualized to pattern; ma huang (ephedra) and Artemisia annua named."}
+        - {name: "Animal-derived materia medica", native_category: null, tags: [animal-derived], description: "Pangolin scales, rhino horn, tiger bone, leopard bone, bear bile, donkey hide gelatin (ejiao)."}
+        - {name: "Moxibustion", native_category: null, tags: [thermal], description: "Burns listed as a safety event."}
+        - {name: "Cupping", native_category: null, tags: [procedural], description: "Skin marking listed as a safety event."}
+        - {name: "Gua sha", native_category: null, tags: [manual, procedural], description: "Skin marking listed as a safety event; tag choice is the mapper's, report gives no category."}
+        - {name: "Tui na (massage)", native_category: null, tags: [manual], description: "Massage."}
+        - {name: "Qigong", native_category: null, tags: [mind-body], description: "Mind-body movement practice."}
+        - {name: "Tai chi", native_category: null, tags: [mind-body], description: "Mind-body movement practice; report lists it with qigong."}
+        - {name: "Dietary therapy", native_category: "warming/cooling food framework", tags: [dietary], description: "Widely practiced within TCM's warming/cooling food framework."}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: "Native categories are only given for herbs and diet. Report does not describe ritual or regimenal modalities."
+  materia_medica:
+    pharmacological_framework:
+      status: incidental
+      value: "Multi-herb formulas individualized to the pattern rather than single agents; dietary items sorted by a warming/cooling framework."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: "Coverage is in passing, under modalities. Not a search target."
+    flagship_agents:
+      status: incidental
+      value: "Artemisia annua (sweet wormwood; artemisinin), ma huang (ephedrine, pseudoephedrine), aristolochic-acid-containing herbs (Aristolochia, 'Fangchi', 'Mu Tong', 'Guang Fang Ji'), Lianhua Qingwen (formula promoted during COVID-19), pangolin scales, rhino horn, tiger bone, bear bile (ursodeoxycholic acid), ejiao."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: emic
+      notes: "Incidental; not a search target."
+    preparation_traditions:
+      status: not_requested
+      value: null
+      citations: []
+      register: emic
+      notes: "Report mentions only Tu Youyou's low-temperature extraction insight, a discovery-era detail rather than a preparation tradition."
+  disruption:
+    loss_of_patronage:
+      status: absent
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: "Report goes from the Ming/Qing to the Republican era without describing dynastic-era decline or loss of court or state sponsorship. Missing: any loss of imperial or state patronage of Chinese medicine before the Republican period, with dates."
+    period:
+      status: partial
+      value: "Republican era (abolition proposal 1929; Yu Yunxiu's attack on the classics 1916); Communist-era standardization from 1950s stripped 'superstitious'/religious elements."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    colonial_power:
+      status: absent
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: "Report mentions Western-trained and Japan-trained modernizers and 'anti-imperialist nationalism' but does not establish or describe any foreign power's pressure, nor state that the rupture was domestic alone. Missing: mode and period of foreign pressure (colonial, semi-colonial or indirect) on Chinese medicine in the 19th-20th centuries."
+    suppression_or_marginalization:
+      status: partial
+      value: "1950s-60s Communist standardization deliberately stripped 'superstitious'/religious elements to fit a Marxist-scientific framing. Republican-era Central Board of Health composed almost entirely of Western-trained doctors."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "No dated policies of suppression beyond the 1929 proposal."
+    abolition_attempts:
+      status: filled
+      value: "February 1929: the Nationalist government's Central Board of Health heard Yu Yunxiu's 'A Proposal to Abolish Old Medicine to Sweep Away the Obstacles to Medicine and Public Health', which would have registered practitioners, required Western retraining and phased out licenses over roughly a decade. Proposal defeated after protests."
+      citations:
+        - {source: "Lei, Sean Hsiang-lin, Neither Donkey nor Horse (2014), named in report text", type: historical-monograph, citation_strength: unclear}
+        - {source: "Andrews, Bridie, The Making of Modern Chinese Medicine, 1850-1960 (2014), named in report text", type: historical-monograph, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "Report names these as authoritative scholarship but does not tie particular sentences to them; no bibliography entries."
+    practitioner_response:
+      status: filled
+      value: "17 March 1929: delegates from associations across some 15 provinces filled the Shanghai General Chamber of Commerce; practitioners closed clinics and pharmacies in protest. March 17 became 'National Medicine Day'. Practitioners rebranded the field as guoyi (national medicine), aligning it with anti-imperialist nationalism."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    post_colonial_disruption:
+      status: absent
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: "No post-Republican break or relocation of institutions is described; 1949 appears only as a revival. Missing: whether state succession or later political campaigns disrupted or relocated Chinese medicine institutions, with dates."
+    dated_events:
+      status: filled
+      value:
+        - {label: "Lingsu Shangdui", date: "1916", description: "Yu Yunxiu's book attacking the classics."}
+        - {label: "Yu Yunxiu abolition proposal", date: "1929-02", description: "Proposal to abolish old medicine heard by the Central Board of Health."}
+        - {label: "Shanghai Chamber of Commerce protest", date: "1929-03-17", description: "Delegates from some 15 provinces protested; clinics and pharmacies closed; proposal defeated."}
+        - {label: "National Medicine Day", date: "1929-03-17", description: "March 17 became National Medicine Day."}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+  revival_and_institutionalization:
+    revival_context:
+      status: filled
+      value: "State-led, post-revolutionary policy: after 1949 the PRC revived, standardized and integrated Chinese medicine; Mao promoted it as inexpensive and abundant. Marxist-scientific framing. Earlier, anti-imperialist nationalism under the guoyi label. Later national strategy and soft power ('Healthy China 2030')."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    key_figures:
+      status: filled
+      value:
+        - {name: "Mao Zedong", dates: null, role: "promoted Chinese medicine as inexpensive and abundant; per his physician's memoir reportedly did not personally believe in it"}
+        - {name: "Tu Youyou", dates: "Project 523 begun 23 May 1967; Nobel Prize 2015", role: "led Project 523; discovered artemisinin using low-temperature extraction"}
+        - {name: "James Reston", dates: "July 1971", role: "New York Times columnist whose 26 July 1971 column on acupuncture after a Beijing appendectomy triggered American interest"}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    nationalist_framing:
+      status: filled
+      value: "1929: practitioners rebranded as guoyi ('national medicine'), aligned with anti-imperialist nationalism. Present: TCM elevated to a national strategy and soft-power asset."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    standardization_events:
+      status: filled
+      value: "1945-1950 cooperation, 1950-1958 unification, 1958-today integration (Taylor). Standardisation c. 1956-1964: colleges institutionalized, textbooks written; first textbook Zhongyixue gailun composed in Nanjing 1958. Barefoot doctor programme from 1968. Law on TCM adopted 25 December 2016, effective 1 July 2017."
+      citations:
+        - {source: "The History of Chinese Medicine in the People's Republic of China and Its Globalization [S4]", type: tertiary-review, citation_strength: direct}
+        - {source: "Hu et al., International Journal for Equity in Health, 2017, named in report text", type: primary-study, citation_strength: unclear}
+        - {source: "Law of the People's Republic of China on Traditional Chinese Medicine [S11]", type: statute, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    internal_factions:
+      status: absent
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: "Report does not identify named purist versus integrationist or other factions within modern TCM. Missing: named factions within 20th-century and present-day Chinese medicine (e.g. classicist versus modernizing or integrationist camps) and their positions."
+    state_sponsorship:
+      status: filled
+      value: "Mao-era promotion; 2016 Law on TCM requires county-level-and-above public general hospitals and maternal/child care institutions to establish TCM departments, protects secret TCM formulas as state secrets, promotes TCM domestically and abroad, as part of Healthy China 2030; TCM elevated to national strategy; China and Hong Kong bodies gave substantial technical, logistical and financial support to the WHO Traditional Medicine Strategy 2014-2023."
+      citations:
+        - {source: "Law of the People's Republic of China on Traditional Chinese Medicine [S11]", type: statute, citation_strength: unclear}
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: null
+    diffusion_abroad:
+      status: filled
+      value: "Diplomatic opening: July 1971 Reston appendectomy report and Nixon's 1972 visit catalyzed Western uptake (often mistakenly reported as 'acupuncture anesthesia'). Regulation later in US, EU and Australia (field 10). Adoption of acupuncture and other CAM by Western academic medical centres under 'integrative medicine' banners."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+    dated_events:
+      status: filled
+      value:
+        - {label: "PRC revival of Chinese medicine", date: "1949 onward", description: "PRC revived, standardized and integrated Chinese medicine."}
+        - {label: "Cooperation phase", date: "1945-1950", description: "Taylor's first phase."}
+        - {label: "Unification phase", date: "1950-1958", description: "Taylor's second phase."}
+        - {label: "Standardisation of TCM", date: "1956-1964", description: "Colleges institutionalized and textbooks written."}
+        - {label: "Zhongyixue gailun", date: "1958", description: "First TCM textbook composed in Nanjing."}
+        - {label: "Integration phase", date: "1958 onward", description: "Taylor's third phase."}
+        - {label: "Project 523", date: "1967-05-23", description: "Secret project led by Tu Youyou that yielded artemisinin."}
+        - {label: "Barefoot doctor programme", date: "1968 onward", description: "About 1.5 million barefoot doctors trained; 3-6 month training blending simplified Western medicine and TCM."}
+        - {label: "Reston article", date: "1971-07-26", description: "Column on acupuncture after a Beijing appendectomy."}
+        - {label: "Nixon visit to China", date: "1972", description: "Alongside Reston story catalyzed Western uptake."}
+        - {label: "Alma-Ata declaration", date: "1978", description: "Barefoot doctor model held up by WHO as an influence on Alma-Ata primary health care agenda."}
+        - {label: "Barefoot doctor term retired", date: "1985", description: "Ministry of Health replaced the term with 'village doctors'."}
+        - {label: "Tu Youyou Nobel Prize", date: "2015", description: "Nobel Prize in Physiology or Medicine for artemisinin."}
+        - {label: "Law on Traditional Chinese Medicine adopted", date: "2016-12-25", description: "Adopted; effective 1 July 2017."}
+        - {label: "Law on Traditional Chinese Medicine in force", date: "2017-07-01", description: "Effective date."}
+      citations:
+        - {source: "The History of Chinese Medicine in the People's Republic of China and Its Globalization [S4]", type: tertiary-review, citation_strength: direct}
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: null
+  legal_status:
+    jurisdictions:
+      status: partial
+      value:
+        - {jurisdiction: "China (PRC)", regulator: "National Medical Products Administration (herbs); other regulators not named", statute: "Law on Traditional Chinese Medicine, adopted 25 Dec 2016, effective 1 July 2017", year: 2016, scope_of_practice: "practitioner examination and registration; apprenticeship route with recommendations from two qualified practitioners", prescribing_rights: null, integration_with_public_health_system: "county-level-and-above public general hospitals and maternal/child care institutions must establish TCM departments; part of Healthy China 2030", recognition_tier: "full medical system"}
+        - {jurisdiction: "United States", regulator: "FDA", statute: "Acupuncture needles reclassified Class III to Class II, final rule effective 6 Dec 1996 (21 CFR 880.5580); herbs under DSHEA, Pub. L. 103-417, signed 25 Oct 1994", year: 1994, scope_of_practice: "regulation covers needle manufacture and labeling, not clinical efficacy; herbs need not be shown safe or effective before marketing", prescribing_rights: null, integration_with_public_health_system: null, recognition_tier: "supplement/wellness only"}
+        - {jurisdiction: "European Union", regulator: "EMA Committee on Herbal Medicinal Products (HMPC)", statute: "Traditional Herbal Medicinal Products Directive 2004/24/EC", year: 2004, scope_of_practice: "simplified registration for products with at least 30 years' traditional use, 15 of them in the EU; potentially toxic ingredients excluded; 100+ herbal monographs issued", prescribing_rights: null, integration_with_public_health_system: null, recognition_tier: null}
+        - {jurisdiction: "Australia", regulator: "Chinese Medicine Board of Australia within AHPRA", statute: "National statutory registration from 1 July 2012 (Victoria regulated from 2000)", year: 2012, scope_of_practice: "acupuncture, Chinese herbal medicine, Chinese herbal dispensing; protected titles", prescribing_rights: null, integration_with_public_health_system: null, recognition_tier: "statutory registration"}
+      citations:
+        - {source: "Law of the People's Republic of China on Traditional Chinese Medicine [S11]", type: statute, citation_strength: unclear}
+        - {source: "National Registration - TCM Health Care (clinic site) [S12]", type: practitioner-site, citation_strength: indirect}
+        - {source: "Chinese Medicine Board of Australia - Registration [S13]", type: institutional, citation_strength: direct}
+        - {source: "none given in report (US and EU entries)", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: "China's recognition tier is the mapper's reading of the hospital-department mandate. The EU regime registers products, not practitioners, so no tier from the enum is assigned. Prescribing rights not stated for any jurisdiction. S11 is a law-firm network page hosting the statute."
+    supranational_standards:
+      status: filled
+      value:
+        - {body: "European Union / EMA", instrument: "Traditional Herbal Medicinal Products Directive 2004/24/EC; HMPC herbal monographs (100+)", year: 2004, scope: "product registration standard based on traditional use"}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: "Same instrument as the EU entry under jurisdictions; the report frames it as a jurisdiction. WHO strategy and ICD-11 are in field 16."
+  education_and_licensure:
+    degree_programs:
+      status: incidental
+      value: "Colleges were institutionalized and textbooks written between roughly 1956 and 1964; no degree programmes, levels or curricula described."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: "Incidental; not a search target."
+    duration:
+      status: not_requested
+      value: null
+      citations: []
+      register: regulatory
+      notes: null
+    accrediting_body:
+      status: not_requested
+      value: null
+      citations: []
+      register: regulatory
+      notes: null
+    licensure_requirements:
+      status: incidental
+      value: "China: 2016 Law sets examination and registration requirements, with an apprenticeship route requiring recommendations from two qualified practitioners. Australia: national statutory registration under the Chinese Medicine Board (2012)."
+      citations:
+        - {source: "Law of the People's Republic of China on Traditional Chinese Medicine [S11]", type: statute, citation_strength: unclear}
+        - {source: "Chinese Medicine Board of Australia - Registration [S13]", type: institutional, citation_strength: direct}
+      register: regulatory
+      notes: "Incidental; not a search target."
+    biomedical_content_in_curriculum:
+      status: incidental
+      value: "Barefoot doctors were trained in 3-6 months in a blend of simplified Western medicine and TCM (acupuncture, herbs)."
+      citations:
+        - {source: "Hu et al., International Journal for Equity in Health, 2017, named in report text", type: primary-study, citation_strength: unclear}
+      register: regulatory
+      notes: "Concerns the barefoot doctor programme, not formal TCM degrees."
+    tradition_content_in_biomedical_curriculum:
+      status: incidental
+      value: "'TCM is a required component of biomedical education in China'; TCM hospitals coexist with Western medicine."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: "Incidental; not a search target."
+  literature_state:
+    corpus_scale_appraisal:
+      status: absent
+      value: null
+      citations: []
+      register: biomedical-evidence
+      notes: "Report cites modality-specific meta-analyses but no study characterizing the whole TCM corpus. Missing: any evidence map, Cochrane overview, or bibliometric analysis of the total TCM clinical trial literature, with numbers."
+    trial_counts:
+      status: partial
+      value: "Only review-inclusion counts appear, not totals: Vickers 2012 IPD meta-analysis included 29 of 31 RCTs (17,922 patients); 2018 update 39 trials (~20,827 patients); Vickers 1998 review of 252 trial abstracts; a 2023 tai chi falls meta-analysis of 24 RCTs. No counts by modality for the whole literature."
+      citations:
+        - {source: "Vickers et al., Archives of Internal Medicine, 2012, named in report text", type: meta-analysis, citation_strength: unclear}
+        - {source: "Vickers et al., Journal of Pain, 2018 update, named in report text", type: meta-analysis, citation_strength: unclear}
+        - {source: "Do certain countries produce only positive results? A systematic review of controlled trials (Semantic Scholar) [S10]", type: systematic-review, citation_strength: indirect}
+        - {source: "2023 tai chi falls meta-analysis, unnamed in report", type: meta-analysis, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "These are sizes of individual reviews, recorded as volume only."
+    geographic_concentration_of_trials:
+      status: filled
+      value: "Of 252 trial abstracts, all trials originating in China, Japan, Hong Kong and Taiwan were positive (10 of 11 from Russia/USSR also positive). Report states a large share of TCM trials originate in China; Chinese-authored trials increasingly enter Cochrane acupuncture updates (Ernst)."
+      citations:
+        - {source: "Do certain countries produce only positive results? A systematic review of controlled trials (Semantic Scholar) [S10]", type: systematic-review, citation_strength: indirect}
+        - {source: "none given in report (China share of trials)", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "No percentage of trials from China is given."
+    publication_bias_findings:
+      status: filled
+      value: "Vickers, Goyal, Harland and Rees (Controlled Clinical Trials, 1998): of 252 qualifying trial abstracts, all trials from China, Japan, Hong Kong and Taiwan were positive. Later work confirms outcome-reporting bias and selective reporting favoring significant results, which 'may be most pronounced in CHM trials published in Chinese-language journals'."
+      citations:
+        - {source: "Do certain countries produce only positive results? A systematic review of controlled trials [S10], for the 1998 finding", type: systematic-review, citation_strength: indirect, claim_match: matches}
+        - {source: "Do certain countries produce only positive results? A systematic review of controlled trials [S10], for the 'later work' claim on Chinese-language CHM trials", type: systematic-review, citation_strength: indirect, claim_match: mismatch}
+      register: biomedical-evidence
+      notes: "S10 is the 1998 paper (titled for countries generally), yet the report cites it for later work on CHM trials in Chinese-language journals, which it cannot be. Semantic Scholar is an aggregator page."
+    registry_and_reporting_practice:
+      status: filled
+      value: "Low registration rates; one systematic review found the full-publication rate for registered acupuncture trials was only ~10%; inconsistency between registered and published outcomes is 'pervasive'."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: null
+  evidence_state:
+    reviews:
+      status: filled
+      value:
+        - {modality: "Acupuncture, chronic pain (back/neck pain, osteoarthritis, chronic headache)", best_available_review: "Acupuncture Trialists' Collaboration individual-patient-data meta-analysis, Vickers et al., Archives of Internal Medicine", type: "IPD meta-analysis", year: 2012, size: "29 of 31 RCTs, 17,922 patients", conclusion: "Pain scores 0.23 (95% CI 0.13-0.33), 0.16 (0.07-0.25) and 0.15 (0.07-0.24) SD lower than sham for back/neck pain, osteoarthritis and chronic headache; 'Significant differences between true and sham acupuncture indicate that acupuncture is more than a placebo. However, these differences are relatively modest.'", certainty_rating: null, methodological_limitations_noted: "Clinical meaningfulness of the modest difference remains debated; sham/placebo control is the central methodological problem; long dominance of small, low-quality trials."}
+        - {modality: "Acupuncture, chronic pain (update)", best_available_review: "Vickers et al., Journal of Pain", type: "IPD meta-analysis update", year: 2018, size: "39 trials, ~20,827 patients", conclusion: "'acupuncture was significantly superior to sham control... although these differences were relatively modest'.", certainty_rating: null, methodological_limitations_noted: "Ongoing debate whether effect is clinically meaningful or largely a 'theatrical' placebo."}
+        - {modality: "Acupuncture, migraine prophylaxis", best_available_review: "Cochrane review, Linde et al.", type: "Cochrane review", year: 2016, size: null, conclusion: "Acupuncture reduced migraine frequency; effects over sham small, but clinically relevant effects over no/routine care; roughly comparable to prophylactic drugs (headache frequency at least halved in 57% with acupuncture vs 46% with prophylactic drugs after three months).", certainty_rating: "moderate-quality evidence", methodological_limitations_noted: "Effect over sham small."}
+        - {modality: "Acupuncture, tension-type headache", best_available_review: "Cochrane review (author and year not given)", type: "Cochrane review", year: null, size: null, conclusion: "Acupuncture found effective for frequent episodic/chronic tension-type headache.", certainty_rating: null, methodological_limitations_noted: null}
+        - {modality: "Acupuncture point P6 (Neiguan), nausea and vomiting", best_available_review: "Cochrane review (author and year not given)", type: "Cochrane review", year: null, size: null, conclusion: "P6 stimulation effective for postoperative nausea, and combined with antiemetics for nausea and vomiting.", certainty_rating: null, methodological_limitations_noted: "'though with study limitations'."}
+        - {modality: "Acupuncture, overall", best_available_review: "NCCIH assessment; Ernst's updates of Cochrane reviews", type: "institutional assessment; critical commentary", year: null, size: null, conclusion: "NCCIH concludes acupuncture may help with several chronic pain conditions. Ernst notes results tend to become more positive as more Chinese-authored trials are included.", certainty_rating: null, methodological_limitations_noted: "Report reads Ernst's observation as raising bias concerns rather than resolving them."}
+        - {modality: "Tai chi, falls and balance in older adults", best_available_review: "Meta-analysis (authors not named)", type: "meta-analysis", year: 2023, size: "24 RCTs", conclusion: "Fall-risk ratio 0.76 (95% CI 0.71-0.82). NCCIH and multiple systematic reviews support tai chi for balance and falls, knee osteoarthritis pain and fibromyalgia.", certainty_rating: null, methodological_limitations_noted: "Benefits generally attributed to conventional exercise/mind-body mechanisms rather than qi."}
+        - {modality: "Tai chi, fibromyalgia", best_available_review: "Wang et al., NEJM trial", type: "RCT", year: null, size: null, conclusion: "Tai chi as effective or better than aerobic exercise for fibromyalgia.", certainty_rating: null, methodological_limitations_noted: null}
+        - {modality: "Qigong", best_available_review: "unnamed systematic reviews", type: "systematic reviews", year: null, size: null, conclusion: "Benefit for fibromyalgia symptoms and as an adjunct in COPD.", certainty_rating: null, methodological_limitations_noted: "Benefits attributed to conventional exercise/mind-body mechanisms."}
+        - {modality: "Moxibustion, cupping, gua sha, tui na", best_available_review: "none named", type: null, year: null, size: null, conclusion: "Evidence generally weak.", certainty_rating: null, methodological_limitations_noted: "Small/low-quality trials."}
+        - {modality: "Chinese herbal medicine (general)", best_available_review: "'high-quality systematic reviews' (unnamed)", type: "systematic reviews", year: null, size: null, conclusion: "For the large majority of indications the evidence is insufficient, and where effects exist over sham they are typically small; report says evidence is weak, contested or absent for most indications.", certainty_rating: null, methodological_limitations_noted: "Publication bias, poor blinding, selective reporting; positive pooled estimates to be read with heightened skepticism."}
+        - {modality: "Lianhua Qingwen for COVID-19", best_available_review: "multiple meta-analyses (unnamed, mostly China-based)", type: "meta-analyses", year: null, size: null, conclusion: "Plus usual care may shorten fever duration and improve symptom recovery; reviewers repeatedly note 'evidence to support use... is lacking' and strong evidence-based support is absent.", certainty_rating: "mostly low-to-moderate quality (per report)", methodological_limitations_noted: "Underlying trials methodologically weak."}
+        - {modality: "Dietary therapy", best_available_review: "none named", type: null, year: null, size: null, conclusion: "Little rigorous efficacy evidence.", certainty_rating: null, methodological_limitations_noted: null}
+      citations:
+        - {source: "Vickers et al., Archives of Internal Medicine, 2012, named in report text", type: meta-analysis, citation_strength: unclear}
+        - {source: "Vickers et al., Journal of Pain, 2018, named in report text", type: meta-analysis, citation_strength: unclear}
+        - {source: "Linde et al., Cochrane review, 2016, named in report text", type: systematic-review, citation_strength: unclear}
+        - {source: "NCCIH, named in report text", type: institutional, citation_strength: unclear}
+        - {source: "Ernst, updates of Cochrane reviews, named in report text", type: tertiary-review, citation_strength: unclear}
+        - {source: "Tai chi falls meta-analysis 2023, authors not named", type: meta-analysis, citation_strength: unclear}
+        - {source: "Wang et al., NEJM fibromyalgia trial, named in report text", type: primary-study, citation_strength: unclear}
+        - {source: "none given in report (remaining modalities)", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Report also states tai chi and qigong have 'comparatively the best evidence' and that the strongest signals are for acupuncture in chronic pain and tai chi/qigong. Tai chi/qigong are treated by the report as TCM-associated practices, so they are kept here; the reviews may cover the practices generally rather than within TCM."
+    preclinical_and_constituent_evidence:
+      status: filled
+      value:
+        - {agent: "Artemisinin (Artemisia annua)", finding: "Isolated by Tu Youyou's Project 523 using low-temperature extraction, inspired by Ge Hong's 4th-century handbook; artemisinin-based combination therapies are WHO-recommended first-line malaria treatment.", type: "drug discovery / constituent isolation", year: "1967 onward; Nobel 2015", citation: null}
+        - {agent: "Ephedrine and pseudoephedrine (ma huang)", finding: "Ephedrine is a materia-medica-derived drug; ephedra alkaloids caused serious cardiovascular and CNS events.", type: "constituent identification", year: null, citation: null}
+        - {agent: "Aristolochic acid", finding: "Group 1 carcinogen; AA-DNA adducts found in tumor tissue corroborating the link to urothelial carcinoma.", type: "molecular epidemiology", year: null, citation: null}
+        - {agent: "Ursodeoxycholic acid (bear bile)", finding: "Constituent of bear bile for which synthetic and herbal alternatives exist.", type: "constituent", year: null, citation: null}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Report says drug-discovery successes are separate from validation of TCM theory."
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value: []
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Report frames no clinical review as another tradition's evidence. It does caution that the 2015 Australian NHMRC evidence review concerned homeopathy, not TCM or acupuncture, and 'should not be over-read as a ruling on TCM'; that review is not applied to TCM, so no entry."
+  safety:
+    adulteration_and_contamination:
+      status: filled
+      value: "Chinese herbal products frequently adulterated with heavy metals (arsenic, mercury, lead, cadmium) and undeclared pharmaceuticals. A survey of 1,773 samples found 30.51% exceeded at least one metal limit under the Chinese Pharmacopoeia. A Taiwan report found 24% of samples contaminated with at least one conventional pharmacological compound."
+      citations:
+        - {source: "none given in report (survey of 1,773 samples; Taiwan report)", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: null
+    intrinsic_toxicity:
+      status: filled
+      value:
+        - {agent: "Aristolochic acid-containing herbs (Aristolochia, 'Fangchi', 'Mu Tong', 'Guang Fang Ji')", harm: "Group 1 carcinogen; aristolochic acid nephropathy and urothelial carcinoma", mechanism_class: "plant toxin"}
+        - {agent: "Ephedra (ma huang) alkaloids", harm: "heart attack, stroke, seizure, death", mechanism_class: "plant toxin"}
+        - {agent: "Herbal products generally", harm: "herb-induced liver injury, 'recognized and growing'", mechanism_class: "plant toxin"}
+        - {agent: "Herbal products taken with conventional drugs", harm: "herb-drug interactions", mechanism_class: "interaction"}
+        - {agent: "Acupuncture", harm: "pneumothorax, CNS/spinal injury, infections (bacterial; historically hepatitis from reused needles), vasovagal syncope", mechanism_class: "procedural"}
+        - {agent: "Moxibustion, cupping, gua sha", harm: "burns (moxibustion), skin marking (cupping, gua sha)", mechanism_class: "procedural"}
+      citations:
+        - {source: "Chen et al., PNAS, 2012, named in report text", type: primary-study, citation_strength: unclear}
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Mechanism class for hepatotoxicity is not stated in the report; 'plant toxin' is the mapper's assignment. Chen et al. (200,000-person random sample of Taiwan's insured, 1997-2003): about one-third consumed herbs containing, or likely to contain, aristolochic acid; Taiwan has the highest reported upper urinary tract cancer incidence."
+    documented_adverse_events:
+      status: filled
+      value:
+        - {event: "Aristolochic acid nephropathy and urothelial carcinoma in Belgian women taking slimming pills", detail: "some developed renal failure and urothelial carcinoma; AA-DNA adducts in tumor tissue"}
+        - {event: "Ephedra supplements", detail: "more than 16,000 adverse-event reports before FDA ban"}
+        - {event: "Acupuncture adverse events, Chinese-language literature 1956-2010 (He, Zhao, Li, Xi and Guo, J Altern Complement Med, 2012)", detail: "167 articles, 1,038 cases, 35 deaths; syncope 468 cases, pneumothorax 307, subarachnoid hemorrhage 64"}
+        - {event: "Large prospective series (Witt et al.)", detail: "229,230 patients; serious events uncommon in competent practice"}
+      citations:
+        - {source: "He, Zhao, Li, Xi and Guo, Journal of Alternative and Complementary Medicine, 2012, named in report text", type: systematic-review, citation_strength: unclear}
+        - {source: "Witt et al., named in report text", type: primary-study, citation_strength: unclear}
+        - {source: "none given in report (Belgian series, ephedra reports)", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: null
+    regulatory_actions_taken:
+      status: filled
+      value:
+        - {action: "US FDA ban on ephedra-containing dietary supplements", date: "2004", detail: "First ban of an herbal supplement; upheld by the US Court of Appeals in 2006."}
+        - {action: "Rhino horn and tiger bone removed from official Chinese pharmacopoeia", date: "1993", detail: "China briefly lifted and then re-suspended a ban in 2018."}
+        - {action: "FDA reclassification of acupuncture needles Class III to Class II", date: "1996-12-06", detail: "Regulates manufacture and labeling, not efficacy."}
+        - {action: "WHO position that ICD-11 traditional medicine chapter is optional and not for mortality reporting", date: "2019", detail: "Advisory framing; see field 16."}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: null
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value: []
+      citations: []
+      register: biomedical-evidence
+      notes: "Report treats the Belgian slimming-pill cases and US ephedra supplement reports as harms of Chinese herbs, so they are kept in the main leaves. The Belgian and US data arise outside China; the report does not flag them as another tradition's."
+  contact_and_borrowing:
+    relationships:
+      status: partial
+      value:
+        - {other_tradition: "Korean and Japanese traditional medicine", kind: same_system_variant, direction: null, period: "ICD-11, 2019", evidence_type: null, status: null}
+        - {other_tradition: "Biomedicine (Western medicine)", kind: exchange, direction: "TCM and Western medicine combined in state programmes", period: "1958 onward (integration phase); barefoot doctors 1968-1985", evidence_type: null, status: demonstrated}
+        - {other_tradition: "Other premodern traditions (unnamed)", kind: parallel, direction: null, period: null, evidence_type: "structural parallel", status: convergence}
+      citations:
+        - {source: "Traditional Medicine Diagnostic Codes in ICD-11 and Alternative Diagnostic Classifications in the Mainstream Healthcare (ResearchGate PDF) [S1]", type: unclear, citation_strength: indirect}
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: historical-scholarship
+      notes: "Report treats the Korean/Japanese relation only as a harmonized classification, not as shared origin or exchange, so the kind values here are loose. Prompt asked for relationships to neighbouring systems, but the report says little; historical exchange with Japanese, Korean or other neighbouring traditions is not described. Report says TCM's correspondence systems are 'shared in structure with other premodern traditions' without naming them."
+    corroborated_by:
+      status: deferred
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: "Computed at synthesis."
+  contemporary_controversies:
+    who_engagement:
+      status: incidental
+      value: "WHO Traditional Medicine Strategy 2014-2023, developed with substantial technical, logistical and financial support from China and Hong Kong bodies. In 2019 WHO incorporated traditional-medicine diagnostic categories into ICD-11 (Chapter 26), 'a union set of harmonized traditional medicine conditions of the Chinese, Japanese, and Korean classifications'; WHO stresses the chapter is optional, for epidemiological data, not mortality reporting. Nature editorial (5 June 2019): the chapter 'is likely to backfire... risks legitimizing an unfounded underlying philosophy and some unscientific practice'; critics flagged conflicts of interest in China-linked funding. WHO later held up the barefoot doctor model as an influence on Alma-Ata."
+      citations:
+        - {source: "Traditional Medicine Diagnostic Codes in ICD-11 and Alternative Diagnostic Classifications in the Mainstream Healthcare (ResearchGate PDF) [S1]", type: unclear, citation_strength: indirect}
+        - {source: "The World Health Organization: Embracing traditional Chinese medicine pseudoscience in ICD-11, Respectful Insolence blog [S2]", type: unclear, citation_strength: indirect}
+        - {source: "Nature editorial, 5 June 2019, named in report text", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: "S2 is a skeptic blog cited for WHO's own statement that the chapter is optional, so the claim about WHO's position rests on a secondary blog. Not a search target (incidental)."
+    integration_disputes:
+      status: incidental
+      value: "Report covers only the Western-context debate: adoption of acupuncture and other CAM by academic medical centres under 'integrative medicine' banners is contested between proponents (patient-centered, holistic) and critics (mainstreaming of unproven therapies). Nothing on integration disputes or litigation within China."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Incidental; not a search target."
+    conservation_and_sourcing:
+      status: incidental
+      value: "Animal-derived materia medica drives illegal wildlife trade: pangolin scales (IUCN estimates over a million poached in a decade), rhino horn, tiger bone, leopard bone, bear bile, donkey hides (ejiao). EIA documented at least 88 TCM products from 72 Chinese companies using threatened-species parts despite CITES. Donkey Sanctuary 2024: at least 5.9 million donkey skins per year needed (conservative estimate; projected 6.7 million by 2027); 2016 University of Reading study calculated 2.3-4.8 million; Botswana's donkey population reportedly fell ~70% between 2011 and 2021. Bear bile farming estimates for China: ~10,000 (Animals Asia), ~15,000 (IUCN Bear Specialist Group), more than 20,000 (World Animal Protection)."
+      citations:
+        - {source: "The Donkey Sanctuary, 2024 report, named in report text", type: institutional, citation_strength: unclear}
+        - {source: "Environmental Investigation Agency, named in report text", type: institutional, citation_strength: unclear}
+        - {source: "University of Reading, 2016 study, named in report text", type: primary-study, citation_strength: unclear}
+      register: regulatory
+      notes: "Report says these figures vary by source and method and the 6.7 million figure is a forecast. Incidental; not a search target."
+    intellectual_property:
+      status: incidental
+      value: "The 2016 Law protects secret TCM formulas as state secrets. No biopiracy cases, defensive databases or Nagoya exposure discussed."
+      citations:
+        - {source: "Law of the People's Republic of China on Traditional Chinese Medicine [S11]", type: statute, citation_strength: unclear}
+      register: regulatory
+      notes: "Incidental; not a search target."
+    politicized_episodes:
+      status: incidental
+      value: "China heavily promoted TCM formulas during COVID-19 (Lianhua Qingwen; the 'three drugs and three formulas'); TCM elevated to national strategy and soft-power asset; Mao promoted it as inexpensive and abundant."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: regulatory
+      notes: "Incidental; not a search target."
+    research_methodology_disputes:
+      status: incidental
+      value: "Sham/placebo controls: some trials show acupuncture superior to sham, some superior to usual care but not sham, some no benefit; whether the modest true-versus-sham difference is clinically meaningful or a 'theatrical' placebo is debated. Individualization: proponents advocate pragmatic, real-world and whole-system trial designs for pattern-based practice; critics say these cannot substitute for rigorous efficacy testing against adequate controls. Vickers et al. on one side of the effect-size reading, skeptical reviewers such as Ernst on the other."
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: biomedical-evidence
+      notes: "Incidental; not a search target. Named parties are only Vickers et al. and Ernst; proponents and critics are otherwise unnamed."
+  self_reported_gaps:
+    inventory:
+      status: filled
+      value:
+        - {kind: source_caveat, text: "This report prioritizes systematic reviews, Cochrane reviews, individual-patient-data meta-analyses, WHO/NCCIH/EMA/FDA materials, and peer-reviewed history-of-medicine scholarship. Where primary trials or NGO reports are cited, they are illustrative. Many TCM efficacy claims circulate primarily through low-quality or commercially/politically interested sources; these were down-weighted."}
+        - {kind: contested_item, text: "Conflicting evidence is real: the acupuncture-for-pain literature genuinely disagrees on whether the true-vs-sham difference is clinically meaningful; reasonable experts differ."}
+        - {kind: source_caveat, text: "Publication bias caveat: because a large share of TCM trials originate in China where positive-result rates approach 100%, positive meta-analytic pooled estimates for many modalities should be interpreted with heightened skepticism."}
+        - {kind: source_caveat, text: "Market and wildlife figures vary by source and methodology and some (e.g., the ejiao 6.7-million projection) are forecasts rather than measured facts; they should be read as indicative. Bear-bile captivity numbers span a wide NGO/IUCN range."}
+        - {kind: source_caveat, text: "The 2015 Australian NHMRC evidence review frequently cited in CAM debates concerned homeopathy specifically, not TCM/acupuncture, and should not be over-read as a ruling on TCM."}
+        - {kind: contested_item, text: "Global market estimates from commercial research firms vary enormously (e.g., ~USD 29 billion vs ~USD 86 billion vs outliers above USD 280 billion for 2024-2026) because of differing scope definitions, and should be treated as unreliable."}
+        - {kind: contested_item, text: "Attributed origin of the English term: 'variously attributed to the work of Kan-Wen Ma or to party propagandists in the mid-1950s'."}
+      citations: []
+      register: historical-scholarship
+      notes: "Report's own caveats; kept separate from the extraction's absent findings."
+  report_conclusions:
+    revision_thresholds:
+      status: filled
+      value:
+        - {domain: "acupuncture efficacy", threshold: "consistent replication of true-vs-sham acupuncture superiority in large multinational (non-China-dominated) trials", would_change: "the report's assessment (modest effect over sham, clinical meaningfulness debated)"}
+        - {domain: "herbal formulas", threshold: "high-quality RCT evidence for specific herbal formulas", would_change: "the report's assessment that evidence is weak, contested or absent for most indications"}
+        - {domain: "diagnosis", threshold: "validated, reproducible diagnostic criteria", would_change: "the report's assessment that diagnostic reproducibility is poor"}
+      citations: []
+      register: biomedical-evidence
+      notes: "Report author's stance, not a finding."
+    recommendations:
+      status: filled
+      value:
+        - {audience: "patients/consumers", text: "For chronic low-back/neck pain, knee osteoarthritis, tension headache or migraine, a time-limited trial of acupuncture from a licensed practitioner using single-use sterile needles is reasonable as an adjunct; reassess after ~6-8 sessions and stop if no meaningful improvement."}
+        - {audience: "patients/consumers", text: "For balance, falls prevention and fibromyalgia, tai chi/qigong are low-risk and supported by reasonable evidence."}
+        - {audience: "patients/consumers", text: "Treat Chinese herbal products with caution: avoid products containing aristolochic acid or ephedra; buy only from regulated sources; disclose all herbal use to physicians; avoid animal-derived products."}
+        - {audience: "clinicians and health systems", text: "Frame acupuncture and tai chi within evidence-based non-pharmacological pain and mobility pathways, not as validation of qi/meridian theory; screen for and counsel against unregulated herbal products, especially in patients with renal or hepatic disease."}
+        - {audience: "researchers/regulators", text: "Prioritize large, pre-registered, adequately blinded, adequately powered trials with published protocols; enforce trial registration and outcome-reporting standards; apply pharmacovigilance and contaminant testing to herbal products."}
+      citations: []
+      register: biomedical-evidence
+      notes: "Report author's stance, not a finding."
+  economics:
+    domestic_market_size:
+      status: incidental
+      value:
+        - {figure: "~900 billion (domestic TCM industrial output value)", currency: "RMB", year: 2024, measure: "industrial output value", estimator: "'industry estimate' (unnamed)"}
+      citations:
+        - {source: "none given in report ('industry estimate')", type: unclear, citation_strength: unclear}
+      register: economic
+      notes: "Report calls this 'the most defensible macro anchor'."
+    global_market_estimates:
+      status: incidental
+      value:
+        - {figure: "~29 billion", currency: "USD", year: "2024-2026", measure: "global TCM market", estimator: "commercial research firms (unnamed)"}
+        - {figure: "~86 billion", currency: "USD", year: "2024-2026", measure: "global TCM market", estimator: "commercial research firms (unnamed)"}
+        - {figure: "above 280 billion (outliers)", currency: "USD", year: "2024-2026", measure: "global TCM market", estimator: "commercial research firms (unnamed)"}
+      citations:
+        - {source: "commercial research firms, unnamed in report", type: market-research, citation_strength: indirect}
+      register: economic
+      notes: "Report says estimates vary enormously because of differing scope definitions and 'should be treated as unreliable'. Not reconciled."
+    major_manufacturers:
+      status: incidental
+      value:
+        - {name: "Yunnan Baiyao Group", products: null, figure: "40.03 billion (~USD 5.5 billion)", currency: "CNY", year: 2024, measure: "operating revenue"}
+      citations:
+        - {source: "none given in report", type: unclear, citation_strength: unclear}
+      register: economic
+      notes: "Report calls this 'a concrete verifiable data point'. Lianhua Qingwen is named as a formula, no manufacturer given."

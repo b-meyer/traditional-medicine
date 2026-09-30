@@ -1,0 +1,94 @@
+system: tcm
+pass: verify
+batch: 4
+entries:
+- path: materia_medica.pharmacological_framework
+  source_report: v1
+  value: Multi-herb formulas individualized to the pattern rather than single agents; dietary items sorted
+    by a warming/cooling framework.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: materia_medica.flagship_agents
+  source_report: v2
+  value:
+  - Qinghao (Artemisia annua) yielding artemisinin
+  - Ma huang (ephedra)
+  - He Shou Wu (Polygonum multiflorum)
+  - Aristolochia species
+  - Ba Jiao Lian, Chi R Yun, Jin Bu Huan
+  - Pangolin scales, bear bile, rhino horn, tiger bone
+  - Lianhua Qingwen
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: disruption.loss_of_patronage
+  source_report: v2
+  value: 'Late Qing decline: with rise of Western medicine, acupuncture and yin-yang/meridian theory increasingly
+    seen as superstitious; acupuncture and moxibustion excluded from the Imperial Medical Academy by Daoguang
+    Emperor decree, 1822.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: disruption.post_colonial_disruption
+  source_report: v2
+  value:
+  - label: Maoist systematization of Chinese medicine
+    date: 1950s
+    description: Diverse styles systematized into a standardized curriculum; 'Traditional' applied mid-1950s;
+      the report frames this as transformation and reinvention rather than institutional split or relocation.
+  weak_citations:
+  - source: Chinese Medicine in Early Communist China - Taylor (Google Books) [S14]
+    type: catalog-listing
+    citation_strength: indirect
+- path: revival_and_institutionalization.revival_context
+  source_report: v2
+  value: Anti-imperialist nationalism (guoyi movement); PRC state-led nation-building and mass health
+    needs (Western doctors learn from Chinese medicine campaign, barefoot doctors); scientization; later
+    global market and soft-power promotion.
+  weak_citations:
+  - source: Chinese Medicine in Early Communist China - Taylor (Google Books) [S14]
+    type: catalog-listing
+    citation_strength: indirect
+- path: revival_and_institutionalization.key_figures
+  source_report: v2
+  value:
+  - 'Cheng Dan''an (1899-1957): Tokyo-trained, founded China Acupuncture Research Centre 1930, relocated
+    points to nerve pathways, thinner steel needles 1953'
+  - 'Zhang Xichun: integration pioneer'
+  - 'Shi Jinmo: leading defender'
+  - 'Chen Guofu: Nationalist official defender'
+  - 'Mao Zedong: promoted TCM for the masses (per Li Zhisui, privately skeptical)'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.state_sponsorship
+  source_report: v2
+  value: PRC systematization and institution-building from the 1950s; 2016 TCM Law giving equal legal
+    footing with biomedicine (effective 1 July 2017); domestic promotion during COVID-19; Belt and Road
+    promotion abroad.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.diffusion_abroad
+  source_report: v2
+  value:
+  - region: United States
+    period: '1971'
+    channel: diplomatic opening
+    description: James Reston's New York Times article on post-appendectomy acupuncture in Beijing during
+      the Nixon-era opening began the modern global wave.
+  - region: Belt and Road countries
+    period: 2010s-2019
+    channel: state soft-power and commercial export
+    description: 'Nature editorial: China promotes TCM around the world often on the back of Belt and
+      Road.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear

@@ -1,0 +1,169 @@
+system: tcm
+pass: verify
+batch: 2
+entries:
+- path: canon_and_transmission.redaction_history
+  source_report: v2
+  value: 'Wang Bing''s Tang recension (762 CE): collected fragments, reorganized Suwen into 81 treatises
+    in 24 juan, added two ''lost'' discourses and seven wuyun liuqi discourses, inserted over 5,000 commentaries;
+    treatises 72 and 73 survive only as titles; built on Quan Yuanqi''s early-6th-century commented version.
+    Song imperial editorial office produced the received Chong Guang Bu Zhu Huangdi Neijing Suwen; sources
+    date the start to 1053 CE and cite the Bureau for Revising Medical Texts of 1057; editors Lin Yi,
+    Sun Qi, Gao Baoheng.'
+  weak_citations:
+  - source: Huangdi Neijing - New World Encyclopedia [S2]
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: Huangdi Neijing (Wikipedia) [S1]
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: Huangdi Neijing - wikidoc [S3]
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: canon_and_transmission.key_figures
+  source_report: v2
+  value:
+  - name: Zhang Zhongjing
+    dates: not given
+    role: attributed author of Shanghan Zabing Lun
+  - name: Quan Yuanqi
+    dates: early 6th century
+    role: commented version on which Wang Bing built
+  - name: Wang Bing
+    dates: 762 CE recension
+    role: Tang editor/commentator of Suwen
+  - name: Lin Yi, Sun Qi, Gao Baoheng
+    dates: Song, c.1053-1057
+    role: editors at the imperial editorial office
+  - name: Du Fu
+    dates: 14th century
+    role: critic arguing Suwen had multiple authors
+  - name: Yang Shangshan
+    dates: not given
+    role: author of Tai su Neijing recension
+  - name: Tamba Genkan
+    dates: Edo period
+    role: Japanese scholar preserving Tai su
+  - name: Ge Hong
+    dates: not given
+    role: author of Zhou Hou Bei Ji Fang
+  weak_citations:
+  - source: Huangdi Neijing - New World Encyclopedia [S2]
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: Huangdi Neijing - Elisabeth Rochat site [S46]
+    type: practitioner-site
+    citation_strength: indirect
+- path: canon_and_transmission.dated_events
+  source_report: v2
+  value:
+  - label: Mawangdui Tomb 3 sealed
+    date: 168 BCE
+    description: Tomb containing seven medical manuscripts
+  - label: Mawangdui excavation
+    date: '1973'
+    description: Excavation of Tomb 3 manuscripts
+  - label: Quan Yuanqi commented Suwen
+    date: early 6th century CE
+    description: Basis for Wang Bing
+  - label: Wang Bing recension of Suwen
+    date: 762 CE
+    description: 81 treatises, 24 juan, over 5,000 commentaries
+  - label: Song editorial revision of Suwen
+    date: 1053-1057 CE
+    description: Sources give 1053 start and Bureau for Revising Medical Texts 1057
+  - label: Harper Early Chinese Medical Literature published
+    date: '1998'
+    description: Translation and 180-page study of Mawangdui medical manuscripts
+  weak_citations:
+  - source: Huangdi Neijing - wikidoc [S3]
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: Huangdi Neijing - New World Encyclopedia [S2]
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: construct_debate.positions
+  source_report: v2
+  value:
+  - scholar: Kim Taylor
+    work: Chinese Medicine in Early Communist China, 1945-63
+    year: 2005
+    position: TCM as a standardized entity was invented in the 1950s PRC nation-building project; adjective
+      'traditional' is a mid-1950s coinage.
+    evidence_base: Archival evidence of 1950s institution-building and terminology.
+  - scholar: Paul Unschuld
+    work: not named in this context
+    year: null
+    position: Stresses textual layering and that modern practice is a selective reconstruction.
+    evidence_base: Textual history.
+  - scholar: Sean Hsiang-lin Lei
+    work: Neither Donkey nor Horse
+    year: null
+    position: Decisive transformations in the Republican era; 'mongrel medicine'.
+    evidence_base: Historical study of Republican- and Communist-era reconciliation of pattern and disease.
+  - scholar: Bridie Andrews
+    work: The Making of Modern Chinese Medicine, 1850-1960
+    year: null
+    position: Decisive transformations in the Republican era via scientization.
+    evidence_base: Historical study.
+  - scholar: Eric Karchmer and Edzard Ernst
+    work: not named
+    year: null
+    position: Frame today's system through Hobsbawm's 'invented tradition'.
+    evidence_base: Anthropology of PRC TCM education (Karchmer); critique (Ernst).
+  - scholar: Volker Scheid
+    work: not named
+    year: null
+    position: '''Plurality within continuity'': Chinese medicine always internally diverse and continuously
+      reinvented, so 1950s systematization is a transformation, not fabrication.'
+    evidence_base: Argument that 'invention' mischaracterizes normal traditional change.
+  - scholar: PRC official narratives and some practitioner-scholars and textual historians
+    work: n/a
+    year: null
+    position: Unbroken transmission; continuity of Shanghan Lun formula tradition and materia medica.
+    evidence_base: Persistence of canonical texts, formulas, lineages.
+  - scholar: Li Zhisui
+    work: memoir
+    year: null
+    position: Alleges Mao privately did not believe in Chinese medicine while promoting it for the masses.
+    evidence_base: Memoir testimony.
+  weak_citations:
+  - source: Chinese Medicine in Early Communist China - Taylor (Google Books) [S14]
+    type: catalog-listing
+    citation_strength: indirect
+- path: construct_debate.report_adjudication
+  source_report: v2
+  value: 'TL;DR: a ''scholarly near-consensus'' that the standardized system marketed as TCM is ''substantially
+    a mid-20th-century construct'', while textual roots are genuinely ancient. In the caveats: the debate
+    is ''genuinely unsettled at the level of interpretation, even though the underlying facts (1950s institution-building,
+    1822 acupuncture decree, Cheng Dan''an''s reforms) are agreed''. Scheid is called ''the most cited
+    middle position''.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.constituents
+  source_report: v2
+  value: 'Qi (vital energy/vapor); yin and yang; wuxing (five phases: wood, fire, earth, metal, water);
+    zang-fu organ systems as functional-cosmological categories (e.g. Kidney governs water metabolism,
+    reproduction, bone, jing); jingluo channels and collaterals along which qi and blood circulate.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.balance_logic
+  source_report: v2
+  value: Health is harmonious flow of qi and balance of yin and yang; illness arises when pathogenic factors
+    disturb this balance.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.correspondence_system
+  source_report: v2
+  value: Wuxing five-phase correspondences and the wuyun liuqi (five periods and six qi) scheme; Han-era
+    correlative cosmology.
+  weak_citations:
+  - source: Huangdi Neijing - New World Encyclopedia [S2]
+    type: open-encyclopedia
+    citation_strength: indirect

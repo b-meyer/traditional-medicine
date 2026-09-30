@@ -1,0 +1,215 @@
+system: tcm
+pass: verify
+updates:
+  - path: revival_and_institutionalization.dated_events
+    outcome: unverifiable
+    searches:
+      - "Cheng Dan'an 1930 China Acupuncture Research Society Wuxi steel needles replaced iron"
+      - "Law of the PRC on Traditional Chinese Medicine adopted 25 December 2016 effective 1 July 2017"
+      - "Reston Now, Let Me Tell You About My Appendectomy in Peking New York Times July 26 1971"
+      - "1956 four colleges of traditional Chinese medicine Beijing Shanghai Guangzhou Chengdu China Academy 1955"
+  - path: legal_status.jurisdictions
+    outcome: unverifiable
+    searches:
+      - "Chinese Medicine Ordinance Cap 549 Hong Kong Chinese Medicine Council established 1999"
+      - "sso.agc.gov.sg TCM Practitioners Act 2000 (page blocked)"
+      - "Law of the PRC on Traditional Chinese Medicine adopted 25 December 2016 effective 1 July 2017"
+  - path: legal_status.supranational_standards
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - body: ISO/TC 249
+          instrument: Terminology standards for Traditional Chinese Medicine
+          year: null
+          scope: Terminology; naming dispute with Korea and Japan
+        - body: WHO
+          instrument: International Standard Terminologies
+          year: null
+          scope: Terminology standards
+        - body: European Union
+          instrument: Traditional Herbal Medicinal Products Directive 2004/24/EC
+          year: 2004
+          scope: Registration of herbal products on the basis of traditional use
+      citations:
+        - source: Directive 2004/24/EC of the European Parliament and of the Council of 31 March 2004 amending Directive 2001/83/EC as regards traditional herbal medicinal products, OJ L 136, 30.4.2004, pp. 85-90 (EUR-Lex)
+          type: statute
+          citation_strength: direct
+        - source: ISO committee page, ISO/TC 249 (iso.org/committee/598435.html; listed as "Traditional medicine")
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected in part. EU entry verified against the Directive itself (simplified registration for traditional herbal medicinal products, amending 2001/83/EC). ISO/TC 249 is established (2009) by ISO and is now titled 'Traditional medicine' on ISO's own page, and its scope is quality and safety of raw materials, products, devices and informatics, not terminology alone; the value's 'Terminology standards for Traditional Chinese Medicine' is therefore imprecise as a description of the committee. Not verified: the WHO terminology instrument (year, title) and the 'naming dispute with Korea and Japan' claim; left unchanged. ISO page was not retrievable directly (403) so the title and scope come from search-result excerpts of iso.org."
+    searches:
+      - "ISO/TC 249 Traditional Chinese medicine scope standardization iso.org"
+      - "Directive 2004/24/EC amending Directive 2001/83/EC traditional herbal medicinal products"
+  - path: education_and_licensure.licensure_requirements
+    outcome: unverifiable
+    searches:
+      - "TCM law 2016 article 15 practitioners qualification assessment simplified licensing special skills"
+      - "NCCAOM state licensing acupuncture (not pursued to primary source)"
+  - path: education_and_licensure.tradition_content_in_biomedical_curriculum
+    outcome: confirmed
+    field:
+      status: filled
+      value: "'TCM is a required component of biomedical education in China'; TCM hospitals coexist with Western medicine."
+      citations:
+        - source: "Integrating traditional Chinese medicine into Chinese medical education reform: issues and challenges. Indian Journal of Medical Ethics / IJME 2017 (PMC5420456)"
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+      register: historical-scholarship
+      notes: "Confirmed for the first clause: the IJME paper states TCM is a required rather than optional component of biomedical education in China, with nationally standardized TCM courses stipulated by the Ministry of Health for undergraduate biomedical universities. Excerpt seen via search result, not the full text. The TCM-hospital coexistence clause was not separately sourced."
+    searches:
+      - "TCM is a required component of biomedical education in China Western medicine students required course"
+  - path: literature_state.registry_and_reporting_practice
+    outcome: unverifiable
+    searches:
+      - "acupuncture trial registration failures improved since 2005 ICMJE Chinese medicine trials prospective registration"
+  - path: evidence_state.reviews
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - modality: Acupuncture, chronic pain
+          best_available_review: Acupuncture Trialists' Collaboration IPD meta-analysis (Vickers)
+          type: meta-analysis
+          year: 2012; update 2018
+          size: '2012: 29 of 31 eligible trials, 17,922 patients; 2018 update: 39 trials, 20,827 patients'
+          conclusion: 'Superior to sham and to no-acupuncture. Effect ~0.2 SD vs sham, ~0.5 SD vs no-acupuncture (2012: 0.23 to 0.16 SD vs sham and 0.55 to 0.42 vs no-acupuncture depending on condition). 2018: acupuncture superior to sham and to no acupuncture for each pain condition (all P<.001); effects persist over time with about a 15% decrease at 1 year; authors conclude acupuncture is effective for chronic pain. Response rates about 30% no acupuncture, 42.5% sham, 50% real (not checked against the full text).'
+          certainty_rating: not given
+          methodological_limitations_noted: Report notes specific effect small and contextual effects larger. 2012 abstract likewise says true-vs-sham differences were modest and additional factors contribute substantially.
+        - modality: Acupuncture, migraine prophylaxis
+          best_available_review: Cochrane, Linde et al. CD001218
+          type: systematic-review
+          year: 2016
+          size: 22 trials, 4985 participants
+          conclusion: 'Adding acupuncture to symptomatic treatment reduced headache frequency; a small effect over sham was also found. Headache frequency at least halved in 57% with acupuncture vs 46% with prophylactic drugs at three months (RR 1.24, 95% CI 1.08 to 1.44), with fewer adverse effects than drugs.'
+          certainty_rating: 'moderate overall (authors: overall quality of the evidence was moderate)'
+          methodological_limitations_noted: Risk of performance and detection bias in comparisons with no-acupuncture and drug controls because blinding not possible; long-term studies over one year lacking.
+        - modality: Acupuncture, tension-type headache
+          best_available_review: Cochrane, Linde et al. CD007587
+          type: systematic-review
+          year: 2016
+          size: 12 trials, 2349 participants
+          conclusion: '''a course of acupuncture consisting of at least six treatment sessions can be a valuable option''; in two large trials 48/100 halved headache frequency vs 17/100 with usual care only.'
+          certainty_rating: not given
+          methodological_limitations_noted: not given
+        - modality: Acupuncture, chronic low back pain
+          best_available_review: Cochrane, Mu et al. CD013814
+          type: systematic-review
+          year: 2020
+          size: 33 studies, 8,270 participants
+          conclusion: Only low-certainty evidence for pain relief vs sham in the immediate term (MD -9.22 on 0-100 VAS, 95% CI -13.82 to -4.61; 7 trials, 1403 participants; below clinically important threshold); moderate-certainty benefit vs no treatment (MD -20.32).
+          certainty_rating: low (vs sham); moderate (vs no treatment)
+          methodological_limitations_noted: not given
+        - modality: PC6 acupressure/acupuncture, nausea and vomiting
+          best_available_review: Cochrane, Lee et al. CD003281; 2025 network meta-analysis update CD003281.pub5
+          type: systematic-review
+          year: 2015; 2025
+          size: 59 trials, 7,667 participants (2015)
+          conclusion: 'NNT about 5 for nausea, about 4 for vomiting (not rechecked); 2015 authors: low-quality evidence supports PC6 over sham; "no further sham comparison trials are needed"; moderate-quality evidence of no difference from antiemetic drugs. 2025 NMA: invasive and noninvasive PC6 stimulation combined with antiemetics may reduce nausea and vomiting vs sham.'
+          certainty_rating: low (vs sham); moderate (vs antiemetic drugs); very low (combination vs drugs alone) (2015)
+          methodological_limitations_noted: not given
+        - modality: Moxibustion, breech presentation
+          best_available_review: Cochrane, Coyle, Smith and Peat CD003928
+          type: systematic-review
+          year: 2012 (report) / 2023 update
+          size: '2012: 8 trials, 1,346 women; 2023: 13 studies, 2,181 women'
+          conclusion: '2012: ''limited evidence to support the use of moxibustion for correcting breech presentation''. 2023: moderate-certainty evidence that moxibustion plus usual care ''probably reduces the chance of non-cephalic presentation at birth''.'
+          certainty_rating: moderate (2023)
+          methodological_limitations_noted: not given
+        - modality: Lianhua Qingwen, COVID-19
+          best_available_review: Updated meta-analysis of efficacy and safety
+          type: meta-analysis
+          year: null
+          size: not given
+          conclusion: Symptom improvement reported when added to standard care, but evidence 'lacks strong evidence'.
+          certainty_rating: not given
+          methodological_limitations_noted: Evidence base dominated by low-quality Chinese trials.
+        - modality: Tai chi
+          best_available_review: NCCIH summaries; Natural Therapies Review 2024 (Cochrane Australia evidence)
+          type: tertiary-review
+          year: 2024 (published 2025)
+          size: not given
+          conclusion: 'NCCIH: ''may improve balance and stability in older people and reduce the risk of falls'', may help knee-osteoarthritis pain and fibromyalgia sleep/coping; research ''preliminary''. Natural Therapies Review 2024: moderate-certainty evidence for tai chi (recommended for re-inclusion).'
+          certainty_rating: moderate (Natural Therapies Review 2024)
+          methodological_limitations_noted: 'Report: research remains ''preliminary''. Tai chi reviews cover the modality in general and are treated by the report as TCM''s own.'
+        - modality: Natural therapies incl. acupuncture and other TCM modalities (insurance review)
+          best_available_review: 2015 Australian Government Review of natural therapies for private health insurance
+          type: institutional
+          year: 2015
+          size: 17 therapies
+          conclusion: No clear evidence of clinical effectiveness across therapies assessed.
+          certainty_rating: not given
+          methodological_limitations_noted: not given; report notes the McDonald and Janz 2017 Acupuncture Evidence Project is an industry-body publication, not a government review, and should not be conflated.
+        - modality: Cupping, qigong
+          best_available_review: none identified
+          type: null
+          year: null
+          size: null
+          conclusion: '''largely low-quality/inconclusive''.'
+          certainty_rating: not given
+          methodological_limitations_noted: not given
+        - modality: Most herbal formulas
+          best_available_review: none identified
+          type: null
+          year: null
+          size: null
+          conclusion: Report classes them as inconclusive/low-quality.
+          certainty_rating: not given
+          methodological_limitations_noted: Overwhelmingly positive Chinese trials of low quality; publication bias.
+      citations:
+        - source: Vickers AJ et al. Acupuncture for chronic pain, individual patient data meta-analysis. Archives of Internal Medicine 2012 (PMID 22965186)
+          type: meta-analysis
+          citation_strength: direct
+        - source: Vickers AJ et al. Acupuncture for chronic pain, update of an individual patient data meta-analysis. Journal of Pain 2018 (PMID 29198932)
+          type: meta-analysis
+          citation_strength: direct
+        - source: Linde K et al. Acupuncture for the prevention of episodic migraine. Cochrane Database Syst Rev 2016, CD001218 (PMID 27351677)
+          type: systematic-review
+          citation_strength: direct
+        - source: Linde K et al. Acupuncture for the prevention of tension-type headache. Cochrane Database Syst Rev 2016, CD007587 (PMID 27092807; plain language summary at cochrane.org/evidence/CD007587)
+          type: systematic-review
+          citation_strength: direct
+        - source: Mu J et al. Acupuncture for chronic nonspecific low back pain. Cochrane Database Syst Rev 2020, CD013814
+          type: systematic-review
+          citation_strength: direct
+        - source: Lee A et al. Stimulation of the wrist acupuncture point PC6 for preventing postoperative nausea and vomiting. Cochrane Database Syst Rev 2015 (PMID 26522652) and 2025 network meta-analysis CD003281.pub5 (PMID 40938065)
+          type: systematic-review
+          citation_strength: direct
+        - source: Coyle ME, Smith CA, Peat B. Cephalic version by moxibustion for breech presentation. Cochrane Database Syst Rev 2012 and 2023 (CD003928)
+          type: systematic-review
+          citation_strength: direct
+        - source: Australian Government Department of Health, 2015 Review of the Australian Government Rebate on Private Health Insurance for Natural Therapies (health.gov.au)
+          type: institutional
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Corrected in part. Changes: (1) Vickers size: 39 trials / 20,827 patients is the 2018 update; the 2012 analysis had 29 of 31 eligible trials and 17,922 patients. (2) PC6: the Cochrane 2015 conclusion reads 'no further sham comparison trials are needed', not the quoted wording; certainty ratings now filled from the abstract (low vs sham, moderate vs antiemetic drugs, very low combination). (3) Moxibustion 2012: the 2012 review concluded 'limited evidence to support', not 'no conclusive evidence'. (4) Sizes and certainty added for migraine (22 trials, 4985 participants; moderate) and tension-type headache (12 trials, 2349 participants) from the Cochrane abstracts. Confirmed unchanged: Vickers effect-size ranges (0.15-0.23 vs sham, 0.42-0.57 vs no acupuncture); migraine 57% vs 46%, RR 1.24; tension-type 48/100 vs 17/100 and six-session wording (from the Cochrane plain language summary); low back pain 33 studies, 8,270 participants, MD -9.22; PC6 59 trials, 7,667 participants; moxibustion 2023 wording and moderate certainty; 2015 Australian review of 17 therapies. NOT independently verified and left as reported: the Vickers 2018 response rates (30/42.5/50%) and the quote about placebo effects (full text not read); PC6 NNT figures; Lianhua Qingwen meta-analysis (no citation, no year); NCCIH tai chi quotes; Natural Therapies Review 2024 certainty rating for tai chi (search excerpts only); the cupping/qigong and herbal-formula 'none identified' entries. Cochrane Library pages returned 403; abstracts were read via Europe PMC. The Science-Based Medicine citation is superseded by the Department of Health review."
+    searches:
+      - "Europe PMC abstracts PMID 27351677, 27092807, 26522652, 40938065, 29198932, 22965186"
+      - "Mu acupuncture chronic nonspecific low back pain Cochrane 2020 Europe PMC"
+      - "Cephalic version by moxibustion for breech presentation Cochrane 2023 Coyle certainty"
+      - "tension-type headache acupuncture Cochrane 2016 six treatment sessions 48 of 100 17 of 100"
+      - "Review of the Australian Government Rebate on Private Health Insurance for Natural Therapies 2015 17 therapies"
+      - "Natural Therapies Review 2024 tai chi"
+      - "NCCIH Tai Chi and Qi Gong balance and stability preliminary"
+  - path: evidence_state.preclinical_and_constituent_evidence
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - agent: Artemisinin (qinghaosu) from Artemisia annua (qinghao)
+          finding: Isolated by Tu Youyou's team, inspired by Ge Hong's Zhou Hou Bei Ji Fang; a novel antimalarial therapy; report says a genuine drug from the herbal corpus, not validation of TCM theory.
+          type: drug isolation and discovery
+          year: 2015
+          citation: "2015 Nobel Prize in Physiology or Medicine (Nobel lecture 'Discovery of Artemisinin: A Gift from Traditional Chinese Medicine to the World'); no bibliography entry"
+      citations:
+        - source: Tu Youyou, Nobel Lecture, 7 December 2015, NobelPrize.org (nobelprize.org/prizes/medicine/2015/tu/lecture/); also published as Angewandte Chemie 2016, doi 10.1002/anie.201601967
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+      register: biomedical-evidence
+      notes: "Confirmed. The Nobel lecture exists under this title (given 7 Dec 2015, Karolinska Institutet) and cites Ge Hong's Zhou Hou Bei Ji Fang (A Handbook of Prescriptions for Emergencies, Jin dynasty) among the classical texts consulted. The Nobel page returned 403 to direct fetch; content seen via search-result excerpts. The 'genuine drug, not validation of TCM theory' framing is the report's own and is not something the lecture states."
+    searches:
+      - "Tu Youyou Nobel lecture Artemisinin Gift from Traditional Chinese Medicine to the World Ge Hong Zhou Hou Bei Ji Fang"

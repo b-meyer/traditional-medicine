@@ -1,0 +1,150 @@
+system: tcm
+pass: verify
+batch: 6
+entries:
+- path: safety.adulteration_and_contamination
+  source_report: v2
+  value: TCM products repeatedly found adulterated with lead, arsenic, mercury and undeclared pharmaceuticals
+    (corticosteroids, sildenafil, etc.). Balkan endemic nephropathy linked to Aristolochia clematitis
+    seeds in wheat (contamination outside TCM use).
+  weak_citations:
+  - source: none given in report for the adulteration claim
+    type: unclear
+    citation_strength: unclear
+- path: safety.intrinsic_toxicity
+  source_report: v2
+  value:
+  - agent: Aristolochia / aristolochic acid
+    mechanism_class: plant toxin
+    description: Aristolochic acid nephropathy and urothelial cancer; aristolactam-DNA adducts producing
+      A:T to T:A TP53 transversion signature (COSMIC signature 22); 40-46% of Belgian cohort later developed
+      urinary tract carcinoma.
+  - agent: Ephedra (ma huang)
+    mechanism_class: plant toxin
+    description: Strokes, myocardial infarction, sudden death, liver injury.
+  - agent: He Shou Wu (Polygonum multiflorum) and others (Ba Jiao Lian, Chi R Yun, Jin Bu Huan)
+    mechanism_class: plant toxin
+    description: Herb-induced liver injury, hepatocellular and cholestatic.
+  - agent: Acupuncture needling
+    mechanism_class: procedural
+    description: Pneumothorax, nerve injury, infections including hepatitis and bacterial infections from
+      non-sterile needling; serious events relatively rare.
+  - agent: Undeclared corticosteroids, sildenafil in products
+    mechanism_class: pharmaceutical adulterant
+    description: See adulteration leaf.
+  weak_citations:
+  - source: ma-huang_ephedra TUSOM Pharmwiki [S43]
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: safety.documented_adverse_events
+  source_report: v2
+  value:
+  - 'Belgian slimming-clinic cohort, early 1990s: rapidly progressive interstitial nephritis; 40-46% later
+    urinary tract carcinoma'
+  - 'Taiwan: about one-third of population prescribed Aristolochia-containing remedies; highest incidence
+    of upper-urinary-tract urothelial carcinoma in the world; PNAS 2012, 151 patients, adducts in 83%
+    of those with signature mutations'
+  - Ephedra poisonings fell after FDA ban (NEJM 2015)
+  - He Shou Wu liver injury (NIH LiverTox; case reports)
+  weak_citations:
+  - source: 'aristolochic acid nephropathy: Topics by Science.gov [S41]'
+    type: aggregator
+    citation_strength: indirect
+- path: safety.regulatory_actions_taken
+  source_report: v2
+  value:
+  - FDA ban on ephedrine-alkaloid dietary supplements effective April 2004, upheld by US Court of Appeals
+    2006
+  - Aristolochia bans 'in many countries' (dates not given)
+  - World Federation of Chinese Medicine Societies removed tiger bone and rhino horn from its pharmacopeia
+    (tiger removed 1993)
+  - China banned tiger-bone and rhino-horn trade in mid-1990s
+  - CITES Appendix I listing of pangolins; pangolin scales remained in the official state Pharmacopoeia
+  weak_citations:
+  - source: ma-huang_ephedra TUSOM Pharmwiki [S43]
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: contact_and_borrowing.relationships
+  source_report: v2
+  value:
+  - other_tradition: Japanese kampo
+    kind: descent
+    direction: China to Japan
+    period: premodern; Edo-period scholarship
+    evidence_type: documented translation
+    status: demonstrated
+  - other_tradition: Korean medicine (incl. Sasang)
+    kind: descent
+    direction: China to Korea
+    period: premodern
+    evidence_type: textual attestation
+    status: demonstrated
+  - other_tradition: Tibetan medicine (Sowa Rigpa)
+    kind: exchange
+    direction: China to Tibet (pulse diagnosis)
+    period: 12th century rGyud bzhi; Chinese physicians at Tibetan imperial court
+    evidence_type: textual attestation
+    status: demonstrated
+  - other_tradition: Persian/Islamicate medicine (Tanksuqnama)
+    kind: exchange
+    direction: China to Persia
+    period: Ilkhanate (Rashid al-Din)
+    evidence_type: documented translation
+    status: demonstrated
+  - other_tradition: Indian/Buddhist medicine
+    kind: exchange
+    direction: India to China
+    period: Buddhist transmission (Salguero, Chen Ming)
+    evidence_type: textual attestation
+    status: demonstrated
+  - other_tradition: Greek humoral medicine and Ayurvedic tridosha
+    kind: parallel
+    direction: null
+    period: null
+    evidence_type: structural parallel
+    status: convergence
+  - other_tradition: Multiple (pulse diagnosis origins)
+    kind: exchange
+    direction: unclear
+    period: null
+    evidence_type: structural parallel
+    status: contested
+  weak_citations:
+  - source: Huangdi Neijing - Elisabeth Rochat site [S46]
+    type: practitioner-site
+    citation_strength: indirect
+- path: contemporary_controversies.who_engagement
+  source_report: v2
+  value: 'WHO Traditional Medicine Strategy 2014-2023: countries with T&CM legal/regulatory framework
+    rose from 79 (2012) to 109 (2018); 98 with national T&CM policy; 170 acknowledged T&CM use. WHO Global
+    Traditional Medicine Strategy 2025-2034 adopted by 78th World Health Assembly, May 2025 (vision: universal
+    access to safe, effective, people-centred traditional, complementary and integrative medicine). ICD-11
+    Chapter 26 approved at WHA 2019 (150 disorders, 196 patterns, optional). Nature 5 June 2019 editorial
+    and Scientific American ''Bad Idea'' 2019 opposed it; defenders said opposition ''lacked peer review''
+    and was a ''slandering campaign''. WHO ICD chapter and conservationist pressure on WHO over animal
+    products.'
+  weak_citations:
+  - source: 'Overview: WHO Traditional Medicine Strategy 2014-2023 (Modern Ghana) [S19]'
+    type: news
+    citation_strength: indirect
+    claim_match: mismatch
+- path: contemporary_controversies.integration_disputes
+  source_report: v2
+  value: PRC 2016 law's simplified licensing and easier classical formula approval described as controversial;
+    critics see provisions chilling criticism. No litigation status given.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: contemporary_controversies.conservation_and_sourcing
+  source_report: v2
+  value: 'Demand for pangolin scales, rhino horn, tiger bone, bear bile drives illegal wildlife trade.
+    Pangolins: IUCN estimates over 1 million illegally traded 2000-2013; WWF estimates 195,000 trafficked
+    in 2019 for scales (Challender et al. 2020); CITES Appendix I. Bear bile: World Animal Protection
+    states over 20,000 bears on licensed farms in China; Cambridge Animal Welfare study estimates 10,000-12,000,
+    mainly Asiatic black bears. Post-COVID debate; pangolin a candidate intermediate host; some in TCM
+    promote herbal substitutes.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
