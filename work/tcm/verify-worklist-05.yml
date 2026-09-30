@@ -1,0 +1,315 @@
+system: tcm
+pass: verify
+batch: 5
+entries:
+- path: revival_and_institutionalization.dated_events
+  source_report: v2
+  value:
+  - label: China Acupuncture Research Centre founded
+    date: '1930'
+    description: Cheng Dan'an's first modern acupuncture school
+  - label: Steel needles replace iron
+    date: '1953'
+    description: Cheng Dan'an reform
+  - label: Adjective 'Traditional' formally applied
+    date: mid-1950s
+    description: First in English-language mainland press
+  - label: PRC TCM universities and national academy founded
+    date: 1954-1960
+    description: Ten most prestigious universities
+  - label: 25 TCM colleges in China
+    date: early 1980s
+    description: Growth figure
+  - label: Reston New York Times acupuncture article
+    date: '1971'
+    description: Post-appendectomy acupuncture in Beijing
+  - label: PRC Law on Traditional Chinese Medicine adopted
+    date: 2016-12
+    description: Effective 1 July 2017
+  weak_citations:
+  - source: 'Acupuncture Anesthesia: a Proclamation from Chairman Mao (Science-Based Medicine) [S15]'
+    type: practitioner-site
+    citation_strength: indirect
+- path: legal_status.jurisdictions
+  source_report: v2
+  value:
+  - jurisdiction: People's Republic of China
+    regulator: null
+    statute: Law on Traditional Chinese Medicine, adopted Dec 2016, effective 1 July 2017
+    year: 2016
+    scope_of_practice: Equal legal footing with biomedicine; mandates TCM departments in hospitals; simplified
+      licensing and easier classical formula approval
+    prescribing_rights: null
+    integration_with_public_health_system: Mandated hospital TCM departments
+    recognition_tier: full medical system
+  - jurisdiction: Hong Kong
+    regulator: Chinese Medicine Council
+    statute: Chinese Medicine Ordinance (Cap. 549)
+    year: null
+    scope_of_practice: Practitioner registration and proprietary Chinese medicine registration
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: statutory registration
+  - jurisdiction: Taiwan
+    regulator: null
+    statute: null
+    year: null
+    scope_of_practice: Licensure of TCM doctors alongside biomedicine
+    prescribing_rights: null
+    integration_with_public_health_system: National health insurance coverage
+    recognition_tier: full medical system
+  - jurisdiction: Singapore
+    regulator: TCM Practitioners Board
+    statute: Traditional Chinese Medicine Practitioners Act
+    year: 2000
+    scope_of_practice: Registration of acupuncturists and TCM physicians
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: statutory registration
+  - jurisdiction: Australia
+    regulator: Chinese Medicine Board of Australia within AHPRA
+    statute: Health Practitioner Regulation National Law
+    year: 2012
+    scope_of_practice: 'Three divisions: acupuncture, Chinese herbal medicine, Chinese herbal dispensing;
+      protected titles; registration from 1 July 2012'
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: statutory registration
+  - jurisdiction: Canada (British Columbia, Ontario, Alberta, Quebec)
+    regulator: College of TCM Practitioners and Acupuncturists of Ontario (Ontario)
+    statute: Traditional Chinese Medicine Act, 2006 (Ontario); BC regulates TCM/acupuncture; Alberta and
+      Quebec regulate acupuncture
+    year: 2006
+    scope_of_practice: null
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: statutory registration
+  - jurisdiction: United States
+    regulator: State licensing boards; NCCAOM certification
+    statute: State acupuncture licensure; DSHEA 1994 for herbs
+    year: 1994
+    scope_of_practice: No federal practitioner license; acupuncture licensed state by state
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: supplement/wellness only
+  - jurisdiction: United Kingdom
+    regulator: null
+    statute: Medicines Act 1968 s.12(1); EU Traditional Herbal Medicinal Products Directive 2004/24/EC
+    year: 1968
+    scope_of_practice: No statutory regulation of practitioners
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: unregulated
+  - jurisdiction: Switzerland
+    regulator: null
+    statute: Complementary-medicine provisions after 2009 referendum
+    year: 2009
+    scope_of_practice: null
+    prescribing_rights: null
+    integration_with_public_health_system: Insurance reimbursement for qualified physicians
+    recognition_tier: null
+  - jurisdiction: Germany
+    regulator: null
+    statute: Heilpraktiker system
+    year: null
+    scope_of_practice: Non-physician practitioners
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: null
+  - jurisdiction: Japan (kampo)
+    regulator: null
+    statute: null
+    year: null
+    scope_of_practice: Prescribed largely by biomedical physicians
+    prescribing_rights: physicians
+    integration_with_public_health_system: National insurance coverage
+    recognition_tier: null
+  - jurisdiction: South Korea
+    regulator: null
+    statute: null
+    year: null
+    scope_of_practice: Parallel fully licensed system of Korean medicine doctors
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: full medical system
+  - jurisdiction: Malaysia
+    regulator: null
+    statute: Traditional and Complementary Medicine Act 2016
+    year: 2016
+    scope_of_practice: null
+    prescribing_rights: null
+    integration_with_public_health_system: null
+    recognition_tier: null
+  weak_citations:
+  - source: none given in report (statute texts not cited)
+    type: unclear
+    citation_strength: unclear
+- path: legal_status.supranational_standards
+  source_report: v2
+  value:
+  - body: ISO/TC 249
+    instrument: Terminology standards for Traditional Chinese Medicine
+    year: null
+    scope: Terminology; naming dispute with Korea and Japan
+  - body: WHO
+    instrument: International Standard Terminologies
+    year: null
+    scope: Terminology standards
+  - body: European Union
+    instrument: Traditional Herbal Medicinal Products Directive 2004/24/EC
+    year: 2004
+    scope: Registration of herbal products on the basis of traditional use
+  weak_citations:
+  - source: ISO/TC 249 (iTeh catalog) [S47]
+    type: catalog-listing
+    citation_strength: indirect
+- path: education_and_licensure.licensure_requirements
+  source_report: v2
+  value: 'US: state licensing with NCCAOM certification; PRC 2016 law creates simplified licensing for
+    practitioners (controversial); raters in reliability studies required licensure.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: education_and_licensure.tradition_content_in_biomedical_curriculum
+  source_report: v1
+  value: '''TCM is a required component of biomedical education in China''; TCM hospitals coexist with
+    Western medicine.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: literature_state.registry_and_reporting_practice
+  source_report: v2
+  value: Report cites 'trial-registration failures' and says registration has improved since about 2005-2010.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: evidence_state.reviews
+  source_report: v2
+  value:
+  - modality: Acupuncture, chronic pain
+    best_available_review: Acupuncture Trialists' Collaboration IPD meta-analysis (Vickers)
+    type: meta-analysis
+    year: 2012; update 2018
+    size: 39 trials, 20,827 patients
+    conclusion: 'Superior to sham and to no-acupuncture. Effect ~0.2 SD vs sham, ~0.5 SD vs no-acupuncture
+      (2012: 0.23 back/neck, 0.16 osteoarthritis, 0.15 headache vs sham; 0.55/0.57/0.42 vs no-acupuncture).
+      2018: ''acupuncture is effective for the treatment of chronic pain ... decreases in pain after acupuncture
+      cannot be explained solely in terms of placebo effects ... factors in addition to the specific effects
+      of needling ... are important contributors.'' Response rates about 30% no acupuncture, 42.5% sham,
+      50% real.'
+    certainty_rating: not given
+    methodological_limitations_noted: Report notes specific effect small and contextual effects larger.
+  - modality: Acupuncture, migraine prophylaxis
+    best_available_review: Cochrane, Linde et al. CD001218
+    type: systematic-review
+    year: 2016
+    size: not given
+    conclusion: Adding acupuncture reduced migraine frequency; headache frequency at least halved in 57%
+      with acupuncture vs 46% with prophylactic drugs (RR 1.24), fewer adverse effects.
+    certainty_rating: not given
+    methodological_limitations_noted: not given
+  - modality: Acupuncture, tension-type headache
+    best_available_review: Cochrane, Linde et al. CD007587
+    type: systematic-review
+    year: 2016
+    size: not given
+    conclusion: '''a course of acupuncture consisting of at least six treatment sessions can be a valuable
+      option''; 48/100 halved headache frequency vs 17/100 with usual care only.'
+    certainty_rating: not given
+    methodological_limitations_noted: not given
+  - modality: Acupuncture, chronic low back pain
+    best_available_review: Cochrane, Mu et al. CD013814
+    type: systematic-review
+    year: 2020
+    size: 33 studies, 8,270 participants
+    conclusion: Only low-certainty evidence for pain relief vs sham in the immediate term (MD -9.22 on
+      0-100 VAS); moderate-certainty benefit vs no treatment.
+    certainty_rating: low (vs sham); moderate (vs no treatment)
+    methodological_limitations_noted: not given
+  - modality: PC6 acupressure/acupuncture, nausea and vomiting
+    best_available_review: Cochrane, Lee et al. CD003281; 2025 network meta-analysis update CD003281.pub5
+    type: systematic-review
+    year: 2015; 2025
+    size: 59 trials, 7,667 participants (2015)
+    conclusion: NNT about 5 for nausea, about 4 for vomiting; 'no further PC6 ... versus sham trials are
+      needed'. 2025 NMA reaffirms benefit combined with antiemetics.
+    certainty_rating: not given
+    methodological_limitations_noted: not given
+  - modality: Moxibustion, breech presentation
+    best_available_review: Cochrane, Coyle, Smith and Peat CD003928
+    type: systematic-review
+    year: 2012 (report) / 2023 update
+    size: not given
+    conclusion: '2012: ''no conclusive evidence''. 2023: moderate-certainty evidence that moxibustion
+      plus usual care ''probably reduces the chance of non-cephalic presentation at birth''.'
+    certainty_rating: moderate (2023)
+    methodological_limitations_noted: not given
+  - modality: Lianhua Qingwen, COVID-19
+    best_available_review: Updated meta-analysis of efficacy and safety
+    type: meta-analysis
+    year: null
+    size: not given
+    conclusion: Symptom improvement reported when added to standard care, but evidence 'lacks strong evidence'.
+    certainty_rating: not given
+    methodological_limitations_noted: Evidence base dominated by low-quality Chinese trials.
+  - modality: Tai chi
+    best_available_review: NCCIH summaries; Natural Therapies Review 2024 (Cochrane Australia evidence)
+    type: tertiary-review
+    year: 2024 (published 2025)
+    size: not given
+    conclusion: 'NCCIH: ''may improve balance and stability in older people and reduce the risk of falls'',
+      may help knee-osteoarthritis pain and fibromyalgia sleep/coping; research ''preliminary''. Natural
+      Therapies Review 2024: moderate-certainty evidence for tai chi (recommended for re-inclusion).'
+    certainty_rating: moderate (Natural Therapies Review 2024)
+    methodological_limitations_noted: 'Report: research remains ''preliminary''. Tai chi reviews cover
+      the modality in general and are treated by the report as TCM''s own.'
+  - modality: Natural therapies incl. acupuncture and other TCM modalities (insurance review)
+    best_available_review: 2015 Australian Government Review of natural therapies for private health insurance
+    type: institutional
+    year: 2015
+    size: 17 therapies
+    conclusion: No clear evidence of clinical effectiveness across therapies assessed.
+    certainty_rating: not given
+    methodological_limitations_noted: not given; report notes the McDonald and Janz 2017 Acupuncture Evidence
+      Project is an industry-body publication, not a government review, and should not be conflated.
+  - modality: Cupping, qigong
+    best_available_review: none identified
+    type: null
+    year: null
+    size: null
+    conclusion: '''largely low-quality/inconclusive''.'
+    certainty_rating: not given
+    methodological_limitations_noted: not given
+  - modality: Most herbal formulas
+    best_available_review: none identified
+    type: null
+    year: null
+    size: null
+    conclusion: Report classes them as inconclusive/low-quality.
+    certainty_rating: not given
+    methodological_limitations_noted: Overwhelmingly positive Chinese trials of low quality; publication
+      bias.
+  weak_citations:
+  - source: Australian review finds no benefit to 17 natural therapies (Science-Based Medicine) [S34]
+    type: practitioner-site
+    citation_strength: indirect
+  - source: Migraine Cochrane CD001218 (no bibliography entry)
+    type: unclear
+    citation_strength: unclear
+- path: evidence_state.preclinical_and_constituent_evidence
+  source_report: v2
+  value:
+  - agent: Artemisinin (qinghaosu) from Artemisia annua (qinghao)
+    finding: Isolated by Tu Youyou's team, inspired by Ge Hong's Zhou Hou Bei Ji Fang; a novel antimalarial
+      therapy; report says a genuine drug from the herbal corpus, not validation of TCM theory.
+    type: drug isolation and discovery
+    year: 2015
+    citation: '2015 Nobel Prize in Physiology or Medicine (Nobel lecture ''Discovery of Artemisinin: A
+      Gift from Traditional Chinese Medicine to the World''); no bibliography entry'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear

@@ -1,0 +1,158 @@
+system: tcm
+pass: verify
+batch: 3
+entries:
+- path: theoretical_primitives.etiology
+  source_report: v2
+  value: 'Pathogenic factors: external (six excesses: wind, cold, heat, dampness, dryness, fire), internal
+    (seven emotions), and miscellaneous.'
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: theoretical_primitives.nosology
+  source_report: v2
+  value: Unit is the zheng (pattern/syndrome) via bian zheng lunzhi; a disease (bing) may correspond to
+    several patterns and one pattern to several diseases. ICD-11 Chapter 26 lists 150 TM disorders and
+    196 patterns, distinguishing disorders from patterns; optional subclassification, not for mortality
+    reporting, paired with Chapters 1-24 codes.
+  weak_citations:
+  - source: Neither Donkey nor Horse - Lei (University of Chicago Press) [S8]
+    type: catalog-listing
+    citation_strength: indirect
+- path: theoretical_primitives.relation_to_biomedical_anatomy
+  source_report: v2
+  value: Zang-fu are functional not anatomical; Kidney maps onto no single organ. Early-20th-century reformers
+    argued jingluo are not identical to blood vessels or nerves (Lei). Cheng Dan'an later relocated acupuncture
+    points to correspond with nerve pathways.
+  weak_citations:
+  - source: Neither Donkey nor Horse (BiblioVault) [S7]
+    type: catalog-listing
+    citation_strength: indirect
+- path: theoretical_primitives.translation_programs
+  source_report: v2
+  value: Cheng Dan'an's nerve-pathway relocation of points (1930s) and ICD-11 Chapter 26 coding are the
+    attempts described; report gives no stated maturity level. Artemisinin is described as a drug derived
+    from the herbal corpus, not validation of TCM theory.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: diagnostics.methods
+  source_report: v2
+  value:
+  - 'Looking (wang): tongue diagnosis (color, coating, shape)'
+  - Listening and smelling (wen)
+  - 'Asking (wen): history'
+  - 'Palpation (qie): pulse diagnosis at multiple radial positions and qualities'
+  - Bian zheng lunzhi pattern differentiation integrating the four examinations (sizhen)
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: diagnostics.reliability_evidence
+  source_report: v2
+  value:
+  - statistic: percent agreement and Cohen kappa (pooled descriptive across studies)
+    value: Pairwise agreement mean 57% (median 65, range 19-96) across 9 studies; mean kappa 0.34 (median
+      0.34, range 0.07-0.59) across 7 studies
+    design: clinician-vs-clinician
+    population: not stated
+    n_raters: not given (raters were TCM college students or graduates with at least 3 years' experience
+      and licensure)
+    n_subjects: not given (21 studies in review)
+    target: TCM diagnoses and patterns across heterogeneous studies
+    citation: Jacobson et al. 2019, J Altern Complement Med, systematic review of 21 studies
+  - statistic: 'not named (qualitative: ''poor to no agreement'' on point selection; ''moderate to fair''
+      on excess/deficiency patterns)'
+    value: 39 different patterns and 36 different acupuncture points used
+    design: clinician-vs-clinician
+    population: mixed (30 infertile women and 24 previously pregnant women)
+    n_raters: 2
+    n_subjects: 54
+    target: acupuncture point selection and excess/deficiency pattern
+    citation: Birkeflet, Laake and Vollestad 2011, Acupuncture in Medicine
+  - statistic: Cohen kappa (report says kappa < 0.20)
+    value: kappa < 0.20 ('poor')
+    design: clinician-vs-clinician
+    population: patients (written case histories, Maciocia style)
+    n_raters: 8
+    n_subjects: 25
+    target: TCM patterns, e.g. Liver Qi Stagnation
+    citation: Birkeflet et al. 2014, Acupuncture in Medicine
+  weak_citations:
+  - source: Poor Multi-Rater Reliability in TCM Pattern Diagnoses (ResearchGate PDF) [S9] cited for Jacobson
+      2019
+    type: primary-study
+    citation_strength: direct
+    claim_match: mismatch
+- path: diagnostics.standardization_efforts
+  source_report: v2
+  value: WHO International Standard Terminologies, ISO/TC 249 terminology standards, ICD-11 Chapter 26,
+    and training/recalibration exercises (Arizona/Oregon TMJD program in the Jacobson review); limited
+    demonstrated success. No agreement threshold stated.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: modalities.items
+  source_report: v1
+  value:
+  - name: Acupuncture (including electroacupuncture and auricular acupuncture)
+    native_category: null
+    tags:
+    - needle
+    description: Metal needles at points along meridians; also moxibustion-adjacent electroacupuncture
+      and auricular forms.
+  - name: Chinese herbal medicine
+    native_category: formulas (multi-herb, pattern-individualized) versus single herbs
+    tags:
+    - herbal
+    description: Multi-herb formulas individualized to pattern; ma huang (ephedra) and Artemisia annua
+      named.
+  - name: Animal-derived materia medica
+    native_category: null
+    tags:
+    - animal-derived
+    description: Pangolin scales, rhino horn, tiger bone, leopard bone, bear bile, donkey hide gelatin
+      (ejiao).
+  - name: Moxibustion
+    native_category: null
+    tags:
+    - thermal
+    description: Burns listed as a safety event.
+  - name: Cupping
+    native_category: null
+    tags:
+    - procedural
+    description: Skin marking listed as a safety event.
+  - name: Gua sha
+    native_category: null
+    tags:
+    - manual
+    - procedural
+    description: Skin marking listed as a safety event; tag choice is the mapper's, report gives no category.
+  - name: Tui na (massage)
+    native_category: null
+    tags:
+    - manual
+    description: Massage.
+  - name: Qigong
+    native_category: null
+    tags:
+    - mind-body
+    description: Mind-body movement practice.
+  - name: Tai chi
+    native_category: null
+    tags:
+    - mind-body
+    description: Mind-body movement practice; report lists it with qigong.
+  - name: Dietary therapy
+    native_category: warming/cooling food framework
+    tags:
+    - dietary
+    description: Widely practiced within TCM's warming/cooling food framework.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear

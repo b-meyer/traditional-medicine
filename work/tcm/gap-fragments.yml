@@ -1,0 +1,45 @@
+system: tcm
+pass: gap
+updates:
+  - path: revival_and_institutionalization.internal_factions
+    outcome: found
+    field:
+      status: partial
+      value: "One named split: present-day jingfang (classical formula) practitioners who claim their medicine is 'pure' classical thinking based on the Shanghan Lun rather than the Huangdi Neijing and unpolluted by modern TCM transformations, versus standardized state TCM (zhongyi). Named jingfang physicians in Scheid's discussion: Hu Xishu (1898-1984) and, for the earlier Republican-era lineage, Chen Xunzhai (1888-1948, lectured at the Institute of National Medicine, Nanjing, 1935). Scheid also records the opposite Republican-era claim by modernist reformers that Shanghan-based jingfang practice was a native empiricism modern before its time. Scheid treats the 'pure' claim as partly nationalist mythology and discusses Japanese influence on jingfang style."
+      citations:
+        - source: "Volker Scheid, 'History and Mythology: Thoughts on the Japanese Influence on JingFang Style Chinese Medicine', SIEAM blog, 2023-06-09"
+          type: historical-monograph
+          citation_strength: indirect
+      register: historical-scholarship
+      notes: "Source is a scholar's essay on a school's website (blog), hence indirect; it names only two physicians and gives no dated organizational split or named institutional factions. Reached by a fetch summary, not read in full. Scientized/integrative TCM as a named faction, and dated splits, not found. Scheid's peer-reviewed work would be the direct source."
+    searches: ["classical formula school jingfang versus scientific TCM factions history Chinese medicine modernization debate"]
+  - path: literature_state.corpus_scale_appraisal
+    outcome: found
+    field:
+      status: partial
+      value: "No whole-corpus appraisal located. Nearest: Wu et al., 'Evidence Map Analysis on Randomized Controlled Trials: Chinese Patent Medicines and Classic Traditional Chinese Medicine Prescriptions', J Evid Based Med (Wiley), 2026 (article ID jebm.70151). Per the search-result abstract snippet: 1,874 RCTs included (1,550 Chinese patent medicine, 324 classic prescriptions); circulatory and digestive diseases predominated; mainly two-arm 'Chinese medicine plus Western medicine' designs; trial registration about 3.8% (CPM) and 0.9% (classic prescriptions); ethics approval about 68.5% and 61.1%. Also a modality-specific bibliometric analysis: 1,908 acupuncture RCTs 2010-2024 from Web of Science and Scopus (Frontiers in Medicine 2026, doi 10.3389/fmed.2026.1762387)."
+      citations:
+        - source: "Wu et al., Evidence Map Analysis on RCTs: Chinese Patent Medicines and Classic TCM Prescriptions, J Evid Based Med, doi 10.1111/jebm.70151"
+          type: systematic-review
+          citation_strength: direct
+        - source: "Global research trends and insights in acupuncture randomized controlled trials: a bibliometric analysis, Front Med, doi 10.3389/fmed.2026.1762387"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Numbers taken from search-result summaries; the Wiley and PubMed pages could not be fetched (403/cookie wall), so verify against full text, including the publication year and search dates. Both studies cover a subset (patent medicines and classic prescriptions; acupuncture), not the whole TCM corpus. Whole-corpus status stays unresolved."
+    searches: ["bibliometric analysis traditional Chinese medicine randomized controlled trials evidence map"]
+  - path: contemporary_controversies.intellectual_property
+    outcome: found
+    field:
+      status: partial
+      value: "Defensive protection: China's TK databases (Traditional Chinese Medicine Database, about 48 sub-databases and 120,000 items; China TCM Patent Database of the State Intellectual Property Office, over 22,000 TMK-related patent records) serve as prior art for examiners (Xia 2023). Xia also records domestic bioprospecting: by 2016 about 154 pharmaceutical firms in ethnic-community territories producing 906 ethnomedicine varieties. Xia says patent law fits TCM poorly (novelty, inventiveness) and does not discuss specific TCM-formula patent cases. Nagoya: China approved accession in June 2016 (per search-result summary); a Chinese-language paper on the influence of the Nagoya Protocol on TCM exists (PubMed 29552861, title only checked)."
+      citations:
+        - source: "Nan Xia, 'Intellectual property protection for traditional medical knowledge in China's context: a round peg in a square hole?', Medical Law Review 31(3):358-390, 2023 (PMC10452053)"
+          type: primary-study
+          citation_strength: direct
+        - source: "[Influence of Nagoya Protocol on traditional Chinese medicine], PubMed 29552861"
+          type: primary-study
+          citation_strength: unclear
+      register: historical-scholarship
+      notes: "No named biopiracy case on a TCM formula was located, and the Nagoya point rests on a search summary. Xia's article does not mention the Nagoya Protocol. Accession date and China's ABS regime need verification against CBD Secretariat or Chinese regulator sources."
+    searches: ["traditional Chinese medicine biopiracy patents Nagoya Protocol TCM intellectual property", "Nagoya Protocol traditional Chinese medicine China genetic resources access benefit-sharing TCM herbs patent biopiracy case"]

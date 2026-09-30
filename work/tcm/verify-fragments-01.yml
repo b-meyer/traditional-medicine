@@ -1,0 +1,35 @@
+system: tcm
+pass: verify
+updates:
+  - path: identification.system_name
+    outcome: unverifiable
+    searches: ["ISO/TC 249 Traditional Chinese medicine committee name (report title and passim carry no citation; the name is a label, no single primary source located)"]
+  - path: identification.alternate_names
+    outcome: unverifiable
+    searches:
+      - "ISO/TC 249 name Traditional Chinese Medicine Korea Japan traditional East Asian medicine dispute naming"
+      - "iso.org/committee/598435.html (403) and iso.org/news/2016/03/Ref2051.html (403), not retrievable"
+      - "J-STAGE Kampo Med 63(3) article on ISO/TC 249 (PDF unreadable via fetch)"
+  - path: identification.primary_regions
+    outcome: unverifiable
+    searches: ["no citation in report; no single primary source for regional scope located"]
+  - path: identification.system_boundary
+    outcome: unverifiable
+    searches:
+      - "ISO/TC 249 name Traditional Chinese Medicine Korea Japan traditional East Asian medicine dispute naming"
+      - "iso.org ISO/TC 249 pages returned 403; ISO/TC 249 business plan surfaced in search but not opened"
+  - path: canon_and_transmission.foundational_texts
+    outcome: unverifiable
+    searches:
+      - "Unschuld Huang Di Nei Jing Su Wen Nature Knowledge Imagery (Oxford Academic abstract covers only Neijing origin, not Nanjing, Shennong or Shanghan dates/authors)"
+  - path: canon_and_transmission.secondary_canon
+    outcome: unverifiable
+    searches: ["Elisabeth Rochat site Huang Di Nei Jing (practitioner site, indirect); no primary source opened for Taisu, Zhouhou beiji fang or Wushi'er bingfang"]
+  - path: canon_and_transmission.dating_and_authorship_disputes
+    outcome: unverifiable
+    searches:
+      - "Unschuld Huang Di Nei Jing Nature, Knowledge, Imagery Suwen dating 400 BCE 260 CE"
+      - "Oxford Academic California Scholarship Online abstract for the book confirms origins in final centuries BCE and Wang Bing recension, but not the 400 BCE-260 CE range or the Li/Lo/Harper, Du Fu, Sivin/Yamada/Hsu claims; the 400 BCE-260 CE wording seen only in secondary summaries"
+  - path: canon_and_transmission.transmission_mode
+    outcome: unverifiable
+    searches: ["Huangdi Neijing transmission recensions Wang Bing Song revision; only the New World Encyclopedia and secondary summaries located, no primary source for the report's own characterization"]

@@ -1,0 +1,42 @@
+system: tcm
+pass: verify
+updates:
+  - path: economics.major_manufacturers
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - name: Yunnan Baiyao Group
+          products: null
+          figure: 40.03 billion (~USD 5.5 billion)
+          currency: CNY
+          year: 2024
+          measure: operating revenue
+      citations:
+        - source: "Yunnan Baiyao Group Co., Ltd., 2024 Annual Report (published 31 March 2025; operating revenue RMB 40.033 billion, +2.36% year on year), as reported on the company's own portal yunnanbaiyao.com.cn"
+          type: institutional
+          citation_strength: direct
+      register: economic
+      notes: "CNY figure confirmed against the company's own 2024 results (400.33 yi yuan). The USD equivalent is a conversion not stated in the company source and is approximate. Products remain null as in the original leaf."
+    searches: ["Yunnan Baiyao 2024 annual report operating revenue 40.03 billion yuan", "云南白药 2024年年度报告 营业收入 400.33亿元 同比增长2.36%"]
+  - path: contemporary_controversies.politicized_episodes
+    outcome: unverifiable
+    searches: ["Nature editorial 2019 China enthusiastically promotes traditional Chinese medicine stifles criticism (quote seen in search snippet from nature.com d41586-019-01726-1, but page redirected to login and could not be read in full)", "Tan Qindong Hongmao liquor detained released Caixin 1.4 million yuan (Caixin pages fetched give no yuan figure or psychiatric detail; search snippets report about 800,000 yuan in refund losses, conflicting with the 1.4 million in the leaf)", "ISO/TC 249 Traditional Chinese medicine name Japan Korea objection (no primary document on the naming objection located)"]
+  - path: contemporary_controversies.research_methodology_disputes
+    outcome: unverifiable
+    searches: ["no dedicated search run; multi-party synthesis (Vickers, Ernst, sham acupuncture, diagnostic reliability) with no single work cited, needs per-position sources"]
+  - path: self_reported_gaps.inventory
+    outcome: unverifiable
+    searches: ["Leaf records the source report's own statements about its gaps and caveats; no external primary source exists to verify them"]
+  - path: report_conclusions.revision_thresholds
+    outcome: unverifiable
+    searches: ["Leaf records the report author's own stance; no external primary source exists to verify it"]
+  - path: report_conclusions.recommendations
+    outcome: unverifiable
+    searches: ["Leaf records the report author's own stance; embedded figures (kappa about 0.34) not separately sourced"]
+  - path: economics.domestic_market_size
+    outcome: unverifiable
+    searches: ["2024 traditional Chinese medicine industry output value 900 billion RMB 中药工业 营业收入 国家中医药管理局 统计 (only market-research and consultancy pages found, no official statistical release)"]
+  - path: economics.global_market_estimates
+    outcome: unverifiable
+    searches: ["global traditional Chinese medicine market size 2024 USD billion estimate (only commercial research firm pages, indirect by rule; the 86 billion and 280 billion-plus figures not located)"]

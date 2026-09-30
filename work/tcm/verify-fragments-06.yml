@@ -1,0 +1,61 @@
+system: tcm
+pass: verify
+updates:
+  - path: safety.documented_adverse_events
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - 'Belgian slimming-clinic cohort, early 1990s: rapidly progressive interstitial nephritis; 46% (18 of 39 patients who underwent prophylactic surgery) had urothelial carcinoma (Nortier et al., NEJM 2000)'
+        - 'Taiwan: highest reported incidence of upper-urinary-tract urothelial carcinoma in the world; PNAS 2012, 151 patients, AL-DNA adducts in renal cortex of 83% of those with A:T to T:A mutations in TP53, FGFR3 or HRAS'
+        - 'Ephedra poisonings fell after FDA ban: poison-centre calls peaked at 10,326 in 2002 and fell to 180 by end of 2013 (NEJM 2015 letter)'
+        - He Shou Wu liver injury (NIH LiverTox; case reports)
+      citations:
+        - source: Nortier JL et al., Urothelial carcinoma associated with the use of a Chinese herb (Aristolochia fangchi), N Engl J Med 2000;342:1686-92
+          type: primary-study
+          citation_strength: direct
+        - source: Chen C-H et al., Aristolochic acid-associated urothelial cancer in Taiwan, PNAS 2012;109(21):8241-8246
+          type: primary-study
+          citation_strength: direct
+        - source: Reduction in Ephedra Poisonings after FDA Ban, N Engl J Med 2015 (letter, 28 May 2015)
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Changed: the Belgian figure "40-46%" is narrowed to the 46% (95% CI 29-62%) that the NEJM abstract reports; the 40% end was not located. Added the 2001-2013 poison-centre numbers. Not checked against a primary source in this pass and carried over as originally worded: the "about one-third of population prescribed Aristolochia" claim and the He Shou Wu LiverTox entry.'
+    searches:
+      - "Chen 2012 PNAS Aristolochic acid-associated urothelial cancer in Taiwan 151 patients adducts"
+      - "Nortier 2000 NEJM urothelial carcinoma associated with the use of a Chinese herb (Aristolochia fangchi) 40 percent"
+      - "Cohen NEJM 2015 ephedra poisonings decline after FDA ban Poison Control"
+  - path: safety.adulteration_and_contamination
+    outcome: unverifiable
+    searches:
+      - "Ernst 2002 Adulteration of Chinese herbal medicines with synthetic drugs: a systematic review J Intern Med (confirms undeclared synthetic drugs incl. corticosteroids; does not cover lead/arsenic/mercury or Balkan endemic nephropathy)"
+  - path: safety.intrinsic_toxicity
+    outcome: unverifiable
+    searches:
+      - "Nortier 2000 NEJM (confirms 46% carcinoma, not the 40% end or COSMIC signature 22)"
+      - "Chen 2012 PNAS Aristolochic acid-associated urothelial cancer in Taiwan"
+  - path: safety.regulatory_actions_taken
+    outcome: unverifiable
+    searches:
+      - "Nutraceutical Corp. v. von Eschenbach 459 F.3d 1033 10th Cir. 2006 (confirms ban upheld 2006; Federal Register final rule fetch failed so April 2004 effective date not confirmed)"
+      - "World Federation of Chinese Medicine Societies tiger bone rhino horn removed pharmacopoeia (found only a 2010 WFCMS statement via press, and 1993 Chinese pharmacopoeia removal; claim imprecise, no primary source)"
+  - path: contact_and_borrowing.relationships
+    outcome: unverifiable
+    searches:
+      - "no primary works located for the seven relationship entries in this pass"
+  - path: contemporary_controversies.who_engagement
+    outcome: unverifiable
+    searches:
+      - "Seventy-eighth World Health Assembly adopts Global Traditional Medicine Strategy 2025-2034 (adoption May 2025 confirmed on who.int; other figures not checked)"
+      - "WHO Global Report on Traditional and Complementary Medicine 2019 (fetch returned 404)"
+      - "Nature editorial 5 June 2019 traditional Chinese medicine WHO ICD-11 (editorial exists; Scientific American and quoted phrases not located)"
+  - path: contemporary_controversies.integration_disputes
+    outcome: unverifiable
+    searches:
+      - "no search run for PRC 2016 TCM law criticism"
+  - path: contemporary_controversies.conservation_and_sourcing
+    outcome: unverifiable
+    searches:
+      - "Challender 2020 pangolin trafficking 195,000 2019 scales (only WWF page and Wildlife Justice Commission report found)"
+      - "Cambridge Animal Welfare bear bile farming China 10,000-12,000 (Animal Welfare journal article exists; World Animal Protection 20,000 figure not located)"

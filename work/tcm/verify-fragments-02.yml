@@ -1,0 +1,27 @@
+system: tcm
+pass: verify
+updates:
+  - path: canon_and_transmission.redaction_history
+    outcome: unverifiable
+    searches: ["Wang Bing 762 Suwen 24 juan 81 treatises Quan Yuanqi Lin Yi Bureau for Revising Medical Texts 1057 Unschuld", "JSTOR Unschuld Huang Di nei jing su wen 2003 (page failed to load, no text retrieved)"]
+  - path: canon_and_transmission.key_figures
+    outcome: unverifiable
+    searches: ["Wang Bing 762 Suwen 24 juan 81 treatises Quan Yuanqi Lin Yi Bureau for Revising Medical Texts 1057 Unschuld"]
+  - path: canon_and_transmission.dated_events
+    outcome: unverifiable
+    searches: ["Wang Bing 762 Suwen 24 juan 81 treatises Quan Yuanqi Lin Yi Bureau for Revising Medical Texts 1057 Unschuld"]
+  - path: construct_debate.positions
+    outcome: unverifiable
+    searches: ["Kim Taylor Chinese Medicine in Early Communist China 1945-63 traditional term invented 1950s", "Volker Scheid plurality continuity Currents of Tradition invented tradition Hobsbawm Karchmer", "OUP Social History of Medicine review of Taylor (abstract only, did not address the claim)", "Routledge publisher page for Taylor (catalog page; chapter title 'The Creation of a Traditional Chinese Medicine, 1953-1956' is suggestive but not the work itself)"]
+  - path: construct_debate.report_adjudication
+    outcome: unverifiable
+    searches: ["Kim Taylor Chinese Medicine in Early Communist China 1945-63 traditional term invented 1950s"]
+  - path: theoretical_primitives.constituents
+    outcome: unverifiable
+    searches: ["WHO benchmarks for training in traditional Chinese medicine yin yang five phases zang-fu meridians qi", "WHO International Standard Terminologies on Traditional Medicine in the Western Pacific Region 2007 (PDF located at asiantherapies.org but could not be rendered as text; pdftoppm unavailable)"]
+  - path: theoretical_primitives.balance_logic
+    outcome: unverifiable
+    searches: ["WHO benchmarks for training in traditional Chinese medicine yin yang five phases zang-fu meridians qi", "WHO International Standard Terminologies on Traditional Medicine in the Western Pacific Region 2007"]
+  - path: theoretical_primitives.correspondence_system
+    outcome: unverifiable
+    searches: ["Wang Bing 762 Suwen 24 juan 81 treatises Quan Yuanqi Lin Yi Bureau for Revising Medical Texts 1057 Unschuld", "WHO International Standard Terminologies on Traditional Medicine in the Western Pacific Region 2007"]

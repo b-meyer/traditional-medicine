@@ -1,0 +1,128 @@
+system: tcm
+pass: verify
+batch: 1
+entries:
+- path: identification.system_name
+  source_report: v2
+  value: Traditional Chinese Medicine (TCM)
+  weak_citations:
+  - source: none given in report (report title and passim)
+    type: unclear
+    citation_strength: unclear
+- path: identification.alternate_names
+  source_report: v2
+  value:
+  - TCM
+  - Chinese medicine
+  - guoyi (national medicine)
+  - traditional East Asian medicine (neutral term preferred by South Korea and Japan in the ISO naming
+    dispute)
+  - zhongyi is not given in the report
+  weak_citations:
+  - source: ISO/TC 249 - Traditional Chinese medicine (iTeh catalog) [S47]
+    type: catalog-listing
+    citation_strength: indirect
+- path: identification.primary_regions
+  source_report: v2
+  value:
+  - People's Republic of China (mainland)
+  - Hong Kong
+  - Taiwan
+  - Singapore
+  - Japan and Korea as derived traditions
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: identification.system_boundary
+  source_report: v2
+  value:
+  - tradition: Japanese kampo
+    relation: sibling
+    fields_affected:
+    - contact_and_borrowing.relationships
+    - disruption.colonial_power
+    - legal_status.jurisdictions
+    description: Report says kampo is 'directly derived from Chinese medicine (especially the Shanghan
+      Lun tradition)' yet is regulated and practiced on its own terms (prescribed by biomedical physicians,
+      insured). Meiji suppression of kampo shaped the Chinese debate.
+  - tradition: Korean medicine including Sasang constitutional medicine
+    relation: sibling
+    fields_affected:
+    - legal_status.jurisdictions
+    - contact_and_borrowing.relationships
+    - contemporary_controversies.politicized_episodes
+    description: Built on the Chinese canon; South Korea has a parallel licensed system. Sasang is named
+      but not sourced.
+  - tradition: Traditional East Asian medicine (ISO/TC 249 grouping)
+    relation: regulatory_grouping
+    fields_affected:
+    - contemporary_controversies.politicized_episodes
+    - legal_status.supranational_standards
+    description: ISO committee named 'Traditional Chinese Medicine' over Korean and Japanese preference
+      for a neutral 'traditional East Asian medicine'.
+  - tradition: Han-era and later premodern Chinese medical traditions (Neijing, Shanghan Lun, Mawangdui-era
+      recipe and demonological medicine)
+    relation: premodern_predecessor
+    fields_affected:
+    - canon_and_transmission
+    - construct_debate
+    description: Report treats the 1950s system as a selective reconstruction (Unschuld) or transformation
+      within plural continuity (Scheid) of these traditions.
+  weak_citations:
+  - source: ISO/TC 249 (iTeh catalog) [S47]
+    type: catalog-listing
+    citation_strength: indirect
+- path: canon_and_transmission.foundational_texts
+  source_report: v2
+  value:
+  - title: Huangdi Neijing (Suwen and Lingshu)
+    date: Han-period crystallization; layered text
+    author: traditionally the Yellow Emperor; composite
+  - title: Nanjing (Classic of Difficulties)
+    date: not given
+    author: not given
+  - title: Shennong Bencao Jing (Divine Farmer's Materia Medica)
+    date: not given
+    author: not given
+  - title: Shanghan Zabing Lun, later split into Shanghan Lun and Jingui Yaolue
+    date: not given
+    author: Zhang Zhongjing
+  weak_citations:
+  - source: Huangdi Neijing (Wikipedia) [S1]
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: canon_and_transmission.secondary_canon
+  source_report: v2
+  value:
+  - Tai su (Yang Shangshan's Neijing recension, survives partly through Japanese copies)
+  - Zhou Hou Bei Ji Fang (Ge Hong), source of the artemisinin inspiration
+  - Wushi'er Bingfang (Recipes for Fifty-Two Ailments, Mawangdui)
+  weak_citations:
+  - source: Huangdi Neijing - Elisabeth Rochat site [S46]
+    type: practitioner-site
+    citation_strength: indirect
+- path: canon_and_transmission.dating_and_authorship_disputes
+  source_report: v2
+  value:
+  - 'Paul Unschuld: 20th-century scholars date Suwen language and ideas to roughly 400 BCE-260 CE; only
+    a small portion transmits concepts from before the 2nd century BCE.'
+  - 'Du Fu (14th c.): Suwen compiled by several authors over a long period.'
+  - 'Jianmin Li, Vivienne Lo, Donald Harper: Neijing systematic theory diverges significantly from Mawangdui,
+    implying compilation after 168 BCE.'
+  - 'Report: composite nature, Han-era dating, Wang Bing recension and Song revision are consensus; dating
+    of individual layers and relation of excavated manuscripts to the received canon remain debated.'
+  - 'Nathan Sivin, Yamada Keiji, Elisabeth Hsu, Vivienne Lo: channel theory has a traceable developmental
+    history, not a single origin.'
+  weak_citations:
+  - source: Huangdi Neijing (Wikipedia) [S1]
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: canon_and_transmission.transmission_mode
+  source_report: v2
+  value: Primarily textual (recensions, imperial editorial offices, excavated manuscripts); report also
+    mentions lineages and formula traditions on the continuity side of the debate.
+  weak_citations:
+  - source: Huangdi Neijing - New World Encyclopedia [S2]
+    type: open-encyclopedia
+    citation_strength: indirect

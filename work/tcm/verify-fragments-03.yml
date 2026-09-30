@@ -1,0 +1,72 @@
+system: tcm
+pass: verify
+updates:
+  - path: theoretical_primitives.etiology
+    outcome: unverifiable
+    searches: ["WHO International Standard Terminologies on Traditional Medicine in the Western Pacific Region six exogenous factors seven emotions (PDF not machine-readable in fetch)"]
+  - path: theoretical_primitives.nosology
+    outcome: unverifiable
+    searches:
+      - "ICD-11 Chapter 26 traditional medicine conditions module 1 150 disorders 196 patterns (counts appear only in secondary snippets; WHO reference guide and findacode chapter page fetched but give no counts; Springer article paywalled/redirected)"
+      - "Lei Neither Donkey nor Horse zheng bing disease pattern (only catalog and review pages reachable; book text not accessed)"
+  - path: theoretical_primitives.relation_to_biomedical_anatomy
+    outcome: unverifiable
+    searches:
+      - "Sean Hsiang-lin Lei Neither Donkey nor Horse Cheng Dan'an nerve acupuncture points (Andrews review PMC4986214 attributes nerve/vessel mapping of jingluo to Cheng Dan'an but does not confirm Lei's argument about reformers or point relocation; book text not accessed)"
+  - path: theoretical_primitives.translation_programs
+    outcome: unverifiable
+    searches: ["Cheng Dan'an nerve pathway acupuncture 1930s (only secondary review reached)", "ICD-11 Chapter 26 coding (see nosology)"]
+  - path: diagnostics.methods
+    outcome: unverifiable
+    searches: ["WHO International Standard Terminologies on Traditional Medicine diagnostics four examinations (PDF not machine-readable)"]
+  - path: diagnostics.reliability_evidence
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - statistic: percent agreement and Cohen kappa (pooled descriptive across studies)
+          value: Pairwise agreement mean 57% (median 65, range 19-96) across 9 studies; mean kappa 0.34 (median 0.34, range 0.07-0.59) across 7 studies
+          design: clinician-vs-clinician
+          population: not stated
+          n_raters: not given (raters were TCM college students or graduates with at least 3 years' experience and licensure)
+          n_subjects: not given (21 studies in review)
+          target: TCM diagnoses and patterns across heterogeneous studies
+          citation: Jacobson et al. 2019, J Altern Complement Med 25(11):1085-1096, systematic review of 21 studies
+        - statistic: 'not named (qualitative: ''poor to no agreement'' on point selection; ''moderate to fair'' on excess/deficiency patterns)'
+          value: 39 different patterns and 36 different acupuncture points used
+          design: clinician-vs-clinician
+          population: mixed (30 infertile women and 24 previously pregnant women)
+          n_raters: 2
+          n_subjects: 54
+          target: acupuncture point selection and excess/deficiency pattern
+          citation: Birkeflet, Laake and Vollestad 2011, Acupuncture in Medicine 29:51-57
+        - statistic: Cohen kappa (report says kappa < 0.20)
+          value: kappa < 0.20 ('poor')
+          design: clinician-vs-clinician
+          population: patients (written case histories, Maciocia style; 25 women, 15 fertile and 10 infertile)
+          n_raters: 8
+          n_subjects: 25
+          target: TCM patterns, e.g. Liver Qi Stagnation
+          citation: Birkeflet, Laake and Vollestad 2014, Acupuncture in Medicine
+      citations:
+        - source: Jacobson E, Conboy L, Tsering D, et al. Experimental Studies of Inter-Rater Agreement in Traditional Chinese Medicine A Systematic Review. J Altern Complement Med 2019;25(11) doi 10.1089/acm.2019.0197 (abstract via Europe PMC, PMID 31730402)
+          type: systematic-review
+          citation_strength: direct
+          claim_match: matches
+        - source: Birkeflet O, Laake P, Vollestad N. Low Inter-Rater Reliability in Traditional Chinese Medicine for Female Infertility. Acupunct Med 2011 doi 10.1136/aim.2010.003186 (abstract via Europe PMC)
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+        - source: Birkeflet O, Laake P, Vollestad NK. Poor Multi-Rater Reliability in TCM Pattern Diagnoses and Variation in the Use of Symptoms to Obtain a Diagnosis. Acupunct Med 2014 doi 10.1136/acupmed-2013-010473 (abstract via Europe PMC)
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+      register: biomedical-evidence
+      notes: Values unchanged; all three verified against abstracts. Changed the citation. The original single ResearchGate citation (S9) is the Birkeflet 2014 paper and was wrongly cited for Jacobson 2019, hence the mismatch flag. Each entry now has its own direct citation. Birkeflet 2011 n_raters 2 and 54 subjects rest on the abstract and search summary of it (two acupuncturists; 30 infertile plus 24 previously pregnant women); the Europe PMC abstract text itself did not state these counts. Jacobson abstract notes 14 of the 21 studies assessed diagnoses, 2 signs, 5 novel rating schemes.
+    searches: ["Jacobson 2019 systematic review reliability TCM diagnosis 21 studies J Altern Complement Med", "Birkeflet Laake Vollestad 2011 Acupuncture in Medicine", "Europe PMC abstract lookup for PMID 31730402, doi 10.1136/aim.2010.003186, doi 10.1136/acupmed-2013-010473"]
+  - path: diagnostics.standardization_efforts
+    outcome: unverifiable
+    searches: ["ISO/TC 249 traditional Chinese medicine standards scope terminology (iso.org committee pages confirm existence but not the composite claim)", "Jacobson 2019 Arizona Oregon TMJD training recalibration (abstract does not mention it; full text 403)"]
+  - path: modalities.items
+    outcome: unverifiable
+    searches: ["no report citation; composite list of ten modalities, no single primary source located"]
