@@ -1,0 +1,184 @@
+system: ayurveda
+pass: verify
+batch: 3
+entries:
+- path: diagnostics.methods
+  source_report: v2
+  value:
+  - name: Roga parīkṣā and rogī parīkṣā
+    examines: Disease and patient respectively
+  - name: Aṣṭavidha parīkṣā (eightfold examination)
+    examines: Pulse/nāḍī, urine, stool, tongue, voice/speech, skin/touch, eyes, general appearance
+  - name: Nāḍī parīkṣā (pulse diagnosis)
+    examines: Pulse; widely argued to be a relatively late addition
+  - name: Prakṛti assessment
+    examines: Constitutional type
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: diagnostics.reliability_evidence
+  source_report: v2
+  value:
+  - study: Kurande et al. 2013, 'Interrater Reliability of Diagnostic Methods in Traditional Indian Ayurvedic
+      Medicine', eCAM Art. ID 658275
+    statistic: weighted κ (average pairwise)
+    value: pulse 0.07; tongue 0.17; prakṛti 0.28
+    confidence_interval: null
+    design: clinician-vs-clinician
+    population: healthy volunteers
+    n_raters: 15
+    n_subjects: 20
+    target: pulse assessment, tongue assessment, prakṛti (constitutional type), assessed separately
+    citation: Kurande et al. 2013
+    notes: 105 pairwise comparisons; raters were registered Ayurvedic doctors with 3-15 years' experience;
+      authors concluded 'low level of reliability for all types of assessment'.
+  - study: Knee osteoarthritis nested diagnostic study, 2019
+    statistic: percent agreement (consensus)
+    value: 95%
+    confidence_interval: null
+    design: null
+    population: patients (knee OA, inferred)
+    n_raters: null
+    n_subjects: null
+    target: final overall diagnosis
+    citation: Named in text only
+    notes: Design not stated in report.
+  - study: Knee osteoarthritis nested diagnostic study, 2019 (same study)
+    statistic: kappa (type not stated)
+    value: 0 to 0.4 (fair-to-poor)
+    confidence_interval: null
+    design: null
+    population: patients (knee OA, inferred)
+    n_raters: null
+    n_subjects: null
+    target: central concepts such as prakṛti and agni
+    citation: Named in text only
+    notes: Rater and subject counts not given.
+  - study: AyuSoft (C-DAC Pune) validation
+    statistic: kappa (type not stated)
+    value: '0.778'
+    confidence_interval: null
+    design: software-vs-clinician
+    population: null
+    n_raters: null
+    n_subjects: 3416
+    target: software output versus physician judgment (specific diagnostic target not stated)
+    citation: Named in text only
+    notes: Validation sample 3,416 subjects.
+  - study: Wrist-pulse piezoelectric sensor instrument
+    statistic: kappa (type not stated)
+    value: 0.719 (basic VPK level); 0.454 (sub-levels)
+    confidence_interval: null
+    design: instrument-vs-expert
+    population: null
+    n_raters: null
+    n_subjects: null
+    target: pulse-derived vāta-pitta-kapha categories versus expert readings
+    citation: Named in text only
+    notes: Two levels of target in one study.
+  weak_citations:
+  - source: Knee OA nested diagnostic study 2019 (no author or journal given)
+    type: unclear
+    citation_strength: unclear
+  - source: AyuSoft (C-DAC Pune) validation (no author or journal given)
+    type: unclear
+    citation_strength: unclear
+  - source: Wrist-pulse piezoelectric sensor study (no author or journal given)
+    type: unclear
+    citation_strength: unclear
+- path: diagnostics.sign_vs_synthesis
+  source_report: v2
+  value: In the knee OA study, agreement on the final overall diagnosis (95% consensus) exceeded agreement
+    on constitutional entities such as prakṛti and agni (κ 0-0.4). The report states agreement on disease
+    entities exceeded agreement on constitutional entities. Kurande found lowest agreement on pulse and
+    prakṛti.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: diagnostics.standardization_efforts
+  source_report: v2
+  value: CCRAS (Ministry of AYUSH) developed and reliability-tested a standardized Prakriti Assessment
+    Scale (PAS) and an AYUR Prakriti web portal, targeting agreement of κ≈0.65. AyuSoft (C-DAC Pune) software
+    and a piezoelectric wrist-pulse instrument are also reported.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: modalities.items
+  source_report: v1
+  value:
+  - name: Panchakarma (Vamana, Virechana, Basti, Nasya, Raktamokshana)
+    native_category: Shodhana (purification/elimination)
+    tags:
+    - procedural
+    description: Therapeutic emesis, purgation, medicated enema (foremost for Vata), nasal administration,
+      bloodletting; preceded by purvakarma and followed by pashchatkarma diet and regimen. Report says
+      the detoxification framing lacks robust trial support.
+  - name: Purvakarma (Snehana oleation and Svedana sudation)
+    native_category: Shodhana preparation
+    tags:
+    - procedural
+    - thermal
+    description: Preparation before Panchakarma
+  - name: Herbal formulations and single herbs (Shamana therapy, dravyaguna)
+    native_category: Shamana (palliation)
+    tags:
+    - herbal
+    description: Polyherbal formulations justified by claimed synergy; herbs with research literature
+      listed under materia_medica
+  - name: Rasashastra (bhasmas)
+    native_category: Rasashastra (iatrochemistry)
+    tags:
+    - mineral-metal
+    - herbal
+    description: Processed mercury, arsenic, lead, gold and others, purified (shodhana) and calcined (marana,
+      repeated puta heating) with herbal or sulfur matrices; claimed to be rendered safe by processing
+  - name: Shalya tantra (surgery)
+    native_category: Shalya tantra (one of eight branches)
+    tags:
+    - surgical
+    description: Rhinoplasty, cataract couching, lithotomy, fracture management, yantra and shastra instruments
+      (Sushruta Samhita)
+  - name: Diet, daily and seasonal regimen, ethical code
+    native_category: Ahara, dinacharya, ritucharya, sadvritta
+    tags:
+    - dietary
+    - regimenal
+    description: Central to prevention
+  - name: Yoga
+    native_category: Darshana / prevention
+    tags:
+    - mind-body
+    description: Named among preventive practices
+  weak_citations:
+  - source: Rasashastra  Grokipedia (S13)
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: Report text, no [Sn] marker
+    type: unclear
+    citation_strength: unclear
+- path: materia_medica.pharmacological_framework
+  source_report: v1
+  value: Dravyaguna  drug action analyzed by rasa (six tastes), guna (qualities), virya (potency, heating
+    or cooling), vipaka (post-digestive effect) and prabhava (idiosyncratic action). All matter including
+    drugs is built of the five great elements. Polyherbal synergy is claimed.
+  weak_citations:
+  - source: Report text, no [Sn] marker
+    type: unclear
+    citation_strength: unclear
+- path: materia_medica.flagship_agents
+  source_report: v1
+  value:
+  - Withania somnifera (ashwagandha)
+  - Curcuma longa (turmeric)
+  - Boswellia serrata
+  - Bacopa monnieri (brahmi)
+  - Tinospora cordifolia (guduchi), Asparagus racemosus (shatavari), Terminalia and Triphala, Azadirachta
+    indica (neem), Ocimum sanctum (tulsi), Commiphora mukul (guggulu), Phyllanthus emblica (amla)
+  - Mercury (parada), arsenic, lead, gold as processed bhasmas
+  weak_citations:
+  - source: Report text, no [Sn] marker
+    type: unclear
+    citation_strength: unclear

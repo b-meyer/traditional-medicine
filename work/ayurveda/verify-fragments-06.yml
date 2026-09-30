@@ -1,0 +1,356 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: revival_and_institutionalization.dated_events
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - label: Arya Vaidya Sala, Kottakkal founded
+          date: '1902'
+          description: P. S. Varier; founded at Kottakkal on Vijayadashami, 12 October 1902; mass production of standardized medicines.
+        - label: All India Ayurvedic Congress organized nationally
+          date: '1907'
+          description: Umbrella professional body; established 1907 at Nasik.
+        - label: Gananath Sen presidencies of All-India Ayurvedic Congress
+          date: 1911, 1920, 1931
+          description: Presided at Allahabad (1911), Indore (1920), Mysore (1931); advocate of samanvaya (integration of Ayurveda with modern medicine).
+        - label: Arya Vaidya Patasala
+          date: '1917'
+          description: School founded by Varier at Calicut with a four-year syllabus.
+        - label: Bhore Committee
+          date: '1946'
+          description: Prioritized Western scientific medicine.
+        - label: Chopra Committee
+          date: '1948'
+          description: Report of the Committee on Indigenous Systems of Medicine; recommended developing indigenous systems, with a synthesis approach.
+        - label: Central Council of Indian Medicine established
+          date: '1970'
+          description: Indian Medicine Central Council Act 1970 (the Act is dated 1970; the Council was constituted under it).
+        - label: Maharishi Ayur-Ved launched
+          date: mid-1980s
+          description: Global variant. Date not confirmed against a primary source in this pass.
+        - label: National Ayurvedic Medical Association founded
+          date: '1998'
+          description: US voluntary professional body (incorporated 2000).
+        - label: Ministry of AYUSH created
+          date: '2014'
+          description: Union ministry; formed 9 November 2014.
+        - label: NAMA certification board (NAMACB) founded
+          date: '2017'
+          description: US voluntary credentials; founded March 2017.
+      citations:
+        - source: Arya Vaidya Sala Kottakkal, About us (aryavaidyasala.com/about-us), institutional page giving 1902 founding on 12 October and 1917 Pathasala
+          type: institutional
+          citation_strength: direct
+        - source: Akhil Bhartiya Ayurved Mahasammelan (All India Ayurvedic Congress), About AICC (ayurvediccongress.com/about-aicc), states established 1907 at Nasik
+          type: institutional
+          citation_strength: direct
+        - source: CCRAS, Kaviraj Gananath Sen (luminaries.ccras.res.in), Ministry of AYUSH research council; presided at Allahabad 1911, Indore 1920, Mysore 1931
+          type: institutional
+          citation_strength: direct
+        - source: Report of the Health Survey and Development Committee (Bhore Committee), Government of India, 1946
+          type: historical-monograph
+          citation_strength: direct
+        - source: Report of the Committee on Indigenous Systems of Medicine (R. N. Chopra, Chairman), Ministry of Health, Government of India, 1948 (archive.org dli.csl.2160)
+          type: historical-monograph
+          citation_strength: direct
+        - source: Indian Medicine Central Council Act, 1970 (Act 48 of 1970), India Code
+          type: statute
+          citation_strength: direct
+        - source: NAMACB, Who are we (namacb.org/what-we-do), founded March 2017; NAMA (ayurvedanama.org) founded 1998
+          type: institutional
+          citation_strength: direct
+        - source: Ministry of Ayush official pages (accr.ayush.gov.in/about_us; maisp.ayush.gov.in/about_us), ministry formed 9 November 2014
+          type: institutional
+          citation_strength: direct
+      register: historical-scholarship
+      notes: "Changed from the original leaf: All India Ayurvedic Congress date given as 1907 (was c. 1907; the Congress's own page says 1907 at Nasik, 24 May per secondary summaries). Other dates confirmed against institutional or primary documents. Maharishi Ayur-Ved mid-1980s was not confirmed by a primary source; retained as originally stated and flagged. The NAMA 1998 founding year was seen only in search-result text of ayurvedanama.org, not on a fetched page. The Ministry of AYUSH 9 November 2014 date was seen in search-result text of ministry pages, not on a fetched page. The Bhore description (prioritized Western scientific medicine) was not checked against the report text. The Exotic India catalog listing and Wikipedia are no longer relied on."
+    searches: ["Arya Vaidya Sala Kottakkal founded 1902 Arya Vaidya Pathasala 1917 P. S. Varier history", "All India Ayurvedic Congress first session 1907 Gananath Sen president 1911 1920 1931", "Maharishi Ayur-Veda introduced 1985 history", "Ministry of AYUSH created November 2014 official page", "NAMA National Ayurvedic Medical Association founded 1998 NAMACB", "Chopra Committee 1948 Bhore Committee 1946 report"]
+  - path: legal_status.jurisdictions
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - jurisdiction: India
+          regulator: CCIM (Indian Medicine Central Council Act 1970), replaced by NCISM (NCISM Act 2020; CCIM dissolved 11 June 2021); Ministry of AYUSH (2014); drugs under Drugs and Cosmetics Act 1940
+          statute: Drugs and Cosmetics Act 1940 and Rules (Schedule E(1), Schedule T); Indian Medicine Central Council Act 1970; NCISM Act 2020; Drugs and Magic Remedies (Objectionable Advertisements) Act 1954
+          year: 1940, 1954, 1970, 2020
+          scope_of_practice: Recognized system of medicine
+          prescribing_rights: CCIM notification of 20 Nov 2020 (amending the Indian Medicine Central Council (Post Graduate Ayurveda Education) Regulations 2016) lists 39 general surgery and about 19 ENT/eye/dental procedures (58 in total) in which PG Shalya/Shalakya trainees are trained and perform; challenged by the IMA in the Supreme Court (notice issued March 2021)
+          integration_with_public_health_system: Push toward 'One Nation One Health System'; disputed
+          recognition_tier: full medical system
+        - jurisdiction: Sri Lanka
+          regulator: Department of Ayurveda; Ayurvedic Medical Council (mandatory registration)
+          statute: Ayurveda Act No. 31 of 1961
+          year: 1961
+          scope_of_practice: Covers Ayurveda, Siddha, Unani and Sri Lankan traditional medicine; Ayurvedic Code
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: full medical system
+        - jurisdiction: Nepal
+          regulator: null
+          statute: null
+          year: null
+          scope_of_practice: Recognized with own registration framework
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: full medical system
+        - jurisdiction: Bangladesh
+          regulator: null
+          statute: null
+          year: null
+          scope_of_practice: Recognized with own registration framework; also regulates Unani/Tibb
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: full medical system
+        - jurisdiction: Pakistan
+          regulator: null
+          statute: null
+          year: null
+          scope_of_practice: Recognized with own registration framework; also regulates Unani/Tibb
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: full medical system
+        - jurisdiction: United States
+          regulator: FDA (products only)
+          statute: Dietary Supplement Health and Education Act 1994
+          year: 1994
+          scope_of_practice: No state licenses Ayurvedic practitioners; NAMA (1998) and NAMACB (2017) give voluntary private credentials
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: supplement/wellness only
+        - jurisdiction: United Kingdom/EU
+          regulator: MHRA; Complementary and Natural Healthcare Council (voluntary, PSA-accredited)
+          statute: Directive 2004/24/EC; SI 2005/2750
+          year: 2004/2005 (UK in force 30 April 2011)
+          scope_of_practice: Practitioners not statutorily regulated; Walker report (26 March 2015) recommended against statutory regulation; Traditional Herbal Registration requires about 30 years' use (15 in EU) plus quality and safety, not efficacy
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: unregulated
+        - jurisdiction: Switzerland
+          regulator: OdA AM (Ayurveda medicine), OdA KT (complementary therapist)
+          statute: Constitutional Article 118a (referendum 17 May 2009)
+          year: 2009
+          scope_of_practice: Since 2015 federally recognized higher professional examination diploma, 'Naturopath with federal diploma', Ayurveda medicine specialization
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: title protection
+        - jurisdiction: Germany
+          regulator: null
+          statute: Heilpraktikergesetz
+          year: 1939
+          scope_of_practice: Practiced by physicians or Heilpraktiker; not a separate statutory system
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: unregulated
+        - jurisdiction: Australia
+          regulator: TGA (products); practitioners not under AHPRA
+          statute: Therapeutic Goods Act 1989
+          year: 1989
+          scope_of_practice: Products are complementary medicines on ARTG (AUST L/R); practitioners not registered
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: unregulated
+        - jurisdiction: Malaysia
+          regulator: null
+          statute: Traditional and Complementary Medicine Act 2016 (Act 775)
+          year: 2016
+          scope_of_practice: Ayurveda regulated as Traditional Indian Medicine; mandatory registration
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: statutory registration
+        - jurisdiction: Mauritius
+          regulator: Traditional Medicine Board
+          statute: Ayurvedic and Other Traditional Medicines Act (Act 37 of 1989, proclaimed in force 3 September 1990)
+          year: 1990
+          scope_of_practice: null
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: null
+        - jurisdiction: Brazil
+          regulator: null
+          statute: Portaria 849 (27 March 2017), National Policy on Integrative and Complementary Practices (PNPIC)
+          year: 2017
+          scope_of_practice: null
+          prescribing_rights: null
+          integration_with_public_health_system: Incorporated into the public-health PNPIC
+          recognition_tier: null
+        - jurisdiction: Hungary
+          regulator: null
+          statute: Government Decree 40/1997 and Ministry Decree 11/1997
+          year: 1997
+          scope_of_practice: Recognized (as naturopathy) but practice restricted to medical doctors
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: null
+        - jurisdiction: United Arab Emirates
+          regulator: Emirate authorities (DHA, DoH, MOHAP)
+          statute: null
+          year: null
+          scope_of_practice: Practitioners licensed
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: statutory registration
+        - jurisdiction: Slovenia
+          regulator: null
+          statute: null
+          year: null
+          scope_of_practice: Listed as 'regulated' by Indian government sources; no specific statute verified
+          prescribing_rights: null
+          integration_with_public_health_system: null
+          recognition_tier: null
+      citations:
+        - source: Indian Medicine Central Council Act, 1970 (Act 48 of 1970), India Code (indiacode.nic.in/handle/123456789/19303)
+          type: statute
+          citation_strength: direct
+        - source: National Commission for Indian System of Medicine Act, 2020, India Code (indiacode.nic.in/handle/123456789/15622); repeal of 1970 Act and dissolution of CCIM effective 11 June 2021
+          type: statute
+          citation_strength: direct
+        - source: Ayurveda Act (No. 31 of 1961), Sri Lanka (commonlii.org/lk/legis/num_act/aa31o1961156)
+          type: statute
+          citation_strength: direct
+        - source: Traditional and Complementary Medicine Act 2016 (Act 775), Laws of Malaysia (hq.moh.gov.my/tcm/en/upload/aktaBI2016.pdf)
+          type: statute
+          citation_strength: direct
+        - source: Portaria GM/MS n. 849 of 27 March 2017, Ministerio da Saude, Diario Oficial da Uniao 28 March 2017 (in.gov.br)
+          type: statute
+          citation_strength: direct
+        - source: Ayurvedic and Other Traditional Medicines Act (Act 37 of 1989), Ministry of Health and Wellness, Mauritius (health.govmu.org)
+          type: statute
+          citation_strength: direct
+        - source: Walker D., Report on the Regulation of Herbal Medicines and Practitioners, 26 March 2015, UK Department of Health (assets.publishing.service.gov.uk)
+          type: institutional
+          citation_strength: direct
+        - source: Hungarian initiative for Ayurveda, European Institute of Ayurvedic Sciences, J Ayurveda Integr Med 2018 (PMC6033731), citing 40/1997 Government Decree and 11/1997 NM Order
+          type: primary-study
+          citation_strength: direct
+        - source: OdA AM, Hohere Fachprufung and Abschluss/Titel pages (oda-am.ch), Naturheilpraktiker mit eidg. Diplom with Ayurveda-Medizin specialization; SBFI approval April 2015
+          type: institutional
+          citation_strength: direct
+        - source: Therapeutic Goods Administration, Ayurvedic medicines (tga.gov.au/ayurvedic-medicines); Therapeutic Goods Act 1989
+          type: institutional
+          citation_strength: direct
+        - source: Ministry of Ayush, Global Recognition portal (global.ayush.gov.in/global_reco), lists countries where Ayurveda is recognised or regulated
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected: Mauritius statute is Act 37 of 1989, proclaimed in force 3 September 1990 (was 'Act 1990'); regulator Traditional Medicine Board added. India: CCIM was dissolved and the 1970 Act repealed on 11 June 2021; the November 2020 notification lists 39 + about 19 procedures, and the IMA challenge is pending in the Supreme Court (notice March 2021), so 'sub judice' rests on 2021 court reporting and is not confirmed as current in September 2026. Hungary confirmed (recognized as naturopathy; doctors only). Verified this pass: India statutes, Sri Lanka, Malaysia, Brazil, Mauritius, Hungary, Germany Heilpraktikergesetz 1939 (as general framework, not Ayurveda-specific), Australia TGA products and no AHPRA registration, Walker report date and stance, Switzerland OdA AM diploma (SBFI, April 2015). Not verified against primary text: DSHEA 1994 and FDA role, Directive 2004/24/EC and SI 2005/2750 details (30/15 years), 30 April 2011 date, Swiss Art. 118a referendum date, UAE emirate regulators, Nepal, Bangladesh, Pakistan registration frameworks (a Ministry of AYUSH-derived article states Nepal recognizes and regulates Ayurveda; nothing found for Bangladesh or Pakistan beyond MOU lists), Slovenia. The Careers360 news article and Wikipedia Institute of Indigenous Medicine page are no longer relied on."
+    searches: ["Indian Medicine Central Council Act 1970 text indiacode", "National Commission for Indian System of Medicine Act 2020 text CCIM dissolved", "CCIM notification 20 November 2020 58 surgical procedures", "Supreme Court Ayurveda postgraduate surgery CCIM notification 2020 IMA petition", "Sri Lanka Ayurveda Act No. 31 of 1961", "Traditional and Complementary Medicine Act 2016 Act 775 Malaysia", "Portaria 849 27 marco 2017 PNPIC", "Hungary Government Decree 40/1997 Ministry Decree 11/1997", "Mauritius Ayurvedic and Other Traditional Medicines Act 1990", "OdA AM Ayurveda Medizin eidgenossisches Diplom 2015", "Walker report 26 March 2015", "Heilpraktikergesetz 1939 Ayurveda Germany", "Therapeutic Goods Act 1989 Ayurvedic AHPRA", "Ministry of AYUSH international cooperation Ayurveda regulated countries list"]
+  - path: legal_status.supranational_standards
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - body: World Health Organization
+          instrument: Benchmarks for the Training of Ayurveda
+          year: 2022
+          scope: Training benchmarks (update of the 2010 version); published 11 February 2022
+        - body: World Health Organization
+          instrument: Benchmarks for Practice (Ayurveda)
+          year: 2022
+          scope: Practice benchmarks; published 11 February 2022
+        - body: European Union
+          instrument: Directive 2004/24/EC (Traditional Herbal Medicinal Products Directive)
+          year: 2004
+          scope: Simplified registration for traditional herbal products; European Commission report COM(2008) 584 states that the Directive's simplified-registration requirements are not appropriate for global regulation of holistic traditions such as Ayurveda, whose products include plant, animal and mineral ingredients
+      citations:
+        - source: WHO benchmarks for the training of ayurveda, WHO, 2022 (ISBN 9789240042711; who.int/publications/i/item/9789240042711)
+          type: institutional
+          citation_strength: direct
+        - source: WHO benchmarks for the practice of ayurveda, WHO, 2022 (ISBN 9789240042674; who.int/publications/i/item/9789240042674)
+          type: institutional
+          citation_strength: direct
+        - source: Directive 2004/24/EC of the European Parliament and of the Council, OJ L 136, 30.4.2004
+          type: statute
+          citation_strength: direct
+        - source: European Commission, Communication COM(2008) 584 final, report on experience acquired under Directive 2004/24/EC (EUR-Lex 52008DC0584)
+          type: statute
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected: practice benchmarks year was null, WHO catalog gives 11 February 2022. Removed 'developed with the Jamnagar institute': the WHO catalog page credits only WHO and a broad consensus of practitioners, regulators and academics and does not mention Jamnagar. The EC 2008 wording was narrowed: the EUR-Lex text could not be fetched in this pass, and the reading of COM(2008) 584 comes from search-result excerpts of it, which say the Directive is not appropriate for holistic traditions such as Ayurveda and that Ayurvedic products include mineral ingredients; the original phrase 'ill-suited ... that use mineral/metal ingredients' is not supported as worded. Directive title, year and 30-day OJ date not independently opened."
+    searches: ["WHO Benchmarks for Training in Ayurveda 2022 WHO Benchmarks for Practice in Ayurveda", "European Commission 2008 report Directive 2004/24/EC Ayurveda mineral metal ingredients", "Commission report COM(2008) 584 Ayurveda holistic"]
+  - path: education_and_licensure.degree_programs
+    outcome: confirmed
+    field:
+      status: filled
+      value: BAMS (standardized degree); postgraduate Ayurveda (Shalya Tantra, Shalakya Tantra); Arya Vaidya Patasala (1917); Swiss federal diploma pathway; NAMA voluntary credentials (Ayurvedic Health Counselor, Practitioner).
+      citations:
+        - source: NCISM (ncismindia.org), Bachelor of Ayurvedic Medicine and Surgery curriculum and regulations; 5.5-year programme including internship
+          type: institutional
+          citation_strength: direct
+        - source: Indian Medicine Central Council (Post Graduate Ayurveda Education) Regulations 2016 as amended 2020; PIB clarification of November 2020 (Shalya and Shalakya PG departments)
+          type: statute
+          citation_strength: direct
+        - source: Arya Vaidya Sala Kottakkal, About us (aryavaidyasala.com/about-us), Aryavaidya Pathasala established 1917
+          type: institutional
+          citation_strength: direct
+        - source: OdA AM, Hohere Fachprufung (oda-am.ch/de/hoehere-fachpruefung), Naturheilpraktiker with federal diploma, Ayurveda-Medizin specialization
+          type: institutional
+          citation_strength: direct
+        - source: NAMACB (namacb.org/what-we-do), Ayurvedic Health Counselor and Ayurvedic Practitioner exams
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Confirmed. NAMACB also lists an Advanced Ayurvedic Practitioner credential (from Spring 2025), not in the original value and not added. The PIB page itself returned 403 in this pass; the PG Shalya/Shalakya point is from search-result text of that release."
+    searches: ["NCISM Bachelor of Ayurvedic Medicine and Surgery BAMS regulations curriculum", "CCIM notification 20 November 2020 Shalya Shalakya", "NAMA NAMACB certification", "OdA AM Ayurveda Medizin eidgenossisches Diplom"]
+  - path: education_and_licensure.accrediting_body
+    outcome: corrected
+    field:
+      status: filled
+      value: CCIM, replaced by NCISM (NCISM Act 2020; CCIM dissolved 11 June 2021), governs Indian practice and education; OdA AM for the Swiss diploma; NAMACB for US voluntary certification.
+      citations:
+        - source: National Commission for Indian System of Medicine Act, 2020, India Code (indiacode.nic.in/handle/123456789/15622)
+          type: statute
+          citation_strength: direct
+        - source: Indian Medicine Central Council Act, 1970, India Code (indiacode.nic.in/handle/123456789/19303)
+          type: statute
+          citation_strength: direct
+        - source: OdA AM, Hohere Fachprufung (oda-am.ch/de/hoehere-fachpruefung)
+          type: institutional
+          citation_strength: direct
+        - source: NAMACB, Who are we (namacb.org/what-we-do)
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected only for timing: the NCISM Act dates from 2020 but the 1970 Act was repealed and CCIM dissolved with effect from 11 June 2021 (SCC Online report of the notification; date not opened on the gazette itself). Roles of OdA AM (developed the exam; SBFI approved it April 2015) and NAMACB (certification exams) confirmed."
+    searches: ["National Commission for Indian System of Medicine Act 2020 CCIM dissolved", "OdA AM Ayurveda Medizin eidgenossisches Diplom Hohere Fachprufung", "NAMACB Who are we"]
+  - path: education_and_licensure.licensure_requirements
+    outcome: confirmed
+    field:
+      status: filled
+      value: 'Sri Lanka: mandatory registration with the Ayurvedic Medical Council; Malaysia: mandatory registration; US: no state licensure, voluntary private credentials; Hungary: restricted to medical doctors; UAE: emirate licensing.'
+      citations:
+        - source: Ayurveda Act (No. 31 of 1961), Sri Lanka (commonlii.org/lk/legis/num_act/aa31o1961156)
+          type: statute
+          citation_strength: direct
+        - source: Traditional and Complementary Medicine Act 2016 (Act 775), Laws of Malaysia (hq.moh.gov.my/tcm)
+          type: statute
+          citation_strength: direct
+        - source: Governing therapeutic pluralism, environmental scan of statutory regulation of T&CM practitioners in the United States, PMC10411782
+          type: primary-study
+          citation_strength: direct
+        - source: Hungarian initiative for Ayurveda, European Institute of Ayurvedic Sciences, PMC6033731 (Government Decree 40/1997, NM Order 11/1997)
+          type: primary-study
+          citation_strength: direct
+        - source: Dubai Healthcare City Authority, Licensure Requirements for Complementary and Alternative Medicine (dhcc.ae) and UAE government alternative medicine page (u.ae)
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Confirmed. The US point is supported by absence: the statutory scan covers no Ayurvedic licensure and describes Ayurvedic practitioners as unlicensed. UAE licensing was confirmed at emirate level (DHA in Dubai, MOH exam for the northern emirates) from search-result text; the DHCC and u.ae pages were not opened. Malaysia registration is mandatory under Act 775 for recognised practice areas, provisional registration from 1 March 2021 per secondary summary."
+    searches: ["Sri Lanka Ayurveda Act No. 31 of 1961 Ayurvedic Medical Council registration", "Traditional and Complementary Medicine Act 2016 Act 775 Malaysia Ayurveda registration", "UAE Ayurveda practitioners licensed Dubai Health Authority", "Hungary Government Decree 40/1997", "statutory regulation US Ayurvedic practitioners licensure"]
+  - path: education_and_licensure.biomedical_content_in_curriculum
+    outcome: corrected
+    field:
+      status: filled
+      value: The NCISM-prescribed BAMS curriculum includes modern anatomy, physiology, pathology, and medical chemistry alongside Ayurvedic subjects; PG Shalya and Shalakya trainees are trained in listed surgical procedures (CCIM notification of 20 November 2020).
+      citations:
+        - source: NCISM (ncismindia.org), BAMS curriculum and user manual for the first professional year
+          type: institutional
+          citation_strength: direct
+        - source: Indian Medicine Central Council (Post Graduate Ayurveda Education) Amendment Regulations, 2020; PIB clarification, November 2020
+          type: statute
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected: original value carried a causal, historical claim (Ayurveda adopted anatomy and laboratory science 'in order to survive') that no regulatory source can verify; that framing is historical scholarship and was not located, so it was dropped rather than confirmed. The curriculum content is confirmed from NCISM materials (search-result text; user manual PDF not opened in full). PG trainee surgical training confirmed from the amended regulations, whose lawfulness is disputed."
+    searches: ["NCISM BAMS minimum standards curriculum modern anatomy physiology", "CCIM notification 20 November 2020 surgical procedures Shalya Shalakya", "Ayurveda adopted anatomy laboratory science to survive colonial period"]

@@ -1,0 +1,65 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: revival_and_institutionalization.state_sponsorship
+    outcome: confirmed
+    field:
+      status: filled
+      value: Chopra Committee (1948) recommended developing indigenous systems; Central Council of Indian Medicine
+        (1970); Ministry of AYUSH (2014); CCRAS research; National Commission for Indian System of Medicine
+        Act 2020; India's US$85 million (2022-2032) commitment to WHO GTMC within a US$250 million investment.
+      citations:
+        - source: "Report of the Committee on Indigenous Systems of Medicine (R.N. Chopra, Chairman), Ministry of Health, Government of India, New Delhi, 1948 (Internet Archive, Digital Library of India copy)"
+          type: primary-study
+          citation_strength: direct
+        - source: "The Indian Medicine Central Council Act, 1970 (Act 48 of 1970), long title and s.3, text as hosted on Indian Kanoon and India Code"
+          type: statute
+          citation_strength: direct
+        - source: "The National Commission for Indian System of Medicine Act, 2020 (Act 14 of 2020), India Code"
+          type: statute
+          citation_strength: direct
+        - source: "WHO, India commits US$ 85 million to WHO Global Traditional Medicine Centre, news release, 31 July 2024"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Confirmed with two precisions. (1) The 1970 date is the year of the Indian Medicine Central Council Act; secondary sources say the Council itself was constituted in 1971, and the NCISM Act 2020 superseded it (NCISM constituted June 2021). (2) WHO wording is US$85 million over 10 years, 2022-2032, part of a US$250 million investment; it was signed in 2024. The Ministry of AYUSH formation date (9 November 2014) and the CCRAS entry were seen only in search excerpts of Ministry pages; the ayush.gov.in and indiacode.nic.in pages returned 403 to the fetcher, so the 2014 date and the Act 2020 text were not read directly."
+    searches:
+      - "Indian Medicine Central Council Act 1970 Central Council of Indian Medicine establishment"
+      - "National Commission for Indian System of Medicine Act 2020 text indiacode"
+      - "WHO Global Traditional Medicine Centre Jamnagar India US$ 85 million 2022-2032 US$ 250 million"
+      - "Ministry of AYUSH created November 2014 press information bureau"
+      - "Chopra Committee 1948 Committee on Indigenous Systems of Medicine report recommendations Ayurveda"
+  - path: revival_and_institutionalization.revival_context
+    outcome: unverifiable
+    searches:
+      - "Ayurveda revival colonial period nationalism Wujastyk Leslie Berger Ayurveda Made Modern"
+      - "Repackaging Ayurveda in post-colonial India revival (South Asia journal, 2012); publisher pages returned 403"
+  - path: revival_and_institutionalization.key_figures
+    outcome: unverifiable
+    searches:
+      - "Arya Vaidya Sala Kottakkal founded 1902 P.S. Varier Arya Vaidya Pathasala 1917 (1902 and 1917 supported by aryavaidyasala.com/about-us, but only Varier)"
+      - "Gananath Sen All India Ayurvedic Congress president 1911 1920 1931 (found only Wikipedia citing Cerulli 2022 and Bhushan et al 2024; JRAS full text 402)"
+      - "Roop Lal Sharma Ayurveda Gananath Sen confluence pure Ayurveda opposed (no source for the opposition)"
+      - "Ganga Prasad Sen Gangadhar Ray Gopalacharlu Duraiswami Aiyangar Lakshmipathi Srinivasa Narayana Iyengar Shankar Dajishastri Pade revivalists (no primary source located)"
+  - path: revival_and_institutionalization.nationalist_framing
+    outcome: unverifiable
+    searches:
+      - "Ministry of AYUSH 5000 years oldest Ayurveda continuously practiced PIB (found only Ministry wording of oldest system with documented history of more than 5000 years, via excerpt; no source for continuous-practice wording or nationalist accounts of unbroken Vedic descent)"
+  - path: revival_and_institutionalization.standardization_events
+    outcome: unverifiable
+    searches:
+      - "Arya Vaidya Sala about us (1902, Pathasala 1917 supported)"
+      - "Chopra 1948 and Udupa 1958 committees (PubMed/PMC article Beyond a bureaucratic status report; Udupa dated 1958 there)"
+      - "BAMS standardized degree; Dabur Zandu Baidyanath rise as pharmaceutical firms (no primary source located)"
+  - path: revival_and_institutionalization.internal_factions
+    outcome: unverifiable
+    searches:
+      - "Gananath Sen samanvaya Roop Lal Sharma pure Ayurveda Brass Politics of Ayurvedic Education"
+      - "Roop Lal Sharma Ayurveda Gananath Sen confluence pure Ayurveda opposed"
+  - path: revival_and_institutionalization.diffusion_abroad
+    outcome: unverifiable
+    searches:
+      - "National Ayurvedic Medical Association founded 1998 NAMACB 2017 (NAMA founded 1998 and NAMACB March 2017 per namacb.org; voluntary status not stated)"
+      - "Switzerland Ayurveda federal diploma naturopath 2015 (becc.admin.ch shows Pruefungsordnung effective 28.04.2015, Ayurveda-Medizin one of four specializations)"
+      - "Hungary Ayurveda European Institute of Ayurvedic Sciences (Wele 2018, J Ayurveda Integr Med; Hungarian government decree 40/1997 and 2014 Debrecen MoU; the leaf gave no period)"
+      - "Maharishi Ayur-Veda 1985 Deepak Chopra West (only Wikipedia and encyclopedia entries; Brennan 2010 does not mention Chopra; Wujastyk and Smith 2008 not accessible)"

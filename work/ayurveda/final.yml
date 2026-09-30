@@ -1,0 +1,2568 @@
+schema_version: '1.6'
+system: ayurveda
+source_report: final
+fields:
+  identification:
+    system_name:
+      status: filled
+      value: Ayurveda
+      citations:
+      - source: 'NCCIH (NIH), Ayurvedic Medicine: In Depth, nccih.nih.gov/health/ayurvedic-medicine-in-depth'
+        type: institutional
+        citation_strength: direct
+      register: emic
+      notes: NCCIH names the system Ayurvedic medicine, also known as Ayurveda, and describes it as one
+        of India's traditional health care systems.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    alternate_names:
+      status: filled
+      value:
+      - Ayurveda, 'science of life/longevity' (from Sanskrit ayus + veda)
+      - Ashtanga Ayurveda (the eight-branch system)
+      - ASU (Ayurveda, Siddha, Unani) as the regulatory shorthand for drugs in India
+      citations:
+      - source: Report text, no [Sn] marker
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'Endonym etymology is given in the report; the regulatory shorthand ASU is a grouping, also
+        recorded in system_boundary.
+
+        verify pass: unverifiable. Searched: Drugs and Cosmetics Act 1940 Chapter IVA Ayurvedic Siddha
+        or Unani drugs text India Code; NCCIH Ayurvedic Medicine: In Depth (no etymology given)'
+      source_report: v1
+      verify_outcome: unverifiable
+    primary_regions:
+      status: filled
+      value: Indian subcontinent; widely used in India and by the South Asian diaspora; sold abroad (US,
+        EU) mainly as supplements
+      citations:
+      - source: Report text, no [Sn] marker; NCCIH Ayurvedic Medicine In Depth (S22)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: NCCIH Ayurvedic Medicine: In Depth (no diaspora or
+        EU market content on the page)'
+      source_report: v1
+      verify_outcome: unverifiable
+    practitioner_estimate:
+      status: incidental
+      value:
+      - count: 24000
+        source: Ayurvedic Medical Council (Sri Lanka) 2015 data as reported by ADB Development Asia
+        year: 2015
+        scope: Sri Lanka only; about 96.5% Ayurveda, 2.9% Siddha, 0.6% Unani
+      - count: 19754
+        source: Ayurvedic Medical Council (Sri Lanka) 2010 figures
+        year: 2010
+        scope: Sri Lanka only
+      citations:
+      - source: Asian Development Bank, Development Asia (named in text, no bibliography entry)
+        type: institutional
+        citation_strength: unclear
+      register: regulatory
+      notes: No India-wide or global estimate given. The report kept both Sri Lanka figures and used the
+        higher, more recent one.
+      source_report: v2
+    system_boundary:
+      status: filled
+      value:
+      - tradition: Siddha
+        relation: regulatory_grouping
+        fields_affected:
+        - legal_status
+        - identification
+        description: Regulated with Ayurveda under Sri Lanka's Ayurveda Act No. 31 of 1961 (about 2.9%
+          of registered practitioners); ASU drugs are grouped in India's Drugs and Cosmetics Act.
+      - tradition: Unani
+        relation: regulatory_grouping
+        fields_affected:
+        - legal_status
+        - identification
+        - disruption
+        description: Grouped with Ayurveda in Sri Lankan registration, in ASU drug regulation, and in
+          Bangladesh/Pakistan regulation; Unani classes ran at the Calcutta Madrasa alongside Ayurvedic
+          classes at the Sanskrit College from 1826.
+      - tradition: Sri Lankan traditional medicine
+        relation: regulatory_grouping
+        fields_affected:
+        - legal_status
+        description: Covered by the same Sri Lankan Act and Council.
+      - tradition: Maharishi Ayur-Ved
+        relation: same_system_variant
+        fields_affected:
+        - construct_debate
+        description: Globalized, spiritualized consumer variant launched mid-1980s, popularized by Deepak
+          Chopra; described as only loosely tied to classical texts.
+      - tradition: Classical saṃhitā-based Ayurveda
+        relation: premodern_predecessor
+        fields_affected:
+        - construct_debate
+        - canon_and_transmission
+        description: Report holds that modern institutional, pharmaceutical and wellness forms are substantially
+          19th-21st century reconstructions, with the textual and conceptual core continuous.
+      citations:
+      - source: Institute of Indigenous Medicine (Wikipedia)
+        type: open-encyclopedia
+        citation_strength: indirect
+      - source: About Us - Maharishi Ayurveda (maharishiayurvedaindia.com)
+        type: practitioner-site
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'Sowa-Rigpa is treated as a recipient of Ayurvedic influence and is recorded in contact_and_borrowing,
+        not here.
+
+        verify pass: unverifiable. Searched: Ayurveda Act No. 31 of 1961 Sri Lanka Ayurveda Medical Council
+        Siddha Unani registered practitioners; Sri Lanka Ministry of Health Ayurveda Medical Council registered
+        practitioners Siddha 2.9%; Ayurveda Act 1961 commonlii (403); Sri Lanka parliament annual report
+        2024 pdf (unreadable)'
+      source_report: v2
+      verify_outcome: unverifiable
+  canon_and_transmission:
+    foundational_texts:
+      status: filled
+      value:
+      - title: Caraka Saṃhitā
+        date: early centuries CE
+        author: Descends from a treatise attributed to Agniveśa (lineage of Ātreya); redacted by Caraka;
+          partly reconstructed or completed by Dṛḍhabala
+      - title: Suśruta Saṃhitā
+        date: composition may have begun in the last centuries BCE; completed by a later redactor
+        author: Suśruta (no firm authorial identity); later redactor added the Uttaratantra
+      - title: Aṣṭāṅgahṛdaya and Aṣṭāṅgasaṃgraha
+        date: c. 7th century CE
+        author: Vāgbhaṭa (two Vāgbhaṭas, identity uncertain)
+      citations:
+      - source: G. Jan Meulenbeld, A History of Indian Medical Literature (HIML), 1999-2002 (named in
+          text, no bibliography entry)
+        type: historical-monograph
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: The three works form the Bṛhattrayī (Great Triad).
+      source_report: v2
+    secondary_canon:
+      status: filled
+      value: 'Laghutrayī (Lesser Triad): Mādhavanidāna, Śārṅgadharasaṃhitā, Bhāvaprakāśa'
+      citations:
+      - source: G. Jan Meulenbeld, HIML (named in text, no bibliography entry)
+        type: historical-monograph
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: No dates given for the Laghutrayī texts.
+      source_report: v2
+    dating_and_authorship_disputes:
+      status: filled
+      value:
+      - scholar: G. Jan Meulenbeld
+        position: Many problems about the texts and their authors are 'far from even approaching a solution'
+          (HIML Ia, 656). Gives the most detailed discussion of Suśruta dating and sets aside Hoernle's
+          old 600 BCE date.
+      - scholar: Kenneth Zysk
+        position: 'Classical Ayurveda''s empirico-rational character emerged from heterodox wandering
+          ascetics and Buddhist monastic communities from about the 4th century BCE, not from Brahmanic
+          Vedic religion; early Buddhist medicine was ''fundamental to the formation of ayurvedic medical
+          thinking''. Work: Asceticism and Healing in Ancient India, 1991.'
+      - scholar: Zimmermann (as quoted)
+        position: Called Zysk's account 'a missing link between the hymns and charms of the Vedic period
+          and the treatises of classical Ayurveda'.
+      - scholar: Nationalist and traditionalist accounts (unnamed)
+        position: Emphasize unbroken Vedic descent.
+      - scholar: Historians (unnamed)
+        position: No firm authorial identity for Suśruta, Caraka or the two Vāgbhaṭas; dates rest on internal
+          layering, cross-references and the Bower Manuscript, not external documentary anchors; uncertainty
+          is irreducible with current evidence.
+      citations:
+      - source: G. Jan Meulenbeld, HIML (named in text, no bibliography entry)
+        type: historical-monograph
+        citation_strength: unclear
+      - source: Asceticism Healing Ancient India Medicine by Kenneth Zysk (AbeBooks)
+        type: catalog-listing
+        citation_strength: indirect
+      - source: Asceticism and Healing in Ancient India (Motilal Banarsidass listing)
+        type: catalog-listing
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'S1 and S2 are bookseller and publisher listings, not the work. Report itself notes Zysk''s
+        view is a scholarly position, not unanimous doctrine.
+
+        verify pass: unverifiable. Searched: Zysk Asceticism and Healing in Ancient India 1991 Oxford
+        University Press; Zysk fundamental to the formation of ayurvedic medical thinking; Meulenbeld
+        History of Indian Medical Literature Ia far from even approaching a solution; archive.org Meulenbeld
+        HIML 1A full text (excerpt did not reach p. 656)'
+      source_report: v2
+      verify_outcome: unverifiable
+    transmission_mode:
+      status: partial
+      value: Textual, with lineage attributions (Ātreya to Agniveśa for the Caraka tradition) and, per
+        the continuity camp, transmission through commentaries and lineages to the present. Zysk locates
+        early transmission in Buddhist monastic communities.
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report never states a transmission mode explicitly; this is assembled from scattered statements.
+        Oral versus textual balance is not discussed.
+
+        verify pass: unverifiable. Searched: Zysk Asceticism and Healing in Ancient India 1991 Oxford
+        University Press'
+      source_report: v2
+      verify_outcome: unverifiable
+    redaction_history:
+      status: filled
+      value: 'Caraka: earlier treatise (Agniveśa, Ātreya lineage), redacted by Caraka, then Dṛḍhabala
+        restored missing portions (traditionally roughly one-third of the text). Suśruta: multi-layered,
+        begun possibly in last centuries BCE, completed by a later redactor who added the sixth section
+        (Uttaratantra).'
+      citations:
+      - source: G. Jan Meulenbeld, HIML (named in text, no bibliography entry)
+        type: historical-monograph
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: ''
+      source_report: v2
+    external_dating_anchors:
+      status: filled
+      value: Bower Manuscript (c. 4th-6th century CE), found in Chinese Turkestan/Central Asia, brought
+        to the Asiatic Society, Calcutta after its 1890 discovery; contains material overlapping the classical
+        tradition, including quotations echoing Caraka. Report states dates otherwise rest on internal
+        evidence rather than external documentary anchors.
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'The Bower Manuscript is the only external anchor the report names.
+
+        verify pass: unverifiable. Searched: Bower Manuscript Hoernle 1890 Kucha Asiatic Society Calcutta
+        medical treatises date fourth-sixth century; Hoernle The Bower Manuscript facsimile leaves Archaeological
+        Survey of India 1893-1912; archive.org TheBowerManuscript full text (introduction not retrievable)'
+      source_report: v2
+      verify_outcome: unverifiable
+    key_figures:
+      status: filled
+      value:
+      - name: Ātreya
+        dates: null
+        role: Lineage head for the Agniveśa/Caraka tradition
+      - name: Agniveśa
+        dates: null
+        role: Attributed author of the earlier treatise underlying the Caraka Saṃhitā
+      - name: Caraka
+        dates: early centuries CE (text)
+        role: Redactor of the Caraka Saṃhitā
+      - name: Dṛḍhabala
+        dates: null
+        role: Restored or completed missing portions of the Caraka Saṃhitā
+      - name: Suśruta
+        dates: possibly begun last centuries BCE (text)
+        role: Attributed author of the Suśruta Saṃhitā
+      - name: Vāgbhaṭa
+        dates: c. 7th century CE
+        role: Author of Aṣṭāṅgahṛdaya and Aṣṭāṅgasaṃgraha
+      - name: Mankah/Kankah al-Hindi
+        dates: Harun al-Rashid period, r. 786-809
+        role: Indian physician at the Barmakid hospital; translated Sanskrit medical texts
+      - name: ʿAbd-Allāh ibn ʿAlī
+        dates: null
+        role: Reported translator of the Caraka Saṃhitā into Arabic/Persian
+      - name: Harun al-Rashid and the Barmakids
+        dates: r. 786-809
+        role: Patrons of the Baghdad translation activity
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report gives no dates for Ātreya, Agniveśa, Dṛḍhabala, Mankah or ʿAbd-Allāh ibn ʿAlī.
+
+        verify pass: unverifiable. Searched: Meulenbeld History of Indian Medical Literature Suśruta Caraka
+        Vāgbhaṭa dating'
+      source_report: v2
+      verify_outcome: unverifiable
+    dated_events:
+      status: filled
+      value:
+      - label: Buddhist monastic medicine formative period (Zysk thesis)
+        date: from c. 4th century BCE
+        description: Zysk's dating for the emergence of empirico-rational medicine in Buddhist monastic
+          communities.
+      - label: Suśruta Saṃhitā composition begins
+        date: last centuries BCE (possible)
+        description: Completed later with the Uttaratantra.
+      - label: Caraka Saṃhitā dated
+        date: early centuries CE
+        description: General dating.
+      - label: Bower Manuscript
+        date: c. 4th-6th century CE
+        description: Central Asian manuscript overlapping classical material.
+      - label: Vāgbhaṭa works
+        date: c. 7th century CE
+        description: Aṣṭāṅgahṛdaya and Aṣṭāṅgasaṃgraha; post-classical literary expansion from about 600
+          CE.
+      - label: Sanskrit medical texts translated at Baghdad
+        date: 786-809
+        description: Under Harun al-Rashid and the Barmakids; Caraka and Suśruta rendered into Persian
+          and Arabic.
+      - label: Rgyud bzhi compiled in written form
+        date: c. 12th century CE
+        description: Tibetan Four Medical Tantras integrating Ayurvedic principles.
+      - label: Bower Manuscript discovered
+        date: '1890'
+        description: Brought to the Asiatic Society, Calcutta.
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Bower discovery (1890) is a modern discovery event of a premodern manuscript, recorded here
+        as rediscovery.
+
+        verify pass: unverifiable. Searched: Bower Manuscript Hoernle 1890 Asiatic Society Calcutta date;
+        Zysk Asceticism and Healing in Ancient India 4th century BCE; Wujastyk Roots of Ayurveda Caraka
+        Suśruta Arabic Persian Barmakids Baghdad; Yuthok Yonten Gonpo Four Tantras twelfth century; Bower
+        Manuscript palaeography Hoernle 4th century Sander 6th century'
+      source_report: v2
+      verify_outcome: unverifiable
+  construct_debate:
+    positions:
+      status: filled
+      value:
+      - scholar: Frederick Smith and Dagmar Wujastyk (as the report names them)
+        work: 'Modern and Global Ayurveda: Pluralism and Paradigms'
+        year: 2008
+        position: Today's Ayurveda (colleges, standardized pharmacopeia, branded drugs, globalized wellness
+          and New Age forms) is substantially a modern construction.
+        evidence_base: Historical and ethnographic scholarship on modern institutional and global forms.
+      - scholar: Jean Langford
+        work: Fluent Bodies
+        year: 2002
+        position: 'Reinvention camp: modern Ayurveda substantially a modern construction.'
+        evidence_base: Not detailed in report.
+      - scholar: Joseph Alter
+        work: null
+        year: null
+        position: Reinvention camp.
+        evidence_base: Not detailed in report.
+      - scholar: Projit Mukharji
+        work: Doctoring Traditions
+        year: null
+        position: Reinvention camp.
+        evidence_base: Not detailed in report.
+      - scholar: Maharishi Ayur-Ved case (Maharishi Mahesh Yogi, Deepak Chopra; analyzed by Jeannotat
+          per report)
+        work: null
+        year: null
+        position: Clearest example of a spiritualized consumer product only loosely tied to classical
+          texts, launched mid-1980s.
+        evidence_base: Case analysis; yoga-Ayurveda association said to be largely absent from the pre-modern
+          ayurvedic record.
+      - scholar: Indian government / Ministry of AYUSH, practitioner-scholars, some Indologists
+        work: null
+        year: null
+        position: Unbroken living tradition descending from the classical saṃhitās through commentaries
+          and lineages.
+        evidence_base: Demonstrable persistence of texts, concepts and materia medica over roughly two
+          millennia.
+      - scholar: Dominik Wujastyk
+        work: null
+        year: null
+        position: Continuity of texts, discontinuity of much practice (the report's 'nuanced middle').
+        evidence_base: Historical scholarship; also served as expert witness in the 1991 UK 'Maharishi
+          Ayurveda'/AIDS GMC case.
+      - scholar: Sivaramakrishnan, Mukharji, Berger, Leslie, Langford, Banerjee, Bode, Bala (group, as
+          listed by report)
+        work: Doctoring Traditions and others
+        year: null
+        position: To survive, Ayurveda adopted college curricula, printed standardized textbooks, factory-manufactured
+          branded drugs, professional registration (which marginalized folk and lay healers), anatomy
+          and laboratory science, and the vocabulary of 'science'. The report calls this the empirical
+          core of the reinvention thesis.
+        evidence_base: Historical scholarship on colonial-era and later institutional change.
+      citations:
+      - source: About Us - Maharishi Ayurveda (maharishiayurvedaindia.com)
+        type: practitioner-site
+        citation_strength: indirect
+      - source: Warrier 2011, Modern Ayurveda in Transnational Context, Religion Compass
+        type: tertiary-review
+        citation_strength: direct
+        claim_match: mismatch
+      - source: Named works (Smith and Wujastyk 2008; Langford 2002; Mukharji; Alter) with no bibliography
+          entries
+        type: historical-monograph
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'S24 is cited for Jeannotat''s analysis of Maharishi Ayurveda as ''a controversial model
+        of global Ayurveda'', but the bibliography entry is by Warrier (2011), not Jeannotat; flagged
+        as mismatch. The report names the volume''s editor as ''Dagmar Wujastyk'' while separately discussing
+        Dominik Wujastyk. Report''s own labelling of the two camps is kept.
+
+        verify pass: unverifiable. Searched: Wujastyk Smith eds. Modern and Global Ayurveda Pluralism
+        and Paradigms SUNY Press 2008; Dominik Wujastyk expert witness Maharishi Ayurveda General Medical
+        Council 1991 AIDS; SUNY Press Modern and Global Ayurveda table of contents Jeannotat Alter'
+      source_report: v2
+      verify_outcome: unverifiable
+    report_adjudication:
+      status: filled
+      value: 'Both camps are partly right and largely argue about different objects: the textual/conceptual
+        core has real continuity, while the institutional, pharmaceutical and popular-wellness superstructure
+        is demonstrably modern. The TL;DR states both continuity and reinvention are true at once.'
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'The report''s stance, not consensus.
+
+        verify pass: unverifiable. Searched: Modern and Global Ayurveda continuity reinvention review'
+      source_report: v2
+      verify_outcome: unverifiable
+  theoretical_primitives:
+    constituents:
+      status: filled
+      value: Tridoṣa (vāta, pitta, kapha); dhātu (seven bodily tissues); mala (waste products); agni (digestive/metabolic
+        fire); āma (undigested toxic residue from weak agni); srotas (channels of circulation/transport);
+        prakṛti (individual constitutional type, held to be fixed at birth).
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'verify pass: unverifiable. Searched: Caraka Saṃhitā Śārīrasthāna 4 prakṛti fixed at conception
+        wisdomlib; wisdomlib Charaka Samhita Sharirasthana 4 srotas'
+      source_report: v2
+      verify_outcome: unverifiable
+    balance_logic:
+      status: filled
+      value: Health is a state of balance of the doṣas together with agni, dhātus and malas (Suśruta Saṃhitā
+        Sūtrasthāna 15.41); the stated aim of the science is to establish and maintain equilibrium of
+        the body elements (Caraka Saṃhitā Sūtrasthāna 1), with disorders treated by agents of opposing
+        qualities.
+      citations:
+      - source: Suśruta Saṃhitā, Sūtrasthāna ch. 15 (Bhishagratna English translation, vol. 1, on wisdomlib.org)
+        type: reference-work
+        citation_strength: direct
+        claim_match: matches
+      - source: Caraka Saṃhitā, Sūtrasthāna ch. 1 (Sharma and Dash / Gulabkunverba Ayurvedic Society English
+          translation, on wisdomlib.org)
+        type: reference-work
+        citation_strength: direct
+        claim_match: matches
+      register: emic
+      notes: Original value also said treatment aims to kindle agni, clear āma and maintain the healthy
+        through regimen. The checked passages (Su. Sū. 15, Ca. Sū. 1) support balance as health and restoration
+        of equilibrium as treatment aim, but I did not locate the agni-kindling, āma-clearing and regimen
+        wording in them, so those elements are dropped from this leaf rather than asserted. Not a finding
+        that they are absent from the tradition. Value now narrowed to what the primary texts show.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    correspondence_system:
+      status: partial
+      value: 'Caraka Samhita Sutrasthana 6 (and 7) maps the doshas onto a solar-seasonal scheme. The year
+        is divided into the northward course of the sun (uttarayana or adana kala, dehydrating, three
+        seasons from late winter to summer) and the southward course (dakshinayana or visarga kala, hydrating,
+        rainy season to early winter). Doshas accumulate (caya), aggravate (prakopa) and subside (prasama)
+        in a fixed seasonal sequence, and seasonal regimens (ritucarya) and evacuative therapies are timed
+        to it (Cha. Sa. Su. 6/4; Su. 7/45 for seasonal purification: winter accumulation cleared in spring,
+        summer accumulation in the rains, rains accumulation in autumn).'
+      citations:
+      - source: Caraka Samhita, Sutrasthana ch. 6 (Tasyasitiya) and ch. 7, as presented on carakasamhitaonline.com
+          (Ritucharya page)
+        type: reference-work
+        citation_strength: indirect
+      register: emic
+      notes: 'Checked only through a web presentation of the Caraka text, so strength is indirect; the
+        primary text should be verified in an edition or translation. Not verified here: any wider cosmological
+        correspondence (for example dosha to direction, planet or deity). Only the seasonal and solar
+        scheme was confirmed. Pancamahabhuta pairings inside the dosha scheme belong under constituents.'
+      source_report: gap
+      gap_outcome: found
+      replaced_from: v2
+    etiology:
+      status: filled
+      value: Disease arises from imbalance of the doṣas (vāta, pitta, kapha), which Caraka Saṃhitā Sūtrasthāna
+        1 treats as the primary disease-causing factors; Suśruta Saṃhitā Sūtrasthāna 15 frames the body
+        as constituted of doṣas, malas and dhātus, whose disturbance produces disease.
+      citations:
+      - source: Caraka Saṃhitā, Sūtrasthāna ch. 1 (English translation, on wisdomlib.org)
+        type: reference-work
+        citation_strength: direct
+        claim_match: matches
+      - source: Suśruta Saṃhitā, Sūtrasthāna ch. 15 (Bhishagratna English translation, on wisdomlib.org)
+        type: reference-work
+        citation_strength: direct
+        claim_match: matches
+      register: emic
+      notes: Original value also said weak agni produces āma, an undigested toxic residue. The Suśruta
+        ch. 15 translation does not mention āma and I did not locate the agni-to-āma claim in the Caraka
+        passages read, so it is dropped here, not refuted. The term vikṛti was likewise not confirmed
+        in the passages read.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    nosology:
+      status: partial
+      value: Diagnostic categories are frequently constitutional/whole-person rather than disease-oriented,
+        so they resist one-to-one translation into ICD-style nosology; report mentions roga (disease)
+        and rogī (patient) examination but lists no disease classification.
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Ayurveda nosology ICD constitutional diagnostic categories
+        roga rogi pariksha'
+      source_report: v2
+      verify_outcome: unverifiable
+    relation_to_biomedical_anatomy:
+      status: filled
+      value: 'Doṣa, dhātu and srotas are functional and relational categories that do not correspond to
+        discrete anatomical structures or measurable analytes; āma and agni have no validated biochemical
+        referent. Mapping works loosely for lifestyle/metabolic stratification but fails at specific disease
+        entities. Historical note: anatomy and laboratory science were adopted during modernization.'
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Ayurveda dosha dhatu srotas biomedical anatomy correspondence'
+      source_report: v2
+      verify_outcome: unverifiable
+    translation_programs:
+      status: filled
+      value:
+      - program: Ayurgenomics (Bhavana Prasher, Mitali Mukerji and colleagues, CSIR-IGIB) and TRISUTRA
+          consortium
+        findings: Prasher et al. 2008 (J Transl Med) reported whole-genome expression and biochemical
+          differences between extreme prakṛti types; later work reported EGLN1/VWF variants (hypoxia/thrombotic
+          adaptation), HLA polymorphism links, CYP2C19 associations, distinct gut-microbiome signatures.
+        maturity: preliminary
+        limits: Small cohorts, heterogeneous prakṛti-assessment tools, incomplete biomarker validation;
+          'suggestive analogy, not demonstrated equivalence'.
+      - program: Claim that prakṛti stratification prefigures P4/precision medicine
+        findings: Claimed analogy only.
+        maturity: speculative
+      citations:
+      - source: Prasher et al. 2008, Journal of Translational Medicine (named in text, no bibliography
+          entry)
+        type: primary-study
+        citation_strength: unclear
+      - source: 2026 Frontiers in Medicine scoping review and 'Epigenomics and Ayurgenomics' review (named
+          in text, no bibliography entry)
+        type: systematic-review
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: Maturity labels 'preliminary' comes from the report; 'speculative' for the P4 claim is the
+        extractor's reading of 'has been claimed to prefigure'.
+      source_report: v2
+  diagnostics:
+    methods:
+      status: filled
+      value:
+      - name: Roga parīkṣā and rogī parīkṣā
+        examines: Disease and patient respectively
+      - name: Aṣṭavidha parīkṣā (eightfold examination)
+        examines: Pulse/nāḍī, urine, stool, tongue, voice/speech, skin/touch, eyes, general appearance
+      - name: Nāḍī parīkṣā (pulse diagnosis)
+        examines: Pulse; widely argued to be a relatively late addition
+      - name: Prakṛti assessment
+        examines: Constitutional type
+      citations:
+      - source: Charaka Samhita, Vimana Sthana ch. 4 (Trividha Roga Vishesha Vijnaniya Vimana), online
+          edition carakasamhitaonline.com
+        type: reference-work
+        citation_strength: direct
+      - source: Yogaratnakara, Ashtasthana pariksha (eight examinations, listed as nadi, mutra, mala,
+          jihva, shabda, sparsha, drik, akriti), as described in Ashtasthana Pariksha review, JAIMS
+        type: tertiary-review
+        citation_strength: direct
+      register: emic
+      notes: Roga and rogi pariksha, and trividha/shadvidha/ashtavidha/dashavidha groupings, are named
+        in Charaka Vimana 4. The specific eightfold list of the value (nadi, mutra, mala, jihva, shabda,
+        sparsha, drik, akriti) is the Ashtasthana pariksha of Yogaratnakara; Sharngadhara is credited
+        with first describing nadi pariksha but not the eightfold list. Nadi is not part of the Charaka
+        examination lists, which supports the late-addition reading, but this is a scholarly inference
+        and no dating scholar was checked. Label 'Ashtavidha' in the value refers to the Yogaratnakara
+        scheme, not Charaka's own eightfold grouping.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    reliability_evidence:
+      status: filled
+      value:
+      - study: Kurande et al. 2013, 'Interrater Reliability of Diagnostic Methods in Traditional Indian
+          Ayurvedic Medicine', eCAM Art. ID 658275
+        statistic: weighted κ (average pairwise)
+        value: pulse 0.07; tongue 0.17; prakṛti 0.28
+        confidence_interval: null
+        design: clinician-vs-clinician
+        population: healthy volunteers
+        n_raters: 15
+        n_subjects: 20
+        target: pulse assessment, tongue assessment, prakṛti (constitutional type), assessed separately
+        citation: Kurande V, Bilgrau AE, Waagepetersen R, Toft E, Prasad R. Evid Based Complement Alternat
+          Med 2013, Art. ID 658275
+        notes: 105 pairwise comparisons; raters were registered Ayurvedic doctors with 3-15 years' experience;
+          authors concluded 'low level of reliability for all types of assessment'. Prakṛti assessment
+          was reported to be reliable when questionnaire and software were used.
+      - study: 'Kessler et al. 2019, ''Reliability of Ayurvedic Diagnosis for Knee Osteoarthritis Patients:
+          A Nested Diagnostic Study Within a Randomized Controlled Trial'', J Altern Complement Med'
+        statistic: percent agreement (consensus)
+        value: 95%
+        confidence_interval: null
+        design: clinician-vs-clinician
+        population: patients
+        n_raters: 4
+        n_subjects: 30
+        target: final overall Ayurvedic diagnosis (main diagnosis, sandhi-gata vata)
+        citation: Kessler CS et al. J Altern Complement Med 2019 (PMC6748397)
+        notes: Nominal group technique used as consensus procedure; 4 Ayurvedic experts (1 Indian-trained,
+          3 Western-trained); 120 individual ratings and 30 consensus ratings.
+      - study: Kessler et al. 2019, knee osteoarthritis nested diagnostic study (same study)
+        statistic: Fleiss and Cohen κ
+        value: 0 to 0.4 (fair-to-poor) for central diagnostic aspects such as prakṛti and agni; individual
+          entities ranged higher (for example κ 0.72 for a pathophysiological item, κ 0.02 for prakṛti
+          as reported in the article)
+        confidence_interval: null
+        design: clinician-vs-clinician
+        population: patients
+        n_raters: 4
+        n_subjects: 30
+        target: central concepts such as prakṛti and agni
+        citation: Kessler CS et al. J Altern Complement Med 2019 (PMC6748397)
+        notes: Fleiss κ for the four raters and Cohen κ pairwise; Landis and Koch interpretation.
+      - study: Rotti et al. 2014, 'Determinants of Prakriti, the Human Constitution Types of Indian Traditional
+          Medicine and its Correlation with Contemporary Science', J Ayurveda Integr Med 5(3):167-175
+          (AyuSoft, C-DAC Pune)
+        statistic: Cohen κ
+        value: '0.778'
+        confidence_interval: null
+        design: software-vs-clinician
+        population: healthy volunteers
+        n_raters: null
+        n_subjects: 3416
+        target: prakṛti diagnosis by AyuSoft software versus Ayurvedic physician assessment
+        citation: Rotti H et al. J Ayurveda Integr Med 2014;5(3):167-175 (PMC4204287)
+        notes: Article text, 'Kappa value of 0.778 (P <0.001), between ayurvedic physician and AyuSoft';
+          approximately 80% concordance. Subjects were healthy males aged 20-30. Number of physicians
+          not stated in the passage read; a later paper cites this study as κ = 0.7 with two physicians.
+      - study: Rao et al. 2022, wrist pulse acquisition system with three piezoelectric sensors, Indian
+          Journal of Traditional Knowledge 21(4):730-736
+        statistic: Cohen κ
+        value: 0.719 (basic level); 0.454 (sub-level)
+        confidence_interval: null
+        design: instrument-vs-expert
+        population: healthy volunteers
+        n_raters: 1
+        n_subjects: 50
+        target: pulse-derived vāta-pitta-kapha prakṛti categories versus expert nāḍī parīkṣā physician
+          classification
+        citation: Rao, Ravishankar and Rao 2022, as reported in a 2025 scoping review of prakṛti tools
+          (PMC12269270)
+        notes: The kappa values, 50 healthy participants and expert-physician comparator were read in
+          the scoping review, not in the journal article itself, which could not be retrieved. The same
+          review reports κ 0.476 against questionnaire-based prakṛti. The single expert is stated as 'an
+          expert' in search excerpts, so n_raters 1 is an inference.
+      citations:
+      - source: Kurande et al. 2013, eCAM Art. ID 658275 (PMC3803118)
+        type: primary-study
+        citation_strength: direct
+      - source: Kessler et al. 2019, J Altern Complement Med (PMC6748397)
+        type: primary-study
+        citation_strength: direct
+      - source: Rotti et al. 2014, J Ayurveda Integr Med 5(3):167-175 (PMC4204287)
+        type: primary-study
+        citation_strength: direct
+      - source: Scoping review of prakṛti assessment tools, PMC12269270 (2025), reporting Rao et al. 2022
+        type: tertiary-review
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Corrected from named-in-text-only entries. Changes: knee OA study identified as Kessler
+        et al. 2019 with design clinician-vs-clinician, 4 raters, 30 patients, Fleiss and Cohen kappa;
+        AyuSoft identified as Rotti et al. 2014 (Cohen kappa 0.778, healthy volunteers); wrist-pulse study
+        identified as Rao et al. 2022 with 50 healthy participants, instrument-vs-expert, Cohen kappa.
+        Wrist-pulse figures rest on a review, not the article. Values from different designs are not comparable.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    sign_vs_synthesis:
+      status: filled
+      value: In the knee OA study (Kessler et al. 2019), agreement on the final overall diagnosis (95%
+        consensus) exceeded chance-corrected agreement on constitutional entities such as prakṛti and
+        agni (κ 0-0.4); the authors state that agreement on disease-related entities was better than on
+        constitutional entities. In Kurande et al. 2013 the lowest average agreement was for pulse (κ
+        0.07), then tongue (0.17), with prakṛti the highest of the three (0.28).
+      citations:
+      - source: Kessler et al. 2019, J Altern Complement Med (PMC6748397)
+        type: primary-study
+        citation_strength: direct
+      - source: Kurande et al. 2013, eCAM Art. ID 658275 (PMC3803118)
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Changed: the original said Kurande found lowest agreement on pulse and prakṛti. The article
+        reports pulse 0.07, tongue 0.17, prakṛti 0.28, so prakṛti was not lowest. The 95% figure is percent
+        consensus agreement; the kappas are a different statistic, so the contrast is the authors'' own,
+        not a like-for-like comparison.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    standardization_efforts:
+      status: filled
+      value: CCRAS (Ministry of AYUSH) developed a standardized Prakriti Assessment Scale (PAS; 91 predictors
+        in 30 domains, four traits) validated for face, content, construct and criterion validity and
+        tested for intra-rater and inter-rater reliability with the kappa statistic, plus an AYUR Prakriti
+        web portal to administer it. AyuSoft (C-DAC Pune) software and a piezoelectric wrist-pulse instrument
+        are also reported.
+      citations:
+      - source: Development of a standardized assessment scale for assessing Prakriti (psychosomatic constitution),
+          AYU 43(4):109-129, 2022, doi 10.4103/ayu.ayu_239_22
+        type: primary-study
+        citation_strength: direct
+      - source: Rotti et al. 2014, J Ayurveda Integr Med 5(3):167-175 (AyuSoft)
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Changed: the original stated a target of κ≈0.65. I could not read the AYU article body (paywalled).
+        A search excerpt said κ 0.65 was considered reasonable agreement and the expected κ was 0.75,
+        so the 0.65 ''target'' is unconfirmed and imprecise, and is removed here. PAS, portal and kappa-based
+        reliability testing are confirmed from the abstract. The wrist-pulse instrument is Rao et al.
+        2022, see reliability_evidence.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value: []
+      citations: []
+      register: biomedical-evidence
+      notes: Report applies no reliability study from another tradition.
+      source_report: v2
+  modalities:
+    items:
+      status: filled
+      value:
+      - name: Panchakarma (Vamana, Virechana, Basti, Nasya, Raktamokshana)
+        native_category: Shodhana (purification/elimination)
+        tags:
+        - procedural
+        description: Therapeutic emesis, purgation, medicated enema (foremost for Vata), nasal administration,
+          bloodletting; preceded by purvakarma and followed by pashchatkarma diet and regimen. Report
+          says the detoxification framing lacks robust trial support.
+      - name: Purvakarma (Snehana oleation and Svedana sudation)
+        native_category: Shodhana preparation
+        tags:
+        - procedural
+        - thermal
+        description: Preparation before Panchakarma
+      - name: Herbal formulations and single herbs (Shamana therapy, dravyaguna)
+        native_category: Shamana (palliation)
+        tags:
+        - herbal
+        description: Polyherbal formulations justified by claimed synergy; herbs with research literature
+          listed under materia_medica
+      - name: Rasashastra (bhasmas)
+        native_category: Rasashastra (iatrochemistry)
+        tags:
+        - mineral-metal
+        - herbal
+        description: Processed mercury, arsenic, lead, gold and others, purified (shodhana) and calcined
+          (marana, repeated puta heating) with herbal or sulfur matrices; claimed to be rendered safe
+          by processing
+      - name: Shalya tantra (surgery)
+        native_category: Shalya tantra (one of eight branches)
+        tags:
+        - surgical
+        description: Rhinoplasty, cataract couching, lithotomy, fracture management, yantra and shastra
+          instruments (Sushruta Samhita)
+      - name: Diet, daily and seasonal regimen, ethical code
+        native_category: Ahara, dinacharya, ritucharya, sadvritta
+        tags:
+        - dietary
+        - regimenal
+        description: Central to prevention
+      - name: Yoga
+        native_category: Darshana / prevention
+        tags:
+        - mind-body
+        description: Named among preventive practices
+      citations:
+      - source: Panchakarma, Ayurvedic Detoxification and Allied Therapies, Is There Any Evidence? (Springer
+          chapter, 2012), and Panchakarma reviews describing the five procedures with purvakarma and paschatkarma
+          phases
+        type: tertiary-review
+        citation_strength: direct
+      - source: Characterization of lead sulfide obtained from Naga Bhasma, J Ayurveda Integr Med 2024
+          (PMC10979094), describing shodhana, marana, puta processing
+        type: primary-study
+        citation_strength: direct
+      - source: Shalya Tantra in Sushruta Samhita, a classical and contemporary review, AJAS
+        type: tertiary-review
+        citation_strength: direct
+      register: emic
+      notes: Replaces the Grokipedia citation. Panchakarma components, the shodhana/marana/puta processing
+        of Rasashastra and the Sushruta surgical repertoire were all confirmed against these works. Not
+        separately verified beyond the report's own wording were the yoga and the ahara/dinacharya/ritucharya/sadvritta
+        items, and the statement that detoxification framing lacks robust trial support (the Springer
+        chapter title poses the question but its conclusions were not read).
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v1
+  materia_medica:
+    pharmacological_framework:
+      status: filled
+      value: Dravyaguna, drug action analyzed by rasa (six tastes), guna (qualities), virya (potency,
+        heating or cooling), vipaka (post-digestive effect) and prabhava (idiosyncratic action). All matter
+        including drugs is built of the five great elements. Polyherbal synergy is claimed.
+      citations:
+      - source: Charaka Samhita, Sutra Sthana ch. 26 (Atreyabhadrakapiya Adhyaya), online edition carakasamhitaonline.com
+        type: reference-work
+        citation_strength: direct
+      register: emic
+      notes: Rasa, guna, virya, vipaka, prabhava and the panchamahabhuta composition of dravya are set
+        out in Charaka Sutra 26. The claim of polyherbal synergy is the report's own gloss and was not
+        sought in the classical text.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v1
+    flagship_agents:
+      status: filled
+      value:
+      - Withania somnifera (ashwagandha)
+      - Curcuma longa (turmeric)
+      - Boswellia serrata
+      - Bacopa monnieri (brahmi)
+      - Tinospora cordifolia (guduchi), Asparagus racemosus (shatavari), Terminalia and Triphala, Azadirachta
+        indica (neem), Ocimum sanctum (tulsi), Commiphora mukul (guggulu), Phyllanthus emblica (amla)
+      - Mercury (parada), arsenic, lead, gold as processed bhasmas
+      citations:
+      - source: Report text, no [Sn] marker
+        type: unclear
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: 'Report selects ''medicinal plants with substantial research literature'', not a classical
+        flagship list.
+
+        verify pass: unverifiable. Searched: most commonly used Ayurvedic medicinal plants ashwagandha
+        turmeric Boswellia Bacopa guduchi shatavari guggulu amla review'
+      source_report: v1
+      verify_outcome: unverifiable
+    preparation_traditions:
+      status: filled
+      value: Shodhana (purification) and marana (incineration/calcination through repeated puta heating
+        cycles) with herbal or sulfur matrices to make bhasmas; amla pariksha acid-stability test; low
+        dosing.
+      citations:
+      - source: Rohra P. A Conceptual Review of Bhasma Pariksha with A Modern View (2017), International
+          Journal of Ayurveda and Allied Research (ijaar.in)
+        type: tertiary-review
+        citation_strength: direct
+      - source: Review of Shodhana in Rasashastra, Journal of Ayurveda and Integrated Medical Sciences
+          (2023)
+        type: tertiary-review
+        citation_strength: direct
+      register: emic
+      notes: Shodhana, marana/puta, gandhaka (sulfur) and herbal media, and amla pariksha as one of the
+        bhasma quality tests are described in the Rasashastra review literature. The gloss 'acid-stability
+        test' for amla pariksha is the report's paraphrase; the Rohra review calls it an acid dissolution
+        test. Full text of Rohra was only retrieved as a machine summary. Replaces the Grokipedia citation.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v1
+  disruption:
+    loss_of_patronage:
+      status: partial
+      value: Ali Zafar (2018), a Heidelberg South Asia Institute seminar paper, argues that under the
+        Delhi Sultanate and Mughal courts patronage went to Greek-Arabic (Unani) medicine, that Hindu
+        vaidyas found few court patrons, and that this contributed to Ayurveda's decline, together with
+        the decline of Sanskrit literature. The paper is a single-author argument; no specific dated court
+        or institutional collapse was located.
+      citations:
+      - source: Zafar, A. (2018). Patronization of Greek medicine in Mughal India and depopularization
+          of Ayurveda. Seminar paper, South Asia Institute, Heidelberg University (via ResearchGate)
+        type: unclear
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: Full text could not be fetched (403), so this rests on the search summary. It is a seminar
+        paper, not peer-reviewed monograph scholarship. It describes a shift of patronage, not a dated
+        collapse. No dated events were found. A productive search would target peer-reviewed histories
+        of Indian medicine (for example Mughal-era medical culture, or regional Hindu courts that sustained
+        vaidyas).
+      source_report: gap
+      gap_outcome: found
+      replaced_from: v2
+    period:
+      status: filled
+      value: East India Company institutional experiments 1822-1835; rupture 1835; nationalist revival
+        c. 1900-1947; post-independence institutionalization.
+      citations:
+      - source: 'Medical College Bengal - A Pioneer Over the Eras (PMC3824763): order of 21 June 1822
+          starting the first medical school in British India; order of 28 January 1835'
+        type: tertiary-review
+        citation_strength: direct
+      - source: Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal
+          of Health Policy & Opinion 13(3), 2020
+        type: tertiary-review
+        citation_strength: direct
+      - source: 'Akhil Bhartiya Ayurved Mahasammelan (All India Ayurvedic Congress), About AICC: established
+          1907 at Nasik'
+        type: institutional
+        citation_strength: direct
+      - source: 'Arya Vaidya Sala Kottakkal, About us: Arya Vaidya Sala 1902, Aryavaidya Pathasala 1917'
+        type: institutional
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Previously uncited. The 1822-1835 and 1835 dates and the c.1900-1947 revival anchors (Kottakkal
+        1902, AICC 1907) check out. The phrase 'post-independence institutionalization' is a summary label
+        and was not separately sourced here.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    colonial_power:
+      status: filled
+      value:
+      - power: British (East India Company and colonial government)
+        mode: colonial_rule
+        period: 1822-1835 (Native Medical Institution period to 1835 abolition); colonial delegitimization
+          continuing into the revival period
+        description: Established the Native Medical Institution, Calcutta in 1822 teaching in the vernacular,
+          then ended state patronage of indigenous medical teaching in 1835.
+      citations:
+      - source: Medical College Bengal - A Pioneer Over the Eras (PMC3824763)
+        type: tertiary-review
+        citation_strength: direct
+      - source: Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal
+          of Health Policy & Opinion 13(3), 2020
+        type: tertiary-review
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Founding of the NMI in 1822 and its abolition by the order of 28 January 1835 confirmed.
+        That the NMI taught in the vernacular is from secondary summaries (Khaleeli 2001, South Asia Research
+        21(1), paywalled, not opened). 'Continuing into the revival period' is interpretive.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    suppression_or_marginalization:
+      status: filled
+      value:
+      - Grant Committee report, 20 October 1834, recommended replacing the NMI with a medical college
+        teaching European medicine in English
+      - Government order of 28 January 1835 abolished the NMI and discontinued the Ayurvedic (Sanskrit
+        College) and Unani (Calcutta Madrasa) classes
+      - Macaulay's Minute of 2 February 1835 (general education) and Bentinck's resolution of 7 March
+        1835 withdrew state funding from instruction in the Oriental languages and learning, a wider policy
+        that followed the medical abolition
+      - 'Calcutta Medical College: established by the order of 28 January 1835; student admissions began
+        20 February 1835; teaching Western medicine in English'
+      - Professional registration (undated) marginalized folk and lay healers
+      citations:
+      - source: Medical College Bengal - A Pioneer Over the Eras (PMC3824763)
+        type: tertiary-review
+        citation_strength: direct
+      - source: Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal
+          of Health Policy & Opinion 13(3), 2020
+        type: tertiary-review
+        citation_strength: direct
+      - source: Macaulay, Minute on Indian Education, 2 February 1835 (text)
+        type: historical-monograph
+        citation_strength: direct
+      - source: 'Lexicon, History Revisited: The Origins of Medical Education in India (Grant Committee
+          report 20 Oct 1834; admissions 20 Feb 1835)'
+        type: practitioner-site
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'Changes: (1) the original tied the end of state medical patronage to Macaulay''s Minute
+        and Bentinck''s resolution. The medical classes were abolished by the order of 28 January 1835,
+        before the Minute (2 Feb 1835), and Bentinck''s resolution on the Minute is dated 7 March 1835,
+        not February. The Minute concerns education generally, not medicine specifically. (2) ''Opened
+        20 February 1835'' reworded: the college was established by the 28 January order and admissions
+        began 20 February; other sources say classes began 1 June 1835. (3) The Grant Committee date of
+        20 Oct 1834 and the 20 Feb admissions date rest on the Lexicon article only (indirect). (4) The
+        ''professional registration (undated)'' item could not be sourced and is carried unchanged; treat
+        as unverified. Sources searched did not name the Grant Committee report''s author precisely (Sushruta
+        article calls him ''Lord John Grant''; not adopted).'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    abolition_attempts:
+      status: filled
+      value: Government order of 28 January 1835 abolished the Native Medical Institution and discontinued
+        its Ayurvedic and Unani classes.
+      citations:
+      - source: 'Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal
+          of Health Policy & Opinion 13(3), 2020: NMI abolished 28 January 1835; Unani and Ayurvedic classes
+          at the Madrasa and Sanskrit College from 1826'
+        type: tertiary-review
+        citation_strength: direct
+      - source: 'Medical College Bengal - A Pioneer Over the Eras (PMC3824763): order of 28 January 1835'
+        type: tertiary-review
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Date confirmed. The explicit statement that the Sanskrit College and Madrasa classes were
+        discontinued by the same order is from secondary summaries.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    practitioner_response:
+      status: filled
+      value: Nationalist-tinged revival c. 1900-1947. P. S. Varier founded Arya Vaidya Sala, Kottakkal
+        (1902) and Arya Vaidya Patasala (1917); Gananath Sen presided over the All India Ayurvedic Congress
+        (1911, 1920, 1931) and advocated samanvaya; the All India Ayurvedic Congress (Akhil Bharatiya
+        Ayurveda Mahasammelan) formed as umbrella professional body, organized nationally around 1907.
+      citations:
+      - source: 'Arya Vaidya Sala Kottakkal, About us (official history): Sala founded by P.S. Varier
+          1902; Aryavaidya Pathasala 1917'
+        type: institutional
+        citation_strength: direct
+      - source: 'The legacy of Kaviraj Gananath Sen: Bridging traditions in Ayurveda. Journal of Research
+          in Ayurvedic Sciences, 2024 (LWW)'
+        type: primary-study
+        citation_strength: direct
+      - source: 'Akhil Bhartiya Ayurved Mahasammelan, About AICC: Ayurvedic Congress established 1907
+          in Nasik'
+        type: institutional
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Dates confirmed. Sen's presidencies (Allahabad 1911, Indore 1920, Mysore 1931) come from
+        the LWW article as seen in a search summary; the full text was paywalled (HTTP 402). 'Samanvaya'
+        is not confirmed verbatim, though the article title concerns bridging traditions. The AICC site
+        does not name a founder; a different source attributes the 24 May 1907 founding to Shankar Daji
+        Pade Shastri. Institutional sites are self-descriptions.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    post_colonial_disruption:
+      status: absent
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: 'Report does not address whether partition or state succession split or relocated Ayurvedic
+        institutions (for example in Bangladesh or Pakistan). Search target: effect of 1947 partition
+        on Ayurvedic institutions and practitioners.
+
+        gap pass: not_found. Searched: 1947 partition Ayurveda Pakistan Bangladesh Ayurvedic institutions
+        practitioners history; partition of India 1947 Ayurvedic Unani Tibbia College Lahore Ayurvedic
+        institutions Pakistan migration vaidyas historian. Target: A scholarly source (peer-reviewed history
+        or archival study) on what partition did to Ayurvedic colleges, pharmacies and vaidyas in Punjab/Lahore
+        and Bengal/Dhaka. Only fragmentary items surfaced: Wikipedia reporting that many Muslim members
+        of the Ayurvedic and Unani Tibbia College (Delhi) governing body and students migrated to Pakistan
+        in 1947, and Bangladesh''s Unani and Ayurvedic Practitioners Ordinance 1983. Neither is direct
+        evidence of an Ayurvedic split or relocation.'
+      source_report: v2
+      gap_outcome: not_found
+    dated_events:
+      status: filled
+      value:
+      - label: Native Medical Institution founded
+        date: '1822-06-21'
+        description: East India Company institution in Calcutta, initially teaching in the vernacular;
+          Peter Breton headed it from 1823 and John Tytler succeeded as superintendent in 1827.
+      - label: Ayurvedic classes at Sanskrit College and Unani classes at Calcutta Madrasa
+        date: '1826'
+        description: Classes established under the NMI.
+      - label: Grant Committee report
+        date: '1834-10-20'
+        description: Committee report critical of the NMI; recommended a medical college teaching in English.
+      - label: Native Medical Institution abolished
+        date: '1835-01-28'
+        description: Ayurvedic/Unani classes discontinued.
+      - label: Macaulay's Minute
+        date: '1835-02-02'
+        description: Minute on Indian education; approved by Bentinck's resolution of 7 March 1835, which
+          limited state funds to English-language education.
+      - label: Calcutta Medical College opened
+        date: '1835-02-20'
+        description: Student admissions began; college established by the order of 28 January 1835; taught
+          Western medicine in English (classes reported to begin 1 June 1835).
+      - label: Bhore Committee
+        date: '1946'
+        description: Health Survey and Development Committee report; treated indigenous medicine as unscientific
+          and prioritized Western scientific medicine.
+      citations:
+      - source: 'Medical College Bengal - A Pioneer Over the Eras (PMC3824763): 21 June 1822 order; 28
+          January 1835 order'
+        type: tertiary-review
+        citation_strength: direct
+      - source: 'Mehta R, Pandya B, Dasgupta S. Colonial India - Health care lessons. Sushruta Journal
+          of Health Policy & Opinion 13(3), 2020: 1822, 1826, 1834 Grant report, 28 Jan 1835'
+        type: tertiary-review
+        citation_strength: direct
+      - source: 'Wikipedia, John Tytler (surgeon), citing Whitfield MJ, Dr John Tytler (1787-1837), Superintendent
+          of the Native Medical Institution, Calcutta, Journal of Medical Biography 2021: Tytler took
+          over as superintendent in 1827 from Peter Breton'
+        type: open-encyclopedia
+        citation_strength: indirect
+      - source: Macaulay, Minute on Indian Education, 2 February 1835 (text)
+        type: historical-monograph
+        citation_strength: direct
+      - source: 'Lexicon, History Revisited: The Origins of Medical Education in India (Grant Committee
+          report 20 Oct 1834; admissions 20 Feb 1835)'
+        type: practitioner-site
+        citation_strength: indirect
+      - source: Bhore Committee (Health Survey and Development Committee) report, 1946, as described in
+          search summaries; report text not opened
+        type: institutional
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'Changes: (1) Tytler was not the first superintendent; Peter Breton headed the NMI first
+        (from October 1823 per one source) and Tytler took over in 1827. Breton''s dates come from Wikipedia/Whitfield
+        and were not checked in the article itself. (2) Macaulay''s Minute dated 2 February 1835 (was
+        ''1835-02''); Bentinck''s resolution is 7 March 1835, not February. (3) The medical college was
+        established by the 28 Jan order with admissions on 20 Feb; label kept, description clarified.
+        The 20 Oct 1834 Grant date and 20 Feb 1835 admissions date rest only on the Lexicon article (indirect).
+        (4) Bhore Committee 1946 date and thrust are from search summaries only; not verified against
+        the report itself. 1822, 1826 and 28 Jan 1835 confirmed.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+  revival_and_institutionalization:
+    revival_context:
+      status: filled
+      value: Nationalist-tinged revival to modernize, systematize and defend Ayurveda against colonial
+        delegitimization and internal decay (stagnant knowledge, poorly trained practitioners, unavailable
+        quality medicines); later state-led institutionalization and pharmaceutical growth.
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Ayurveda revival colonial period nationalism Wujastyk
+        Leslie Berger Ayurveda Made Modern; Repackaging Ayurveda in post-colonial India revival (South
+        Asia journal, 2012); publisher pages returned 403'
+      source_report: v2
+      verify_outcome: unverifiable
+    key_figures:
+      status: filled
+      value:
+      - name: P. S. Varier
+        dates: founded Arya Vaidya Sala 1902; Patasala 1917
+        role: Mass-produced standardized Ayurvedic medicines; founded school
+      - name: Gananath Sen
+        dates: president of All-India Ayurvedic Congress 1911/1920/1931
+        role: Advocate of samanvaya (integration with allopathy)
+      - name: Ganga Prasad Sen and Gangadhar Ray
+        dates: null
+        role: Bengal revivalists
+      - name: Shankar Dajishastri Pade
+        dates: null
+        role: Maharashtra revivalist
+      - name: D. Gopalacharlu, Duraiswami Aiyangar, A. Lakshmipathi, Srinivasa Narayana Iyengar
+        dates: null
+        role: South Indian revivalists
+      - name: Roop Lal Sharma
+        dates: later
+        role: Pure-Ayurveda proponent opposed to Sen's confluence
+      - name: Maharishi Mahesh Yogi; Deepak Chopra
+        dates: mid-1980s onward
+        role: Global/wellness forms
+      citations:
+      - source: A Life of Healing (P.S. Varier biography), Exotic India Art
+        type: catalog-listing
+        citation_strength: indirect
+      - source: Gananath Sen (Wikipedia)
+        type: open-encyclopedia
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Arya Vaidya Sala Kottakkal founded 1902 P.S. Varier
+        Arya Vaidya Pathasala 1917 (1902 and 1917 supported by aryavaidyasala.com/about-us, but only Varier);
+        Gananath Sen All India Ayurvedic Congress president 1911 1920 1931 (found only Wikipedia citing
+        Cerulli 2022 and Bhushan et al 2024; JRAS full text 402); Roop Lal Sharma Ayurveda Gananath Sen
+        confluence pure Ayurveda opposed (no source for the opposition); Ganga Prasad Sen Gangadhar Ray
+        Gopalacharlu Duraiswami Aiyangar Lakshmipathi Srinivasa Narayana Iyengar Shankar Dajishastri Pade
+        revivalists (no primary source located)'
+      source_report: v2
+      verify_outcome: unverifiable
+    nationalist_framing:
+      status: partial
+      value: Report describes the revival as nationalist-tinged and says nationalist/traditionalist accounts
+        emphasize unbroken Vedic descent; Indian-government sources use '5,000-year-old' and 'world's
+        oldest continuously practiced' claims (flagged as advocacy).
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'No detailed treatment of nationalist ideology.
+
+        verify pass: unverifiable. Searched: Ministry of AYUSH 5000 years oldest Ayurveda continuously
+        practiced PIB (found only Ministry wording of oldest system with documented history of more than
+        5000 years, via excerpt; no source for continuous-practice wording or nationalist accounts of
+        unbroken Vedic descent)'
+      source_report: v2
+      verify_outcome: unverifiable
+    standardization_events:
+      status: filled
+      value:
+      - Arya Vaidya Sala, Kottakkal (1902) for standardized mass-produced medicines; Arya Vaidya Patasala
+        (1917)
+      - Central Council of Indian Medicine (1970); standardized BAMS degrees
+      - Chopra Committee (1948); Udupa Committee (undated)
+      - Rise of Dabur, Zandu and Baidyanath as pharmaceutical firms
+      citations:
+      - source: A Life of Healing (P.S. Varier biography), Exotic India Art
+        type: catalog-listing
+        citation_strength: indirect
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Statutory milestones are also in legal_status.
+
+        verify pass: unverifiable. Searched: Arya Vaidya Sala about us (1902, Pathasala 1917 supported);
+        Chopra 1948 and Udupa 1958 committees (PubMed/PMC article Beyond a bureaucratic status report;
+        Udupa dated 1958 there); BAMS standardized degree; Dabur Zandu Baidyanath rise as pharmaceutical
+        firms (no primary source located)'
+      source_report: v2
+      verify_outcome: unverifiable
+    internal_factions:
+      status: filled
+      value: 'Shuddha (pure) versus miśra/integrated Ayurveda: Gananath Sen championed samanvaya (confluence
+        with allopathy); Roop Lal Sharma and later purists opposed it. The split continues in the IMA/AYUSH
+        disputes.'
+      citations:
+      - source: Gananath Sen (Wikipedia)
+        type: open-encyclopedia
+        citation_strength: indirect
+      - source: 'Classical Indic Medicine II: History of Ayurveda 3, Indic Civilizational Portal'
+        type: unclear
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Gananath Sen samanvaya Roop Lal Sharma pure Ayurveda
+        Brass Politics of Ayurvedic Education; Roop Lal Sharma Ayurveda Gananath Sen confluence pure Ayurveda
+        opposed'
+      source_report: v2
+      verify_outcome: unverifiable
+    state_sponsorship:
+      status: filled
+      value: Chopra Committee (1948) recommended developing indigenous systems; Central Council of Indian
+        Medicine (1970); Ministry of AYUSH (2014); CCRAS research; National Commission for Indian System
+        of Medicine Act 2020; India's US$85 million (2022-2032) commitment to WHO GTMC within a US$250
+        million investment.
+      citations:
+      - source: Report of the Committee on Indigenous Systems of Medicine (R.N. Chopra, Chairman), Ministry
+          of Health, Government of India, New Delhi, 1948 (Internet Archive, Digital Library of India
+          copy)
+        type: primary-study
+        citation_strength: direct
+      - source: The Indian Medicine Central Council Act, 1970 (Act 48 of 1970), long title and s.3, text
+          as hosted on Indian Kanoon and India Code
+        type: statute
+        citation_strength: direct
+      - source: The National Commission for Indian System of Medicine Act, 2020 (Act 14 of 2020), India
+          Code
+        type: statute
+        citation_strength: direct
+      - source: WHO, India commits US$ 85 million to WHO Global Traditional Medicine Centre, news release,
+          31 July 2024
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: Confirmed with two precisions. (1) The 1970 date is the year of the Indian Medicine Central
+        Council Act; secondary sources say the Council itself was constituted in 1971, and the NCISM Act
+        2020 superseded it (NCISM constituted June 2021). (2) WHO wording is US$85 million over 10 years,
+        2022-2032, part of a US$250 million investment; it was signed in 2024. The Ministry of AYUSH formation
+        date (9 November 2014) and the CCRAS entry were seen only in search excerpts of Ministry pages;
+        the ayush.gov.in and indiacode.nic.in pages returned 403 to the fetcher, so the 2014 date and
+        the Act 2020 text were not read directly.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    diffusion_abroad:
+      status: partial
+      value:
+      - region: West (US and elsewhere)
+        period: mid-1980s onward
+        channel: Maharishi Ayur-Ved launch, popularized by Deepak Chopra
+        description: Spiritualized consumer product.
+      - region: USA
+        period: 1998 and 2017
+        channel: Professional bodies
+        description: National Ayurvedic Medical Association founded 1998; its certification board NAMACB
+          2017, offering voluntary private credentials.
+      - region: Switzerland
+        period: '2015'
+        channel: Federal diploma pathway
+        description: Ayurveda specialization within naturopath diploma.
+      - region: Hungary
+        period: null
+        channel: Institutional (European Institute of Ayurvedic Sciences per bibliography title)
+        description: Hungarian recognition and initiative.
+      citations:
+      - source: About Us - Maharishi Ayurveda (maharishiayurvedaindia.com)
+        type: practitioner-site
+        citation_strength: indirect
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report does not frame this as diffusion; entries assembled from the legal and wellness sections.
+        Recognition in other states also appears under legal_status jurisdictions.
+
+        verify pass: unverifiable. Searched: National Ayurvedic Medical Association founded 1998 NAMACB
+        2017 (NAMA founded 1998 and NAMACB March 2017 per namacb.org; voluntary status not stated); Switzerland
+        Ayurveda federal diploma naturopath 2015 (becc.admin.ch shows Pruefungsordnung effective 28.04.2015,
+        Ayurveda-Medizin one of four specializations); Hungary Ayurveda European Institute of Ayurvedic
+        Sciences (Wele 2018, J Ayurveda Integr Med; Hungarian government decree 40/1997 and 2014 Debrecen
+        MoU; the leaf gave no period); Maharishi Ayur-Veda 1985 Deepak Chopra West (only Wikipedia and
+        encyclopedia entries; Brennan 2010 does not mention Chopra; Wujastyk and Smith 2008 not accessible)'
+      source_report: v2
+      verify_outcome: unverifiable
+    dated_events:
+      status: filled
+      value:
+      - label: Arya Vaidya Sala, Kottakkal founded
+        date: '1902'
+        description: P. S. Varier; founded at Kottakkal on Vijayadashami, 12 October 1902; mass production
+          of standardized medicines.
+      - label: All India Ayurvedic Congress organized nationally
+        date: '1907'
+        description: Umbrella professional body; established 1907 at Nasik.
+      - label: Gananath Sen presidencies of All-India Ayurvedic Congress
+        date: 1911, 1920, 1931
+        description: Presided at Allahabad (1911), Indore (1920), Mysore (1931); advocate of samanvaya
+          (integration of Ayurveda with modern medicine).
+      - label: Arya Vaidya Patasala
+        date: '1917'
+        description: School founded by Varier at Calicut with a four-year syllabus.
+      - label: Bhore Committee
+        date: '1946'
+        description: Prioritized Western scientific medicine.
+      - label: Chopra Committee
+        date: '1948'
+        description: Report of the Committee on Indigenous Systems of Medicine; recommended developing
+          indigenous systems, with a synthesis approach.
+      - label: Central Council of Indian Medicine established
+        date: '1970'
+        description: Indian Medicine Central Council Act 1970 (the Act is dated 1970; the Council was
+          constituted under it).
+      - label: Maharishi Ayur-Ved launched
+        date: mid-1980s
+        description: Global variant. Date not confirmed against a primary source in this pass.
+      - label: National Ayurvedic Medical Association founded
+        date: '1998'
+        description: US voluntary professional body (incorporated 2000).
+      - label: Ministry of AYUSH created
+        date: '2014'
+        description: Union ministry; formed 9 November 2014.
+      - label: NAMA certification board (NAMACB) founded
+        date: '2017'
+        description: US voluntary credentials; founded March 2017.
+      citations:
+      - source: Arya Vaidya Sala Kottakkal, About us (aryavaidyasala.com/about-us), institutional page
+          giving 1902 founding on 12 October and 1917 Pathasala
+        type: institutional
+        citation_strength: direct
+      - source: Akhil Bhartiya Ayurved Mahasammelan (All India Ayurvedic Congress), About AICC (ayurvediccongress.com/about-aicc),
+          states established 1907 at Nasik
+        type: institutional
+        citation_strength: direct
+      - source: CCRAS, Kaviraj Gananath Sen (luminaries.ccras.res.in), Ministry of AYUSH research council;
+          presided at Allahabad 1911, Indore 1920, Mysore 1931
+        type: institutional
+        citation_strength: direct
+      - source: Report of the Health Survey and Development Committee (Bhore Committee), Government of
+          India, 1946
+        type: historical-monograph
+        citation_strength: direct
+      - source: Report of the Committee on Indigenous Systems of Medicine (R. N. Chopra, Chairman), Ministry
+          of Health, Government of India, 1948 (archive.org dli.csl.2160)
+        type: historical-monograph
+        citation_strength: direct
+      - source: Indian Medicine Central Council Act, 1970 (Act 48 of 1970), India Code
+        type: statute
+        citation_strength: direct
+      - source: NAMACB, Who are we (namacb.org/what-we-do), founded March 2017; NAMA (ayurvedanama.org)
+          founded 1998
+        type: institutional
+        citation_strength: direct
+      - source: Ministry of Ayush official pages (accr.ayush.gov.in/about_us; maisp.ayush.gov.in/about_us),
+          ministry formed 9 November 2014
+        type: institutional
+        citation_strength: direct
+      register: historical-scholarship
+      notes: 'Changed from the original leaf: All India Ayurvedic Congress date given as 1907 (was c.
+        1907; the Congress''s own page says 1907 at Nasik, 24 May per secondary summaries). Other dates
+        confirmed against institutional or primary documents. Maharishi Ayur-Ved mid-1980s was not confirmed
+        by a primary source; retained as originally stated and flagged. The NAMA 1998 founding year was
+        seen only in search-result text of ayurvedanama.org, not on a fetched page. The Ministry of AYUSH
+        9 November 2014 date was seen in search-result text of ministry pages, not on a fetched page.
+        The Bhore description (prioritized Western scientific medicine) was not checked against the report
+        text. The Exotic India catalog listing and Wikipedia are no longer relied on.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+  legal_status:
+    jurisdictions:
+      status: filled
+      value:
+      - jurisdiction: India
+        regulator: CCIM (Indian Medicine Central Council Act 1970), replaced by NCISM (NCISM Act 2020;
+          CCIM dissolved 11 June 2021); Ministry of AYUSH (2014); drugs under Drugs and Cosmetics Act
+          1940
+        statute: Drugs and Cosmetics Act 1940 and Rules (Schedule E(1), Schedule T); Indian Medicine Central
+          Council Act 1970; NCISM Act 2020; Drugs and Magic Remedies (Objectionable Advertisements) Act
+          1954
+        year: 1940, 1954, 1970, 2020
+        scope_of_practice: Recognized system of medicine
+        prescribing_rights: CCIM notification of 20 Nov 2020 (amending the Indian Medicine Central Council
+          (Post Graduate Ayurveda Education) Regulations 2016) lists 39 general surgery and about 19 ENT/eye/dental
+          procedures (58 in total) in which PG Shalya/Shalakya trainees are trained and perform; challenged
+          by the IMA in the Supreme Court (notice issued March 2021)
+        integration_with_public_health_system: Push toward 'One Nation One Health System'; disputed
+        recognition_tier: full medical system
+      - jurisdiction: Sri Lanka
+        regulator: Department of Ayurveda; Ayurvedic Medical Council (mandatory registration)
+        statute: Ayurveda Act No. 31 of 1961
+        year: 1961
+        scope_of_practice: Covers Ayurveda, Siddha, Unani and Sri Lankan traditional medicine; Ayurvedic
+          Code
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: full medical system
+      - jurisdiction: Nepal
+        regulator: null
+        statute: null
+        year: null
+        scope_of_practice: Recognized with own registration framework
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: full medical system
+      - jurisdiction: Bangladesh
+        regulator: null
+        statute: null
+        year: null
+        scope_of_practice: Recognized with own registration framework; also regulates Unani/Tibb
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: full medical system
+      - jurisdiction: Pakistan
+        regulator: null
+        statute: null
+        year: null
+        scope_of_practice: Recognized with own registration framework; also regulates Unani/Tibb
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: full medical system
+      - jurisdiction: United States
+        regulator: FDA (products only)
+        statute: Dietary Supplement Health and Education Act 1994
+        year: 1994
+        scope_of_practice: No state licenses Ayurvedic practitioners; NAMA (1998) and NAMACB (2017) give
+          voluntary private credentials
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: supplement/wellness only
+      - jurisdiction: United Kingdom/EU
+        regulator: MHRA; Complementary and Natural Healthcare Council (voluntary, PSA-accredited)
+        statute: Directive 2004/24/EC; SI 2005/2750
+        year: 2004/2005 (UK in force 30 April 2011)
+        scope_of_practice: Practitioners not statutorily regulated; Walker report (26 March 2015) recommended
+          against statutory regulation; Traditional Herbal Registration requires about 30 years' use (15
+          in EU) plus quality and safety, not efficacy
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: unregulated
+      - jurisdiction: Switzerland
+        regulator: OdA AM (Ayurveda medicine), OdA KT (complementary therapist)
+        statute: Constitutional Article 118a (referendum 17 May 2009)
+        year: 2009
+        scope_of_practice: Since 2015 federally recognized higher professional examination diploma, 'Naturopath
+          with federal diploma', Ayurveda medicine specialization
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: title protection
+      - jurisdiction: Germany
+        regulator: null
+        statute: Heilpraktikergesetz
+        year: 1939
+        scope_of_practice: Practiced by physicians or Heilpraktiker; not a separate statutory system
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: unregulated
+      - jurisdiction: Australia
+        regulator: TGA (products); practitioners not under AHPRA
+        statute: Therapeutic Goods Act 1989
+        year: 1989
+        scope_of_practice: Products are complementary medicines on ARTG (AUST L/R); practitioners not
+          registered
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: unregulated
+      - jurisdiction: Malaysia
+        regulator: null
+        statute: Traditional and Complementary Medicine Act 2016 (Act 775)
+        year: 2016
+        scope_of_practice: Ayurveda regulated as Traditional Indian Medicine; mandatory registration
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: statutory registration
+      - jurisdiction: Mauritius
+        regulator: Traditional Medicine Board
+        statute: Ayurvedic and Other Traditional Medicines Act (Act 37 of 1989, proclaimed in force 3
+          September 1990)
+        year: 1990
+        scope_of_practice: null
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: null
+      - jurisdiction: Brazil
+        regulator: null
+        statute: Portaria 849 (27 March 2017), National Policy on Integrative and Complementary Practices
+          (PNPIC)
+        year: 2017
+        scope_of_practice: null
+        prescribing_rights: null
+        integration_with_public_health_system: Incorporated into the public-health PNPIC
+        recognition_tier: null
+      - jurisdiction: Hungary
+        regulator: null
+        statute: Government Decree 40/1997 and Ministry Decree 11/1997
+        year: 1997
+        scope_of_practice: Recognized (as naturopathy) but practice restricted to medical doctors
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: null
+      - jurisdiction: United Arab Emirates
+        regulator: Emirate authorities (DHA, DoH, MOHAP)
+        statute: null
+        year: null
+        scope_of_practice: Practitioners licensed
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: statutory registration
+      - jurisdiction: Slovenia
+        regulator: null
+        statute: null
+        year: null
+        scope_of_practice: Listed as 'regulated' by Indian government sources; no specific statute verified
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: null
+      citations:
+      - source: Indian Medicine Central Council Act, 1970 (Act 48 of 1970), India Code (indiacode.nic.in/handle/123456789/19303)
+        type: statute
+        citation_strength: direct
+      - source: National Commission for Indian System of Medicine Act, 2020, India Code (indiacode.nic.in/handle/123456789/15622);
+          repeal of 1970 Act and dissolution of CCIM effective 11 June 2021
+        type: statute
+        citation_strength: direct
+      - source: Ayurveda Act (No. 31 of 1961), Sri Lanka (commonlii.org/lk/legis/num_act/aa31o1961156)
+        type: statute
+        citation_strength: direct
+      - source: Traditional and Complementary Medicine Act 2016 (Act 775), Laws of Malaysia (hq.moh.gov.my/tcm/en/upload/aktaBI2016.pdf)
+        type: statute
+        citation_strength: direct
+      - source: Portaria GM/MS n. 849 of 27 March 2017, Ministerio da Saude, Diario Oficial da Uniao 28
+          March 2017 (in.gov.br)
+        type: statute
+        citation_strength: direct
+      - source: Ayurvedic and Other Traditional Medicines Act (Act 37 of 1989), Ministry of Health and
+          Wellness, Mauritius (health.govmu.org)
+        type: statute
+        citation_strength: direct
+      - source: Walker D., Report on the Regulation of Herbal Medicines and Practitioners, 26 March 2015,
+          UK Department of Health (assets.publishing.service.gov.uk)
+        type: institutional
+        citation_strength: direct
+      - source: Hungarian initiative for Ayurveda, European Institute of Ayurvedic Sciences, J Ayurveda
+          Integr Med 2018 (PMC6033731), citing 40/1997 Government Decree and 11/1997 NM Order
+        type: primary-study
+        citation_strength: direct
+      - source: OdA AM, Hohere Fachprufung and Abschluss/Titel pages (oda-am.ch), Naturheilpraktiker mit
+          eidg. Diplom with Ayurveda-Medizin specialization; SBFI approval April 2015
+        type: institutional
+        citation_strength: direct
+      - source: Therapeutic Goods Administration, Ayurvedic medicines (tga.gov.au/ayurvedic-medicines);
+          Therapeutic Goods Act 1989
+        type: institutional
+        citation_strength: direct
+      - source: Ministry of Ayush, Global Recognition portal (global.ayush.gov.in/global_reco), lists
+          countries where Ayurveda is recognised or regulated
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: 'Corrected: Mauritius statute is Act 37 of 1989, proclaimed in force 3 September 1990 (was
+        ''Act 1990''); regulator Traditional Medicine Board added. India: CCIM was dissolved and the 1970
+        Act repealed on 11 June 2021; the November 2020 notification lists 39 + about 19 procedures, and
+        the IMA challenge is pending in the Supreme Court (notice March 2021), so ''sub judice'' rests
+        on 2021 court reporting and is not confirmed as current in September 2026. Hungary confirmed (recognized
+        as naturopathy; doctors only). Verified this pass: India statutes, Sri Lanka, Malaysia, Brazil,
+        Mauritius, Hungary, Germany Heilpraktikergesetz 1939 (as general framework, not Ayurveda-specific),
+        Australia TGA products and no AHPRA registration, Walker report date and stance, Switzerland OdA
+        AM diploma (SBFI, April 2015). Not verified against primary text: DSHEA 1994 and FDA role, Directive
+        2004/24/EC and SI 2005/2750 details (30/15 years), 30 April 2011 date, Swiss Art. 118a referendum
+        date, UAE emirate regulators, Nepal, Bangladesh, Pakistan registration frameworks (a Ministry
+        of AYUSH-derived article states Nepal recognizes and regulates Ayurveda; nothing found for Bangladesh
+        or Pakistan beyond MOU lists), Slovenia. The Careers360 news article and Wikipedia Institute of
+        Indigenous Medicine page are no longer relied on.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    supranational_standards:
+      status: filled
+      value:
+      - body: World Health Organization
+        instrument: Benchmarks for the Training of Ayurveda
+        year: 2022
+        scope: Training benchmarks (update of the 2010 version); published 11 February 2022
+      - body: World Health Organization
+        instrument: Benchmarks for Practice (Ayurveda)
+        year: 2022
+        scope: Practice benchmarks; published 11 February 2022
+      - body: European Union
+        instrument: Directive 2004/24/EC (Traditional Herbal Medicinal Products Directive)
+        year: 2004
+        scope: Simplified registration for traditional herbal products; European Commission report COM(2008)
+          584 states that the Directive's simplified-registration requirements are not appropriate for
+          global regulation of holistic traditions such as Ayurveda, whose products include plant, animal
+          and mineral ingredients
+      citations:
+      - source: WHO benchmarks for the training of ayurveda, WHO, 2022 (ISBN 9789240042711; who.int/publications/i/item/9789240042711)
+        type: institutional
+        citation_strength: direct
+      - source: WHO benchmarks for the practice of ayurveda, WHO, 2022 (ISBN 9789240042674; who.int/publications/i/item/9789240042674)
+        type: institutional
+        citation_strength: direct
+      - source: Directive 2004/24/EC of the European Parliament and of the Council, OJ L 136, 30.4.2004
+        type: statute
+        citation_strength: direct
+      - source: European Commission, Communication COM(2008) 584 final, report on experience acquired
+          under Directive 2004/24/EC (EUR-Lex 52008DC0584)
+        type: statute
+        citation_strength: direct
+      register: regulatory
+      notes: 'Corrected: practice benchmarks year was null, WHO catalog gives 11 February 2022. Removed
+        ''developed with the Jamnagar institute'': the WHO catalog page credits only WHO and a broad consensus
+        of practitioners, regulators and academics and does not mention Jamnagar. The EC 2008 wording
+        was narrowed: the EUR-Lex text could not be fetched in this pass, and the reading of COM(2008)
+        584 comes from search-result excerpts of it, which say the Directive is not appropriate for holistic
+        traditions such as Ayurveda and that Ayurvedic products include mineral ingredients; the original
+        phrase ''ill-suited ... that use mineral/metal ingredients'' is not supported as worded. Directive
+        title, year and 30-day OJ date not independently opened.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+  education_and_licensure:
+    degree_programs:
+      status: filled
+      value: BAMS (standardized degree); postgraduate Ayurveda (Shalya Tantra, Shalakya Tantra); Arya
+        Vaidya Patasala (1917); Swiss federal diploma pathway; NAMA voluntary credentials (Ayurvedic Health
+        Counselor, Practitioner).
+      citations:
+      - source: NCISM (ncismindia.org), Bachelor of Ayurvedic Medicine and Surgery curriculum and regulations;
+          5.5-year programme including internship
+        type: institutional
+        citation_strength: direct
+      - source: Indian Medicine Central Council (Post Graduate Ayurveda Education) Regulations 2016 as
+          amended 2020; PIB clarification of November 2020 (Shalya and Shalakya PG departments)
+        type: statute
+        citation_strength: direct
+      - source: Arya Vaidya Sala Kottakkal, About us (aryavaidyasala.com/about-us), Aryavaidya Pathasala
+          established 1917
+        type: institutional
+        citation_strength: direct
+      - source: OdA AM, Hohere Fachprufung (oda-am.ch/de/hoehere-fachpruefung), Naturheilpraktiker with
+          federal diploma, Ayurveda-Medizin specialization
+        type: institutional
+        citation_strength: direct
+      - source: NAMACB (namacb.org/what-we-do), Ayurvedic Health Counselor and Ayurvedic Practitioner
+          exams
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: Confirmed. NAMACB also lists an Advanced Ayurvedic Practitioner credential (from Spring 2025),
+        not in the original value and not added. The PIB page itself returned 403 in this pass; the PG
+        Shalya/Shalakya point is from search-result text of that release.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    duration:
+      status: not_requested
+      value: null
+      citations: []
+      register: regulatory
+      notes: Not covered.
+      source_report: v2
+    accrediting_body:
+      status: filled
+      value: CCIM, replaced by NCISM (NCISM Act 2020; CCIM dissolved 11 June 2021), governs Indian practice
+        and education; OdA AM for the Swiss diploma; NAMACB for US voluntary certification.
+      citations:
+      - source: National Commission for Indian System of Medicine Act, 2020, India Code (indiacode.nic.in/handle/123456789/15622)
+        type: statute
+        citation_strength: direct
+      - source: Indian Medicine Central Council Act, 1970, India Code (indiacode.nic.in/handle/123456789/19303)
+        type: statute
+        citation_strength: direct
+      - source: OdA AM, Hohere Fachprufung (oda-am.ch/de/hoehere-fachpruefung)
+        type: institutional
+        citation_strength: direct
+      - source: NAMACB, Who are we (namacb.org/what-we-do)
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: 'Corrected only for timing: the NCISM Act dates from 2020 but the 1970 Act was repealed and
+        CCIM dissolved with effect from 11 June 2021 (SCC Online report of the notification; date not
+        opened on the gazette itself). Roles of OdA AM (developed the exam; SBFI approved it April 2015)
+        and NAMACB (certification exams) confirmed.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    licensure_requirements:
+      status: filled
+      value: 'Sri Lanka: mandatory registration with the Ayurvedic Medical Council; Malaysia: mandatory
+        registration; US: no state licensure, voluntary private credentials; Hungary: restricted to medical
+        doctors; UAE: emirate licensing.'
+      citations:
+      - source: Ayurveda Act (No. 31 of 1961), Sri Lanka (commonlii.org/lk/legis/num_act/aa31o1961156)
+        type: statute
+        citation_strength: direct
+      - source: Traditional and Complementary Medicine Act 2016 (Act 775), Laws of Malaysia (hq.moh.gov.my/tcm)
+        type: statute
+        citation_strength: direct
+      - source: Governing therapeutic pluralism, environmental scan of statutory regulation of T&CM practitioners
+          in the United States, PMC10411782
+        type: primary-study
+        citation_strength: direct
+      - source: Hungarian initiative for Ayurveda, European Institute of Ayurvedic Sciences, PMC6033731
+          (Government Decree 40/1997, NM Order 11/1997)
+        type: primary-study
+        citation_strength: direct
+      - source: Dubai Healthcare City Authority, Licensure Requirements for Complementary and Alternative
+          Medicine (dhcc.ae) and UAE government alternative medicine page (u.ae)
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: 'Confirmed. The US point is supported by absence: the statutory scan covers no Ayurvedic
+        licensure and describes Ayurvedic practitioners as unlicensed. UAE licensing was confirmed at
+        emirate level (DHA in Dubai, MOH exam for the northern emirates) from search-result text; the
+        DHCC and u.ae pages were not opened. Malaysia registration is mandatory under Act 775 for recognised
+        practice areas, provisional registration from 1 March 2021 per secondary summary.'
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    biomedical_content_in_curriculum:
+      status: filled
+      value: The NCISM-prescribed BAMS curriculum includes modern anatomy, physiology, pathology, and
+        medical chemistry alongside Ayurvedic subjects; PG Shalya and Shalakya trainees are trained in
+        listed surgical procedures (CCIM notification of 20 November 2020).
+      citations:
+      - source: NCISM (ncismindia.org), BAMS curriculum and user manual for the first professional year
+        type: institutional
+        citation_strength: direct
+      - source: Indian Medicine Central Council (Post Graduate Ayurveda Education) Amendment Regulations,
+          2020; PIB clarification, November 2020
+        type: statute
+        citation_strength: direct
+      register: regulatory
+      notes: 'Corrected: original value carried a causal, historical claim (Ayurveda adopted anatomy and
+        laboratory science ''in order to survive'') that no regulatory source can verify; that framing
+        is historical scholarship and was not located, so it was dropped rather than confirmed. The curriculum
+        content is confirmed from NCISM materials (search-result text; user manual PDF not opened in full).
+        PG trainee surgical training confirmed from the amended regulations, whose lawfulness is disputed.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    tradition_content_in_biomedical_curriculum:
+      status: incidental
+      value: Proposed integrated MBBS-BAMS course at JIPMER Puducherry (announced May 2025), disputed
+        by the IMA.
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'An integrated course is not clearly the reverse direction; the report treats it as integration
+        policy.
+
+        verify pass: unverifiable. Searched: JIPMER Puducherry integrated MBBS BAMS course IMA opposes
+        2025; PIB JIPMER clarification no move to introduce integrated MBBS BAMS programme'
+      source_report: v2
+      verify_outcome: unverifiable
+  literature_state:
+    corpus_scale_appraisal:
+      status: filled
+      value: 'Thrigulla et al. bibliometric analysis of clinical studies indexed in the AYUSH Research
+        Portal (data to 30 June 2020): 6,528 clinical-trial articles across AYUSH, of which 3,903 were
+        categorized under Ayurveda. Evidence grade by WHO traditional-medicine research guideline: Grade
+        A (RCTs) 144 (3.69%), Grade B 725 (18.58%), Grade C 3,034 (77.74%). Largest categories: skin 385,
+        endocrine/metabolic/nutritional 378, musculoskeletal 354. The top 20 journals carried 75.56% of
+        articles and only 5 of them were indexed in PubMed or Scopus.'
+      citations:
+      - source: 'Thrigulla SR et al. Clinical studies in Ayurveda: A bibliometric analysis of articles
+          indexed in AYUSH research portal. Ayu 2022 Jul-Sep (published online 2023), PMC10710232'
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: The abstract also states 'only 4.50%' of articles are Grade A, which does not match the 3.69%
+        computed from 144/3,903; the discrepancy is unresolved (possibly different denominators). Counts
+        come from an institutional portal, not a systematic search of the world literature. No Cochrane
+        overview of the whole Ayurvedic corpus was found.
+      source_report: gap
+      gap_outcome: found
+      replaced_from: v2
+    trial_counts:
+      status: partial
+      value: '(1) AYUSH Research Portal, to June 2020: 3,903 Ayurveda clinical-trial articles, 144 of
+        them Grade A (RCT). (2) CTRI registrations 2009-2020: 3,632 AYUSH trials in total, by stream Ayurveda
+        2,054, Siddha 635, Yoga 408, Unani 366, Homoeopathy 169. (3) CTRI, 1 July 2018 to 31 March 2020:
+        1,392 Ayurveda trials out of 9,721 registered; 565 of these used randomized parallel-group designs
+        (the source''s design categories are 35.3% randomized parallel and 23.8% randomized parallel active-controlled);
+        99.6% interventional; 76.7% postgraduate-thesis based.'
+      citations:
+      - source: Thrigulla SR et al. Ayu 2022, PMC10710232 (AYUSH Research Portal bibliometric analysis)
+        type: primary-study
+        citation_strength: direct
+      - source: Analysis of AYUSH studies registered in clinical trials registry of India from 2009 to
+          2020. J Ayurveda Integr Med 2021 (PMC8185998)
+        type: primary-study
+        citation_strength: direct
+      - source: 'Adhikari T et al. Overview of Ayurveda trials registered with Clinical Trial Registry-India:
+          Need for customized data set items. Ayu 2022 (PMC8966761)'
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: Counts of registrations and portal articles are not counts of completed or published RCTs.
+        The 565 figure is the number read from the abstract and its reading (randomized parallel-group)
+        was not cross-checked. Journal for PMC8185998 was inferred from the ScienceDirect URL (S0975947...),
+        which is consistent with J Ayurveda Integr Med; verify. A count by modality (for example panchakarma
+        versus herbal) was not located.
+      source_report: gap
+      gap_outcome: found
+      replaced_from: v2
+    geographic_concentration_of_trials:
+      status: partial
+      value: Great majority of Ayurvedic clinical research is produced in India (often by CCRAS, universities
+        or manufacturers) and published in Indian or specialty journals; a minority appears in high-impact
+        international journals.
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: 'No figures or study behind the statement.
+
+        verify pass: unverifiable. Searched: bibliometric analysis Ayurveda clinical trials publications
+        country India share of publications journals'
+      source_report: v2
+      verify_outcome: unverifiable
+    publication_bias_findings:
+      status: absent
+      value: null
+      citations: []
+      register: biomedical-evidence
+      notes: 'Report mentions a ''recognized risk of bias in trials originating from India'' without naming
+        a study. Search target: funnel-plot or registry-based publication bias analysis of Ayurvedic trials.
+
+        gap pass: not_found. Searched: publication bias Ayurvedic trials funnel plot India trials systematic
+        review; "publication bias" Ayurveda OR Ayurvedic OR AYUSH trials positive results India registered
+        trials outcomes reporting unpublished. Target: A study that specifically tests publication bias
+        in Ayurvedic trials: a registry-to-publication cohort of CTRI Ayurveda trials (registered versus
+        published, positive versus negative), or a funnel-plot/Egger analysis in a meta-analysis pooling
+        Ayurvedic trials. The only item seen was a T2DM Ayurvedic meta-analysis (Frontiers in Pharmacology
+        2022) reporting funnel-plot asymmetry for HbA1c but not fasting glucose, which concerns one condition
+        and was not read in full. It does not document a general India-origin bias.'
+      source_report: v2
+      gap_outcome: not_found
+    registry_and_reporting_practice:
+      status: filled
+      value: 'CTRI 1 July 2018 to 31 March 2020: of 1,392 Ayurveda trials, 1,349 (96.9%) were registered
+        prospectively and 43 (3.1%) retrospectively. About 60% had correct health-condition coding and
+        40% incomplete or incorrect; intervention details were incomplete in 511/1,392 (40%). CTRI 2009-2020,
+        all AYUSH streams (n=3,632): 21% were registered retrospectively, and the closure of retrospective
+        registration (CTRI accepts only prospective registration from 1 April 2018) coincided with rising
+        prospective registration.'
+      citations:
+      - source: 'Adhikari T et al. Overview of Ayurveda trials registered with Clinical Trial Registry-India:
+          Need for customized data set items. Ayu 2022 (PMC8966761)'
+        type: primary-study
+        citation_strength: direct
+      - source: Analysis of AYUSH studies registered in clinical trials registry of India from 2009 to
+          2020 (PMC8185998)
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: Two different periods and denominators (Ayurveda-only 2018-2020 versus all AYUSH 2009-2020);
+        do not combine them. The 2018 policy date comes from a search-result summary and should be checked
+        against CTRI's own notice. A CTRI-registered trial is not evidence that results were reported.
+      source_report: gap
+      gap_outcome: found
+      replaced_from: v2
+  evidence_state:
+    reviews:
+      status: filled
+      value:
+      - modality: Whole-system individualized Ayurveda for rheumatoid arthritis
+        best_available_review: Furst et al. 2011, J Clin Rheumatol 17:185-192, double-blind double-dummy
+          RCT (pilot)
+        type: primary-study
+        year: 2011
+        size: n=43 seropositive RA patients; 36 weeks; Ayurveda vs methotrexate vs combination; 148 formulations
+        conclusion: Authors concluded all 3 treatments were approximately equivalent in efficacy within
+          the limits of a pilot study; Ayurveda neither demonstrably superior nor clearly inferior to
+          methotrexate; numerically fewer adverse events in the Ayurveda-only arm, but differences in
+          adverse events were not statistically significant
+        certainty_rating: null
+        methodological_limitations_noted: Underpowered pilot
+      - modality: Plant-derived formulation for rheumatoid arthritis
+        best_available_review: Chopra et al. 2000, J Rheumatol 27:1365-72
+        type: primary-study
+        year: 2000
+        size: null
+        conclusion: null
+        certainty_rating: null
+        methodological_limitations_noted: Only named as an earlier trial; no results stated
+      - modality: Ayurvedic trial literature in RA (general)
+        best_available_review: Park and Ernst 2005 systematic review, Semin Arthritis Rheum
+        type: systematic-review
+        year: 2005
+        size: null
+        conclusion: Existing RCTs fail to show convincingly that Ayurvedic treatments are effective options
+          for RA; paucity of RCTs
+        certainty_rating: null
+        methodological_limitations_noted: null
+      - modality: Ashwagandha for stress and anxiety
+        best_available_review: Arumugam et al. 2024, Explore, PMID 39348746
+        type: meta-analysis
+        year: 2024
+        size: 9 RCTs, n=558
+        conclusion: 'Significant effects: Perceived Stress Scale MD -4.72 (95% CI -8.45 to -0.99); Hamilton
+          Anxiety Scale MD -2.19 (95% CI -3.83 to -0.55); serum cortisol MD -2.58 (95% CI -4.99 to -0.16)'
+        certainty_rating: low-to-moderate
+        methodological_limitations_noted: Substantial heterogeneity in formulation and dose; small samples.
+          Report calls it arguably the strongest single-herb signal, tempered by safety concerns.
+      - modality: Curcuma longa/curcumin, Boswellia, Triphala
+        best_available_review: null
+        type: null
+        year: null
+        size: null
+        conclusion: Supportive but heterogeneous evidence
+        certainty_rating: null
+        methodological_limitations_noted: Bioavailability and standardization are recurring problems
+      - modality: Kshar sutra for fistula-in-ano
+        best_available_review: ICMR multicentric trials
+        type: primary-study
+        year: null
+        size: null
+        conclusion: One of the better-supported Ayurvedic surgical techniques; some evidence of lower
+          recurrence but slower healing versus conventional surgery
+        certainty_rating: null
+        methodological_limitations_noted: null
+      - modality: Type 2 diabetes and irritable bowel syndrome
+        best_available_review: null
+        type: null
+        year: null
+        size: null
+        conclusion: Reviews find weak or insufficient high-quality evidence
+        certainty_rating: null
+        methodological_limitations_noted: null
+      - modality: Whole-system Ayurvedic treatment of major diseases (general)
+        best_available_review: Cochrane and other rigorous reviews (unnamed)
+        type: null
+        year: null
+        size: null
+        conclusion: Evidence 'insufficient, low-quality, or preliminary'; reviews call for larger, better-designed
+          trials; report summary 'a few promising signals, no robustly established disease-modifying superiority'
+        certainty_rating: null
+        methodological_limitations_noted: Whole-system evaluation is hard to blind (better external validity);
+          single-herb evaluation is easier to blind but loses individualization. Small samples, inadequate
+          blinding, weak randomization, risk of bias in trials from India. Report found no high-certainty
+          Cochrane-level positive conclusions.
+      citations:
+      - source: Furst DE et al. 2011, Double-blind, randomized, controlled, pilot study comparing classic
+          Ayurvedic medicine, methotrexate, and their combination in rheumatoid arthritis, J Clin Rheumatol
+          17(4):185-192 (PMID 21617554)
+        type: primary-study
+        citation_strength: direct
+      - source: Chopra A et al. 2000, Randomized double blind trial of an ayurvedic plant derived formulation
+          for treatment of rheumatoid arthritis, J Rheumatol 27(6):1365-72 (PMID 10852255)
+        type: primary-study
+        citation_strength: direct
+      - source: Park J, Ernst E 2005, Ayurvedic medicine for rheumatoid arthritis, a systematic review,
+          Semin Arthritis Rheum (PMID 15846585)
+        type: systematic-review
+        citation_strength: direct
+      - source: Arumugam V et al. 2024, Effects of Ashwagandha (Withania somnifera) on stress and anxiety,
+          a systematic review and meta-analysis, Explore (NY) (PMID 39348746)
+        type: meta-analysis
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Corrections. (1) The ashwagandha meta-analysis PMID 39348746 is by Arumugam et al. (Explore
+        2024); the report''s attribution to Della Porta et al. is wrong. Design, n=9 RCTs/558 and the
+        PSS MD -4.72 (95% CI -8.45 to -0.99) were confirmed against the abstract; the abstract gives HAM-A
+        -2.19 and cortisol -2.58 but the CIs for those two and the ''low-to-moderate'' certainty rating
+        were not checked against the full text. (2) Furst 2011: the paper reports numerically fewer adverse
+        events in the Ayurveda-only arm (112 vs 174 MTX, 176 combination) but states the differences were
+        not statistically significant; wording adjusted. The 148-formulation figure was not checked. (3)
+        Park and Ernst conclusion replaced with the authors'' own wording; 7 RCTs, searched 1969-2003.
+        Chopra 2000 (RA-1, n=182, 16 weeks, placebo-controlled) was left as ''named only'' per the original
+        scope. Not verified, remain uncited: curcumin/Boswellia/Triphala, ICMR kshar sutra trials, T2DM/IBS
+        reviews, and the unnamed Cochrane verdict.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    preclinical_and_constituent_evidence:
+      status: filled
+      value:
+      - agent: Boswellic acids (notably AKBA) from Boswellia serrata
+        finding: Inhibit 5-lipoxygenase
+        type: constituent pharmacology
+        year: 1992
+        citation: Safayhi et al. 1992, J Pharmacol Exp Ther 261(3):1143-6
+      - agent: Arogyavardhini Vati (classically prepared) versus mercuric chloride
+        finding: Rat studies showed normal tissue architecture with the Ayurvedic preparation versus significant
+          organ damage from mercuric chloride; the report presents these as Ayurvedic researchers' arguments
+        type: animal study
+        year: 2012
+        citation: Safety evaluation of an Ayurvedic medicine, Arogyavardhini vati on brain, liver and
+          kidney in rats, J Ethnopharmacol 2012 (PMID 22265750)
+      citations:
+      - source: Safayhi H et al. 1992, Boswellic acids, novel, specific, nonredox inhibitors of 5-lipoxygenase,
+          J Pharmacol Exp Ther 261(3):1143-1146 (PMID 1602379)
+        type: primary-study
+        citation_strength: direct
+        claim_match: matches
+      - source: Safety evaluation of an Ayurvedic medicine, Arogyavardhini vati on brain, liver and kidney
+          in rats, J Ethnopharmacol 2012 (PMID 22265750)
+        type: primary-study
+        citation_strength: direct
+        claim_match: matches
+      register: biomedical-evidence
+      notes: Changed. The original cite for the Boswellia claim (S11, an Aflapin osteoarthritis efficacy/meta-analysis
+        paper) does not report 5-LOX inhibition by AKBA; replaced with Safayhi 1992 (acetyl-11-keto-beta-boswellic
+        acid most potent, IC50 1.5 uM, rat neutrophils; in vitro). Arogyavardhini entry is supported by
+        the 2012 J Ethnopharmacol rat study (Wistar, 28 days, HgCl2 1 mg/kg; normal cytoarchitecture at
+        up to 10x human-equivalent dose vs significant changes with HgCl2); authors not recorded. Preclinical
+        only; not a clinical review.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v1
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value: []
+      citations: []
+      register: biomedical-evidence
+      notes: Report applies no evidence from another tradition.
+      source_report: v2
+  safety:
+    adulteration_and_contamination:
+      status: filled
+      value:
+      - study: Saper et al., JAMA 2004
+        finding: 70 Ayurvedic products from 30 Boston-area stores; 20% (14/70) contained lead, mercury
+          and/or arsenic; up to 37,000 µg/g lead in some
+      - study: Saper et al., JAMA 27 August 2008
+        finding: 193 US- and Indian-made products sold online; 20.7% contained detectable lead, mercury
+          and/or arsenic; rasa śāstra products 40% versus 17% of herbal-only products (more than twice
+          as likely)
+      - study: CDC MMWR 2004
+        finding: Lead-poisoning cases across five states linked to Ayurvedic medicines
+      - study: Mikulski et al. 2017
+        finding: Further lead-poisoning clusters
+      - study: Mao and Desai (rebuttal)
+        finding: Properly prepared bhasmas convert metals to non-toxic mixed oxides; Saper's rejoinder
+          is that measured levels exceeded safety limits regardless of traditional processing
+      - study: Pharmaceutical adulteration (unnamed)
+        finding: Undeclared corticosteroids and NSAIDs recognized as a risk
+      citations:
+      - source: Saper RB et al. 2004, Heavy metal content of ayurvedic herbal medicine products, JAMA
+          292(23):2868-73 (PMID 15598918)
+        type: primary-study
+        citation_strength: direct
+      - source: Saper RB et al. 2008, Lead, mercury, and arsenic in US- and Indian-manufactured Ayurvedic
+          medicines sold via the Internet, JAMA 300(8):915-923
+        type: primary-study
+        citation_strength: direct
+      - source: CDC 2004, Lead poisoning associated with Ayurvedic medications, five states, 2000-2003,
+          MMWR 53(26):582-584
+        type: institutional
+        citation_strength: direct
+      - source: Mikulski MA et al. 2017, Toxic metals in ayurvedic preparations from a public health lead
+          poisoning cluster investigation, Int J Occup Environ Health
+        type: primary-study
+        citation_strength: direct
+      - source: Mao J, Desai K and Saper RB reply, Metal content in Ayurvedic medicines (letters), JAMA
+          2009 (PMID 19155449)
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Confirmed against abstracts: 2004 study 70 products bought Apr-Oct 2003 within 20 miles
+        of Boston, 14 (20%) contained metals, max lead 37,000 ug/g; 2008 study 193 products, 40 (20.7%);
+        MMWR reported 12 adult cases in five states. The 30-store count, the 40% vs 17% split and Mikulski''s
+        ''clusters'' were taken from secondary descriptions of the papers (2008 rasa shastra about 40%
+        vs 17% herbal-only; Mikulski 65% of 252 samples contained lead) and not checked in full text.
+        The ''undeclared corticosteroids and NSAIDs'' entry has no primary source here and is unchanged.
+        The Mao/Desai versus Saper exchange is the JAMA 2009 letter and reply. Original indirect sources
+        (staff.washington.edu, Medical Xpress, supplysidesj) replaced.'
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    intrinsic_toxicity:
+      status: filled
+      value:
+      - agent: Bhasma / rasaśāstra metal-mineral preparations
+        mechanism_class: heavy metal
+        note: Deliberately used metals; toxicity contested between defenders (Mao and Desai) and Saper
+      - agent: Ashwagandha (Withania somnifera)
+        mechanism_class: plant toxin
+        note: Cholestatic hepatitis, sometimes acute-on-chronic liver failure with high mortality in pre-existing
+          liver disease; Danish assessment also cited thyroid/hormonal effects and possible abortifacient
+          action
+      - agent: Undeclared corticosteroids and NSAIDs
+        mechanism_class: pharmaceutical adulterant
+        note: Recognized risk; no figures
+      - agent: Delayed presentation to effective care
+        mechanism_class: indirect
+        note: Recognized risk
+      - agent: Ayurvedic use alongside conventional treatment
+        mechanism_class: interaction
+        note: Report advises telling one's physician because of interaction and hepatotoxicity risk; no
+          interaction data given
+      citations:
+      - source: Philips CA et al. 2023, Ashwagandha-induced liver injury, a case series from India and
+          literature review (PMC10531359)
+        type: primary-study
+        citation_strength: direct
+      - source: Saper RB et al. 2008, JAMA 300(8):915-923 and Mao J, Desai K, JAMA 2009 letter exchange
+          (PMID 19155449)
+        type: primary-study
+        citation_strength: direct
+      - source: DTU National Food Institute 2020, risk assessment of ashwagandha for the Danish Veterinary
+          and Food Administration
+        type: institutional
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: Ashwagandha entry confirmed by Philips 2023 (predominantly cholestatic hepatitis; 3 patients
+        with pre-existing liver disease and acute-on-chronic liver failure died). Danish assessment content
+        (abortifacient traditional use, sex and thyroid hormones, five liver cases; no safe intake limit
+        established) was confirmed only through secondary descriptions of the DTU 2020 report, not the
+        report itself. The metal-toxicity dispute is confirmed by the JAMA 2009 exchange. The pharmaceutical-adulterant,
+        indirect-harm and interaction entries are general statements by the report with no primary source
+        located; they are unchanged and not independently verified.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    documented_adverse_events:
+      status: filled
+      value:
+      - Ashwagandha-induced liver injury case series reported in Japan, the USA and Iceland, India, Germany
+        and Poland (single cases) and elsewhere; an Indian series (8 patients) found injury with single-ingredient
+        formulations, and chemical analysis of five formulations found no hepatotoxic contaminants or
+        synthetic adulterants
+      - CDC MMWR 2004 lead-poisoning cases (12 adults) across five states linked to Ayurvedic medicines
+      - Further lead clusters (Mikulski et al. 2017)
+      citations:
+      - source: Philips CA et al. 2023, Ashwagandha-induced liver injury, a case series from India and
+          literature review (PMC10531359)
+        type: primary-study
+        citation_strength: direct
+      - source: CDC 2004, MMWR 53(26):582-584
+        type: institutional
+        citation_strength: direct
+      - source: Mikulski MA et al. 2017, Int J Occup Environ Health
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Changed. The Netherlands is removed: the Philips 2023 literature review lists Japan (2017),
+        US and Iceland (series), Germany, Poland and India, and no Dutch case. ''Unadulterated'' clarified
+        to the paper''s finding that tested formulations had no hepatotoxic contaminants (one product
+        had trace lead 0.21 mg/kg, cadmium, arsenic). Case count for MMWR added from the report''s abstract.
+        Any Dutch report may exist in other literature but was not located.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    regulatory_actions_taken:
+      status: filled
+      value:
+      - FDA Import Alert 66-41 (heavy metals) and Import Alert 99-42 (detention without physical examination
+        of Ayurvedic supplements found injurious from mercury/lead)
+      - Denmark ban on ashwagandha in food/supplements, 2023, after a 2020 Technical University of Denmark
+        risk assessment
+      - Netherlands RIVM warning, March 2024
+      - France ANSES warning, 2024
+      - EU Heads of Food Safety Agencies working group recommended prioritizing ashwagandha for an Article
+        8 procedure, June 2024
+      - UK Food Standards Agency public consultation (undated)
+      - India mandatory heavy-metal testing for exported ASU products, 2005; national pharmacovigilance
+        programme for ASU&H drugs from 2017
+      - Health Canada and TGA advisories on contaminated products
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'verify pass: unverifiable. Searched: FDA Import Alert 66-41 Ayurvedic lead mercury detention
+        without physical examination (fetched importalert_190 and importalert_1167; 66-41 is titled unapproved
+        new drugs, 99-42 is heavy metal contamination of foods and lists Baidyanath Ayurvedic supplements,
+        so the leaf''s ''66-41 (heavy metals)'' label is imprecise; FDA page names both alerts for Ayurvedic
+        products); Denmark ashwagandha ban 2023 DTU risk assessment Fodevarestyrelsen (only secondary
+        sources reached; RIVM, ANSES, EU working group, UK FSA, India 2005/2017 and Health Canada/TGA
+        items not checked against primary documents)'
+      source_report: v2
+      verify_outcome: unverifiable
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value: []
+      citations: []
+      register: biomedical-evidence
+      notes: Report cites no harm data from another tradition.
+      source_report: v2
+  contact_and_borrowing:
+    relationships:
+      status: filled
+      value:
+      - other_tradition: Arabic/Persian medicine (Abbasid Baghdad)
+        kind: exchange
+        direction: Sanskrit to Arabic/Persian
+        period: 786-809 (Harun al-Rashid, Barmakids)
+        evidence_type: documented translation
+        status: demonstrated
+        note: Caraka and Suśruta rendered into Persian and Arabic; Mankah/Kankah al-Hindi; al-Razi's Kitāb
+          al-Ḥāwī
+      - other_tradition: Tibetan medicine (Sowa-Rigpa)
+        kind: exchange
+        direction: Sanskrit/Ayurveda to Tibetan
+        period: c. 12th century CE (Rgyud bzhi)
+        evidence_type: documented translation
+        status: demonstrated
+        note: Report calls it documented transmission; degree of influence still debated; Rgyud bzhi also
+          integrates Chinese, Persian-humoral and Greco-Roman elements
+      - other_tradition: Greek humoral medicine (Hippocratic-Galenic)
+        kind: parallel
+        direction: null
+        period: null
+        evidence_type: structural parallel
+        status: contested
+        note: Report says direction or existence of influence is unresolved; Filliozat argued early contact
+          and shared ideas; Zysk sees largely independent development; may be partial convergence
+      - other_tradition: Islamic and/or Chinese medicine (pulse diagnosis)
+        kind: exchange
+        direction: Islamic and/or Chinese to Ayurveda
+        period: late
+        evidence_type: textual attestation
+        status: contested
+        note: Nāḍī parīkṣā widely argued to be a relatively late addition because it is not prominent
+          in the earliest saṃhitās
+      - other_tradition: Islamic and Chinese alchemy (rasaśāstra)
+        kind: exchange
+        direction: null
+        period: null
+        evidence_type: structural parallel
+        status: contested
+        note: Report says rasaśāstra/alchemy 'links connect' Indian, Islamic and 'possibly Chinese' traditions
+      - other_tradition: Buddhist monastic medicine / śramaṇa ascetics
+        kind: descent
+        direction: Buddhist monastic medicine to classical Ayurveda
+        period: from c. 4th century BCE
+        evidence_type: textual attestation
+        status: contested
+        note: Zysk 1991 position; report calls it influential but not unanimous
+      - other_tradition: Vedic healing (Atharvaveda, Ṛgveda)
+        kind: descent
+        direction: Vedic to Ayurveda
+        period: Vedic period
+        evidence_type: textual attestation
+        status: contested
+        note: Recognized antecedent; the emphasis (sole source versus one strand) is what is contested
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report gives Garrett and Gyatso as analysts of the Tibetan case without a position. Zysk''s
+        Buddhist-descent thesis is cited to S1/S2 in canon_and_transmission. Kind and status assignments
+        for contested items are the extractor''s mapping.
+
+        verify pass: unverifiable. Searched: Zysk Asceticism and Healing in Ancient India 1991 Buddhist
+        monastic medicine origin of Ayurveda (confirms Zysk 1991 position via reviews only; other seven
+        relationships not checked against primary scholarship)'
+      source_report: v2
+      verify_outcome: unverifiable
+    corroborated_by:
+      status: deferred
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: Computed at synthesis.
+      source_report: v2
+  contemporary_controversies:
+    who_engagement:
+      status: filled
+      value:
+      - WHO Benchmarks for the Training of Ayurveda (2022) and Benchmarks for Practice, developed with
+        the Jamnagar institute
+      - 'WHO Global Traditional Medicine Centre (GTMC), Jamnagar: announced 3 November 2020; foundation
+        stone laid 19 April 2022 by PM Modi with WHO DG Tedros and Mauritius PM Jugnauth; hosted at ITRA.
+        Per WHO (31 July 2024), India committed US$85 million over 2022-2032, part of a broader US$250
+        million investment covering workplan, interim premises and new building. Seen by proponents as
+        global validation, by critics as political endorsement outrunning evidence.'
+      - WHO publicly denied it had reviewed or certified any traditional medicine for COVID-19 (Coronil
+        episode)
+      citations:
+      - source: WHO Benchmarks for the Training of Ayurveda (ResearchGate copy)
+        type: institutional
+        citation_strength: direct
+      - source: WHO statement of 31 July 2024 (named in text, no bibliography entry)
+        type: institutional
+        citation_strength: unclear
+      register: regulatory
+      notes: ICD-11 is not mentioned in the report.
+      source_report: v2
+    integration_disputes:
+      status: filled
+      value:
+      - CCIM notification of 20 November 2020 allowing PG Ayurveda practitioners to perform 58 surgeries;
+        opposed by the IMA, which calls it 'mixopathy' or 'khichdification'; IMA nationwide strikes December
+        2020 and February 2021
+      - 'Litigation: a 2020 PIL challenging the notification remains sub judice in the Supreme Court;
+        hearing listed for 8 January 2026; outcome unresolved at report cutoff'
+      - Andhra Pradesh moved to permit such surgeries (December 2025); IMA president Dilip Bhanushali
+        said the association wants 'Ayurveda to be promoted in its original and pure form'
+      - Proposed integrated MBBS-BAMS course at JIPMER Puducherry (announced May 2025)
+      - '''One Nation One Health System'', National Education Policy 2020 and NITI Aayog push toward integrative
+        medicine, welcomed by AYUSH and opposed by the IMA as diluting standards and accountability'
+      citations:
+      - source: 'Khichdification of medical education: IMA on surgery nod for Ayurveda (careers360)'
+        type: news
+        citation_strength: indirect
+      - source: 'Nationwide strike: doctors against Centre''s Ayurveda surgery move (careers360)'
+        type: news
+        citation_strength: indirect
+      - source: AP allows PG Ayurvedic doctors to perform 58 surgeries (medicaldialogues.in)
+        type: news
+        citation_strength: indirect
+      - source: IMA flags AP's move to allow Ayurvedic doctors to perform surgeries (medicalbuyer.co.in)
+        type: news
+        citation_strength: indirect
+      register: regulatory
+      notes: 'Supreme Court status is reached only through news outlets.
+
+        verify pass: unverifiable. Searched: CCIM notification 20 November 2020 Indian Medicine Central
+        Council Amendment Regulations 2020 58 surgical procedures (PIB release returned 403; ThePrint
+        reports 20 Nov 2020 gazette notification with about 39 general plus 19 ENT/eye procedures; gazette
+        text not obtained; 2025-26 items not located in primary form)'
+      source_report: v2
+      verify_outcome: unverifiable
+    conservation_and_sourcing:
+      status: not_requested
+      value: null
+      citations: []
+      register: regulatory
+      notes: Not covered.
+      source_report: v2
+    intellectual_property:
+      status: filled
+      value:
+      - 'Traditional Knowledge Digital Library (TKDL): formalized c. 2001, expanded from 2008; provides
+        searchable prior art to global patent offices'
+      - US turmeric wound-healing patent revoked 1997, using 32 references from Sanskrit/Urdu/Hindi texts
+        submitted by CSIR
+      - Challenge to the EPO neem patent
+      - Contest of the RiceTec basmati patent
+      citations:
+      - source: Nature of IPR Protection given by Law in Turmeric Case (S.S. Rana and Co.)
+        type: practitioner-site
+        citation_strength: indirect
+      register: regulatory
+      notes: 'Source is a law-firm article. Nagoya exposure is not discussed.
+
+        verify pass: unverifiable. Searched: TKDL Traditional Knowledge Digital Library turmeric patent
+        revoked 1997 CSIR 32 references US5401504 (WIPO PDF unreadable, HerbalGram and WIPO TKDL page
+        returned no usable text; 32-reference count and TKDL dates not confirmed from a primary document)'
+      source_report: v2
+      verify_outcome: unverifiable
+    politicized_episodes:
+      status: filled
+      value:
+      - AYUSH-64 (CCRAS polyherbal originally for malaria) repurposed and studied for mild/moderate COVID-19
+      - Patanjali's Coronil launched June 2020 with cure claims; restricted by AYUSH to 'immunity booster';
+        re-promoted 19 February 2021 as a 'supporting measure' with a claimed WHO/CoPP certification at
+        an event attended by Union ministers; WHO denied it, and the CoPP was issued by India's DCGI
+      - 'IMA v. Patanjali, Supreme Court, 2022-2024: restraint orders, contempt notices to Baba Ramdev
+        and Acharya Balkrishna under the Drugs and Magic Remedies (Objectionable Advertisements) Act 1954,
+        public apologies; contempt charges dropped August 2024'
+      citations:
+      - source: 'Patanjali Misleading Ads Case: Supreme Court drops contempt charges (SCC Times)'
+        type: news
+        citation_strength: indirect
+      - source: 'none (uncited in report): AYUSH-64, Coronil, WHO denial'
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'verify pass: unverifiable. Searched: WHO India Coronil Patanjali no certification COVID-19
+        traditional medicine February 2021 CoPP DCGI (news only); Supreme Court IMA v Union of India Patanjali
+        contempt closed 13 August 2024 order (2024 INSC 605 located but fetch failed, text not read)'
+      source_report: v2
+      verify_outcome: unverifiable
+    research_methodology_disputes:
+      status: partial
+      value: Report frames a trade-off between whole-system evaluation (hard to blind, better external
+        validity) and single-herb evaluation (easier to blind but loses the individualization Ayurveda
+        says is essential). The Furst trial used 148 formulations to allow individualization while preserving
+        blinding. 'Standardization vs. individualization' is listed as a continuing controversy. Named
+        parties on each side are not given.
+      citations:
+      - source: Furst et al. 2011 (ResearchGate PDF)
+        type: primary-study
+        citation_strength: direct
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: 'No sham/placebo-validity dispute is reported.
+
+        verify pass: unverifiable. Searched: Furst Ayurveda rheumatoid arthritis trial individualized
+        formulations methotrexate 2011 (trial J Clin Rheumatol 2011;17:185-192 exists; the 148-formulation
+        figure was not confirmed)'
+      source_report: v2
+      verify_outcome: unverifiable
+  self_reported_gaps:
+    inventory:
+      status: filled
+      value:
+      - kind: searched_not_found
+        text: I searched specifically for inter-rater reliability/kappa studies on doṣa/vikṛti and pulse
+          diagnosis and found only a handful (Kurande 2013; the 2019 knee-OA nested study; instrument-validation
+          papers). Large, multi-rater, patient-population (not just healthy-subject) reliability studies
+          are essentially absent, and this gap is itself an important finding.
+      - kind: searched_not_found
+        text: Similarly, high-certainty Cochrane-level positive conclusions for whole-system Ayurvedic
+          treatment of major diseases were not found.
+      - kind: gap
+        text: There is no firm authorial identity for 'Suśruta,' 'Caraka,' or the two Vāgbhaṭas; dates
+          rest on internal textual layering, cross-references, and the Bower Manuscript, not on external
+          documentary anchors.
+      - kind: source_caveat
+        text: Indian-government/AYUSH and manufacturer sources are advocacy-oriented (e.g., country-recognition
+          lists, '5,000-year-old' and 'world's oldest continuously practiced' claims, and Coronil promotion)
+          and were treated with caution; promotional Maharishi/wellness sites likewise. Peer-reviewed
+          literature, primary legislation, and reputable historians were preferred.
+      - kind: contested_item
+        text: dating/authorship of the saṃhitās (irreducibly uncertain per Meulenbeld)
+      - kind: contested_item
+        text: the Greek-Indian humoral influence (direction unresolved)
+      - kind: contested_item
+        text: bhasma safety (defenders vs. Saper)
+      - kind: contested_item
+        text: Ayurgenomics (preliminary, small cohorts)
+      - kind: contested_item
+        text: Slovenia's legal status (asserted by Indian sources but no specific statute verified)
+      - kind: data_reconciliation
+        text: Sri Lanka practitioner numbers vary by year and source (~19,754 in 2010 AMC data; ~24,000
+          in 2015 AMC data reported by ADB); the higher, more recent figure is used above. The WHO GTMC
+          funding is best stated as US$85 million over 2022-2032 within a broader US$250 million Indian
+          commitment.
+      - kind: recency
+        text: developments through the Supreme Court Patanjali case (2024), the JIPMER integrated-course
+          dispute (2025), and the Ayurveda-surgery litigation (Supreme Court hearing listed for January
+          2026) are included as of September 2026; the surgery-rights litigation was unresolved at the
+          cutoff.
+      citations: []
+      register: historical-scholarship
+      notes: Inventory is the report's own statements; no citations apply.
+      source_report: v2
+  report_conclusions:
+    revision_thresholds:
+      status: filled
+      value:
+      - domain: Clinical efficacy of Ayurveda in general
+        threshold: Publication of adequately powered, independently replicated, low-risk-of-bias RCTs
+          (ideally not India-only)
+        would_change: Advice against relying on Ayurveda for disease-modifying benefit
+      - domain: Product safety
+        threshold: Enforceable, verified heavy-metal/GMP certification
+        would_change: Advice to avoid rasaśāstra/bhasma and untested imported products
+      - domain: Ashwagandha for stress/anxiety
+        threshold: Larger high-certainty trials with standardized extracts confirming the pooled effect
+          and resolving the hepatotoxicity signal
+        would_change: Moves ashwagandha from 'promising' to 'recommended for stress/anxiety'
+      citations: []
+      register: biomedical-evidence
+      notes: Report author's stance, not findings.
+      source_report: v2
+    recommendations:
+      status: filled
+      value:
+      - audience: patient/consumer
+        text: Treat Ayurvedic diagnosis as non-reproducible; do not rely on prakṛti/pulse readings for
+          consequential decisions; obtain independent biomedical diagnosis for serious conditions.
+      - audience: patient/consumer
+        text: Avoid rasaśāstra/bhasma products and any imported product lacking third-party heavy-metal
+          testing or a Certificate of Analysis.
+      - audience: patient/consumer
+        text: Be cautious with ashwagandha if you have liver disease, are pregnant, or intend long-term/high-dose
+          use.
+      - audience: patient/consumer
+        text: Do not substitute Ayurveda for evidence-based treatment of cancer, diabetes, rheumatoid
+          arthritis, or infections; if using adjunctively, tell your physician.
+      - audience: researcher/policymaker
+        text: Prioritize independent replication outside India; fund and mandate standardization of prakṛti
+          assessment; enforce pharmacovigilance and heavy-metal limits; keep 'recognized medical system'
+          claims proportionate to the evidence, distinguishing product safety from clinical efficacy.
+      citations: []
+      register: biomedical-evidence
+      notes: Report author's stance, not findings.
+      source_report: v2
+  economics:
+    domestic_market_size:
+      status: not_requested
+      value: null
+      citations: []
+      register: economic
+      notes: Report gives no market figures.
+      source_report: v2
+    global_market_estimates:
+      status: not_requested
+      value: null
+      citations: []
+      register: economic
+      notes: Report gives no market figures.
+      source_report: v2
+    major_manufacturers:
+      status: incidental
+      value:
+      - name: Dabur
+        products: Pharmaceutical Ayurvedic products
+        figure: null
+        currency: null
+        year: null
+        measure: null
+      - name: Zandu
+        products: Pharmaceutical Ayurvedic products
+        figure: null
+        currency: null
+        year: null
+        measure: null
+      - name: Baidyanath
+        products: Pharmaceutical Ayurvedic products
+        figure: null
+        currency: null
+        year: null
+        measure: null
+      - name: Arya Vaidya Sala, Kottakkal
+        products: Standardized mass-produced Ayurvedic medicines
+        figure: null
+        currency: null
+        year: null
+        measure: null
+      - name: Patanjali
+        products: Coronil
+        figure: null
+        currency: null
+        year: null
+        measure: null
+      citations:
+      - source: none (uncited in report)
+        type: unclear
+        citation_strength: unclear
+      register: economic
+      notes: 'Named in passing; no revenue figures.
+
+        verify pass: unverifiable. Searched: Dabur Zandu Baidyanath Arya Vaidya Sala Kottakkal Patanjali
+        leading Ayurvedic manufacturers India (only commercial directory pages, no primary or company-filing
+        source)'
+      source_report: v2
+      verify_outcome: unverifiable
