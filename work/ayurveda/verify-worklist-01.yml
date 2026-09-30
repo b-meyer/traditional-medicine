@@ -1,0 +1,154 @@
+system: ayurveda
+pass: verify
+batch: 1
+entries:
+- path: identification.system_name
+  source_report: v2
+  value: Ayurveda
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: identification.alternate_names
+  source_report: v1
+  value:
+  - Ayurveda, 'science of life/longevity' (from Sanskrit ayus + veda)
+  - Ashtanga Ayurveda (the eight-branch system)
+  - ASU (Ayurveda, Siddha, Unani) as the regulatory shorthand for drugs in India
+  weak_citations:
+  - source: Report text, no [Sn] marker
+    type: unclear
+    citation_strength: unclear
+- path: identification.primary_regions
+  source_report: v1
+  value: Indian subcontinent; widely used in India and by the South Asian diaspora; sold abroad (US, EU)
+    mainly as supplements
+  weak_citations:
+  - source: Report text, no [Sn] marker; NCCIH Ayurvedic Medicine In Depth (S22)
+    type: unclear
+    citation_strength: unclear
+- path: identification.system_boundary
+  source_report: v2
+  value:
+  - tradition: Siddha
+    relation: regulatory_grouping
+    fields_affected:
+    - legal_status
+    - identification
+    description: Regulated with Ayurveda under Sri Lanka's Ayurveda Act No. 31 of 1961 (about 2.9% of
+      registered practitioners); ASU drugs are grouped in India's Drugs and Cosmetics Act.
+  - tradition: Unani
+    relation: regulatory_grouping
+    fields_affected:
+    - legal_status
+    - identification
+    - disruption
+    description: Grouped with Ayurveda in Sri Lankan registration, in ASU drug regulation, and in Bangladesh/Pakistan
+      regulation; Unani classes ran at the Calcutta Madrasa alongside Ayurvedic classes at the Sanskrit
+      College from 1826.
+  - tradition: Sri Lankan traditional medicine
+    relation: regulatory_grouping
+    fields_affected:
+    - legal_status
+    description: Covered by the same Sri Lankan Act and Council.
+  - tradition: Maharishi Ayur-Ved
+    relation: same_system_variant
+    fields_affected:
+    - construct_debate
+    description: Globalized, spiritualized consumer variant launched mid-1980s, popularized by Deepak
+      Chopra; described as only loosely tied to classical texts.
+  - tradition: Classical saṃhitā-based Ayurveda
+    relation: premodern_predecessor
+    fields_affected:
+    - construct_debate
+    - canon_and_transmission
+    description: Report holds that modern institutional, pharmaceutical and wellness forms are substantially
+      19th-21st century reconstructions, with the textual and conceptual core continuous.
+  weak_citations:
+  - source: Institute of Indigenous Medicine (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: About Us - Maharishi Ayurveda (maharishiayurvedaindia.com)
+    type: practitioner-site
+    citation_strength: indirect
+- path: canon_and_transmission.dating_and_authorship_disputes
+  source_report: v2
+  value:
+  - scholar: G. Jan Meulenbeld
+    position: Many problems about the texts and their authors are 'far from even approaching a solution'
+      (HIML Ia, 656). Gives the most detailed discussion of Suśruta dating and sets aside Hoernle's old
+      600 BCE date.
+  - scholar: Kenneth Zysk
+    position: 'Classical Ayurveda''s empirico-rational character emerged from heterodox wandering ascetics
+      and Buddhist monastic communities from about the 4th century BCE, not from Brahmanic Vedic religion;
+      early Buddhist medicine was ''fundamental to the formation of ayurvedic medical thinking''. Work:
+      Asceticism and Healing in Ancient India, 1991.'
+  - scholar: Zimmermann (as quoted)
+    position: Called Zysk's account 'a missing link between the hymns and charms of the Vedic period and
+      the treatises of classical Ayurveda'.
+  - scholar: Nationalist and traditionalist accounts (unnamed)
+    position: Emphasize unbroken Vedic descent.
+  - scholar: Historians (unnamed)
+    position: No firm authorial identity for Suśruta, Caraka or the two Vāgbhaṭas; dates rest on internal
+      layering, cross-references and the Bower Manuscript, not external documentary anchors; uncertainty
+      is irreducible with current evidence.
+  weak_citations:
+  - source: Asceticism Healing Ancient India Medicine by Kenneth Zysk (AbeBooks)
+    type: catalog-listing
+    citation_strength: indirect
+  - source: Asceticism and Healing in Ancient India (Motilal Banarsidass listing)
+    type: catalog-listing
+    citation_strength: indirect
+- path: canon_and_transmission.transmission_mode
+  source_report: v2
+  value: Textual, with lineage attributions (Ātreya to Agniveśa for the Caraka tradition) and, per the
+    continuity camp, transmission through commentaries and lineages to the present. Zysk locates early
+    transmission in Buddhist monastic communities.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: canon_and_transmission.external_dating_anchors
+  source_report: v2
+  value: Bower Manuscript (c. 4th-6th century CE), found in Chinese Turkestan/Central Asia, brought to
+    the Asiatic Society, Calcutta after its 1890 discovery; contains material overlapping the classical
+    tradition, including quotations echoing Caraka. Report states dates otherwise rest on internal evidence
+    rather than external documentary anchors.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: canon_and_transmission.key_figures
+  source_report: v2
+  value:
+  - name: Ātreya
+    dates: null
+    role: Lineage head for the Agniveśa/Caraka tradition
+  - name: Agniveśa
+    dates: null
+    role: Attributed author of the earlier treatise underlying the Caraka Saṃhitā
+  - name: Caraka
+    dates: early centuries CE (text)
+    role: Redactor of the Caraka Saṃhitā
+  - name: Dṛḍhabala
+    dates: null
+    role: Restored or completed missing portions of the Caraka Saṃhitā
+  - name: Suśruta
+    dates: possibly begun last centuries BCE (text)
+    role: Attributed author of the Suśruta Saṃhitā
+  - name: Vāgbhaṭa
+    dates: c. 7th century CE
+    role: Author of Aṣṭāṅgahṛdaya and Aṣṭāṅgasaṃgraha
+  - name: Mankah/Kankah al-Hindi
+    dates: Harun al-Rashid period, r. 786-809
+    role: Indian physician at the Barmakid hospital; translated Sanskrit medical texts
+  - name: ʿAbd-Allāh ibn ʿAlī
+    dates: null
+    role: Reported translator of the Caraka Saṃhitā into Arabic/Persian
+  - name: Harun al-Rashid and the Barmakids
+    dates: r. 786-809
+    role: Patrons of the Baghdad translation activity
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear

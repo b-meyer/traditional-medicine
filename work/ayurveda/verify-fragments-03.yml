@@ -1,0 +1,193 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: diagnostics.methods
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - name: Roga parīkṣā and rogī parīkṣā
+          examines: Disease and patient respectively
+        - name: Aṣṭavidha parīkṣā (eightfold examination)
+          examines: Pulse/nāḍī, urine, stool, tongue, voice/speech, skin/touch, eyes, general appearance
+        - name: Nāḍī parīkṣā (pulse diagnosis)
+          examines: Pulse; widely argued to be a relatively late addition
+        - name: Prakṛti assessment
+          examines: Constitutional type
+      citations:
+        - source: Charaka Samhita, Vimana Sthana ch. 4 (Trividha Roga Vishesha Vijnaniya Vimana), online edition carakasamhitaonline.com
+          type: reference-work
+          citation_strength: direct
+        - source: Yogaratnakara, Ashtasthana pariksha (eight examinations, listed as nadi, mutra, mala, jihva, shabda, sparsha, drik, akriti), as described in Ashtasthana Pariksha review, JAIMS
+          type: tertiary-review
+          citation_strength: direct
+      register: emic
+      notes: "Roga and rogi pariksha, and trividha/shadvidha/ashtavidha/dashavidha groupings, are named in Charaka Vimana 4. The specific eightfold list of the value (nadi, mutra, mala, jihva, shabda, sparsha, drik, akriti) is the Ashtasthana pariksha of Yogaratnakara; Sharngadhara is credited with first describing nadi pariksha but not the eightfold list. Nadi is not part of the Charaka examination lists, which supports the late-addition reading, but this is a scholarly inference and no dating scholar was checked. Label 'Ashtavidha' in the value refers to the Yogaratnakara scheme, not Charaka's own eightfold grouping."
+    searches: ["Ashtasthana pariksha nadi mutra mala jihva shabda sparsha drik akriti Yogaratnakara Sharngadhara", "Charaka Samhita Vimana Sthana 4 roga pariksha rogi pariksha trividha dashavidha"]
+  - path: diagnostics.reliability_evidence
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - study: Kurande et al. 2013, 'Interrater Reliability of Diagnostic Methods in Traditional Indian Ayurvedic Medicine', eCAM Art. ID 658275
+          statistic: weighted κ (average pairwise)
+          value: pulse 0.07; tongue 0.17; prakṛti 0.28
+          confidence_interval: null
+          design: clinician-vs-clinician
+          population: healthy volunteers
+          n_raters: 15
+          n_subjects: 20
+          target: pulse assessment, tongue assessment, prakṛti (constitutional type), assessed separately
+          citation: Kurande V, Bilgrau AE, Waagepetersen R, Toft E, Prasad R. Evid Based Complement Alternat Med 2013, Art. ID 658275
+          notes: 105 pairwise comparisons; raters were registered Ayurvedic doctors with 3-15 years' experience; authors concluded 'low level of reliability for all types of assessment'. Prakṛti assessment was reported to be reliable when questionnaire and software were used.
+        - study: "Kessler et al. 2019, 'Reliability of Ayurvedic Diagnosis for Knee Osteoarthritis Patients: A Nested Diagnostic Study Within a Randomized Controlled Trial', J Altern Complement Med"
+          statistic: percent agreement (consensus)
+          value: 95%
+          confidence_interval: null
+          design: clinician-vs-clinician
+          population: patients
+          n_raters: 4
+          n_subjects: 30
+          target: final overall Ayurvedic diagnosis (main diagnosis, sandhi-gata vata)
+          citation: Kessler CS et al. J Altern Complement Med 2019 (PMC6748397)
+          notes: Nominal group technique used as consensus procedure; 4 Ayurvedic experts (1 Indian-trained, 3 Western-trained); 120 individual ratings and 30 consensus ratings.
+        - study: Kessler et al. 2019, knee osteoarthritis nested diagnostic study (same study)
+          statistic: Fleiss and Cohen κ
+          value: 0 to 0.4 (fair-to-poor) for central diagnostic aspects such as prakṛti and agni; individual entities ranged higher (for example κ 0.72 for a pathophysiological item, κ 0.02 for prakṛti as reported in the article)
+          confidence_interval: null
+          design: clinician-vs-clinician
+          population: patients
+          n_raters: 4
+          n_subjects: 30
+          target: central concepts such as prakṛti and agni
+          citation: Kessler CS et al. J Altern Complement Med 2019 (PMC6748397)
+          notes: Fleiss κ for the four raters and Cohen κ pairwise; Landis and Koch interpretation.
+        - study: Rotti et al. 2014, 'Determinants of Prakriti, the Human Constitution Types of Indian Traditional Medicine and its Correlation with Contemporary Science', J Ayurveda Integr Med 5(3):167-175 (AyuSoft, C-DAC Pune)
+          statistic: Cohen κ
+          value: '0.778'
+          confidence_interval: null
+          design: software-vs-clinician
+          population: healthy volunteers
+          n_raters: null
+          n_subjects: 3416
+          target: prakṛti diagnosis by AyuSoft software versus Ayurvedic physician assessment
+          citation: Rotti H et al. J Ayurveda Integr Med 2014;5(3):167-175 (PMC4204287)
+          notes: Article text, 'Kappa value of 0.778 (P <0.001), between ayurvedic physician and AyuSoft'; approximately 80% concordance. Subjects were healthy males aged 20-30. Number of physicians not stated in the passage read; a later paper cites this study as κ = 0.7 with two physicians.
+        - study: Rao et al. 2022, wrist pulse acquisition system with three piezoelectric sensors, Indian Journal of Traditional Knowledge 21(4):730-736
+          statistic: Cohen κ
+          value: 0.719 (basic level); 0.454 (sub-level)
+          confidence_interval: null
+          design: instrument-vs-expert
+          population: healthy volunteers
+          n_raters: 1
+          n_subjects: 50
+          target: pulse-derived vāta-pitta-kapha prakṛti categories versus expert nāḍī parīkṣā physician classification
+          citation: Rao, Ravishankar and Rao 2022, as reported in a 2025 scoping review of prakṛti tools (PMC12269270)
+          notes: The kappa values, 50 healthy participants and expert-physician comparator were read in the scoping review, not in the journal article itself, which could not be retrieved. The same review reports κ 0.476 against questionnaire-based prakṛti. The single expert is stated as 'an expert' in search excerpts, so n_raters 1 is an inference.
+      citations:
+        - source: Kurande et al. 2013, eCAM Art. ID 658275 (PMC3803118)
+          type: primary-study
+          citation_strength: direct
+        - source: Kessler et al. 2019, J Altern Complement Med (PMC6748397)
+          type: primary-study
+          citation_strength: direct
+        - source: Rotti et al. 2014, J Ayurveda Integr Med 5(3):167-175 (PMC4204287)
+          type: primary-study
+          citation_strength: direct
+        - source: Scoping review of prakṛti assessment tools, PMC12269270 (2025), reporting Rao et al. 2022
+          type: tertiary-review
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Corrected from named-in-text-only entries. Changes: knee OA study identified as Kessler et al. 2019 with design clinician-vs-clinician, 4 raters, 30 patients, Fleiss and Cohen kappa; AyuSoft identified as Rotti et al. 2014 (Cohen kappa 0.778, healthy volunteers); wrist-pulse study identified as Rao et al. 2022 with 50 healthy participants, instrument-vs-expert, Cohen kappa. Wrist-pulse figures rest on a review, not the article. Values from different designs are not comparable."
+    searches: ["Kurande Interrater Reliability of Diagnostic Methods in Traditional Indian Ayurvedic Medicine 2013 eCAM", "knee osteoarthritis Ayurveda nested diagnostic study inter-rater agreement prakriti agni consensus diagnosis 2019", "AyuSoft C-DAC Pune validation kappa 0.778 3416 subjects", "wrist pulse piezoelectric sensor vata pitta kapha kappa 0.719 0.454 Ayurveda nadi"]
+  - path: diagnostics.sign_vs_synthesis
+    outcome: corrected
+    field:
+      status: filled
+      value: In the knee OA study (Kessler et al. 2019), agreement on the final overall diagnosis (95% consensus) exceeded chance-corrected agreement on constitutional entities such as prakṛti and agni (κ 0-0.4); the authors state that agreement on disease-related entities was better than on constitutional entities. In Kurande et al. 2013 the lowest average agreement was for pulse (κ 0.07), then tongue (0.17), with prakṛti the highest of the three (0.28).
+      citations:
+        - source: Kessler et al. 2019, J Altern Complement Med (PMC6748397)
+          type: primary-study
+          citation_strength: direct
+        - source: Kurande et al. 2013, eCAM Art. ID 658275 (PMC3803118)
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Changed: the original said Kurande found lowest agreement on pulse and prakṛti. The article reports pulse 0.07, tongue 0.17, prakṛti 0.28, so prakṛti was not lowest. The 95% figure is percent consensus agreement; the kappas are a different statistic, so the contrast is the authors' own, not a like-for-like comparison."
+    searches: ["knee osteoarthritis Ayurveda nested diagnostic study inter-rater agreement prakriti agni consensus diagnosis 2019", "Kurande Interrater Reliability of Diagnostic Methods in Traditional Indian Ayurvedic Medicine 2013 eCAM"]
+  - path: diagnostics.standardization_efforts
+    outcome: corrected
+    field:
+      status: filled
+      value: CCRAS (Ministry of AYUSH) developed a standardized Prakriti Assessment Scale (PAS; 91 predictors in 30 domains, four traits) validated for face, content, construct and criterion validity and tested for intra-rater and inter-rater reliability with the kappa statistic, plus an AYUR Prakriti web portal to administer it. AyuSoft (C-DAC Pune) software and a piezoelectric wrist-pulse instrument are also reported.
+      citations:
+        - source: Development of a standardized assessment scale for assessing Prakriti (psychosomatic constitution), AYU 43(4):109-129, 2022, doi 10.4103/ayu.ayu_239_22
+          type: primary-study
+          citation_strength: direct
+        - source: Rotti et al. 2014, J Ayurveda Integr Med 5(3):167-175 (AyuSoft)
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Changed: the original stated a target of κ≈0.65. I could not read the AYU article body (paywalled). A search excerpt said κ 0.65 was considered reasonable agreement and the expected κ was 0.75, so the 0.65 'target' is unconfirmed and imprecise, and is removed here. PAS, portal and kappa-based reliability testing are confirmed from the abstract. The wrist-pulse instrument is Rao et al. 2022, see reliability_evidence."
+    searches: ["CCRAS Prakriti Assessment Scale reliability AYUR Prakriti web portal kappa 0.65", "Development of a standardized assessment scale for assessing Prakriti AYU 2022 pubmed PMC kappa"]
+  - path: modalities.items
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - name: Panchakarma (Vamana, Virechana, Basti, Nasya, Raktamokshana)
+          native_category: Shodhana (purification/elimination)
+          tags: [procedural]
+          description: Therapeutic emesis, purgation, medicated enema (foremost for Vata), nasal administration, bloodletting; preceded by purvakarma and followed by pashchatkarma diet and regimen. Report says the detoxification framing lacks robust trial support.
+        - name: Purvakarma (Snehana oleation and Svedana sudation)
+          native_category: Shodhana preparation
+          tags: [procedural, thermal]
+          description: Preparation before Panchakarma
+        - name: Herbal formulations and single herbs (Shamana therapy, dravyaguna)
+          native_category: Shamana (palliation)
+          tags: [herbal]
+          description: Polyherbal formulations justified by claimed synergy; herbs with research literature listed under materia_medica
+        - name: Rasashastra (bhasmas)
+          native_category: Rasashastra (iatrochemistry)
+          tags: [mineral-metal, herbal]
+          description: Processed mercury, arsenic, lead, gold and others, purified (shodhana) and calcined (marana, repeated puta heating) with herbal or sulfur matrices; claimed to be rendered safe by processing
+        - name: Shalya tantra (surgery)
+          native_category: Shalya tantra (one of eight branches)
+          tags: [surgical]
+          description: Rhinoplasty, cataract couching, lithotomy, fracture management, yantra and shastra instruments (Sushruta Samhita)
+        - name: Diet, daily and seasonal regimen, ethical code
+          native_category: Ahara, dinacharya, ritucharya, sadvritta
+          tags: [dietary, regimenal]
+          description: Central to prevention
+        - name: Yoga
+          native_category: Darshana / prevention
+          tags: [mind-body]
+          description: Named among preventive practices
+      citations:
+        - source: Panchakarma, Ayurvedic Detoxification and Allied Therapies, Is There Any Evidence? (Springer chapter, 2012), and Panchakarma reviews describing the five procedures with purvakarma and paschatkarma phases
+          type: tertiary-review
+          citation_strength: direct
+        - source: Characterization of lead sulfide obtained from Naga Bhasma, J Ayurveda Integr Med 2024 (PMC10979094), describing shodhana, marana, puta processing
+          type: primary-study
+          citation_strength: direct
+        - source: Shalya Tantra in Sushruta Samhita, a classical and contemporary review, AJAS
+          type: tertiary-review
+          citation_strength: direct
+      register: emic
+      notes: Replaces the Grokipedia citation. Panchakarma components, the shodhana/marana/puta processing of Rasashastra and the Sushruta surgical repertoire were all confirmed against these works. Not separately verified beyond the report's own wording were the yoga and the ahara/dinacharya/ritucharya/sadvritta items, and the statement that detoxification framing lacks robust trial support (the Springer chapter title poses the question but its conclusions were not read).
+    searches: ["Panchakarma vamana virechana basti nasya raktamokshana purvakarma snehana svedana Charaka Samhita review systematic review evidence detoxification", "Rasashastra bhasma shodhana marana puta mercury arsenic lead gold herbal sulfur review Journal of Ayurveda and Integrative Medicine", "Sushruta Samhita Shalya tantra rhinoplasty cataract couching lithotomy fracture yantra shastra eight branches Ashtanga Ayurveda"]
+  - path: materia_medica.pharmacological_framework
+    outcome: confirmed
+    field:
+      status: filled
+      value: Dravyaguna, drug action analyzed by rasa (six tastes), guna (qualities), virya (potency, heating or cooling), vipaka (post-digestive effect) and prabhava (idiosyncratic action). All matter including drugs is built of the five great elements. Polyherbal synergy is claimed.
+      citations:
+        - source: Charaka Samhita, Sutra Sthana ch. 26 (Atreyabhadrakapiya Adhyaya), online edition carakasamhitaonline.com
+          type: reference-work
+          citation_strength: direct
+      register: emic
+      notes: Rasa, guna, virya, vipaka, prabhava and the panchamahabhuta composition of dravya are set out in Charaka Sutra 26. The claim of polyherbal synergy is the report's own gloss and was not sought in the classical text.
+    searches: ["dravyaguna rasa guna virya vipaka prabhava pancha mahabhuta Charaka Sutrasthana 26 review"]
+  - path: materia_medica.flagship_agents
+    outcome: unverifiable
+    searches: ["most commonly used Ayurvedic medicinal plants ashwagandha turmeric Boswellia Bacopa guduchi shatavari guggulu amla review"]

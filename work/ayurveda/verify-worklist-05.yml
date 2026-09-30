@@ -1,0 +1,117 @@
+system: ayurveda
+pass: verify
+batch: 5
+entries:
+- path: revival_and_institutionalization.revival_context
+  source_report: v2
+  value: Nationalist-tinged revival to modernize, systematize and defend Ayurveda against colonial delegitimization
+    and internal decay (stagnant knowledge, poorly trained practitioners, unavailable quality medicines);
+    later state-led institutionalization and pharmaceutical growth.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.key_figures
+  source_report: v2
+  value:
+  - name: P. S. Varier
+    dates: founded Arya Vaidya Sala 1902; Patasala 1917
+    role: Mass-produced standardized Ayurvedic medicines; founded school
+  - name: Gananath Sen
+    dates: president of All-India Ayurvedic Congress 1911/1920/1931
+    role: Advocate of samanvaya (integration with allopathy)
+  - name: Ganga Prasad Sen and Gangadhar Ray
+    dates: null
+    role: Bengal revivalists
+  - name: Shankar Dajishastri Pade
+    dates: null
+    role: Maharashtra revivalist
+  - name: D. Gopalacharlu, Duraiswami Aiyangar, A. Lakshmipathi, Srinivasa Narayana Iyengar
+    dates: null
+    role: South Indian revivalists
+  - name: Roop Lal Sharma
+    dates: later
+    role: Pure-Ayurveda proponent opposed to Sen's confluence
+  - name: Maharishi Mahesh Yogi; Deepak Chopra
+    dates: mid-1980s onward
+    role: Global/wellness forms
+  weak_citations:
+  - source: A Life of Healing (P.S. Varier biography), Exotic India Art
+    type: catalog-listing
+    citation_strength: indirect
+  - source: Gananath Sen (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: revival_and_institutionalization.nationalist_framing
+  source_report: v2
+  value: Report describes the revival as nationalist-tinged and says nationalist/traditionalist accounts
+    emphasize unbroken Vedic descent; Indian-government sources use '5,000-year-old' and 'world's oldest
+    continuously practiced' claims (flagged as advocacy).
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.standardization_events
+  source_report: v2
+  value:
+  - Arya Vaidya Sala, Kottakkal (1902) for standardized mass-produced medicines; Arya Vaidya Patasala
+    (1917)
+  - Central Council of Indian Medicine (1970); standardized BAMS degrees
+  - Chopra Committee (1948); Udupa Committee (undated)
+  - Rise of Dabur, Zandu and Baidyanath as pharmaceutical firms
+  weak_citations:
+  - source: A Life of Healing (P.S. Varier biography), Exotic India Art
+    type: catalog-listing
+    citation_strength: indirect
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.internal_factions
+  source_report: v2
+  value: 'Shuddha (pure) versus miśra/integrated Ayurveda: Gananath Sen championed samanvaya (confluence
+    with allopathy); Roop Lal Sharma and later purists opposed it. The split continues in the IMA/AYUSH
+    disputes.'
+  weak_citations:
+  - source: Gananath Sen (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: 'Classical Indic Medicine II: History of Ayurveda 3, Indic Civilizational Portal'
+    type: unclear
+    citation_strength: indirect
+- path: revival_and_institutionalization.state_sponsorship
+  source_report: v2
+  value: Chopra Committee (1948) recommended developing indigenous systems; Central Council of Indian
+    Medicine (1970); Ministry of AYUSH (2014); CCRAS research; National Commission for Indian System of
+    Medicine Act 2020; India's US$85 million (2022-2032) commitment to WHO GTMC within a US$250 million
+    investment.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: revival_and_institutionalization.diffusion_abroad
+  source_report: v2
+  value:
+  - region: West (US and elsewhere)
+    period: mid-1980s onward
+    channel: Maharishi Ayur-Ved launch, popularized by Deepak Chopra
+    description: Spiritualized consumer product.
+  - region: USA
+    period: 1998 and 2017
+    channel: Professional bodies
+    description: National Ayurvedic Medical Association founded 1998; its certification board NAMACB 2017,
+      offering voluntary private credentials.
+  - region: Switzerland
+    period: '2015'
+    channel: Federal diploma pathway
+    description: Ayurveda specialization within naturopath diploma.
+  - region: Hungary
+    period: null
+    channel: Institutional (European Institute of Ayurvedic Sciences per bibliography title)
+    description: Hungarian recognition and initiative.
+  weak_citations:
+  - source: About Us - Maharishi Ayurveda (maharishiayurvedaindia.com)
+    type: practitioner-site
+    citation_strength: indirect
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
