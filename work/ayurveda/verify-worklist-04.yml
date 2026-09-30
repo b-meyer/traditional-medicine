@@ -1,0 +1,111 @@
+system: ayurveda
+pass: verify
+batch: 4
+entries:
+- path: materia_medica.preparation_traditions
+  source_report: v1
+  value: Shodhana (purification) and marana (incineration/calcination through repeated puta heating cycles)
+    with herbal or sulfur matrices to make bhasmas; amla pariksha acid-stability test; low dosing.
+  weak_citations:
+  - source: Rasashastra  Grokipedia (S13)
+    type: open-encyclopedia
+    citation_strength: indirect
+- path: disruption.period
+  source_report: v2
+  value: East India Company institutional experiments 1822-1835; rupture 1835; nationalist revival c.
+    1900-1947; post-independence institutionalization.
+  weak_citations:
+  - source: none (uncited in report)
+    type: unclear
+    citation_strength: unclear
+- path: disruption.colonial_power
+  source_report: v2
+  value:
+  - power: British (East India Company and colonial government)
+    mode: colonial_rule
+    period: 1822-1835 (Native Medical Institution period to 1835 abolition); colonial delegitimization
+      continuing into the revival period
+    description: Established the Native Medical Institution, Calcutta in 1822 teaching in the vernacular,
+      then ended state patronage of indigenous medical teaching in 1835.
+  weak_citations:
+  - source: Medical College Calcutta - Cole Family (familycole.net)
+    type: unclear
+    citation_strength: indirect
+  - source: India's initiation into western medicine - IndiaMedToday
+    type: news
+    citation_strength: indirect
+- path: disruption.suppression_or_marginalization
+  source_report: v2
+  value:
+  - Grant Committee report, 20 October 1834
+  - Macaulay's Minute, February 1835, and Bentinck's resolution ended state patronage of indigenous medical
+    teaching
+  - Government order of 28 January 1835 abolished the NMI and discontinued Ayurvedic/Unani classes
+  - Calcutta Medical College opened 20 February 1835 teaching Western medicine in English
+  - Professional registration (undated) marginalized folk and lay healers
+  weak_citations:
+  - source: Medical College Calcutta - Cole Family (familycole.net)
+    type: unclear
+    citation_strength: indirect
+  - source: Medical College, Kolkata - CME INDIA
+    type: unclear
+    citation_strength: indirect
+- path: disruption.abolition_attempts
+  source_report: v2
+  value: Government order of 28 January 1835 abolished the Native Medical Institution and discontinued
+    its Ayurvedic and Unani classes.
+  weak_citations:
+  - source: Medical College Calcutta - Cole Family (familycole.net)
+    type: unclear
+    citation_strength: indirect
+- path: disruption.practitioner_response
+  source_report: v2
+  value: Nationalist-tinged revival c. 1900-1947. P. S. Varier founded Arya Vaidya Sala, Kottakkal (1902)
+    and Arya Vaidya Patasala (1917); Gananath Sen presided over the All India Ayurvedic Congress (1911,
+    1920, 1931) and advocated samanvaya; the All India Ayurvedic Congress (Akhil Bharatiya Ayurveda Mahasammelan)
+    formed as umbrella professional body, organized nationally around 1907.
+  weak_citations:
+  - source: A Life of Healing (P.S. Varier biography), Exotic India Art
+    type: catalog-listing
+    citation_strength: indirect
+  - source: Gananath Sen (Wikipedia)
+    type: open-encyclopedia
+    citation_strength: indirect
+  - source: 'Classical Indic Medicine II: History of Ayurveda 3, Indic Civilizational Portal'
+    type: unclear
+    citation_strength: indirect
+- path: disruption.dated_events
+  source_report: v2
+  value:
+  - label: Native Medical Institution founded
+    date: '1822-06-21'
+    description: East India Company institution in Calcutta, initially teaching in the vernacular; John
+      Tytler first superintendent.
+  - label: Ayurvedic classes at Sanskrit College and Unani classes at Calcutta Madrasa
+    date: '1826'
+    description: Classes established under the NMI.
+  - label: Grant Committee report
+    date: '1834-10-20'
+    description: Anglicist-Orientalist debate.
+  - label: Native Medical Institution abolished
+    date: '1835-01-28'
+    description: Ayurvedic/Unani classes discontinued.
+  - label: Macaulay's Minute
+    date: 1835-02
+    description: With Bentinck's resolution, ended state patronage of indigenous medical teaching.
+  - label: Calcutta Medical College opened
+    date: '1835-02-20'
+    description: Taught Western medicine in English.
+  - label: Bhore Committee
+    date: '1946'
+    description: Prioritized Western scientific medicine.
+  weak_citations:
+  - source: Medical College Calcutta - Cole Family (familycole.net)
+    type: unclear
+    citation_strength: indirect
+  - source: India's initiation into western medicine - IndiaMedToday
+    type: news
+    citation_strength: indirect
+  - source: Medical College, Kolkata - CME INDIA
+    type: unclear
+    citation_strength: indirect

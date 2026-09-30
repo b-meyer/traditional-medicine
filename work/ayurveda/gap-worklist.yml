@@ -1,0 +1,28 @@
+system: ayurveda
+pass: gap
+entries:
+- path: theoretical_primitives.correspondence_system
+  missing: 'Report describes no wider cosmological or seasonal scheme mapped onto doṣa. Search target:
+    cosmological/elemental or seasonal correspondence scheme linked to tridoṣa in Ayurveda. The report
+    also does not state that no such scheme exists, so not_applicable is not warranted. Report does note
+    the humoral analogy to Greek four-humor theory (contact_and_borrowing).'
+- path: disruption.loss_of_patronage
+  missing: 'Report gives no pre-colonial or dynastic patronage collapse. Search target: pre-1800 loss
+    of court or state patronage of Ayurveda (Mughal or regional courts). The 1835 end of state patronage
+    is colonial and is recorded under suppression_or_marginalization.'
+- path: disruption.post_colonial_disruption
+  missing: 'Report does not address whether partition or state succession split or relocated Ayurvedic
+    institutions (for example in Bangladesh or Pakistan). Search target: effect of 1947 partition on Ayurvedic
+    institutions and practitioners.'
+- path: literature_state.corpus_scale_appraisal
+  missing: 'Report cites no Cochrane overview, evidence map or bibliometric analysis of the whole Ayurvedic
+    clinical corpus. Search target: evidence map or bibliometric analysis of Ayurvedic clinical trials.'
+- path: literature_state.trial_counts
+  missing: 'No counts of Ayurvedic trials overall or by modality. Search target: number of RCTs of Ayurvedic
+    interventions by modality or condition (also CTRI registered trials).'
+- path: literature_state.publication_bias_findings
+  missing: 'Report mentions a ''recognized risk of bias in trials originating from India'' without naming
+    a study. Search target: funnel-plot or registry-based publication bias analysis of Ayurvedic trials.'
+- path: literature_state.registry_and_reporting_practice
+  missing: 'Report says nothing on trial registration or reporting standards. Search target: prospective
+    registration rates of Ayurvedic trials (CTRI).'

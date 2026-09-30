@@ -1,0 +1,234 @@
+system: ayurveda
+pass: verify
+updates:
+  - path: education_and_licensure.tradition_content_in_biomedical_curriculum
+    outcome: unverifiable
+    searches:
+      - "JIPMER Puducherry integrated MBBS BAMS course IMA opposes 2025"
+      - "PIB JIPMER clarification no move to introduce integrated MBBS BAMS programme"
+    # Only news coverage found (Careers360 etc.). It reports a 27 May 2025 announcement by MoS Prataprao Jadhav, IMA opposition,
+    # and a September 2025 JIPMER/PIB denial that any such programme is planned. No PIB, JIPMER, NMC or IMA primary document located.
+    # The existing value omits the JIPMER denial and should be reviewed if a primary source is found.
+  - path: literature_state.geographic_concentration_of_trials
+    outcome: unverifiable
+    searches:
+      - "bibliometric analysis Ayurveda clinical trials publications country India share of publications journals"
+    # Found bibliometrics of AYUSH Research Portal (Ayu 2022; 4.5% RCTs, top 20 journals 75.56%) but none states the share of trials
+    # produced in India, sponsor mix (CCRAS/universities/manufacturers) or a high-impact-journal minority.
+  - path: evidence_state.reviews
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - modality: Whole-system individualized Ayurveda for rheumatoid arthritis
+          best_available_review: Furst et al. 2011, J Clin Rheumatol 17:185-192, double-blind double-dummy RCT (pilot)
+          type: primary-study
+          year: 2011
+          size: n=43 seropositive RA patients; 36 weeks; Ayurveda vs methotrexate vs combination; 148 formulations
+          conclusion: Authors concluded all 3 treatments were approximately equivalent in efficacy within the limits of a pilot study; Ayurveda neither demonstrably superior nor clearly inferior to methotrexate; numerically fewer adverse events in the Ayurveda-only arm, but differences in adverse events were not statistically significant
+          certainty_rating: null
+          methodological_limitations_noted: Underpowered pilot
+        - modality: Plant-derived formulation for rheumatoid arthritis
+          best_available_review: Chopra et al. 2000, J Rheumatol 27:1365-72
+          type: primary-study
+          year: 2000
+          size: null
+          conclusion: null
+          certainty_rating: null
+          methodological_limitations_noted: Only named as an earlier trial; no results stated
+        - modality: Ayurvedic trial literature in RA (general)
+          best_available_review: Park and Ernst 2005 systematic review, Semin Arthritis Rheum
+          type: systematic-review
+          year: 2005
+          size: null
+          conclusion: Existing RCTs fail to show convincingly that Ayurvedic treatments are effective options for RA; paucity of RCTs
+          certainty_rating: null
+          methodological_limitations_noted: null
+        - modality: Ashwagandha for stress and anxiety
+          best_available_review: Arumugam et al. 2024, Explore, PMID 39348746
+          type: meta-analysis
+          year: 2024
+          size: 9 RCTs, n=558
+          conclusion: 'Significant effects: Perceived Stress Scale MD -4.72 (95% CI -8.45 to -0.99); Hamilton Anxiety Scale MD -2.19 (95% CI -3.83 to -0.55); serum cortisol MD -2.58 (95% CI -4.99 to -0.16)'
+          certainty_rating: low-to-moderate
+          methodological_limitations_noted: Substantial heterogeneity in formulation and dose; small samples. Report calls it arguably the strongest single-herb signal, tempered by safety concerns.
+        - modality: Curcuma longa/curcumin, Boswellia, Triphala
+          best_available_review: null
+          type: null
+          year: null
+          size: null
+          conclusion: Supportive but heterogeneous evidence
+          certainty_rating: null
+          methodological_limitations_noted: Bioavailability and standardization are recurring problems
+        - modality: Kshar sutra for fistula-in-ano
+          best_available_review: ICMR multicentric trials
+          type: primary-study
+          year: null
+          size: null
+          conclusion: One of the better-supported Ayurvedic surgical techniques; some evidence of lower recurrence but slower healing versus conventional surgery
+          certainty_rating: null
+          methodological_limitations_noted: null
+        - modality: Type 2 diabetes and irritable bowel syndrome
+          best_available_review: null
+          type: null
+          year: null
+          size: null
+          conclusion: Reviews find weak or insufficient high-quality evidence
+          certainty_rating: null
+          methodological_limitations_noted: null
+        - modality: Whole-system Ayurvedic treatment of major diseases (general)
+          best_available_review: Cochrane and other rigorous reviews (unnamed)
+          type: null
+          year: null
+          size: null
+          conclusion: Evidence 'insufficient, low-quality, or preliminary'; reviews call for larger, better-designed trials; report summary 'a few promising signals, no robustly established disease-modifying superiority'
+          certainty_rating: null
+          methodological_limitations_noted: Whole-system evaluation is hard to blind (better external validity); single-herb evaluation is easier to blind but loses individualization. Small samples, inadequate blinding, weak randomization, risk of bias in trials from India. Report found no high-certainty Cochrane-level positive conclusions.
+      citations:
+        - source: Furst DE et al. 2011, Double-blind, randomized, controlled, pilot study comparing classic Ayurvedic medicine, methotrexate, and their combination in rheumatoid arthritis, J Clin Rheumatol 17(4):185-192 (PMID 21617554)
+          type: primary-study
+          citation_strength: direct
+        - source: Chopra A et al. 2000, Randomized double blind trial of an ayurvedic plant derived formulation for treatment of rheumatoid arthritis, J Rheumatol 27(6):1365-72 (PMID 10852255)
+          type: primary-study
+          citation_strength: direct
+        - source: Park J, Ernst E 2005, Ayurvedic medicine for rheumatoid arthritis, a systematic review, Semin Arthritis Rheum (PMID 15846585)
+          type: systematic-review
+          citation_strength: direct
+        - source: Arumugam V et al. 2024, Effects of Ashwagandha (Withania somnifera) on stress and anxiety, a systematic review and meta-analysis, Explore (NY) (PMID 39348746)
+          type: meta-analysis
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Corrections. (1) The ashwagandha meta-analysis PMID 39348746 is by Arumugam et al. (Explore 2024); the report's attribution to Della Porta et al. is wrong. Design, n=9 RCTs/558 and the PSS MD -4.72 (95% CI -8.45 to -0.99) were confirmed against the abstract; the abstract gives HAM-A -2.19 and cortisol -2.58 but the CIs for those two and the 'low-to-moderate' certainty rating were not checked against the full text. (2) Furst 2011: the paper reports numerically fewer adverse events in the Ayurveda-only arm (112 vs 174 MTX, 176 combination) but states the differences were not statistically significant; wording adjusted. The 148-formulation figure was not checked. (3) Park and Ernst conclusion replaced with the authors' own wording; 7 RCTs, searched 1969-2003. Chopra 2000 (RA-1, n=182, 16 weeks, placebo-controlled) was left as 'named only' per the original scope. Not verified, remain uncited: curcumin/Boswellia/Triphala, ICMR kshar sutra trials, T2DM/IBS reviews, and the unnamed Cochrane verdict."
+    searches:
+      - "Furst 2011 Journal of Clinical Rheumatology Ayurvedic methotrexate rheumatoid arthritis double-blind double-dummy pilot"
+      - "Della Porta 2024 Explore ashwagandha stress anxiety meta-analysis randomized controlled trials cortisol Perceived Stress Scale"
+      - "Chopra 2000 J Rheumatol Ayurvedic herbomineral formulation rheumatoid arthritis randomized double blind placebo controlled trial"
+  - path: evidence_state.preclinical_and_constituent_evidence
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - agent: Boswellic acids (notably AKBA) from Boswellia serrata
+          finding: Inhibit 5-lipoxygenase
+          type: constituent pharmacology
+          year: 1992
+          citation: Safayhi et al. 1992, J Pharmacol Exp Ther 261(3):1143-6
+        - agent: Arogyavardhini Vati (classically prepared) versus mercuric chloride
+          finding: Rat studies showed normal tissue architecture with the Ayurvedic preparation versus significant organ damage from mercuric chloride; the report presents these as Ayurvedic researchers' arguments
+          type: animal study
+          year: 2012
+          citation: Safety evaluation of an Ayurvedic medicine, Arogyavardhini vati on brain, liver and kidney in rats, J Ethnopharmacol 2012 (PMID 22265750)
+      citations:
+        - source: Safayhi H et al. 1992, Boswellic acids, novel, specific, nonredox inhibitors of 5-lipoxygenase, J Pharmacol Exp Ther 261(3):1143-1146 (PMID 1602379)
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+        - source: Safety evaluation of an Ayurvedic medicine, Arogyavardhini vati on brain, liver and kidney in rats, J Ethnopharmacol 2012 (PMID 22265750)
+          type: primary-study
+          citation_strength: direct
+          claim_match: matches
+      register: biomedical-evidence
+      notes: "Changed. The original cite for the Boswellia claim (S11, an Aflapin osteoarthritis efficacy/meta-analysis paper) does not report 5-LOX inhibition by AKBA; replaced with Safayhi 1992 (acetyl-11-keto-beta-boswellic acid most potent, IC50 1.5 uM, rat neutrophils; in vitro). Arogyavardhini entry is supported by the 2012 J Ethnopharmacol rat study (Wistar, 28 days, HgCl2 1 mg/kg; normal cytoarchitecture at up to 10x human-equivalent dose vs significant changes with HgCl2); authors not recorded. Preclinical only; not a clinical review."
+    searches:
+      - "Aflapin Boswellia serrata osteoarthritis efficacy evaluation standardized extract 5-lipoxygenase AKBA mechanism"
+      - "Safayhi 1992 boswellic acids novel specific nonredox inhibitors of 5-lipoxygenase J Pharmacol Exp Ther"
+      - "Arogyavardhini Vati mercuric chloride rat histopathology comparative toxicity study"
+  - path: safety.adulteration_and_contamination
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - study: Saper et al., JAMA 2004
+          finding: 70 Ayurvedic products from 30 Boston-area stores; 20% (14/70) contained lead, mercury and/or arsenic; up to 37,000 µg/g lead in some
+        - study: Saper et al., JAMA 27 August 2008
+          finding: 193 US- and Indian-made products sold online; 20.7% contained detectable lead, mercury and/or arsenic; rasa śāstra products 40% versus 17% of herbal-only products (more than twice as likely)
+        - study: CDC MMWR 2004
+          finding: Lead-poisoning cases across five states linked to Ayurvedic medicines
+        - study: Mikulski et al. 2017
+          finding: Further lead-poisoning clusters
+        - study: Mao and Desai (rebuttal)
+          finding: Properly prepared bhasmas convert metals to non-toxic mixed oxides; Saper's rejoinder is that measured levels exceeded safety limits regardless of traditional processing
+        - study: Pharmaceutical adulteration (unnamed)
+          finding: Undeclared corticosteroids and NSAIDs recognized as a risk
+      citations:
+        - source: Saper RB et al. 2004, Heavy metal content of ayurvedic herbal medicine products, JAMA 292(23):2868-73 (PMID 15598918)
+          type: primary-study
+          citation_strength: direct
+        - source: Saper RB et al. 2008, Lead, mercury, and arsenic in US- and Indian-manufactured Ayurvedic medicines sold via the Internet, JAMA 300(8):915-923
+          type: primary-study
+          citation_strength: direct
+        - source: CDC 2004, Lead poisoning associated with Ayurvedic medications, five states, 2000-2003, MMWR 53(26):582-584
+          type: institutional
+          citation_strength: direct
+        - source: Mikulski MA et al. 2017, Toxic metals in ayurvedic preparations from a public health lead poisoning cluster investigation, Int J Occup Environ Health
+          type: primary-study
+          citation_strength: direct
+        - source: Mao J, Desai K and Saper RB reply, Metal content in Ayurvedic medicines (letters), JAMA 2009 (PMID 19155449)
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Confirmed against abstracts: 2004 study 70 products bought Apr-Oct 2003 within 20 miles of Boston, 14 (20%) contained metals, max lead 37,000 ug/g; 2008 study 193 products, 40 (20.7%); MMWR reported 12 adult cases in five states. The 30-store count, the 40% vs 17% split and Mikulski's 'clusters' were taken from secondary descriptions of the papers (2008 rasa shastra about 40% vs 17% herbal-only; Mikulski 65% of 252 samples contained lead) and not checked in full text. The 'undeclared corticosteroids and NSAIDs' entry has no primary source here and is unchanged. The Mao/Desai versus Saper exchange is the JAMA 2009 letter and reply. Original indirect sources (staff.washington.edu, Medical Xpress, supplysidesj) replaced."
+    searches:
+      - "Saper 2008 JAMA lead mercury arsenic Ayurvedic medicines sold on the Internet 193 products"
+      - "Saper 2004 JAMA Heavy metal content of ayurvedic herbal medicine products 70 products"
+      - "MMWR 2004 Lead poisoning associated with Ayurvedic medications five states 2000-2003"
+      - "Mikulski 2017 lead poisoning Ayurvedic medicines"
+      - "Mao Desai bhasma heavy metals Saper JAMA 2008 letter reply"
+  - path: safety.intrinsic_toxicity
+    outcome: confirmed
+    field:
+      status: filled
+      value:
+        - agent: Bhasma / rasaśāstra metal-mineral preparations
+          mechanism_class: heavy metal
+          note: Deliberately used metals; toxicity contested between defenders (Mao and Desai) and Saper
+        - agent: Ashwagandha (Withania somnifera)
+          mechanism_class: plant toxin
+          note: Cholestatic hepatitis, sometimes acute-on-chronic liver failure with high mortality in pre-existing liver disease; Danish assessment also cited thyroid/hormonal effects and possible abortifacient action
+        - agent: Undeclared corticosteroids and NSAIDs
+          mechanism_class: pharmaceutical adulterant
+          note: Recognized risk; no figures
+        - agent: Delayed presentation to effective care
+          mechanism_class: indirect
+          note: Recognized risk
+        - agent: Ayurvedic use alongside conventional treatment
+          mechanism_class: interaction
+          note: Report advises telling one's physician because of interaction and hepatotoxicity risk; no interaction data given
+      citations:
+        - source: Philips CA et al. 2023, Ashwagandha-induced liver injury, a case series from India and literature review (PMC10531359)
+          type: primary-study
+          citation_strength: direct
+        - source: Saper RB et al. 2008, JAMA 300(8):915-923 and Mao J, Desai K, JAMA 2009 letter exchange (PMID 19155449)
+          type: primary-study
+          citation_strength: direct
+        - source: DTU National Food Institute 2020, risk assessment of ashwagandha for the Danish Veterinary and Food Administration
+          type: institutional
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Ashwagandha entry confirmed by Philips 2023 (predominantly cholestatic hepatitis; 3 patients with pre-existing liver disease and acute-on-chronic liver failure died). Danish assessment content (abortifacient traditional use, sex and thyroid hormones, five liver cases; no safe intake limit established) was confirmed only through secondary descriptions of the DTU 2020 report, not the report itself. The metal-toxicity dispute is confirmed by the JAMA 2009 exchange. The pharmaceutical-adulterant, indirect-harm and interaction entries are general statements by the report with no primary source located; they are unchanged and not independently verified."
+    searches:
+      - "Danish Technical University National Food Institute ashwagandha risk assessment thyroid abortifacient 2020"
+      - "PMC10531359 ashwagandha liver injury case series"
+  - path: safety.documented_adverse_events
+    outcome: corrected
+    field:
+      status: filled
+      value:
+        - Ashwagandha-induced liver injury case series reported in Japan, the USA and Iceland, India, Germany and Poland (single cases) and elsewhere; an Indian series (8 patients) found injury with single-ingredient formulations, and chemical analysis of five formulations found no hepatotoxic contaminants or synthetic adulterants
+        - CDC MMWR 2004 lead-poisoning cases (12 adults) across five states linked to Ayurvedic medicines
+        - Further lead clusters (Mikulski et al. 2017)
+      citations:
+        - source: Philips CA et al. 2023, Ashwagandha-induced liver injury, a case series from India and literature review (PMC10531359)
+          type: primary-study
+          citation_strength: direct
+        - source: CDC 2004, MMWR 53(26):582-584
+          type: institutional
+          citation_strength: direct
+        - source: Mikulski MA et al. 2017, Int J Occup Environ Health
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Changed. The Netherlands is removed: the Philips 2023 literature review lists Japan (2017), US and Iceland (series), Germany, Poland and India, and no Dutch case. 'Unadulterated' clarified to the paper's finding that tested formulations had no hepatotoxic contaminants (one product had trace lead 0.21 mg/kg, cadmium, arsenic). Case count for MMWR added from the report's abstract. Any Dutch report may exist in other literature but was not located."
+    searches:
+      - "PMC10531359 ashwagandha liver injury case series countries"
+      - "MMWR 2004 Lead poisoning associated with Ayurvedic medications five states 2000-2003"
