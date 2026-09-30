@@ -1,0 +1,35 @@
+system: unani
+pass: gap
+updates:
+  - path: literature_state.corpus_scale_appraisal
+    outcome: found
+    field:
+      status: partial
+      value: "No appraisal dedicated to the whole Unani clinical literature located. The nearest is a bibliometric analysis of the AYUSH Research Portal (Thrigulla et al., Ayu 2023) covering 6,528 articles across AYUSH systems, of which 427 are Unani (Ayurveda 3,903; Yoga 950; Siddha 594; Homoeopathy 654). For Unani the paper reports 209 articles (48.95%) Grade A (RCT), 95 (22.25%) Grade B and 123 (28.81%) Grade C on its WHO-based evidence grading."
+      citations:
+        - source: "Thrigulla et al., Clinical studies in Ayurveda: A bibliometric analysis of articles indexed in AYUSH research portal, Ayu 2023 (PMC10710232)"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Titled and framed around Ayurveda; Unani figures are one stratum of a multi-system portal analysis, not a Unani-specific appraisal. Portal-indexed articles only, not all Unani literature. Grade counts taken from a summary of the paper, so the figures should be checked against the full text. No Cochrane overview or Unani-wide evidence map found."
+    searches: ["Unani medicine bibliometric analysis", "evidence map Unani randomized trials", "Ayurveda Research Platform Unani clinical studies 427 articles bibliometric analysis AYUSH systems", "scientometric OR systematic mapping Unani medicine clinical research India"]
+  - path: literature_state.registry_and_reporting_practice
+    outcome: found
+    field:
+      status: filled
+      value: "Cross-sectional retrospective analysis of AYUSH trials on CTRI, 2009 to 30 July 2020 (n=3,632). Unani had 366 registrations (10.08%): 232 (63.39%) prospective and 134 (36.61%) retrospective. Across all AYUSH streams, 21% were registered retrospectively."
+      citations:
+        - source: "Shree Devi MS, Sathiyarajeswaran P, Kanakavalli K, Vinod NP, Baskar V. Analysis of AYUSH studies registered in Clinical Trials Registry of India from 2009 to 2020. J Ayurveda Integr Med, May 2021 (PMC8185998)"
+          type: primary-study
+          citation_strength: direct
+      register: biomedical-evidence
+      notes: "Covers registration only, not reporting quality or whether results were published. Data limited to CTRI to 30 July 2020; authors note human error in trial classification. CTRI has enforced prospective-only registration since 2018, so later data may differ. Figures were read from a summary of the paper and should be checked against the full text."
+    searches: ["CTRI registration Unani clinical trials prospective registration rate", "AYUSH trials registered CTRI Unani retrospective registration proportion cross-sectional analysis"]
+  - path: diagnostics.sign_vs_synthesis
+    outcome: not_found
+    searches: ["inter-rater agreement Unani pulse urine stool signs versus integrated mizaj temperament diagnosis"]
+    target: "A study reporting kappa or ICC for individual Unani signs (nabz, baul, baraz) alongside agreement on the integrated mizaj judgment, with the same raters and subjects. Results found only mizaj questionnaire development papers (an inter-rater judgment analysis for item selection, Bangladesh J Med Sci; Persian medicine questionnaires) and reviews saying mizaj assessment lacks standard metrics. None separates sign-level from synthesis-level agreement. Try Persian and Iranian traditional medicine literature (a neighbouring tradition, so it would be borrowed evidence) and search for 'nabz' or 'nabz reliability'."
+  - path: disruption.abolition_attempts
+    outcome: not_found
+    searches: ["proposal to abolish indigenous medicine colonial India Unani Ayurveda Committee 1920s Madras Legislative Council", "Native Medical Institution Calcutta 1835 abolished Unani Ayurveda classes Committee of Public Instruction Madrasa medical class closed Bentinck"]
+    target: "Primary-source or scholarly citation for a formal proposal or vote to abolish or de-recognize Unani specifically. Nearest hit is not an abolition proposal for Unani as such. The Government order of 28 Jan 1835 abolished the Native Medical Institution and discontinued the medical classes at the Calcutta Madrasa (Unani) and Sanskrit College (Ayurveda), following the Committee of Public Instruction report of 1834. This was found only via secondary and web sources (Banglapedia, popular articles), so it was not recorded as found. The Madras 1920 legislative debate and Usman Committee 1921 were supportive, not abolitionist. Productive search targets are scholarly histories (Leslie; Harrison; Berger; Kumar, Medicine and the Raj; Metcalf on Unani and the Delhi Tibbiya), Proceedings of the Committee of Public Instruction 1834-35, and Bentinck's resolution of 1835."

@@ -1,0 +1,2172 @@
+schema_version: '1.6'
+system: unani
+source_report: final
+fields:
+  identification:
+    system_name:
+      status: filled
+      value: Unani Medicine (Unani Tibb / Greco-Arabic Medicine)
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report glosses Unani as ''Ionian/Greek''; South and Central Asian branch of the Greco-Arabic
+        humoral tradition.
+
+        verify pass: unverifiable. Searched: WHO benchmarks for training in Unani medicine names Unani
+        Tibb Greco-Arabic (WHO IRIS PDF returned 403; WHO landing page gives no naming text); Ministry
+        of Ayush Unani Greco-Arab Tibb Ionian'
+      source_report: v2
+      verify_outcome: unverifiable
+    alternate_names:
+      status: filled
+      value:
+      - Unani Tibb
+      - Greco-Arabic medicine
+      - Tibb
+      - Tibb-e-Unani
+      - Traditional Persian Medicine (TPM) / Persian medicine (Iran)
+      - Eastern medicine (BEMS degree title, Pakistan)
+      - Unani ('Ionian/Greek')
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'Persian medicine is treated by the report as a parallel revival in Iran; see system_boundary.
+
+        verify pass: unverifiable. Searched: WHO benchmarks Unani medicine alternate names (full text
+        not retrievable); Unani Tibb Tibb-e-Unani Traditional Persian Medicine Eastern medicine BEMS Pakistan
+        (EMRO Hamdard document confirms only Eastern/Unani medicine degree, not the BEMS title)'
+      source_report: v2
+      verify_outcome: unverifiable
+    primary_regions:
+      status: filled
+      value:
+      - India
+      - Pakistan
+      - Bangladesh
+      - Sri Lanka
+      - Iran (as Persian medicine)
+      - South Africa
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'Report calls Unani the South and Central Asian branch of Greco-Arabic medicine; practised
+        in Gulf/UK/US/EU mainly as cupping/herbal CAM.
+
+        verify pass: unverifiable. Searched: WHO benchmarks Unani countries India Pakistan Bangladesh
+        Sri Lanka Iran South Africa (WHO landing page names no countries; full text 403); Ministry of
+        Ayush Unani India Pakistan Bangladesh Iran'
+      source_report: v2
+      verify_outcome: unverifiable
+    practitioner_estimate:
+      status: filled
+      value:
+      - region: India
+        count: 47683
+        source: Minister of State (Independent Charge) for AYUSH Shripad Yesso Naik, Rajya Sabha reply
+          28 April 2015 (registered Unani practitioners)
+        year: 2015
+      - region: Pakistan
+        count: ~60,000 registered Hakims (diploma in Tibb-e-Unani or Bachelor degree in Eastern/Unani
+          medicine)
+        source: 'WHO/EMRO Hamdard Foundation Pakistan, ''Unani Medicine: From Wellness to Wellbeing in
+          Pakistan'''
+        year: null
+      citations:
+      - source: Business Standard/PTI report of Rajya Sabha reply, 2015
+        type: news
+        citation_strength: indirect
+      - source: 'WHO/EMRO Hamdard Foundation Pakistan, Unani Medicine: From Wellness to Wellbeing in Pakistan'
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: 'Report itself says practice statistics derive from government/press sources and vary by
+        year. Pakistan document has no year in the report.
+
+        verify pass: unverifiable. Searched: Rajya Sabha unstarred question 28 April 2015 AYUSH registered
+        practitioners Unani 47683 (only the PTI/Business Standard relay found, which returned 403 on fetch;
+        the answer text on rajyasabha.nic.in exceeded fetch size limits); WHO EMRO Hamdard Foundation
+        Pakistan Unani Medicine From Wellness to Wellbeing (found and read - the Pakistan half is confirmed
+        - the document says ~60,000 registered Hakims holding a diploma in Tibb-e-Unani or a Bachelor
+        degree in Eastern/Unani medicine; it is undated but refers to events in August 2023, so it postdates
+        that; the India half remains indirect)'
+      source_report: v1
+      verify_outcome: unverifiable
+    system_boundary:
+      status: filled
+      value:
+      - tradition: Premodern Greco-Arabic (Hippocratic-Galenic-Avicennan) medicine
+        relation: premodern_predecessor
+        fields_affected:
+        - canon_and_transmission
+        - construct_debate
+        description: Report treats the modern institutional Unani as a substantially 19th-20th c. reconstruction
+          built on this textual lineage ('reconstruction on a real foundation').
+      - tradition: Traditional Persian Medicine (Iran)
+        relation: same_system_variant
+        fields_affected:
+        - diagnostics
+        - legal_status
+        - education_and_licensure
+        - construct_debate
+        - contemporary_controversies
+        description: Iranian mizaj reliability studies, the 2007 PhD track and TPM clinics are recorded
+          as this tradition's own; report also says critics see TPM as a nationally branded new construction.
+      - tradition: Ayurveda and Siddha (ASU grouping)
+        relation: regulatory_grouping
+        fields_affected:
+        - safety
+        - legal_status
+        description: Toxicology and pharmacopoeial sources aggregate Ayurveda, Siddha and Unani, so some
+          cited limits and surveys are ASU-wide; Drugs and Cosmetics Act Chapter IVA regulates ASU drugs
+          together.
+      - tradition: Sowa-Rigpa (Tibetan)
+        relation: regulatory_grouping
+        fields_affected:
+        - legal_status
+        description: Administratively grouped with Unani under India's NCISM but described as a separate
+          tradition.
+      - tradition: Tibb al-Nabawi (Prophetic medicine)
+        relation: absorbed_strand
+        fields_affected:
+        - contact_and_borrowing
+        description: Sufi and Prophetic healing practices partly folded into vernacular Unani in colonial
+          India, though scholars treat Tibb al-Nabawi and academic Unani as distinct strands.
+      citations:
+      - source: Attewell / Alavi as characterised in report (no specific source marker)
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report content in field 14 drawn from Ayurvedic sources is routed to safety.evidence_borrowed_from_other_traditions.
+
+        verify pass: unverifiable. Searched: Attewell Alavi Unani boundary Tibb al-Nabawi absorbed strand
+        (report characterisation of scholars, no specific source marker to check); Sowa-Rigpa NCISM Unani
+        regulatory grouping'
+      source_report: v2
+      verify_outcome: unverifiable
+  canon_and_transmission:
+    foundational_texts:
+      status: filled
+      value:
+      - title: Hippocratic corpus
+        date: 5th-4th c. BCE
+        author: Hippocrates (attributed)
+      - title: Galenic works (129 titles enumerated by Hunayn)
+        date: Galen 129-c.216 CE
+        author: Galen
+      - title: Risala (Hunayn ibn Ishaq on His Galen Translations)
+        date: 9th c.
+        author: Hunayn ibn Ishaq (808-873)
+      - title: al-Hawi (Liber Continens)
+        date: 9th-10th c.
+        author: al-Razi (Rhazes, 865-925)
+      - title: Kamil al-sina'a al-tibbiyya (Kitab al-Maliki)
+        date: before 994
+        author: Ali ibn al-Abbas al-Majusi (Haly Abbas, d. 994)
+      - title: al-Qanun fi al-Tibb (Canon of Medicine)
+        date: begun c.1012, completed 1020-1025
+        author: Ibn Sina (Avicenna, 980-1037)
+      citations:
+      - source: Canon of Medicine, Historia Medica (historiamedica.org)
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Citation S1 attaches to the Qanun transmission claims; Hunayn Risala figures are attributed
+        in text to the Encyclopaedia of Islam entry and Bergstrasser numbering.
+      source_report: v2
+    secondary_canon:
+      status: partial
+      value: More than two dozen Arabic commentaries on the Qanun from the 12th-14th centuries; Indian
+        commentaries (Galen -> Qanun -> Indian commentaries) referred to without titles.
+      citations:
+      - source: Canon of Medicine, Historia Medica
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: No titles of commentaries or later Indian/Persian Unani compendia are given.
+      source_report: v2
+    dating_and_authorship_disputes:
+      status: filled
+      value:
+      - scholar: Jules Janssens
+        position: Even the 2018 critical edition of part of Book I of the Qanun leaves 'the larger unresolved
+          textual problem'.
+      - scholar: Speziale and others
+        position: Document apocryphal/pseudonymous attributions, e.g. Tuhfat al-ashiqin ascribed to Avicenna
+          and texts ascribed to Ja'far al-Sadiq.
+      - scholar: Historia Medica project; Nahyan Fancy (study of Fakhr al-Din al-Razi)
+        position: Canon's importance lies less in originality than in how copyists, commentators, translators,
+          teachers, printers and readers repeatedly selected, criticised and changed it.
+      citations:
+      - source: Canon of Medicine, Historia Medica
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Report says disputes are 'localized, not existential'.
+      source_report: v2
+    transmission_mode:
+      status: filled
+      value: 'Mixed: textual/manuscript transmission (translation, commentary, print) plus family/lineage-based
+        practice (e.g. Azizi family of Lucknow); colonial-era print and Urdu vernacular publishing shifted
+        Unani from a family/lineage-based elite practice to a public, professionalized one.'
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Azizi family Lucknow Unani lineage transmission print
+        Urdu professionalization (Alavi 2005 abstract supports the Azizi family and Urdu print sources
+        only, not the synthesis); Unani mixed textual and lineage transmission'
+      source_report: v2
+      verify_outcome: unverifiable
+    redaction_history:
+      status: partial
+      value: No complete modern critical edition of the Arabic Qanun; a 2018 critical edition covers part
+        of Book I; Qanun organized in five books (general principles, simple drugs, localized diseases,
+        general diseases, compound remedies); reshaped by commentators and copyists.
+      citations:
+      - source: Canon of Medicine, Historia Medica
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Redaction history of other canonical texts not covered.
+      source_report: v2
+    external_dating_anchors:
+      status: filled
+      value:
+      - Aga Khan Museum copy of Qanun Book 5 dated 444 H / 1052 CE (earliest extant manuscripts fragmentary
+        or late)
+      - 'US National Library of Medicine MS A 53: complete but undated Timurid-era copy'
+      - Hunayn's Risala edited by Bergstrasser 1925; re-edited and translated by John Lamoreaux 2016
+      citations:
+      - source: Canon of Medicine, Historia Medica
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: null
+      source_report: v2
+    key_figures:
+      status: filled
+      value:
+      - name: Hippocrates
+        dates: 5th-4th c. BCE
+        role: Author of the Hippocratic corpus, theoretical base
+      - name: Galen
+        dates: 129-c.216 CE
+        role: Systematizer of Greek medicine
+      - name: Hunayn ibn Ishaq
+        dates: 808-873
+        role: Nestorian Christian physician-translator; personally translated about 100 of 129 Galenic
+          titles into Syriac and/or Arabic
+      - name: al-Razi (Rhazes)
+        dates: 865-925
+        role: Author of al-Hawi
+      - name: Ali ibn al-Abbas al-Majusi (Haly Abbas)
+        dates: d. 994
+        role: Author of Kamil al-sina'a
+      - name: Ibn Sina (Avicenna)
+        dates: 980-1037
+        role: Author of al-Qanun
+      - name: Mankah al-Hindi
+        dates: 8th c.
+        role: Indian physician at the Abbasid court who translated Sanskrit medical texts
+      citations:
+      - source: Canon of Medicine, Historia Medica (for Qanun); other figures uncited in report
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Modern scholars (Gutas, Sabra, Lamoreaux, Janssens, Speziale, Fancy) deliberately excluded
+        per codebook.
+      source_report: v2
+    dated_events:
+      status: filled
+      value:
+      - label: Abbasid translation movement
+        date: 8th-10th c.
+        description: Greek medical material translated into Syriac and Arabic, centred on Baghdad, drawing
+          on the earlier Sassanid academy at Gondishapur.
+      - label: Mankah al-Hindi at Abbasid court
+        date: 8th c.
+        description: Translated Sanskrit medical texts.
+      - label: Hunayn ibn Ishaq's Risala
+        date: 9th c. (Hunayn 808-873)
+        description: Enumerates 129 Galenic titles; about 100 translated by him.
+      - label: Composition of al-Qanun fi al-Tibb
+        date: begun c.1012; completed 1020-1025
+        description: Written across Gurgan, Rayy and Hamadan.
+      - label: Aga Khan Museum Qanun Book 5 copy
+        date: 444 H / 1052 CE
+        description: Earliest dated extant manuscript cited.
+      - label: Arabic commentaries on the Qanun
+        date: 12th-14th c.
+        description: More than two dozen commentaries.
+      - label: Sanskrit-to-Persian translation of Ayurvedic sources
+        date: from 14th c. onward
+        description: Documented by Speziale.
+      - label: Bergstrasser edition of Hunayn's Risala
+        date: '1925'
+        description: Standard numbering of Galenic titles.
+      - label: Critical edition of part of Qanun Book I
+        date: '2018'
+        description: Does not resolve the wider textual problem.
+      - label: Lamoreaux edition and translation of Hunayn's Risala
+        date: '2016'
+        description: null
+      citations:
+      - source: Canon of Medicine, Historia Medica; remaining dates uncited in report
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Modern editions (1925, 2016, 2018) are included as dated scholarship events; drop at synthesis
+        if only premodern events are wanted.
+      source_report: v2
+  construct_debate:
+    positions:
+      status: filled
+      value:
+      - scholar: Guy Attewell
+        work: 'Refiguring Unani Tibb: Plural Healing in Late Colonial India (Hyderabad: Orient Longman,
+          2007)'
+        year: 2007
+        position: Unani identity was reconstituted in the late colonial period through biomedical concepts,
+          nationalist/communitarian politics and colonial models of legitimacy; heterogeneous rather than
+          a single 'traditional Muslim system'. Reviewer summary - Unani as an Islamic-Arabic tradition
+          is largely a product of late colonial classification; Unani 'did not pre-exist as a static system'.
+        evidence_base: 19th-20th c. print, institutional, legal and political archives
+      - scholar: Seema Alavi
+        work: 'Islam and Healing: Loss and Recovery of an Indo-Muslim Medical Tradition, 1600-1900 (Ranikhet:
+          Permanent Black, 2007; Basingstoke: Palgrave Macmillan, 2008); ''Unani Medicine in the Nineteenth-Century
+          Public Sphere: Urdu Texts and the Oudh Akhbar'', Indian Economic and Social History Review 42(1),
+          2005, pp. 101-129'
+        year: 2007; 2005
+        position: Unani reshaped and redefined itself as an Indian medical system in the 19th century
+          through engagement with Western medicine, in the Urdu public sphere. The report's gloss ('new
+          Unani and a new hakim'; emphasis shifting from theory-mastery to practice) was not confirmed
+          against the article text.
+        evidence_base: 19th-century Persian and Urdu treatises, regional newspapers (Oudh Akhbar), government
+          records, textbooks, Azizi family papers
+      - scholar: Claudia Liebeskind
+        work: 'Arguing Science: Unani Tibb, Hakims and Biomedicine in India, 1900-50, in Waltraud Ernst
+          (ed.), Plural Medicine, Tradition and Modernity, 1800-2000 (London: Routledge, 2002), pp. 58-75'
+        year: 2002
+        position: Documents the biomedicine-versus-hakim contest.
+        evidence_base: Archival/historical
+      - scholar: David Hardiman
+        work: 'Indian Medical Indigeneity: From Nationalist Assertion to the Global Market, Social History
+          34(3), 2009, pp. 263-283'
+        year: 2009
+        position: Treats the claims of Ayurveda and Unani Tibb as typical 'invented traditions' that sought
+          to forge uniform 'systems' out of eclectic practices, with claims to antiquity and narratives
+          of decline and revival. The report's attribution to Leslie and Thapar was not checked.
+        evidence_base: Historical scholarship
+      - scholar: Kavita Sivaramakrishnan
+        work: 'Old Potions, New Bottles: Recasting Indigenous Medicine in Colonial Punjab (1850-1945)
+          (Hyderabad: Orient Longman, 2006)'
+        year: 2006
+        position: Analogous recasting of indigenous medicine, with practitioners developing professional
+          identities and institutions compatible with a nationalist frame.
+        evidence_base: Historical scholarship
+      - scholar: Kira Schmidt Stiedenroth
+        work: 'Unani Medicine in the Making: Practices and Representations in 21st-century India (Amsterdam
+          University Press, 2020)'
+        year: 2020
+        position: Examines what Unani is today through its multiplicity, scrutinizing tensions between
+          Unani as a 'system of medicine' and its enactments as Islamic medicine, medical science or alternative
+          medicine. Ethnographic; the report's phrasing 'extends the reconstruction argument' is an interpretation.
+        evidence_base: Urdu sources, practitioner interviews, clinic observation
+      - scholar: Unnamed critics of Iranian TPM
+        work: null
+        year: null
+        position: Persian medicine revival since 2007 is a substantially new, nationally branded construction
+          layered onto medieval texts.
+        evidence_base: not stated
+      - scholar: Defenders (many within CCRUM, Hamdard, TPM faculties; bio-bibliographers such as the
+          late Hakim Syed Zillur Rahman)
+        work: null
+        year: null
+        position: 'Continuity: unbroken textual lineage (Galen -> Qanun -> Indian commentaries), continuous
+          family/lineage practice (e.g. Azizi family of Lucknow).'
+        evidence_base: Textual/manuscript tradition and lineage practice
+      - scholar: Fabrizio Speziale
+        work: 'Culture persane et medecine ayurvedique en Asie du Sud (Leiden: Brill, 2018)'
+        year: 2018
+        position: First study of the translation of Ayurvedic sources into Persian from the 14th century
+          and of the Persianization of Hindu physicians; shows pre-colonial dynamism (Persian-Ayurveda
+          synthesis). The report's added claim that this complicates 'simple invention' is its own inference.
+        evidence_base: Persian-language manuscripts (Perso-Indica project)
+      citations:
+      - source: Attewell, Refiguring Unani Tibb (Orient Longman 2007), as reviewed in Medical History
+          (PMC2766155)
+        type: historical-monograph
+        citation_strength: direct
+      - source: Alavi, Unani Medicine in the Nineteenth-Century Public Sphere, IESHR 42(1), 2005, pp.
+          101-129
+        type: historical-monograph
+        citation_strength: direct
+      - source: Liebeskind, Arguing Science, in Ernst (ed.), Plural Medicine, Tradition and Modernity,
+          Routledge 2002, pp. 58-75
+        type: historical-monograph
+        citation_strength: direct
+      - source: Hardiman, Indian Medical Indigeneity, Social History 34(3), 2009, pp. 263-283
+        type: historical-monograph
+        citation_strength: direct
+      - source: Sivaramakrishnan, Old Potions, New Bottles, Orient Longman 2006
+        type: historical-monograph
+        citation_strength: direct
+      - source: Schmidt-Stiedenroth, Unani Medicine in the Making, Amsterdam University Press 2020
+        type: historical-monograph
+        citation_strength: direct
+      - source: Speziale, Culture persane et medecine ayurvedique en Asie du Sud, Brill 2018
+        type: historical-monograph
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Corrected from bookseller, aggregator and profile-page citations to the works themselves.
+        Changes - Hardiman work supplied (report said not specified); Liebeskind work identified as a
+        book chapter (Ernst 2002); publishers and Alavi article details added. The mismatched ResearchGate
+        record of the Attewell review, cited for Alavi, is dropped. Positions were checked against reviews
+        and abstracts, not full texts; glosses that go beyond them (Alavi theory-to-practice shift, Hardiman
+        via Leslie/Thapar, Speziale on invention, Schmidt Stiedenroth extending reconstruction) are flagged
+        in the entries as report interpretation. The two unnamed-group entries (TPM critics, defenders)
+        have no citation and were not verified.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    report_adjudication:
+      status: filled
+      value: 'Report says the weight of specialist scholarship favors ''reconstruction on a real foundation'':
+        textual lineage is real but the modern institutional form is substantially a late-19th/20th-century
+        reconstruction; advises distinguishing ''the texts'' from ''the modern system'' and not accepting
+        ''1,000 years of unbroken practice exactly as today'' claims uncritically.'
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report''s stance, not consensus.
+
+        verify pass: unverifiable. Searched: reconstruction on a real foundation Unani specialist scholarship
+        (this is the report''s own stance and has no external source to verify it against)'
+      source_report: v2
+      verify_outcome: unverifiable
+  theoretical_primitives:
+    constituents:
+      status: filled
+      value: 'Arkan (four elements: fire, air, water, earth); akhlat (four humours: dam/blood hot-wet,
+        balgham/phlegm cold-wet, safra/yellow bile hot-dry, sauda/black bile cold-dry); mizaj (temperament)
+        across hot/cold and wet/dry axes; quwa (natural, vital, psychic faculties); arwah (pneuma/spirits);
+        tabiat (innate self-regulating/healing power, equivalent to physis).'
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'verify pass: unverifiable. Searched: WHO Benchmarks for training in Unani medicine 2010
+        arkan akhlat mizaj asbab sitta zaruriya; Unani fundamentals Arkan Akhlat Mizaj Quwa Arwah Af''al
+        seven umoor tabiyah; fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP 403); fetch ccrum.res.in
+        Fundamentals of Unani Medicine PDF (redirect, then 503)'
+      source_report: v2
+      verify_outcome: unverifiable
+    balance_logic:
+      status: filled
+      value: Health is equilibrium of humours expressed as an individual's proper mizaj (unique to each
+        person, organ, drug and food); therapy by contraries (cold disease treated with hot-quality drugs/regimen)
+        and by supporting tabiat; hierarchy of regimen (ilaj bil-tadbir), diet (ilaj bil-ghiza), pharmacotherapy
+        (ilaj bil-dawa), and last surgery (ilaj bil-yad).
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'verify pass: unverifiable. Searched: Unani diagnosis nabz baul baraz mizaj ilaj bil tadbir
+        ilaj bil ghiza ilaj bil dawa ilaj bil yad review; fetch iris.who.int WHO benchmarks Unani 2022
+        PDF (HTTP 403); fetch ccrum.res.in Fundamentals of Unani Medicine PDF (redirect, then 503)'
+      source_report: v2
+      verify_outcome: unverifiable
+    correspondence_system:
+      status: filled
+      value: not_applicable
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'The report describes no wider cosmological or seasonal scheme; element-quality-humour pairings
+        sit inside the constituent scheme. The report does not state explicitly that none exists, so this
+        is inferred from its silence; verify.
+
+        verify pass: unverifiable. Searched: WHO Benchmarks for training in Unani medicine 2010 arkan
+        akhlat mizaj asbab sitta zaruriya; fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP 403)'
+      source_report: v2
+      verify_outcome: unverifiable
+    etiology:
+      status: filled
+      value: 'Disease is a disturbance of mizaj (su'' al-mizaj), simple (qualitative) or material (involving
+        a morbid humour); health governed by the asbab sitta daruriya (six essentials: air/environment,
+        food and drink, movement and rest, sleep and wakefulness, retention and evacuation, psychic/emotional
+        states).'
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'verify pass: unverifiable. Searched: Unani su'' al-mizaj simple material six essential factors;
+        Su''-i-Mizaj Sada and Maddi pmc; fetch unanijournal.com Six essential factors and health (bot
+        check page); fetch saapjournals.org mizaj scoping review (bot check page)'
+      source_report: v2
+      verify_outcome: unverifiable
+    nosology:
+      status: partial
+      value: Two-fold division of su' al-mizaj into simple and material; rough analogues suggested by
+        Unani researchers (e.g. Waja' al-Mafasil approximately rheumatoid/joint disease). No fuller disease
+        classification given.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'verify pass: unverifiable. Searched: Unani su'' al-mizaj simple material six essential factors;
+        Su''-i-Mizaj Sada and Maddi pmc; Waja al-Mafasil rheumatoid arthritis Unani analogue'
+      source_report: v2
+      verify_outcome: unverifiable
+    relation_to_biomedical_anatomy:
+      status: filled
+      value: 'Maps partially and loosely: regimen and dietetics overlap with lifestyle medicine, some
+        materia medica is being screened pharmacologically, some disease categories have rough analogues.
+        Core objects (mizaj, humours, tabiat, arwah) have no biomedical referents and are explicitly qualitative
+        and individual; the system ''refuses'' mapping where it matters most. Modern curricula nevertheless
+        incorporate anatomy and physiology (see field 9).'
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: WHO Benchmarks for training in Unani medicine 2010
+        arkan akhlat mizaj asbab sitta zaruriya; fetch iris.who.int WHO benchmarks Unani 2022 PDF (HTTP
+        403)'
+      source_report: v2
+      verify_outcome: unverifiable
+    translation_programs:
+      status: partial
+      value: Pharmacological screening of Unani materia medica; Unani researchers propose rough disease
+        analogues. No named program or stated maturity level (established/preliminary/speculative) is
+        given by the report.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: 'Maturity not stated in report.
+
+        verify pass: unverifiable. Searched: WHO Benchmarks for training in Unani medicine 2010 arkan
+        akhlat mizaj asbab sitta zaruriya; Unani disease analogues pharmacological screening materia medica'
+      source_report: v2
+      verify_outcome: unverifiable
+  diagnostics:
+    methods:
+      status: filled
+      value:
+      - name: nabz (pulse)
+        examines: rate, rhythm, volume, character
+      - name: baul (urine)
+        examines: colour, turbidity, sediment, odour
+      - name: baraz (stool)
+        examines: not further specified
+      - name: mizaj assessment
+        examines: global synthesis of physique, skin, hair, sleep, digestion, psychological disposition
+          and quality of wastes
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: emic
+      notes: 'verify pass: unverifiable. Searched: Unani diagnosis nabz baul baraz mizaj ilaj bil tadbir
+        review; fetch pmc PMC10000451 Mizaj diagnostic methods (Persian medicine, questionnaires and expert
+        panels only, does not describe pulse/urine/stool); fetch iris.who.int WHO benchmarks Unani 2022
+        PDF (HTTP 403)'
+      source_report: v2
+      verify_outcome: unverifiable
+    reliability_evidence:
+      status: filled
+      value:
+      - statistic: weighted kappa (also Cronbach alpha 0.71; sensitivity/specificity reported)
+        value: weighted kappa 0.40 to 0.83 across the 39 items retained as reliable (of 47 after content
+          validity, from 52 initial); Cronbach alpha 0.71; final 10-item questionnaire cut-off sensitivity/specificity
+          warm 65%/93%, cold 52%/97%, dry 53%/67%, wet 53%/76%
+        confidence_interval: null
+        design: questionnaire-validation
+        population: volunteers (test-retest n=35, mean age 28.2; validity sample n=52 with expert agreement,
+          mean age 20.9); health status not stated
+        n_raters: null
+        n_subjects: 35 (reliability); 52 (validity)
+        target: individual mizaj self-report scale items (warm, cold, dry, wet groups)
+        citation: 'Mojahedi M et al., Reliability and Validity Assessment of Mizaj Questionnaire: A Novel
+          Self-report Scale in Iranian Traditional Medicine, Iranian Red Crescent Medical Journal 2014;16(3):e15924
+          (PMC4005447)'
+      - statistic: ICC
+        value: 0.62 (warmness-coldness); 0.64 (wetness-dryness)
+        confidence_interval: 0.53-0.73; 0.56-0.72
+        design: clinician-vs-clinician
+        population: healthy volunteers
+        n_raters: 3
+        n_subjects: 150
+        target: temperament axes (warm-cold; wet-dry)
+        citation: Primary paper not located. Figures match an abstract (three Persian Medicine specialists,
+          150 healthy volunteers) seen only via search snippets; the academia.edu paper originally cited
+          (Identification of Mizaj Based on Tibbi Fundamentals using Classification as Tool) is a J48
+          decision-tree study of 68 subjects and does not carry these figures.
+      - statistic: Cohen kappa
+        value: highest 0.512 for hotness (clinical vs Salmannezhad questionnaire, SMQ) and 0.512 for coldness
+          (clinical vs Mojahedi questionnaire, MMQ); lowest 0.081 for dry/wet balance (clinical vs SMQ);
+          questionnaire-vs-questionnaire 0.132-0.366
+        confidence_interval: hotness 0.422-0.602; coldness 0.368-0.656; dry/wet balance -0.023 to 0.185
+        design: questionnaire-validation
+        population: healthy healthcare workers aged 20-60 (75.7% male)
+        n_raters: null
+        n_subjects: 350
+        target: temperament categories (hotness, coldness, dry/wet balance) by clinical judgment vs two
+          questionnaires (SMQ 20-item, MMQ 10-item)
+        citation: Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj)
+          Assessment in Persian Medicine, Shiraz E-Medical Journal 2026;27(4):e168654
+      - statistic: not specified in abstract (inter-rater judgment analysis of item selection)
+        value: abstract reports only significant agreement among ten Unani experts on item selection;
+          no coefficient given in the abstract
+        confidence_interval: null
+        design: questionnaire-validation
+        population: ten Unani medicine experts (raters)
+        n_raters: 10
+        n_subjects: null
+        target: item selection for the Mizaij-i-Insani questionnaire
+        citation: Malik A, Ahmad W, Sofi G. Inter-Rater Judgement analysis for Item Selection in the Development
+          of the Questionnaire to Determine Mizaij-i-Insani, Bangladesh Journal of Medical Science 2024;23(2):429-437,
+          doi 10.3329/bjms.v23i2.72165
+      citations:
+      - source: Mojahedi et al., Iranian Red Crescent Medical Journal 2014;16(3):e15924 (PMC4005447)
+        type: primary-study
+        citation_strength: direct
+      - source: Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj)
+          Assessment in Persian Medicine, Shiraz E-Medical Journal 2026;27(4):e168654
+        type: primary-study
+        citation_strength: direct
+      - source: Malik, Ahmad, Sofi, Bangladesh Journal of Medical Science 2024;23(2):429-437
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Corrections. (1) Mojahedi: weighted kappa range is 0.40-0.83 (not 0.82); 39 of 47 items
+        reliable; test-retest n=35. (2) Kappa study is Cohen kappa, n=350 healthy healthcare workers,
+        2026 (not just ''about 350''); coldness kappa 0.512 is clinical vs MMQ. (3) Bangladesh paper:
+        ten expert raters, no J48 or n=68 in its abstract; the J48 decision-tree study of 68 subjects
+        belongs to the academia.edu paper (Identification of Mizaj Based on Tibbi Fundamentals using Classification
+        as Tool), which was previously mis-cited as the source of the ICC figures. The J48 study is not
+        carried as an entry here. (4) The ICC entry (0.62/0.64, 3 raters, 150 healthy volunteers) remains
+        without a located primary paper; its figures were read from abstract text in search results, so
+        treat that entry as not directly verified. Values from different designs are not comparable.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    sign_vs_synthesis:
+      status: absent
+      value: null
+      citations: []
+      register: biomedical-evidence
+      notes: 'Report distinguishes only warm/cold versus wet/dry axes; no study separating agreement on
+        individual observable signs (pulse, urine, stool) from agreement on the integrated mizaj judgment.
+        Search target: ''inter-rater agreement Unani pulse urine stool signs versus integrated temperament
+        diagnosis''. The report itself found no rigorous kappa-based Unani pulse reliability study.
+
+        gap pass: not_found. Searched: inter-rater agreement Unani pulse urine stool signs versus integrated
+        mizaj temperament diagnosis. Target: A study reporting kappa or ICC for individual Unani signs
+        (nabz, baul, baraz) alongside agreement on the integrated mizaj judgment, with the same raters
+        and subjects. Results found only mizaj questionnaire development papers (an inter-rater judgment
+        analysis for item selection, Bangladesh J Med Sci; Persian medicine questionnaires) and reviews
+        saying mizaj assessment lacks standard metrics. None separates sign-level from synthesis-level
+        agreement. Try Persian and Iranian traditional medicine literature (a neighbouring tradition,
+        so it would be borrowed evidence) and search for ''nabz'' or ''nabz reliability''.'
+      source_report: v2
+      gap_outcome: not_found
+    standardization_efforts:
+      status: partial
+      value: 'Questionnaires: mizaj self-report scale (Mojahedi), SMQ and MMQ (Persian medicine), Mizaij-i-Insani
+        questionnaire (Bangladesh/India); J48 decision-tree classification. Authors concede no independent
+        gold standard exists for mizaj assessment and that no standard tool is available. No target agreement
+        threshold stated for any instrument.'
+      citations:
+      - source: Agreement Between Clinical Judgment and Standardized Questionnaires ... Persian Medicine
+        type: primary-study
+        citation_strength: direct
+      - source: Inter-Rater Judgement analysis ... Mizaij-i-Insani
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: null
+      source_report: v2
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value: []
+      citations: []
+      register: biomedical-evidence
+      notes: Report notes that existing pulse-diagnosis reliability data are largely from Traditional
+        Chinese Medicine, but does not apply them to Unani; nothing to list.
+      source_report: v2
+  modalities:
+    items:
+      status: filled
+      value:
+      - name: Ilaj bil tadbeer (regimenal therapy)
+        native_category: ilaj bil tadbeer
+        tags:
+        - procedural
+        - manual
+        - thermal
+        - regimenal
+        description: Nearly 30 regimens in classical Unani literature, including fasd (venesection), hijama
+          (cupping), ta'liq al-'alaq (leech therapy), ishal (purgation), qay' (emesis), idrar (diuresis),
+          huqna (enema), ta'riq (diaphoresis), riyazat (exercise), dalk (massage), hammam (bath), natul
+          (irrigation), inkibab (steam), takmid (fomentation). Aim is to disperse or excrete morbid matter
+          and restore humoral balance.
+      - name: Ilaj bil ghiza (dietotherapy)
+        native_category: ilaj bil ghiza
+        tags:
+        - dietary
+        description: Specific diets recommended, considering both the amount and quality of food.
+      - name: Ilaj bil dawa (pharmacotherapy)
+        native_category: ilaj bil dawa
+        tags:
+        - herbal
+        - animal-derived
+        - mineral-metal
+        description: Medicines from herbal, mineral and animal sources; a collection of over 2,000 medicines.
+          Includes kushta (incinerated preparations), for example Kushta Sammulfar from arsenic trioxide.
+      - name: Ilaj bil yad (surgery)
+        native_category: ilaj bil yad
+        tags:
+        - surgical
+        description: Considered a last resort and typically beyond the expertise of a hakim.
+      citations:
+      - source: Britannica, Unani medicine (science article)
+        type: reference-work
+        citation_strength: direct
+      - source: 'Ilaj bi''l-Tadbir (regimenal therapy): a core mode of Unani treatment, Journal of Complementary
+          and Integrative Medicine 2020, doi 10.1515/jcim-2020-0048 (PMID 32853166)'
+        type: primary-study
+        citation_strength: direct
+      - source: Kushta Sammulfar chronic toxicity study, Pharmacologyonline/MDPI Journal of Pharmacology
+          and Pharmacotherapeutics e3 (arsenic trioxide calx)
+        type: primary-study
+        citation_strength: direct
+      register: emic
+      notes: 'Corrected by narrowing. Britannica confirms the four modes, the 2,000+ medicines and the
+        surgery ''last resort'' wording; the Britannica page did not mention a fever diet, so that clause
+        was removed. ''Nearly 30 regimens'' and the regimen list are from the 2020 J Complement Integr
+        Med review (which also lists tadhin and sakub, omitted here). Removed as unverified in the sources
+        found: ''graded by temperament and four degrees'' (moved to materia_medica framework), mercury,
+        mercuric chloride and iron kushtas, and the al-Zahrawi heritage clause. Tags kept as originally
+        coded.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v1
+  materia_medica:
+    pharmacological_framework:
+      status: filled
+      value: Drugs are classified by temperament (mizaj) and graded in four degrees of potency, with the
+        drug's action (taseer) framed as adjustment of mizaj, not by pathophysiology or molecular mechanism.
+        Per Speziale, assimilation of Indian knowledge, particularly its pharmacology, was stimulated
+        mainly by practical needs such as finding local substitutes for drugs, and generated 'a sensible
+        renewal of the medical and pharmacological knowledge' among Indo-Muslim physicians.
+      citations:
+      - source: Mohd M, Sofi G, Jahan N, Baig Z. Approaches for preparation methods of Murakkab, an Unani
+          formulation, 2018 (PMC6938876)
+        type: primary-study
+        citation_strength: direct
+      - source: Fabrizio Speziale, 'India xxxiii. Indo-Muslim Physicians', Encyclopaedia Iranica
+        type: reference-work
+        citation_strength: direct
+      register: emic
+      notes: Corrected. The quoted phrase 'determined the most sensible renewal' was not found; the Speziale
+        text in Encyclopaedia Iranica reads 'generating at the same time a sensible renewal of the medical
+        and pharmacological knowledge', and gives the pharmacology point as stimulated by practical needs
+        such as finding local substitutes of drugs. The claim that pharmacology was the field where contact
+        'determined the most sensible renewal' is not supported in that wording. Temperament-based classification
+        with four degrees is supported by the Mohd et al. paper; the rejection of pathophysiological classification
+        is an interpretive contrast, not a statement found in either source. The academia.edu profile
+        originally cited was not accessible.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    flagship_agents:
+      status: filled
+      value:
+      - Kushtae Sadaf
+      - Jawarish Shahi
+      - Surma / ithmid
+      - Kushta Sammulfar (arsenic trioxide)
+      citations:
+      - source: National Formulary of Unani Medicine, Government of India (Kushta Sadaf entry; kushta
+          class)
+        type: institutional
+        citation_strength: direct
+      - source: 'Jawarish Shahi: A special dosage form of herbal formulations for functional gastrointestinal
+          disorders in Unani medicine, J Ethnopharmacol 2022 (PMID 35490900)'
+        type: systematic-review
+        citation_strength: direct
+      - source: 'Kohl (surma): Retrospect and prospect, Pakistan Journal of Pharmaceutical Sciences 22(1):107-122,
+          2009'
+        type: primary-study
+        citation_strength: direct
+      - source: Evaluation of Chronic Toxicity of Kushta Sammulfar (Calx of Arsenic Trioxide), MDPI Pharmacologyonline
+          e3
+        type: primary-study
+        citation_strength: direct
+      register: emic
+      notes: 'Corrected by removal. The four remaining agents are documented as Unani preparations in
+        the sources cited. ''Flagship'' status is the report''s characterization and is not established
+        by these sources. Removed: Rooh Afza (Hamdard product, launched 1907). The 1907 launch is reported
+        only by the manufacturer and Wikipedia-type pages (indirect), and it is a commercial beverage,
+        not a documented Unani pharmacopoeial agent. Jawarish Shahi is a compound herbal formulation (amla,
+        harar, coriander, cardamom, willow).'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    preparation_traditions:
+      status: filled
+      value: Kushta (calx, incinerated) preparations; compound formulations (murakkabat); Unani Pharmacopoeia
+        of India and National Formulary of Unani Medicine as official reference works.
+      citations:
+      - source: Mohd M, Sofi G, Jahan N, Baig Z. Approaches for preparation methods of Murakkab, an Unani
+          formulation, 2018 (PMC6938876)
+        type: primary-study
+        citation_strength: direct
+      - source: National Formulary of Unani Medicine, Government of India (formulation classes include
+          Kushta, Majoon, Itrifal, Laooq, Qurs and others)
+        type: institutional
+        citation_strength: direct
+      - source: Concept of Kushta (calx) and studies carried out on Kushta in Unani medicine; Kushta Sammulfar
+          preparation studies
+        type: primary-study
+        citation_strength: direct
+      register: emic
+      notes: Corrected by narrowing. Removed 'Hamdard industrial standardization' because no direct source
+        was found. The Unani Pharmacopoeia of India and NFUM are named as reference sources in the Mohd
+        et al. paper; NFUM formulation classes were read from search summaries of the formulary.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+  disruption:
+    loss_of_patronage:
+      status: filled
+      value: The Nizams of Hyderabad (dynasty 1724-1948) were the princely state that gave the strongest
+        support to Unani medical studies in the colonial period, building a large traditional-medicine
+        hospital with a medical school attached (Nizamia Tibbi College); Hyderabad remains a research
+        centre (Central Research Institute of Unani Medicine, established December 1971, now the National
+        Research Institute of Unani Medicine for Skin Disorders). No account of loss of Mughal or princely-state
+        patronage, and no dates.
+      citations:
+      - source: Fabrizio Speziale, 'India xxxiii. Indo-Muslim Physicians', Encyclopaedia Iranica
+        type: reference-work
+        citation_strength: direct
+      - source: National Research Institute of Unani Medicine for Skin Disorders (formerly CRIUM), Hyderabad,
+          institutional website (CCRUM, Ministry of Ayush)
+        type: institutional
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Corrected. Encyclopaedia Iranica confirms Nizam patronage and Hyderabad as the main centre
+        of Muslim medical studies in the Deccan; the Nizamia Tibbi College name and 1926 founding were
+        seen only on Wikipedia-type pages and are not directly confirmed. CRIUM's December 1971 founding
+        and its 2019 renaming to NRIUMSD come from the institute's own site and a search summary. The
+        'no account of loss of patronage' clause describes the report's coverage, not a historical fact.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    period:
+      status: filled
+      value: 'British Raj: Macaulay''s Minute on Indian Education (2 February 1835), which disparaged
+        Oriental ''medical doctrines''; the Bhore Committee (appointed 1943, report 1946) and the Chopra
+        Committee on Indigenous Systems of Medicine (appointed 1946, report 1948).'
+      citations:
+      - source: T. B. Macaulay, Minute on Indian Education, 2 February 1835 (text via Wikisource, Minutes
+          on Education in India)
+        type: historical-monograph
+        citation_strength: direct
+      - source: Report of the Committee on Indigenous Systems of Medicine (R. N. Chopra, Chairman), Ministry
+          of Health, Government of India, New Delhi, 1948
+        type: institutional
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Corrected. Macaulay's Minute is dated 2 February 1835 and mentions 'medical doctrines, which
+        would disgrace an English farrier' in its critique of Oriental learning; it is an education policy
+        and does not address Unani by name. Chopra report dated 1948 confirmed from the archive.org copy;
+        the Bhore report (1946) dating rests on secondary summaries, not the report itself. Removed 'post-1947
+        Partition breaks' because no source was found for it; the '1946-48 committees' wording was imprecise
+        since Bhore ran 1943-46 and Chopra 1946-48.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    colonial_power:
+      status: filled
+      value:
+      - power: Britain (British Raj)
+        mode: colonial_rule
+        period: 19th c. to 1947 (dates as implied by report)
+        description: Indian traditional medicines became the object of Western accusations of being unscientific,
+          a criticism shared by part of the British-educated Indian elite. Muslim traditional physicians
+          responded by assimilating Western knowledge in anatomy and surgery, opening madrasas of traditional
+          medicine and using Urdu for medical literature and new journals.
+      citations:
+      - source: Fabrizio Speziale, 'India xxxiii. Indo-Muslim Physicians', Encyclopaedia Iranica
+        type: reference-work
+        citation_strength: direct
+      register: historical-scholarship
+      notes: Corrected. Encyclopaedia Iranica supports the accusations of being unscientific, the modernizing
+        reforms, the new madrasas and the use of Urdu and journals. It does not say that only Western
+        medicine was recognized as legitimate or that indigenous systems were 'actively discouraged',
+        nor does it describe print and the public sphere transforming Unani into a professionalized system;
+        those clauses were removed as unsupported. The period field remains the report's own approximation.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    suppression_or_marginalization:
+      status: filled
+      value:
+      - Macaulay's 1835 education policy privileged Western learning
+      - Bhore Committee report (1946), dominated by the Indian Medical Service, dismissed indigenous medicine
+        as 'unscientific'
+      - Later committees (Mudaliar, Shrivastava, Udupa) oscillated between marginalization and integration
+        (dates not given)
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Bhore Committee 1946 report indigenous systems of medicine
+        Chopra Mudaliar Udupa Shrivastava (secondary sources say Bhore expressed a disparaging view but
+        did not primarily address indigenous medicine; Bhore Vol I text at nihfw.ac.in and archive.org
+        could not be read as text); Bhore Committee report Volume I indigenous systems unscientific text;
+        Macaulay''s Minute on Indian Education 2 February 1835 (date confirmed by search; PDF not machine-readable;
+        Minute concerns general education, not medicine); Udupa Committee 1958 Shrivastava Committee 1975
+        Mudaliar Committee 1962 (dates found, but no primary source for ''oscillated between marginalization
+        and integration'')'
+      source_report: v2
+      verify_outcome: unverifiable
+    abolition_attempts:
+      status: absent
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: 'Report gives no formal proposals, votes or outcomes to abolish or de-recognize Unani. Search
+        target: ''formal proposals to abolish or defund indigenous medicine colonial India Unani''.
+
+        gap pass: not_found. Searched: proposal to abolish indigenous medicine colonial India Unani Ayurveda
+        Committee 1920s Madras Legislative Council; Native Medical Institution Calcutta 1835 abolished
+        Unani Ayurveda classes Committee of Public Instruction Madrasa medical class closed Bentinck.
+        Target: Primary-source or scholarly citation for a formal proposal or vote to abolish or de-recognize
+        Unani specifically. Nearest hit is not an abolition proposal for Unani as such. The Government
+        order of 28 Jan 1835 abolished the Native Medical Institution and discontinued the medical classes
+        at the Calcutta Madrasa (Unani) and Sanskrit College (Ayurveda), following the Committee of Public
+        Instruction report of 1834. This was found only via secondary and web sources (Banglapedia, popular
+        articles), so it was not recorded as found. The Madras 1920 legislative debate and Usman Committee
+        1921 were supportive, not abolitionist. Productive search targets are scholarly histories (Leslie;
+        Harrison; Berger; Kumar, Medicine and the Raj; Metcalf on Unani and the Delhi Tibbiya), Proceedings
+        of the Committee of Public Instruction 1834-35, and Bentinck''s resolution of 1835.'
+      source_report: v2
+      gap_outcome: not_found
+    practitioner_response:
+      status: filled
+      value:
+      - Hakim Ajmal Khan founded Ayurvedic and Unani Tibbia College, Delhi (foundation stone 1916, inaugurated
+        1921), the Hindustani Dawakhana and the Central College; leader in Khilafat and Non-cooperation
+        movements
+      - Hakim Hafiz Abdul Majeed founded Hamdard in Delhi in 1906
+      - Purist Lucknow (Azizi) school resisted incorporation of Western concepts
+      - Hakims (Nasiruddin Ahmed Khan, Hassan Qarshi) sat on the 1948 Chopra Committee
+      citations:
+      - source: A & U Tibbia College & Hospital history (autch.delhi.gov.in)
+        type: institutional
+        citation_strength: direct
+      - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+        type: practitioner-site
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Hakim Ajmal Khan Ayurvedic and Unani Tibbia College
+        foundation stone 1916 inaugurated 1921 (AUTCH Delhi govt site snippets support 29 Mar 1916 and
+        13 Feb 1921; page itself returned 503); Chopra Committee 1948 members (archive.org Chopra Report
+        Vol II confirms Hakim Nasruddin Ahmed Khan and Hakim Hassan Qarshi as members); Attewell Refiguring
+        Unani Tibb (book not accessed; Lucknow Azizi purism and Central College not confirmed); Hamdard
+        1906 (only manufacturer sites, indirect by rule)'
+      source_report: v2
+      verify_outcome: unverifiable
+    post_colonial_disruption:
+      status: filled
+      value:
+      - label: Partition of India
+        date: after Partition (year not stated in report)
+        description: 'Hamdard split: Hakim Abdul Hameed built Hamdard India and Jamia Hamdard; Hakim Mohammed
+          Said built Hamdard Pakistan (1948, Karachi).'
+      - label: East Pakistan establishment of Hamdard Laboratories (Waqf) Bangladesh
+        date: '1953'
+        description: Hamdard Laboratories Bangladesh established in East Pakistan.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Hamdard Laboratories history Hakim Hafiz Abdul Majeed
+        1906 Hakim Said Karachi 1948 Hamdard Bangladesh 1953 (only Hamdard company sites and Wikipedia
+        found, both indirect); Hakim Abdul Hameed 1908-1999 Jamia Hamdard (Wikipedia and Jamia Hamdard
+        pages only)'
+      source_report: v2
+      verify_outcome: unverifiable
+    dated_events:
+      status: filled
+      value:
+      - label: Macaulay's Minute
+        date: '1835'
+        description: Education policy privileging Western learning.
+      - label: Bhore Committee
+        date: '1946'
+        description: Health Survey and Development Committee; dismissed indigenous medicine as unscientific.
+      - label: Chopra Committee
+        date: '1948'
+        description: Committee on Indigenous Systems of Medicine; recommended integration toward 'one
+          Indian system'.
+      - label: Founding of Hamdard Pakistan
+        date: '1948'
+        description: Karachi, by Hakim Mohammed Said.
+      - label: Founding of Hamdard Laboratories Bangladesh
+        date: '1953'
+        description: In East Pakistan.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Hamdard India / Pakistan divergence follows Partition; year of Partition not stated by report.
+
+        verify pass: unverifiable. Searched: Macaulay''s Minute 1835 text (PDFs not machine-readable);
+        Bhore Committee Volume I indigenous systems unscientific (primary text not readable; 1946 report
+        date and ''dismissed as unscientific'' wording not confirmed from the report); Chopra Committee
+        1948 (archive.org report confirms 1948 and integration aim); Hamdard Pakistan 1948 / Bangladesh
+        1953 (company chronology only, indirect)'
+      source_report: v2
+      verify_outcome: unverifiable
+  revival_and_institutionalization:
+    revival_context:
+      status: filled
+      value: Anti-colonial nationalism (Ajmal Khan tied Unani's survival to the nationalist movement),
+        the need to survive under colonial models of legitimacy through 'scientization', later state-led
+        modernization and industrialization of pharmacy (Hamdard); in Iran, a state-backed Persian medicine
+        revival.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Attewell Refiguring Unani Tibb nationalism scientization
+        (book not accessible; only reviews, which do not cover these points); Iran state-backed Persian
+        medicine revival (Supreme Council of Cultural Revolution document mentioned in secondary results
+        only)'
+      source_report: v2
+      verify_outcome: unverifiable
+    key_figures:
+      status: filled
+      value:
+      - name: Hakim Ajmal Khan
+        dates: 1868-1927
+        role: Reformer-nationalist; founder of Ayurvedic and Unani Tibbia College; President of Indian
+          National Congress 1921
+      - name: Hakim Hafiz Abdul Majeed
+        dates: Hamdard founded 1906
+        role: Founder of Hamdard
+      - name: Hakim Abdul Hameed
+        dates: 1908-1999
+        role: Built Hamdard India and Jamia Hamdard
+      - name: Hakim Mohammed Said
+        dates: Hamdard Pakistan 1948
+        role: Built Hamdard Pakistan
+      - name: Salimuzzaman Siddiqi
+        dates: null
+        role: Chemist recognized by Ajmal Khan; laboratory-science direction for Unani plants
+      - name: Nasiruddin Ahmed Khan and Hassan Qarshi
+        dates: '1948'
+        role: Hakims on the Chopra Committee
+      citations:
+      - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+        type: practitioner-site
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Hakim Ajmal Khan dates (Wikipedia gives 1864-1927,
+        report says 1868-1927; no primary source located to resolve); Hakim Abdul Hameed 1908-1999 (Wikipedia
+        only: 14 Sep 1908 to 22 Jul 1999); Salimuzzaman Siddiqi Ajmal Khan (nothing found)'
+      source_report: v2
+      verify_outcome: unverifiable
+    nationalist_framing:
+      status: filled
+      value: Ajmal Khan was Congress President (1921) and leader in the Khilafat and Non-cooperation movements;
+        Attewell describes reconstitution around nationalist/communitarian politics; Iranian revival described
+        by critics as nationalist 'invented tradition'.
+      citations:
+      - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+        type: practitioner-site
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Hakim Ajmal Khan Indian National Congress president
+        1921 Khilafat (AUTCH Delhi govt site snippet supports the 1921 presidency and Khilafat role, but
+        Attewell''s characterisation and the Iranian ''invented tradition'' claim were not located in
+        a primary work); Attewell Refiguring Unani Tibb review PMC2766155 (review does not mention communitarian
+        politics)'
+      source_report: v2
+      verify_outcome: unverifiable
+    standardization_events:
+      status: filled
+      value:
+      - Ayurvedic and Unani Tibbia College, Delhi (foundation stone 1916, inaugurated 1921) incorporating
+        anatomy and surgery
+      - Drugs and Cosmetics Act 1940 Chapter IVA and Rules 1945 (Schedule T GMP; Rule 158B licensing)
+      - Unani, Ayurvedic and Homoeopathic Practitioners Act 1965 (Pakistan)
+      - CCRUM established 1978; National Institute of Unani Medicine, Bengaluru; Unani Pharmacopoeia of
+        India; National Formulary of Unani Medicine
+      - Iranian 4-year PhD in Traditional Persian Medicine approved 2007
+      - NCISM Act 2020 operational 2021, common entrance (NEET) and exit (NExT)
+      - WHO benchmarks for training and practice of Unani medicine, 11 February 2022 (2010 editions updated)
+      citations:
+      - source: A & U Tibbia College & Hospital history (autch.delhi.gov.in)
+        type: institutional
+        citation_strength: direct
+      - source: Central Council for Research in Unani Medicine (ccrum.res.in)
+        type: institutional
+        citation_strength: direct
+      - source: Drugs And Cosmetics Act For Ayush - Legal Corner (legalcorner.org)
+        type: unclear
+        citation_strength: indirect
+      register: regulatory
+      notes: 'verify pass: unverifiable. Searched: Drugs and Cosmetics Act 1940 Chapter IVA Rule 158B
+        Schedule T (Chapter IVA and Rule 158B confirmed via indiankanoon and CDSCO listing; Schedule T
+        not seen; Rule 158B page is a mirror); Unani, Ayurvedic and Homoeopathic Practitioners Act 1965
+        (pakistancode.gov.pk listing confirms Act II of 1965); CCRUM established 1978 (ayush.gov.in and
+        ccrum.res.in results support March 1978); Iran 4-year PhD Traditional Persian Medicine 2007 (PMC
+        secondary article supports 2007); NCISM Act 2020 NEET NExT (commencement 11 June 2021 supported;
+        indiacode PDF returned 403 so NEET/NExT provisions not confirmed); WHO benchmarks for training
+        in Unani medicine (WHO page confirms 11 February 2022, update of 2010); Whole leaf cannot be confirmed
+        as one unit because several items (Schedule T, NEET/NExT, Tibbia dates from page that returned
+        503) lack a direct source in hand'
+      source_report: v2
+      verify_outcome: unverifiable
+    internal_factions:
+      status: filled
+      value: Purist Lucknow (Azizi family) school versus the Delhi integrationist reformers led by Ajmal
+        Khan; Tibb al-Nabawi versus academic Unani as distinct strands; IMA versus AYUSH integrationists
+        (see field 16).
+      citations:
+      - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+        type: practitioner-site
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'verify pass: unverifiable. Searched: Lucknow Azizi family Hakim Ajmal Khan Delhi Unani tibb
+        reform rivalry Seema Alavi Islam and Healing; Authority, Knowledge and Practice in Unani Tibb
+        in India c. 1890-1930 (academia.edu, fetch blocked 403)'
+      source_report: v2
+      verify_outcome: unverifiable
+    state_sponsorship:
+      status: filled
+      value: 'India: Ministry of AYUSH, CCRUM, NIUM Bengaluru, NCISM. Pakistan: National Council for Tibb.
+        Iran: Ministry of Health approval of Persian medicine PhD (2007), Supreme Council of Cultural
+        Revolution national document, some services insurance-covered. Nizams of Hyderabad as pre-independence
+        patrons.'
+      citations:
+      - source: Identification of drivers and affecting factors in the future of Persian medicine (ScienceDirect)
+        type: primary-study
+        citation_strength: direct
+      - source: National Council For Tibb (nct.gov.pk)
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: null
+      source_report: v2
+    diffusion_abroad:
+      status: partial
+      value:
+      - region: South Africa
+        period: 2001; register formally officiated September 2007
+        channel: Statutory recognition and training at University of the Western Cape School of Natural
+          Medicine, curriculum developed with Hamdard Pakistan and CCRUM/CCIM support
+        description: Unani-Tibb recognized as 11th modality under AHPCSA.
+      - region: Gulf, UK, US, EU
+        period: not dated
+        channel: Practice as cupping/herbal CAM; surma use among South Asian immigrants in the UK
+        description: No dedicated statutory recognition of Unani as a licensed profession.
+      citations:
+      - source: South Africa - Complementary and Alternative Medicine - Expat Focus
+        type: unclear
+        citation_strength: indirect
+      register: regulatory
+      notes: 'Expat guide is the only cited source for South Africa. Gulf/UK/US/EU statement uncited.
+
+        verify pass: unverifiable. Searched: Unani-Tibb University of the Western Cape AHPCSA Allied Health
+        Professions Council registration 2001 Unani-Tibb; Unani-Tibb register AHPCSA September 2007 Ibn
+        Sina Institute Hamdard Pakistan CCRUM curriculum University of the Western Cape; journalijar.com
+        and tibb.co.za/overview fetched; they support 2001 recognition and 2003 UWC training but not the
+        11th-modality, September 2007, CCRUM/CCIM or Gulf/UK/US/EU statements'
+      source_report: v2
+      verify_outcome: unverifiable
+    dated_events:
+      status: filled
+      value:
+      - label: Founding of Hamdard
+        date: '1906'
+        description: Hakim Hafiz Abdul Majeed, small Unani clinic in Delhi.
+      - label: Launch of Rooh Afza
+        date: '1907'
+        description: null
+      - label: Tibbia College foundation stone
+        date: '1916'
+        description: Laid by Lord Hardinge.
+      - label: Inauguration of Ayurvedic and Unani Tibbia College
+        date: '1921'
+        description: Inaugurated by Gandhi.
+      - label: Ajmal Khan as President of Indian National Congress
+        date: '1921'
+        description: null
+      - label: Founding of Hamdard Pakistan
+        date: '1948'
+        description: Karachi.
+      - label: Founding of Hamdard Laboratories Bangladesh
+        date: '1953'
+        description: East Pakistan.
+      - label: Pakistan Unani, Ayurvedic and Homoeopathic Practitioners Act
+        date: '1965'
+        description: null
+      - label: Founding of CCRUM
+        date: '1978'
+        description: null
+      - label: Iran approval of Persian medicine PhD
+        date: '2007'
+        description: 4-year program.
+      - label: NCISM Act
+        date: '2020'
+        description: Repealed the Indian Medicine Central Council Act 1970; NCISM operational June/July
+          2021.
+      - label: WHO benchmarks for Unani training and practice
+        date: '2022-02-11'
+        description: Updating 2010 editions.
+      - label: Pakistan merger move of National Council for Tibb
+        date: 2024-09
+        description: Government moved to merge with National Council for Homeopathy into a National Council
+          of Traditional, Alternative and Complementary Medicine.
+      citations:
+      - source: various; see standardization_events
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'verify pass: unverifiable. Searched: Hakim Ajmal Khan Tibbia College foundation stone Lord
+        Hardinge 1916 Gandhi inaugurated 1921 Indian National Congress president 1921; Hamdard Laboratories
+        history Hakim Hafiz Abdul Majeed 1906 Rooh Afza 1907 Hamdard Pakistan 1948 Karachi; Central Council
+        for Research in Unani Medicine CCRUM established 1978 ccrum.res.in about us; Dawn September 2024
+        merge National Council for Tibb National Council for Homeopathy'
+      source_report: v2
+      verify_outcome: unverifiable
+  legal_status:
+    jurisdictions:
+      status: filled
+      value:
+      - jurisdiction: India
+        regulator: National Commission for Indian System of Medicine (NCISM); Ministry of AYUSH; CCRUM
+          (research)
+        statute: NCISM Act 2020 (repealed IMCC Act 1970); Drugs and Cosmetics Act 1940 Chapter IVA and
+          Rules 1945
+        year: 2020
+        scope_of_practice: not detailed; contested via 'mixopathy' disputes over surgery and modern drug
+          prescribing by AYUSH graduates
+        prescribing_rights: not detailed in report
+        integration_with_public_health_system: State-funded via Ministry of AYUSH; NIUM Bengaluru apex
+          teaching institute; common entrance (NEET) and exit (NExT) tests
+        recognition_tier: full medical system
+      - jurisdiction: Pakistan
+        regulator: National Council for Tibb (NCT)
+        statute: Unani, Ayurvedic and Homoeopathic Practitioners Act 1965
+        year: 1965
+        scope_of_practice: not detailed
+        prescribing_rights: not detailed
+        integration_with_public_health_system: not detailed; 2024 move to merge NCT into National Council
+          of Traditional, Alternative and Complementary Medicine
+        recognition_tier: statutory registration
+      - jurisdiction: Bangladesh
+        regulator: government Unani boards
+        statute: not given
+        year: null
+        scope_of_practice: not detailed
+        prescribing_rights: not detailed
+        integration_with_public_health_system: not detailed
+        recognition_tier: null
+      - jurisdiction: Sri Lanka
+        regulator: indigenous-medicine framework (body not named)
+        statute: not given
+        year: null
+        scope_of_practice: not detailed
+        prescribing_rights: not detailed
+        integration_with_public_health_system: not detailed
+        recognition_tier: null
+      - jurisdiction: Iran
+        regulator: Ministry of Health; Supreme Council of Cultural Revolution
+        statute: Ministry of Health approval of Persian medicine academic training
+        year: 2007
+        scope_of_practice: TPM health centres and polyclinics offering cupping etc.
+        prescribing_rights: not detailed
+        integration_with_public_health_system: some services insurance-covered
+        recognition_tier: null
+      - jurisdiction: South Africa
+        regulator: Allied Health Professions Council of South Africa (AHPCSA); SAHPRA for products
+        statute: Allied Health Professions Act 63 of 1982
+        year: 2001
+        scope_of_practice: not detailed
+        prescribing_rights: not detailed
+        integration_with_public_health_system: not detailed
+        recognition_tier: statutory registration
+      - jurisdiction: Gulf / UK / US / EU
+        regulator: general food-supplement/herbal or complementary-medicine regimes
+        statute: no dedicated Unani statute
+        year: null
+        scope_of_practice: cupping/herbal CAM practice
+        prescribing_rights: null
+        integration_with_public_health_system: null
+        recognition_tier: supplement/wellness only
+      citations:
+      - source: Proposed amendment in NCISM Act 2020 (pib.gov.in)
+        type: news
+        citation_strength: indirect
+      - source: National Commission for Indian System of Medicine (Wikipedia)
+        type: open-encyclopedia
+        citation_strength: indirect
+      - source: National Council For Tibb (nct.gov.pk)
+        type: institutional
+        citation_strength: direct
+      - source: National Council for Tibb (Wikipedia)
+        type: open-encyclopedia
+        citation_strength: indirect
+      - source: Evaluation of Traditional Persian Medicine curriculum ... Shiraz (PMC)
+        type: primary-study
+        citation_strength: direct
+      - source: School of Persian Medicine, Tehran University of Medical Sciences
+        type: institutional
+        citation_strength: direct
+      - source: South Africa - Complementary and Alternative Medicine - Expat Focus
+        type: unclear
+        citation_strength: indirect
+      register: regulatory
+      notes: 'Recognition tiers for India, Pakistan, South Africa are mapper assignments from the report''s
+        description; the report does not use the codebook enum. Bangladesh, Sri Lanka and Iran tiers left
+        null (report does not say). S7 is a Press Information Bureau (state media) release titled about
+        a proposed amendment, cited for the 2020 Act repeal claim.
+
+        verify pass: unverifiable. Searched: National Commission for Indian System of Medicine Act 2020
+        repeal Indian Medicine Central Council Act 1970 NExT NEET section; The Unani, Ayurvedic and Homoeopathic
+        Practitioners Act, 1965 text National Council for Tibb registration; Unani-Tibb University of
+        the Western Cape AHPCSA Allied Health Professions Council registration 2001 Unani-Tibb'
+      source_report: v2
+      verify_outcome: unverifiable
+    supranational_standards:
+      status: filled
+      value:
+      - body: WHO
+        instrument: Benchmarks for the training of Unani medicine
+        year: 2022
+        scope: Training standards; updates 2010 edition
+      - body: WHO
+        instrument: Benchmarks for the practice of Unani medicine
+        year: 2022
+        scope: Practice standards; updates 2010 edition
+      - body: WHO
+        instrument: WHO international standard terminologies on Unani medicine
+        year: 2022
+        scope: Terminology reference; prepared with CCRUM
+      - body: FAO/WHO
+        instrument: Heavy-metal limits (international backdrop)
+        year: null
+        scope: Product limits
+      citations:
+      - source: WHO, WHO benchmarks for the training of Unani medicine, Geneva, published 11 February
+          2022 (who.int/publications/i/item/9789240042735); page states it updates the 2010 edition
+        type: institutional
+        citation_strength: direct
+      - source: WHO, WHO benchmarks for the practice of Unani medicine, Geneva, published 11 February
+          2022 (who.int/publications/i/item/9789240042698)
+        type: institutional
+        citation_strength: direct
+      - source: WHO, WHO international standard terminologies on Unani medicine, Geneva, 2022, ISBN 9789240064959
+          (who.int/publications/i/item/9789240064959)
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: 'Corrected: the terminology instrument had year null; WHO published it in 2022 (594 pp, developed
+        with CCRUM). Training benchmarks confirmed as 11 Feb 2022 and stated as an update of the 2010
+        edition. The WHO practice-benchmarks web page fetched did not itself mention the 2010 edition,
+        so ''updates 2010 edition'' for practice rests on the training document and the search summary
+        only. The FAO/WHO heavy-metal limits entry could not be tied to a specific instrument and remains
+        unverified.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+  education_and_licensure:
+    degree_programs:
+      status: partial
+      value: 'India: undergraduate Kamil-e-Tib-o-Jarahat (BUMS); postgraduate Mahir-e-Tib and Mahir-e-Jarahat;
+        55 Unani colleges (of 733 AYUSH institutes: 414 Ayurveda, 248 Homeopathy, 55 Unani, 13 Siddha,
+        3 Sowa Rigpa). Pakistan: diplomas and bachelor degrees in Tibb-e-Unani, Hamdard University.'
+      citations:
+      - source: Medical Dialogues report of Lok Sabha data
+        type: news
+        citation_strength: indirect
+      - source: Uncited in report for degree names
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'College count has no year in the report.
+
+        verify pass: unverifiable. Searched: Lok Sabha unstarred question AYUSH colleges number Ayurveda
+        Unani Siddha Homoeopathy Sowa Rigpa 733; eparlib.sansad.in AU3786.pdf (503 on repeated fetch;
+        figures seen only via Medical Dialogues, 7 Nov 2020, which gives no question number); Kamil-e-Tib-o-Jarahat
+        and Hamdard University Pakistan programmes not located'
+      source_report: v1
+      verify_outcome: unverifiable
+    duration:
+      status: incidental
+      value: 'Iranian PhD: 4 years. Other programs not given.'
+      citations:
+      - source: Evaluation of Traditional Persian Medicine curriculum ... Shiraz (PMC)
+        type: primary-study
+        citation_strength: direct
+      register: regulatory
+      notes: Not requested by the prompt.
+      source_report: v2
+    accrediting_body:
+      status: filled
+      value: Education and practice historically regulated by the Central Council of Indian Medicine,
+        now the National Commission for Indian System of Medicine.
+      citations:
+      - source: National Commission for Indian System of Medicine Act, 2020 (India Code, indiacode.nic.in/handle/123456789/15622);
+          section 58 repeals the Indian Medicine Central Council Act, 1970
+        type: statute
+        citation_strength: direct
+      register: regulatory
+      notes: Act assented Sept 2020; Central Council of Indian Medicine dissolved and the 1970 Act repealed
+        with effect from 11 June 2021 when the Commission was constituted. Act text was read via search
+        excerpts because the India Code PDF returned 403 on direct fetch.
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v1
+    licensure_requirements:
+      status: filled
+      value: 'India: common entrance (NEET) and exit (NExT) testing under NCISM; Pakistan: NCT registers
+        hakims; South Africa: AHPCSA practitioner register.'
+      citations:
+      - source: National Commission for Indian System of Medicine Act, 2020 (uniform National Eligibility-cum-Entrance
+          Test for UG admission; National Exit Test for licence to practise and enrolment in State/National
+          Register)
+        type: statute
+        citation_strength: direct
+      - source: Unani, Ayurvedic and Homoeopathic Practitioners Act, 1965 (Pakistan Code, pakistancode.gov.pk);
+          National Council for Tibb established under s.3 to provide for registration of practitioners
+        type: statute
+        citation_strength: direct
+      - source: Ibn Sina Institute of Tibb, Development of the Training of Tibb Doctors in South Africa
+          (International Journal of Advanced Research, 2023); AHPCSA recognition 2001, register for Unani-Tibb
+          practitioners
+        type: primary-study
+        citation_strength: direct
+      register: regulatory
+      notes: 'Holds as stated. Statutory wording for India: NEET for UG admission, NExT as the final-year
+        exam for licence and register enrolment. Pakistan Code page did not show section text on fetch;
+        s.3 and registration function taken from the Act''s own description in search excerpts. South
+        African register date reported as 14 Sept 2007 in secondary search excerpt; not needed for this
+        claim.'
+      source_report: verify
+      verify_outcome: confirmed
+      replaced_from: v2
+    biomedical_content_in_curriculum:
+      status: incidental
+      value: Reformers incorporated anatomy, physiology, pathology and surgery into Unani curricula with
+        fixed syllabi and degrees.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Not requested by the prompt.
+
+        verify pass: unverifiable. Searched: Ajmal Khan Tibbiya College Delhi 1916 curriculum anatomy
+        physiology surgery Unani reform BUMS; Liebeskind Unani medicine of the subcontinent Tibbiya College
+        Ajmal Khan anatomy surgery Lucknow Takmil-ut-Tibb; Alavi Islam and Healing (vdoc.pub excerpt)
+        reformers curriculum anatomy surgery fixed syllabi degrees; NCISM BUMS curriculum Tashreeh Munafe-ul-Aza
+        Mahiyatul Amraz Ilmul Jarahat (NCISM pages returned 409 or only snippets; shows present-day content,
+        not reformer attribution)'
+      source_report: v2
+      verify_outcome: unverifiable
+    tradition_content_in_biomedical_curriculum:
+      status: not_requested
+      value: null
+      citations: []
+      register: regulatory
+      notes: Prompt did not ask. Report mentions only integrated MBBS-BAMS-type courses as a dispute (Ayurveda-oriented).
+      source_report: v2
+  literature_state:
+    corpus_scale_appraisal:
+      status: partial
+      value: No appraisal dedicated to the whole Unani clinical literature located. The nearest is a bibliometric
+        analysis of the AYUSH Research Portal (Thrigulla et al., Ayu 2023) covering 6,528 articles across
+        AYUSH systems, of which 427 are Unani (Ayurveda 3,903; Yoga 950; Siddha 594; Homoeopathy 654).
+        For Unani the paper reports 209 articles (48.95%) Grade A (RCT), 95 (22.25%) Grade B and 123 (28.81%)
+        Grade C on its WHO-based evidence grading.
+      citations:
+      - source: 'Thrigulla et al., Clinical studies in Ayurveda: A bibliometric analysis of articles indexed
+          in AYUSH research portal, Ayu 2023 (PMC10710232)'
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: Titled and framed around Ayurveda; Unani figures are one stratum of a multi-system portal
+        analysis, not a Unani-specific appraisal. Portal-indexed articles only, not all Unani literature.
+        Grade counts taken from a summary of the paper, so the figures should be checked against the full
+        text. No Cochrane overview or Unani-wide evidence map found.
+      source_report: gap
+      gap_outcome: found
+      replaced_from: v2
+    trial_counts:
+      status: partial
+      value: 'Report says volume is ''substantial''/''abundant'' with no total. Modality-level figures:
+        cupping meta-analysis of 11 trials with 921 participants (Zhang et al. 2024); a 33-patient single-arm
+        psoriasis trial; post-COVID Unani reviews with only a handful of eligible studies (n=60-100).'
+      citations:
+      - source: Evidence Map of Cupping Therapy (PMC8073851)
+        type: systematic-review
+        citation_strength: direct
+      - source: 'Unani medicine in post-COVID-19 recovery: evidence mapping (ScienceDirect)'
+        type: systematic-review
+        citation_strength: direct
+      - source: 'The Efficacy and Safety of Herbal Unani Formulations in Chronic Plaque Psoriasis: A Single-arm
+          Clinical Trial (PubMed)'
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: No count of Unani trials by modality or total.
+      source_report: v2
+    geographic_concentration_of_trials:
+      status: filled
+      value: Dominated by CCRUM, Indian Unani colleges, Hamdard and Iranian TPM universities; for cupping,
+        clusters in India, Iran and China.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: 'verify pass: unverifiable. Searched: bibliometric analysis Unani medicine research publications
+        India Iran countries CCRUM Hamdard most productive'
+      source_report: v2
+      verify_outcome: unverifiable
+    publication_bias_findings:
+      status: partial
+      value: Report asserts 'strong positive-result bias', much output in low-impact or in-house journals
+        and weak independent replication; systematic reviews said to report publication bias. No specific
+        publication-bias study is named.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: 'Missing: a specific funnel-plot/registry-comparison study of Unani trials.
+
+        verify pass: unverifiable. Searched: publication bias Unani medicine clinical trials systematic
+        review funnel plot Egger'
+      source_report: v2
+      verify_outcome: unverifiable
+    registry_and_reporting_practice:
+      status: filled
+      value: 'Cross-sectional retrospective analysis of AYUSH trials on CTRI, 2009 to 30 July 2020 (n=3,632).
+        Unani had 366 registrations (10.08%): 232 (63.39%) prospective and 134 (36.61%) retrospective.
+        Across all AYUSH streams, 21% were registered retrospectively.'
+      citations:
+      - source: Shree Devi MS, Sathiyarajeswaran P, Kanakavalli K, Vinod NP, Baskar V. Analysis of AYUSH
+          studies registered in Clinical Trials Registry of India from 2009 to 2020. J Ayurveda Integr
+          Med, May 2021 (PMC8185998)
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: Covers registration only, not reporting quality or whether results were published. Data limited
+        to CTRI to 30 July 2020; authors note human error in trial classification. CTRI has enforced prospective-only
+        registration since 2018, so later data may differ. Figures were read from a summary of the paper
+        and should be checked against the full text.
+      source_report: gap
+      gap_outcome: found
+      replaced_from: v2
+  evidence_state:
+    reviews:
+      status: filled
+      value:
+      - modality: Cupping (including wet cupping) for low back pain
+        best_available_review: Zhang Z, Pasapula M, Wang Z, Edwards K, Norrish A. The effectiveness of
+          cupping therapy on low back pain, a systematic review and meta-analysis of randomized control
+          trials. Complementary Therapies in Medicine 2024;80:103013
+        type: meta-analysis
+        year: 2024
+        size: 11 randomized controlled trials, 921 participants
+        conclusion: Authors report that cupping significantly improves pain at 2-8 weeks, described as
+          high-quality evidence; benefit diminished at longer follow-up; disability also improved over
+          1-6 months; wet cupping was more effective than dry cupping; cupping was superior to medication
+          and usual care.
+        certainty_rating: described by the authors as high- to moderate-quality evidence
+        methodological_limitations_noted: Significant heterogeneity between studies; authors call for
+          standardized protocols and longer follow-up. The review covers cupping in general for low back
+          pain only, not specifically Unani hijama.
+      - modality: Wet cupping (al-hijama) for mental health
+        best_available_review: Ucun Y. Wet Cupping (al-hijama) for Mental Health, A Systematic Review.
+          Journal of Acupuncture Research 2022;39(2):89-95
+        type: systematic-review
+        year: 2022
+        size: 9 studies (2 case reports, 3 pre-post tests, 3 RCTs), 1,124 individuals receiving wet cupping
+        conclusion: Author states there are few RCTs and most are of poor quality; studies are not robust
+          enough to determine whether wet cupping benefits mental health, and reported positive results
+          may be false positives.
+        certainty_rating: not given
+        methodological_limitations_noted: Small samples, inadequate randomization and blinding, no standardized
+          protocol, adverse events reported in only 3 of 9 studies.
+      - modality: Unani interventions for post-COVID-19 symptom management
+        best_available_review: Unani medicine in post-COVID-19 recovery, Integrative perspectives and
+          evidence mapping for symptom management (ScienceDirect, 2025, pii S3050787125001088)
+        type: systematic-review
+        year: 2025
+        size: 150 records screened, 10 studies met inclusion criteria (adult confirmed post-COVID-19 cases),
+          searches January 2020 to July 2025
+        conclusion: Abstract reports symptom reduction, improved functional recovery and quality of life
+          with favorable safety profiles. Original leaf's wording 'promising but insufficient' was not
+          confirmed against the article text.
+        certainty_rating: not given
+        methodological_limitations_noted: Original leaf's 'n=60-100' and 'high risk in allocation on Cochrane
+          tool' could not be checked (full text not accessible); carried over unverified.
+      - modality: Unani herbal formulations (general; psoriasis, rheumatoid arthritis)
+        best_available_review: 'Individual trials only: non-inferiority RCT vs PUVA for chronic plaque
+          psoriasis (IJMR 2018); 33-patient single-arm psoriasis trial (CRIUM Hyderabad 2018-19); RA non-inferiority
+          RCT vs celecoxib'
+        type: primary-study
+        year: 2018
+        size: 33 patients for the single-arm trial
+        conclusion: Report says most herbal formulations remain preliminary/hypothesis-generating; no
+          Unani intervention rests on high-certainty, independently replicated evidence of clinically
+          meaningful efficacy.
+        certainty_rating: not given
+        methodological_limitations_noted: single-arm or open-label designs, small samples, high/unclear
+          risk of bias, publication bias
+      citations:
+      - source: Zhang Z, Pasapula M, Wang Z, Edwards K, Norrish A. Complementary Therapies in Medicine
+          2024;80:103013 (PubMed 38184285; abstract via Europe PMC)
+        type: meta-analysis
+        citation_strength: direct
+      - source: Ucun Y. Wet Cupping (al-hijama) for Mental Health, A Systematic Review. Journal of Acupuncture
+          Research 2022;39(2):89-95 (e-jar.org)
+        type: systematic-review
+        citation_strength: direct
+      - source: Unani medicine in post-COVID-19 recovery, Integrative perspectives and evidence mapping
+          for symptom management. ScienceDirect 2025, pii S3050787125001088 (abstract only)
+        type: systematic-review
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Corrected. Item 1 was mis-scoped: Zhang 2024 is a low back pain meta-analysis only, not
+        neck or knee osteoarthritis. The d values, the 1-month and 3-6 month non-significance figures
+        and the earlier-review list (AlBedah 2011, Kim, Cha 2021) could not be confirmed from the abstract
+        and were removed. Item 2 given its verified author, year and size (9 studies, n=1,124; original
+        said year and size not given). Item 3 year and size filled from the abstract; two original details
+        remain unverified. Item 4 (individual Unani herbal trials) was not checked in this pass and is
+        carried over unchanged.'
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    preclinical_and_constituent_evidence:
+      status: filled
+      value:
+      - agent: Rauwolfia serpentina alkaloids (ajmaline, ajmalicine and related)
+        finding: Ajmaline (rauwolfine), ajmalinine, ajmalicine, serpentine and serpentinine were isolated
+          from the roots by Salimuzzaman Siddiqui and R. H. Siddiqui. Reserpine was not isolated by Siddiqui;
+          it was isolated in 1952 by Muller, Schlittler and Bein (Ciba).
+        type: isolation of constituents
+        year: 1931 (Siddiqui alkaloids); 1952 (reserpine)
+        citation: 'Siddiqui S, Siddiqui RH. Chemical examination of the roots of Rauwolfia serpentina
+          Benth. J Indian Chem Soc 1931;8:667. Reserpine: Muller, Schlittler, Bein 1952, as reported in
+          Schlittler, Ann NY Acad Sci 1954 (Chemistry of Rauwolfia alkaloids, including reserpine)'
+      citations:
+      - source: Siddiqui S, Siddiqui RH. J Indian Chem Soc 1931;8:667 (as cited in the Ethnobotany and
+          Economic Botany review of Rauvolfia serpentina, Springer)
+        type: primary-study
+        citation_strength: direct
+      - source: Schlittler E. Chemistry of Rauwolfia alkaloids, including reserpine. Annals of the New
+          York Academy of Sciences 1954
+        type: reference-work
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: Corrected. Original attributed isolation of reserpine to Siddiqui and dated it to the 1930s.
+        Siddiqui isolated ajmaline and ajmalicine (1931); reserpine came in 1952. Original also called
+        this demonstrable pharmacological activity; isolation is chemical, and no pharmacology is claimed
+        here. Verified from search-result summaries of the cited works; I did not open the full texts.
+        Preclinical evidence only, not a clinical review.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v1
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value: []
+      citations: []
+      register: biomedical-evidence
+      notes: Report frames hijama as this tradition's own (Greco-Arabic lineage, resemblance to Chinese
+        cupping largely convergent), so cupping reviews are in reviews rather than here.
+      source_report: v2
+  safety:
+    adulteration_and_contamination:
+      status: filled
+      value:
+      - 'Kushtae Sadaf (NIUM Bengaluru elemental analysis): lead 28.7 ppm in one marketed sample, above
+        the 10 ppm WHO/India limit; another sample within limits'
+      - 'Surma/kohl: lead as high as 86% (Aslam, Davis & Healy, Public Health 1979); 0.03% to 81.37% in
+        40 samples (Haq & Khan, JPMA 1982)'
+      - Undeclared corticosteroids (cortisone, hydrocortisone, dexamethasone, prednisolone) in 80% of
+        29 tested Unani and homeopathic samples (JPMA 1981)
+      - 'Jawarish Shahi (Discover Chemistry, 2026): synthetic contaminants including an antibiotic prodrug,
+        single-batch preliminary finding'
+      citations:
+      - source: Comparative elemental analysis of Kushtae Sadaf (IJGP)
+        type: primary-study
+        citation_strength: direct
+      - source: JPMA archive article 6494
+        type: primary-study
+        citation_strength: direct
+      - source: Abuse of Steroidal Drugs by Homoeopaths and Hakims (JPMA)
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: Steroid sample pool mixes Unani and homeopathic products. S22's generic title does not show
+        which surma studies it holds. Jawarish Shahi study uncited.
+      source_report: v2
+    intrinsic_toxicity:
+      status: filled
+      value:
+      - agent: Lead compounds (Usrub, Isfidaj, Suranj, Murdar sang, Ithmid) in formularized kushtas
+        mechanism_class: heavy metal
+        detail: Ithmid 'not recommended for oral use'; Murdar sang oral intake 'harmful, can cause dysuria';
+          lead distributes to liver, kidney and brain causing encephalopathy, neuropathy and nephropathy
+          (Mustehasan & Azhar, Asian J Res Chem 2022)
+      - agent: Arsenic trioxide (Kushta Sammulfar)
+        mechanism_class: heavy metal
+        detail: Formularized oral kushta
+      - agent: Surma (galena)
+        mechanism_class: heavy metal
+        detail: Chronic lead poisoning with regular use
+      - agent: Hijama (wet cupping)
+        mechanism_class: procedural
+        detail: Infections attributed to non-sterile technique and untrained practitioners
+      - agent: Reliance on Unani in place of biomedical care
+        mechanism_class: indirect
+        detail: Delayed biomedical care a recognized systemic risk; hard Unani-specific outcome data limited
+      citations:
+      - source: Mustehasan & Azhar, Asian J Res Chem 2022 (no S marker)
+        type: primary-study
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: Report says Unani-specific product-named hepatotoxicity case reports with RUCAM scoring appear
+        absent.
+      source_report: v2
+    documented_adverse_events:
+      status: partial
+      value:
+      - Disseminated Staphylococcus aureus with multi-organ injury after scarification cupping (PMC10061885)
+      - Sacroiliac joint abscess and osteomyelitis associated with wet cupping (case report)
+      - Necrotizing fasciitis after cupping (PMC8059418)
+      - Death after consecutive-day hijama by an unlicensed practitioner (J Forensic Leg Med 2025)
+      - South Asian immigrant lead-poisoning clusters in the UK traced to surma
+      citations:
+      - source: 'Sacroiliac joint abscess and osteomyelitis associated with wet cupping therapy: a case
+          report (PubMed)'
+        type: primary-study
+        citation_strength: direct
+      - source: JPMA archive article 6494
+        type: primary-study
+        citation_strength: direct
+      register: biomedical-evidence
+      notes: 'Missing: case reports attributing an individual''s lead/arsenic poisoning to a named branded
+        Unani kushta with blood levels (report says sparse); Unani-specific DILI case reports (report
+        says absent in indexed literature). Search targets: ''kushta lead poisoning case report Unani
+        blood lead level''; ''Unani hepatotoxicity RUCAM''.'
+      source_report: v2
+    regulatory_actions_taken:
+      status: filled
+      value:
+      - 'India Department of AYUSH order F. No. K-11020/5/97-DCC, 14 October 2005: heavy-metal testing
+        (As, Pb, Hg, Cd) of ASU drugs for export from 1 January 2006, labelling ''Heavy Metals within
+        permissible limits'''
+      - 'Permissible limits (Ayurvedic Pharmacopoeia of India Part-I Vol-VII, 2008): lead 10 ppm, arsenic
+        3 ppm, mercury 1 ppm, cadmium 0.3 ppm for herbal products'
+      - 'Loophole: intentionally metallic preparations assessed under separate criteria rather than against
+        the 10 ppm ceiling'
+      - National Pharmacovigilance Programme for ASU drugs launched 2008, lapsed, later reconstituted
+      - '2023 comparison of nine pharmacopoeias: ASU pharmacopoeias sit outside mainstream harmonization'
+      citations:
+      - source: AYUSH Heavy Metal Testing Mandate (Scribd)
+        type: unclear
+        citation_strength: indirect
+      - source: Heavy Metals in Herbal Products India (Auriga Research)
+        type: practitioner-site
+        citation_strength: indirect
+      - source: 'Heavy metal poisoning from Ayurvedic traditional medicines: an emerging problem? (academia.edu)'
+        type: primary-study
+        citation_strength: indirect
+        claim_match: mismatch
+      - source: Comparison of Regulations for Arsenic and Heavy Metals in Herbal Medicines Using Pharmacopoeias
+          of Nine Counties/Regions (PMC)
+        type: primary-study
+        citation_strength: direct
+      register: regulatory
+      notes: 'S27 is titled about Ayurvedic heavy-metal poisoning but is cited for the ASU pharmacovigilance
+        programme history. S25 is a Scribd upload of a government notification; S26 is a commercial testing
+        lab.
+
+        verify pass: unverifiable. Searched: Department of AYUSH order F. No. K-11020/5/97-DCC 14 October
+        2005 heavy metals export ASU drugs; "K-11020/5/97-DCC"; Ayush notification heavy metals Ayurveda
+        Siddha Unani drugs export 2005 Heavy Metals within permissible limits label; Ayurvedic Pharmacopoeia
+        of India Part-I Volume VII permissible limits lead 10 ppm arsenic 3 ppm mercury 1 ppm cadmium
+        0.3 ppm; National Pharmacovigilance Programme for ASU drugs launched 2008 (2008 launch and 2017
+        restructuring seen only in secondary summaries; order text and API limits not located)'
+      source_report: v2
+      verify_outcome: unverifiable
+    evidence_borrowed_from_other_traditions:
+      status: filled
+      value:
+      - claim: Metallic preparations (rasa-shastra bhasmas 'and, by analogy, Unani kushtas') assessed
+          under separate criteria from the 10 ppm herbal ceiling
+        other_tradition: Ayurveda
+        source: Auriga Research
+      - claim: Ayurvedic heavy-metal poisoning literature and Ayurvedic-agent DILI reports; ASU-wide limits
+          and surveys
+        other_tradition: Ayurveda / ASU aggregate
+        source: academia.edu S27; report text
+      citations:
+      - source: Heavy Metals in Herbal Products India (Auriga Research)
+        type: practitioner-site
+        citation_strength: indirect
+      register: regulatory
+      notes: 'Report notes ASU aggregation in toxicology sources and says it flagged where limits are
+        ASU-wide.
+
+        verify pass: unverifiable. Searched: Auriga Research heavy metals herbal products India metallic
+        preparations separate criteria; Ayush notification heavy metals Ayurveda Siddha Unani drugs export
+        2005 Heavy Metals within permissible limits label'
+      source_report: v2
+      verify_outcome: unverifiable
+  contact_and_borrowing:
+    relationships:
+      status: filled
+      value:
+      - other_tradition: Greek / Hippocratic-Galenic medicine
+        kind: descent
+        direction: Greek -> Unani (via Syriac and Arabic translation)
+        period: 5th c. BCE to 10th c. CE
+        evidence_type: documented translation
+        status: demonstrated
+      - other_tradition: Greek/Galenic European medicine (Latin Europe)
+        kind: shared_descent
+        direction: null
+        period: Qanun a Latin-European textbook until the 17th c.
+        evidence_type: textual attestation
+        status: demonstrated
+      - other_tradition: Ayurveda (and Siddha)
+        kind: exchange
+        direction: 'bidirectional: Sanskrit texts into Arabic (8th c.) and Persian (from 14th c.); Indian
+          drugs into Arabic/Persian pharmacopoeias'
+        period: 8th c.; 14th c. onward
+        evidence_type: documented translation
+        status: demonstrated
+      - other_tradition: Prophetic medicine (Tibb al-Nabawi)
+        kind: exchange
+        direction: Prophetic and Sufi healing folded into vernacular Unani
+        period: colonial India
+        evidence_type: textual attestation
+        status: demonstrated
+      - other_tradition: Chinese and Tibetan medicine
+        kind: parallel
+        direction: null
+        period: null
+        evidence_type: structural parallel
+        status: convergence
+      - other_tradition: Traditional Persian Medicine
+        kind: same_system_variant
+        direction: null
+        period: revival since 2007
+        evidence_type: structural parallel
+        status: demonstrated
+      citations:
+      - source: Fabrizio Speziale, EHESS profile (academia.edu)
+        type: aggregator
+        citation_strength: indirect
+      register: historical-scholarship
+      notes: 'Evidence_type for the Prophetic medicine entry is a mapper choice; report attributes it
+        to Attewell/Alavi without a source marker. Report calls Sowa-Rigpa a separate tradition grouped
+        administratively only.
+
+        verify pass: unverifiable. Searched: Fabrizio Speziale Sanskrit Ayurveda texts translated Persian
+        Indo-Persian medicine Arabic; Speziale Circulation of Ayurvedic knowledge in Indo-Persian medical
+        literature (HAL page blocked; 14th c. Persian texts on Ayurveda seen only in secondary summaries;
+        six-item leaf not verifiable from one source)'
+      source_report: v2
+      verify_outcome: unverifiable
+    corroborated_by:
+      status: deferred
+      value: null
+      citations: []
+      register: historical-scholarship
+      notes: Computed at synthesis.
+      source_report: v2
+  contemporary_controversies:
+    who_engagement:
+      status: filled
+      value: WHO benchmarks for the training of Unani medicine and for the practice of Unani medicine
+        (published 11 February 2022, updating the 2010 editions), and WHO international standard terminologies
+        on Unani medicine (2022).
+      citations:
+      - source: WHO, WHO benchmarks for the training of Unani medicine, 2022 (https://www.who.int/publications/i/item/9789240042735);
+          states it updates the 2010 version
+        type: institutional
+        citation_strength: direct
+      - source: WHO, WHO benchmarks for the practice of Unani medicine, 2022 (https://www.who.int/publications/i/item/9789240042698)
+        type: institutional
+        citation_strength: direct
+      - source: WHO, WHO international standard terminologies on Unani medicine, 2022 (https://www.who.int/publications/i/item/9789240064959)
+        type: institutional
+        citation_strength: direct
+      register: regulatory
+      notes: Corrected by narrowing. The benchmarks (11 Feb 2022, update of 2010) and the 2022 WHO terminology
+        document are confirmed on WHO's own pages. The original claims of 'disputes over WHO terminology'
+        and 'no ICD-11 or collaborating-centre content' were not located in any primary source and are
+        removed; the ICD-11 point is a statement about the report's coverage, not a verified fact about
+        WHO engagement.
+      source_report: verify
+      verify_outcome: corrected
+      replaced_from: v2
+    integration_disputes:
+      status: filled
+      value: Indian Medical Association has repeatedly protested NCISM/IMCC moves allowing AYUSH (including
+        Unani) graduates to perform surgery, prescribe modern drugs, or train in integrated MBBS-BAMS-type
+        courses ('mixopathy' or 'crosspathy'); Maharashtra's CCMP scheme; Andhra Pradesh's December 2025
+        approval of 58 surgical procedures for PG Ayurvedic doctors; litigation pending before the Bombay
+        High Court and Supreme Court; parallel dispute over the 'Dr' prefix. In Iran, debate over integrating
+        TPM into insurance and the health system.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'Andhra Pradesh example concerns Ayurvedic doctors, not Unani specifically. Report notes
+        specifics may have changed after source dates.
+
+        verify pass: unverifiable. Searched: Andhra Pradesh 58 surgical procedures Ayurveda postgraduate
+        doctors IMA December 2025; IMA NCISM mixopathy crosspathy AYUSH surgery (ima-india.org); Note:
+        only news coverage found (Medical Dialogues, Telangana Today, Deccan Herald); no AP government
+        order, NCISM notification or court record located'
+      source_report: v2
+      verify_outcome: unverifiable
+    conservation_and_sourcing:
+      status: not_requested
+      value: null
+      citations: []
+      register: regulatory
+      notes: No question behind this; report does not mention it.
+      source_report: v2
+    intellectual_property:
+      status: not_requested
+      value: null
+      citations: []
+      register: regulatory
+      notes: No question behind this; report does not mention it.
+      source_report: v2
+    politicized_episodes:
+      status: partial
+      value: 'COVID-19: AYUSH/Unani immunity and treatment claims criticised for outpacing evidence. Iran:
+        state-backed TPM programme debated as legitimate scientific revival or nationalist ''invented
+        tradition''.'
+      citations:
+      - source: none given in report; report flags COVID-era specifics as thinly sourced
+        type: unclear
+        citation_strength: unclear
+      register: regulatory
+      notes: 'No named court case or state endorsement dates.
+
+        verify pass: unverifiable. Searched: Unani COVID-19 immunity claims AYUSH criticism; Iran Persian
+        medicine invented tradition state-backed programme'
+      source_report: v2
+      verify_outcome: unverifiable
+    research_methodology_disputes:
+      status: partial
+      value: Whether Unani should be validated by RCT/biomedical standards at all, or whether its holistic,
+        individualized logic requires different methods ('unresolved methodological fault line'); sham-cupping
+        blinding difficulty noted by reviewers.
+      citations:
+      - source: none given in report
+        type: unclear
+        citation_strength: unclear
+      register: biomedical-evidence
+      notes: 'No named parties on each side.
+
+        verify pass: unverifiable. Searched: Unani RCT validity methodological dispute holistic individualized;
+        sham cupping blinding difficulty review'
+      source_report: v2
+      verify_outcome: unverifiable
+  self_reported_gaps:
+    inventory:
+      status: filled
+      value:
+      - kind: searched_not_found
+        text: I found no rigorous kappa-based inter-rater reliability study of Unani pulse (nabz) diagnosis
+          -- the reliability literature is on mizaj questionnaires.
+      - kind: searched_not_found
+        text: Unani-specific, product-named hepatotoxicity case reports with RUCAM scoring appear absent
+          in the indexed literature (the DILI literature names Ayurvedic agents; Unani appears only in
+          mixed-system surveys).
+      - kind: searched_not_found
+        text: Clinical case reports attributing an individual's lead/arsenic poisoning to a specific branded
+          Unani kushta (with attributed blood levels) are sparse compared with Ayurveda.
+      - kind: source_caveat
+        text: Much clinical and pharmacological literature is produced by institutions with an institutional
+          stake in Unani (CCRUM, Hamdard, TPM faculties), and promotional sources (school and clinic websites)
+          overstate historical continuity and efficacy.
+      - kind: source_caveat
+        text: Toxicology and pharmacopoeial sources frequently aggregate Ayurveda, Siddha and Unani (ASU),
+          so some cited limits and surveys are ASU-wide rather than Unani-only.
+      - kind: source_caveat
+        text: Detail on Nizam-of-Hyderabad patronage and on COVID-era Unani specifics rests on thinner
+          sourcing (searches were cut off by tool limits) and should be verified against primary sources.
+      - kind: source_caveat
+        text: 'Fast-moving policy: the Indian mixopathy litigation, the Pakistani council merger (2024),
+          and Iran''s TPM expansion are ongoing; legal specifics may have changed after the sources''
+          dates.'
+      - kind: contested
+        text: Genuine scholarly uncertainty concentrates on manuscript transmission and the lack of a
+          complete critical edition of the Qanun, apocryphal/pseudonymous attributions, and originality
+          versus compilation.
+      - kind: contested
+        text: '''Invented tradition'' versus continuity is the central historiographic debate.'
+      - kind: contested
+        text: 'Pakistan practitioner counts: ~60,000 (Hamdard Foundation via WHO EMRO) versus 39,584 (Saeed
+          et al. 2011).'
+      - kind: contested
+        text: 'Evidence standards: whether Unani should be validated by RCT at all; the Persian medicine
+          revival as legitimate revival or nationalist invention.'
+      citations:
+      - source: the report itself
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Kinds are mapper labels; text quoted or closely paraphrased from the report''s caveats and
+        body.
+
+        verify pass: unverifiable. Searched: Leaf records the source report''s own statements about its
+        searches and caveats; no external primary source can verify it; Pakistan Unani practitioner count
+        Hamdard Foundation WHO EMRO 60,000 versus Saeed 2011 39,584'
+      source_report: v2
+      verify_outcome: unverifiable
+  report_conclusions:
+    revision_thresholds:
+      status: filled
+      value:
+      - domain: Textual history
+        threshold: A complete critical edition of the Qanun
+        would_change: Would sharpen textual debates
+      - domain: Diagnostic reliability
+        threshold: A large multi-center inter-rater study showing mizaj kappa above 0.6 consistently
+        would_change: Would strengthen diagnostic credibility
+      - domain: Clinical efficacy
+        threshold: Adequately powered, pre-registered, independently replicated double-blind RCTs with
+          low risk of bias showing clinically meaningful benefit
+        would_change: Would justify specific clinical recommendations
+      - domain: Safety
+        threshold: Enforced, loophole-free heavy-metal limits with post-market surveillance data
+        would_change: Would materially reduce the documented harm profile
+      citations:
+      - source: the report itself
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report author''s stance, not findings.
+
+        verify pass: unverifiable. Searched: Leaf is the report author''s own stance; no external primary
+        source can verify it'
+      source_report: v2
+      verify_outcome: unverifiable
+    recommendations:
+      status: filled
+      value:
+      - audience: Researcher/clinician
+        text: Treat the history as solid but distinguish 'the texts' from 'the modern system'; cite Attewell,
+          Alavi, Liebeskind and Speziale for the reconstruction thesis and Hunayn's Risala and Qanun manuscript
+          scholarship for textual lineage.
+      - audience: Researcher/clinician
+        text: When assessing diagnostic reliability, cite actual kappa/ICC values, state that agreement
+          is slight-to-moderate and no gold standard exists, and flag the absence of Unani pulse-diagnosis
+          reliability data.
+      - audience: Researcher/clinician
+        text: For efficacy, default to systematic reviews rather than individual CCRUM/college trials;
+          rate cupping for musculoskeletal pain as the least-weak case (short-term only); treat herbal
+          formulations as preliminary; demand independent replication, adequate blinding and pre-registration.
+      - audience: Clinician/patient
+        text: Insist on heavy-metal certificates for any kushta/mineral/surma preparation, screen for
+          undeclared steroids in fast-acting anti-inflammatory Unani products, and counsel patients about
+          hijama infection risk and delayed care.
+      citations:
+      - source: the report itself
+        type: unclear
+        citation_strength: unclear
+      register: historical-scholarship
+      notes: 'Report author''s stance, not findings.
+
+        verify pass: unverifiable. Searched: Leaf is the report author''s own stance; no external primary
+        source can verify it'
+      source_report: v2
+      verify_outcome: unverifiable
+  economics:
+    domestic_market_size:
+      status: not_requested
+      value: null
+      citations: []
+      register: economic
+      notes: Report gives no market figures.
+      source_report: v2
+    global_market_estimates:
+      status: not_requested
+      value: null
+      citations: []
+      register: economic
+      notes: Report gives no market figures.
+      source_report: v2
+    major_manufacturers:
+      status: incidental
+      value:
+      - name: 'Hamdard (India: Hamdard / Jamia Hamdard; Pakistan: Hamdard Pakistan; Bangladesh: Hamdard
+          Laboratories (Waqf))'
+        products: Unani pharmacy products; Rooh Afza launched 1907
+        figure: null
+        currency: null
+        year: null
+        measure: null
+      - name: Hindustani Dawakhana
+        products: not specified
+        figure: null
+        currency: null
+        year: null
+        measure: null
+      citations:
+      - source: 'Greek Medicine: Hakim Ajmal Khan (greekmedicine.net)'
+        type: practitioner-site
+        citation_strength: indirect
+      register: economic
+      notes: 'Passing mention only; no revenue figures.
+
+        verify pass: unverifiable. Searched: Hamdard Laboratories Rooh Afza 1907 Hakim Hafiz Abdul Majeed
+        history; hamdard.in about-us (confirms Hamdard founded 1906, silent on Rooh Afza and Pakistan/Bangladesh
+        entities); hamdard.com Happening news_detail?news=33 (gives 1920 for Rooh Afza production, conflicting
+        with the 1907 claim); Hindustani Dawakhana Hakim Ajmal Khan founded Delhi Unani pharmacy (only
+        secondary sources, trust 1911)'
+      source_report: v2
+      verify_outcome: unverifiable

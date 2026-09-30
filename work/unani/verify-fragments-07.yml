@@ -1,0 +1,42 @@
+system: unani
+pass: verify
+updates:
+  - path: contemporary_controversies.who_engagement
+    outcome: corrected
+    field:
+      status: filled
+      value: "WHO benchmarks for the training of Unani medicine and for the practice of Unani medicine (published 11 February 2022, updating the 2010 editions), and WHO international standard terminologies on Unani medicine (2022)."
+      citations:
+        - source: "WHO, WHO benchmarks for the training of Unani medicine, 2022 (https://www.who.int/publications/i/item/9789240042735); states it updates the 2010 version"
+          type: institutional
+          citation_strength: direct
+        - source: "WHO, WHO benchmarks for the practice of Unani medicine, 2022 (https://www.who.int/publications/i/item/9789240042698)"
+          type: institutional
+          citation_strength: direct
+        - source: "WHO, WHO international standard terminologies on Unani medicine, 2022 (https://www.who.int/publications/i/item/9789240064959)"
+          type: institutional
+          citation_strength: direct
+      register: regulatory
+      notes: "Corrected by narrowing. The benchmarks (11 Feb 2022, update of 2010) and the 2022 WHO terminology document are confirmed on WHO's own pages. The original claims of 'disputes over WHO terminology' and 'no ICD-11 or collaborating-centre content' were not located in any primary source and are removed; the ICD-11 point is a statement about the report's coverage, not a verified fact about WHO engagement."
+    searches: ["WHO benchmarks for the training of Unani medicine 2022", "WHO international standard terminologies on Unani medicine 2022 publication"]
+  - path: contemporary_controversies.integration_disputes
+    outcome: unverifiable
+    searches: ["Andhra Pradesh 58 surgical procedures Ayurveda postgraduate doctors IMA December 2025", "IMA NCISM mixopathy crosspathy AYUSH surgery (ima-india.org)", "Note: only news coverage found (Medical Dialogues, Telangana Today, Deccan Herald); no AP government order, NCISM notification or court record located"]
+  - path: contemporary_controversies.politicized_episodes
+    outcome: unverifiable
+    searches: ["Unani COVID-19 immunity claims AYUSH criticism", "Iran Persian medicine invented tradition state-backed programme"]
+  - path: contemporary_controversies.research_methodology_disputes
+    outcome: unverifiable
+    searches: ["Unani RCT validity methodological dispute holistic individualized", "sham cupping blinding difficulty review"]
+  - path: self_reported_gaps.inventory
+    outcome: unverifiable
+    searches: ["Leaf records the source report's own statements about its searches and caveats; no external primary source can verify it", "Pakistan Unani practitioner count Hamdard Foundation WHO EMRO 60,000 versus Saeed 2011 39,584"]
+  - path: report_conclusions.revision_thresholds
+    outcome: unverifiable
+    searches: ["Leaf is the report author's own stance; no external primary source can verify it"]
+  - path: report_conclusions.recommendations
+    outcome: unverifiable
+    searches: ["Leaf is the report author's own stance; no external primary source can verify it"]
+  - path: economics.major_manufacturers
+    outcome: unverifiable
+    searches: ["Hamdard Laboratories Rooh Afza 1907 Hakim Hafiz Abdul Majeed history", "hamdard.in about-us (confirms Hamdard founded 1906, silent on Rooh Afza and Pakistan/Bangladesh entities)", "hamdard.com Happening news_detail?news=33 (gives 1920 for Rooh Afza production, conflicting with the 1907 claim)", "Hindustani Dawakhana Hakim Ajmal Khan founded Delhi Unani pharmacy (only secondary sources, trust 1911)"]

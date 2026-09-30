@@ -1,0 +1,20 @@
+system: unani
+pass: gap
+entries:
+- path: diagnostics.sign_vs_synthesis
+  missing: 'Report distinguishes only warm/cold versus wet/dry axes; no study separating agreement on
+    individual observable signs (pulse, urine, stool) from agreement on the integrated mizaj judgment.
+    Search target: ''inter-rater agreement Unani pulse urine stool signs versus integrated temperament
+    diagnosis''. The report itself found no rigorous kappa-based Unani pulse reliability study.'
+- path: disruption.abolition_attempts
+  missing: 'Report gives no formal proposals, votes or outcomes to abolish or de-recognize Unani. Search
+    target: ''formal proposals to abolish or defund indigenous medicine colonial India Unani''.'
+- path: literature_state.corpus_scale_appraisal
+  missing: 'No corpus-scale appraisal (Cochrane overview, evidence map, bibliometric analysis) of the
+    whole Unani clinical literature is reported. Only modality- or condition-scoped maps appear: Cha et
+    al. 2021 cupping evidence map and a post-COVID-19 Unani evidence mapping. Search target: ''Unani medicine
+    bibliometric analysis'' and ''evidence map Unani randomized trials''.'
+- path: literature_state.registry_and_reporting_practice
+  missing: 'Report recommends pre-registration but gives no data on trial registration or reporting practice
+    for Unani trials. Search target: ''CTRI registration Unani clinical trials prospective registration
+    rate''.'

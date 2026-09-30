@@ -1,0 +1,176 @@
+system: unani
+pass: verify
+batch: 6
+entries:
+- path: education_and_licensure.biomedical_content_in_curriculum
+  source_report: v2
+  value: Reformers incorporated anatomy, physiology, pathology and surgery into Unani curricula with fixed
+    syllabi and degrees.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: literature_state.geographic_concentration_of_trials
+  source_report: v2
+  value: Dominated by CCRUM, Indian Unani colleges, Hamdard and Iranian TPM universities; for cupping,
+    clusters in India, Iran and China.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: literature_state.publication_bias_findings
+  source_report: v2
+  value: Report asserts 'strong positive-result bias', much output in low-impact or in-house journals
+    and weak independent replication; systematic reviews said to report publication bias. No specific
+    publication-bias study is named.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: evidence_state.reviews
+  source_report: v2
+  value:
+  - modality: Cupping / hijama for pain (low back, neck, knee osteoarthritis)
+    best_available_review: Zhang, Pasapula, Wang, Edwards & Norrish, Complementary Therapies in Medicine
+      2024;80:103013
+    type: meta-analysis
+    year: 2024
+    size: 11 trials, 921 participants
+    conclusion: 'Authors report ''high-quality evidence'' that cupping significantly improves pain at
+      2-8 weeks (d=1.09, 95% CI 0.35-1.83, p=0.004); no significant improvement at 1 month (d=0.11) or
+      3-6 months (d=0.39). Earlier reviews (AlBedah 2011; Kim et al.; Cha et al. 2021 evidence map) find
+      some low-to-moderate-quality positive signals for pain. Report''s own bottom line: cupping for musculoskeletal
+      pain is the least-weak case and the benefit appears short-lived.'
+    certainty_rating: described by authors as high-quality evidence for the 2-8 week endpoint; low-to-moderate
+      quality in earlier reviews
+    methodological_limitations_noted: small trials, weak blinding (sham cupping hard), heterogeneity.
+      Reviews cover cupping in general and cluster in India, Iran and China, not specifically Unani hijama.
+  - modality: Wet cupping (al-hijama) for mental health
+    best_available_review: 'Wet Cupping (al-hijama) for Mental Health: A Systematic Review'
+    type: systematic-review
+    year: null
+    size: not given
+    conclusion: Most trials 'of poor quality'.
+    certainty_rating: not given
+    methodological_limitations_noted: poor trial quality
+  - modality: Unani interventions for post-COVID-19 symptom management
+    best_available_review: 'Unani medicine in post-COVID-19 recovery: evidence mapping for symptom management'
+    type: systematic-review
+    year: null
+    size: only a handful of eligible studies, n=60-100
+    conclusion: Evidence described as 'promising' but insufficient.
+    certainty_rating: not given; 'high risk in allocation' on Cochrane tool
+    methodological_limitations_noted: small samples, observational designs, high risk of allocation bias
+  - modality: Unani herbal formulations (general; psoriasis, rheumatoid arthritis)
+    best_available_review: 'Individual trials only: non-inferiority RCT vs PUVA for chronic plaque psoriasis
+      (IJMR 2018); 33-patient single-arm psoriasis trial (CRIUM Hyderabad 2018-19); RA non-inferiority
+      RCT vs celecoxib'
+    type: primary-study
+    year: 2018
+    size: 33 patients for the single-arm trial
+    conclusion: Report says most herbal formulations remain preliminary/hypothesis-generating; no Unani
+      intervention rests on high-certainty, independently replicated evidence of clinically meaningful
+      efficacy.
+    certainty_rating: not given
+    methodological_limitations_noted: single-arm or open-label designs, small samples, high/unclear risk
+      of bias, publication bias
+  weak_citations:
+  - source: 'Wet Cupping (al-hijama) for Mental Health: A Systematic Review (oalib-perpustakaan.upi.edu
+      record)'
+    type: systematic-review
+    citation_strength: indirect
+- path: evidence_state.preclinical_and_constituent_evidence
+  source_report: v1
+  value:
+  - agent: Rauwolfia serpentina alkaloids (reserpine, ajmaline, ajmalicine)
+    finding: Isolated by Salimuzzaman Siddiqui; report cites this as demonstrable pharmacological activity
+      of specific plant constituents
+    type: isolation of constituents
+    year: 1930s
+    citation: Uncited in report
+  weak_citations:
+  - source: Uncited in report
+    type: unclear
+    citation_strength: unclear
+- path: safety.regulatory_actions_taken
+  source_report: v2
+  value:
+  - 'India Department of AYUSH order F. No. K-11020/5/97-DCC, 14 October 2005: heavy-metal testing (As,
+    Pb, Hg, Cd) of ASU drugs for export from 1 January 2006, labelling ''Heavy Metals within permissible
+    limits'''
+  - 'Permissible limits (Ayurvedic Pharmacopoeia of India Part-I Vol-VII, 2008): lead 10 ppm, arsenic
+    3 ppm, mercury 1 ppm, cadmium 0.3 ppm for herbal products'
+  - 'Loophole: intentionally metallic preparations assessed under separate criteria rather than against
+    the 10 ppm ceiling'
+  - National Pharmacovigilance Programme for ASU drugs launched 2008, lapsed, later reconstituted
+  - '2023 comparison of nine pharmacopoeias: ASU pharmacopoeias sit outside mainstream harmonization'
+  weak_citations:
+  - source: AYUSH Heavy Metal Testing Mandate (Scribd)
+    type: unclear
+    citation_strength: indirect
+  - source: Heavy Metals in Herbal Products India (Auriga Research)
+    type: practitioner-site
+    citation_strength: indirect
+  - source: 'Heavy metal poisoning from Ayurvedic traditional medicines: an emerging problem? (academia.edu)'
+    type: primary-study
+    citation_strength: indirect
+    claim_match: mismatch
+- path: safety.evidence_borrowed_from_other_traditions
+  source_report: v2
+  value:
+  - claim: Metallic preparations (rasa-shastra bhasmas 'and, by analogy, Unani kushtas') assessed under
+      separate criteria from the 10 ppm herbal ceiling
+    other_tradition: Ayurveda
+    source: Auriga Research
+  - claim: Ayurvedic heavy-metal poisoning literature and Ayurvedic-agent DILI reports; ASU-wide limits
+      and surveys
+    other_tradition: Ayurveda / ASU aggregate
+    source: academia.edu S27; report text
+  weak_citations:
+  - source: Heavy Metals in Herbal Products India (Auriga Research)
+    type: practitioner-site
+    citation_strength: indirect
+- path: contact_and_borrowing.relationships
+  source_report: v2
+  value:
+  - other_tradition: Greek / Hippocratic-Galenic medicine
+    kind: descent
+    direction: Greek -> Unani (via Syriac and Arabic translation)
+    period: 5th c. BCE to 10th c. CE
+    evidence_type: documented translation
+    status: demonstrated
+  - other_tradition: Greek/Galenic European medicine (Latin Europe)
+    kind: shared_descent
+    direction: null
+    period: Qanun a Latin-European textbook until the 17th c.
+    evidence_type: textual attestation
+    status: demonstrated
+  - other_tradition: Ayurveda (and Siddha)
+    kind: exchange
+    direction: 'bidirectional: Sanskrit texts into Arabic (8th c.) and Persian (from 14th c.); Indian
+      drugs into Arabic/Persian pharmacopoeias'
+    period: 8th c.; 14th c. onward
+    evidence_type: documented translation
+    status: demonstrated
+  - other_tradition: Prophetic medicine (Tibb al-Nabawi)
+    kind: exchange
+    direction: Prophetic and Sufi healing folded into vernacular Unani
+    period: colonial India
+    evidence_type: textual attestation
+    status: demonstrated
+  - other_tradition: Chinese and Tibetan medicine
+    kind: parallel
+    direction: null
+    period: null
+    evidence_type: structural parallel
+    status: convergence
+  - other_tradition: Traditional Persian Medicine
+    kind: same_system_variant
+    direction: null
+    period: revival since 2007
+    evidence_type: structural parallel
+    status: demonstrated
+  weak_citations:
+  - source: Fabrizio Speziale, EHESS profile (academia.edu)
+    type: aggregator
+    citation_strength: indirect

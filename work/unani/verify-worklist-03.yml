@@ -1,0 +1,151 @@
+system: unani
+pass: verify
+batch: 3
+entries:
+- path: diagnostics.reliability_evidence
+  source_report: v2
+  value:
+  - statistic: weighted kappa (also Cronbach alpha 0.71; sensitivity/specificity reported)
+    value: 0.40 to 0.82 across 39 retained items; cut-off sensitivity/specificity warm 65%/93%, cold 52%/97%,
+      dry 53%/67%, wet 53%/76%
+    confidence_interval: null
+    design: questionnaire-validation
+    population: not stated in report
+    n_raters: null
+    n_subjects: null
+    target: individual mizaj self-report scale items (warm, cold, dry, wet groups)
+    citation: Mojahedi et al., Iranian Red Crescent Medical Journal 2014;16(3):e15924
+  - statistic: ICC
+    value: 0.62 (warmness-coldness); 0.64 (wetness-dryness)
+    confidence_interval: 0.53-0.73; 0.56-0.72
+    design: clinician-vs-clinician
+    population: volunteers (health status not stated)
+    n_raters: 3
+    n_subjects: 150
+    target: temperament axes (warm-cold; wet-dry)
+    citation: Identification of Mizaj (Temprament) Based on Tibbi Fundamentals using Classification as
+      Tool (academia.edu PDF)
+  - statistic: kappa (type not specified)
+    value: highest 0.512 for hotness (clinical vs SMQ) and for coldness (clinical vs MMQ, as reported);
+      lowest 0.081 for balance in dryness/wetness; questionnaire-vs-questionnaire 0.132-0.366
+    confidence_interval: hotness 0.422-0.602; coldness 0.368-0.656; dry/wet balance -0.023 to 0.185
+    design: questionnaire-validation
+    population: healthcare workers (health status not stated)
+    n_raters: null
+    n_subjects: ~350
+    target: temperament categories (hotness, coldness, dry/wet balance) by clinical judgment vs two questionnaires
+      (SMQ, MMQ)
+    citation: Agreement Between Clinical Judgment and Standardized Questionnaires in Temperament (Mizaj)
+      Assessment in Persian Medicine, Shiraz E-Medical Journal
+  - statistic: not specified (inter-rater judgment analysis for item selection; J48 decision-tree studies)
+    value: not given in report
+    confidence_interval: null
+    design: questionnaire-validation
+    population: not stated
+    n_raters: null
+    n_subjects: 68 (J48 decision-tree studies)
+    target: item selection for the Mizaij-i-Insani questionnaire
+    citation: Inter-Rater Judgement analysis for Item Selection in the Development of the Questionnaire
+      to Determine Mizaij-i-Insani, Bangladesh Journal of Medical Science
+  weak_citations:
+  - source: Identification of Mizaj (Temprament) Based on Tibbi Fundamentals using Classification as Tool
+      (academia.edu)
+    type: primary-study
+    citation_strength: indirect
+- path: modalities.items
+  source_report: v1
+  value:
+  - name: Ilaj bil tadbeer (regimenal therapy)
+    native_category: ilaj bil tadbeer
+    tags:
+    - procedural
+    - manual
+    - thermal
+    - regimenal
+    description: 'Nearly 30 regimens in classical literature: fasd (venesection), hijama (cupping, wet
+      and dry), ta''liq al-''alaq (leech therapy), ishal (purgation), qay'' (emesis), idrar (diuresis),
+      huqna (enema), ta''riq (diaphoresis), riyazat (exercise), dalk (massage), hammam (bath), natul (irrigation),
+      inkibab (steam), takmid (fomentation). Aim is to evacuate morbid humours and restore balance.'
+  - name: Ilaj bil ghiza (dietotherapy)
+    native_category: ilaj bil ghiza
+    tags:
+    - dietary
+    description: Diet adjusted in quantity and quality by temperament and illness; Britannica cites a
+      low-roughage, nutrient-rich diet for fever.
+  - name: Ilaj bil dawa (pharmacotherapy)
+    native_category: ilaj bil dawa
+    tags:
+    - herbal
+    - animal-derived
+    - mineral-metal
+    description: More than 2,000 medicines of herbal, mineral and animal origin, single (mufradat) or
+      compound (murakkabat), graded by temperament (mizaj-e-advia) and four degrees of potency. Includes
+      kushta, incinerated powders of mercury, arsenic, mercuric chloride and iron.
+  - name: Ilaj bil yad (surgery)
+    native_category: ilaj bil yad
+    tags:
+    - surgical
+    description: Historically a last resort and generally outside the hakim's routine practice; medieval
+      surgical heritage of al-Zahrawi.
+  weak_citations:
+  - source: Uncited in report for surgery description
+    type: unclear
+    citation_strength: unclear
+- path: materia_medica.pharmacological_framework
+  source_report: v2
+  value: Drugs are classified by temperament (mizaj) rather than by pathophysiology or molecular mechanism;
+    Indian materia medica incorporated into Arabic/Persian pharmacopoeias, and per Speziale pharmacology
+    was the field where contact with the local tradition 'determined the most sensible renewal'.
+  weak_citations:
+  - source: Fabrizio Speziale, EHESS profile (academia.edu)
+    type: aggregator
+    citation_strength: indirect
+- path: materia_medica.flagship_agents
+  source_report: v2
+  value:
+  - Kushtae Sadaf
+  - Jawarish Shahi
+  - Surma / ithmid
+  - Kushta Sammulfar (arsenic trioxide)
+  - Rooh Afza (Hamdard product, launched 1907)
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: materia_medica.preparation_traditions
+  source_report: v2
+  value: Kushta (calx) metallic preparations; compound formulations; Hamdard industrial standardization;
+    Unani Pharmacopoeia of India and National Formulary of Unani Medicine.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: disruption.loss_of_patronage
+  source_report: v2
+  value: Nizams of Hyderabad were significant patrons (Nizamia Tibbi College); Hyderabad remains a research
+    centre (CRIUM). No account of loss of Mughal or princely-state patronage, and no dates.
+  weak_citations:
+  - source: none given in report; report flags this as lighter sourcing
+    type: unclear
+    citation_strength: unclear
+- path: disruption.period
+  source_report: v2
+  value: British Raj, from Macaulay's 1835 education policy through the 1946-48 committees; post-1947
+    Partition breaks.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
+- path: disruption.colonial_power
+  source_report: v2
+  value:
+  - power: Britain (British Raj)
+    mode: colonial_rule
+    period: 19th c. to 1947 (dates as implied by report)
+    description: Only Western medicine recognized as legitimate; indigenous systems 'actively discouraged';
+      paradoxically print, Urdu publishing and the public sphere transformed Unani into a public, professionalized
+      system.
+  weak_citations:
+  - source: none given in report
+    type: unclear
+    citation_strength: unclear
